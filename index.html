@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0c0e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>BeatRush — זיהוי שירים על המילי-שנייה</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Subtle Studio Texture Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Top Studio Bar -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="logo-wrap" id="logoBtn" title="חזרה ללובי הראשי">
+        <div class="logo-mark">
+          <span class="eq-bar b1"></span>
+          <span class="eq-bar b2"></span>
+          <span class="eq-bar b3"></span>
+        </div>
+        <div class="logo-text">
+          <h1>BEATRUSH</h1>
+          <span class="logo-tag">MILLI-SECOND AUDIO CHALLENGE</span>
+        </div>
+      </div>
+
+      <nav class="nav-tabs">
+        <button class="nav-tab active" data-view="lobby">עמדת משחק</button>
+        <button class="nav-tab" data-view="stats">שיאים ונתונים</button>
+        <button class="nav-tab" data-view="catalog">ספריית שירים (<span id="catalogCountBadge">0</span>)</button>
+      </nav>
+
+      <div class="header-quick-stats">
+        <button type="button" class="user-profile-pill" id="openProfileModalBtn" title="לחץ לשינוי או הגדרת שם משתמש">
+          <span class="user-dot" id="userCloudStatusDot"></span>
+          <span class="mono" id="headerUsernameDisplay">@guest</span>
+        </button>
+        <div class="quick-pill">
+          <span class="pill-label">FASTEST</span>
+          <span class="pill-value mono" id="headerFastestTime">--.---s</span>
+        </div>
+        <div class="quick-pill">
+          <span class="pill-label">HIGH SCORE</span>
+          <span class="pill-value mono" id="headerBestScore">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- ==================== VIEW 1: LOBBY / SETUP ==================== -->
+    <section id="view-lobby" class="view-section active">
+      <div class="lobby-grid">
+        <!-- Main Setup Deck -->
+        <div class="studio-panel setup-card">
+          <div class="panel-top-row">
+            <div>
+              <span class="section-eyebrow">SESSION SETUP</span>
+              <h2>הגדרת סשן חדש</h2>
+            </div>
+            <span class="pool-counter" id="availablePoolCount">0 שירים במאגר</span>
+          </div>
+
+          <!-- Step 0: Language Mode (English / Hebrew / Mix) -->
+          <div class="filter-group">
+            <div class="filter-title">
+              <span class="step-label">00 / שפת משחק (ארה"ב / ישראל / מיקס)</span>
+            </div>
+            <div class="toggle-group" id="languageModeSelector">
+              <button class="toggle-btn active" data-lang="all">🌐 הכל מיקס (אנגלית + עברית)</button>
+              <button class="toggle-btn" data-lang="en">🇺🇸 מצב אנגלית (US Top 75)</button>
+              <button class="toggle-btn" data-lang="he">🇮🇱 מצב עברית (ישראל Top 25)</button>
+            </div>
+          </div>
+
+          <!-- Step 1: Difficulty -->
+          <div class="filter-group">
+            <div class="filter-title">
+              <span class="step-label">01 / רמת היכרות</span>
+            </div>
+            <div class="difficulty-grid" id="difficultySelector">
+              <button class="diff-btn active" data-diff="all">
+                <div class="diff-top">
+                  <span class="diff-dot all"></span>
+                  <span class="diff-name">מיקס מלא</span>
+                </div>
+                <span class="diff-desc">כל השירים בספרייה</span>
+              </button>
+              <button class="diff-btn" data-diff="easy">
+                <div class="diff-top">
+                  <span class="diff-dot easy"></span>
+                  <span class="diff-name">קל — להיטים</span>
+                </div>
+                <span class="diff-desc">השירים הכי מפורסמים</span>
+              </button>
+              <button class="diff-btn" data-diff="medium">
+                <div class="diff-top">
+                  <span class="diff-dot medium"></span>
+                  <span class="diff-name">בינוני</span>
+                </div>
+                <span class="diff-desc">סינגלים מוכרים</span>
+              </button>
+              <button class="diff-btn" data-diff="hard">
+                <div class="diff-top">
+                  <span class="diff-dot hard"></span>
+                  <span class="diff-name">קשה — למעריצים</span>
+                </div>
+                <span class="diff-desc">שירים עמוקים מהאלבומים</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Genre -->
+          <div class="filter-group">
+            <div class="filter-title">
+              <span class="step-label">02 / ז'אנר מוזיקלי</span>
+            </div>
+            <div class="chips-container" id="genreSelector"></div>
+          </div>
+
+          <!-- Step 3: Artist Selection (Searchable A-Z Dropdown + Live Import) -->
+          <div class="filter-group">
+            <div class="filter-title" style="display:flex;align-items:center;justify-content:space-between">
+              <span class="step-label">03 / סינון לפי אמן (A–Z)</span>
+              <button type="button" class="import-artist-trigger-btn" id="openImportModalBtn">+ הוסף אמן חדש מ-iTunes</button>
+            </div>
+            <div class="artist-picker-wrap" id="lobbyArtistPicker">
+              <div class="selected-artist-bar" id="selectedArtistBar">
+                <div class="sab-left" id="selectedArtistDisplay">
+                  <div class="artist-avatar">ALL</div>
+                  <div class="artist-btn-info">
+                    <div class="artist-btn-name">כל האמנים</div>
+                    <div class="artist-btn-sub">כל הזמרים במאגר</div>
+                  </div>
+                </div>
+                <div class="sab-actions">
+                  <button type="button" class="clear-artist-btn hidden" id="clearArtistSelectionBtn" title="נקה בחירה וחזור לכל האמנים">✕ כל האמנים</button>
+                  <span class="dropdown-chevron" id="artistDropdownChevron">▾</span>
+                </div>
+              </div>
+
+              <div class="artist-dropdown-panel hidden" id="artistDropdownPanel">
+                <div class="artist-search-box">
+                  <input type="text" id="lobbyArtistSearchInput" placeholder="חפש אמן לפי שם (A–Z)..." autocomplete="off" />
+                </div>
+                <div class="artist-az-list" id="lobbyArtistAzList"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 & 5: Input Mode & Round Length -->
+          <div class="filter-row-split">
+            <div class="filter-group compact">
+              <div class="filter-title">
+                <span class="step-label">04 / אופן מענה</span>
+              </div>
+              <div class="toggle-group" id="inputModeSelector">
+                <button class="toggle-btn active" data-mode="choices">4 אפשרויות (מקשים 1–4)</button>
+                <button class="toggle-btn" data-mode="typing">הקלדה חופשית</button>
+              </div>
+            </div>
+
+            <div class="filter-group compact">
+              <div class="filter-title">
+                <span class="step-label">05 / אורך סשן</span>
+              </div>
+              <div class="toggle-group" id="roundLengthSelector">
+                <button class="toggle-btn" data-count="5">5 שירים</button>
+                <button class="toggle-btn active" data-count="10">10 שירים</button>
+                <button class="toggle-btn" data-count="15">15 שירים</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selected Category Personal Best Banner -->
+          <div class="category-pb-banner" id="lobbyCategoryPb">
+            <div class="pb-indicator">PB</div>
+            <div class="pb-info">
+              <span class="pb-title" id="pbCategoryTitle">שיא אישי בהגדרות אלו:</span>
+              <span class="pb-stats" id="pbCategoryDetails">טרם נקבע שיא בקומבינציה הזו</span>
+            </div>
+          </div>
+
+          <button class="start-game-btn" id="startGameBtn">
+            <span>התחל סשן</span>
+            <kbd class="start-kbd">PLAY ▶</kbd>
+          </button>
+        </div>
+
+        <!-- Side Column: Artist Speed Records -->
+        <aside class="lobby-sidebar">
+          <div class="studio-panel mini-records-card">
+            <div class="panel-header-compact">
+              <span class="section-eyebrow">ARTIST SPEED RECORDS</span>
+              <h3>הזיהוי הכי מהיר לפי אמן</h3>
+            </div>
+            <div class="sidebar-search-wrap">
+              <input type="text" id="sidebarArtistSearchInput" class="compact-search-input" placeholder="סנן אמן (A–Z)..." autocomplete="off" />
+            </div>
+            <div class="artist-fastest-list scrollable-list" id="sidebarArtistFastest"></div>
+          </div>
+
+          <div class="studio-panel rules-card">
+            <span class="section-eyebrow">HOW IT WORKS</span>
+            <h3>איך לשחק מהר יותר?</h3>
+            <ul class="rules-list">
+              <li><strong>מקשים 1 עד 4:</strong> האפשרויות מסודרות אנכית מ-1 עד 4. הנח את האצבעות על מקשי המספרים במקלדת לתגובה מידית.</li>
+              <li><strong>דיוק אודיו אמיתי:</strong> הסטופר מתחיל לספור ברגע שהצליל הראשון בוקע מהרמקול (`00.000s`).</li>
+              <li><strong>מעבר מהיר:</strong> לחץ `Enter` או `Space` אחרי כל שיר כדי לדלג מיד לשיר הבא.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: ACTIVE GAMEPLAY ==================== -->
+    <section id="view-game" class="view-section">
+      <div class="game-arena studio-panel">
+        <!-- Game Top Bar -->
+        <div class="game-top-bar">
+          <button class="quit-btn" id="quitGameBtn">✕ סיום סשן</button>
+          <div class="game-progress-pills" id="gameProgressDots"></div>
+          <div class="game-tags">
+            <span class="game-tag" id="activeDiffTag">קל</span>
+            <span class="game-tag" id="activeFilterTag">כל האמנים</span>
+          </div>
+        </div>
+
+        <!-- Compact Telemetry HUD -->
+        <div class="game-hud">
+          <div class="hud-box">
+            <span class="hud-label">TRACK</span>
+            <span class="hud-val mono" id="hudSongCounter">1 / 10</span>
+          </div>
+          <div class="hud-box highlight">
+            <span class="hud-label">SCORE</span>
+            <span class="hud-val mono" id="hudCurrentScore">0</span>
+          </div>
+          <div class="hud-box">
+            <span class="hud-label">STREAK</span>
+            <span class="hud-val mono" id="hudStreak">0</span>
+          </div>
+          <div class="hud-box">
+            <span class="hud-label">AVG TIME</span>
+            <span class="hud-val mono" id="hudAvgTime">--.---s</span>
+          </div>
+        </div>
+
+        <!-- Hardware Chronometer & Turntable Stage -->
+        <div class="chrono-stage">
+          <div class="vinyl-visualizer" id="vinylVisualizer">
+            <img id="mysteryArtwork" src="" alt="Album Cover" class="album-cover blurred" />
+            <div class="vinyl-grooves"></div>
+            <div class="vinyl-center-badge" id="vinylBadge">?</div>
+          </div>
+
+          <div class="stopwatch-box">
+            <div class="stopwatch-status-row">
+              <span class="live-dot" id="liveAudioDot"></span>
+              <span class="stopwatch-label" id="stopwatchStatusText">טוען ערוץ אודיו...</span>
+            </div>
+            <div class="stopwatch-display mono" id="stopwatchDisplay">
+              <span id="swSeconds">00</span><span class="sw-dot">.</span><span id="swMillis">000</span><span class="sw-unit">s</span>
+            </div>
+            <div class="audio-progress-track">
+              <div class="audio-progress-fill" id="audioProgressBar"></div>
+            </div>
+          </div>
+
+          <div class="wave-bars" id="waveBars">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <!-- Answer Area: Mode A - Vertical 1-Column Stack (1, 2, 3, 4) -->
+        <div id="answerChoicesContainer" class="choices-stack">
+          <!-- 4 vertical rows injected dynamically -->
+        </div>
+
+        <!-- Answer Area: Mode B - Autocomplete Typing Input (Instant Enter Support) -->
+        <div id="answerTypingContainer" class="typing-container hidden">
+          <div class="typing-input-wrap">
+            <input type="text" id="songGuessInput" placeholder="הקלד את שם השיר ולחץ Enter לאישור מידי..." autocomplete="off" />
+            <button id="submitTypedGuessBtn" class="next-song-btn" type="button">אישור ↵</button>
+            <button id="skipSongBtn" class="skip-btn" type="button">דלג</button>
+          </div>
+          <div class="typing-hint-bar">
+            <span>💡 טיפ מהירות: לחיצה על <kbd>Enter</kbd> מקבלת מיד את השיר המודגש או התאמה מדויקת (ללא רגישות לאותיות גדולות/קטנות).</span>
+          </div>
+          <div id="autocompleteDropdown" class="autocomplete-list"></div>
+        </div>
+
+        <!-- Post-Guess Reveal Banner -->
+        <div id="roundFeedbackPanel" class="feedback-panel hidden">
+          <div class="feedback-header">
+            <div class="feedback-badge" id="feedbackResultBadge">זיהוי מדויק</div>
+            <div class="feedback-time-pill mono" id="feedbackTimeTaken">01.245s (+940)</div>
+          </div>
+          <div class="revealed-song-card">
+            <img id="revealedArtwork" src="" alt="" class="revealed-img" />
+            <div class="revealed-meta">
+              <h4 id="revealedTitle">Song Title</h4>
+              <p id="revealedArtistAlbum">Artist • Album (Year)</p>
+              <span class="record-alert hidden" id="newArtistRecordBadge">שיא מהירות חדש לאמן זה</span>
+            </div>
+            <button id="nextSongBtn" class="next-song-btn">השיר הבא ↵</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: ROUND SUMMARY ==================== -->
+    <section id="view-summary" class="view-section">
+      <div class="studio-panel summary-card">
+        <div class="summary-header">
+          <span class="section-eyebrow">SESSION COMPLETE</span>
+          <h2 id="summaryHeadline">סיכום סשן</h2>
+          <p id="summarySubline">רמה: הכל • אמן: כל האמנים</p>
+          <div id="newRoundRecordBanner" class="new-record-banner hidden">
+            נקבע שיא סשן חדש בקטגוריה זו
+          </div>
+        </div>
+
+        <div class="summary-metrics-grid">
+          <div class="metric-card primary">
+            <span class="metric-label">TOTAL SCORE</span>
+            <span class="metric-value mono" id="sumTotalScore">0</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">ACCURACY</span>
+            <span class="metric-value mono" id="sumAccuracy">0/10</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">AVG TIME</span>
+            <span class="metric-value mono" id="sumAvgTime">--.---s</span>
+          </div>
+          <div class="metric-card accent">
+            <span class="metric-label">FASTEST TRACK</span>
+            <span class="metric-value mono" id="sumFastestTime">--.---s</span>
+            <span class="metric-sub" id="sumFastestSongName">-</span>
+          </div>
+        </div>
+
+        <div class="summary-breakdown">
+          <h3>פירוט זמני תגובה לפי שיר</h3>
+          <div class="summary-tracks-list" id="summaryTracksList"></div>
+        </div>
+
+        <div class="summary-actions">
+          <button class="start-game-btn" id="playAgainSameBtn">שחק סשן נוסף באותו סינון</button>
+          <button class="secondary-btn" id="backToLobbyBtn">חזרה להגדרות</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: STATS & RECORDS DASHBOARD ==================== -->
+    <section id="view-stats" class="view-section">
+      <div class="stats-dashboard">
+        <div class="stats-top-header studio-panel">
+          <div>
+            <span class="section-eyebrow">TELEMETRY & PERSONAL BESTS</span>
+            <h2>היסטוריית זמנים ושיאים</h2>
+          </div>
+          <button class="danger-outline-btn" id="resetStatsBtn">איפוס נתונים</button>
+        </div>
+
+        <!-- Global KPIs -->
+        <div class="kpi-grid">
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label">ALL-TIME FASTEST</span>
+            <span class="kpi-val mono" id="statGlobalFastestTime">--.---s</span>
+            <span class="kpi-sub" id="statGlobalFastestSong">טרם נקבע</span>
+          </div>
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label">BEST SESSION SCORE</span>
+            <span class="kpi-val mono" id="statGlobalBestScore">0</span>
+            <span class="kpi-sub" id="statGlobalBestCategory">טרם נקבע</span>
+          </div>
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label">HIT ACCURACY</span>
+            <span class="kpi-val mono" id="statGlobalAccuracy">0%</span>
+            <span class="kpi-sub" id="statGlobalTotalSongs">0 שירים שוחקו</span>
+          </div>
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label">MEAN REACTION TIME</span>
+            <span class="kpi-val mono" id="statGlobalAvgTime">--.---s</span>
+            <span class="kpi-sub" id="statSubSecondCount">0 זיהויים מתחת ל-2 שניות</span>
+          </div>
+        </div>
+
+        <!-- Artist Mastery & Fastest Song Per Artist (Searchable A-Z Selector) -->
+        <div class="studio-panel stats-section-card">
+          <div class="stats-artist-header">
+            <div class="panel-header-compact" style="margin-bottom:0">
+              <span class="section-eyebrow">BY ARTIST (A–Z)</span>
+              <h3>נתונים ושיאים לפי אמן</h3>
+            </div>
+            <div class="stats-artist-picker-controls">
+              <div class="stats-artist-search-wrap">
+                <input type="text" id="statsArtistSearchInput" class="compact-search-input" placeholder="חפש ובחר אמן מהרשימה (A–Z)..." autocomplete="off" />
+                <div class="stats-artist-dropdown hidden" id="statsArtistDropdown"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selected Artist Spotlight Card -->
+          <div id="statsArtistSpotlight" class="artist-spotlight-wrap"></div>
+        </div>
+
+        <!-- Two Column Breakdown: Best By Difficulty & Best By Genre -->
+        <div class="stats-split-grid">
+          <div class="studio-panel stats-section-card">
+            <div class="panel-header-compact">
+              <span class="section-eyebrow">BY DIFFICULTY</span>
+              <h3>שיא סשן לפי רמת קושי</h3>
+            </div>
+            <div class="records-table-wrap" id="statsDifficultyTable"></div>
+          </div>
+
+          <div class="studio-panel stats-section-card">
+            <div class="panel-header-compact">
+              <span class="section-eyebrow">BY GENRE</span>
+              <h3>שיא סשן לפי ז'אנר</h3>
+            </div>
+            <div class="records-table-wrap" id="statsGenreTable"></div>
+          </div>
+        </div>
+
+        <!-- Top 10 Fastest Song Identifications Leaderboard -->
+        <div class="studio-panel stats-section-card">
+          <div class="panel-header-compact">
+            <span class="section-eyebrow">TOP 10 PERSONAL REACTIONS</span>
+            <h3>עשרת הזיהויים המהירים ביותר שלך</h3>
+          </div>
+          <div class="hall-of-speed-list" id="statsFastestSongsList"></div>
+        </div>
+
+        <!-- Global Cloud Leaderboard (Supabase Live) -->
+        <div class="studio-panel stats-section-card">
+          <div class="panel-header-compact" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem">
+            <div>
+              <span class="section-eyebrow">GLOBAL CLOUD LEADERBOARD (SUPABASE LIVE)</span>
+              <h3>טבלת שיאי עולם — כל השחקנים</h3>
+            </div>
+            <button type="button" class="quit-btn" id="refreshGlobalBoardBtn">↻ רענן שיאי עולם</button>
+          </div>
+          <div class="stats-split-grid">
+            <div>
+              <h4 style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:0.6rem">⚡ הזיהויים הכי מהירים בעולם</h4>
+              <div class="hall-of-speed-list" style="grid-template-columns:1fr" id="globalFastestSongsList"></div>
+            </div>
+            <div>
+              <h4 style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:0.6rem">👑 סשני הניקוד הגבוהים בעולם</h4>
+              <div class="hall-of-speed-list" style="grid-template-columns:1fr" id="globalBestRoundsList"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 5: SONG CATALOG EXPLORER ==================== -->
+    <section id="view-catalog" class="view-section">
+      <div class="studio-panel catalog-card">
+        <div class="catalog-header">
+          <div>
+            <span class="section-eyebrow">TRACK INDEX</span>
+            <h2>ספריית השירים והשיא האישי שלך בכל שיר</h2>
+          </div>
+          <div class="catalog-filters">
+            <button type="button" class="import-artist-trigger-btn" id="openImportModalFromCatalogBtn">+ הוסף אמן מ-iTunes</button>
+            <select id="catalogFilterArtist">
+              <option value="all">כל האמנים</option>
+            </select>
+            <select id="catalogFilterDiff">
+              <option value="all">כל הרמות</option>
+              <option value="easy">קל (להיטים)</option>
+              <option value="medium">בינוני</option>
+              <option value="hard">קשה</option>
+            </select>
+          </div>
+        </div>
+        <div class="catalog-table-container" id="catalogSongsList"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== MODAL: LIVE ITUNES ARTIST IMPORTER ==================== -->
+  <div class="modal-backdrop hidden" id="importArtistModal">
+    <div class="studio-panel modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="section-eyebrow">LIVE ITUNES DISCOGRAPHY IMPORT</span>
+          <h3>הוספת אמן חדש למאגר המשחק</h3>
+        </div>
+        <button type="button" class="quit-btn" id="closeImportModalBtn">✕ סגור</button>
+      </div>
+      <p class="modal-desc">
+        הקלד שם של כל זמר או להקה בעולם (באנגלית או בעברית). המערכת תמשוך אוטומטית את כל השירים המקוריים שלו מ-Apple iTunes, תסנן גרסאות כפולות, תחלק אותם לרמות קושי (קל, בינוני, קשה) ותסנכרן אותם למאגר!
+      </p>
+      <div class="import-search-row">
+        <input type="text" id="importArtistQueryInput" placeholder="לדוגמה: Drake, Taylor Swift, עומר אדם, טונה..." autocomplete="off" />
+        <button type="button" class="next-song-btn" id="searchItunesArtistBtn">חפש ב-iTunes</button>
+      </div>
+      <div id="importArtistStatus" class="import-status-msg"></div>
+      <div id="importArtistCandidates" class="import-candidates-list"></div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: UNIQUE USERNAME & CLOUD PROFILE ==================== -->
+  <div class="modal-backdrop hidden" id="profileModal">
+    <div class="studio-panel modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="section-eyebrow">PLAYER IDENTITY</span>
+          <h3>בחירת שם משתמש ייחודי (@username)</h3>
+        </div>
+        <button type="button" class="quit-btn" id="closeProfileModalBtn">✕ סגור</button>
+      </div>
+      <p class="modal-desc">
+        בחר כינוי ייחודי שייצג אותך בטבלאות השיאים ובהיכל המהירות העולמי. השם נשמר ומסונכרן מול שרת ה-Supabase של המשחק.
+      </p>
+      <div class="import-search-row">
+        <input type="text" id="usernameInput" placeholder="הקלד שם משתמש (למשל: roi_king או BeatMaster)..." maxlength="24" autocomplete="off" />
+        <button type="button" class="next-song-btn" id="saveUsernameBtn">שמור כינוי</button>
+      </div>
+      <div id="usernameStatusMsg" class="import-status-msg"></div>
+    </div>
+  </div>
+
+  <script src="supabase-config.js"></script>
+  <script src="songs-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
