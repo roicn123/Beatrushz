@@ -1,11 +1,47 @@
 /**
- * BeatRush ⚡ Song Guessing Game with Millisecond Precision & Deep Statistics
+ * Beatrushz ⚡ Millisecond Song Quiz
  */
 
 (function () {
   const CATALOG = [...(window.SONGS_CATALOG || [])];
   const STORAGE_KEY = 'beatrush_stats_v1';
   const CUSTOM_SONGS_KEY = 'beatrush_custom_songs_v1';
+  const USER_PROFILE_KEY = 'beatrush_user_profile_v1';
+
+  const BAD_REMIX_WORDS = [
+    'remix', 'rmx', 'mix)', 'mix]', 'rework', 'vip', 'edit)', 'edit]', 'radio edit',
+    'version', 'ver.', 'live', 'acoustic', 'instrumental', 'karaoke', 'sped up',
+    'slowed', 'reverb', 'chopped', 'screwed', 'lullaby', 'tribute', 'cover',
+    'demo', 'commentary', 'skit', 'interlude', 'intro', 'outro', 'medley',
+    'club', 'extended', 'dub', 'bootleg', 'mashup', 'session', 'unplugged',
+    'רמיקס', 'בהופעה', 'אקוסטי', 'לייב', 'אינסטרומנטלי', 'קריוקי', 'מחרוזת'
+  ];
+
+  function isRemixOrJunk(trackName, fullTitle = '', album = '') {
+    const lower = `${trackName || ''} ${fullTitle || ''} ${album || ''}`.toLowerCase();
+    return BAD_REMIX_WORDS.some((w) => lower.includes(w));
+  }
+
+  function cleanTrackTitle(rawTitle) {
+    return (rawTitle || '')
+      .replace(/\s*[\(\[\{].*?[\)\]\}]\s*/g, '')
+      .replace(/\s*-\s*.*$/g, '')
+      .trim();
+  }
+
+  function mapToBroadGenre(rawGenre) {
+    const g = (rawGenre || '').toLowerCase();
+    if (g.includes('country')) return 'Country';
+    if (g.includes('hip-hop') || g.includes('rap') || g.includes('היפ-הופ')) return 'Hip-Hop';
+    if (g.includes('r&b') || g.includes('soul') || g.includes('נשמה')) return 'R&B';
+    if (g.includes('rock') || g.includes('alt') || g.includes('indie') || g.includes('רוק')) return 'Rock & Alt';
+    if (g.includes('mizrahi') || g.includes('מזרחית') || g.includes('ים תיכוני')) return 'Mizrahi';
+    return 'Pop';
+  }
+
+  function detectLanguage(str) {
+    return /[\u0590-\u05FF]/.test(str || '') ? 'he' : 'en';
+  }
 
   // Load any user-imported artists/songs from localStorage
   try {
@@ -13,7 +49,8 @@
     if (Array.isArray(savedCustom) && savedCustom.length > 0) {
       const existingIds = new Set(CATALOG.map((s) => s.id));
       savedCustom.forEach((s) => {
-        if (!existingIds.has(s.id)) {
+        if (!existingIds.has(s.id) && !isRemixOrJunk(s.title, s.fullTitle, s.album)) {
+          s.genre = mapToBroadGenre(s.genre);
           CATALOG.push(s);
           existingIds.add(s.id);
         }
@@ -21,14 +58,9 @@
     }
   } catch (e) {}
 
-  // Extract unique artists and genres from catalog
   let ARTISTS = [];
   let ARTIST_META = {};
   let GENRES = [];
-
-  function detectLanguage(str) {
-    return /[\u0590-\u05FF]/.test(str || '') ? 'he' : 'en';
-  }
 
   function rebuildCatalogIndexes() {
     ARTISTS = [];
@@ -36,6 +68,7 @@
     const genresSet = new Set();
 
     CATALOG.forEach((song) => {
+      song.genre = mapToBroadGenre(song.genre);
       if (!song.lang) {
         song.lang = detectLanguage(song.artist) === 'he' || detectLanguage(song.title) === 'he' ? 'he' : 'en';
       }
@@ -53,17 +86,22 @@
       ARTIST_META[song.artist].totalSongs += 1;
     });
 
-    ARTISTS.sort((a, b) => a.localeCompare(b, 'he', { sensitivity: 'base' }));
-    GENRES = Array.from(genresSet);
+    ARTISTS.sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+    const preferredOrder = ['Pop', 'Hip-Hop', 'R&B', 'Rock & Alt', 'Country', 'Mizrahi'];
+    GENRES = Array.from(genresSet).sort((a, b) => {
+      const ia = preferredOrder.indexOf(a);
+      const ib = preferredOrder.indexOf(b);
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
   }
 
   rebuildCatalogIndexes();
 
   const DIFF_LABELS = {
-    all: 'הכל (מיקס)',
-    easy: 'קל (להיטי ענק)',
-    medium: 'בינוני',
-    hard: 'קשה (למעריצים)'
+    all: 'All Mix',
+    easy: 'Easy',
+    medium: 'Medium',
+    hard: 'Hard'
   };
 
   const DIFF_MULTIPLIERS = {
@@ -74,16 +112,17 @@
 
   // ==================== STATE ====================
   let config = {
-    lang: 'all',       // 'all' | 'en' | 'he'
-    difficulty: 'all', // 'all' | 'easy' | 'medium' | 'hard'
-    genre: 'all',      // 'all' | genre string
-    artist: 'all',     // 'all' | artist string
+    lang: 'all',          // 'all' | 'en' | 'he'
+    difficulty: 'all',    // 'all' | 'easy' | 'medium' | 'hard'
+    genre: 'all',         // 'all' | genre string
+    artist: 'all',        // 'all' | artist string
     inputMode: 'choices', // 'choices' | 'typing'
     roundLength: 10
   };
 
-  const USER_PROFILE_KEY = 'beatrush_user_profile_v1';
   let userProfile = loadUserProfile();
+  let stats = loadStats();
+  let selectedStatsArtist = ARTISTS[0] || null;
 
   function loadUserProfile() {
     try {
@@ -139,13 +178,13 @@
         const existingIds = new Set(CATALOG.map((s) => s.id));
         let addedCount = 0;
         rows.forEach((r) => {
-          if (!existingIds.has(r.id)) {
+          if (!existingIds.has(r.id) && !isRemixOrJunk(r.title, r.full_title, r.album)) {
             CATALOG.push({
               id: r.id,
-              title: r.title,
+              title: cleanTrackTitle(r.title),
               fullTitle: r.full_title || r.title,
               artist: r.artist,
-              genre: r.genre,
+              genre: mapToBroadGenre(r.genre),
               lang: r.lang || detectLanguage(r.artist),
               difficulty: r.difficulty || 'medium',
               previewUrl: r.preview_url,
@@ -159,17 +198,13 @@
         });
         if (addedCount > 0) {
           rebuildCatalogIndexes();
-          document.getElementById('catalogCountBadge').textContent = CATALOG.length;
           renderGenreChips();
           renderArtistCards();
-          populateCatalogFilters();
           renderSidebarArtistFastest();
           updateLobbyState();
         }
       }
-    } catch (e) {
-      console.warn('Supabase shared_songs sync skipped:', e.message);
-    }
+    } catch (e) {}
   }
 
   async function pushSongsToSupabase(songsArray) {
@@ -192,9 +227,7 @@
       await sbRest('shared_songs', 'POST', 'on_conflict=id', payload, {
         Prefer: 'resolution=ignore-duplicates'
       });
-    } catch (e) {
-      console.warn('Supabase push shared_songs error:', e.message);
-    }
+    } catch (e) {}
   }
 
   async function pushRecordToSupabase(recordPayload) {
@@ -206,8 +239,6 @@
     } catch (e) {}
   }
 
-  let stats = loadStats();
-
   // Active Game Session State
   let game = {
     active: false,
@@ -215,12 +246,12 @@
     currentIndex: 0,
     score: 0,
     streak: 0,
-    results: [], // { song, correct, timeMs, points, isNewArtistRecord }
+    results: [],
     audio: new Audio(),
     audioStartedAt: 0,
     rafId: null,
     answeredCurrent: false,
-    maxListenMs: 15000 // 15 seconds per song challenge
+    maxListenMs: 15000
   };
 
   game.audio.crossOrigin = 'anonymous';
@@ -232,14 +263,14 @@
       totalCorrect: 0,
       totalCorrectTimeMs: 0,
       sub2SecCount: 0,
-      globalFastest: null, // { timeMs, songId, title, artist, artwork, date }
-      globalBestRound: null, // { score, accuracy, avgTimeMs, label, date }
-      byDifficulty: {}, // key: 'all'|'easy'|'medium'|'hard' -> { bestScore, bestAvgTimeMs, bestAccuracy, gamesPlayed }
-      byGenre: {},      // key: genre -> { bestScore, bestAvgTimeMs, bestAccuracy, fastestSong: { timeMs, title, artist } }
-      byArtist: {},     // key: artist -> { bestScore, bestAvgTimeMs, fastestSong: { timeMs, title, songId }, totalCorrect, totalPlayed }
-      byCombo: {},      // key: `${diff}|${genre}|${artist}` -> { bestScore, bestAvgTimeMs, bestAccuracy }
-      songRecords: {},  // key: song.id -> { fastestMs, timesCorrect }
-      fastestHistory: [] // Top 15 fastest guesses [{ timeMs, songId, title, artist, artwork, diff }]
+      globalFastest: null,
+      globalBestRound: null,
+      byDifficulty: {},
+      byGenre: {},
+      byArtist: {},
+      byCombo: {},
+      songRecords: {},
+      fastestHistory: []
     };
   }
 
@@ -272,19 +303,16 @@
 
   function getCategoryLabel(diff, genre, artist) {
     const dLabel = DIFF_LABELS[diff] || diff;
-    const gLabel = genre === 'all' ? 'כל הז\'אנרים' : genre;
-    const aLabel = artist === 'all' ? 'כל האמנים' : artist;
+    const gLabel = genre === 'all' ? 'All Genres' : genre;
+    const aLabel = artist === 'all' ? 'All Artists' : artist;
     return `${aLabel} • ${gLabel} • ${dLabel}`;
   }
 
   // ==================== INITIALIZATION & UI BINDINGS ====================
   function init() {
-    document.getElementById('catalogCountBadge').textContent = CATALOG.length;
     updateHeaderUsernameUI();
     renderGenreChips();
     renderArtistCards();
-    populateCatalogFilters();
-    renderCatalogView();
     updateLobbyState();
     updateHeaderQuickStats();
     renderSidebarArtistFastest();
@@ -292,20 +320,15 @@
     bindEvents();
     syncSharedSongsFromSupabase();
 
-    // Prompt for username on first visit if not set
     if (!userProfile.username) {
-      setTimeout(() => openProfileModal(), 400);
+      setTimeout(() => openProfileModal(), 350);
     }
   }
 
   function updateHeaderUsernameUI() {
     const disp = document.getElementById('headerUsernameDisplay');
-    const dot = document.getElementById('userCloudStatusDot');
     if (disp) {
-      disp.textContent = userProfile.username ? `@${userProfile.username}` : '@הגדר_כינוי';
-    }
-    if (dot) {
-      dot.style.background = isSupabaseConfigured() ? 'var(--accent-green)' : 'var(--accent)';
+      disp.textContent = userProfile.username ? `@${userProfile.username}` : '@set_tag';
     }
   }
 
@@ -316,9 +339,7 @@
     if (!modal) return;
     modal.classList.remove('hidden');
     input.value = userProfile.username || '';
-    status.textContent = isSupabaseConfigured()
-      ? 'מחובר ל-Supabase — השם ייבדק לייחודיות בענן.'
-      : 'שמירה מקומית (חבר Supabase כדי לסנכרן שיאים בענן).';
+    status.textContent = '';
     setTimeout(() => input.focus(), 40);
   }
 
@@ -332,29 +353,27 @@
     const status = document.getElementById('usernameStatusMsg');
     const raw = (input.value || '').trim().replace(/^@/, '');
     if (raw.length < 2) {
-      status.textContent = 'נא להזין כינוי באורך 2 תווים לפחות.';
+      status.textContent = 'Username must be at least 2 characters.';
       return;
     }
     if (!/^[a-zA-Z0-9_\u0590-\u05FF.-]+$/.test(raw)) {
-      status.textContent = 'הכינוי יכול להכיל אותיות (אנגלית/עברית), מספרים וקו תחתון בלבד.';
+      status.textContent = 'Use letters, numbers, or underscores only.';
       return;
     }
 
+    status.textContent = '';
     if (isSupabaseConfigured()) {
-      status.textContent = 'בודק זמינות שם משתמש ב-Supabase...';
       try {
         const existing = await sbRest('players', 'GET', `username=eq.${encodeURIComponent(raw)}&select=*`);
         if (Array.isArray(existing) && existing.length > 0 && existing[0].client_id !== userProfile.clientId) {
-          status.textContent = `❌ הכינוי "@${raw}" כבר תפוס על ידי שחקן אחר! בחר שם אחר.`;
+          status.textContent = `@${raw} is already taken. Try another tag.`;
           return;
         }
         await sbRest('players', 'POST', 'on_conflict=username', [{
           username: raw,
           client_id: userProfile.clientId
         }], { Prefer: 'resolution=merge-duplicates' });
-      } catch (e) {
-        console.warn('Supabase player registration warning:', e.message);
-      }
+      } catch (e) {}
     }
 
     userProfile.username = raw;
@@ -368,7 +387,7 @@
     document.querySelectorAll('.nav-tab').forEach((btn) => {
       btn.addEventListener('click', () => {
         if (game.active) {
-          if (!confirm('האם לעצור את הסיבוב הפעיל ולצאת?')) return;
+          if (!confirm('Leave current session?')) return;
           stopAudioAndTimer();
           game.active = false;
         }
@@ -378,21 +397,20 @@
 
     document.getElementById('logoBtn').addEventListener('click', () => {
       if (game.active) {
-        if (!confirm('האם לעצור את הסיבוב הפעיל ולחזור ללובי?')) return;
+        if (!confirm('Leave current session?')) return;
         stopAudioAndTimer();
         game.active = false;
       }
       switchView('lobby');
     });
 
-    // Language Mode Selector (All / English US / Hebrew IL)
+    // Language Mode Selector
     document.querySelectorAll('#languageModeSelector .toggle-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         config.lang = btn.dataset.lang;
         document.querySelectorAll('#languageModeSelector .toggle-btn').forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
 
-        // Reset artist/genre if they don't match the newly chosen language
         if (config.artist !== 'all' && config.lang !== 'all' && ARTIST_META[config.artist]?.lang !== config.lang) {
           config.artist = 'all';
         }
@@ -499,20 +517,15 @@
 
     // Reset Stats
     document.getElementById('resetStatsBtn').addEventListener('click', () => {
-      if (confirm('האם אתה בטוח שברצונך לאפס את כל השיאים והסטטיסטיקות?')) {
+      if (confirm('Reset all local statistics and personal records?')) {
         stats = getDefaultStats();
         saveStats();
         updateHeaderQuickStats();
         renderSidebarArtistFastest();
         renderStatsDashboard();
-        renderCatalogView();
         updateLobbyState();
       }
     });
-
-    // Catalog Filters
-    document.getElementById('catalogFilterArtist').addEventListener('change', renderCatalogView);
-    document.getElementById('catalogFilterDiff').addEventListener('change', renderCatalogView);
 
     // Lobby Searchable A-Z Artist Combobox
     const selectedBar = document.getElementById('selectedArtistBar');
@@ -596,7 +609,6 @@
     });
 
     if (viewName === 'stats') renderStatsDashboard();
-    if (viewName === 'catalog') renderCatalogView();
     if (viewName === 'lobby') {
       updateLobbyState();
       renderSidebarArtistFastest();
@@ -615,7 +627,7 @@
 
     const allChip = document.createElement('button');
     allChip.className = `chip-btn ${config.genre === 'all' ? 'active' : ''}`;
-    allChip.textContent = 'כל הז\'אנרים';
+    allChip.textContent = 'All Genres';
     allChip.addEventListener('click', () => {
       config.genre = 'all';
       renderGenreChips();
@@ -624,9 +636,9 @@
     });
     container.appendChild(allChip);
 
-    const activeGenres = Array.from(new Set(
-      getArtistsForCurrentLang().map((a) => ARTIST_META[a]?.genre).filter(Boolean)
-    ));
+    const activeGenres = GENRES.filter((g) =>
+      getArtistsForCurrentLang().some((a) => ARTIST_META[a]?.genre === g)
+    );
 
     activeGenres.forEach((g) => {
       const chip = document.createElement('button');
@@ -656,8 +668,8 @@
       displayEl.innerHTML = `
         <div class="artist-avatar">ALL</div>
         <div class="artist-btn-info">
-          <div class="artist-btn-name">כל האמנים (${langArtists.length} אמנים זמינים)</div>
-          <div class="artist-btn-sub">לחץ לבחירה או חיפוש אמן ספציפי (A–Z / א–ת)</div>
+          <div class="artist-btn-name">All Artists (${langArtists.length})</div>
+          <div class="artist-btn-sub">Click to search or select an artist</div>
         </div>
       `;
       if (clearBtn) clearBtn.classList.add('hidden');
@@ -667,7 +679,7 @@
         <img src="${meta.avatar}" alt="${config.artist}" class="artist-avatar" />
         <div class="artist-btn-info">
           <div class="artist-btn-name">${config.artist}</div>
-          <div class="artist-btn-sub">${meta.genre} • ${meta.totalSongs} שירים במאגר</div>
+          <div class="artist-btn-sub">${meta.genre} • ${meta.totalSongs} tracks</div>
         </div>
       `;
       if (clearBtn) clearBtn.classList.remove('hidden');
@@ -684,7 +696,6 @@
     const q = query.trim().toLowerCase();
     const langArtists = getArtistsForCurrentLang();
 
-    // Option 0: All Artists
     if (!q) {
       const allOpt = document.createElement('button');
       allOpt.type = 'button';
@@ -693,11 +704,11 @@
         <div class="az-opt-left">
           <div class="artist-avatar">ALL</div>
           <div>
-            <div class="artist-btn-name">כל האמנים</div>
-            <div class="artist-btn-sub">${langArtists.length} אמנים זמינים</div>
+            <div class="artist-btn-name">All Artists</div>
+            <div class="artist-btn-sub">${langArtists.length} artists available</div>
           </div>
         </div>
-        <span class="az-opt-right">מיקס</span>
+        <span class="az-opt-right">Mix</span>
       `;
       allOpt.addEventListener('click', () => {
         config.artist = 'all';
@@ -715,7 +726,7 @@
     });
 
     if (filteredArtists.length === 0) {
-      listEl.innerHTML = `<div style="padding:1rem;color:var(--text-dim);text-align:center;font-size:0.85rem">לא נמצאו אמנים התואמים לחיפוש "${query}"</div>`;
+      listEl.innerHTML = `<div style="padding:1rem;color:var(--text-dim);text-align:center;font-size:0.84rem">No matching artists found</div>`;
       return;
     }
 
@@ -742,7 +753,7 @@
             <div class="artist-btn-sub">${meta.genre}</div>
           </div>
         </div>
-        <span class="az-opt-right mono">${meta.totalSongs} tracks</span>
+        <span class="az-opt-right mono">${meta.totalSongs}</span>
       `;
       opt.addEventListener('click', () => {
         config.artist = artistName;
@@ -770,18 +781,18 @@
 
   function updateLobbyState() {
     const pool = getFilteredPool();
-    document.getElementById('availablePoolCount').textContent = `${pool.length} שירים זמינים`;
+    document.getElementById('availablePoolCount').textContent = `${pool.length} tracks`;
 
     const comboKey = getComboKey(config.difficulty, config.genre, config.artist);
     const pb = stats.byCombo[comboKey];
     const titleEl = document.getElementById('pbCategoryTitle');
     const detailsEl = document.getElementById('pbCategoryDetails');
 
-    titleEl.textContent = `השיא שלך ב: ${getCategoryLabel(config.difficulty, config.genre, config.artist)}`;
+    titleEl.textContent = getCategoryLabel(config.difficulty, config.genre, config.artist);
     if (pb) {
-      detailsEl.innerHTML = `ניקוד שיא: <strong>${pb.bestScore.toLocaleString()}</strong> נק' • דיוק: <strong>${pb.bestAccuracy}</strong> • ממוצע זיהוי: <strong class="mono">${formatMs(pb.bestAvgTimeMs)}</strong>`;
+      detailsEl.innerHTML = `Best Score: <strong class="mono">${pb.bestScore.toLocaleString()}</strong> • Accuracy: <strong class="mono">${pb.bestAccuracy}</strong> • Avg: <strong class="mono">${formatMs(pb.bestAvgTimeMs)}</strong>`;
     } else {
-      detailsEl.textContent = 'טרם נקבע שיא בקומבינציה הזו — שחק סיבוב כדי לקבוע שיא ראשון!';
+      detailsEl.textContent = 'No personal record set for this filter yet';
     }
   }
 
@@ -798,7 +809,7 @@
   function startNewGame() {
     const pool = getFilteredPool();
     if (pool.length === 0) {
-      alert('אין שירים זמינים בסינון הנוכחי. נסה לבחור רמת קושי או ז\'אנר אחר.');
+      alert('No songs match this filter combination. Try selecting All Genres or All Difficulty.');
       return;
     }
 
@@ -812,12 +823,10 @@
     game.streak = 0;
     game.results = [];
 
-    // Setup HUD tags
     document.getElementById('activeDiffTag').textContent = DIFF_LABELS[config.difficulty];
     document.getElementById('activeFilterTag').textContent =
-      config.artist !== 'all' ? config.artist : (config.genre !== 'all' ? config.genre : 'כל האמנים');
+      config.artist !== 'all' ? config.artist : (config.genre !== 'all' ? config.genre : 'All Artists');
 
-    // Unlock mobile audio element directly inside user gesture (iOS Safari / Android Chrome requirement)
     try {
       game.audio.muted = false;
       game.audio.volume = 1.0;
@@ -866,7 +875,6 @@
     renderProgressDots();
     updateGameHud();
 
-    // Reset Visuals
     document.getElementById('roundFeedbackPanel').classList.add('hidden');
     const artworkEl = document.getElementById('mysteryArtwork');
     artworkEl.src = currentSong.artwork;
@@ -877,9 +885,8 @@
 
     setStopwatchDisplay(0);
     document.getElementById('audioProgressBar').style.width = '0%';
-    document.getElementById('stopwatchStatusText').textContent = 'טוען קובץ אודיו רשמי...';
+    document.getElementById('stopwatchStatusText').textContent = 'BUFFERING AUDIO...';
 
-    // Prepare Answer Options UI
     if (config.inputMode === 'choices') {
       document.getElementById('answerChoicesContainer').classList.remove('hidden');
       document.getElementById('answerTypingContainer').classList.add('hidden');
@@ -894,7 +901,6 @@
       setTimeout(() => input.focus(), 50);
     }
 
-    // Load & Play Audio with exact playing timestamp hook
     game.audio.src = currentSong.previewUrl;
     game.audio.currentTime = 0;
 
@@ -902,16 +908,15 @@
       game.audio.removeEventListener('playing', onPlaying);
       if (!game.active || game.answeredCurrent) return;
       game.audioStartedAt = performance.now();
-      document.getElementById('stopwatchStatusText').textContent = 'LIVE AUDIO — בחר או הקש 1–4 במקלדת';
+      document.getElementById('stopwatchStatusText').textContent = 'LIVE AUDIO';
       document.getElementById('vinylVisualizer').classList.add('spinning');
       document.getElementById('waveBars').classList.add('playing');
       startStopwatchLoop();
     };
 
     game.audio.addEventListener('playing', onPlaying);
-    game.audio.play().catch((err) => {
-      console.warn('Audio play error:', err);
-      document.getElementById('stopwatchStatusText').textContent = 'לחץ על אחת האפשרויות או בדוק חיבור רשת';
+    game.audio.play().catch(() => {
+      document.getElementById('stopwatchStatusText').textContent = 'TAP TO PLAY AUDIO';
     });
   }
 
@@ -954,7 +959,6 @@
     const container = document.getElementById('answerChoicesContainer');
     container.innerHTML = '';
 
-    // Pick 3 smart distractors from the same language (prefer same artist or genre if available)
     let distractorsPool = CATALOG.filter((s) => s.id !== correctSong.id && s.lang === correctSong.lang && s.title.toLowerCase() !== correctSong.title.toLowerCase());
     if (distractorsPool.length < 3) {
       distractorsPool = CATALOG.filter((s) => s.id !== correctSong.id && s.title.toLowerCase() !== correctSong.title.toLowerCase());
@@ -1054,7 +1058,7 @@
     currentTypedMatches.forEach((m, idx) => {
       const item = document.createElement('div');
       item.className = `ac-item ${idx === currentAcHighlightIndex ? 'highlighted' : ''}`;
-      item.innerHTML = `<strong>${m.title}</strong> <span>${m.artist} ${idx === currentAcHighlightIndex ? '↵' : ''}</span>`;
+      item.innerHTML = `<strong>${m.title}</strong> <span style="color:var(--text-dim);font-size:0.8rem">${m.artist} ${idx === currentAcHighlightIndex ? '↵' : ''}</span>`;
       item.addEventListener('click', () => {
         if (game.answeredCurrent) return;
         handleSongAnswer(m, false);
@@ -1095,29 +1099,24 @@
     const normCurrent = normalizeSongTitle(currentSong.title);
     const normFull = normalizeSongTitle(currentSong.fullTitle || currentSong.title);
 
-    // 1. Direct case-insensitive / punctuation-insensitive match with current playing song
     if (normInput && (normInput === normCurrent || normInput === normFull)) {
       handleSongAnswer(currentSong, false);
       return;
     }
 
-    // 2. If there is a highlighted autocomplete suggestion, submit it immediately on Enter
     if (currentTypedMatches.length > 0 && currentTypedMatches[currentAcHighlightIndex]) {
       handleSongAnswer(currentTypedMatches[currentAcHighlightIndex], false);
       return;
     }
 
-    // 3. Otherwise submit raw text as a guess (will register as wrong if not matching)
     handleSongAnswer({ id: 'raw_guess', title: rawVal }, false);
   }
 
   function calculateSongPoints(timeMs, difficulty, streak) {
-    // Up to 1000 base points: full 1000 if under 400ms, decays linearly down to 150 at 15,000ms
     const clamped = Math.max(0, Math.min(game.maxListenMs, timeMs));
     const speedFactor = 1 - (clamped / game.maxListenMs) * 0.85;
     let base = Math.round(1000 * speedFactor);
 
-    // Superhuman reflex bonus (< 1.500s)
     if (timeMs <= 1500) base += 200;
     else if (timeMs <= 2500) base += 100;
 
@@ -1144,7 +1143,6 @@
       setStopwatchDisplay(elapsedMs);
     }
 
-    // Highlight choices if in choice mode
     if (config.inputMode === 'choices') {
       document.querySelectorAll('#answerChoicesContainer .choice-btn').forEach((btn) => {
         btn.disabled = true;
@@ -1159,7 +1157,6 @@
       document.getElementById('autocompleteDropdown').innerHTML = '';
     }
 
-    // Unblur artwork
     document.getElementById('mysteryArtwork').classList.remove('blurred');
     document.getElementById('vinylBadge').textContent = isCorrect ? '✓' : '✕';
 
@@ -1198,29 +1195,29 @@
 
     if (isCorrect) {
       if (elapsedMs < 1500) {
-        badge.textContent = 'זיהוי על-אנושי (מתחת ל-1.5 שניות)';
+        badge.textContent = 'GODLIKE REFLEX';
       } else if (elapsedMs < 3000) {
-        badge.textContent = 'זיהוי מהיר במיוחד';
+        badge.textContent = 'FAST HIT';
       } else {
-        badge.textContent = 'זיהוי מדויק';
+        badge.textContent = 'CORRECT';
       }
-      badge.style.color = '#10b981';
+      badge.style.color = 'var(--accent)';
       timePill.textContent = `${formatMs(elapsedMs)} (+${points})`;
     } else {
-      badge.textContent = timedOut ? 'נגמר הזמן' : 'תשובה שגויה';
-      badge.style.color = '#ef4444';
+      badge.textContent = timedOut ? 'TIME UP' : 'WRONG';
+      badge.style.color = 'var(--accent-red)';
       timePill.textContent = '0 pts';
     }
 
     document.getElementById('revealedArtwork').src = song.artwork;
-    document.getElementById('revealedTitle').textContent = song.fullTitle || song.title;
+    document.getElementById('revealedTitle').textContent = song.title;
     document.getElementById('revealedArtistAlbum').textContent = `${song.artist} • ${song.album} (${song.releaseYear})`;
 
     const recBadge = document.getElementById('newArtistRecordBadge');
     recBadge.classList.toggle('hidden', !isNewArtistFastest);
 
     const nextBtn = document.getElementById('nextSongBtn');
-    nextBtn.textContent = game.currentIndex + 1 < game.queue.length ? 'השיר הבא ↵' : 'לסיכום הסשן ↵';
+    nextBtn.textContent = game.currentIndex + 1 < game.queue.length ? 'Next ↵' : 'Finish ↵';
 
     panel.classList.remove('hidden');
   }
@@ -1270,7 +1267,6 @@
 
       artistStat.totalCorrect += 1;
 
-      // Global fastest song check
       if (!stats.globalFastest || timeMs < stats.globalFastest.timeMs) {
         stats.globalFastest = {
           timeMs,
@@ -1282,7 +1278,6 @@
         };
       }
 
-      // Artist fastest song check
       if (!artistStat.fastestSong || timeMs < artistStat.fastestSong.timeMs) {
         artistStat.fastestSong = {
           timeMs,
@@ -1293,7 +1288,6 @@
         isNewArtistFastest = true;
       }
 
-      // Genre fastest song check
       if (!genreStat.fastestSong || timeMs < genreStat.fastestSong.timeMs) {
         genreStat.fastestSong = {
           timeMs,
@@ -1302,7 +1296,6 @@
         };
       }
 
-      // Individual song personal record
       if (!stats.songRecords[song.id]) {
         stats.songRecords[song.id] = { fastestMs: timeMs, timesCorrect: 1 };
       } else {
@@ -1312,7 +1305,6 @@
         }
       }
 
-      // Hall of Speed Top 15
       stats.fastestHistory.push({
         timeMs,
         songId: song.id,
@@ -1324,7 +1316,6 @@
       stats.fastestHistory.sort((a, b) => a.timeMs - b.timeMs);
       stats.fastestHistory = stats.fastestHistory.slice(0, 15);
 
-      // Push fast song identification to Supabase Global Leaderboard
       pushRecordToSupabase({
         record_type: 'song_speed',
         song_id: song.id,
@@ -1361,7 +1352,6 @@
       }
     }
 
-    // Check & Update Category / Difficulty / Genre / Artist Round Personal Bests
     const comboKey = getComboKey(config.difficulty, config.genre, config.artist);
     const prevCombo = stats.byCombo[comboKey];
     const isNewComboRecord = !prevCombo || game.score > prevCombo.bestScore;
@@ -1374,7 +1364,6 @@
       };
     }
 
-    // Update Global Best Round
     const catLabel = getCategoryLabel(config.difficulty, config.genre, config.artist);
     if (!stats.globalBestRound || game.score > stats.globalBestRound.score) {
       stats.globalBestRound = {
@@ -1385,7 +1374,6 @@
       };
     }
 
-    // Update Best Round by Difficulty
     const dKey = config.difficulty;
     if (!stats.byDifficulty[dKey] || game.score > stats.byDifficulty[dKey].bestScore) {
       stats.byDifficulty[dKey] = {
@@ -1398,7 +1386,6 @@
       stats.byDifficulty[dKey].gamesPlayed = (stats.byDifficulty[dKey].gamesPlayed || 0) + 1;
     }
 
-    // If round was played for a specific Genre (or single artist belonging to a genre)
     const effectiveGenre = config.genre !== 'all'
       ? config.genre
       : (config.artist !== 'all' ? ARTIST_META[config.artist]?.genre : null);
@@ -1414,7 +1401,6 @@
       }
     }
 
-    // If round was played for a specific Artist
     if (config.artist !== 'all') {
       if (!stats.byArtist[config.artist]) {
         stats.byArtist[config.artist] = { bestScore: 0, bestAvgTimeMs: null, fastestSong: null, totalCorrect: 0, totalPlayed: 0 };
@@ -1428,7 +1414,6 @@
     saveStats();
     updateHeaderQuickStats();
 
-    // Push completed round score to Supabase Global Leaderboard
     if (game.score > 0) {
       pushRecordToSupabase({
         record_type: 'round_score',
@@ -1443,7 +1428,6 @@
       });
     }
 
-    // Populate Summary View
     document.getElementById('summarySubline').textContent = catLabel;
     document.getElementById('newRoundRecordBanner').classList.toggle('hidden', !isNewComboRecord || game.score === 0);
     document.getElementById('sumTotalScore').textContent = game.score.toLocaleString();
@@ -1465,15 +1449,15 @@
       row.className = 'sum-track-row';
       row.innerHTML = `
         <div class="sum-track-left">
-          <span>#${i + 1}</span>
+          <span class="mono" style="color:var(--text-dim)">#${i + 1}</span>
           <img src="${r.song.artwork}" class="sum-track-img" alt="" />
           <div>
-            <div style="font-weight:800">${r.song.title}</div>
-            <div style="font-size:0.78rem;color:var(--text-muted)">${r.song.artist}</div>
+            <div style="font-weight:700;font-size:0.9rem">${r.song.title}</div>
+            <div style="font-size:0.75rem;color:var(--text-dim)">${r.song.artist}</div>
           </div>
         </div>
-        <div class="mono" style="font-weight:800; color: ${r.correct ? '#34d399' : '#f87171'}">
-          ${r.correct ? `${formatMs(r.timeMs)} (+${r.points})` : '✕ לא זוהה'}
+        <div class="mono" style="font-weight:700; color: ${r.correct ? 'var(--accent)' : 'var(--accent-red)'}">
+          ${r.correct ? `${formatMs(r.timeMs)} (+${r.points})` : 'MISSED'}
         </div>
       `;
       tracksList.appendChild(row);
@@ -1492,18 +1476,16 @@
       : '0';
   }
 
-  let selectedStatsArtist = ARTISTS[0] || null;
-
   function renderSidebarArtistFastest(query = '') {
     const container = document.getElementById('sidebarArtistFastest');
     if (!container) return;
     container.innerHTML = '';
 
     const q = query.trim().toLowerCase();
-    const list = ARTISTS.filter((a) => a.toLowerCase().includes(q));
+    const list = getArtistsForCurrentLang().filter((a) => a.toLowerCase().includes(q));
 
     if (list.length === 0) {
-      container.innerHTML = `<div style="color:var(--text-dim);font-size:0.8rem;padding:0.5rem 0">לא נמצאו אמנים</div>`;
+      container.innerHTML = `<div style="color:var(--text-dim);font-size:0.8rem;padding:0.5rem 0">No artists found</div>`;
       return;
     }
 
@@ -1515,13 +1497,13 @@
       const row = document.createElement('div');
       row.className = 'fastest-artist-row';
       row.style.cursor = 'pointer';
-      row.title = 'לחץ לבחירת אמן זה לסשן הבא';
+      row.title = 'Click to select artist';
       row.innerHTML = `
         <div class="far-left">
           <img src="${meta.avatar}" alt="${artistName}" class="far-img" />
           <div class="far-meta">
             <div class="far-artist">${artistName}</div>
-            <div class="far-song">${fastest ? fastest.title : 'טרם זוהה שיר'}</div>
+            <div class="far-song">${fastest ? fastest.title : 'No record'}</div>
           </div>
         </div>
         <div class="far-time mono ${fastest ? '' : 'empty'}">
@@ -1546,7 +1528,7 @@
     const filtered = ARTISTS.filter((a) => a.toLowerCase().includes(q) || ARTIST_META[a].genre.toLowerCase().includes(q));
 
     if (filtered.length === 0) {
-      dropdown.innerHTML = `<div style="padding:0.75rem;color:var(--text-dim);font-size:0.82rem;text-align:center">לא נמצא אמן בשם זה</div>`;
+      dropdown.innerHTML = `<div style="padding:0.75rem;color:var(--text-dim);font-size:0.82rem;text-align:center">No artist found</div>`;
       return;
     }
 
@@ -1600,7 +1582,6 @@
     const aStat = stats.byArtist[artistName] || { bestScore: 0, bestAvgTimeMs: null, fastestSong: null, totalCorrect: 0, totalPlayed: 0 };
     const acc = aStat.totalPlayed > 0 ? Math.round((aStat.totalCorrect / aStat.totalPlayed) * 100) : 0;
 
-    // Also get all songs of this artist that the user has identified, sorted by fastest time
     const artistSongs = CATALOG.filter((s) => s.artist === artistName);
     const identifiedSongs = artistSongs
       .filter((s) => stats.songRecords[s.id])
@@ -1610,22 +1591,16 @@
     let songsBreakdownHtml = '';
     if (identifiedSongs.length > 0) {
       songsBreakdownHtml = `
-        <div style="margin-top:0.85rem;padding-top:0.85rem;border-top:1px solid var(--border-subtle)">
-          <span class="asc-m-label" style="margin-bottom:0.5rem">שירים שזיהית של ${artistName} (${identifiedSongs.length}/${artistSongs.length} במאגר):</span>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.45rem">
+        <div style="margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid var(--border-subtle)">
+          <span class="asc-m-label" style="margin-bottom:0.5rem">IDENTIFIED TRACKS (${identifiedSongs.length}/${artistSongs.length}):</span>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:0.4rem">
             ${identifiedSongs.map((item) => `
-              <div style="display:flex;align-items:center;justify-content:space-between;background:var(--bg-surface);border:1px solid var(--border-subtle);padding:0.4rem 0.65rem;border-radius:6px;direction:ltr">
-                <span style="font-size:0.8rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:8px">${item.song.title}</span>
-                <span class="mono" style="font-size:0.78rem;color:var(--accent-green);font-weight:700">${formatMs(item.rec.fastestMs)}</span>
+              <div style="display:flex;align-items:center;justify-content:space-between;background:var(--bg-surface);border:1px solid var(--border-subtle);padding:0.38rem 0.6rem;border-radius:6px">
+                <span style="font-size:0.78rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:8px">${item.song.title}</span>
+                <span class="mono" style="font-size:0.76rem;color:var(--accent);font-weight:700">${formatMs(item.rec.fastestMs)}</span>
               </div>
             `).join('')}
           </div>
-        </div>
-      `;
-    } else {
-      songsBreakdownHtml = `
-        <div style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border-subtle);font-size:0.8rem;color:var(--text-dim)">
-          עדיין לא זיהית שירים של ${artistName} — בחר אותו בעמדת המשחק כדי לקבוע שיא!
         </div>
       `;
     }
@@ -1634,32 +1609,32 @@
       <div class="artist-stat-card">
         <div class="asc-top" style="flex-wrap:wrap;gap:0.75rem">
           <div class="asc-profile">
-            <img src="${meta.avatar}" alt="${artistName}" class="asc-img" style="width:54px;height:54px" />
+            <img src="${meta.avatar}" alt="${artistName}" class="asc-img" style="width:50px;height:50px" />
             <div>
-              <div class="asc-name" style="font-size:1.2rem">${artistName}</div>
-              <div class="asc-genre">${meta.genre} • ${aStat.totalCorrect} מתוך ${aStat.totalPlayed} ניסיונות זוהו (${acc}% הצלחה)</div>
+              <div class="asc-name" style="font-size:1.15rem">${artistName}</div>
+              <div class="asc-genre">${meta.genre} • ${aStat.totalCorrect}/${aStat.totalPlayed} hits (${acc}%)</div>
             </div>
           </div>
           <button type="button" class="quit-btn" id="playThisArtistFromStatsBtn" style="border-color:var(--accent);color:var(--accent)">
-            ▶ שחק סשן של ${artistName}
+            ▶ Play ${artistName}
           </button>
         </div>
 
-        <div class="asc-metrics" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
+        <div class="asc-metrics" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
           <div class="asc-metric-box">
-            <span class="asc-m-label">השיר הכי מהיר שזיהית</span>
+            <span class="asc-m-label">FASTEST TRACK</span>
             <span class="asc-m-val mono">${aStat.fastestSong ? formatMs(aStat.fastestSong.timeMs) : '--.---s'}</span>
-            <span class="asc-m-sub">${aStat.fastestSong ? aStat.fastestSong.title : 'טרם זוהה'}</span>
+            <span class="asc-m-sub">${aStat.fastestSong ? aStat.fastestSong.title : 'None yet'}</span>
           </div>
           <div class="asc-metric-box">
-            <span class="asc-m-label">שיא ניקוד בסשן של האמן</span>
-            <span class="asc-m-val mono">${aStat.bestScore ? aStat.bestScore.toLocaleString() : 'טרם שוחק'}</span>
-            <span class="asc-m-sub">${aStat.bestAvgTimeMs ? 'זמן ממוצע: ' + formatMs(aStat.bestAvgTimeMs) : 'שחק סשן ממוקד לאמן'}</span>
+            <span class="asc-m-label">BEST SESSION SCORE</span>
+            <span class="asc-m-val mono">${aStat.bestScore ? aStat.bestScore.toLocaleString() : '0'}</span>
+            <span class="asc-m-sub">${aStat.bestAvgTimeMs ? 'Avg: ' + formatMs(aStat.bestAvgTimeMs) : 'No session yet'}</span>
           </div>
           <div class="asc-metric-box">
-            <span class="asc-m-label">שליטה בקטלוג האמן</span>
+            <span class="asc-m-label">DISCOGRAPHY UNLOCKED</span>
             <span class="asc-m-val mono">${identifiedSongs.length} / ${artistSongs.length}</span>
-            <span class="asc-m-sub">שירים שונים שזיהית בהצלחה</span>
+            <span class="asc-m-sub">Tracks identified</span>
           </div>
         </div>
         ${songsBreakdownHtml}
@@ -1678,13 +1653,12 @@
   }
 
   function renderStatsDashboard() {
-    // 1. Global KPIs
     if (stats.globalFastest) {
       document.getElementById('statGlobalFastestTime').textContent = formatMs(stats.globalFastest.timeMs);
       document.getElementById('statGlobalFastestSong').textContent = `${stats.globalFastest.title} • ${stats.globalFastest.artist}`;
     } else {
       document.getElementById('statGlobalFastestTime').textContent = '--.---s';
-      document.getElementById('statGlobalFastestSong').textContent = 'טרם נקבע';
+      document.getElementById('statGlobalFastestSong').textContent = 'None yet';
     }
 
     if (stats.globalBestRound) {
@@ -1692,34 +1666,32 @@
       document.getElementById('statGlobalBestCategory').textContent = stats.globalBestRound.label;
     } else {
       document.getElementById('statGlobalBestScore').textContent = '0';
-      document.getElementById('statGlobalBestCategory').textContent = 'טרם נקבע';
+      document.getElementById('statGlobalBestCategory').textContent = 'None yet';
     }
 
     const accPct = stats.totalSongsPlayed > 0
       ? Math.round((stats.totalCorrect / stats.totalSongsPlayed) * 100)
       : 0;
     document.getElementById('statGlobalAccuracy').textContent = `${accPct}%`;
-    document.getElementById('statGlobalTotalSongs').textContent = `${stats.totalCorrect} מתוך ${stats.totalSongsPlayed} שירים זוהו`;
+    document.getElementById('statGlobalTotalSongs').textContent = `${stats.totalCorrect} / ${stats.totalSongsPlayed} hits`;
 
     const globalAvg = stats.totalCorrect > 0
       ? Math.round(stats.totalCorrectTimeMs / stats.totalCorrect)
       : null;
     document.getElementById('statGlobalAvgTime').textContent = formatMs(globalAvg);
-    document.getElementById('statSubSecondCount').textContent = `${stats.sub2SecCount} זיהויים מהירים מתחת ל-2.000 שניות`;
+    document.getElementById('statSubSecondCount').textContent = `${stats.sub2SecCount} hits under 2.000s`;
 
-    // 2. Artist Spotlight (Searchable A-Z)
     renderStatsArtistSpotlight();
 
-    // 3. Best Round By Difficulty Table
     const diffContainer = document.getElementById('statsDifficultyTable');
     let diffHtml = `
       <table class="records-table">
         <thead>
           <tr>
-            <th>רמת קושי</th>
-            <th>שיא ניקוד</th>
-            <th>דיוק שיא</th>
-            <th>ממוצע זיהוי</th>
+            <th>Difficulty</th>
+            <th>Best Score</th>
+            <th>Accuracy</th>
+            <th>Avg Time</th>
           </tr>
         </thead>
         <tbody>
@@ -1738,15 +1710,14 @@
     diffHtml += `</tbody></table>`;
     diffContainer.innerHTML = diffHtml;
 
-    // 4. Best Round & Fastest Song By Genre Table
     const genreContainer = document.getElementById('statsGenreTable');
     let genreHtml = `
       <table class="records-table">
         <thead>
           <tr>
-            <th>ז'אנר</th>
-            <th>שיא סיבוב</th>
-            <th>השיר הכי מהיר בז'אנר</th>
+            <th>Genre</th>
+            <th>Best Score</th>
+            <th>Fastest Track</th>
           </tr>
         </thead>
         <tbody>
@@ -1756,11 +1727,11 @@
       genreHtml += `
         <tr>
           <td><strong>${g}</strong></td>
-          <td class="mono">${rec && rec.bestScore ? rec.bestScore.toLocaleString() + ' נק\'' : '-'}</td>
+          <td class="mono">${rec && rec.bestScore ? rec.bestScore.toLocaleString() : '-'}</td>
           <td>
             ${rec && rec.fastestSong
               ? `<span class="mono" style="color:var(--accent);font-weight:700">${formatMs(rec.fastestSong.timeMs)}</span> <small style="color:var(--text-dim)">(${rec.fastestSong.title})</small>`
-              : '<span style="color:var(--text-dim)">טרם נקבע</span>'}
+              : '<span style="color:var(--text-dim)">-</span>'}
           </td>
         </tr>
       `;
@@ -1768,25 +1739,24 @@
     genreHtml += `</tbody></table>`;
     genreContainer.innerHTML = genreHtml;
 
-    // 5. Hall of Speed (Top Fastest Identifications)
     const hosContainer = document.getElementById('statsFastestSongsList');
     if (stats.fastestHistory.length === 0) {
-      hosContainer.innerHTML = `<p style="color:var(--text-dim)">עדיין אין זיהויים שמורים — התחל לשחק כדי לקבוע שיאי מהירות.</p>`;
+      hosContainer.innerHTML = `<p style="color:var(--text-dim);font-size:0.82rem">No records yet — play a session to set your fastest time.</p>`;
     } else {
       hosContainer.innerHTML = '';
       stats.fastestHistory.slice(0, 10).forEach((item, idx) => {
         const div = document.createElement('div');
         div.className = 'hos-item';
         div.innerHTML = `
-          <div style="display:flex;align-items:center;gap:0.75rem;direction:ltr;text-align:left">
+          <div style="display:flex;align-items:center;gap:0.7rem">
             <span class="hos-rank">#${idx + 1}</span>
-            <img src="${item.artwork}" style="width:36px;height:36px;border-radius:6px" alt="" />
+            <img src="${item.artwork}" style="width:34px;height:34px;border-radius:6px" alt="" />
             <div>
-              <div style="font-weight:700;font-size:0.9rem">${item.title}</div>
-              <div style="font-size:0.74rem;color:var(--text-dim)">${item.artist}</div>
+              <div style="font-weight:700;font-size:0.88rem">${item.title}</div>
+              <div style="font-size:0.72rem;color:var(--text-dim)">${item.artist}</div>
             </div>
           </div>
-          <div class="mono" style="font-weight:700;color:var(--accent-green);font-size:0.95rem">
+          <div class="mono" style="font-weight:700;color:var(--accent);font-size:0.92rem">
             ${formatMs(item.timeMs)}
           </div>
         `;
@@ -1794,20 +1764,13 @@
       });
     }
 
-    // 6. Load Global Cloud Leaderboard from Supabase
     loadGlobalCloudLeaderboards();
   }
 
   async function loadGlobalCloudLeaderboards() {
     const fastBox = document.getElementById('globalFastestSongsList');
     const scoreBox = document.getElementById('globalBestRoundsList');
-    if (!fastBox || !scoreBox) return;
-
-    if (!isSupabaseConfigured()) {
-      fastBox.innerHTML = `<p style="color:var(--text-dim);font-size:0.82rem">לא מחובר ל-Supabase</p>`;
-      scoreBox.innerHTML = `<p style="color:var(--text-dim);font-size:0.82rem">לא מחובר ל-Supabase</p>`;
-      return;
-    }
+    if (!fastBox || !scoreBox || !isSupabaseConfigured()) return;
 
     try {
       const [fastRows, roundRows] = await Promise.all([
@@ -1816,28 +1779,28 @@
       ]);
 
       if (!fastRows || fastRows.length === 0) {
-        fastBox.innerHTML = `<p style="color:var(--text-dim);font-size:0.82rem">טרם נקבעו שיאי מהירות בענן — היה הראשון!</p>`;
+        fastBox.innerHTML = `<p style="color:var(--text-dim);font-size:0.8rem">No global records yet.</p>`;
       } else {
         fastBox.innerHTML = '';
         fastRows.forEach((r, idx) => {
           const div = document.createElement('div');
           div.className = 'hos-item';
           div.innerHTML = `
-            <div style="display:flex;align-items:center;gap:0.65rem;direction:ltr;text-align:left">
+            <div style="display:flex;align-items:center;gap:0.65rem">
               <span class="hos-rank">#${idx + 1}</span>
               <div>
-                <div style="font-weight:700;font-size:0.88rem">${r.song_title || ''} <span style="color:var(--text-dim);font-weight:400">• ${r.artist || ''}</span></div>
-                <div class="mono" style="font-size:0.74rem;color:var(--accent)">@${r.username}</div>
+                <div style="font-weight:700;font-size:0.86rem">${r.song_title || ''} <span style="color:var(--text-dim);font-weight:400">• ${r.artist || ''}</span></div>
+                <div class="mono" style="font-size:0.72rem;color:var(--accent)">@${r.username}</div>
               </div>
             </div>
-            <div class="mono" style="font-weight:700;color:var(--accent-green);font-size:0.92rem">${formatMs(r.time_ms)}</div>
+            <div class="mono" style="font-weight:700;color:var(--accent);font-size:0.9rem">${formatMs(r.time_ms)}</div>
           `;
           fastBox.appendChild(div);
         });
       }
 
       if (!roundRows || roundRows.length === 0) {
-        scoreBox.innerHTML = `<p style="color:var(--text-dim);font-size:0.82rem">טרם נקבעו שיאי סשן בענן — היה הראשון!</p>`;
+        scoreBox.innerHTML = `<p style="color:var(--text-dim);font-size:0.8rem">No global scores yet.</p>`;
       } else {
         scoreBox.innerHTML = '';
         roundRows.forEach((r, idx) => {
@@ -1847,88 +1810,19 @@
             <div style="display:flex;align-items:center;gap:0.65rem">
               <span class="hos-rank">#${idx + 1}</span>
               <div>
-                <div class="mono" style="font-weight:700;font-size:0.86rem;color:var(--accent)">@${r.username}</div>
-                <div style="font-size:0.75rem;color:var(--text-dim)">${r.song_title || ''} (${r.accuracy || ''})</div>
+                <div class="mono" style="font-weight:700;font-size:0.84rem;color:var(--accent)">@${r.username}</div>
+                <div style="font-size:0.72rem;color:var(--text-dim)">${r.song_title || ''} (${r.accuracy || ''})</div>
               </div>
             </div>
-            <div class="mono" style="font-weight:700;color:var(--text-primary);font-size:0.95rem">${(r.score || 0).toLocaleString()} pts</div>
+            <div class="mono" style="font-weight:700;color:var(--text-primary);font-size:0.92rem">${(r.score || 0).toLocaleString()} pts</div>
           `;
           scoreBox.appendChild(div);
         });
       }
-    } catch (e) {
-      fastBox.innerHTML = `<p style="color:var(--text-dim);font-size:0.82rem">שגיאה בטעינת נתוני ענן</p>`;
-    }
-  }
-
-  // ==================== CATALOG EXPLORER ====================
-  function populateCatalogFilters() {
-    const sel = document.getElementById('catalogFilterArtist');
-    const prev = sel.value || 'all';
-    sel.innerHTML = `<option value="all">כל האמנים</option>`;
-    ARTISTS.forEach((a) => {
-      const opt = document.createElement('option');
-      opt.value = a;
-      opt.textContent = `${a} (${ARTIST_META[a].totalSongs})`;
-      sel.appendChild(opt);
-    });
-    if (ARTISTS.includes(prev)) sel.value = prev;
-  }
-
-  function renderCatalogView() {
-    const artistFilter = document.getElementById('catalogFilterArtist').value;
-    const diffFilter = document.getElementById('catalogFilterDiff').value;
-    const container = document.getElementById('catalogSongsList');
-
-    const filtered = CATALOG.filter((s) => {
-      if (artistFilter !== 'all' && s.artist !== artistFilter) return false;
-      if (diffFilter !== 'all' && s.difficulty !== diffFilter) return false;
-      return true;
-    });
-
-    const diffShort = { easy: 'קל', medium: 'בינוני', hard: 'קשה' };
-
-    let html = `<div class="catalog-grid">`;
-    filtered.forEach((song) => {
-      const rec = stats.songRecords[song.id];
-      html += `
-        <div class="cat-song-card">
-          <img src="${song.artwork}" alt="" class="cat-song-img" loading="lazy" />
-          <div class="cat-song-info">
-            <div class="cat-song-title">${song.title}</div>
-            <div class="cat-song-sub">${song.artist} • ${song.releaseYear}</div>
-            <div style="margin-top:4px;font-size:0.74rem;direction:rtl;text-align:right;color:${rec ? 'var(--accent-green)' : 'var(--text-dim)'}">
-              ${rec ? `שיא אישי: <span class="mono">${formatMs(rec.fastestMs)}</span>` : 'טרם זוהה'}
-            </div>
-          </div>
-          <span class="cat-badge ${song.difficulty}">${diffShort[song.difficulty]}</span>
-        </div>
-      `;
-    });
-    html += `</div>`;
-    container.innerHTML = html;
+    } catch (e) {}
   }
 
   // ==================== LIVE ITUNES ARTIST DISCOGRAPHY IMPORTER ====================
-  function isJunkTrack(trackName, collectionName = '') {
-    const lower = (trackName + ' ' + collectionName).toLowerCase();
-    const junk = [
-      'instrumental', 'karaoke', 'acappella', 'a cappella', 'sped up', 'slowed',
-      'chopped', 'commentary', 'interview', 'skit', 'intro', 'outro', 'interlude',
-      'live at', 'live from', '(live', '[live', 'acoustic', 'demo', 'lullaby',
-      '8-bit', 'tribute', 'ringtone', 'workout', 'medley'
-    ];
-    return junk.some((w) => lower.includes(w));
-  }
-
-  function cleanTrackTitle(rawTitle) {
-    return rawTitle
-      .replace(/\s*[\(\[](feat\.?|ft\.?|with|prod\.?|from|bonus|deluxe|remaster|single|original|explicit|clean|version|edit|audio|video|official).*?[\)\]]\s*/gi, '')
-      .replace(/\s*\{.*?\}\s*/g, '')
-      .replace(/\s*-\s*(single|ep|remastered|live|acoustic|bonus track).*$/gi, '')
-      .trim();
-  }
-
   function openImportArtistModal() {
     const modal = document.getElementById('importArtistModal');
     const input = document.getElementById('importArtistQueryInput');
@@ -1954,7 +1848,7 @@
     const q = input.value.trim();
     if (!q) return;
 
-    status.textContent = 'מחפש אמנים ב-Apple iTunes...';
+    status.textContent = 'Searching artists...';
     cands.innerHTML = '';
 
     try {
@@ -1962,21 +1856,22 @@
       const data = await res.json();
       const artists = data.results || [];
       if (artists.length === 0) {
-        status.textContent = 'לא נמצאו אמנים בשם זה. נסה איות אחר.';
+        status.textContent = 'No artists found.';
         return;
       }
-      status.textContent = 'בחר את האמן שברצונך לייבא את כל השירים שלו:';
+      status.textContent = '';
       artists.forEach((art) => {
         const alreadyIn = ARTIST_META[art.artistName];
+        const broadGenre = mapToBroadGenre(art.primaryGenreName);
         const row = document.createElement('div');
         row.className = 'import-cand-row';
         row.innerHTML = `
           <div class="import-cand-info">
             <span class="import-cand-name">${art.artistName}</span>
-            <span class="import-cand-genre">${art.primaryGenreName || 'Pop'} ${alreadyIn ? `• כבר במאגר (${alreadyIn.totalSongs} שירים)` : ''}</span>
+            <span class="import-cand-genre">${broadGenre} ${alreadyIn ? `• In library (${alreadyIn.totalSongs})` : ''}</span>
           </div>
-          <button type="button" class="next-song-btn" style="padding:0.45rem 0.9rem;font-size:0.82rem">
-            ${alreadyIn ? 'רענן דיסקוגרפיה' : '+ ייבא את כל השירים'}
+          <button type="button" class="next-song-btn" style="padding:0.42rem 0.85rem;font-size:0.8rem">
+            ${alreadyIn ? 'Update' : '+ Import'}
           </button>
         `;
         row.querySelector('button').addEventListener('click', () => {
@@ -1985,7 +1880,7 @@
         cands.appendChild(row);
       });
     } catch (e) {
-      status.textContent = 'שגיאה בחיבור ל-iTunes API. בדוק את חיבור האינטרנט.';
+      status.textContent = 'Connection error.';
     }
   }
 
@@ -1993,9 +1888,10 @@
     const status = document.getElementById('importArtistStatus');
     const cands = document.getElementById('importArtistCandidates');
     const artistName = artistObj.artistName;
-    const genre = artistObj.primaryGenreName || 'Pop';
+    const genre = mapToBroadGenre(artistObj.primaryGenreName);
+    const lang = detectLanguage(artistName);
 
-    status.textContent = `מושך את כל השירים של ${artistName} מ-iTunes...`;
+    status.textContent = `Importing ${artistName}...`;
     cands.innerHTML = '';
 
     try {
@@ -2015,7 +1911,7 @@
         const aLower = it.artistName.toLowerCase();
         const targetLower = artistName.toLowerCase();
         if (!aLower.startsWith(targetLower) && aLower !== targetLower) continue;
-        if (isJunkTrack(it.trackName, it.collectionName)) continue;
+        if (isRemixOrJunk(it.trackName, it.trackName, it.collectionName)) continue;
 
         const clean = cleanTrackTitle(it.trackName);
         if (clean.length < 2) continue;
@@ -2030,6 +1926,7 @@
           fullTitle: it.trackName,
           artist: artistName,
           genre,
+          lang,
           previewUrl: it.previewUrl,
           artwork: it.artworkUrl100 ? it.artworkUrl100.replace('100x100bb', '300x300bb') : '',
           album: it.collectionName || '',
@@ -2038,12 +1935,11 @@
       }
 
       if (tracks.length < 4) {
-        status.textContent = `נמצאו מעט מדי שירים זמינים עבור ${artistName}.`;
+        status.textContent = `Not enough tracks found for ${artistName}.`;
         return;
       }
 
-      // Automatically rank into Easy (top 22%), Medium (next 35%), Hard (remaining 43%)
-      const easyCut = Math.max(5, Math.round(tracks.length * 0.22));
+      const easyCut = Math.max(5, Math.round(tracks.length * 0.25));
       const medCut = Math.max(8, Math.round(tracks.length * 0.35));
 
       tracks.forEach((song, idx) => {
@@ -2052,7 +1948,6 @@
         else song.difficulty = 'hard';
       });
 
-      // Merge into CATALOG & persist to localStorage
       const existingIds = new Set(CATALOG.map((s) => s.id));
       const newlyAdded = [];
       tracks.forEach((t) => {
@@ -2072,42 +1967,35 @@
         localStorage.setItem(CUSTOM_SONGS_KEY, JSON.stringify(prevSaved));
       } catch (e) {}
 
-      // Also push to Supabase shared_songs so all players worldwide get this artist!
       if (newlyAdded.length > 0) {
         pushSongsToSupabase(newlyAdded);
       }
 
       rebuildCatalogIndexes();
-      document.getElementById('catalogCountBadge').textContent = CATALOG.length;
       config.artist = artistName;
       config.genre = 'all';
 
       renderGenreChips();
       renderArtistCards();
-      populateCatalogFilters();
-      renderCatalogView();
       renderSidebarArtistFastest();
       updateLobbyState();
 
       closeImportArtistModal();
     } catch (e) {
-      status.textContent = 'אירעה שגיאה בעת ייבוא השירים מ-iTunes.';
+      status.textContent = 'Import failed.';
     }
   }
 
-  // Bind Modal Triggers
   document.addEventListener('DOMContentLoaded', () => {
     const btn1 = document.getElementById('openImportModalBtn');
-    const btn2 = document.getElementById('openImportModalFromCatalogBtn');
     const closeBtn = document.getElementById('closeImportModalBtn');
     const searchBtn = document.getElementById('searchItunesArtistBtn');
     const queryInput = document.getElementById('importArtistQueryInput');
+    const refreshGlobalBtn = document.getElementById('refreshGlobalBoardBtn');
 
     if (btn1) btn1.addEventListener('click', openImportArtistModal);
-    if (btn2) btn2.addEventListener('click', openImportArtistModal);
     if (closeBtn) closeBtn.addEventListener('click', closeImportArtistModal);
     if (searchBtn) searchBtn.addEventListener('click', searchItunesArtists);
-    const refreshGlobalBtn = document.getElementById('refreshGlobalBoardBtn');
     if (refreshGlobalBtn) refreshGlobalBtn.addEventListener('click', loadGlobalCloudLeaderboards);
     if (queryInput) {
       queryInput.addEventListener('keydown', (e) => {
@@ -2119,6 +2007,5 @@
     }
   });
 
-  // Boot the app
   document.addEventListener('DOMContentLoaded', init);
 })();
