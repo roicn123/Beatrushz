@@ -475,13 +475,21 @@
       <div class="modal-header">
         <div>
           <span class="section-eyebrow">PLAYER TAG</span>
-          <h3>Choose Username</h3>
+          <h3>Sign In / Create Tag</h3>
         </div>
         <button type="button" class="quit-btn" id="closeProfileModalBtn">✕</button>
       </div>
-      <div class="import-search-row">
-        <input type="text" id="usernameInput" placeholder="Enter unique username..." maxlength="24" autocomplete="off" />
-        <button type="button" class="next-song-btn" id="saveUsernameBtn">Save</button>
+      <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.75rem">
+        Enter a new tag + PIN to register, or use your existing tag + PIN on any device.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:0.6rem">
+        <div class="import-search-row" style="margin-bottom:0">
+          <input type="text" id="usernameInput" placeholder="Username..." maxlength="24" autocomplete="username" />
+        </div>
+        <div class="import-search-row" style="margin-bottom:0">
+          <input type="password" id="userPinInput" placeholder="PIN / Passcode (4+ chars)..." maxlength="32" autocomplete="current-password" />
+          <button type="button" class="next-song-btn" id="saveUsernameBtn">Enter</button>
+        </div>
       </div>
       <div id="usernameStatusMsg" class="import-status-msg"></div>
     </div>

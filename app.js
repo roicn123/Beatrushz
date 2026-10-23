@@ -322,6 +322,8 @@
 
     if (!userProfile.username) {
       setTimeout(() => openProfileModal(), 350);
+    } else {
+      syncUserCloudStats(userProfile.username);
     }
   }
 
@@ -335,12 +337,17 @@
   function openProfileModal() {
     const modal = document.getElementById('profileModal');
     const input = document.getElementById('usernameInput');
+    const pinInput = document.getElementById('userPinInput');
     const status = document.getElementById('usernameStatusMsg');
     if (!modal) return;
     modal.classList.remove('hidden');
     input.value = userProfile.username || '';
+    if (pinInput) pinInput.value = '';
     status.textContent = '';
-    setTimeout(() => input.focus(), 40);
+    setTimeout(() => {
+      if (input.value && pinInput) pinInput.focus();
+      else input.focus();
+    }, 40);
   }
 
   function closeProfileModal() {
@@ -348,10 +355,88 @@
     if (modal) modal.classList.add('hidden');
   }
 
+  async function hashUserPin(username, pin) {
+    const normalized = `${username.toLowerCase().trim()}::beatrushz_v1::${pin.trim()}`;
+    try {
+      if (window.crypto && window.crypto.subtle) {
+        const msgBuffer = new TextEncoder().encode(normalized);
+        const hashBuffer = await window.crypto.subtle.digest('SHA-256', msgBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return 'pin_v1_' + hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
+      }
+    } catch (e) {}
+    let h = 2166136261;
+    for (let i = 0; i < normalized.length; i++) {
+      h ^= normalized.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return 'pin_v1_' + (h >>> 0).toString(16);
+  }
+
+  async function syncUserCloudStats(username) {
+    if (!isSupabaseConfigured() || !username) return;
+    try {
+      const rows = await sbRest(
+        'global_records',
+        'GET',
+        `username=ilike.${encodeURIComponent(username)}&select=*&order=created_at.desc&limit=500`
+      );
+      if (!Array.isArray(rows) || rows.length === 0) return;
+
+      let updated = false;
+      rows.forEach((r) => {
+        if (r.record_type === 'song_speed' && r.time_ms > 0) {
+          if (!stats.globalFastest || r.time_ms < stats.globalFastest.timeMs) {
+            stats.globalFastest = {
+              timeMs: r.time_ms,
+              songId: r.song_id || '',
+              title: r.song_title || '',
+              artist: r.artist || '',
+              genre: r.genre || '',
+              difficulty: r.difficulty || 'all'
+            };
+            updated = true;
+          }
+          if (r.artist) {
+            if (!stats.byArtist[r.artist]) {
+              stats.byArtist[r.artist] = { played: 1, correct: 1, totalCorrectTimeMs: r.time_ms, fastestMs: r.time_ms, fastestSongTitle: r.song_title || '', bestRoundScore: 0 };
+              updated = true;
+            } else if (!stats.byArtist[r.artist].fastestMs || r.time_ms < stats.byArtist[r.artist].fastestMs) {
+              stats.byArtist[r.artist].fastestMs = r.time_ms;
+              stats.byArtist[r.artist].fastestSongTitle = r.song_title || '';
+              updated = true;
+            }
+          }
+        } else if (r.record_type === 'round_score' && r.score > 0) {
+          if (!stats.globalBestRound || r.score > stats.globalBestRound.score) {
+            stats.globalBestRound = {
+              score: r.score,
+              categoryLabel: r.song_title || 'Session',
+              accuracy: r.accuracy || '',
+              avgMs: r.time_ms || null
+            };
+            updated = true;
+          }
+        }
+      });
+
+      if (updated) {
+        saveStats();
+        updateHeaderQuickStats();
+        renderSidebarArtistFastest();
+        renderStatsDashboard();
+        updateLobbyState();
+      }
+    } catch (e) {}
+  }
+
   async function saveUniqueUsername() {
     const input = document.getElementById('usernameInput');
+    const pinInput = document.getElementById('userPinInput');
     const status = document.getElementById('usernameStatusMsg');
     const raw = (input.value || '').trim().replace(/^@/, '');
+    const pin = (pinInput ? pinInput.value : '').trim();
+
     if (raw.length < 2) {
       status.textContent = 'Username must be at least 2 characters.';
       return;
@@ -360,26 +445,56 @@
       status.textContent = 'Use letters, numbers, or underscores only.';
       return;
     }
-
-    status.textContent = '';
-    if (isSupabaseConfigured()) {
-      try {
-        const existing = await sbRest('players', 'GET', `username=eq.${encodeURIComponent(raw)}&select=*`);
-        if (Array.isArray(existing) && existing.length > 0 && existing[0].client_id !== userProfile.clientId) {
-          status.textContent = `@${raw} is already taken. Try another tag.`;
-          return;
-        }
-        await sbRest('players', 'POST', 'on_conflict=username', [{
-          username: raw,
-          client_id: userProfile.clientId
-        }], { Prefer: 'resolution=merge-duplicates' });
-      } catch (e) {}
+    if (pin.length < 4) {
+      status.textContent = 'Please enter a PIN / passcode (at least 4 characters).';
+      if (pinInput) pinInput.focus();
+      return;
     }
 
-    userProfile.username = raw;
+    status.textContent = '';
+    let finalUsername = raw;
+    const pinHash = await hashUserPin(raw, pin);
+
+    if (isSupabaseConfigured()) {
+      try {
+        const existing = await sbRest('players', 'GET', `username=ilike.${encodeURIComponent(raw)}&select=*`);
+        if (Array.isArray(existing) && existing.length > 0) {
+          const record = existing[0];
+          finalUsername = record.username;
+          const storedToken = record.client_id || '';
+
+          if (storedToken.startsWith('pin_v1_')) {
+            if (storedToken !== pinHash) {
+              status.textContent = `Wrong PIN for @${finalUsername} (or username is already taken).`;
+              return;
+            }
+          } else {
+            // Legacy account created before PIN was added — upgrade it with this new PIN
+            await sbRest(
+              'players',
+              'PATCH',
+              `username=eq.${encodeURIComponent(finalUsername)}`,
+              { client_id: pinHash }
+            );
+          }
+        } else {
+          await sbRest('players', 'POST', 'on_conflict=username', [{
+            username: finalUsername,
+            client_id: pinHash
+          }], { Prefer: 'resolution=merge-duplicates' });
+        }
+      } catch (e) {
+        status.textContent = 'Could not verify account. Try again.';
+        return;
+      }
+    }
+
+    userProfile.username = finalUsername;
+    userProfile.clientId = pinHash;
     saveUserProfile();
     updateHeaderUsernameUI();
     closeProfileModal();
+    syncUserCloudStats(finalUsername);
   }
 
   function bindEvents() {
@@ -438,11 +553,24 @@
     const closeProfBtn = document.getElementById('closeProfileModalBtn');
     const saveProfBtn = document.getElementById('saveUsernameBtn');
     const profInput = document.getElementById('usernameInput');
+    const pinInput = document.getElementById('userPinInput');
     if (openProfBtn) openProfBtn.addEventListener('click', openProfileModal);
     if (closeProfBtn) closeProfBtn.addEventListener('click', closeProfileModal);
     if (saveProfBtn) saveProfBtn.addEventListener('click', saveUniqueUsername);
     if (profInput) {
       profInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          if (pinInput && !pinInput.value.trim()) {
+            pinInput.focus();
+          } else {
+            saveUniqueUsername();
+          }
+        }
+      });
+    }
+    if (pinInput) {
+      pinInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
           e.preventDefault();
           saveUniqueUsername();
