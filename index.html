@@ -9,13 +9,13 @@
   <title>Beatrushz — Millisecond Song Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700;800&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="noise-overlay"></div>
 
-  <!-- Top Header -->
+  <!-- Top Header (Clean & Minimal — Navigation moved to Bottom Bar) -->
   <header class="app-header">
     <div class="header-inner">
       <div class="logo-wrap" id="logoBtn" title="Back to Lobby">
@@ -29,11 +29,6 @@
           <span class="logo-tag">MILLISECOND AUDIO REFLEX</span>
         </div>
       </div>
-
-      <nav class="nav-tabs">
-        <button class="nav-tab active" data-view="lobby">Play</button>
-        <button class="nav-tab" data-view="stats">Stats & Leaderboards</button>
-      </nav>
 
       <div class="header-quick-stats">
         <button type="button" class="user-profile-pill" id="openProfileModalBtn" title="Set Username">
@@ -488,6 +483,26 @@
       </div>
     </section>
   </main>
+
+  <!-- ==================== CLASSIC BOTTOM NAVIGATION BAR ==================== -->
+  <nav class="bottom-nav" id="bottomNavBar" aria-label="Primary Navigation">
+    <button type="button" class="nav-tab bottom-nav-item active" data-view="lobby">
+      <span class="bnav-icon">⚡</span>
+      <span class="bnav-label">Play</span>
+    </button>
+    <button type="button" class="nav-tab bottom-nav-item" data-view="stats">
+      <span class="bnav-icon">🏆</span>
+      <span class="bnav-label">Leaderboards</span>
+    </button>
+    <button type="button" class="bottom-nav-item" id="bottomAddArtistBtn">
+      <span class="bnav-icon">＋</span>
+      <span class="bnav-label">Add Artist</span>
+    </button>
+    <button type="button" class="bottom-nav-item" id="bottomProfileBtn">
+      <span class="bnav-icon">👤</span>
+      <span class="bnav-label" id="bottomNavUserLabel">Profile</span>
+    </button>
+  </nav>
 
   <!-- ==================== MODAL: ADD ARTIST ==================== -->
   <div class="modal-backdrop hidden" id="importArtistModal">

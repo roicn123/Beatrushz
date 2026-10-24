@@ -362,6 +362,10 @@
     if (disp) {
       disp.textContent = userProfile.username ? `@${userProfile.username}` : '@set_tag';
     }
+    const bnavLabel = document.getElementById('bottomNavUserLabel');
+    if (bnavLabel) {
+      bnavLabel.textContent = userProfile.username ? `@${userProfile.username}` : 'Profile';
+    }
   }
 
   function openProfileModal() {
@@ -801,13 +805,32 @@
     return ARTISTS.filter((a) => ARTIST_META[a]?.lang === config.lang);
   }
 
+  function getGenreCoverImage(genreName) {
+    const langArtists = getArtistsForCurrentLang();
+    if (genreName === 'all') {
+      const firstArt = langArtists.find((a) => ARTIST_META[a]?.avatar);
+      return firstArt ? ARTIST_META[firstArt].avatar : '';
+    }
+    const matchArt = langArtists.find((a) => ARTIST_META[a]?.genre === genreName && ARTIST_META[a]?.avatar);
+    return matchArt ? ARTIST_META[matchArt].avatar : '';
+  }
+
   function renderGenreChips() {
     const container = document.getElementById('genreSelector');
     container.innerHTML = '';
 
+    const langArtists = getArtistsForCurrentLang();
+    const allCover = getGenreCoverImage('all');
     const allChip = document.createElement('button');
-    allChip.className = `chip-btn ${config.genre === 'all' ? 'active' : ''}`;
-    allChip.textContent = 'All Genres';
+    allChip.type = 'button';
+    allChip.className = `genre-visual-card ${config.genre === 'all' ? 'active' : ''}`;
+    if (allCover) allChip.style.backgroundImage = `url("${allCover}")`;
+    allChip.innerHTML = `
+      <div class="glass-card-overlay">
+        <span class="gvc-title">All Genres</span>
+        <span class="gvc-count">${langArtists.length}</span>
+      </div>
+    `;
     allChip.addEventListener('click', () => {
       config.genre = 'all';
       renderGenreChips();
@@ -817,17 +840,26 @@
     container.appendChild(allChip);
 
     const activeGenres = GENRES.filter((g) =>
-      getArtistsForCurrentLang().some((a) => ARTIST_META[a]?.genre === g)
+      langArtists.some((a) => ARTIST_META[a]?.genre === g)
     );
 
     activeGenres.forEach((g) => {
+      const gCover = getGenreCoverImage(g);
+      const gCount = langArtists.filter((a) => ARTIST_META[a]?.genre === g).length;
       const chip = document.createElement('button');
-      chip.className = `chip-btn ${config.genre === g ? 'active' : ''}`;
-      chip.textContent = g;
+      chip.type = 'button';
+      chip.className = `genre-visual-card ${config.genre === g ? 'active' : ''}`;
+      if (gCover) chip.style.backgroundImage = `url("${gCover}")`;
+      chip.innerHTML = `
+        <div class="glass-card-overlay">
+          <span class="gvc-title">${g}</span>
+          <span class="gvc-count">${gCount}</span>
+        </div>
+      `;
       chip.addEventListener('click', () => {
         config.genre = g;
         if (config.artist !== 'all' && ARTIST_META[config.artist]?.genre !== g) {
-          config.artist = 'all';
+          selectArtistForLobby('all');
         }
         renderGenreChips();
         renderArtistCards();
@@ -851,17 +883,22 @@
 
   function renderArtistCards() {
     const displayEl = document.getElementById('selectedArtistDisplay');
+    const selectedBar = document.getElementById('selectedArtistBar');
     const clearBtn = document.getElementById('clearArtistSelectionBtn');
     if (!displayEl) return;
 
     const langArtists = getArtistsForCurrentLang();
 
     if (config.artist === 'all') {
+      const cover = getGenreCoverImage(config.genre);
+      if (selectedBar) {
+        selectedBar.style.backgroundImage = cover ? `url("${cover}")` : 'none';
+      }
       displayEl.innerHTML = `
         <div class="artist-avatar">ALL</div>
         <div class="artist-btn-info">
           <div class="artist-btn-name">All Artists (${langArtists.length})</div>
-          <div class="artist-btn-sub">Free Play Open • Click to pick an artist campaign</div>
+          <div class="artist-btn-sub">Free Play Open • Tap to pick an artist campaign</div>
         </div>
       `;
       if (clearBtn) clearBtn.classList.add('hidden');
@@ -869,6 +906,9 @@
       const meta = ARTIST_META[config.artist];
       const camp = getArtistCampaign(config.artist);
       const badgeStr = camp.mastered ? '👑 MASTER' : `Stage ${Math.min(3, camp.unlockedStage || 1)}/3`;
+      if (selectedBar) {
+        selectedBar.style.backgroundImage = meta.avatar ? `url("${meta.avatar}")` : 'none';
+      }
       displayEl.innerHTML = `
         <img src="${meta.avatar}" alt="${config.artist}" class="artist-avatar" />
         <div class="artist-btn-info">
@@ -892,18 +932,22 @@
     const langArtists = getArtistsForCurrentLang();
 
     if (!q) {
+      const allCover = getGenreCoverImage(config.genre);
       const allOpt = document.createElement('button');
       allOpt.type = 'button';
       allOpt.className = `az-artist-option ${config.artist === 'all' ? 'active' : ''}`;
+      if (allCover) allOpt.style.backgroundImage = `url("${allCover}")`;
       allOpt.innerHTML = `
-        <div class="az-opt-left">
-          <div class="artist-avatar">ALL</div>
-          <div>
-            <div class="artist-btn-name">All Artists</div>
-            <div class="artist-btn-sub">${langArtists.length} artists • Free Play</div>
+        <div class="az-glass-bar">
+          <div class="az-opt-left">
+            <div class="artist-avatar">ALL</div>
+            <div style="min-width:0">
+              <div class="artist-btn-name">All Artists</div>
+              <div class="artist-btn-sub">${langArtists.length} artists • Free Play</div>
+            </div>
           </div>
+          <span class="az-opt-right mono">MIX</span>
         </div>
-        <span class="az-opt-right">Mix</span>
       `;
       allOpt.addEventListener('click', () => {
         selectArtistForLobby('all');
@@ -921,7 +965,7 @@
     });
 
     if (filteredArtists.length === 0) {
-      listEl.innerHTML = `<div style="padding:1rem;color:var(--text-dim);text-align:center;font-size:0.84rem">No matching artists found</div>`;
+      listEl.innerHTML = `<div style="grid-column:1/-1;padding:1rem;color:var(--text-dim);text-align:center;font-size:0.84rem">No matching artists found</div>`;
       return;
     }
 
@@ -941,15 +985,18 @@
       const opt = document.createElement('button');
       opt.type = 'button';
       opt.className = `az-artist-option ${config.artist === artistName ? 'active' : ''} ${!matchesGenre ? 'disabled-by-genre' : ''}`;
+      if (meta.avatar) opt.style.backgroundImage = `url("${meta.avatar}")`;
       opt.innerHTML = `
-        <div class="az-opt-left">
-          <img src="${meta.avatar}" alt="${artistName}" class="artist-avatar" />
-          <div>
-            <div class="artist-btn-name">${artistName} ${camp.mastered ? '👑' : ''}</div>
-            <div class="artist-btn-sub">${meta.genre} • ${camp.mastered ? 'Mastered' : `Stage ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
+        <div class="az-glass-bar">
+          <div class="az-opt-left">
+            <img src="${meta.avatar}" alt="${artistName}" class="artist-avatar" />
+            <div style="min-width:0">
+              <div class="artist-btn-name">${artistName} ${camp.mastered ? '👑' : ''}</div>
+              <div class="artist-btn-sub">${meta.genre} • ${camp.mastered ? 'Mastered' : `Stg ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
+            </div>
           </div>
+          <span class="az-opt-right mono">${meta.totalSongs}</span>
         </div>
-        <span class="az-opt-right mono">${meta.totalSongs}</span>
       `;
       opt.addEventListener('click', () => {
         selectArtistForLobby(artistName);
@@ -1510,17 +1557,29 @@
       setStopwatchDisplay(elapsedMs);
     }
 
+    const chronoEl = document.querySelector('#view-game .chrono-stage');
+    if (chronoEl) {
+      chronoEl.classList.remove('pulse-correct', 'shake-wrong');
+      void chronoEl.offsetWidth;
+      chronoEl.classList.add(isCorrect ? 'pulse-correct' : 'shake-wrong');
+    }
+
     if (config.inputMode === 'choices') {
       document.querySelectorAll('#answerChoicesContainer .choice-btn').forEach((btn) => {
         btn.disabled = true;
         if (btn.dataset.songId === currentSong.id) {
           btn.classList.add('correct-choice');
+          if (isCorrect) btn.classList.add('pulse-correct');
         } else if (btn === clickedBtn && !isCorrect) {
-          btn.classList.add('wrong-choice');
+          btn.classList.add('wrong-choice', 'shake-wrong');
         }
       });
     } else {
-      document.getElementById('songGuessInput').disabled = true;
+      const gInput = document.getElementById('songGuessInput');
+      gInput.disabled = true;
+      gInput.classList.remove('pulse-correct', 'shake-wrong');
+      void gInput.offsetWidth;
+      gInput.classList.add(isCorrect ? 'pulse-correct' : 'shake-wrong');
       document.getElementById('autocompleteDropdown').innerHTML = '';
     }
 
@@ -2222,16 +2281,19 @@
       row.className = 'fastest-artist-row';
       row.style.cursor = 'pointer';
       row.title = 'Click to open artist campaign';
+      if (meta.avatar) row.style.backgroundImage = `url("${meta.avatar}")`;
       row.innerHTML = `
-        <div class="far-left">
-          <img src="${meta.avatar}" alt="${artistName}" class="far-img" />
-          <div class="far-meta">
-            <div class="far-artist">${artistName} ${camp.mastered ? '👑' : ''}</div>
-            <div class="far-song">${fastest ? fastest.title : `Stage ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
+        <div class="far-glass-inner">
+          <div class="far-left">
+            <img src="${meta.avatar}" alt="${artistName}" class="far-img" />
+            <div class="far-meta">
+              <div class="far-artist">${artistName} ${camp.mastered ? '👑' : ''}</div>
+              <div class="far-song">${fastest ? fastest.title : `Stage ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
+            </div>
           </div>
-        </div>
-        <div class="far-time mono ${fastest ? '' : 'empty'}">
-          ${fastest ? formatMs(fastest.timeMs) : '--.---s'}
+          <div class="far-time mono ${fastest ? '' : 'empty'}">
+            ${fastest ? formatMs(fastest.timeMs) : '--.---s'}
+          </div>
         </div>
       `;
       row.addEventListener('click', () => {
@@ -2736,12 +2798,16 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     const btn1 = document.getElementById('openImportModalBtn');
+    const bottomAddBtn = document.getElementById('bottomAddArtistBtn');
+    const bottomProfBtn = document.getElementById('bottomProfileBtn');
     const closeBtn = document.getElementById('closeImportModalBtn');
     const searchBtn = document.getElementById('searchItunesArtistBtn');
     const queryInput = document.getElementById('importArtistQueryInput');
     const refreshGlobalBtn = document.getElementById('refreshGlobalBoardBtn');
 
     if (btn1) btn1.addEventListener('click', openImportArtistModal);
+    if (bottomAddBtn) bottomAddBtn.addEventListener('click', openImportArtistModal);
+    if (bottomProfBtn) bottomProfBtn.addEventListener('click', openProfileModal);
     if (closeBtn) closeBtn.addEventListener('click', closeImportArtistModal);
     if (searchBtn) searchBtn.addEventListener('click', searchItunesArtists);
     if (refreshGlobalBtn) refreshGlobalBtn.addEventListener('click', loadGlobalCloudLeaderboards);
