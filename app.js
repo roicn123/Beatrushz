@@ -331,6 +331,14 @@
 
   // ==================== INITIALIZATION & UI BINDINGS ====================
   function init() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const sharedArtist = params.get('artist');
+      if (sharedArtist && ARTIST_META[sharedArtist]) {
+        selectArtistForLobby(sharedArtist);
+      }
+    } catch (e) {}
+
     updateHeaderUsernameUI();
     renderGenreChips();
     renderArtistCards();
@@ -1949,15 +1957,23 @@
     return lines;
   }
 
+  function getChallengeUrl(d) {
+    const baseUrl = window.location.origin && window.location.origin.startsWith('http')
+      ? window.location.origin
+      : 'https://beatrushz.netlify.app';
+    if (d && d.artist && d.artist !== 'all') {
+      return `${baseUrl}/?artist=${encodeURIComponent(d.artist)}`;
+    }
+    return baseUrl;
+  }
+
   function formatShareText(d) {
     const emojiRow = (d.results || []).map((r) => (r.correct ? '🟢' : '🔴')).join('');
     const targetLabel = d.artist !== 'all'
       ? (d.isCampaign ? `${d.artist} (Stage ${d.campaignStage}/3)` : d.artist)
       : (d.genre !== 'all' ? `${d.genre} Mix` : 'All Artists');
     const fastStr = d.fastestInRound ? formatMs(d.fastestInRound.timeMs) : '--.---s';
-    const siteUrl = window.location.origin && window.location.origin.startsWith('http')
-      ? window.location.origin
-      : 'https://beatrushz.netlify.app';
+    const siteUrl = getChallengeUrl(d);
 
     return [
       `⚡ BEATRUSHZ — ${targetLabel}`,
@@ -2139,6 +2155,11 @@
       : 'BEATRUSHZ.NETLIFY.APP';
     ctx.fillText(`PLAY AT ${hostLabel}`, 540, 1700);
 
+    const challengeUrl = getChallengeUrl(d);
+    try {
+      await navigator.clipboard.writeText(challengeUrl);
+    } catch (e) {}
+
     canvas.toBlob(async (blob) => {
       if (!blob) return;
       const file = new File([blob], 'beatrushz-score.png', { type: 'image/png' });
@@ -2147,9 +2168,10 @@
           await navigator.share({
             files: [file],
             title: 'Beatrushz Challenge',
-            text: formatShareText(d)
+            text: formatShareText(d),
+            url: challengeUrl
           });
-          if (statusEl) statusEl.textContent = 'Shared Story Card!';
+          if (statusEl) statusEl.textContent = '🔗 Link auto-copied! Paste it into Instagram "Link" Sticker.';
           return;
         } catch (err) {}
       }
@@ -2162,7 +2184,7 @@
       a.click();
       a.remove();
       setTimeout(() => URL.revokeObjectURL(url), 5000);
-      if (statusEl) statusEl.textContent = '📸 Story Card downloaded! Post it to Instagram Stories or WhatsApp.';
+      if (statusEl) statusEl.textContent = '📸 Card downloaded + 🔗 Game link auto-copied! Paste it into IG Link Sticker.';
     }, 'image/png');
   }
 
