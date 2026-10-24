@@ -10,6 +10,7 @@
 
   const BAD_REMIX_WORDS = [
     'remix', 'rmx', 'mix)', 'mix]', 'rework', 'vip', 'edit)', 'edit]', 'radio edit',
+    'clean edit', '(clean)', '[clean]', 'clean version',
     'version', 'ver.', 'live', 'acoustic', 'instrumental', 'karaoke', 'sped up',
     'slowed', 'reverb', 'chopped', 'screwed', 'lullaby', 'tribute', 'cover',
     'demo', 'commentary', 'skit', 'interlude', 'intro', 'outro', 'medley',
@@ -2618,13 +2619,24 @@
     cands.innerHTML = '';
 
     try {
-      const [searchRes, lookupRes] = await Promise.all([
+      const [searchRes, lookupRes, albumsRes] = await Promise.all([
         fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(artistName)}&entity=song&limit=200`).then((r) => r.json()).catch(() => ({ results: [] })),
-        fetch(`https://itunes.apple.com/lookup?id=${artistObj.artistId}&entity=song&limit=200`).then((r) => r.json()).catch(() => ({ results: [] }))
+        fetch(`https://itunes.apple.com/lookup?id=${artistObj.artistId}&entity=song&limit=200`).then((r) => r.json()).catch(() => ({ results: [] })),
+        fetch(`https://itunes.apple.com/lookup?id=${artistObj.artistId}&entity=album&limit=40`).then((r) => r.json()).catch(() => ({ results: [] }))
       ]);
 
-      const rawResults = [...(searchRes.results || []), ...((lookupRes.results || []).slice(1))];
-      const seenNorm = new Set();
+      let albumTracks = [];
+      const expAlbumIds = ((albumsRes.results || []).slice(1))
+        .filter((a) => a.wrapperType === 'collection' && a.collectionExplicitness === 'explicit')
+        .map((a) => a.collectionId)
+        .slice(0, 20);
+      if (expAlbumIds.length > 0) {
+        const albLookup = await fetch(`https://itunes.apple.com/lookup?id=${expAlbumIds.join(',')}&entity=song&limit=200`).then((r) => r.json()).catch(() => ({ results: [] }));
+        albumTracks = (albLookup.results || []).filter((r) => r.wrapperType === 'track');
+      }
+
+      const rawResults = [...(searchRes.results || []), ...((lookupRes.results || []).slice(1)), ...albumTracks];
+      const normIndexMap = new Map();
       const tracks = [];
 
       for (const it of rawResults) {
@@ -2640,21 +2652,34 @@
         if (clean.length < 2) continue;
 
         const normKey = clean.toLowerCase().replace(/[^a-z0-9\u0590-\u05fe]/g, '');
-        if (!normKey || seenNorm.has(normKey)) continue;
-        seenNorm.add(normKey);
+        if (!normKey) continue;
 
-        tracks.push({
+        const candidateObj = {
           id: `it_${it.trackId}`,
           title: clean,
           fullTitle: it.trackName,
           artist: artistName,
           genre,
           lang,
+          explicitness: it.trackExplicitness || 'notExplicit',
           previewUrl: it.previewUrl,
           artwork: it.artworkUrl100 ? it.artworkUrl100.replace('100x100bb', '300x300bb') : '',
           album: it.collectionName || '',
           releaseYear: it.releaseDate ? it.releaseDate.slice(0, 4) : ''
-        });
+        };
+
+        if (normIndexMap.has(normKey)) {
+          const existingIdx = normIndexMap.get(normKey);
+          const existingTrack = tracks[existingIdx];
+          // Upgrade censored ('cleaned') or non-explicit track to the uncensored 'explicit' version in place
+          if (existingTrack.explicitness !== 'explicit' && (candidateObj.explicitness === 'explicit' || (existingTrack.explicitness === 'cleaned' && candidateObj.explicitness === 'notExplicit'))) {
+            tracks[existingIdx] = candidateObj;
+          }
+          continue;
+        }
+
+        normIndexMap.set(normKey, tracks.length);
+        tracks.push(candidateObj);
       }
 
       if (tracks.length < 4) {
