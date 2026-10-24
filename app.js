@@ -110,6 +110,12 @@
     hard: 1.5
   };
 
+  const CAMPAIGN_STAGES = {
+    1: { stage: 1, name: 'Stage 1: Hits', shortName: 'STAGE 1', diff: 'easy', roundLength: 5, minCorrect: 4, minScore: 2800 },
+    2: { stage: 2, name: 'Stage 2: Popular', shortName: 'STAGE 2', diff: 'medium', roundLength: 5, minCorrect: 4, minScore: 3400 },
+    3: { stage: 3, name: 'Stage 3: Deep Cuts', shortName: 'STAGE 3', diff: 'hard', roundLength: 5, minCorrect: 4, minScore: 4000 }
+  };
+
   // ==================== STATE ====================
   let config = {
     lang: 'all',          // 'all' | 'en' | 'he'
@@ -117,7 +123,8 @@
     genre: 'all',         // 'all' | genre string
     artist: 'all',        // 'all' | artist string
     inputMode: 'choices', // 'choices' | 'typing'
-    roundLength: 10
+    roundLength: 10,
+    campaignStage: 1      // 1 | 2 | 3 | 'free'
   };
 
   let userProfile = loadUserProfile();
@@ -270,8 +277,22 @@
       byArtist: {},
       byCombo: {},
       songRecords: {},
-      fastestHistory: []
+      fastestHistory: [],
+      artistCampaigns: {}
     };
+  }
+
+  function getArtistCampaign(artistName) {
+    if (!stats.artistCampaigns) stats.artistCampaigns = {};
+    if (!stats.artistCampaigns[artistName]) {
+      stats.artistCampaigns[artistName] = {
+        unlockedStage: 1,
+        mastered: false,
+        stageScores: { 1: 0, 2: 0, 3: 0 },
+        totalMasteryScore: 0
+      };
+    }
+    return stats.artistCampaigns[artistName];
   }
 
   function loadStats() {
@@ -417,12 +438,34 @@
             };
             updated = true;
           }
+        } else if (r.record_type === 'artist_stage' && r.artist) {
+          const camp = getArtistCampaign(r.artist);
+          const stageNum = parseInt(r.difficulty, 10) || 1;
+          if (r.score > (camp.stageScores[stageNum] || 0)) {
+            camp.stageScores[stageNum] = r.score;
+            updated = true;
+          }
+          if (stageNum + 1 > camp.unlockedStage) {
+            camp.unlockedStage = Math.min(4, stageNum + 1);
+            if (camp.unlockedStage >= 4) camp.mastered = true;
+            updated = true;
+          }
+          camp.totalMasteryScore = (camp.stageScores[1] || 0) + (camp.stageScores[2] || 0) + (camp.stageScores[3] || 0);
+        } else if (r.record_type === 'artist_mastery' && r.artist) {
+          const camp = getArtistCampaign(r.artist);
+          camp.mastered = true;
+          camp.unlockedStage = 4;
+          if (r.score > (camp.totalMasteryScore || 0)) {
+            camp.totalMasteryScore = r.score;
+          }
+          updated = true;
         }
       });
 
       if (updated) {
         saveStats();
         updateHeaderQuickStats();
+        renderArtistCards();
         renderSidebarArtistFastest();
         renderStatsDashboard();
         updateLobbyState();
@@ -677,7 +720,7 @@
 
     clearArtistBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      config.artist = 'all';
+      selectArtistForLobby('all');
       closeLobbyArtistDropdown();
       renderArtistCards();
       updateLobbyState();
@@ -785,6 +828,18 @@
     });
   }
 
+  function selectArtistForLobby(artistName) {
+    config.artist = artistName;
+    if (artistName !== 'all') {
+      const camp = getArtistCampaign(artistName);
+      if (camp.mastered || camp.unlockedStage >= 4) {
+        config.campaignStage = 'free';
+      } else {
+        config.campaignStage = camp.unlockedStage || 1;
+      }
+    }
+  }
+
   function renderArtistCards() {
     const displayEl = document.getElementById('selectedArtistDisplay');
     const clearBtn = document.getElementById('clearArtistSelectionBtn');
@@ -797,16 +852,18 @@
         <div class="artist-avatar">ALL</div>
         <div class="artist-btn-info">
           <div class="artist-btn-name">All Artists (${langArtists.length})</div>
-          <div class="artist-btn-sub">Click to search or select an artist</div>
+          <div class="artist-btn-sub">Free Play Open • Click to pick an artist campaign</div>
         </div>
       `;
       if (clearBtn) clearBtn.classList.add('hidden');
     } else {
       const meta = ARTIST_META[config.artist];
+      const camp = getArtistCampaign(config.artist);
+      const badgeStr = camp.mastered ? '👑 MASTER' : `Stage ${Math.min(3, camp.unlockedStage || 1)}/3`;
       displayEl.innerHTML = `
         <img src="${meta.avatar}" alt="${config.artist}" class="artist-avatar" />
         <div class="artist-btn-info">
-          <div class="artist-btn-name">${config.artist}</div>
+          <div class="artist-btn-name">${config.artist} <span style="color:var(--accent);font-size:0.75rem;margin-left:0.35rem">${badgeStr}</span></div>
           <div class="artist-btn-sub">${meta.genre} • ${meta.totalSongs} tracks</div>
         </div>
       `;
@@ -814,6 +871,7 @@
     }
 
     renderLobbyArtistAzList(document.getElementById('lobbyArtistSearchInput')?.value || '');
+    renderArtistCampaignPanel();
   }
 
   function renderLobbyArtistAzList(query = '') {
@@ -833,13 +891,13 @@
           <div class="artist-avatar">ALL</div>
           <div>
             <div class="artist-btn-name">All Artists</div>
-            <div class="artist-btn-sub">${langArtists.length} artists available</div>
+            <div class="artist-btn-sub">${langArtists.length} artists • Free Play</div>
           </div>
         </div>
         <span class="az-opt-right">Mix</span>
       `;
       allOpt.addEventListener('click', () => {
-        config.artist = 'all';
+        selectArtistForLobby('all');
         closeLobbyArtistDropdown();
         renderArtistCards();
         updateLobbyState();
@@ -869,6 +927,7 @@
       }
 
       const meta = ARTIST_META[artistName];
+      const camp = getArtistCampaign(artistName);
       const matchesGenre = config.genre === 'all' || meta.genre === config.genre;
       const opt = document.createElement('button');
       opt.type = 'button';
@@ -877,14 +936,14 @@
         <div class="az-opt-left">
           <img src="${meta.avatar}" alt="${artistName}" class="artist-avatar" />
           <div>
-            <div class="artist-btn-name">${artistName}</div>
-            <div class="artist-btn-sub">${meta.genre}</div>
+            <div class="artist-btn-name">${artistName} ${camp.mastered ? '👑' : ''}</div>
+            <div class="artist-btn-sub">${meta.genre} • ${camp.mastered ? 'Mastered' : `Stage ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
           </div>
         </div>
         <span class="az-opt-right mono">${meta.totalSongs}</span>
       `;
       opt.addEventListener('click', () => {
-        config.artist = artistName;
+        selectArtistForLobby(artistName);
         if (config.genre !== 'all' && config.genre !== meta.genre) {
           config.genre = 'all';
           renderGenreChips();
@@ -897,26 +956,190 @@
     });
   }
 
+  async function loadArtistWorldTopMasters(artistName) {
+    const listEl = document.getElementById('acpWorldTopList');
+    if (!listEl) return;
+    if (!isSupabaseConfigured()) {
+      listEl.innerHTML = `<span style="color:var(--text-dim)">Offline</span>`;
+      return;
+    }
+    listEl.innerHTML = `<span style="color:var(--text-dim)">Loading...</span>`;
+    try {
+      const rows = await sbRest(
+        'global_records',
+        'GET',
+        `record_type=eq.artist_mastery&artist=eq.${encodeURIComponent(artistName)}&order=score.desc&limit=15`
+      );
+      if (!Array.isArray(rows) || rows.length === 0) {
+        listEl.innerHTML = `<span style="color:var(--text-dim)">No Master crowned yet — be #1 in the world!</span>`;
+        return;
+      }
+      // Deduplicate by username (keep highest score per player)
+      const bestByPlayer = [];
+      const seenUsers = new Set();
+      for (const r of rows) {
+        const uKey = (r.username || '').toLowerCase();
+        if (!uKey || seenUsers.has(uKey)) continue;
+        seenUsers.add(uKey);
+        bestByPlayer.push(r);
+        if (bestByPlayer.length === 3) break;
+      }
+      listEl.innerHTML = bestByPlayer.map((r, idx) => `
+        <span class="acp-world-pill ${idx === 0 ? 'rank-1' : ''}">
+          ${idx === 0 ? '👑 #1' : `#${idx + 1}`} @${r.username} (${(r.score || 0).toLocaleString()})
+        </span>
+      `).join('');
+    } catch (e) {
+      listEl.innerHTML = `<span style="color:var(--text-dim)">No records yet</span>`;
+    }
+  }
+
+  function renderArtistCampaignPanel() {
+    const panel = document.getElementById('artistCampaignPanel');
+    const diffGroup = document.getElementById('difficultySelector')?.closest('.filter-group');
+    const lenGroup = document.getElementById('roundLengthSelector')?.closest('.filter-group');
+    const startBtn = document.getElementById('startGameBtn');
+
+    if (!panel) return;
+
+    if (config.artist === 'all') {
+      panel.classList.add('hidden');
+      if (diffGroup) diffGroup.classList.remove('disabled-by-campaign');
+      if (lenGroup) lenGroup.classList.remove('disabled-by-campaign');
+      if (startBtn) {
+        startBtn.innerHTML = `<span>START SESSION</span><kbd class="start-kbd">PLAY ▶</kbd>`;
+      }
+      return;
+    }
+
+    panel.classList.remove('hidden');
+    const camp = getArtistCampaign(config.artist);
+    const unlocked = camp.unlockedStage || 1;
+    const isMastered = Boolean(camp.mastered || unlocked >= 4);
+
+    if (config.campaignStage !== 'free' && config.campaignStage > unlocked) {
+      config.campaignStage = isMastered ? 'free' : unlocked;
+    }
+
+    document.getElementById('acpArtistTitle').textContent = `${config.artist} — Campaign`;
+    const badgeEl = document.getElementById('acpMasteryBadge');
+    const descEl = document.getElementById('acpStatusDesc');
+
+    if (isMastered) {
+      badgeEl.textContent = `👑 MASTER (${(camp.totalMasteryScore || 0).toLocaleString()} PTS)`;
+      badgeEl.classList.add('mastered');
+      descEl.textContent = 'Free Play unlocked! Play freely or replay any Campaign Stage to boost your World Mastery rank.';
+    } else {
+      badgeEl.textContent = `STAGE ${Math.min(3, unlocked)} / 3`;
+      badgeEl.classList.remove('mastered');
+      descEl.textContent = 'Pass all 3 stages (5 tracks each) to earn the Artist Crown 👑 and unlock Free Play.';
+    }
+
+    const grid = document.getElementById('acpStagesGrid');
+    grid.innerHTML = '';
+
+    [1, 2, 3].forEach((stNum) => {
+      const st = CAMPAIGN_STAGES[stNum];
+      const isStUnlocked = stNum <= unlocked || isMastered;
+      const isStCleared = stNum < unlocked || isMastered;
+      const bestScore = camp.stageScores?.[stNum] || 0;
+      const isSelected = config.campaignStage === stNum;
+
+      const card = document.createElement('button');
+      card.type = 'button';
+      card.className = `acp-stage-card ${isSelected ? 'active' : ''} ${isStCleared ? 'cleared' : ''} ${!isStUnlocked ? 'locked' : ''}`;
+      card.innerHTML = `
+        <div class="acp-stage-top">
+          <span>STAGE ${stNum} • ${st.diff.toUpperCase()}</span>
+          <span>${isStCleared ? '✓' : (isStUnlocked ? '🔓' : '🔒')}</span>
+        </div>
+        <div class="acp-stage-name">${st.name.replace(/^Stage \d:\s*/, '')}</div>
+        <div class="acp-stage-req">${bestScore > 0 ? `Best: ${bestScore.toLocaleString()} pts` : `Req: ${st.minCorrect}/5 & ${st.minScore.toLocaleString()}+`}</div>
+      `;
+      card.addEventListener('click', () => {
+        if (!isStUnlocked) return;
+        config.campaignStage = stNum;
+        renderArtistCampaignPanel();
+        updateLobbyState();
+      });
+      grid.appendChild(card);
+    });
+
+    // 4th card: Free Play
+    const freeCard = document.createElement('button');
+    freeCard.type = 'button';
+    const isFreeSelected = config.campaignStage === 'free';
+    freeCard.className = `acp-stage-card ${isFreeSelected ? 'active' : ''} ${isMastered ? 'cleared' : 'locked'}`;
+    freeCard.innerHTML = `
+      <div class="acp-stage-top">
+        <span>CUSTOM</span>
+        <span>${isMastered ? '👑' : '🔒'}</span>
+      </div>
+      <div class="acp-stage-name">Free Play</div>
+      <div class="acp-stage-req">${isMastered ? 'All lengths & modes' : 'Clear Stage 3 first'}</div>
+    `;
+    freeCard.addEventListener('click', () => {
+      if (!isMastered) return;
+      config.campaignStage = 'free';
+      renderArtistCampaignPanel();
+      updateLobbyState();
+    });
+    grid.appendChild(freeCard);
+
+    if (config.campaignStage === 'free') {
+      if (diffGroup) diffGroup.classList.remove('disabled-by-campaign');
+      if (lenGroup) lenGroup.classList.remove('disabled-by-campaign');
+      if (startBtn) {
+        startBtn.innerHTML = `<span>START FREE PLAY — ${config.artist.toUpperCase()}</span><kbd class="start-kbd">PLAY ▶</kbd>`;
+      }
+    } else {
+      if (diffGroup) diffGroup.classList.add('disabled-by-campaign');
+      if (lenGroup) lenGroup.classList.add('disabled-by-campaign');
+      const st = CAMPAIGN_STAGES[config.campaignStage] || CAMPAIGN_STAGES[1];
+      if (startBtn) {
+        startBtn.innerHTML = `<span>START ${st.name.toUpperCase()} (5 TRACKS)</span><kbd class="start-kbd">STAGE ${st.stage} ▶</kbd>`;
+      }
+    }
+
+    loadArtistWorldTopMasters(config.artist);
+  }
+
   function getFilteredPool() {
-    return CATALOG.filter((song) => {
+    const isCampaignRun = config.artist !== 'all' && config.campaignStage !== 'free';
+    const effectiveDiff = isCampaignRun
+      ? (CAMPAIGN_STAGES[config.campaignStage]?.diff || 'easy')
+      : config.difficulty;
+
+    let pool = CATALOG.filter((song) => {
       if (config.lang !== 'all' && song.lang !== config.lang) return false;
-      if (config.difficulty !== 'all' && song.difficulty !== config.difficulty) return false;
+      if (effectiveDiff !== 'all' && song.difficulty !== effectiveDiff) return false;
       if (config.genre !== 'all' && song.genre !== config.genre) return false;
       if (config.artist !== 'all' && song.artist !== config.artist) return false;
       return true;
     });
+
+    // Fallback if an imported artist has fewer than 5 tracks in a specific difficulty tier
+    if (isCampaignRun && pool.length < 5) {
+      pool = CATALOG.filter((song) => song.artist === config.artist);
+    }
+    return pool;
   }
 
   function updateLobbyState() {
     const pool = getFilteredPool();
     document.getElementById('availablePoolCount').textContent = `${pool.length} tracks`;
 
-    const comboKey = getComboKey(config.difficulty, config.genre, config.artist);
+    const isCampaignRun = config.artist !== 'all' && config.campaignStage !== 'free';
+    const effectiveDiff = isCampaignRun
+      ? (CAMPAIGN_STAGES[config.campaignStage]?.diff || 'easy')
+      : config.difficulty;
+
+    const comboKey = getComboKey(effectiveDiff, config.genre, config.artist);
     const pb = stats.byCombo[comboKey];
     const titleEl = document.getElementById('pbCategoryTitle');
     const detailsEl = document.getElementById('pbCategoryDetails');
 
-    titleEl.textContent = getCategoryLabel(config.difficulty, config.genre, config.artist);
+    titleEl.textContent = getCategoryLabel(effectiveDiff, config.genre, config.artist);
     if (pb) {
       detailsEl.innerHTML = `Best Score: <strong class="mono">${pb.bestScore.toLocaleString()}</strong> • Accuracy: <strong class="mono">${pb.bestAccuracy}</strong> • Avg: <strong class="mono">${formatMs(pb.bestAvgTimeMs)}</strong>`;
     } else {
@@ -941,17 +1164,24 @@
       return;
     }
 
-    const count = Math.min(config.roundLength, pool.length);
+    const isCampaignRun = config.artist !== 'all' && config.campaignStage !== 'free';
+    const stageObj = isCampaignRun ? CAMPAIGN_STAGES[config.campaignStage] : null;
+    const desiredCount = isCampaignRun ? 5 : config.roundLength;
+    const count = Math.min(desiredCount, pool.length);
     const selectedQueue = shuffleArray(pool).slice(0, count);
 
     game.active = true;
+    game.isCampaign = isCampaignRun;
+    game.campaignStage = isCampaignRun ? stageObj.stage : null;
     game.queue = selectedQueue;
     game.currentIndex = 0;
     game.score = 0;
     game.streak = 0;
     game.results = [];
 
-    document.getElementById('activeDiffTag').textContent = DIFF_LABELS[config.difficulty];
+    document.getElementById('activeDiffTag').textContent = isCampaignRun
+      ? `STAGE ${stageObj.stage} (${DIFF_LABELS[stageObj.diff]})`
+      : DIFF_LABELS[config.difficulty];
     document.getElementById('activeFilterTag').textContent =
       config.artist !== 'all' ? config.artist : (config.genre !== 'all' ? config.genre : 'All Artists');
 
@@ -1539,6 +1769,87 @@
       }
     }
 
+    // Campaign Progression & Mastery Check
+    const campBanner = document.getElementById('campaignSummaryBanner');
+    const playAgainBtn = document.getElementById('playAgainSameBtn');
+    let campaignStatusObj = null;
+
+    if (game.isCampaign && config.artist !== 'all' && game.campaignStage) {
+      const stDef = CAMPAIGN_STAGES[game.campaignStage] || CAMPAIGN_STAGES[1];
+      const camp = getArtistCampaign(config.artist);
+      const passed = correctList.length >= stDef.minCorrect && game.score >= stDef.minScore;
+
+      if (game.score > (camp.stageScores[stDef.stage] || 0)) {
+        camp.stageScores[stDef.stage] = game.score;
+      }
+      camp.totalMasteryScore = (camp.stageScores[1] || 0) + (camp.stageScores[2] || 0) + (camp.stageScores[3] || 0);
+
+      if (passed) {
+        const nextUnlock = Math.min(4, stDef.stage + 1);
+        if (nextUnlock > (camp.unlockedStage || 1)) {
+          camp.unlockedStage = nextUnlock;
+        }
+        const justMastered = stDef.stage === 3 || camp.unlockedStage >= 4;
+        if (justMastered) {
+          camp.mastered = true;
+          camp.unlockedStage = 4;
+        }
+
+        pushRecordToSupabase({
+          record_type: 'artist_stage',
+          song_id: null,
+          song_title: `${config.artist} - Stage ${stDef.stage}`,
+          artist: config.artist,
+          genre: ARTIST_META[config.artist]?.genre || 'Pop',
+          difficulty: String(stDef.stage),
+          time_ms: avgTimeMs,
+          score: camp.stageScores[stDef.stage],
+          accuracy: accuracyStr
+        });
+
+        if (camp.mastered) {
+          pushRecordToSupabase({
+            record_type: 'artist_mastery',
+            song_id: null,
+            song_title: `${config.artist} Master Crown`,
+            artist: config.artist,
+            genre: ARTIST_META[config.artist]?.genre || 'Pop',
+            difficulty: 'master',
+            time_ms: avgTimeMs,
+            score: camp.totalMasteryScore,
+            accuracy: accuracyStr
+          });
+        }
+
+        if (campBanner) {
+          campBanner.classList.remove('hidden', 'failed');
+          campBanner.classList.add('passed');
+          if (stDef.stage < 3) {
+            campBanner.textContent = `🔓 STAGE ${stDef.stage} CLEARED! Stage ${stDef.stage + 1} (${CAMPAIGN_STAGES[stDef.stage + 1].name}) is now unlocked!`;
+            config.campaignStage = stDef.stage + 1;
+            if (playAgainBtn) playAgainBtn.textContent = `Start Stage ${stDef.stage + 1} ▶`;
+          } else {
+            campBanner.textContent = `👑 ARTIST MASTERY UNLOCKED! Total Mastery Score: ${camp.totalMasteryScore.toLocaleString()} pts • Free Play is now open!`;
+            config.campaignStage = 'free';
+            if (playAgainBtn) playAgainBtn.textContent = `Play Free Mode (${config.artist}) ▶`;
+          }
+        }
+        campaignStatusObj = { passed: true, stage: stDef.stage, mastered: camp.mastered, totalMasteryScore: camp.totalMasteryScore };
+      } else {
+        if (campBanner) {
+          campBanner.classList.remove('hidden', 'passed');
+          campBanner.classList.add('failed');
+          campBanner.textContent = `🔒 Stage ${stDef.stage} Target: ${stDef.minCorrect}/5 correct & ${stDef.minScore.toLocaleString()}+ pts (You got ${accuracyStr} & ${game.score.toLocaleString()} pts). Try again!`;
+        }
+        if (playAgainBtn) playAgainBtn.textContent = `Retry Stage ${stDef.stage} ↺`;
+        campaignStatusObj = { passed: false, stage: stDef.stage, mastered: camp.mastered, totalMasteryScore: camp.totalMasteryScore };
+      }
+      renderArtistCards();
+    } else {
+      if (campBanner) campBanner.classList.add('hidden');
+      if (playAgainBtn) playAgainBtn.textContent = 'Play Again';
+    }
+
     saveStats();
     updateHeaderQuickStats();
 
@@ -1556,6 +1867,9 @@
       });
     }
 
+    document.getElementById('summaryHeadline').textContent = game.isCampaign
+      ? `${config.artist} — Stage ${game.campaignStage} Summary`
+      : 'Session Summary';
     document.getElementById('summarySubline').textContent = catLabel;
     document.getElementById('newRoundRecordBanner').classList.toggle('hidden', !isNewComboRecord || game.score === 0);
     document.getElementById('sumTotalScore').textContent = game.score.toLocaleString();
@@ -1569,6 +1883,21 @@
       document.getElementById('sumFastestTime').textContent = '--.---s';
       document.getElementById('sumFastestSongName').textContent = '-';
     }
+
+    initSocialSharePanel({
+      score: game.score,
+      correctCount: correctList.length,
+      totalCount: totalSongs,
+      accuracyStr,
+      avgTimeMs,
+      fastestInRound,
+      artist: config.artist,
+      genre: config.genre,
+      isCampaign: game.isCampaign,
+      campaignStage: game.campaignStage,
+      campaignStatus: campaignStatusObj,
+      results: game.results
+    });
 
     const tracksList = document.getElementById('summaryTracksList');
     tracksList.innerHTML = '';
@@ -1592,6 +1921,249 @@
     });
 
     switchView('summary');
+  }
+
+  // ==================== VIRAL SOCIAL SHARING & STORY CARD ENGINE ====================
+  let lastShareData = null;
+
+  function buildTeaserPool(d) {
+    const targetName = d.artist !== 'all' ? d.artist : (d.genre !== 'all' ? d.genre : 'Beatrushz');
+    const fastestStr = d.fastestInRound ? formatMs(d.fastestInRound.timeMs) : formatMs(d.avgTimeMs);
+    const fastestSongTitle = d.fastestInRound ? d.fastestInRound.song.title : 'that track';
+    const lines = [
+      `Got ${d.accuracyStr} (${d.score.toLocaleString()} pts) on ${targetName}. Can you beat that?`,
+      `My reaction speed is ${fastestStr} ⚡ Think your ears are faster?`,
+      `Scored ${d.score.toLocaleString()} pts on ${targetName}. Try to touch this score.`,
+      `Identified "${fastestSongTitle}" in ${fastestStr}. Beat that if you can.`,
+      `${d.accuracyStr} in ${formatMs(d.avgTimeMs)} average reaction time. Your turn.`
+    ];
+
+    if (d.correctCount === d.totalCount && d.totalCount > 0) {
+      lines.unshift(`Perfect ${d.accuracyStr} on ${targetName} (${d.score.toLocaleString()} pts) 🔥 Think you can match perfection?`);
+    }
+    if (d.campaignStatus?.passed && d.campaignStage === 3) {
+      lines.unshift(`Just unlocked MASTER 👑 on ${d.artist} (${d.campaignStatus.totalMasteryScore.toLocaleString()} pts)! Try to take my crown.`);
+    } else if (d.campaignStatus?.passed) {
+      lines.unshift(`Cleared Stage ${d.campaignStage}/3 on ${d.artist} with ${d.score.toLocaleString()} pts ⚡ Who's #1?`);
+    }
+    return lines;
+  }
+
+  function formatShareText(d) {
+    const emojiRow = (d.results || []).map((r) => (r.correct ? '🟢' : '🔴')).join('');
+    const targetLabel = d.artist !== 'all'
+      ? (d.isCampaign ? `${d.artist} (Stage ${d.campaignStage}/3)` : d.artist)
+      : (d.genre !== 'all' ? `${d.genre} Mix` : 'All Artists');
+    const fastStr = d.fastestInRound ? formatMs(d.fastestInRound.timeMs) : '--.---s';
+    const siteUrl = window.location.origin && window.location.origin.startsWith('http')
+      ? window.location.origin
+      : 'https://beatrushz.netlify.app';
+
+    return [
+      `⚡ BEATRUSHZ — ${targetLabel}`,
+      `${emojiRow} (${d.accuracyStr})`,
+      `🏆 ${d.score.toLocaleString()} pts • ⚡ Fastest: ${fastStr}`,
+      `"${d.currentTeaser}"`,
+      `👉 ${siteUrl}`
+    ].join('\n');
+  }
+
+  function initSocialSharePanel(data) {
+    lastShareData = data;
+    const pool = buildTeaserPool(data);
+    lastShareData.teaserPool = pool;
+    lastShareData.teaserIndex = 0;
+    lastShareData.currentTeaser = pool[0];
+
+    const previewEl = document.getElementById('shareTeaserPreview');
+    const statusEl = document.getElementById('shareStatusMsg');
+    if (previewEl) previewEl.textContent = formatShareText(lastShareData);
+    if (statusEl) statusEl.textContent = '';
+  }
+
+  function shuffleShareTeaser() {
+    if (!lastShareData || !lastShareData.teaserPool) return;
+    lastShareData.teaserIndex = (lastShareData.teaserIndex + 1) % lastShareData.teaserPool.length;
+    lastShareData.currentTeaser = lastShareData.teaserPool[lastShareData.teaserIndex];
+    const previewEl = document.getElementById('shareTeaserPreview');
+    if (previewEl) previewEl.textContent = formatShareText(lastShareData);
+  }
+
+  async function generateAndShareStoryCard() {
+    if (!lastShareData) return;
+    const d = lastShareData;
+    const statusEl = document.getElementById('shareStatusMsg');
+    if (statusEl) statusEl.textContent = 'Generating Story Card...';
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 1080;
+    canvas.height = 1920;
+    const ctx = canvas.getContext('2d');
+
+    // Background Gradient
+    const bgGrad = ctx.createLinearGradient(0, 0, 1080, 1920);
+    bgGrad.addColorStop(0, '#06080b');
+    bgGrad.addColorStop(0.5, '#0c1117');
+    bgGrad.addColorStop(1, '#050709');
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, 1080, 1920);
+
+    // Monster Neon Radial Glow
+    const glow = ctx.createRadialGradient(540, 620, 40, 540, 620, 620);
+    glow.addColorStop(0, 'rgba(57, 255, 20, 0.18)');
+    glow.addColorStop(1, 'rgba(57, 255, 20, 0)');
+    ctx.fillStyle = glow;
+    ctx.fillRect(0, 0, 1080, 1920);
+
+    // Outer Neon Border Card
+    ctx.strokeStyle = 'rgba(57, 255, 20, 0.55)';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(64, 84, 952, 1752);
+
+    // Brand Header
+    ctx.fillStyle = '#39ff14';
+    ctx.font = '900 66px Syne, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('⚡ BEATRUSHZ', 540, 210);
+
+    ctx.fillStyle = '#8b95a5';
+    ctx.font = '700 26px Space Mono, monospace';
+    ctx.fillText('MILLISECOND SONG QUIZ', 540, 260);
+
+    // Player Tag Pill
+    const playerTag = userProfile.username ? `@${userProfile.username}` : '@player';
+    ctx.fillStyle = 'rgba(57, 255, 20, 0.12)';
+    ctx.fillRect(340, 310, 400, 64);
+    ctx.strokeStyle = '#39ff14';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(340, 310, 400, 64);
+    ctx.fillStyle = '#39ff14';
+    ctx.font = '700 32px Space Mono, monospace';
+    ctx.fillText(playerTag, 540, 353);
+
+    // Target Artist / Mode Title
+    const targetHeadline = d.artist !== 'all' ? d.artist.toUpperCase() : (d.genre !== 'all' ? `${d.genre.toUpperCase()} MIX` : 'ALL ARTISTS');
+    ctx.fillStyle = '#f3f6fa';
+    ctx.font = '800 58px Plus Jakarta Sans, sans-serif';
+    ctx.fillText(targetHeadline, 540, 475);
+
+    const subMode = d.isCampaign
+      ? (d.campaignStatus?.passed && d.campaignStage === 3 ? '👑 ARTIST MASTER CROWN UNLOCKED' : `CAMPAIGN STAGE ${d.campaignStage} / 3`)
+      : 'FREE PLAY SESSION';
+    ctx.fillStyle = '#39ff14';
+    ctx.font = '700 30px Space Mono, monospace';
+    ctx.fillText(subMode, 540, 530);
+
+    // Main Score Box
+    ctx.fillStyle = '#0d1218';
+    ctx.fillRect(130, 590, 820, 270);
+    ctx.strokeStyle = '#39ff14';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(130, 590, 820, 270);
+
+    ctx.fillStyle = '#8b95a5';
+    ctx.font = '700 28px Space Mono, monospace';
+    ctx.fillText('TOTAL SCORE', 540, 655);
+
+    ctx.fillStyle = '#39ff14';
+    ctx.font = '800 112px Space Mono, monospace';
+    ctx.fillText(d.score.toLocaleString(), 540, 795);
+
+    // 3 Telemetry Boxes (Accuracy, Avg Time, Fastest)
+    const statsBoxes = [
+      { label: 'ACCURACY', val: d.accuracyStr },
+      { label: 'AVG TIME', val: formatMs(d.avgTimeMs) },
+      { label: 'FASTEST', val: d.fastestInRound ? formatMs(d.fastestInRound.timeMs) : '--.---s' }
+    ];
+    statsBoxes.forEach((b, idx) => {
+      const bx = 130 + idx * 280;
+      ctx.fillStyle = '#0d1218';
+      ctx.fillRect(bx, 895, 260, 175);
+      ctx.strokeStyle = '#252d3a';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(bx, 895, 260, 175);
+
+      ctx.fillStyle = '#8b95a5';
+      ctx.font = '700 22px Space Mono, monospace';
+      ctx.fillText(b.label, bx + 130, 950);
+
+      ctx.fillStyle = '#f3f6fa';
+      ctx.font = '700 42px Space Mono, monospace';
+      ctx.fillText(b.val, bx + 130, 1025);
+    });
+
+    // Fastest Track Highlight
+    if (d.fastestInRound) {
+      ctx.fillStyle = '#8b95a5';
+      ctx.font = '600 26px Plus Jakarta Sans, sans-serif';
+      ctx.fillText(`⚡ Fastest ID: "${d.fastestInRound.song.title}" (${formatMs(d.fastestInRound.timeMs)})`, 540, 1145);
+    }
+
+    // Track Result Squares
+    const resArr = d.results || [];
+    const boxSize = 52;
+    const gap = 14;
+    const totalW = resArr.length * boxSize + Math.max(0, resArr.length - 1) * gap;
+    let startX = (1080 - totalW) / 2;
+    resArr.forEach((r) => {
+      ctx.fillStyle = r.correct ? '#39ff14' : '#ff3b5c';
+      ctx.fillRect(startX, 1195, boxSize, boxSize);
+      startX += boxSize + gap;
+    });
+
+    // Teaser Quote (Wrapped)
+    ctx.fillStyle = '#f3f6fa';
+    ctx.font = '700 38px Plus Jakarta Sans, sans-serif';
+    const words = `"${d.currentTeaser}"`.split(' ');
+    let line = '';
+    let y = 1365;
+    for (let i = 0; i < words.length; i++) {
+      const testLine = line + words[i] + ' ';
+      if (ctx.measureText(testLine).width > 800 && i > 0) {
+        ctx.fillText(line.trim(), 540, y);
+        line = words[i] + ' ';
+        y += 54;
+      } else {
+        line = testLine;
+      }
+    }
+    if (line.trim()) ctx.fillText(line.trim(), 540, y);
+
+    // Bottom Call To Action
+    ctx.fillStyle = '#39ff14';
+    ctx.fillRect(180, 1640, 720, 96);
+    ctx.fillStyle = '#050805';
+    ctx.font = '800 32px Space Mono, monospace';
+    const hostLabel = (window.location.host && !window.location.host.includes('localhost'))
+      ? window.location.host.toUpperCase()
+      : 'BEATRUSHZ.NETLIFY.APP';
+    ctx.fillText(`PLAY AT ${hostLabel}`, 540, 1700);
+
+    canvas.toBlob(async (blob) => {
+      if (!blob) return;
+      const file = new File([blob], 'beatrushz-score.png', { type: 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
+          await navigator.share({
+            files: [file],
+            title: 'Beatrushz Challenge',
+            text: formatShareText(d)
+          });
+          if (statusEl) statusEl.textContent = 'Shared Story Card!';
+          return;
+        } catch (err) {}
+      }
+      // Fallback: download PNG image directly
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'beatrushz-story-card.png';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+      if (statusEl) statusEl.textContent = '📸 Story Card downloaded! Post it to Instagram Stories or WhatsApp.';
+    }, 'image/png');
   }
 
   // ==================== DASHBOARD & SIDEBAR RENDERERS ====================
@@ -1620,18 +2192,19 @@
     list.forEach((artistName) => {
       const meta = ARTIST_META[artistName];
       const aStat = stats.byArtist[artistName];
+      const camp = getArtistCampaign(artistName);
       const fastest = aStat?.fastestSong;
 
       const row = document.createElement('div');
       row.className = 'fastest-artist-row';
       row.style.cursor = 'pointer';
-      row.title = 'Click to select artist';
+      row.title = 'Click to open artist campaign';
       row.innerHTML = `
         <div class="far-left">
           <img src="${meta.avatar}" alt="${artistName}" class="far-img" />
           <div class="far-meta">
-            <div class="far-artist">${artistName}</div>
-            <div class="far-song">${fastest ? fastest.title : 'No record'}</div>
+            <div class="far-artist">${artistName} ${camp.mastered ? '👑' : ''}</div>
+            <div class="far-song">${fastest ? fastest.title : `Stage ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
           </div>
         </div>
         <div class="far-time mono ${fastest ? '' : 'empty'}">
@@ -1639,7 +2212,7 @@
         </div>
       `;
       row.addEventListener('click', () => {
-        config.artist = artistName;
+        selectArtistForLobby(artistName);
         renderArtistCards();
         updateLobbyState();
       });
@@ -2100,7 +2673,7 @@
       }
 
       rebuildCatalogIndexes();
-      config.artist = artistName;
+      selectArtistForLobby(artistName);
       config.genre = 'all';
 
       renderGenreChips();
@@ -2130,6 +2703,49 @@
         if (e.key === 'Enter') {
           e.preventDefault();
           searchItunesArtists();
+        }
+      });
+    }
+
+    // Social Share Buttons
+    const shuffleBtn = document.getElementById('shuffleShareTeaserBtn');
+    const waBtn = document.getElementById('shareWhatsappBtn');
+    const xBtn = document.getElementById('shareTwitterBtn');
+    const igBtn = document.getElementById('shareStoryCardBtn');
+    const copyBtn = document.getElementById('shareCopyTextBtn');
+    const statusEl = document.getElementById('shareStatusMsg');
+
+    if (shuffleBtn) shuffleBtn.addEventListener('click', shuffleShareTeaser);
+
+    if (waBtn) {
+      waBtn.addEventListener('click', () => {
+        if (!lastShareData) return;
+        const text = formatShareText(lastShareData);
+        window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+      });
+    }
+
+    if (xBtn) {
+      xBtn.addEventListener('click', () => {
+        if (!lastShareData) return;
+        const text = formatShareText(lastShareData);
+        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+      });
+    }
+
+    if (igBtn) {
+      igBtn.addEventListener('click', generateAndShareStoryCard);
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        if (!lastShareData) return;
+        const text = formatShareText(lastShareData);
+        try {
+          await navigator.clipboard.writeText(text);
+          if (statusEl) statusEl.textContent = '✓ Challenge copied to clipboard!';
+        } catch (e) {
+          if (statusEl) statusEl.textContent = 'Copy from the box above.';
         }
       });
     }

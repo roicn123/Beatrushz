@@ -1774,6 +1774,304 @@ body {
   color: var(--text-dim);
 }
 
+/* ==================== ARTIST CAMPAIGN & MASTERY PANEL ==================== */
+.artist-campaign-panel {
+  background: linear-gradient(145deg, rgba(16, 20, 26, 0.96), rgba(9, 11, 14, 0.98));
+  border: 1px solid rgba(57, 255, 20, 0.35);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.15rem;
+  box-shadow: 0 0 24px rgba(57, 255, 20, 0.06);
+}
+
+.acp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.acp-header h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.acp-status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 99px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(57, 255, 20, 0.45);
+  color: var(--accent);
+}
+
+.acp-status-badge.mastered {
+  background: var(--accent);
+  color: #050805;
+  box-shadow: 0 0 12px rgba(57, 255, 20, 0.45);
+}
+
+.acp-desc {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.85rem;
+}
+
+.acp-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55rem;
+  margin-bottom: 0.85rem;
+}
+
+.acp-stage-card {
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9px;
+  padding: 0.65rem 0.7rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  position: relative;
+}
+
+.acp-stage-card:hover:not(.locked) {
+  border-color: rgba(57, 255, 20, 0.5);
+  transform: translateY(-1px);
+}
+
+.acp-stage-card.active {
+  border-color: var(--accent);
+  background: rgba(57, 255, 20, 0.08);
+  box-shadow: 0 0 14px rgba(57, 255, 20, 0.14);
+}
+
+.acp-stage-card.cleared {
+  border-color: rgba(57, 255, 20, 0.35);
+}
+
+.acp-stage-card.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.acp-stage-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+.acp-stage-card.active .acp-stage-top,
+.acp-stage-card.cleared .acp-stage-top {
+  color: var(--accent);
+}
+
+.acp-stage-name {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.acp-stage-req {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.acp-world-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+}
+
+.acp-world-label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+}
+
+.acp-world-list {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.acp-world-pill {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 0.18rem 0.55rem;
+  border-radius: 6px;
+  color: var(--text-primary);
+}
+
+.acp-world-pill.rank-1 {
+  border-color: rgba(57, 255, 20, 0.45);
+  color: var(--accent);
+}
+
+.filter-group.disabled-by-campaign {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Campaign Summary Result Banner */
+.campaign-result-banner {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-base);
+}
+
+.campaign-result-banner.passed {
+  border-color: var(--accent);
+  background: rgba(57, 255, 20, 0.11);
+  color: var(--accent);
+  box-shadow: 0 0 18px rgba(57, 255, 20, 0.15);
+}
+
+.campaign-result-banner.failed {
+  border-color: var(--danger);
+  background: rgba(255, 59, 92, 0.1);
+  color: #ff8096;
+}
+
+/* ==================== SOCIAL SHARE & CHALLENGE PANEL ==================== */
+.social-share-panel {
+  background: linear-gradient(145deg, rgba(16, 20, 26, 0.95), rgba(10, 12, 16, 0.98));
+  border: 1px solid rgba(57, 255, 20, 0.35);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.ssp-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.ssp-top h4 {
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.shuffle-teaser-btn {
+  background: var(--bg-base);
+  border: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.shuffle-teaser-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ssp-preview-box {
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+  white-space: pre-line;
+  margin-bottom: 0.75rem;
+}
+
+.ssp-buttons-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.share-btn {
+  padding: 0.6rem 0.65rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  transition: all 0.16s ease;
+  text-align: center;
+}
+
+.share-btn.whatsapp {
+  background: rgba(37, 211, 102, 0.14);
+  border-color: rgba(37, 211, 102, 0.5);
+  color: #3df07c;
+}
+.share-btn.whatsapp:hover {
+  background: #25d366;
+  color: #041108;
+}
+
+.share-btn.x-twitter {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+.share-btn.x-twitter:hover {
+  background: #ffffff;
+  color: #090b0e;
+}
+
+.share-btn.instagram {
+  background: rgba(57, 255, 20, 0.14);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.share-btn.instagram:hover {
+  background: var(--accent);
+  color: #050805;
+  box-shadow: 0 0 14px rgba(57, 255, 20, 0.4);
+}
+
+.share-btn.copy:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ssp-status {
+  font-size: 0.76rem;
+  color: var(--accent);
+  margin-top: 0.45rem;
+  min-height: 1.1em;
+  font-family: var(--font-mono);
+}
+
 /* ==================== MOBILE & TOUCH OPTIMIZATIONS ==================== */
 button, .choice-btn, .diff-btn, .chip-btn, .toggle-btn, .nav-tab, .selected-artist-bar {
   touch-action: manipulation;
@@ -1918,5 +2216,13 @@ button, .choice-btn, .diff-btn, .chip-btn, .toggle-btn, .nav-tab, .selected-arti
 
   .summary-actions {
     grid-template-columns: 1fr;
+  }
+
+  .acp-stages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ssp-buttons-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

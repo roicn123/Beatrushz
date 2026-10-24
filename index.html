@@ -153,6 +153,25 @@
             </div>
           </div>
 
+          <!-- Artist Campaign Progression Panel (Visible when a specific artist is selected) -->
+          <div class="artist-campaign-panel hidden" id="artistCampaignPanel">
+            <div class="acp-header">
+              <div>
+                <span class="section-eyebrow">ARTIST CAMPAIGN • 5 TRACKS PER STAGE</span>
+                <h4 id="acpArtistTitle">Artist Mastery</h4>
+              </div>
+              <span class="acp-status-badge" id="acpMasteryBadge">STAGE 1 / 3</span>
+            </div>
+            <p class="acp-desc" id="acpStatusDesc">
+              Clear all 3 stages (Easy → Medium → Hard) to earn the Artist Crown 👑 and unlock Free Play for this artist.
+            </p>
+            <div class="acp-stages-grid" id="acpStagesGrid"></div>
+            <div class="acp-world-bar" id="acpWorldLeaderboardBar">
+              <span class="acp-world-label">🌍 ARTIST TOP MASTERS:</span>
+              <div class="acp-world-list" id="acpWorldTopList">Loading rankings...</div>
+            </div>
+          </div>
+
           <!-- Input Mode & Round Length -->
           <div class="filter-row-split">
             <div class="filter-group compact">
@@ -310,6 +329,7 @@
           <div id="newRoundRecordBanner" class="new-record-banner hidden">
             NEW PERSONAL BEST
           </div>
+          <div id="campaignSummaryBanner" class="campaign-result-banner hidden"></div>
         </div>
 
         <div class="summary-metrics-grid">
@@ -330,6 +350,25 @@
             <span class="metric-value mono" id="sumFastestTime">--.---s</span>
             <span class="metric-sub" id="sumFastestSongName">-</span>
           </div>
+        </div>
+
+        <!-- Viral Social Share & Challenge Panel -->
+        <div class="social-share-panel" id="socialSharePanel">
+          <div class="ssp-top">
+            <div>
+              <span class="section-eyebrow">CHALLENGE YOUR FRIENDS</span>
+              <h4>Share Result</h4>
+            </div>
+            <button type="button" class="shuffle-teaser-btn" id="shuffleShareTeaserBtn" title="New teaser line">🎲 Shuffle Line</button>
+          </div>
+          <div class="ssp-preview-box" id="shareTeaserPreview"></div>
+          <div class="ssp-buttons-row">
+            <button type="button" class="share-btn whatsapp" id="shareWhatsappBtn">WhatsApp</button>
+            <button type="button" class="share-btn x-twitter" id="shareTwitterBtn">Post on X</button>
+            <button type="button" class="share-btn instagram" id="shareStoryCardBtn">📸 Story Card (IG)</button>
+            <button type="button" class="share-btn copy" id="shareCopyTextBtn">Copy Challenge</button>
+          </div>
+          <div class="ssp-status" id="shareStatusMsg"></div>
         </div>
 
         <div class="summary-breakdown">
