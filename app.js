@@ -279,8 +279,112 @@
       byCombo: {},
       songRecords: {},
       fastestHistory: [],
-      artistCampaigns: {}
+      artistCampaigns: {},
+      unlockedCards: {},
+      dailyHistory: {}
     };
+  }
+
+  function getArtistVaultTargetSongs(artistName) {
+    const artistTracks = CATALOG.filter((s) => s.artist === artistName);
+    if (artistTracks.length === 0) return [];
+    const easyTrack = artistTracks.find((s) => s.difficulty === 'easy') || artistTracks[0];
+    const medTrack = artistTracks.find((s) => s.difficulty === 'medium' && s.id !== easyTrack.id) || artistTracks[Math.min(1, artistTracks.length - 1)];
+    const hardTrack = artistTracks.find((s) => s.difficulty === 'hard' && s.id !== easyTrack.id && s.id !== medTrack.id) || artistTracks[Math.min(2, artistTracks.length - 1)];
+    return [
+      { rarity: 'rare', label: 'RARE • EASY', song: easyTrack },
+      { rarity: 'epic', label: 'EPIC • MEDIUM', song: medTrack },
+      { rarity: 'legendary', label: 'LEGENDARY • HARD', song: hardTrack }
+    ].filter((x) => Boolean(x.song));
+  }
+
+  let cardDropTimeoutId = null;
+
+  function showCardDropAnimation(cardObj) {
+    const overlay = document.getElementById('cardDropOverlay');
+    const rarityPill = document.getElementById('cdRarityPill');
+    const visual = document.getElementById('cdCardVisual');
+    const titleEl = document.getElementById('cdSongTitle');
+    const artistEl = document.getElementById('cdSongArtist');
+    const timeEl = document.getElementById('cdTimeBadge');
+    const box = document.getElementById('cardDropBox');
+    if (!overlay) return;
+
+    const rarityColors = {
+      rare: { border: '#38bdf8', bg: 'rgba(56, 189, 248, 0.18)', text: '#38bdf8', label: '💎 RARE CARD UNLOCKED' },
+      epic: { border: '#c084fc', bg: 'rgba(192, 132, 252, 0.18)', text: '#c084fc', label: '🔮 EPIC CARD UNLOCKED' },
+      legendary: { border: '#facc15', bg: 'rgba(250, 204, 21, 0.2)', text: '#facc15', label: '👑 LEGENDARY CARD UNLOCKED' }
+    };
+    const style = rarityColors[cardObj.rarity] || rarityColors.rare;
+
+    if (rarityPill) {
+      rarityPill.textContent = style.label;
+      rarityPill.style.color = style.text;
+      rarityPill.style.borderColor = style.border;
+      rarityPill.style.background = style.bg;
+    }
+    if (box) box.style.borderColor = style.border;
+    if (visual) visual.style.backgroundImage = cardObj.artwork ? `url("${cardObj.artwork}")` : 'none';
+    if (titleEl) titleEl.textContent = cardObj.title;
+    if (artistEl) artistEl.textContent = cardObj.artist;
+    if (timeEl) timeEl.textContent = `⚡ Captured in ${formatMs(cardObj.timeMs)}`;
+
+    overlay.classList.remove('hidden');
+    clearTimeout(cardDropTimeoutId);
+    cardDropTimeoutId = setTimeout(() => {
+      overlay.classList.add('hidden');
+    }, 4200);
+  }
+
+  function checkAndUnlockCollectibleCard(song, timeMs) {
+    if (!stats.unlockedCards) stats.unlockedCards = {};
+
+    const targets = getArtistVaultTargetSongs(song.artist);
+    const matchingTarget = targets.find((t) => t.song && t.song.id === song.id);
+
+    let earnedRarity = null;
+    if (matchingTarget && timeMs < 1000) {
+      earnedRarity = matchingTarget.rarity;
+    } else if (timeMs < 500) {
+      earnedRarity = song.difficulty === 'hard' ? 'legendary' : (song.difficulty === 'medium' ? 'epic' : 'rare');
+    }
+
+    if (!earnedRarity) return false;
+
+    const existing = stats.unlockedCards[song.id];
+    const isFirstUnlock = !existing;
+    const isFaster = existing && timeMs < existing.timeMs;
+
+    if (isFirstUnlock || isFaster) {
+      const cardData = {
+        songId: song.id,
+        title: song.title,
+        artist: song.artist,
+        artwork: song.artwork,
+        rarity: earnedRarity,
+        timeMs,
+        isVaultTarget: Boolean(matchingTarget),
+        date: new Date().toISOString()
+      };
+      stats.unlockedCards[song.id] = cardData;
+      saveStats();
+
+      pushRecordToSupabase({
+        record_type: 'card_unlock',
+        song_id: song.id,
+        song_title: song.title,
+        artist: song.artist,
+        genre: song.genre,
+        difficulty: earnedRarity,
+        time_ms: timeMs,
+        score: null,
+        accuracy: null
+      });
+
+      showCardDropAnimation(cardData);
+      return true;
+    }
+    return false;
   }
 
   function getArtistCampaign(artistName) {
@@ -344,9 +448,11 @@
     renderGenreChips();
     renderArtistCards();
     updateLobbyState();
+    updateDailyBannerUI();
     updateHeaderQuickStats();
     renderSidebarArtistFastest();
     renderStatsDashboard();
+    renderCollectionDashboard();
     bindEvents();
     syncSharedSongsFromSupabase();
 
@@ -472,6 +578,22 @@
             camp.totalMasteryScore = r.score;
           }
           updated = true;
+        } else if (r.record_type === 'card_unlock' && r.song_id) {
+          if (!stats.unlockedCards) stats.unlockedCards = {};
+          const existingCard = stats.unlockedCards[r.song_id];
+          if (!existingCard || (r.time_ms > 0 && r.time_ms < existingCard.timeMs)) {
+            const catSong = CATALOG.find((s) => s.id === r.song_id);
+            stats.unlockedCards[r.song_id] = {
+              songId: r.song_id,
+              title: r.song_title || catSong?.title || 'Track',
+              artist: r.artist || catSong?.artist || '',
+              artwork: catSong?.artwork || '',
+              rarity: r.difficulty || 'rare',
+              timeMs: r.time_ms || 499,
+              isVaultTarget: true
+            };
+            updated = true;
+          }
         }
       });
 
@@ -481,6 +603,7 @@
         renderArtistCards();
         renderSidebarArtistFastest();
         renderStatsDashboard();
+        renderCollectionDashboard();
         updateLobbyState();
       }
     } catch (e) {}
@@ -653,8 +776,16 @@
       });
     });
 
-    // Start Game Button
+    // Start Game Button & Daily Challenge Button
     document.getElementById('startGameBtn').addEventListener('click', startNewGame);
+    const dailyBtn = document.getElementById('startDailyChallengeBtn');
+    if (dailyBtn) {
+      dailyBtn.addEventListener('click', startDailyChallenge);
+    }
+    const cardDropClose = document.getElementById('cardDropOverlay');
+    if (cardDropClose) {
+      cardDropClose.addEventListener('click', () => cardDropClose.classList.add('hidden'));
+    }
     document.getElementById('quitGameBtn').addEventListener('click', () => {
       stopAudioAndTimer();
       game.active = false;
@@ -665,7 +796,13 @@
       nextSong();
     });
 
-    document.getElementById('playAgainSameBtn').addEventListener('click', startNewGame);
+    document.getElementById('playAgainSameBtn').addEventListener('click', () => {
+      if (game.isDailyChallenge) {
+        startDailyChallenge();
+      } else {
+        startNewGame();
+      }
+    });
     document.getElementById('backToLobbyBtn').addEventListener('click', () => switchView('lobby'));
 
     // Typing input autocomplete + Instant Enter Submission
@@ -793,7 +930,9 @@
     });
 
     if (viewName === 'stats') renderStatsDashboard();
+    if (viewName === 'collection') renderCollectionDashboard();
     if (viewName === 'lobby') {
+      updateDailyBannerUI();
       updateLobbyState();
       renderSidebarArtistFastest();
     }
@@ -1157,6 +1296,40 @@
       }
     }
 
+    // Render Artist 3-Card Vault Challenge if Mastered
+    const vaultBox = document.getElementById('acpVaultBox');
+    const vaultGrid = document.getElementById('acpVaultCardsGrid');
+    const vaultProg = document.getElementById('acpVaultProgress');
+    if (vaultBox && vaultGrid) {
+      if (!isMastered) {
+        vaultBox.classList.add('hidden');
+      } else {
+        vaultBox.classList.remove('hidden');
+        const targets = getArtistVaultTargetSongs(config.artist);
+        let unlockedCount = 0;
+        vaultGrid.innerHTML = '';
+        targets.forEach((t) => {
+          const cardRec = stats.unlockedCards?.[t.song.id];
+          if (cardRec) unlockedCount++;
+          const cardEl = document.createElement('div');
+          cardEl.className = `collectible-card ${t.rarity} ${cardRec ? 'unlocked' : 'locked'}`;
+          if (t.song.artwork) cardEl.style.backgroundImage = `url("${t.song.artwork}")`;
+          cardEl.innerHTML = `
+            <div class="cc-top-row">
+              <span class="cc-rarity-tag">${t.label}</span>
+              <span class="cc-status-icon">${cardRec ? `✓ ${formatMs(cardRec.timeMs)}` : '🔒 < 1.0s'}</span>
+            </div>
+            <div class="cc-glass-bottom">
+              <div class="cc-title">${t.song.title}</div>
+              <div class="cc-sub">${cardRec ? 'Unlocked in Vault!' : 'Identify in under 1.000s'}</div>
+            </div>
+          `;
+          vaultGrid.appendChild(cardEl);
+        });
+        if (vaultProg) vaultProg.textContent = `${unlockedCount} / ${targets.length} Cards`;
+      }
+    }
+
     loadArtistWorldTopMasters(config.artist);
   }
 
@@ -1203,6 +1376,91 @@
     }
   }
 
+  // ==================== DAILY SEEDED CHALLENGE & AUDIO PREFETCHER ====================
+  function getTodaySeedString() {
+    const now = new Date();
+    const y = now.getUTCFullYear();
+    const m = String(now.getUTCMonth() + 1).padStart(2, '0');
+    const d = String(now.getUTCDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }
+
+  function createSeededRng(seedStr) {
+    let h = 2166136261 >>> 0;
+    for (let i = 0; i < seedStr.length; i++) {
+      h ^= seedStr.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    let state = h >>> 0;
+    return function () {
+      state = (state + 0x6D2B79F5) >>> 0;
+      let t = Math.imul(state ^ (state >>> 15), 1 | state);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function buildDailyChallengeQueue() {
+    const seedStr = getTodaySeedString();
+    const rng = createSeededRng(`beatrushz_daily_${seedStr}`);
+    const basePool = [...(window.SONGS_CATALOG || CATALOG)];
+    const chosen = [];
+    const usedIds = new Set();
+    const cutOffsets = [0, 2, 4, 6, 8, 10];
+
+    while (chosen.length < 5 && chosen.length < basePool.length) {
+      const idx = Math.floor(rng() * basePool.length);
+      const song = basePool[idx];
+      if (!song || usedIds.has(song.id)) continue;
+      usedIds.add(song.id);
+      const cutIdx = Math.floor(rng() * cutOffsets.length);
+      chosen.push(Object.assign({}, song, {
+        startOffsetSec: cutOffsets[cutIdx]
+      }));
+    }
+    return chosen;
+  }
+
+  function updateDailyBannerUI() {
+    const seedStr = getTodaySeedString();
+    const dateLabel = document.getElementById('dailyChallengeDateLabel');
+    const statusPill = document.getElementById('dailyChallengeStatusPill');
+    const btn = document.getElementById('startDailyChallengeBtn');
+    if (dateLabel) dateLabel.textContent = `#${seedStr}`;
+
+    const todayRec = stats.dailyHistory?.[seedStr];
+    if (statusPill) {
+      if (todayRec) {
+        statusPill.textContent = `✓ Done: ${todayRec.score.toLocaleString()} pts (${todayRec.accuracy})`;
+        statusPill.style.color = 'var(--accent)';
+        statusPill.style.borderColor = 'var(--accent)';
+      } else {
+        statusPill.textContent = '5 Tracks • Unplayed Today';
+        statusPill.style.color = '';
+        statusPill.style.borderColor = '';
+      }
+    }
+    if (btn) {
+      btn.textContent = todayRec ? '↻ REPLAY DAILY' : '⚡ PLAY DAILY';
+    }
+  }
+
+  const prefetchedAudioCache = new Map();
+
+  function prefetchRoundAudioQueue(queue) {
+    queue.forEach((song) => {
+      if (!song || !song.previewUrl || prefetchedAudioCache.has(song.previewUrl)) return;
+      try {
+        const a = new Audio();
+        a.preload = 'auto';
+        a.crossOrigin = 'anonymous';
+        a.src = song.previewUrl;
+        a.load();
+        prefetchedAudioCache.set(song.previewUrl, a);
+      } catch (e) {}
+    });
+  }
+
   // ==================== GAMEPLAY ENGINE ====================
   function shuffleArray(arr) {
     const copy = [...arr];
@@ -1211,6 +1469,37 @@
       [copy[i], copy[j]] = [copy[j], copy[i]];
     }
     return copy;
+  }
+
+  function startDailyChallenge() {
+    const dailyQueue = buildDailyChallengeQueue();
+    if (dailyQueue.length === 0) return;
+
+    prefetchRoundAudioQueue(dailyQueue);
+
+    game.active = true;
+    game.isDailyChallenge = true;
+    game.dailySeed = getTodaySeedString();
+    game.isCampaign = false;
+    game.campaignStage = null;
+    game.queue = dailyQueue;
+    game.currentIndex = 0;
+    game.score = 0;
+    game.streak = 0;
+    game.results = [];
+
+    document.getElementById('activeDiffTag').textContent = `DAILY #${game.dailySeed}`;
+    document.getElementById('activeFilterTag').textContent = 'Global 5-Track Seed';
+
+    try {
+      game.audio.muted = false;
+      game.audio.volume = 1.0;
+      game.audio.setAttribute('playsinline', '');
+    } catch (e) {}
+
+    switchView('game');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    loadCurrentSong();
   }
 
   function startNewGame() {
@@ -1224,9 +1513,13 @@
     const stageObj = isCampaignRun ? CAMPAIGN_STAGES[config.campaignStage] : null;
     const desiredCount = isCampaignRun ? 5 : config.roundLength;
     const count = Math.min(desiredCount, pool.length);
-    const selectedQueue = shuffleArray(pool).slice(0, count);
+    const selectedQueue = shuffleArray(pool).slice(0, count).map((s) => Object.assign({}, s, { startOffsetSec: 0 }));
+
+    prefetchRoundAudioQueue(selectedQueue);
 
     game.active = true;
+    game.isDailyChallenge = false;
+    game.dailySeed = null;
     game.isCampaign = isCampaignRun;
     game.campaignStage = isCampaignRun ? stageObj.stage : null;
     game.queue = selectedQueue;
@@ -1281,11 +1574,16 @@
     }
   }
 
+  let playbackVerifyRaf = null;
+
   function loadCurrentSong() {
     stopAudioAndTimer();
     game.answeredCurrent = false;
 
     const currentSong = game.queue[game.currentIndex];
+    // Prefetch next upcoming tracks in queue
+    prefetchRoundAudioQueue(game.queue.slice(game.currentIndex + 1, game.currentIndex + 4));
+
     renderProgressDots();
     updateGameHud();
 
@@ -1315,17 +1613,39 @@
       setTimeout(() => input.focus(), 50);
     }
 
+    const startOffset = Number(currentSong.startOffsetSec) || 0;
     game.audio.src = currentSong.previewUrl;
-    game.audio.currentTime = 0;
+    try {
+      game.audio.currentTime = startOffset;
+    } catch (e) {
+      game.audio.addEventListener('loadedmetadata', function onMeta() {
+        game.audio.removeEventListener('loadedmetadata', onMeta);
+        try { game.audio.currentTime = startOffset; } catch (err) {}
+      });
+    }
+
+    let timerLockedIn = false;
+    const activateStopwatchOnRealAudio = () => {
+      if (timerLockedIn || !game.active || game.answeredCurrent) return;
+      // Strict check: ensure audio element is actively playing AND currentTime is advancing past startOffset
+      if (!game.audio.paused && game.audio.readyState >= 3 && game.audio.currentTime >= startOffset) {
+        timerLockedIn = true;
+        cancelAnimationFrame(playbackVerifyRaf);
+        game.audioStartedAt = performance.now();
+        document.getElementById('stopwatchStatusText').textContent = startOffset > 0 ? `LIVE AUDIO (+${startOffset}s CUT)` : 'LIVE AUDIO';
+        document.getElementById('vinylVisualizer').classList.add('spinning');
+        document.getElementById('waveBars').classList.add('playing');
+        startStopwatchLoop();
+        return;
+      }
+      playbackVerifyRaf = requestAnimationFrame(activateStopwatchOnRealAudio);
+    };
 
     const onPlaying = () => {
       game.audio.removeEventListener('playing', onPlaying);
       if (!game.active || game.answeredCurrent) return;
-      game.audioStartedAt = performance.now();
-      document.getElementById('stopwatchStatusText').textContent = 'LIVE AUDIO';
-      document.getElementById('vinylVisualizer').classList.add('spinning');
-      document.getElementById('waveBars').classList.add('playing');
-      startStopwatchLoop();
+      cancelAnimationFrame(playbackVerifyRaf);
+      playbackVerifyRaf = requestAnimationFrame(activateStopwatchOnRealAudio);
     };
 
     game.audio.addEventListener('playing', onPlaying);
@@ -1362,6 +1682,7 @@
 
   function stopAudioAndTimer() {
     cancelAnimationFrame(game.rafId);
+    cancelAnimationFrame(playbackVerifyRaf);
     try {
       game.audio.pause();
     } catch (e) {}
@@ -1594,6 +1915,7 @@
       earnedPoints = calculateSongPoints(elapsedMs, currentSong.difficulty, game.streak);
       game.score += earnedPoints;
       isNewArtistFastest = recordSingleSongStat(currentSong, true, elapsedMs);
+      checkAndUnlockCollectibleCard(currentSong, elapsedMs);
       document.getElementById('stopwatchStatusText').textContent = `LOCKED IN — ${formatMs(elapsedMs)}`;
     } else {
       game.streak = 0;
@@ -1842,7 +2164,25 @@
     const playAgainBtn = document.getElementById('playAgainSameBtn');
     let campaignStatusObj = null;
 
-    if (game.isCampaign && config.artist !== 'all' && game.campaignStage) {
+    if (game.isDailyChallenge && game.dailySeed) {
+      if (!stats.dailyHistory) stats.dailyHistory = {};
+      const prevDaily = stats.dailyHistory[game.dailySeed];
+      if (!prevDaily || game.score > prevDaily.score) {
+        stats.dailyHistory[game.dailySeed] = {
+          score: game.score,
+          accuracy: accuracyStr,
+          avgTimeMs,
+          results: game.results.map((r) => ({ correct: r.correct, timeMs: r.timeMs }))
+        };
+      }
+      if (campBanner) {
+        campBanner.classList.remove('hidden', 'failed');
+        campBanner.classList.add('passed');
+        campBanner.textContent = `🌍 DAILY CHALLENGE #${game.dailySeed} COMPLETED! Share your spoiler-free reaction grid below.`;
+      }
+      if (playAgainBtn) playAgainBtn.textContent = 'Replay Daily Challenge ↺';
+      updateDailyBannerUI();
+    } else if (game.isCampaign && config.artist !== 'all' && game.campaignStage) {
       const stDef = CAMPAIGN_STAGES[game.campaignStage] || CAMPAIGN_STAGES[1];
       const camp = getArtistCampaign(config.artist);
       const passed = correctList.length >= stDef.minCorrect && game.score >= stDef.minScore;
@@ -1923,22 +2263,26 @@
 
     if (game.score > 0) {
       pushRecordToSupabase({
-        record_type: 'round_score',
-        song_id: null,
-        song_title: catLabel,
-        artist: config.artist,
-        genre: config.genre,
-        difficulty: config.difficulty,
+        record_type: game.isDailyChallenge ? 'daily_challenge' : 'round_score',
+        song_id: game.isDailyChallenge ? game.dailySeed : null,
+        song_title: game.isDailyChallenge ? `Daily #${game.dailySeed}` : catLabel,
+        artist: game.isDailyChallenge ? 'all' : config.artist,
+        genre: game.isDailyChallenge ? 'all' : config.genre,
+        difficulty: game.isDailyChallenge ? 'daily' : config.difficulty,
         time_ms: avgTimeMs,
         score: game.score,
         accuracy: accuracyStr
       });
     }
 
-    document.getElementById('summaryHeadline').textContent = game.isCampaign
-      ? `${config.artist} — Stage ${game.campaignStage} Summary`
-      : 'Session Summary';
-    document.getElementById('summarySubline').textContent = catLabel;
+    document.getElementById('summaryHeadline').textContent = game.isDailyChallenge
+      ? `🌍 Daily Challenge #${game.dailySeed}`
+      : (game.isCampaign
+        ? `${config.artist} — Stage ${game.campaignStage} Summary`
+        : 'Session Summary');
+    document.getElementById('summarySubline').textContent = game.isDailyChallenge
+      ? 'Global Seeded 5-Track Sprint • Same Tracks & Cuts Worldwide'
+      : catLabel;
     document.getElementById('newRoundRecordBanner').classList.toggle('hidden', !isNewComboRecord || game.score === 0);
     document.getElementById('sumTotalScore').textContent = game.score.toLocaleString();
     document.getElementById('sumAccuracy').textContent = accuracyStr;
@@ -1961,6 +2305,8 @@
       fastestInRound,
       artist: config.artist,
       genre: config.genre,
+      isDailyChallenge: game.isDailyChallenge,
+      dailySeed: game.dailySeed,
       isCampaign: game.isCampaign,
       campaignStage: game.campaignStage,
       campaignStatus: campaignStatusObj,
@@ -1995,6 +2341,15 @@
   let lastShareData = null;
 
   function buildTeaserPool(d) {
+    if (d.isDailyChallenge) {
+      const fastStr = d.fastestInRound ? formatMs(d.fastestInRound.timeMs) : formatMs(d.avgTimeMs);
+      return [
+        `No spoilers — can you beat my reaction times on today's 5 tracks? ⚡`,
+        `Got ${d.accuracyStr} (${d.score.toLocaleString()} pts) on Today's Daily Challenge! Fastest hit: ${fastStr}`,
+        `Same 5 tracks, same audio cuts worldwide 🌍 Beat my ${d.score.toLocaleString()} pts if you can!`,
+        `Avg reaction time: ${formatMs(d.avgTimeMs)} on Daily #${d.dailySeed}. Test your ears!`
+      ];
+    }
     const targetName = d.artist !== 'all' ? d.artist : (d.genre !== 'all' ? d.genre : 'Beatrushz');
     const fastestStr = d.fastestInRound ? formatMs(d.fastestInRound.timeMs) : formatMs(d.avgTimeMs);
     const fastestSongTitle = d.fastestInRound ? d.fastestInRound.song.title : 'that track';
@@ -2021,19 +2376,38 @@
     const baseUrl = window.location.origin && window.location.origin.startsWith('http')
       ? window.location.origin
       : 'https://beatrushz.netlify.app';
-    if (d && d.artist && d.artist !== 'all') {
+    if (d && !d.isDailyChallenge && d.artist && d.artist !== 'all') {
       return `${baseUrl}/?artist=${encodeURIComponent(d.artist)}`;
     }
     return baseUrl;
   }
 
   function formatShareText(d) {
+    const siteUrl = getChallengeUrl(d);
+
+    if (d.isDailyChallenge) {
+      const numEmojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
+      const gridLines = (d.results || []).map((r, idx) => {
+        const num = numEmojis[idx] || `#${idx + 1}`;
+        if (!r.correct) return `${num} 🔴 MISSED`;
+        const badge = r.timeMs < 500 ? '🟣' : (r.timeMs < 1000 ? '⚡' : '🟢');
+        return `${num} ${badge} ${formatMs(r.timeMs)}`;
+      });
+
+      return [
+        `🌍 BEATRUSHZ DAILY #${d.dailySeed || getTodaySeedString()}`,
+        `🏆 ${d.score.toLocaleString()} pts (${d.accuracyStr}) • Avg: ${formatMs(d.avgTimeMs)}`,
+        ...gridLines,
+        `"${d.currentTeaser}"`,
+        `👉 ${siteUrl}`
+      ].join('\n');
+    }
+
     const emojiRow = (d.results || []).map((r) => (r.correct ? '🟢' : '🔴')).join('');
     const targetLabel = d.artist !== 'all'
       ? (d.isCampaign ? `${d.artist} (Stage ${d.campaignStage}/3)` : d.artist)
       : (d.genre !== 'all' ? `${d.genre} Mix` : 'All Artists');
     const fastStr = d.fastestInRound ? formatMs(d.fastestInRound.timeMs) : '--.---s';
-    const siteUrl = getChallengeUrl(d);
 
     return [
       `⚡ BEATRUSHZ — ${targetLabel}`,
@@ -2551,6 +2925,127 @@
     }
 
     loadGlobalCloudLeaderboards();
+  }
+
+  function renderCollectionDashboard() {
+    const totalEl = document.getElementById('vaultTotalCards');
+    const rareEl = document.getElementById('vaultRareCount');
+    const epicEl = document.getElementById('vaultEpicCount');
+    const legEl = document.getElementById('vaultLegendaryCount');
+    const masteredListEl = document.getElementById('vaultMasteredArtistsList');
+    const allCardsGridEl = document.getElementById('vaultAllCardsGrid');
+    if (!totalEl || !masteredListEl || !allCardsGridEl) return;
+
+    const allCards = Object.values(stats.unlockedCards || {});
+    const rareCount = allCards.filter((c) => c.rarity === 'Rare').length;
+    const epicCount = allCards.filter((c) => c.rarity === 'Epic').length;
+    const legCount = allCards.filter((c) => c.rarity === 'Legendary').length;
+
+    totalEl.textContent = String(allCards.length);
+    if (rareEl) rareEl.textContent = String(rareCount);
+    if (epicEl) epicEl.textContent = String(epicCount);
+    if (legEl) legEl.textContent = String(legCount);
+
+    // 1. Mastered Artists & 3-Card Sets (<1.000s target)
+    const masteredArtists = ARTISTS.filter((name) => {
+      const camp = stats.artistCampaigns?.[name];
+      return camp && (camp.mastered || camp.unlockedStage >= 4);
+    });
+
+    if (masteredArtists.length === 0) {
+      masteredListEl.innerHTML = `
+        <div class="vault-artist-block" style="text-align:center;padding:1.4rem 1rem">
+          <div style="font-size:1.8rem;margin-bottom:0.35rem">👑</div>
+          <div style="font-weight:800;font-size:0.96rem;margin-bottom:0.25rem">No Mastered Artists Yet</div>
+          <div style="font-size:0.8rem;color:var(--text-secondary)">Complete all 3 Campaign Stages (Easy, Medium, Hard) for any artist to unlock their 3-Card Sub-1.0s Vault Challenge!</div>
+        </div>
+      `;
+    } else {
+      masteredListEl.innerHTML = '';
+      masteredArtists.forEach((artistName) => {
+        const meta = ARTIST_META[artistName];
+        const targets = getArtistVaultTargetSongs(artistName);
+        const unlockedInSet = targets.filter((t) => stats.unlockedCards?.[t.song.id]).length;
+
+        const block = document.createElement('div');
+        block.className = 'vault-artist-block';
+        block.innerHTML = `
+          <div class="vault-artist-top">
+            <div class="vault-artist-info">
+              <img src="${meta?.avatar || ''}" alt="${artistName}" />
+              <div>
+                <div class="vault-artist-name">${artistName} 👑</div>
+                <div class="vault-artist-sub">${unlockedInSet}/3 Vault Cards Unlocked • Sub-1.000s Challenge</div>
+              </div>
+            </div>
+            <button type="button" class="vault-hunt-btn" data-artist="${artistName}">⚡ Hunt Cards</button>
+          </div>
+          <div class="acp-vault-cards-row">
+            ${targets.map((t) => {
+              const unlocked = stats.unlockedCards?.[t.song.id];
+              const rClass = t.rarity.toLowerCase();
+              const coverStyle = t.song.artwork ? `background-image:url("${t.song.artwork}")` : '';
+              return `
+                <div class="collectible-card ${rClass} ${unlocked ? 'unlocked' : 'locked'}" style="${coverStyle}">
+                  <span class="cc-rarity-pill ${rClass}">${t.rarity}</span>
+                  <div class="cc-glass-footer">
+                    <div class="cc-song-title">${t.song.title}</div>
+                    <div class="cc-artist-name">${t.diffLabel} Target</div>
+                    <div class="cc-time-badge mono">${unlocked ? `✓ ${formatMs(unlocked.timeMs)}` : '🔒 Target: < 01.000s'}</div>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        `;
+
+        const huntBtn = block.querySelector('.vault-hunt-btn');
+        if (huntBtn) {
+          huntBtn.addEventListener('click', () => {
+            selectArtistForLobby(artistName);
+            config.campaignStage = 'free';
+            config.difficulty = 'all';
+            renderArtistCards();
+            updateLobbyState();
+            startNewGame();
+          });
+        }
+        masteredListEl.appendChild(block);
+      });
+    }
+
+    // 2. All Unlocked Collectible Cards (sorted by rarity then fastest time)
+    if (allCards.length === 0) {
+      allCardsGridEl.innerHTML = `
+        <div style="grid-column:1/-1;text-align:center;padding:1.5rem 1rem;color:var(--text-secondary);background:var(--bg-surface);border:1px dashed var(--border-subtle);border-radius:var(--radius-md)">
+          <div style="font-size:1.6rem;margin-bottom:0.3rem">🃏</div>
+          <div style="font-weight:700;font-size:0.9rem">Your Card Vault is Empty</div>
+          <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.2rem">Identify any song in under <strong class="mono" style="color:var(--accent)">00.500s</strong> (or Master an artist and beat their 3 target songs under <strong class="mono" style="color:var(--accent)">01.000s</strong>) to unlock holographic cards!</div>
+        </div>
+      `;
+    } else {
+      const rarityRank = { Legendary: 3, Epic: 2, Rare: 1 };
+      const sortedCards = [...allCards].sort((a, b) => {
+        const rDiff = (rarityRank[b.rarity] || 0) - (rarityRank[a.rarity] || 0);
+        if (rDiff !== 0) return rDiff;
+        return (a.timeMs || 9999) - (b.timeMs || 9999);
+      });
+
+      allCardsGridEl.innerHTML = sortedCards.map((c) => {
+        const rClass = (c.rarity || 'Rare').toLowerCase();
+        const coverStyle = c.artwork ? `background-image:url("${c.artwork}")` : '';
+        return `
+          <div class="collectible-card ${rClass} unlocked" style="${coverStyle}">
+            <span class="cc-rarity-pill ${rClass}">${c.rarity}</span>
+            <div class="cc-glass-footer">
+              <div class="cc-song-title">${c.title}</div>
+              <div class="cc-artist-name">${c.artist}</div>
+              <div class="cc-time-badge mono">⚡ ${formatMs(c.timeMs)}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
   }
 
   async function loadGlobalCloudLeaderboards() {

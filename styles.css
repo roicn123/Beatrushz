@@ -2316,6 +2316,363 @@ button:active:not(:disabled),
   font-family: var(--font-mono);
 }
 
+/* ==================== DAILY CHALLENGE HERO BANNER ==================== */
+.daily-challenge-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.15rem;
+  margin-bottom: 1.25rem;
+  padding: 1.15rem 1.35rem;
+  background: linear-gradient(135deg, rgba(16, 26, 20, 0.94), rgba(10, 14, 18, 0.96));
+  border: 1px solid rgba(57, 255, 20, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 22px rgba(57, 255, 20, 0.08);
+  flex-wrap: wrap;
+}
+
+.dcb-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.25rem;
+}
+
+.dcb-live-pill {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  background: rgba(57, 255, 20, 0.16);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.18rem 0.55rem;
+  border-radius: 99px;
+}
+
+.dcb-date {
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+.dcb-left h3 {
+  font-size: 1.18rem;
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.dcb-left p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.dcb-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.dcb-score-pill {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  background: rgba(9, 10, 12, 0.75);
+  border: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+}
+
+.daily-play-btn {
+  background: var(--accent);
+  color: #050805;
+  border: none;
+  border-radius: 10px;
+  padding: 0.72rem 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(57, 255, 20, 0.3);
+}
+
+.daily-play-btn:hover {
+  filter: brightness(1.08);
+}
+
+/* ==================== COLLECTIBLE CARDS & VAULT ==================== */
+.acp-vault-box {
+  margin-bottom: 0.85rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.acp-vault-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.55rem;
+}
+
+.acp-vault-cards,
+.vault-artist-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+}
+
+.vault-artists-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.vault-artist-block {
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.vab-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.vab-artist-left {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.vault-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: 0.8rem;
+}
+
+.collectible-card {
+  position: relative;
+  height: 155px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #0b0e13;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--border-strong);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+}
+
+.collectible-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 8, 11, 0.25) 0%, rgba(6, 8, 11, 0.85) 100%);
+  z-index: 1;
+}
+
+.collectible-card.locked {
+  filter: grayscale(0.85);
+  opacity: 0.62;
+  border-style: dashed;
+}
+
+.collectible-card.rare.unlocked {
+  border-color: #38bdf8;
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.32);
+}
+
+.collectible-card.epic.unlocked {
+  border-color: #c084fc;
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.36);
+}
+
+.collectible-card.legendary.unlocked {
+  border-color: #facc15;
+  box-shadow: 0 0 24px rgba(250, 204, 21, 0.42);
+}
+
+.cc-top-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.cc-rarity-tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 0.16rem 0.48rem;
+  border-radius: 99px;
+  background: rgba(9, 11, 15, 0.78);
+  backdrop-filter: blur(8px);
+  letter-spacing: 0.06em;
+}
+
+.collectible-card.rare .cc-rarity-tag {
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+}
+
+.collectible-card.epic .cc-rarity-tag {
+  color: #c084fc;
+  border: 1px solid rgba(192, 132, 252, 0.5);
+}
+
+.collectible-card.legendary .cc-rarity-tag {
+  color: #facc15;
+  border: 1px solid rgba(250, 204, 21, 0.55);
+}
+
+.cc-status-icon {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.15rem 0.42rem;
+  border-radius: 6px;
+  background: rgba(9, 11, 15, 0.78);
+  color: var(--accent);
+}
+
+.cc-glass-bottom {
+  position: relative;
+  z-index: 2;
+  background: rgba(11, 14, 20, 0.68);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.42rem 0.55rem;
+}
+
+.cc-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.84rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cc-sub {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Holographic Card Drop Celebration Overlay */
+.card-drop-overlay {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 250;
+  pointer-events: none;
+  animation: cardDropPop 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes cardDropPop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30px) scale(0.82);
+  }
+  65% {
+    opacity: 1;
+    transform: translate(-50%, 4px) scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+.card-drop-HoloBox {
+  width: 310px;
+  background: rgba(10, 13, 18, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  padding: 0.85rem;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), 0 0 32px rgba(57, 255, 20, 0.35);
+}
+
+.cd-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.cd-rarity-pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.15rem 0.65rem;
+  border-radius: 99px;
+  margin-bottom: 0.55rem;
+  background: rgba(250, 204, 21, 0.16);
+  color: #facc15;
+  border: 1px solid #facc15;
+}
+
+.cd-card-visual {
+  height: 130px;
+  border-radius: 11px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cd-card-glass {
+  width: 100%;
+  background: rgba(9, 12, 17, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 8px;
+  padding: 0.42rem 0.6rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.cd-song-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.92rem;
+  color: #ffffff;
+}
+
+.cd-song-artist {
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+.cd-time-badge {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-top: 0.15rem;
+}
+
 /* ==================== CLASSIC BOTTOM NAVIGATION BAR ==================== */
 .bottom-nav {
   position: fixed;
@@ -2324,7 +2681,7 @@ button:active:not(:disabled),
   right: 0;
   z-index: 95;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   background: rgba(10, 12, 16, 0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -2536,5 +2893,24 @@ button, .choice-btn, .diff-btn, .chip-btn, .genre-visual-card, .toggle-btn, .nav
 
   .ssp-buttons-row {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .acp-vault-cards,
+  .vault-artist-cards-row {
+    grid-template-columns: 1fr;
+  }
+
+  .daily-challenge-banner {
+    padding: 0.95rem 1rem;
+  }
+
+  .dcb-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .daily-play-btn {
+    flex: 1;
+    text-align: center;
   }
 }

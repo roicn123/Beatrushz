@@ -50,6 +50,22 @@
   <main class="main-container">
     <!-- ==================== VIEW 1: LOBBY / SETUP ==================== -->
     <section id="view-lobby" class="view-section active">
+      <!-- Daily Seeded Global Challenge Banner -->
+      <div class="daily-challenge-banner studio-panel" id="dailyChallengeBanner">
+        <div class="dcb-left">
+          <div class="dcb-badge-row">
+            <span class="dcb-live-pill">🌍 DAILY CHALLENGE</span>
+            <span class="dcb-date mono" id="dailyChallengeDateLabel">TODAY</span>
+          </div>
+          <h3>Global 5-Track Seeded Run</h3>
+          <p>Same 5 tracks & exact audio cuts for every player worldwide today.</p>
+        </div>
+        <div class="dcb-right">
+          <div class="dcb-score-pill mono" id="dailyChallengeStatusPill">Ready to play</div>
+          <button type="button" class="daily-play-btn" id="startDailyChallengeBtn">⚡ PLAY DAILY</button>
+        </div>
+      </div>
+
       <div class="lobby-grid">
         <!-- Main Setup Deck -->
         <div class="studio-panel setup-card">
@@ -161,6 +177,13 @@
               Clear all 3 stages (Easy → Medium → Hard) to earn the Artist Crown 👑 and unlock Free Play for this artist.
             </p>
             <div class="acp-stages-grid" id="acpStagesGrid"></div>
+            <div class="acp-vault-box hidden" id="acpVaultBox">
+              <div class="acp-vault-header">
+                <span class="acp-world-label">🃏 ARTIST VAULT CHALLENGE (ID IN UNDER 1.000s):</span>
+                <span class="mono" id="acpVaultProgress" style="font-size:0.72rem;color:var(--accent)">0 / 3 Cards</span>
+              </div>
+              <div class="acp-vault-cards" id="acpVaultCardsGrid"></div>
+            </div>
             <div class="acp-world-bar" id="acpWorldLeaderboardBar">
               <span class="acp-world-label">🌍 ARTIST TOP MASTERS:</span>
               <div class="acp-world-list" id="acpWorldTopList">Loading rankings...</div>
@@ -482,7 +505,79 @@
         </div>
       </div>
     </section>
+
+    <!-- ==================== VIEW 5: COLLECTIBLE VAULT & MASTERED ARTISTS ==================== -->
+    <section id="view-collection" class="view-section">
+      <div class="stats-dashboard">
+        <div class="stats-top-header studio-panel">
+          <div>
+            <span class="section-eyebrow">SUB-SECOND HOLOGRAPHIC VAULT</span>
+            <h2>Card Collection</h2>
+            <p style="font-size:0.82rem;color:var(--text-secondary);margin-top:0.2rem">
+              Master an artist 👑 to unlock their 3-Card Vault (Rare, Epic, Legendary), then identify their target tracks in under 1.000s (or any track in under 0.500s) to claim holographic cards!
+            </p>
+          </div>
+        </div>
+
+        <!-- Collection KPIs -->
+        <div class="kpi-grid">
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label">TOTAL CARDS</span>
+            <span class="kpi-val mono" id="vaultTotalCards">0</span>
+            <span class="kpi-sub" id="vaultMasteredCount">0 Mastered Artists</span>
+          </div>
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label" style="color:#38bdf8">RARE (EASY)</span>
+            <span class="kpi-val mono" style="color:#38bdf8" id="vaultRareCount">0</span>
+            <span class="kpi-sub">Sub-1.0s Hits</span>
+          </div>
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label" style="color:#c084fc">EPIC (MEDIUM)</span>
+            <span class="kpi-val mono" style="color:#c084fc" id="vaultEpicCount">0</span>
+            <span class="kpi-sub">Sub-1.0s Popular</span>
+          </div>
+          <div class="studio-panel kpi-box">
+            <span class="kpi-label" style="color:#facc15">LEGENDARY (HARD)</span>
+            <span class="kpi-val mono" style="color:#facc15" id="vaultLegendaryCount">0</span>
+            <span class="kpi-sub">Sub-1.0s Deep Cuts</span>
+          </div>
+        </div>
+
+        <!-- Mastered Artists & Their 3-Card Sets -->
+        <div class="studio-panel stats-section-card">
+          <div class="panel-header-compact">
+            <span class="section-eyebrow">MASTERED ARTISTS VAULT</span>
+            <h3>Artist 3-Card Sets (Under 1.000s Challenge)</h3>
+          </div>
+          <div id="vaultMasteredArtistsList" class="vault-artists-container"></div>
+        </div>
+
+        <!-- Bonus Sub-0.5s Reflex Cards -->
+        <div class="studio-panel stats-section-card">
+          <div class="panel-header-compact">
+            <span class="section-eyebrow">GODLIKE REFLEX DROPS (UNDER 0.500s)</span>
+            <h3>All Unlocked Song Cards</h3>
+          </div>
+          <div id="vaultAllCardsGrid" class="vault-cards-grid"></div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- ==================== HOLOGRAPHIC CARD DROP CELEBRATION OVERLAY ==================== -->
+  <div id="cardDropOverlay" class="card-drop-overlay hidden">
+    <div class="card-drop-HoloBox" id="cardDropBox">
+      <div class="cd-eyebrow">⚡ COLLECTIBLE CARD UNLOCKED!</div>
+      <div class="cd-rarity-pill" id="cdRarityPill">LEGENDARY</div>
+      <div class="cd-card-visual" id="cdCardVisual">
+        <div class="cd-card-glass">
+          <div class="cd-song-title" id="cdSongTitle">Song Title</div>
+          <div class="cd-song-artist" id="cdSongArtist">Artist</div>
+          <div class="cd-time-badge mono" id="cdTimeBadge">00.412s</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ==================== CLASSIC BOTTOM NAVIGATION BAR ==================== -->
   <nav class="bottom-nav" id="bottomNavBar" aria-label="Primary Navigation">
@@ -490,9 +585,13 @@
       <span class="bnav-icon">⚡</span>
       <span class="bnav-label">Play</span>
     </button>
+    <button type="button" class="nav-tab bottom-nav-item" data-view="collection">
+      <span class="bnav-icon">🃏</span>
+      <span class="bnav-label">Collection</span>
+    </button>
     <button type="button" class="nav-tab bottom-nav-item" data-view="stats">
       <span class="bnav-icon">🏆</span>
-      <span class="bnav-label">Leaderboards</span>
+      <span class="bnav-label">Ranks</span>
     </button>
     <button type="button" class="bottom-nav-item" id="bottomAddArtistBtn">
       <span class="bnav-icon">＋</span>
