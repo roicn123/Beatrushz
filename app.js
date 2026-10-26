@@ -8,12 +8,15 @@
   const CUSTOM_SONGS_KEY = 'beatrush_custom_songs_v1';
   const USER_PROFILE_KEY = 'beatrush_user_profile_v1';
 
+  const MAX_TOP_TRACKS_PER_ARTIST = 22;
+
   const BAD_REMIX_WORDS = [
     'remix', 'rmx', 'mix)', 'mix]', 'rework', 'vip', 'edit)', 'edit]', 'radio edit',
     'clean edit', '(clean)', '[clean]', 'clean version',
     'version', 'ver.', 'live', 'acoustic', 'instrumental', 'karaoke', 'sped up',
     'slowed', 'reverb', 'chopped', 'screwed', 'lullaby', 'tribute', 'cover',
     'demo', 'commentary', 'skit', 'interlude', 'intro', 'outro', 'medley',
+    'bonus track', 'voice memo', 'freestyle', 'a cappella', 'acappella',
     'club', 'extended', 'dub', 'bootleg', 'mashup', 'session', 'unplugged',
     'רמיקס', 'בהופעה', 'אקוסטי', 'לייב', 'אינסטרומנטלי', 'קריוקי', 'מחרוזת'
   ];
@@ -62,23 +65,98 @@
   let ARTISTS = [];
   let ARTIST_META = {};
   let GENRES = [];
+  const DECADES = ['80s & 90s', '2000s', '2010s', '2020s'];
+
+  // Curated Peak / Most Iconic Decade for known artists (fallback computes automatically from releaseYears)
+  const ARTIST_PEAK_DECADE_OVERRIDES = {
+    'אריק איינשטיין': '80s & 90s',
+    'שלמה ארצי': '80s & 90s',
+    'משינה': '80s & 90s',
+    'שרית חדד': '2000s',
+    'אייל גולן': '2000s',
+    'עידן רייכל': '2000s',
+    'דודו טסה': '2000s',
+    'משה פרץ': '2010s',
+    'ליאור נרקיס': '2010s',
+    'Eminem': '2000s',
+    'Kanye West': '2000s',
+    'Rihanna': '2000s',
+    'Beyoncé': '2000s',
+    'Usher': '2000s',
+    'Chris Brown': '2000s',
+    'Coldplay': '2000s',
+    'Linkin Park': '2000s',
+    'Lil Wayne': '2000s',
+    'Lady Gaga': '2000s',
+    'Katy Perry': '2010s',
+    'Miley Cyrus': '2010s',
+    'Maroon 5': '2010s',
+    'OneRepublic': '2010s',
+    'Mac Miller': '2010s',
+    'עומר אדם': '2010s',
+    'טונה': '2010s',
+    'רביד פלוטניק': '2010s',
+    'חנן בן ארי': '2020s'
+  };
+
+  function computeArtistPeakDecade(artistName, songsList) {
+    if (ARTIST_PEAK_DECADE_OVERRIDES[artistName]) {
+      return ARTIST_PEAK_DECADE_OVERRIDES[artistName];
+    }
+    const counts = { '80s & 90s': 0, '2000s': 0, '2010s': 0, '2020s': 0 };
+    (songsList || []).forEach((s) => {
+      const y = parseInt(s.releaseYear, 10);
+      if (!y || isNaN(y)) return;
+      if (y < 2000) counts['80s & 90s'] += 1;
+      else if (y < 2010) counts['2000s'] += 1;
+      else if (y < 2020) counts['2010s'] += 1;
+      else counts['2020s'] += 1;
+    });
+    let bestDec = '2010s';
+    let bestCnt = -1;
+    for (const d of DECADES) {
+      if (counts[d] > bestCnt) {
+        bestCnt = counts[d];
+        bestDec = d;
+      }
+    }
+    return bestDec;
+  }
 
   function rebuildCatalogIndexes() {
     ARTISTS = [];
     ARTIST_META = {};
     const genresSet = new Set();
+    const byArtistTemp = {};
 
+    // Enforce MAX_TOP_TRACKS_PER_ARTIST cap across catalog so obscure deep-cuts never enter gameplay
+    const cappedCatalog = [];
     CATALOG.forEach((song) => {
       song.genre = mapToBroadGenre(song.genre);
       if (!song.lang) {
         song.lang = detectLanguage(song.artist) === 'he' || detectLanguage(song.title) === 'he' ? 'he' : 'en';
       }
+      if (!byArtistTemp[song.artist]) {
+        byArtistTemp[song.artist] = [];
+      }
+      if (byArtistTemp[song.artist].length < MAX_TOP_TRACKS_PER_ARTIST) {
+        byArtistTemp[song.artist].push(song);
+        cappedCatalog.push(song);
+      }
+    });
+
+    CATALOG.length = 0;
+    cappedCatalog.forEach((s) => CATALOG.push(s));
+
+    CATALOG.forEach((song) => {
       genresSet.add(song.genre);
       if (!ARTIST_META[song.artist]) {
         ARTISTS.push(song.artist);
+        const aSongs = byArtistTemp[song.artist] || [];
         ARTIST_META[song.artist] = {
           name: song.artist,
           genre: song.genre,
+          decade: computeArtistPeakDecade(song.artist, aSongs),
           lang: song.lang,
           avatar: song.artwork,
           totalSongs: 0
@@ -122,6 +200,7 @@
     lang: 'all',          // 'all' | 'en' | 'he'
     difficulty: 'all',    // 'all' | 'easy' | 'medium' | 'hard'
     genre: 'all',         // 'all' | genre string
+    decade: 'all',        // 'all' | '80s & 90s' | '2000s' | '2010s' | '2020s'
     artist: 'all',        // 'all' | artist string
     inputMode: 'choices', // 'choices' | 'typing'
     roundLength: 10,
@@ -207,6 +286,7 @@
         if (addedCount > 0) {
           rebuildCatalogIndexes();
           renderGenreChips();
+          renderDecadeChips();
           renderArtistCards();
           renderSidebarArtistFastest();
           updateLobbyState();
@@ -423,15 +503,16 @@
     return `${String(sec).padStart(2, '0')}.${String(rem).padStart(3, '0')}s`;
   }
 
-  function getComboKey(diff, genre, artist) {
-    return `${diff}|${genre}|${artist}`;
+  function getComboKey(diff, genre, artist, decade = config.decade) {
+    return `${diff}|${genre}|${decade || 'all'}|${artist}`;
   }
 
-  function getCategoryLabel(diff, genre, artist) {
+  function getCategoryLabel(diff, genre, artist, decade = config.decade) {
     const dLabel = DIFF_LABELS[diff] || diff;
     const gLabel = genre === 'all' ? 'All Genres' : genre;
+    const decLabel = !decade || decade === 'all' ? 'All Eras' : decade;
     const aLabel = artist === 'all' ? 'All Artists' : artist;
-    return `${aLabel} • ${gLabel} • ${dLabel}`;
+    return `${aLabel} • ${gLabel} • ${decLabel} • ${dLabel}`;
   }
 
   // ==================== INITIALIZATION & UI BINDINGS ====================
@@ -446,6 +527,7 @@
 
     updateHeaderUsernameUI();
     renderGenreChips();
+    renderDecadeChips();
     renderArtistCards();
     updateLobbyState();
     updateDailyBannerUI();
@@ -709,8 +791,10 @@
           config.artist = 'all';
         }
         config.genre = 'all';
+        config.decade = 'all';
 
         renderGenreChips();
+        renderDecadeChips();
         renderArtistCards();
         renderSidebarArtistFastest(document.getElementById('sidebarArtistSearchInput')?.value || '');
         updateLobbyState();
@@ -954,8 +1038,19 @@
     return matchArt ? ARTIST_META[matchArt].avatar : '';
   }
 
+  function getDecadeCoverImage(decadeName) {
+    const langArtists = getArtistsForCurrentLang();
+    if (decadeName === 'all') {
+      const firstArt = langArtists.find((a) => ARTIST_META[a]?.avatar);
+      return firstArt ? ARTIST_META[firstArt].avatar : '';
+    }
+    const matchArt = langArtists.find((a) => ARTIST_META[a]?.decade === decadeName && ARTIST_META[a]?.avatar);
+    return matchArt ? ARTIST_META[matchArt].avatar : '';
+  }
+
   function renderGenreChips() {
     const container = document.getElementById('genreSelector');
+    if (!container) return;
     container.innerHTML = '';
 
     const langArtists = getArtistsForCurrentLang();
@@ -1008,6 +1103,58 @@
     });
   }
 
+  function renderDecadeChips() {
+    const container = document.getElementById('decadeSelector');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const langArtists = getArtistsForCurrentLang();
+    const allCover = getDecadeCoverImage('all');
+    const allChip = document.createElement('button');
+    allChip.type = 'button';
+    allChip.className = `genre-visual-card ${config.decade === 'all' ? 'active' : ''}`;
+    if (allCover) allChip.style.backgroundImage = `url("${allCover}")`;
+    allChip.innerHTML = `
+      <div class="glass-card-overlay">
+        <span class="gvc-title">All Eras</span>
+        <span class="gvc-count">${langArtists.length}</span>
+      </div>
+    `;
+    allChip.addEventListener('click', () => {
+      config.decade = 'all';
+      renderDecadeChips();
+      renderArtistCards();
+      updateLobbyState();
+    });
+    container.appendChild(allChip);
+
+    DECADES.forEach((dec) => {
+      const decArtists = langArtists.filter((a) => ARTIST_META[a]?.decade === dec);
+      if (decArtists.length === 0) return;
+      const dCover = getDecadeCoverImage(dec);
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = `genre-visual-card ${config.decade === dec ? 'active' : ''}`;
+      if (dCover) chip.style.backgroundImage = `url("${dCover}")`;
+      chip.innerHTML = `
+        <div class="glass-card-overlay">
+          <span class="gvc-title">${dec}</span>
+          <span class="gvc-count">${decArtists.length}</span>
+        </div>
+      `;
+      chip.addEventListener('click', () => {
+        config.decade = dec;
+        if (config.artist !== 'all' && ARTIST_META[config.artist]?.decade !== dec) {
+          selectArtistForLobby('all');
+        }
+        renderDecadeChips();
+        renderArtistCards();
+        updateLobbyState();
+      });
+      container.appendChild(chip);
+    });
+  }
+
   function selectArtistForLobby(artistName) {
     config.artist = artistName;
     if (artistName !== 'all') {
@@ -1026,18 +1173,29 @@
     const clearBtn = document.getElementById('clearArtistSelectionBtn');
     if (!displayEl) return;
 
-    const langArtists = getArtistsForCurrentLang();
+    const matchingArtists = getArtistsForCurrentLang().filter((a) => {
+      const m = ARTIST_META[a];
+      if (!m) return false;
+      if (config.genre !== 'all' && m.genre !== config.genre) return false;
+      if (config.decade !== 'all' && m.decade !== config.decade) return false;
+      return true;
+    });
 
     if (config.artist === 'all') {
-      const cover = getGenreCoverImage(config.genre);
+      const cover = config.decade !== 'all'
+        ? getDecadeCoverImage(config.decade)
+        : getGenreCoverImage(config.genre);
       if (selectedBar) {
         selectedBar.style.backgroundImage = cover ? `url("${cover}")` : 'none';
       }
+      const filterSub = (config.genre !== 'all' || config.decade !== 'all')
+        ? `${config.genre !== 'all' ? config.genre : 'All Genres'} • ${config.decade !== 'all' ? config.decade : 'All Eras'} • Tap to pick an artist`
+        : 'Free Play Open • Tap to pick an artist campaign';
       displayEl.innerHTML = `
         <div class="artist-avatar">ALL</div>
         <div class="artist-btn-info">
-          <div class="artist-btn-name">All Artists (${langArtists.length})</div>
-          <div class="artist-btn-sub">Free Play Open • Tap to pick an artist campaign</div>
+          <div class="artist-btn-name">All Artists (${matchingArtists.length})</div>
+          <div class="artist-btn-sub">${filterSub}</div>
         </div>
       `;
       if (clearBtn) clearBtn.classList.add('hidden');
@@ -1052,7 +1210,7 @@
         <img src="${meta.avatar}" alt="${config.artist}" class="artist-avatar" />
         <div class="artist-btn-info">
           <div class="artist-btn-name">${config.artist} <span style="color:var(--accent);font-size:0.75rem;margin-left:0.35rem">${badgeStr}</span></div>
-          <div class="artist-btn-sub">${meta.genre} • ${meta.totalSongs} tracks</div>
+          <div class="artist-btn-sub">${meta.genre} • ${meta.decade} • ${meta.totalSongs} tracks</div>
         </div>
       `;
       if (clearBtn) clearBtn.classList.remove('hidden');
@@ -1070,8 +1228,18 @@
     const q = query.trim().toLowerCase();
     const langArtists = getArtistsForCurrentLang();
 
+    const filteredArtists = langArtists.filter((name) => {
+      const meta = ARTIST_META[name];
+      if (!meta) return false;
+      if (!q) {
+        if (config.genre !== 'all' && meta.genre !== config.genre) return false;
+        if (config.decade !== 'all' && meta.decade !== config.decade) return false;
+      }
+      return name.toLowerCase().includes(q) || meta.genre.toLowerCase().includes(q) || (meta.decade || '').toLowerCase().includes(q);
+    });
+
     if (!q) {
-      const allCover = getGenreCoverImage(config.genre);
+      const allCover = config.decade !== 'all' ? getDecadeCoverImage(config.decade) : getGenreCoverImage(config.genre);
       const allOpt = document.createElement('button');
       allOpt.type = 'button';
       allOpt.className = `az-artist-option ${config.artist === 'all' ? 'active' : ''}`;
@@ -1082,7 +1250,7 @@
             <div class="artist-avatar">ALL</div>
             <div style="min-width:0">
               <div class="artist-btn-name">All Artists</div>
-              <div class="artist-btn-sub">${langArtists.length} artists • Free Play</div>
+              <div class="artist-btn-sub">${filteredArtists.length} matching artists • Free Play</div>
             </div>
           </div>
           <span class="az-opt-right mono">MIX</span>
@@ -1098,13 +1266,8 @@
     }
 
     let currentLetter = '';
-    const filteredArtists = langArtists.filter((name) => {
-      const meta = ARTIST_META[name];
-      return name.toLowerCase().includes(q) || meta.genre.toLowerCase().includes(q);
-    });
-
     if (filteredArtists.length === 0) {
-      listEl.innerHTML = `<div style="grid-column:1/-1;padding:1rem;color:var(--text-dim);text-align:center;font-size:0.84rem">No matching artists found</div>`;
+      listEl.innerHTML = `<div style="grid-column:1/-1;padding:1rem;color:var(--text-dim);text-align:center;font-size:0.84rem">No matching artists for this Genre / Decade filter</div>`;
       return;
     }
 
@@ -1120,10 +1283,9 @@
 
       const meta = ARTIST_META[artistName];
       const camp = getArtistCampaign(artistName);
-      const matchesGenre = config.genre === 'all' || meta.genre === config.genre;
       const opt = document.createElement('button');
       opt.type = 'button';
-      opt.className = `az-artist-option ${config.artist === artistName ? 'active' : ''} ${!matchesGenre ? 'disabled-by-genre' : ''}`;
+      opt.className = `az-artist-option ${config.artist === artistName ? 'active' : ''}`;
       if (meta.avatar) opt.style.backgroundImage = `url("${meta.avatar}")`;
       opt.innerHTML = `
         <div class="az-glass-bar">
@@ -1131,7 +1293,7 @@
             <img src="${meta.avatar}" alt="${artistName}" class="artist-avatar" />
             <div style="min-width:0">
               <div class="artist-btn-name">${artistName} ${camp.mastered ? '👑' : ''}</div>
-              <div class="artist-btn-sub">${meta.genre} • ${camp.mastered ? 'Mastered' : `Stg ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
+              <div class="artist-btn-sub">${meta.genre} • ${meta.decade} • ${camp.mastered ? 'Mastered' : `Stg ${Math.min(3, camp.unlockedStage || 1)}/3`}</div>
             </div>
           </div>
           <span class="az-opt-right mono">${meta.totalSongs}</span>
@@ -1142,6 +1304,10 @@
         if (config.genre !== 'all' && config.genre !== meta.genre) {
           config.genre = 'all';
           renderGenreChips();
+        }
+        if (config.decade !== 'all' && config.decade !== meta.decade) {
+          config.decade = 'all';
+          renderDecadeChips();
         }
         closeLobbyArtistDropdown();
         renderArtistCards();
@@ -1343,6 +1509,7 @@
       if (config.lang !== 'all' && song.lang !== config.lang) return false;
       if (effectiveDiff !== 'all' && song.difficulty !== effectiveDiff) return false;
       if (config.genre !== 'all' && song.genre !== config.genre) return false;
+      if (config.decade !== 'all' && ARTIST_META[song.artist]?.decade !== config.decade) return false;
       if (config.artist !== 'all' && song.artist !== config.artist) return false;
       return true;
     });
@@ -1532,7 +1699,9 @@
       ? `STAGE ${stageObj.stage} (${DIFF_LABELS[stageObj.diff]})`
       : DIFF_LABELS[config.difficulty];
     document.getElementById('activeFilterTag').textContent =
-      config.artist !== 'all' ? config.artist : (config.genre !== 'all' ? config.genre : 'All Artists');
+      config.artist !== 'all'
+        ? config.artist
+        : `${config.genre !== 'all' ? config.genre : 'All Genres'}${config.decade !== 'all' ? ' • ' + config.decade : ''}`;
 
     try {
       game.audio.muted = false;
@@ -2624,12 +2793,18 @@
 
   // ==================== DASHBOARD & SIDEBAR RENDERERS ====================
   function updateHeaderQuickStats() {
-    document.getElementById('headerFastestTime').textContent = stats.globalFastest
-      ? formatMs(stats.globalFastest.timeMs)
-      : '--.---s';
-    document.getElementById('headerBestScore').textContent = stats.globalBestRound
-      ? stats.globalBestRound.score.toLocaleString()
-      : '0';
+    const fastEl = document.getElementById('headerFastestTime');
+    if (fastEl) {
+      fastEl.textContent = stats.globalFastest
+        ? formatMs(stats.globalFastest.timeMs)
+        : '--.---s';
+    }
+    const bestEl = document.getElementById('headerBestScore');
+    if (bestEl) {
+      bestEl.textContent = stats.globalBestRound
+        ? stats.globalBestRound.score.toLocaleString()
+        : '0';
+    }
   }
 
   function renderSidebarArtistFastest(query = '') {
@@ -2984,14 +3159,17 @@
             ${targets.map((t) => {
               const unlocked = stats.unlockedCards?.[t.song.id];
               const rClass = t.rarity.toLowerCase();
-              const coverStyle = t.song.artwork ? `background-image:url("${t.song.artwork}")` : '';
+              const artUrl = t.song.artwork || meta?.avatar || '';
+              const coverStyle = artUrl ? `background-image:url('${artUrl}')` : '';
               return `
                 <div class="collectible-card ${rClass} ${unlocked ? 'unlocked' : 'locked'}" style="${coverStyle}">
-                  <span class="cc-rarity-pill ${rClass}">${t.rarity}</span>
-                  <div class="cc-glass-footer">
-                    <div class="cc-song-title">${t.song.title}</div>
-                    <div class="cc-artist-name">${t.diffLabel} Target</div>
-                    <div class="cc-time-badge mono">${unlocked ? `✓ ${formatMs(unlocked.timeMs)}` : '🔒 Target: < 01.000s'}</div>
+                  <div class="cc-top-row">
+                    <span class="cc-rarity-tag">${t.rarity}</span>
+                    <span class="cc-status-icon">${unlocked ? `✓ ${formatMs(unlocked.timeMs)}` : '🔒 < 1.0s'}</span>
+                  </div>
+                  <div class="cc-glass-bottom">
+                    <div class="cc-title">${t.song.title}</div>
+                    <div class="cc-sub">${unlocked ? `${t.diffLabel} Target Unlocked!` : `${t.diffLabel} • Identify < 01.000s`}</div>
                   </div>
                 </div>
               `;
@@ -3033,14 +3211,17 @@
 
       allCardsGridEl.innerHTML = sortedCards.map((c) => {
         const rClass = (c.rarity || 'Rare').toLowerCase();
-        const coverStyle = c.artwork ? `background-image:url("${c.artwork}")` : '';
+        const artUrl = c.artwork || ARTIST_META[c.artist]?.avatar || '';
+        const coverStyle = artUrl ? `background-image:url('${artUrl}')` : '';
         return `
           <div class="collectible-card ${rClass} unlocked" style="${coverStyle}">
-            <span class="cc-rarity-pill ${rClass}">${c.rarity}</span>
-            <div class="cc-glass-footer">
-              <div class="cc-song-title">${c.title}</div>
-              <div class="cc-artist-name">${c.artist}</div>
-              <div class="cc-time-badge mono">⚡ ${formatMs(c.timeMs)}</div>
+            <div class="cc-top-row">
+              <span class="cc-rarity-tag">${c.rarity}</span>
+              <span class="cc-status-icon">⚡ ${formatMs(c.timeMs)}</span>
+            </div>
+            <div class="cc-glass-bottom">
+              <div class="cc-title">${c.title}</div>
+              <div class="cc-sub">${c.artist}</div>
             </div>
           </div>
         `;
@@ -3192,7 +3373,13 @@
         albumTracks = (albLookup.results || []).filter((r) => r.wrapperType === 'track');
       }
 
-      const rawResults = [...(searchRes.results || []), ...((lookupRes.results || []).slice(1)), ...albumTracks];
+      const popularityResults = [
+        ...(searchRes.results || []),
+        ...((lookupRes.results || []).slice(1)).map((t) => Object.assign({}, t, { _isPopularityRanked: true }))
+      ];
+      // Mark popularity-ranked tracks vs explicit album-lookup tracks
+      popularityResults.forEach((t) => { t._isPopularityRanked = true; });
+      const rawResults = [...popularityResults, ...albumTracks];
       const normIndexMap = new Map();
       const tracks = [];
 
@@ -3235,6 +3422,11 @@
           continue;
         }
 
+        // Strict Popularity Threshold: Only add new tracks if they are within the artist's Top 22 Most Streamed hits
+        if (!it._isPopularityRanked || tracks.length >= MAX_TOP_TRACKS_PER_ARTIST) {
+          continue;
+        }
+
         normIndexMap.set(normKey, tracks.length);
         tracks.push(candidateObj);
       }
@@ -3244,8 +3436,8 @@
         return;
       }
 
-      const easyCut = Math.max(5, Math.round(tracks.length * 0.25));
-      const medCut = Math.max(8, Math.round(tracks.length * 0.35));
+      const easyCut = Math.min(7, Math.max(5, Math.round(tracks.length * 0.32)));
+      const medCut = Math.min(8, Math.max(5, Math.round(tracks.length * 0.36)));
 
       tracks.forEach((song, idx) => {
         if (idx < easyCut) song.difficulty = 'easy';
@@ -3279,8 +3471,10 @@
       rebuildCatalogIndexes();
       selectArtistForLobby(artistName);
       config.genre = 'all';
+      config.decade = 'all';
 
       renderGenreChips();
+      renderDecadeChips();
       renderArtistCards();
       renderSidebarArtistFastest();
       updateLobbyState();

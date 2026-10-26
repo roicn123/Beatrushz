@@ -35,14 +35,6 @@
           <span class="user-dot" id="userCloudStatusDot"></span>
           <span class="mono" id="headerUsernameDisplay">@guest</span>
         </button>
-        <div class="quick-pill">
-          <span class="pill-label">BEST</span>
-          <span class="pill-value mono" id="headerFastestTime">--.---s</span>
-        </div>
-        <div class="quick-pill">
-          <span class="pill-label">SCORE</span>
-          <span class="pill-value mono" id="headerBestScore">0</span>
-        </div>
       </div>
     </div>
   </header>
@@ -132,6 +124,14 @@
               <span class="step-label">GENRE</span>
             </div>
             <div class="chips-container" id="genreSelector"></div>
+          </div>
+
+          <!-- Decade / Era -->
+          <div class="filter-group">
+            <div class="filter-title">
+              <span class="step-label">DECADE / ERA</span>
+            </div>
+            <div class="chips-container decade-chips-container" id="decadeSelector"></div>
           </div>
 
           <!-- Artist Selection (Searchable A-Z Dropdown + Add Artist) -->

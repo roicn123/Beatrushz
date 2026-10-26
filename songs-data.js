@@ -100,7 +100,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
     "album": "beerbongs & bentleys",
     "releaseYear": "2017",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -113,7 +113,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
     "album": "Twelve Carat Toothache",
     "releaseYear": "2022",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -126,7 +126,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/be/55/10/be551028-0ddf-6d06-918d-4a2b6a7c18ad/23UMGIM38555.rgb.jpg/300x300bb.jpg",
     "album": "Chemical - Single",
     "releaseYear": "2023",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -139,7 +139,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2d/b6/b5/2db6b5e9-326e-ada2-5d94-d4765c2a24d0/19UMGIM60243.rgb.jpg/300x300bb.jpg",
     "album": "Goodbyes (feat. Young Thug) - Single",
     "releaseYear": "2019",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -152,7 +152,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
     "album": "Stoney (Deluxe)",
     "releaseYear": "2015",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -165,7 +165,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/300x300bb.jpg",
     "album": "F-1 Trillion",
     "releaseYear": "2024",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -178,7 +178,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
     "album": "Hollywood's Bleeding",
     "releaseYear": "2019",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -191,7 +191,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/300x300bb.jpg",
     "album": "F-1 Trillion",
     "releaseYear": "2024",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -204,7 +204,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/300x300bb.jpg",
     "album": "F-1 Trillion",
     "releaseYear": "2024",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -217,7 +217,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
     "album": "beerbongs & bentleys",
     "releaseYear": "2018",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -230,7 +230,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
     "album": "Hollywood's Bleeding",
     "releaseYear": "2019",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -243,7 +243,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ba/77/22/ba772286-cdd8-8925-aa93-784db1836d7b/075679900111.jpg/300x300bb.jpg",
     "album": "The Fate of the Furious: The Album",
     "releaseYear": "2017",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -256,7 +256,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
     "album": "AUSTIN",
     "releaseYear": "2023",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -269,7 +269,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/96/6a/b2/966ab2b4-45f3-1871-2981-c4be97f20ef9/21UM1IM34605.rgb.jpg/300x300bb.jpg",
     "album": "One Right Now - Single",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -279,1176 +279,6 @@ window.SONGS_CATALOG = [
     "artist": "Post Malone",
     "genre": "Hip-Hop",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/84/29/2f842925-bd26-8f57-b372-87b9adb6ecb5/mzaf_11130994615498602848.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517314",
-    "title": "Ball For Me",
-    "fullTitle": "Ball For Me (feat. Nicki Minaj)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/0e/58/c10e58fb-6936-65b3-38f5-b3c637fa7edc/mzaf_10143748345625819867.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373516909",
-    "title": "Rich & Sad",
-    "fullTitle": "Rich & Sad",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/05/31/bf0531d6-5b1b-e602-ddcd-91feae756b77/mzaf_17954517224327216694.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517316",
-    "title": "Stay",
-    "fullTitle": "Stay",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/36/53/fa365359-4117-ddd5-f9d9-2652219a588f/mzaf_16585778386300571566.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022215",
-    "title": "Overdrive",
-    "fullTitle": "Overdrive",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/4a/07/504a0752-22dc-e6c2-4a73-a0d858fb728d/mzaf_4388397368064508004.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517326",
-    "title": "92 Explorer",
-    "fullTitle": "92 Explorer",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/f1/c1/c1f1c1b1-74ab-53c0-35bf-2c457c0f15c7/mzaf_5559446859565694839.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193267",
-    "title": "Cooped Up",
-    "fullTitle": "Cooped Up (feat. Roddy Ricch)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/52/e6/9452e6a3-973a-d3c0-e784-642533b78de3/mzaf_13413331056808233361.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440888192",
-    "title": "Feeling Whitney",
-    "fullTitle": "Feeling Whitney",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/e1/8b/c9e18b31-b824-2265-c605-539829b32ed6/mzaf_6736420485062958974.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887516",
-    "title": "No Option",
-    "fullTitle": "No Option",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/c8/f8/c4c8f810-b750-381e-ad05-04b648030991/mzaf_9030381730211857422.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887746",
-    "title": "Go Flex",
-    "fullTitle": "Go Flex",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/24/96/77249616-8e1c-5f4a-f76a-b1f67415d69f/mzaf_8715967405657146795.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887513",
-    "title": "Deja Vu",
-    "fullTitle": "Deja Vu (feat. Justin Bieber)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/37/86/6e378646-a574-128c-e06e-0fa37f34f0fc/mzaf_8138880386195637506.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880563",
-    "title": "Die For Me",
-    "fullTitle": "Die For Me (feat. Future & Halsey)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/ab/77/c4ab77a1-5f1c-812e-757a-30f5db87c7fe/mzaf_4959243147384542665.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880548",
-    "title": "Saint",
-    "fullTitle": "Saint-Tropez",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/3b/f5/583bf505-e553-90d3-c48c-603fe3446e2b/mzaf_7743591309617273006.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887754",
-    "title": "Too Young",
-    "fullTitle": "Too Young",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/eb/86/9eeb8671-54b4-23f2-7c0e-2c45b7775a7f/mzaf_17078127876599420355.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022356",
-    "title": "Enough Is Enough",
-    "fullTitle": "Enough Is Enough",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/7c/55/f87c5507-f6d6-b40e-58b0-0cd9e0b96b70/mzaf_4179403598655859350.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1649809137",
-    "title": "Cooped Up / Return Of The Mack",
-    "fullTitle": "Cooped Up / Return Of The Mack",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/6e/c0/716ec048-8354-0108-17df-ea30a9d64019/mzaf_2547681425111342301.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/13/2e/38/132e3864-db7d-6ee5-81f0-5b0948f7f826/22UM1IM10852.rgb.jpg/300x300bb.jpg",
-    "album": "Cooped Up / Return Of The Mack - Single",
-    "releaseYear": "1996",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517317",
-    "title": "Blame It On Me",
-    "fullTitle": "Blame It On Me",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/4e/4d/594e4d0f-fd50-889e-f391-109e72117ffa/mzaf_6305118485568820171.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752532218",
-    "title": "Yours",
-    "fullTitle": "Yours",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/35/60/85356032-295d-1da5-e0e0-2ffb5a89411b/mzaf_3251263991070645692.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762472267",
-    "title": "What Don't Belong To Me",
-    "fullTitle": "What Don't Belong To Me",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/25/89/af2589db-88da-49d4-d0da-955389231b23/mzaf_15924324073248783784.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752531958",
-    "title": "Nosedive",
-    "fullTitle": "Nosedive (feat. Lainey Wilson)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5e/61/ed/5e61ed79-5a51-5295-3be1-22b99449f5ff/mzaf_14780564142746886559.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473135",
-    "title": "Fallin’ In Love",
-    "fullTitle": "Fallin’ In Love",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/3b/e8/943be876-ef9b-0515-7bc6-8005751df4f5/mzaf_2053032805124208057.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762472250",
-    "title": "Finer Things",
-    "fullTitle": "Finer Things (feat. Hank Williams, Jr.)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/f8/9f/42f89f90-2bc8-c584-a0b2-211d8991e4ff/mzaf_17537360832268423428.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762472895",
-    "title": "Missin’ You Like This",
-    "fullTitle": "Missin’ You Like This (feat. Luke Combs)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/4e/d8/ac4ed82a-1a83-5b53-415a-f88d1c370e38/mzaf_1390224529536840972.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193280",
-    "title": "Wrapped Around Your Finger",
-    "fullTitle": "Wrapped Around Your Finger",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bc/94/a3/bc94a3cf-9163-6938-2d9a-31a74f546a07/mzaf_1465430713851259099.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762472264",
-    "title": "Have The Heart",
-    "fullTitle": "Have The Heart (feat. Dolly Parton)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/bb/28/f0bb280b-db77-40c5-1305-df9aed37a192/mzaf_17598271685207422666.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762472606",
-    "title": "Goes Without Saying",
-    "fullTitle": "Goes Without Saying (feat. Brad Paisley)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/3a/7f/dc3a7f5f-7d46-4b2f-bd30-4acf0399683b/mzaf_9723749196420225290.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887527",
-    "title": "I Fall Apart",
-    "fullTitle": "I Fall Apart",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/af/25/e4af251e-560b-08c3-c7e9-870ad171a345/mzaf_2950461388593508006.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373516910",
-    "title": "Zack and Codeine",
-    "fullTitle": "Zack and Codeine",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/64/c2/2e64c2ae-9081-3c61-aea9-00d65f32314e/mzaf_9942579089984870867.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473603",
-    "title": "Two Hearts",
-    "fullTitle": "Two Hearts",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/6b/8c/886b8cad-402b-b191-cf31-77c29ed6571a/mzaf_13228830994600168376.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473441",
-    "title": "Dead At The Honky Tonk",
-    "fullTitle": "Dead At The Honky Tonk",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/6f/ce/ae6fce74-2667-ef6a-c524-0e0996ea578f/mzaf_15629166879185745843.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473461",
-    "title": "Ain’t How It Ends",
-    "fullTitle": "Ain’t How It Ends",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/3d/92/573d9223-a1c4-5060-d65d-d8dfc87f1840/mzaf_9315886877890865767.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762472824",
-    "title": "Devil I've Been",
-    "fullTitle": "Devil I've Been (feat. ERNEST)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/f0/2b/a7f02b06-b62c-0539-fc6b-30ed021f686f/mzaf_2550494297623509181.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373516908",
-    "title": "Spoil My Night",
-    "fullTitle": "Spoil My Night (feat. Swae Lee)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/a8/84/2fa88445-059b-3ac9-9b23-46941f8d32b4/mzaf_7574144066507655861.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473463",
-    "title": "Hey Mercedes",
-    "fullTitle": "Hey Mercedes",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/0b/df/1d0bdffb-39c0-d63d-0892-942e544dba2c/mzaf_16266887940791059354.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193578",
-    "title": "Wasting Angels",
-    "fullTitle": "Wasting Angels (feat. The Kid LAROI)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/e9/ab/a8e9ab0d-96f7-2193-a873-f6786d19c917/mzaf_5371688551977343466.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473616",
-    "title": "Back To Texas",
-    "fullTitle": "Back To Texas",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/f0/e9/e1f0e9d2-4253-379a-3968-90a18a6fa774/mzaf_4945210130304808572.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473609",
-    "title": "Who Needs You",
-    "fullTitle": "Who Needs You",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/5f/65/5b5f6554-a053-cb8a-ee1d-60f3b8e23518/mzaf_297487176679268965.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373516911",
-    "title": "Takin' Shots",
-    "fullTitle": "Takin' Shots",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/6c/99/f86c99f0-14d5-69fd-843a-472e21cf1cc9/mzaf_16738950686782191451.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517311",
-    "title": "Over Now",
-    "fullTitle": "Over Now",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/83/fc/3983fce3-e981-978f-c217-b40ca73bfc18/mzaf_3256374977469038482.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517319",
-    "title": "Same Bitches",
-    "fullTitle": "Same Bitches (feat. G-Eazy & YG)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/39/08/71390853-4a80-8986-e25c-61e0610fb210/mzaf_10442512340673997939.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517315",
-    "title": "Otherside",
-    "fullTitle": "Otherside",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/66/9a/8e669a0a-19b6-cd7f-6527-36347d5b3b28/mzaf_5714835417728239956.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473456",
-    "title": "Killed A Man",
-    "fullTitle": "Killed A Man",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/af/a9/98afa96c-7101-a505-c148-e2e2dc09cddf/mzaf_5592381601951360986.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1628227592",
-    "title": "When I’m Alone",
-    "fullTitle": "When I’m Alone",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/9f/d4/289fd45a-48b2-f374-7b67-07355e661baf/mzaf_16079330380719579297.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f8/11/ef/f811ef3b-8ca4-ac16-ba71-1dca7304a8ba/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache (Deluxe)",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752532204",
-    "title": "Right About You",
-    "fullTitle": "Right About You",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/fd/9d/a6fd9d99-e25c-3f28-40fb-c0f125d491f7/mzaf_7195947612152672442.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762472882",
-    "title": "Never Love You Again",
-    "fullTitle": "Never Love You Again (feat. Sierra Ferrell)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/56/13/9a561329-6346-fdbb-7057-f619c5882599/mzaf_13737083447874699123.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880759",
-    "title": "I'm Gonna Be",
-    "fullTitle": "I'm Gonna Be",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/b3/a4/2ab3a4bf-fe00-41b8-80d7-acdb44679715/mzaf_3175358046957277512.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887760",
-    "title": "Up There",
-    "fullTitle": "Up There",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/88/4b/83884bf1-05ba-c399-ccc5-ce25e085d0bf/mzaf_8576327785905041419.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688021439",
-    "title": "Don't Understand",
-    "fullTitle": "Don't Understand",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/e8/c5/29e8c598-b943-27c9-5705-53fa5d434c02/mzaf_14768294440712924674.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1373517334",
-    "title": "Sugar Wraith",
-    "fullTitle": "Sugar Wraith",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/e7/5f/98e75f26-b176-11e8-7aea-89c88c38e462/mzaf_339757624178409055.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/300x300bb.jpg",
-    "album": "beerbongs & bentleys",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022661",
-    "title": "Landmine",
-    "fullTitle": "Landmine",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/20/c6/6620c639-c8b5-90f7-4d6a-10730eb7dfe5/mzaf_2959204918197308692.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022220",
-    "title": "Speedometer",
-    "fullTitle": "Speedometer",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/2f/ac/612fac83-e66c-6201-d303-138a239d9c03/mzaf_9382118261977928769.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688021689",
-    "title": "Something Real",
-    "fullTitle": "Something Real",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/c8/98/02c8987a-06a1-7902-5966-e201d1b2f5c5/mzaf_12290303184745573178.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022349",
-    "title": "Hold My Breath",
-    "fullTitle": "Hold My Breath",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/b0/76/c5b07652-92f7-48a6-1cbb-56c82e591b1e/mzaf_16695040148904619547.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440888027",
-    "title": "Money Made Me Do It",
-    "fullTitle": "Money Made Me Do It (feat. 2 Chainz)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/57/84/665784b1-289e-65f6-2f53-b47ec97944eb/mzaf_6309885863324040510.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887751",
-    "title": "Feel",
-    "fullTitle": "Feel (feat. Kehlani)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/aa/37/c9aa37eb-ec14-5f61-1eb5-8544db007a5f/mzaf_9180807704113755257.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1699800331",
-    "title": "Joy",
-    "fullTitle": "Joy",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/a5/34/8fa5341d-c2f5-1c05-fe64-bbbe4a8f47c6/mzaf_8973849348955172125.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9a/aa/8c/9aaa8c62-7567-d1d6-fdca-bf6ac60e9d66/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN (Bonus)",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887741",
-    "title": "Patient",
-    "fullTitle": "Patient",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/e9/cc/f8e9cc4a-8581-4ab3-6cf5-d1e130677d40/mzaf_2347594780790569687.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880565",
-    "title": "On the Road",
-    "fullTitle": "On the Road (feat. Meek Mill & Lil Baby)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/6d/e6/d56de6f7-e5f0-2247-bac3-df9a4b30bd5a/mzaf_14699686934903100260.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022669",
-    "title": "Green Thumb",
-    "fullTitle": "Green Thumb",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/d7/2f/2bd72fef-7da6-7dc7-1467-30f912cb90cd/mzaf_17203575009354088929.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880762",
-    "title": "Staring at the Sun",
-    "fullTitle": "Staring at the Sun (feat. SZA)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/06/7a/2a067a8e-267f-4eb5-74ff-01b443d5fa0e/mzaf_258023241144379050.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022032",
-    "title": "Too Cool To Die",
-    "fullTitle": "Too Cool To Die",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/9a/5c/159a5c87-bd76-65e8-3462-0b4477d61804/mzaf_15497265250605507828.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887506",
-    "title": "Big Lie",
-    "fullTitle": "Big Lie",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/96/d3/b096d327-96a8-7943-f3b3-fff0c17ec02a/mzaf_6192731236202720866.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880558",
-    "title": "A Thousand Bad Times",
-    "fullTitle": "A Thousand Bad Times",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/ad/40/3dad4097-2c58-26ab-0542-aaaa09141c1e/mzaf_7313800965908598790.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880775",
-    "title": "I Know",
-    "fullTitle": "I Know",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/b3/ff/6eb3ff97-9499-7e6c-ab40-d08d13406556/mzaf_10499809511105862541.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440888022",
-    "title": "Leave",
-    "fullTitle": "Leave",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/af/68/6daf682f-0a2b-a4da-10f2-f3b6b70f473a/mzaf_2708800259071405111.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440888015",
-    "title": "Yours Truly, Austin Post",
-    "fullTitle": "Yours Truly, Austin Post",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/a4/26/1ca4261d-3a29-d8e6-16c0-517b356c8ad5/mzaf_16626700071363457261.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1628227787",
-    "title": "New Recording 12, Jan 3, 2020",
-    "fullTitle": "New Recording 12, Jan 3, 2020",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/e4/e7/e5e4e79d-ab4f-1f32-52cc-8a3f75e48fcb/mzaf_10282290754002195980.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f8/11/ef/f811ef3b-8ca4-ac16-ba71-1dca7304a8ba/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache (Deluxe)",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688021703",
-    "title": "Novacandy",
-    "fullTitle": "Novacandy",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/6d/05/d76d05ee-0355-5b55-04c7-3a0bc6a0b167/mzaf_10402727269142950257.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1850982010",
-    "title": "Cold",
-    "fullTitle": "Cold",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b8/c8/a6/b8c8a69a-efe2-1b86-75c5-6652614060dd/mzaf_5995926418018518573.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/41/74/514174f7-4bbd-71c9-21ba-378c1e95d078/ticket.celzwlwv.png/300x300bb.jpg",
-    "album": "I Hope You're Happy (Deluxe)",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440888025",
-    "title": "Hit This Hard",
-    "fullTitle": "Hit This Hard",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/e1/ff/6ce1ffc5-a289-f90c-4fc1-79ab7196bcf3/mzaf_2366504601648685898.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022038",
-    "title": "Sign Me Up",
-    "fullTitle": "Sign Me Up",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/ab/29/fcab2995-6bd6-4f60-6628-2fde46566af1/mzaf_4310073448929387157.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440887501",
-    "title": "Broken Whiskey Glass",
-    "fullTitle": "Broken Whiskey Glass",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/68/f8/28/68f828ca-00df-0acb-16d5-60af9ddb5a08/mzaf_18130362636885926450.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/ea/45/c1ea4509-59b6-c323-c6f5-d8d676f79577/16UMGIM76040.rgb.jpg/300x300bb.jpg",
-    "album": "Stoney (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880554",
-    "title": "Allergic",
-    "fullTitle": "Allergic",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/57/3a/58573aa3-bc93-1c11-94b0-1279d6391f77/mzaf_3589996218879750266.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1575618768",
-    "title": "Motley Crew",
-    "fullTitle": "Motley Crew",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/65/be/3765be8d-79c1-6fdc-3346-5ecd8dc5b0c8/mzaf_3861747085977946649.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a4/0c/cc/a40ccce6-794f-5ff3-8c6b-64c3f0d78817/21UMGIM61404.rgb.jpg/300x300bb.jpg",
-    "album": "Motley Crew - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022359",
-    "title": "Texas Tea",
-    "fullTitle": "Texas Tea",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/d7/06/e5d70688-6f8c-eee8-2571-5964fea06638/mzaf_3001580437807839940.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022207",
-    "title": "Socialite",
-    "fullTitle": "Socialite",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/2b/f2/2d2bf269-d244-21df-0b2e-d7db6d3782f3/mzaf_5991563387776452319.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022772",
-    "title": "Laugh It Off",
-    "fullTitle": "Laugh It Off",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/f2/36/eef2369e-38ab-7aad-6fb1-c8b53fd4a5d9/mzaf_7083135965055170971.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880771",
-    "title": "Myself",
-    "fullTitle": "Myself",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/c8/70/8cc87019-ffaa-96e8-2817-697e358668a5/mzaf_913932318755746146.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
-    "album": "Hollywood's Bleeding",
-    "releaseYear": "2019",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1688022361",
-    "title": "Buyer Beware",
-    "fullTitle": "Buyer Beware",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/b7/61/3eb76163-d0a6-b6d2-fa0e-d18a3aac7a15/mzaf_3899105805544790666.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/6a/bc/606abcfb-9b0e-f7fe-e1b8-0d37091f29d1/23UMGIM50188.rgb.jpg/300x300bb.jpg",
-    "album": "AUSTIN",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193178",
-    "title": "Reputation",
-    "fullTitle": "Reputation",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/d2/6a/e1d26ad0-1aac-e95b-68d2-0ea187b54965/mzaf_15823048621562083632.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1628227792",
-    "title": "Waiting For Never",
-    "fullTitle": "Waiting For Never",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/36/41/ab3641e5-8304-13a8-eb84-2fcf196a40ee/mzaf_17855675519982299957.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f8/11/ef/f811ef3b-8ca4-ac16-ba71-1dca7304a8ba/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache (Deluxe)",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193285",
-    "title": "I Cannot Be",
-    "fullTitle": "I Cannot Be (A Sadder Song) [feat. Gunna]",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/e4/27/e8e42798-d9ad-8ac6-a995-5353d4975367/mzaf_10794539292418852715.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193571",
-    "title": "Love/Hate Letter To Alcohol",
-    "fullTitle": "Love/Hate Letter To Alcohol (feat. Fleet Foxes)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/79/7c/93797cb8-b30d-c4cc-a3a4-05ac74d5c8e3/mzaf_14573270941242829843.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1628227795",
-    "title": "Hateful",
-    "fullTitle": "Hateful",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/cc/58/d0cc5874-57a9-57e9-392f-8a5222df55c4/mzaf_2175053116184464078.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f8/11/ef/f811ef3b-8ca4-ac16-ba71-1dca7304a8ba/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache (Deluxe)",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752532196",
-    "title": "California Sober",
-    "fullTitle": "California Sober (feat. Chris Stapleton)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/8d/3c/628d3c25-95b8-03c1-f8b1-310f189f9522/mzaf_3440941998553621456.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193291",
-    "title": "Insane",
-    "fullTitle": "Insane",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/04/74/aa047419-d580-8d59-4dd3-66c9e7838676/mzaf_7294024001185515042.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1623193275",
-    "title": "Lemon Tree",
-    "fullTitle": "Lemon Tree",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/16/ca/9016ca24-f58b-9be7-e8e8-2cbc2ccc6400/mzaf_857765557052199610.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e8/8b/0de88b7c-bed9-be30-24e2-82d796e7bcf3/22UMGIM49145.rgb.jpg/300x300bb.jpg",
-    "album": "Twelve Carat Toothache",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1098012792",
-    "title": "The Meaning",
-    "fullTitle": "The Meaning",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/ee/39/e8ee39e3-a951-dd39-93b4-fb6e1e30fcc6/mzaf_5310838218487907.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/09/7f/2a097fb4-016b-b34d-e04a-6fcefbed7a8d/502.jpg/300x300bb.jpg",
-    "album": "First Time for Everything, Pt. 1 - EP",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762471758",
-    "title": "Wrong Ones",
-    "fullTitle": "Wrong Ones (feat. Tim McGraw)",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/ed/9b/abed9bf1-b7c1-c8e6-7700-f16508b60044/mzaf_10026416528637351706.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1762473597",
-    "title": "Go To Hell",
-    "fullTitle": "Go To Hell",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/0e/87/080e8765-c3ea-ea1b-4631-88829d9cedce/mzaf_12905360366859444747.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/2a/00/672a00c1-4ef3-afc0-fff0-66bc1359c458/24UMGIM86335.rgb.jpg/300x300bb.jpg",
-    "album": "F-1 Trillion (Long Bed)",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1477880766",
-    "title": "Internet",
-    "fullTitle": "Internet",
-    "artist": "Post Malone",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/97/74/e197749b-e302-2b96-223d-54c24ca41c2b/mzaf_1683577503031810423.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg",
     "album": "Hollywood's Bleeding",
     "releaseYear": "2019",
@@ -1556,7 +386,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
     "album": "Starboy",
     "releaseYear": "2016",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1569,7 +399,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
     "album": "Beauty Behind the Madness",
     "releaseYear": "2015",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1582,7 +412,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
     "album": "After Hours",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1595,7 +425,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
     "album": "Beauty Behind the Madness",
     "releaseYear": "2014",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1608,7 +438,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/aa/b4/2aaab42a-a4cb-a600-4a25-d78961495960/18UMGIM17204.rgb.jpg/300x300bb.jpg",
     "album": "My Dear Melancholy,",
     "releaseYear": "2018",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1621,7 +451,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
     "album": "Trilogy",
     "releaseYear": "2011",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1634,7 +464,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
     "album": "After Hours",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1647,7 +477,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
     "album": "Dawn FM",
     "releaseYear": "2022",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -1660,7 +490,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
     "album": "Starboy",
     "releaseYear": "2016",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -1673,7 +503,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
     "album": "Dawn FM",
     "releaseYear": "2022",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -1686,7 +516,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
     "album": "Dawn FM",
     "releaseYear": "2022",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -1699,7 +529,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
     "album": "Starboy",
     "releaseYear": "2016",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -1712,7 +542,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b1/1b/10/b11b1074-5109-7bfc-32f0-8b49eaaeb9ac/21UMGIM75290.rgb.jpg/300x300bb.jpg",
     "album": "Take My Breath - Single",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -1725,7 +555,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4d/16/55/4d165549-3d11-86dc-fcbf-be7fe0bcadfb/18UMGIM00002.rgb.jpg/300x300bb.jpg",
     "album": "Black Panther: The Album",
     "releaseYear": "2018",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -1738,1293 +568,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
     "album": "Beauty Behind the Madness",
     "releaseYear": "2015",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826580",
-    "title": "In the Night",
-    "fullTitle": "In the Night",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/6e/37/df6e37e9-7ee4-0bb3-76ac-7e86f563b8d5/mzaf_9812619205883125540.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440871694",
-    "title": "Party Monster",
-    "fullTitle": "Party Monster",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/08/2c/3b082c06-5bac-6c4e-b19f-568d66583a6b/mzaf_10516694741874869697.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1770393194",
-    "title": "Timeless",
-    "fullTitle": "Timeless",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/d4/f0/9ad4f06c-bf08-255f-8498-8e3d1d17e743/mzaf_7983135672228712033.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/04/83/af048357-131d-1ca3-fe8a-d7ef3dda68ec/24UM1IM04062.rgb.jpg/300x300bb.jpg",
-    "album": "Timeless - Single",
-    "releaseYear": "2024",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378597",
-    "title": "Heartless",
-    "fullTitle": "Heartless",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/61/f8/7161f81f-f3b5-1a5a-1de3-186d7c84347b/mzaf_7357412783772919585.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2019",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378612",
-    "title": "In Your Eyes",
-    "fullTitle": "In Your Eyes",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/82/11/1882111a-79d3-5f79-593e-6511ad4788cd/mzaf_8486135305449676903.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1691920672",
-    "title": "Popular",
-    "fullTitle": "Popular (feat. Playboi Carti) [Music from the HBO Original Series The Idol]",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/a5/1d/7ba51dd5-4168-5e64-50c3-249bc2a61b11/mzaf_6762624222743714621.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f9/40/ce/f940ce64-ef5e-9ed0-5171-45d790b8b999/23UMGIM66787.rgb.jpg/300x300bb.jpg",
-    "album": "Popular (feat. Playboi Carti) [Music from the HBO Original Series The Idol] - Single",
-    "releaseYear": "2023",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171533",
-    "title": "Sacrifice",
-    "fullTitle": "Sacrifice",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/b0/c2/3cb0c297-74db-128a-7e8b-51d0b4878380/mzaf_5140696590097780982.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440871952",
-    "title": "Sidewalks",
-    "fullTitle": "Sidewalks (feat. Kendrick Lamar)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/28/aa/27/28aa273d-211e-02c9-5a10-54d70d3cef10/mzaf_7828126384376132250.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1550875424",
-    "title": "Wicked Games",
-    "fullTitle": "Wicked Games",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/0d/84/a60d8435-cbf9-bf4a-7f63-1974fe3a8b09/mzaf_8033376888673646338.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/dc/e9/95/dce995ab-5287-cba4-4966-46d16bf1c072/21UMGIM06667.rgb.jpg/300x300bb.jpg",
-    "album": "The Highlights",
-    "releaseYear": "2011",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440871703",
-    "title": "Reminder",
-    "fullTitle": "Reminder",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/b7/6c/2ab76cc6-8e8b-0f5d-a195-999e2d2c1161/mzaf_7752147891075556157.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440871956",
-    "title": "Six Feet Under",
-    "fullTitle": "Six Feet Under",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/bd/48/b2bd482c-43de-a5e6-a1f5-2e5f2b0e4d1c/mzaf_15011301983250310437.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1767418043",
-    "title": "Dancing In The Flames",
-    "fullTitle": "Dancing In The Flames",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/6b/36/736b36f8-7b99-4248-6a0b-32cb3c9739ed/mzaf_2964307400316673500.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/75/e4/0375e4fa-9331-3906-76a1-216478606608/24UMGIM95646.rgb.jpg/300x300bb.jpg",
-    "album": "Dancing In The Flames - Single",
-    "releaseYear": "2024",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1558942156",
-    "title": "House of Balloons / Glass Table Girls",
-    "fullTitle": "House of Balloons / Glass Table Girls (Original)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/e6/d9/d3e6d98c-8c62-f684-a231-0dbe32098272/mzaf_11979396189984577800.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/31/18/fa/3118fab0-90ea-2ae5-cf6c-bc64054ab9e3/21UMGIM21449.rgb.jpg/300x300bb.jpg",
-    "album": "House of Balloons (Original)",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714908991",
-    "title": "Coming Down",
-    "fullTitle": "Coming Down",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/19/4a/d3194ac4-730a-b12b-b04f-e95bab0416a4/mzaf_4133956479160019549.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714908981",
-    "title": "What You Need",
-    "fullTitle": "What You Need",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/f4/c0/b7f4c09c-d20c-d3a7-3a35-0acd3cc0ce1b/mzaf_1248819328861407392.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909161",
-    "title": "The Birds Pt. 1",
-    "fullTitle": "The Birds Pt. 1",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/00/99/8c00991b-2300-5d4b-96c6-ac980f238e6b/mzaf_5009266854929192602.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1363310493",
-    "title": "Try Me",
-    "fullTitle": "Try Me",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/42/db/fb42db3d-3b48-422f-f1e6-67e38385155b/mzaf_5356443608289932095.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/aa/b4/2aaab42a-a4cb-a600-4a25-d78961495960/18UMGIM17204.rgb.jpg/300x300bb.jpg",
-    "album": "My Dear Melancholy,",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909174",
-    "title": "Valerie",
-    "fullTitle": "Valerie",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/4e/ce/7a4ece58-888b-8cce-a85c-f8cc66ca5440/mzaf_8844285217701585228.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1422667809",
-    "title": "Adaptation",
-    "fullTitle": "Adaptation",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/50/6c/b0/506cb0e9-1551-c26c-65ec-263a575043a8/mzaf_6025426991298432569.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f1/7f/7a/f17f7a98-1e96-b29d-2916-df7fcf63f34e/13UAAIM69533.rgb.jpg/300x300bb.jpg",
-    "album": "Kiss Land",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440871717",
-    "title": "True Colors",
-    "fullTitle": "True Colors",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/f0/a9/9ff0a958-82e2-1c3c-5ce5-8da62296fc22/mzaf_3353112566775413922.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440872113",
-    "title": "A Lonely Night",
-    "fullTitle": "A Lonely Night",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/63/5f/f1635f1c-429e-cb49-ab5b-ad348364a5e9/mzaf_5862480190455961825.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654652",
-    "title": "The Abyss",
-    "fullTitle": "The Abyss",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/60/94/fe609404-245c-c4c4-6614-f6df66728b73/mzaf_3828883311165693506.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440872291",
-    "title": "Nothing Without You",
-    "fullTitle": "Nothing Without You",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/39/42/aa39426b-cf36-6362-dd4c-eec90878baf3/mzaf_3476371435970829242.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909422",
-    "title": "Next",
-    "fullTitle": "Next",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/e4/80/77e4805b-5ce1-6bb5-d6be-c17151daa998/mzaf_17423764171308797398.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654357",
-    "title": "Baptized In Fear",
-    "fullTitle": "Baptized In Fear",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/55/47/a2554790-550f-6596-032e-0b3798b1e568/mzaf_13705300379672259796.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1422667804",
-    "title": "The Town",
-    "fullTitle": "The Town",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/be/3b/abbe3b46-6db9-c864-455a-892d9ff279bf/mzaf_904385501176149785.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f1/7f/7a/f17f7a98-1e96-b29d-2916-df7fcf63f34e/13UAAIM69533.rgb.jpg/300x300bb.jpg",
-    "album": "Kiss Land",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909177",
-    "title": "Montreal",
-    "fullTitle": "Montreal",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/d5/e4/2dd5e4e2-d444-676b-8e02-0e29797d67d6/mzaf_1900297398858856055.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909176",
-    "title": "D.D.",
-    "fullTitle": "D.D.",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/24/98/f6249870-2554-3387-71a6-119e6b217d5e/mzaf_5599670517372067603.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1422667802",
-    "title": "Professional",
-    "fullTitle": "Professional",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/bc/3b/2abc3b4e-08e7-b724-ada3-8c07a42fe3af/mzaf_4232615497002808726.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f1/7f/7a/f17f7a98-1e96-b29d-2916-df7fcf63f34e/13UAAIM69533.rgb.jpg/300x300bb.jpg",
-    "album": "Kiss Land",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909426",
-    "title": "Till Dawn",
-    "fullTitle": "Till Dawn (Here Comes The Sun)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/87/29/6c8729c3-fe0a-df1a-b49b-6e6edc4d08fb/mzaf_8191847357805465447.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909000",
-    "title": "Life Of The Party",
-    "fullTitle": "Life Of The Party",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/8d/39/568d3927-e10b-b616-366a-03c36aa0b42b/mzaf_108616514718202616.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440872014",
-    "title": "Love To Lay",
-    "fullTitle": "Love To Lay",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/68/b9/f268b907-4249-6641-2b60-d60c102e85da/mzaf_16702151399735554065.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440872135",
-    "title": "Ordinary Life",
-    "fullTitle": "Ordinary Life",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/d0/68/3bd06840-00a5-836d-ef5c-50d2501a6e9a/mzaf_7522079474631215477.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1693891144",
-    "title": "Fill The Void",
-    "fullTitle": "Fill The Void",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/08/32/b0083273-d96c-1945-879f-bd4a8543415f/mzaf_6257462387418688180.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/db/28/e7/db28e7c3-f53a-76c8-eaa4-d92a22e4f160/23UMGIM72115.rgb.jpg/300x300bb.jpg",
-    "album": "The Idol Episode 4 (Music from the HBO Original Series) - Single",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440846116",
-    "title": "Where You Belong",
-    "fullTitle": "Where You Belong",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/6a/c6/e06ac620-701a-13d1-caaf-c8d09505b9aa/mzaf_6558329387276686481.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/fd/7a/13/fd7a1394-5ce1-6da6-93ad-977533762a1f/15UMGIM00463.rgb.jpg/300x300bb.jpg",
-    "album": "Fifty Shades of Grey (Original Motion Picture Soundtrack)",
-    "releaseYear": "2015",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909005",
-    "title": "Thursday",
-    "fullTitle": "Thursday",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/71/c5/5671c513-6656-80c1-ce70-273a46324b7b/mzaf_4134154684420010349.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654637",
-    "title": "Given Up On Me",
-    "fullTitle": "Given Up On Me",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/33/8d/be/338dbe68-4535-55c2-01ee-5824f6c2f41b/mzaf_16780781546198057447.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1422668493",
-    "title": "Wanderlust",
-    "fullTitle": "Wanderlust",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/3b/d4/7f3bd47e-79d1-6b9e-f2f4-92c3ed04147b/mzaf_17910737197240535770.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f1/7f/7a/f17f7a98-1e96-b29d-2916-df7fcf63f34e/13UAAIM69533.rgb.jpg/300x300bb.jpg",
-    "album": "Kiss Land",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909424",
-    "title": "Echoes Of Silence",
-    "fullTitle": "Echoes Of Silence",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/be/3b/18be3b2b-d4ed-00f2-eec5-5a8602693335/mzaf_3984688315216694535.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654349",
-    "title": "Wake Me Up",
-    "fullTitle": "Wake Me Up",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/fd/c2/a8fdc2de-05f7-68d8-5912-b02f6888f430/mzaf_4389000681867293831.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171529",
-    "title": "Gasoline",
-    "fullTitle": "Gasoline",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/29/e7/1e29e7cd-d33e-259d-c895-edf8df9869aa/mzaf_4064119182651673671.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909417",
-    "title": "The Fall",
-    "fullTitle": "The Fall",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/e4/9d/8ce49db0-92d5-46d0-bb83-ba428364a5a3/mzaf_9071964854610905887.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714908995",
-    "title": "The Knowing",
-    "fullTitle": "The Knowing",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/4b/d8/144bd87a-126b-d595-da75-e9bf4869e2b5/mzaf_2056726508237426543.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1714909173",
-    "title": "Heaven Or Las Vegas",
-    "fullTitle": "Heaven Or Las Vegas",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/68/04/9b680485-b30d-962c-b418-17bf456afc97/mzaf_11537660249330085370.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/d5/13/66d513dd-3cb0-b86b-4d11-1fbab2e6a639/12UMGIM54989.rgb.jpg/300x300bb.jpg",
-    "album": "Trilogy",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171530",
-    "title": "How Do I Make You Love Me?",
-    "fullTitle": "How Do I Make You Love Me?",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/d0/57/71d05777-c0e8-7f6e-93b0-777cdd27f3ab/mzaf_7530691182508642555.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654655",
-    "title": "Without a Warning",
-    "fullTitle": "Without a Warning",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/b8/85/83b88536-0c47-c1d6-3844-53dd67bac69a/mzaf_334781670421870640.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654358",
-    "title": "Open Hearts",
-    "fullTitle": "Open Hearts",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/4a/fb/b04afba9-3f11-6048-a4ca-dd963056aba4/mzaf_16682125676512392317.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654631",
-    "title": "Opening Night",
-    "fullTitle": "Opening Night",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/bf/a9/34bfa925-e33f-d20e-14b9-ada777ea3a05/mzaf_17602579932331720048.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171875",
-    "title": "Best Friends",
-    "fullTitle": "Best Friends",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/41/53/cc415386-64f6-5942-634a-f49c20c1e81b/mzaf_2774085575462070094.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1422668497",
-    "title": "Tears In The Rain",
-    "fullTitle": "Tears In The Rain",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/81/07/8c810757-e783-ce2d-01a9-db8c263733c6/mzaf_15043241721005617816.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f1/7f/7a/f17f7a98-1e96-b29d-2916-df7fcf63f34e/13UAAIM69533.rgb.jpg/300x300bb.jpg",
-    "album": "Kiss Land",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654644",
-    "title": "Take Me Back To LA",
-    "fullTitle": "Take Me Back To LA",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/a3/5f/77a35f7f-b81e-87e0-1d98-9fe987a9da74/mzaf_2294823491095522908.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654649",
-    "title": "Drive",
-    "fullTitle": "Drive",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/7b/f6/057bf6c5-8d6a-90c9-0637-b05033cae44e/mzaf_7029841231665634877.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171895",
-    "title": "Starry Eyes",
-    "fullTitle": "Starry Eyes",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/81/c3/0c81c386-c9dc-a7a0-0795-667487251f6e/mzaf_5966668238741918116.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1422668471",
-    "title": "Belong To The World",
-    "fullTitle": "Belong To The World",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/da/5a/d4da5a0c-f309-b41f-5692-f6255e687271/mzaf_9601747603479844278.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f1/7f/7a/f17f7a98-1e96-b29d-2916-df7fcf63f34e/13UAAIM69533.rgb.jpg/300x300bb.jpg",
-    "album": "Kiss Land",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171963",
-    "title": "Don’t Break My Heart",
-    "fullTitle": "Don’t Break My Heart",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/17/cc/8217ccfb-7ea7-544a-c096-6dd66862ad7f/mzaf_16443182655640845165.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654656",
-    "title": "Hurry Up Tomorrow",
-    "fullTitle": "Hurry Up Tomorrow",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/81/47/73814745-d011-125e-7058-ceab6611d30b/mzaf_352041289695545775.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171973",
-    "title": "Phantom Regret by Jim",
-    "fullTitle": "Phantom Regret by Jim",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/04/25/92042556-924c-a92e-cb16-c2c980e41dc6/mzaf_2129655096069748303.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654654",
-    "title": "Red Terror",
-    "fullTitle": "Red Terror",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/64/c5/f8/64c5f846-b03c-e184-7f51-e59d1ee6abef/mzaf_5801886982098259868.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171527",
-    "title": "Dawn FM",
-    "fullTitle": "Dawn FM",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/04/9b/2e049b42-4a1a-a40b-c12a-03c85a3866cb/mzaf_14886440923588341464.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1363311373",
-    "title": "Hurt You",
-    "fullTitle": "Hurt You",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/da/7a/7ada7ad4-7f0f-896e-c12e-2f7be89e8c2c/mzaf_14257907291307639228.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/aa/b4/2aaab42a-a4cb-a600-4a25-d78961495960/18UMGIM17204.rgb.jpg/300x300bb.jpg",
-    "album": "My Dear Melancholy,",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1695186351",
-    "title": "Dollhouse",
-    "fullTitle": "Dollhouse",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/3d/14/773d14eb-c08b-5db9-8b26-fbff48b549cc/mzaf_7425544425450312234.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/51/48/a8/5148a896-b8af-e543-b0b8-5d3524f60994/23UMGIM75517.rgb.jpg/300x300bb.jpg",
-    "album": "The Idol Episode 5 Part 2 (Music from the HBO Original Series) - EP",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1363311375",
-    "title": "Privilege",
-    "fullTitle": "Privilege",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/77/9a/07779a47-17c0-0dc5-0ace-7d6e0538e7b6/mzaf_9110835710690378832.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/aa/b4/2aaab42a-a4cb-a600-4a25-d78961495960/18UMGIM17204.rgb.jpg/300x300bb.jpg",
-    "album": "My Dear Melancholy,",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654648",
-    "title": "Give Me Mercy",
-    "fullTitle": "Give Me Mercy",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/e5/78/1ee578b7-77b2-5d17-ad3a-256c4877f87f/mzaf_6559983556642426556.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654645",
-    "title": "Big Sleep",
-    "fullTitle": "Big Sleep",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/97/45/2097459a-667f-bf93-d68b-0b36f8bb791e/mzaf_12312843766798496177.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1659775416",
-    "title": "Nothing Is Lost",
-    "fullTitle": "Nothing Is Lost (You Give Me Strength)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/3a/52/113a52f6-e26b-9c1b-9006-27b6768e1646/mzaf_1426797396758498132.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/07/7d/fa/077dfa2b-0f1e-b3c2-95ed-04437f3ffa85/22UM1IM41968.rgb.jpg/300x300bb.jpg",
-    "album": "Avatar: The Way of Water (Original Motion Picture Soundtrack)",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171957",
-    "title": "Every Angel is Terrifying",
-    "fullTitle": "Every Angel is Terrifying",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/77/a6/ea77a600-4220-5555-c2cb-56219d3b6fd6/mzaf_1358691728234906544.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378134",
-    "title": "Hardest To Love",
-    "fullTitle": "Hardest To Love",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/2d/b4/b62db44d-5083-9a69-c368-082c9c0661a5/mzaf_14187630576857049010.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1363310495",
-    "title": "Wasted Times",
-    "fullTitle": "Wasted Times",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/5c/f1/ec5cf150-789e-2fee-49c7-e8cb3f5e1476/mzaf_3867942137269991957.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2a/aa/b4/2aaab42a-a4cb-a600-4a25-d78961495960/18UMGIM17204.rgb.jpg/300x300bb.jpg",
-    "album": "My Dear Melancholy,",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654350",
-    "title": "Cry For Me",
-    "fullTitle": "Cry For Me",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/25/12/a02512c3-6ecd-9d0a-5983-966fd59f9460/mzaf_8803940864628903622.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826376",
-    "title": "Tell Your Friends",
-    "fullTitle": "Tell Your Friends",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/6c/8d/b66c8d6f-aa54-31f9-b60e-c25d122a18c4/mzaf_12339288779527824632.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826575",
-    "title": "Shameless",
-    "fullTitle": "Shameless",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/32/7c/f0327c03-7685-a336-c081-e8fcaa30de72/mzaf_18159076972086249003.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826588",
-    "title": "Prisoner",
-    "fullTitle": "Prisoner (feat. Lana Del Rey)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/12/e3/f812e3fe-6187-e7ec-45e7-9ea575dd25f0/mzaf_13011533888409509094.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378588",
-    "title": "Snowchild",
-    "fullTitle": "Snowchild",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/d3/cf/09d3cf14-ee50-5897-4cf2-37f3c636a7a7/mzaf_15491189254646483000.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826590",
-    "title": "Angel",
-    "fullTitle": "Angel",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/8a/f2/c18af2f2-e5e3-ce55-488e-c9f2362dcc09/mzaf_3371059453355134913.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378115",
-    "title": "Alone Again",
-    "fullTitle": "Alone Again",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/79/7e/8e797e28-7625-fafe-46e3-4062d314e9a9/mzaf_18417046674295412325.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826586",
-    "title": "Dark Times",
-    "fullTitle": "Dark Times (feat. Ed Sheeran)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/e8/c8/5ce8c8b0-a23a-04e1-eefa-28a2ccae2abc/mzaf_1789181298490691549.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1692991554",
-    "title": "Take Me Back",
-    "fullTitle": "Take Me Back",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/f4/be/e0f4be33-a296-5703-e3ae-99535cc96196/mzaf_7575866297970135845.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/38/2e/54/382e54f2-a304-e4c0-ed9f-77992b212e60/23UMGIM68632.rgb.jpg/300x300bb.jpg",
-    "album": "The Idol Episode 3 (Music from the HBO Original Series) - EP",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378125",
-    "title": "Too Late",
-    "fullTitle": "Too Late",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/13/d5/7f13d537-0f70-38b4-ed4e-1fe3e4ea0fb3/mzaf_16807614535063756118.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1694779185",
-    "title": "Like A God",
-    "fullTitle": "Like A God",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/4a/02/8e4a02fe-a297-5bc2-fc67-975686967bc9/mzaf_8054440140047015054.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/92/91/eb/9291eb77-060f-125f-ee0d-bdc720fa6971/23UMGIM74968.rgb.jpg/300x300bb.jpg",
-    "album": "The Idol Episode 5 Part 1 (Music from the HBO Original Series) - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826583",
-    "title": "As You Are",
-    "fullTitle": "As You Are",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/20/de/7d20dec7-3f20-cc3b-77f7-8d7aff64211d/mzaf_15385278770329866386.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440873791",
-    "title": "Devil May Cry",
-    "fullTitle": "Devil May Cry",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/8e/ed/fe8eed5b-7c0e-62f2-2fa5-ba913329fa99/mzaf_9378344794061082346.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f7/20/e7/f720e755-fe64-a306-78f0-fbbe1346a296/13UAAIM83462.rgb.jpg/300x300bb.jpg",
-    "album": "The Hunger Games: Catching Fire (Original Motion Picture Soundtrack) [Deluxe Edition]",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378596",
-    "title": "Escape From LA",
-    "fullTitle": "Escape From LA",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/7d/36/4f7d366b-7f95-ebfd-738f-e7dddc5b1f14/mzaf_17278497472148154607.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378601",
-    "title": "Faith",
-    "fullTitle": "Faith",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/10/62/4110628d-1cda-e564-b754-a7e98611040c/mzaf_5171972495034988456.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826364",
-    "title": "Real Life",
-    "fullTitle": "Real Life",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/58/0c/a7580c05-1690-c559-837c-e89a6b221063/mzaf_10826579763801660870.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440826369",
-    "title": "Losers",
-    "fullTitle": "Losers (feat. Labrinth)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/33/92/cc3392c0-8521-37af-4adf-6771dc616777/mzaf_4683792296752898445.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/300x300bb.jpg",
-    "album": "Beauty Behind the Madness",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440871708",
-    "title": "Rockin’",
-    "fullTitle": "Rockin’",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/59/fa/0959fa03-bc61-95c8-e71e-6ea28a25453d/mzaf_15173908030441539904.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1693891143",
-    "title": "Jealous Guy",
-    "fullTitle": "Jealous Guy",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/27/f6/ba27f646-dd87-ed16-8819-35935df39656/mzaf_15655664543064493679.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/db/28/e7/db28e7c3-f53a-76c8-eaa4-d92a22e4f160/23UMGIM72115.rgb.jpg/300x300bb.jpg",
-    "album": "The Idol Episode 4 (Music from the HBO Original Series) - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440872295",
-    "title": "All I Know",
-    "fullTitle": "All I Know (feat. Future)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/11/06/d41106c5-d995-ac56-a0f8-fe2888f0daf4/mzaf_17304802934228740907.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440872132",
-    "title": "Attention",
-    "fullTitle": "Attention",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/77/26/6e7726c1-06db-0dde-4275-22af7263863c/mzaf_2859102592944871271.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/300x300bb.jpg",
-    "album": "Starboy",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1499378860",
-    "title": "Until I Bleed Out",
-    "fullTitle": "Until I Bleed Out",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/b1/89/c1b189bf-7ac2-296e-fd9b-5ec84fca24b5/mzaf_14168932187729410447.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1422668495",
-    "title": "Kiss Land",
-    "fullTitle": "Kiss Land",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/7b/15/ad7b15fc-3c9e-5f1c-b378-507fd6295a7b/mzaf_10813125277726002798.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f1/7f/7a/f17f7a98-1e96-b29d-2916-df7fcf63f34e/13UAAIM69533.rgb.jpg/300x300bb.jpg",
-    "album": "Kiss Land",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1691967268",
-    "title": "Family",
-    "fullTitle": "Family",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/8d/b8/878db8e3-dcd9-ef6a-8011-fb27489f9fcd/mzaf_16100431726257254408.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/96/b1/2a/96b12a55-01c7-b82b-8f96-85743a75d299/23UMGIM67178.rgb.jpg/300x300bb.jpg",
-    "album": "The Idol Episode 2 (Music from the HBO Original Series) - EP",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1682817844",
-    "title": "Double Fantasy",
-    "fullTitle": "Double Fantasy (feat. Future)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/f4/3d/e8f43d9a-1ff2-fb49-0131-eaf47ffaeed6/mzaf_9151012820637130041.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/25/11/ca/2511cacd-8336-9dc8-826a-9bf5d39a8aa4/23UMGIM42964.rgb.jpg/300x300bb.jpg",
-    "album": "Double Fantasy (feat. Future) - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1505684000",
-    "title": "Nothing Compares",
-    "fullTitle": "Nothing Compares (Bonus Track)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/b8/ef/84b8ef38-b1b4-275a-149e-f9d08198d873/mzaf_13905761328623799273.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/03/e1/67/03e167d6-ee05-eb32-55e9-c5040f55a8bf/20UMGIM21166.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours (Deluxe)",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1505684006",
-    "title": "Missed You",
-    "fullTitle": "Missed You (Bonus Track)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/dd/4b/7bdd4b52-b9a5-531f-0284-51a2714d835e/mzaf_12861775723125834298.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/03/e1/67/03e167d6-ee05-eb32-55e9-c5040f55a8bf/20UMGIM21166.rgb.jpg/300x300bb.jpg",
-    "album": "After Hours (Deluxe)",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1533364465",
-    "title": "King of the Fall",
-    "fullTitle": "King of the Fall",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/d4/e1/3ed4e1c6-29f2-f508-51da-4773d80cc4ea/mzaf_2701616939943567618.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/73/0a/f7730a5f-5bff-fd22-d4a9-c5f159bdfcaa/20UMGIM84503.rgb.jpg/300x300bb.jpg",
-    "album": "King of the Fall - Single",
-    "releaseYear": "2017",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171968",
-    "title": "I Heard You’re Married",
-    "fullTitle": "I Heard You’re Married (feat. Lil Wayne)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/59/ad/de59ad71-f661-8074-9ef4-747edb998a97/mzaf_10156603473341039118.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1793654352",
-    "title": "São Paulo",
-    "fullTitle": "São Paulo",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/71/cf/ae71cfa5-b4ca-d1b3-0653-0b44f1cda1b4/mzaf_3194682384086323765.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/300x300bb.jpg",
-    "album": "Hurry Up Tomorrow",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1603171873",
-    "title": "Here We Go… Again",
-    "fullTitle": "Here We Go… Again (feat. Tyler, The Creator)",
-    "artist": "The Weeknd",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/6e/c1/326ec173-628a-3409-5cbf-06465490d8ea/mzaf_5813848807303973561.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/300x300bb.jpg",
-    "album": "Dawn FM",
-    "releaseYear": "2022",
     "difficulty": "hard",
     "lang": "en"
   },
@@ -3129,7 +672,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/75/32/64753221-30f8-166f-071a-3073985f3ccc/18UMGIM38873.rgb.jpg/300x300bb.jpg",
     "album": "Legends - Single",
     "releaseYear": "2018",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3142,7 +685,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3a/ad/93/3aad938e-0010-f613-5e9f-040b8923f521/18UMGIM72338.rgb.jpg/300x300bb.jpg",
     "album": "Armed and Dangerous - Single",
     "releaseYear": "2018",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3155,7 +698,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bb/79/3d/bb793d2e-ff8e-576c-1ce7-1dd1ae82bd95/24UM1IM10947.rgb.jpg/300x300bb.jpg",
     "album": "The Party Never Ends 2.0",
     "releaseYear": "2024",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3168,7 +711,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bd/c5/98/bdc59829-5375-1c98-da74-04bd7674f8bd/23UMGIM27251.rgb.jpg/300x300bb.jpg",
     "album": "The Light - Single",
     "releaseYear": "2023",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3181,7 +724,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/26/d3/5b/26d35b06-e087-28ec-58c8-df00a178c8fe/22UM1IM39211.rgb.jpg/300x300bb.jpg",
     "album": "Face 2 Face - Single",
     "releaseYear": "2022",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3194,7 +737,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
     "album": "Legends Never Die",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3207,7 +750,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
     "album": "Legends Never Die",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3220,7 +763,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
     "album": "Legends Never Die",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -3233,7 +776,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
     "album": "Legends Never Die",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -3246,7 +789,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
     "album": "Legends Never Die",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -3259,7 +802,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
     "album": "Legends Never Die",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -3272,7 +815,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
     "album": "Legends Never Die",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -3285,7 +828,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b8/58/4f/b8584fb3-8a0f-ccda-a176-ca9f6724b817/23UM1IM57205.rgb.jpg/300x300bb.jpg",
     "album": "Lace It - Single",
     "releaseYear": "2023",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -3298,7 +841,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d4/2a/64/d42a6438-7380-6d33-f17e-d4e6a995312d/20UMGIM41938.rgb.jpg/300x300bb.jpg",
     "album": "Tell Me U Luv Me - Single",
     "releaseYear": "2020",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -3311,656 +854,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/be/2e/71be2e5c-bfbb-6c8b-ac45-755eb91dc44c/21UMGIM15998.rgb.jpg/300x300bb.jpg",
     "album": "Life's a Mess II - Single",
     "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1651521184",
-    "title": "In My Head",
-    "fullTitle": "In My Head",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/10/d0/a710d092-3a45-80d7-a390-004fb04d52ae/mzaf_2338000082094197537.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0c/47/b5/0c47b555-aff9-3947-fbbe-dcf08ce3c7ff/22UM1IM21980.rgb.jpg/300x300bb.jpg",
-    "album": "In My Head - Single",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1779828864",
-    "title": "AGATS2",
-    "fullTitle": "AGATS2 (Insecure)",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/ef/af/43efafb8-6fff-4636-6463-65880d1ddb9a/mzaf_3310934967806126126.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/83/d3/6e83d30f-7181-cbee-4998-11b6b0b14282/24UM1IM28507.rgb.jpg/300x300bb.jpg",
-    "album": "AGATS2 (Insecure) - Single",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927030",
-    "title": "Black & White",
-    "fullTitle": "Black & White",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/e9/35/6be935ce-1e29-cebd-38e4-90f6d850feb3/mzaf_7864159223333365318.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1594419556",
-    "title": "Already Dead",
-    "fullTitle": "Already Dead",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/a3/25/a6a32532-b1b7-410a-c53a-eef86caa78ae/mzaf_16046190333222467473.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/88/05/9b88055c-c003-8196-798c-09cfa6447593/21UM1IM38161.rgb.jpg/300x300bb.jpg",
-    "album": "Already Dead - Single",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1607873773",
-    "title": "Cigarettes",
-    "fullTitle": "Cigarettes",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/69/78/a9697834-7751-fd2c-a0ff-c5138611b737/mzaf_13162063082833500456.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fc/bc/ab/fcbcab46-57bc-a909-7d7c-4cfcf62e6805/22UMGIM04233.rgb.jpg/300x300bb.jpg",
-    "album": "Cigarettes - Single",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445949409",
-    "title": "Hide",
-    "fullTitle": "Hide (feat. Seezyn)",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/bb/a9/adbba913-eb3e-0bce-8372-608a1506e596/mzaf_17328764545139236064.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4b/30/2c/4b302cb6-7a14-5464-4e97-0577e9d0be49/18UMGIM82277.rgb.jpg/300x300bb.jpg",
-    "album": "Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1526562172",
-    "title": "Hate the Other Side",
-    "fullTitle": "Hate the Other Side",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/4e/53/c04e5398-ff54-1c9d-8a25-74f657a63263/mzaf_8344247279795678672.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1548996183",
-    "title": "Bad Boy",
-    "fullTitle": "Bad Boy",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/9b/9f/879b9f5b-a8fb-a2b0-ab0b-0bd5f01fa4d9/mzaf_15246144497524800628.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/16/b0/9e/16b09ed4-8785-8045-064f-e5fcd26f877b/21UMGIM00556.rgb.jpg/300x300bb.jpg",
-    "album": "Bad Boy - Single",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1526562444",
-    "title": "Man of the Year",
-    "fullTitle": "Man of the Year",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/3f/1a/d53f1a84-ebe6-4eee-4102-78c59b890fba/mzaf_7264868756850550560.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1543080051",
-    "title": "Reminds Me of You",
-    "fullTitle": "Reminds Me of You",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/5c/c7/105cc7b8-c8ae-448d-20ce-6f8aef254ec1/mzaf_10915858281974327153.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d0/ca/11/d0ca111f-c84f-bcc1-f98c-111ac3358357/29002.jpg/300x300bb.jpg",
-    "album": "Reminds Me of You - Single",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1526562018",
-    "title": "Bad Energy",
-    "fullTitle": "Bad Energy",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/bb/9e/37bb9e31-1569-781d-feea-1c44d780a87b/mzaf_6978942491412730854.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1687735663",
-    "title": "Glo’d Up",
-    "fullTitle": "Glo’d Up",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/ec/b6/7becb6f6-38f9-08bf-4f8f-5db8d3ca2d3e/mzaf_10225974889148599022.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/65/58/be/6558be8f-a2e6-c28f-2d50-429b1ac40939/23UMGIM49820.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance (5 Year Anniversary Edition) [Deluxe]",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1526562426",
-    "title": "Screw Juice",
-    "fullTitle": "Screw Juice",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/9c/7b/559c7bbb-0c9b-be20-e82a-0c80a2de6a45/mzaf_6882677816189233850.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1687735011",
-    "title": "No Good",
-    "fullTitle": "No Good",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/68/40/db684082-8d7c-c9fd-6b8d-ca0aaa8f8f47/mzaf_9327880937555276983.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/65/58/be/6558be8f-a2e6-c28f-2d50-429b1ac40939/23UMGIM49820.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance (5 Year Anniversary Edition) [Deluxe]",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1526562441",
-    "title": "Can't Die",
-    "fullTitle": "Can't Die",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/1f/e4/eb1fe4aa-017e-8c62-87c4-dfe303e6d9a7/mzaf_4635050104618899648.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1526562181",
-    "title": "I Want It",
-    "fullTitle": "I Want It",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/1f/fc/801ffc24-ddec-9bf9-0c26-025089f28d95/mzaf_10961774171081873416.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/a5/3b/f5a53beb-c1af-a05e-ebbd-6df101507553/20UMGIM58295.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1541886130",
-    "title": "Real Shit",
-    "fullTitle": "Real Shit",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/f6/f5/20f6f5fc-fdcb-80a1-fb08-a84a838e8589/mzaf_2589330189926969634.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9d/bf/0c/9dbf0c45-fe90-2149-0c54-e81ef127c31f/20UM1IM08826.rgb.jpg/300x300bb.jpg",
-    "album": "Real Shit - Single",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129437",
-    "title": "Misfit",
-    "fullTitle": "Misfit",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/98/94/7e9894df-8a19-f964-8ced-5b81a29b97d3/mzaf_8895352746332810329.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129435",
-    "title": "The Party Never Ends",
-    "fullTitle": "The Party Never Ends",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/43/e1/0743e1b8-fa8d-cacb-cb6e-75b68f3120e9/mzaf_9796924682626787393.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1880081098",
-    "title": "We Don’t Get Along",
-    "fullTitle": "We Don’t Get Along",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/9e/eb/889eeb8b-95f5-f96c-6b7c-243c63020980/mzaf_9499282572060189564.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/e8/b1/1de8b1dd-6de5-3e1a-38aa-59108ac55aff/198704875731_Cover.jpg/300x300bb.jpg",
-    "album": "We Don’t Get Along - Single",
-    "releaseYear": "2026",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1823835006",
-    "title": "All Life Long",
-    "fullTitle": "All Life Long",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/b3/f3/04b3f33f-5dce-e9b3-e12b-1101aad3e71a/mzaf_16334848518591292587.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/49/f2/8d49f294-20e1-4936-072d-a3a61ee2527e/25UMGIM87590.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die (5 Year Anniversary Edition)",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1823835005",
-    "title": "The Way",
-    "fullTitle": "The Way",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/d4/7f/e5d47f35-3812-5a34-773a-0bc26ca475ef/mzaf_8502443483256864649.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/49/f2/8d49f294-20e1-4936-072d-a3a61ee2527e/25UMGIM87590.rgb.jpg/300x300bb.jpg",
-    "album": "Legends Never Die (5 Year Anniversary Edition)",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129541",
-    "title": "Adore You",
-    "fullTitle": "Adore You",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/1c/91/2a1c910b-26b0-190d-e5e0-a35aad4565a3/mzaf_3327113890038539776.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129540",
-    "title": "Party By Myself",
-    "fullTitle": "Party By Myself",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/09/cb/6209cbba-9b15-5ba3-42eb-0fa6316bc692/mzaf_5233756839756584373.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129547",
-    "title": "Barbarian",
-    "fullTitle": "Barbarian",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/d5/a2/43d5a25f-69c3-846f-bd8b-a0c9676cea78/mzaf_1356022393109393236.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129542",
-    "title": "Celebrate",
-    "fullTitle": "Celebrate",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/0b/83/a20b8390-a0ce-1a5a-1db4-6b1ec696a169/mzaf_12936772433564889330.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129548",
-    "title": "Best Friend",
-    "fullTitle": "Best Friend",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/79/26/ee792673-a90f-893b-6e79-2bc78d71ff29/mzaf_835776695122470556.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129444",
-    "title": "KTM Drip",
-    "fullTitle": "KTM Drip",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/8b/64/b48b64e9-d4e7-73dd-43cb-abc239635aa1/mzaf_6540285392406029843.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129448",
-    "title": "Condone It",
-    "fullTitle": "Condone It",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/9c/9d/939c9d60-3526-5e9b-5afd-4d4c9e2c1f3f/mzaf_7362932013923380623.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129442",
-    "title": "Cuffed",
-    "fullTitle": "Cuffed",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/5b/23/bb5b230a-45f8-a733-e51b-b1c5dcaca9b6/mzaf_9365734402779135437.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1569747580",
-    "title": "734",
-    "fullTitle": "734",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/80/ca/1c80ca0c-0c35-15b4-4556-8d080be12874/mzaf_12866941013209300087.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/65/4b/13/654b13af-bec2-8f0f-2f6b-c876fc06d8e5/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance (Anniversary Edition)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129447",
-    "title": "Love Letter",
-    "fullTitle": "Love Letter",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/d4/97/56d49727-c301-e0b0-5747-e9609e5935ef/mzaf_3968768051655688777.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129543",
-    "title": "Jeffrey",
-    "fullTitle": "Jeffrey",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/31/0b/2f/310b2f87-bd3d-9aa3-b8c8-0c6adc6c37ac/mzaf_10377157065311875710.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1407179107",
-    "title": "Wasted",
-    "fullTitle": "Wasted (feat. Lil Uzi Vert)",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/55/8d/40558d04-f786-7607-fe0b-8585ea1acd98/mzaf_8087949808063846839.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/91/a3/78/91a378be-0aed-cfee-4d85-185324f22b83/18UMGIM41462.rgb.jpg/300x300bb.jpg",
-    "album": "Wasted (feat. Lil Uzi Vert) - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927040",
-    "title": "End Of The Road",
-    "fullTitle": "End Of The Road",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/fd/df/13fddfd8-f98b-db81-3440-617de3a9e183/mzaf_16187435396265437737.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129549",
-    "title": "Floor It",
-    "fullTitle": "Floor It",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/9b/0d/199b0dd7-3ff3-5d1d-bd51-1cedeb0e3269/mzaf_3002450922382543261.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129551",
-    "title": "Spend It",
-    "fullTitle": "Spend It",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/e1/12/78e11231-fd3a-9af2-92b5-303ad4bfe5e9/mzaf_13775975004487017581.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1781129550",
-    "title": "Oxycodone",
-    "fullTitle": "Oxycodone",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/a3/c0/07a3c0e8-fe35-d21a-be0f-2f8c28a40e29/mzaf_16741112008250223025.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/c8/a3/0fc8a3b6-7f8e-0c8d-6621-ff0d381f2496/24UM1IM10947.rgb.jpg/300x300bb.jpg",
-    "album": "The Party Never Ends",
-    "releaseYear": "2024",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927039",
-    "title": "I'm Still",
-    "fullTitle": "I'm Still",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/9e/ad/499eadc3-729a-19b0-84b0-c490b918cff4/mzaf_5673631011115333722.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927035",
-    "title": "Candles",
-    "fullTitle": "Candles",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/38/fa/3c38fa77-f732-1bae-4a8d-0c916d51081a/mzaf_9830760250299185864.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1401801899",
-    "title": "Rich and Blind",
-    "fullTitle": "Rich and Blind",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/96/0f/54960f2f-9da8-f8c0-ebe6-26a3290f9bcb/mzaf_14313228998322350548.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e4/3f/22/e43f2205-6e45-ade7-770f-a7d657f9e4d3/18UMGIM38874.rgb.jpg/300x300bb.jpg",
-    "album": "Rich and Blind - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1490016573",
-    "title": "Let Me Know",
-    "fullTitle": "Let Me Know (I Wonder Why Freestyle)",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/51/7d/13517d2a-b14f-b591-5be4-c42663d33efd/mzaf_13399849253264209477.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/71/89/70/71897048-7daf-8daa-228b-17abdb1707cd/19UM1IM02329.rgb.jpg/300x300bb.jpg",
-    "album": "Let Me Know (I Wonder Why Freestyle) - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1598253792",
-    "title": "Wandered To LA",
-    "fullTitle": "Wandered To LA",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/34/a4/aa34a41d-884d-a268-b857-99075229e782/mzaf_1677294323603188458.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ed/0d/d2/ed0dd2cf-8d5e-d6e1-e252-d35715671b00/21UM1IM51559.rgb.jpg/300x300bb.jpg",
-    "album": "Wandered To LA - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927033",
-    "title": "I'll Be Fine",
-    "fullTitle": "I'll Be Fine",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/87/cd/4987cdf6-1863-b391-01e1-45fe7a9a383c/mzaf_6995039042915386632.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927034",
-    "title": "Used To",
-    "fullTitle": "Used To",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/77/52/cc775238-e444-d9b0-6e3e-c55310e59087/mzaf_17148903032398664622.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927036",
-    "title": "Scared Of Love",
-    "fullTitle": "Scared Of Love",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/1b/35/a71b35f1-482d-114b-49d7-ad2f26ff45eb/mzaf_4376224901868924489.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927038",
-    "title": "Hurt Me",
-    "fullTitle": "Hurt Me",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/73/a7/d173a736-37d1-ffc7-34ac-10555c4ce6b1/mzaf_17750361923547801311.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2017",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445927041",
-    "title": "Long Gone",
-    "fullTitle": "Long Gone",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/eb/6d/cdeb6dc8-e57c-ff9a-095e-51c3d0570bfc/mzaf_3645300130143744521.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/eb/14/b2/eb14b2c0-176d-d239-8c8a-c7b02a33fd5b/18UMGIM30624.rgb.jpg/300x300bb.jpg",
-    "album": "Goodbye & Good Riddance",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1439124919",
-    "title": "Make It Back",
-    "fullTitle": "Make It Back",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/a0/e2/49a0e28c-f901-f054-d7dc-78ec558d73c4/mzaf_16495589276375092944.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/00/a0/dc/00a0dcae-34ed-a9ae-8466-2c1a4b4a5122/886447364802.jpg/300x300bb.jpg",
-    "album": "Future & Juice WRLD Present... WRLD ON DRUGS",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1454441259",
-    "title": "Won't Let Go",
-    "fullTitle": "Won't Let Go",
-    "artist": "Juice WRLD",
-    "genre": "Hip-Hop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/12/60/8712600b-c9c8-b598-95a1-98cd088f84d5/mzaf_13715501483625357751.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c0/0e/bc/c00ebc17-ea35-8abf-f4e5-85d1e4423fd1/19UMGIM16007.rgb.jpg/300x300bb.jpg",
-    "album": "Death Race for Love",
-    "releaseYear": "2019",
     "difficulty": "hard",
     "lang": "en"
   },
@@ -4065,7 +958,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/52/b1/45/52b1452b-229e-78db-231b-7b43fa0077cc/075679956491.jpg/300x300bb.jpg",
     "album": "Doo-Wops & Hooligans",
     "releaseYear": "2010",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4078,7 +971,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
     "album": "Unorthodox Jukebox",
     "releaseYear": "2012",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4091,7 +984,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/52/b1/45/52b1452b-229e-78db-231b-7b43fa0077cc/075679956491.jpg/300x300bb.jpg",
     "album": "Doo-Wops & Hooligans",
     "releaseYear": "2010",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4104,7 +997,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/52/b1/45/52b1452b-229e-78db-231b-7b43fa0077cc/075679956491.jpg/300x300bb.jpg",
     "album": "Doo-Wops & Hooligans",
     "releaseYear": "2010",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4117,7 +1010,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/300x300bb.jpg",
     "album": "24K Magic",
     "releaseYear": "2016",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4130,7 +1023,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
     "album": "An Evening with Silk Sonic",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4143,7 +1036,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/300x300bb.jpg",
     "album": "24K Magic",
     "releaseYear": "2016",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4169,7 +1062,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
     "album": "Unorthodox Jukebox",
     "releaseYear": "2012",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4182,7 +1075,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/300x300bb.jpg",
     "album": "24K Magic",
     "releaseYear": "2016",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4195,7 +1088,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/300x300bb.jpg",
     "album": "24K Magic",
     "releaseYear": "2016",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4208,7 +1101,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/300x300bb.jpg",
     "album": "24K Magic",
     "releaseYear": "2016",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4221,7 +1114,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/300x300bb.jpg",
     "album": "24K Magic",
     "releaseYear": "2016",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4234,7 +1127,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/300x300bb.jpg",
     "album": "24K Magic",
     "releaseYear": "2016",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4247,383 +1140,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
     "album": "Unorthodox Jukebox",
     "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_573962557",
-    "title": "Natalie",
-    "fullTitle": "Natalie",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/71/3e/89713e15-882e-0224-a3ad-a712bd3c1b55/mzaf_12635974649539791570.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
-    "album": "Unorthodox Jukebox",
-    "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_576655101",
-    "title": "Liquor Store Blues",
-    "fullTitle": "Liquor Store Blues (feat. Damian \"Jr. Gong\" Marley)",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/54/35/83543538-befc-3698-3c2e-08978956b113/mzaf_1601116048139501784.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/52/b1/45/52b1452b-229e-78db-231b-7b43fa0077cc/075679956491.jpg/300x300bb.jpg",
-    "album": "Doo-Wops & Hooligans",
-    "releaseYear": "2010",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_573962554",
-    "title": "Moonshine",
-    "fullTitle": "Moonshine",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/57/81/9757816d-9164-d481-060d-51153f0bd16b/mzaf_2565228155769876273.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
-    "album": "Unorthodox Jukebox",
-    "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611638420",
-    "title": "Skate",
-    "fullTitle": "Skate",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/92/d7/8392d7b8-e7bf-1e84-fc5d-392a6486006f/mzaf_15695673833852936092.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_576655096",
-    "title": "Our First Time",
-    "fullTitle": "Our First Time",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/48/fc/f348fc1c-e445-3125-3a09-2846b83a26bb/mzaf_13875263130629643301.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/52/b1/45/52b1452b-229e-78db-231b-7b43fa0077cc/075679956491.jpg/300x300bb.jpg",
-    "album": "Doo-Wops & Hooligans",
-    "releaseYear": "2010",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_573962552",
-    "title": "Gorilla",
-    "fullTitle": "Gorilla",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/52/15/f9/5215f955-e956-f9c8-80e1-d6bb7f87a982/mzaf_8931170629955543695.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
-    "album": "Unorthodox Jukebox",
-    "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866732797",
-    "title": "Risk It All",
-    "fullTitle": "Risk It All",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/fc/d7/61fcd7e8-ea20-2f90-3672-09516cd050e6/mzaf_12696195794831485731.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866732800",
-    "title": "I Just Might",
-    "fullTitle": "I Just Might",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/ef/58/86ef584b-cb46-43df-12e3-fce4b436688c/mzaf_10081886156675578892.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866733083",
-    "title": "Dance With Me",
-    "fullTitle": "Dance With Me",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/fe/16/59fe1631-83ab-35a9-a5ad-e02a9191e3cb/mzaf_17098503520903913423.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866732798",
-    "title": "Cha Cha Cha",
-    "fullTitle": "Cha Cha Cha",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/83/e1/7283e131-b88c-d161-6530-d756b2787119/mzaf_15828045577199837508.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611638138",
-    "title": "Smokin Out the Window",
-    "fullTitle": "Smokin Out the Window",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/13/3e/43133eda-829e-d90d-db7b-7ecaa04dc15c/mzaf_16848679876247100312.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_576670471",
-    "title": "Somewhere In Brooklyn",
-    "fullTitle": "Somewhere In Brooklyn",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/57/61/ae576118-7499-a814-541f-602b5711fc8c/mzaf_6127868124904886825.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/98/ae/c2/98aec2e1-3be4-0311-1b44-69348fc87abb/075679956484.jpg/300x300bb.jpg",
-    "album": "Doo-Wops & Hooligans (Deluxe)",
-    "releaseYear": "2010",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866733075",
-    "title": "Why You Wanna Fight?",
-    "fullTitle": "Why You Wanna Fight?",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/6b/71/096b71a1-5be9-661f-74c5-9753a4632ef1/mzaf_16809837369639176165.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866733073",
-    "title": "God Was Showing Off",
-    "fullTitle": "God Was Showing Off",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/31/e8/d031e83d-4bc6-9568-c923-d58ba0f1cdb7/mzaf_13170809609363391306.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611638078",
-    "title": "After Last Night",
-    "fullTitle": "After Last Night (with Thundercat & Bootsy Collins)",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/e0/1b/d4e01b21-9d99-218c-70e9-d0c450502491/mzaf_1178911782291367702.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611638587",
-    "title": "Love's Train",
-    "fullTitle": "Love's Train",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/e3/1e/53e31ed3-5523-0dd2-6f4e-9d21dcdc4498/mzaf_12674672473070393372.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866733077",
-    "title": "On My Soul",
-    "fullTitle": "On My Soul",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/2b/2e/eb2b2eee-27cf-000b-4265-cbcd384a62e6/mzaf_15185023703646674432.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866733078",
-    "title": "Something Serious",
-    "fullTitle": "Something Serious",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/a2/41/e4a2419f-adb8-2133-3808-476695e75754/mzaf_461109584977806878.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611637863",
-    "title": "Fly As Me",
-    "fullTitle": "Fly As Me",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/9d/38/799d3804-f68c-faf7-5281-4c0486122814/mzaf_13130946070889786392.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1866733081",
-    "title": "Nothing Left",
-    "fullTitle": "Nothing Left",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/02/97/3f0297fa-0d7f-0b26-c8cb-69cb0bdac464/mzaf_258214829631887690.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/300x300bb.jpg",
-    "album": "The Romantic",
-    "releaseYear": "2026",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_573962558",
-    "title": "Show Me",
-    "fullTitle": "Show Me",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/32/75/f83275a5-1e39-bca9-c394-4d3999f50c88/mzaf_11569354995605854233.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
-    "album": "Unorthodox Jukebox",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611638155",
-    "title": "Put On a Smile",
-    "fullTitle": "Put On a Smile",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/81/99/0d819918-6883-00c6-d6f1-d969bf48a3b0/mzaf_956848748619233086.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_573962561",
-    "title": "Money Make Her Smile",
-    "fullTitle": "Money Make Her Smile",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/41/f7/2b41f7e0-fcbe-1c90-f65c-316c6abaee8d/mzaf_15786901476514900575.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/300x300bb.jpg",
-    "album": "Unorthodox Jukebox",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_576670469",
-    "title": "The Other Side",
-    "fullTitle": "The Other Side (feat. CeeLo Green and B.o.B)",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/c5/ed/dac5ed92-6128-c32e-dc9a-ed5b51fd0515/mzaf_12199163940497758206.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/98/ae/c2/98aec2e1-3be4-0311-1b44-69348fc87abb/075679956484.jpg/300x300bb.jpg",
-    "album": "Doo-Wops & Hooligans (Deluxe)",
-    "releaseYear": "2010",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611638667",
-    "title": "Blast Off",
-    "fullTitle": "Blast Off",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/a6/34/94a63403-964c-6a91-2bf6-a89172276f3f/mzaf_3352700054629358155.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_6766999307",
-    "title": "Lo Arriesgo Todo",
-    "fullTitle": "Lo Arriesgo Todo",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/62/98/9162983b-6814-edc2-5190-5868351d1ec1/mzaf_16505289877662427272.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/d0/0f/27d00f10-12bf-9ac8-9042-43f0783ede67/075679583659.jpg/300x300bb.jpg",
-    "album": "Lo Arriesgo Todo - Single",
-    "releaseYear": "2026",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_826136004",
-    "title": "Welcome Back",
-    "fullTitle": "Welcome Back",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/d9/2f/ced92fc2-1d4a-8bd0-7d63-d38c53768cbb/mzaf_16473629248100005679.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1e/f5/33/1ef53382-6fdb-5509-6085-639deb715d41/075679945198.jpg/300x300bb.jpg",
-    "album": "Rio 2 (Music From the Motion Picture)",
-    "releaseYear": "2014",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1611638415",
-    "title": "777",
-    "fullTitle": "777",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/b9/b5/66b9b55e-359b-afad-8ee2-6073783ed509/mzaf_1271312172290389183.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4e/b2/25/4eb22575-99e3-8c06-7446-51a99add8b0f/075679754585.jpg/300x300bb.jpg",
-    "album": "An Evening with Silk Sonic",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1815609216",
-    "title": "Bonde Do Brunão",
-    "fullTitle": "Bonde Do Brunão",
-    "artist": "Bruno Mars",
-    "genre": "R&B",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/b0/36/ccb03664-cba2-a1df-459b-67aee635e564/mzaf_18002897780949401239.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e8/9e/ae/e89eaef2-a1b0-e299-9c02-2aedfe09a8c6/075678595493.jpg/300x300bb.jpg",
-    "album": "Bonde Do Brunão - Single",
-    "releaseYear": "2024",
     "difficulty": "hard",
     "lang": "en"
   },
@@ -4728,7 +1244,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
     "album": "Dangerous: The Double Album",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4741,7 +1257,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9c/b3/78/9cb378ff-66c2-27c7-7b27-20b90ab2926e/00602435214795_Cover.jpg/300x300bb.jpg",
     "album": "More Than My Hometown - Single",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4754,7 +1270,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
     "album": "Dangerous: The Double Album",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4767,7 +1283,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
     "album": "One Thing At A Time",
     "releaseYear": "2023",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4780,7 +1296,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
     "album": "I’m The Problem",
     "releaseYear": "2025",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4793,7 +1309,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
     "album": "I’m The Problem",
     "releaseYear": "2025",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4806,7 +1322,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
     "album": "I’m The Problem",
     "releaseYear": "2025",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4819,7 +1335,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1e/63/b8/1e63b83f-afaf-5b25-d6d5-0acf5df4f005/24UMGIM08460.rgb.jpg/300x300bb.jpg",
     "album": "Spin You Around (1/24) - Single",
     "releaseYear": "2024",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -4832,7 +1348,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
     "album": "I’m The Problem",
     "releaseYear": "2025",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4845,7 +1361,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
     "album": "If I Know Me",
     "releaseYear": "2017",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4858,7 +1374,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
     "album": "If I Know Me",
     "releaseYear": "2016",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4871,7 +1387,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
     "album": "One Thing At A Time",
     "releaseYear": "2023",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4884,7 +1400,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/53/2f/e2532f80-b877-c273-938d-85565456cba4/24UMGIM69835.rgb.jpg/300x300bb.jpg",
     "album": "Lies Lies Lies - Single",
     "releaseYear": "2024",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4897,7 +1413,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
     "album": "One Thing At A Time",
     "releaseYear": "2023",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -4910,1436 +1426,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
     "album": "One Thing At A Time",
     "releaseYear": "2022",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424878",
-    "title": "Sunrise",
-    "fullTitle": "Sunrise",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/56/1c/40561c1c-35c4-4469-326d-abfd89bb1bbc/mzaf_303305187697759074.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425039",
-    "title": "Thought You Should Know",
-    "fullTitle": "Thought You Should Know",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/6e/2a/106e2ad2-e687-986d-399e-a3d3f89063cf/mzaf_6058165181173939469.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2022",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470028",
-    "title": "Still Goin Down",
-    "fullTitle": "Still Goin Down",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/1e/ae/fe1eae78-8c40-bac7-cbb2-38a2f8043fd8/mzaf_6741048598542587775.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2020",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598324",
-    "title": "If I Know Me",
-    "fullTitle": "If I Know Me",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/f9/db/13f9db8e-a125-e670-a671-41e0cad0b249/mzaf_9977685284393524534.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469747",
-    "title": "865",
-    "fullTitle": "865",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a3/22/40/a3224095-45d9-52b9-7667-81baf077fb66/mzaf_13205455181096059626.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818426280",
-    "title": "Dying Man",
-    "fullTitle": "Dying Man",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/ae/25/d8ae25d4-7d51-6a8b-26f8-170e25955115/mzaf_12846017699296731224.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469748",
-    "title": "Warning",
-    "fullTitle": "Warning",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/14/d7/9e14d747-d442-0d6b-b06a-3564184f9b84/mzaf_17230161822181932597.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470242",
-    "title": "Silverado For Sale",
-    "fullTitle": "Silverado For Sale",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/24/3f/d6243f78-9faa-ef40-caf3-f43837166102/mzaf_10813573155426034954.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818409994",
-    "title": "Neon Eyes",
-    "fullTitle": "Neon Eyes",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/0d/69/9a0d69a3-fec2-8dd7-b12d-91d3ca2a5344/mzaf_11014597892140528844.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/54/3a/37/543a372b-ae7b-cca9-2a2b-16c5a6650d15/00602435458939_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_6792676860",
-    "title": "Been By Now",
-    "fullTitle": "Been By Now",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/8e/e7/d48ee7e8-0c76-ca27-7222-aa4d2b048dc2/mzaf_11704984347411785772.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/8d/52/9f8d52a0-b6d9-d038-327b-4fe58bedce67/26UMGIM94572.rgb.jpg/300x300bb.jpg",
-    "album": "Been By Now - Single",
-    "releaseYear": "2026",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_6812477290",
-    "title": "Last Thing You Need",
-    "fullTitle": "Last Thing You Need",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a6/35/6ca635bf-5556-933f-a2de-cf441db29152/mzaf_7854810682514136041.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
-    "album": "Grand Theft Auto VI: The Album",
-    "releaseYear": "2026",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104202",
-    "title": "20 Cigarettes",
-    "fullTitle": "20 Cigarettes",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/a4/85/a5a48541-4604-888f-633b-d872dcfbd026/mzaf_991765756627750480.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104400",
-    "title": "Don't We",
-    "fullTitle": "Don't We",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/f2/ad/84f2adc3-c2e2-5bd1-14a6-3ca9256326a3/mzaf_7493570463891681462.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598536",
-    "title": "Talkin' Tennessee",
-    "fullTitle": "Talkin' Tennessee",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/a5/44/aba54419-bf2c-3c43-bb66-66a6176c3124/mzaf_16248044881084779648.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802103973",
-    "title": "Superman",
-    "fullTitle": "Superman",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/d3/3c/42d33c0f-4aa8-c268-b0e0-5a26c654503f/mzaf_11920192527154582856.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104420",
-    "title": "I Ain't Comin' Back",
-    "fullTitle": "I Ain't Comin' Back",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/0f/99/5c0f99b9-7a29-e118-9f07-0c0b33b74edc/mzaf_2457402693465187868.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424648",
-    "title": "I Wrote The Book",
-    "fullTitle": "I Wrote The Book",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/90/68/8a9068cd-fb37-fbb1-37a9-1599265b3afb/mzaf_15306358609422432277.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469743",
-    "title": "Somebody’s Problem",
-    "fullTitle": "Somebody’s Problem",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/d8/5a/e8d85a66-8167-6439-1c80-007d7ccbfe16/mzaf_5444772169453218865.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1785714732",
-    "title": "Smile",
-    "fullTitle": "Smile",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/df/69/cadf6921-821f-7ddb-a70e-b7c70ef6f2af/mzaf_1176696282266276178.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d0/e8/b0/d0e8b0d6-b410-75e7-6bda-76e1a9ad4d15/24UM1IM35199.rgb.jpg/300x300bb.jpg",
-    "album": "Smile - Single",
-    "releaseYear": "2024",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104206",
-    "title": "TN",
-    "fullTitle": "TN",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/6b/b7/0a6bb7ad-6252-f358-4ddf-27e54929bfa6/mzaf_16958171224402755787.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104591",
-    "title": "I'm A Little Crazy",
-    "fullTitle": "I'm A Little Crazy",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/cc/e8/9dcce8ec-8b7d-22ca-1261-e64d069eef6c/mzaf_3826073211871056267.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424402",
-    "title": "’98 Braves",
-    "fullTitle": "’98 Braves",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/ee/b0/24eeb0f0-2067-424c-7b6b-a99660182c6b/mzaf_15952667934430207220.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598528",
-    "title": "Not Good At Not",
-    "fullTitle": "Not Good At Not",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/64/65/82646523-a227-ed09-8a59-a84cd776fb4a/mzaf_16560546891274058642.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104405",
-    "title": "Dark Til Daylight",
-    "fullTitle": "Dark Til Daylight",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/c3/06/8ec306e0-5fa6-ce9e-3865-acc5c3e242d6/mzaf_6962435346560968103.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425333",
-    "title": "Tennessee Fan",
-    "fullTitle": "Tennessee Fan",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/82/bc/fb82bc5f-3b21-1ace-7a11-a42bc31d87bc/mzaf_16856402820170244278.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470042",
-    "title": "This Bar",
-    "fullTitle": "This Bar",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/f7/f6/b0f7f66a-8060-a2ef-a4a8-8e7c225d730a/mzaf_10388591011258331789.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2019",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104211",
-    "title": "Where'd That Girl Go",
-    "fullTitle": "Where'd That Girl Go",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/89/82/8289822d-1981-2882-7a43-819ddfba345c/mzaf_10233559511366394620.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818426271",
-    "title": "Good Girl Gone Missin’",
-    "fullTitle": "Good Girl Gone Missin’",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/da/c3/f6dac3e6-4b1b-0ed6-fa6d-8a3a2863a36e/mzaf_7254026152779170262.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425863",
-    "title": "Me To Me",
-    "fullTitle": "Me To Me",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/61/6c/08616cc1-29b8-a857-e441-78f3f463ba7e/mzaf_8794036273866792990.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104218",
-    "title": "Kiss Her In Front Of You",
-    "fullTitle": "Kiss Her In Front Of You",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/cd/3c/d5cd3cc9-dd19-3f96-fb54-c2e4ce8d9f2c/mzaf_5996051421584139655.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104192",
-    "title": "Falling Apart",
-    "fullTitle": "Falling Apart",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/8e/3f/c18e3f4b-723f-bcbe-a36e-3bbda589ca2a/mzaf_4099337556450807523.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598311",
-    "title": "Little Rain",
-    "fullTitle": "Little Rain",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/b1/cc/aab1cc50-f87e-0f38-00e7-81b39275ac9f/mzaf_2775427895714473428.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425309",
-    "title": "I Deserve A Drink",
-    "fullTitle": "I Deserve A Drink",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/ed/e1/feede1ef-ac69-4b39-afad-1f533dff61fc/mzaf_5644844199231271997.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424205",
-    "title": "Born With A Beer In My Hand",
-    "fullTitle": "Born With A Beer In My Hand",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/fb/4a/4dfb4a1c-11fc-8be7-869b-a98498cbc59a/mzaf_13722017087051047818.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104209",
-    "title": "Missing",
-    "fullTitle": "Missing",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/2c/7f/ae2c7fbb-d09d-a0bc-d35a-f4ef5d039219/mzaf_18359185928576899082.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818426088",
-    "title": "180",
-    "fullTitle": "180 (Lifestyle)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/f8/59/daf8597d-d7f9-c267-be77-9ad043d04dd8/mzaf_9629829802371566719.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425316",
-    "title": "Wine Into Water",
-    "fullTitle": "Wine Into Water",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/c5/b4/fac5b40e-7d39-eb5e-350f-bd747c6272a9/mzaf_1839781336944989220.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469914",
-    "title": "Only Thing That’s Gone",
-    "fullTitle": "Only Thing That’s Gone (feat. Chris Stapleton)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/ed/8e/76ed8e07-30e9-1937-8206-b2374982dbe9/mzaf_10797541166586521076.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470031",
-    "title": "Dangerous",
-    "fullTitle": "Dangerous",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/fe/00/0bfe00bc-f3a1-cdb4-faa4-2a3125e863bd/mzaf_7725786801374992222.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818426276",
-    "title": "Outlook",
-    "fullTitle": "Outlook",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/88/dc/2088dcee-a0f6-5822-9dad-ca78d98aa7f8/mzaf_948749358505513877.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469752",
-    "title": "Wonderin’ Bout The Wind",
-    "fullTitle": "Wonderin’ Bout The Wind",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/15/4e/d9154e85-5d42-add2-735f-cac4357c1386/mzaf_5694781664522391679.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104424",
-    "title": "Drinking Til It Does",
-    "fullTitle": "Drinking Til It Does",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/f5/02/daf5024d-731a-8f4e-bfc6-a0e6da9deb9f/mzaf_1198280897525137819.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425046",
-    "title": "F150",
-    "fullTitle": "F150-50",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/85/f8/2885f8ad-71b7-7475-5227-86534606f3c0/mzaf_10754577198028744077.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104416",
-    "title": "Jack and Jill",
-    "fullTitle": "Jack and Jill",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/fb/d2/21fbd212-e3c5-a6c4-f494-400cd2807cb0/mzaf_9462599245431490087.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425859",
-    "title": "Last Drive Down Main",
-    "fullTitle": "Last Drive Down Main",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/ff/67/0cff6735-6946-8f90-e7a9-1e2fc28eb37b/mzaf_618565881983029888.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425543",
-    "title": "Single Than She Was",
-    "fullTitle": "Single Than She Was",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/75/09/a17509c3-1ee9-2a79-44e7-cc423d98a9b6/mzaf_8603293867749422923.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104411",
-    "title": "Leavin's The Least I Could Do",
-    "fullTitle": "Leavin's The Least I Could Do",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/de/14/46de144c-8ba2-f9d5-d85c-2d0c00fb91a3/mzaf_6819183226539453969.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424670",
-    "title": "Tennessee Numbers",
-    "fullTitle": "Tennessee Numbers",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/52/96/49/52964941-4438-1202-529c-46d1ab636f35/mzaf_2793168383451104350.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424862",
-    "title": "Whiskey Friends",
-    "fullTitle": "Whiskey Friends",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/48/97/2748970f-923c-a1ea-2dc2-9a738a0d0537/mzaf_1396016816494040637.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104212",
-    "title": "Genesis",
-    "fullTitle": "Genesis",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/0c/b8/870cb851-775b-210d-fdde-e061c6cc15e7/mzaf_2005640842331757517.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425322",
-    "title": "Me + All Your Reasons",
-    "fullTitle": "Me + All Your Reasons",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/81/09/aa8109d3-2fcc-e5b7-a83b-5c799adbf82d/mzaf_6147692517620305721.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425035",
-    "title": "In The Bible",
-    "fullTitle": "In The Bible (feat. HARDY)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/c9/2b/2dc92b06-1738-7160-36de-f24694487dba/mzaf_16224067452355446829.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104402",
-    "title": "Come Back As A Redneck",
-    "fullTitle": "Come Back As A Redneck",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/01/d7/8801d7ea-b6ec-a02c-bec9-c560f05ea877/mzaf_2879204542716992420.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104409",
-    "title": "The Dealer",
-    "fullTitle": "The Dealer",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/cf/43/c7cf4393-dbf3-1d46-bdf0-45f3b3dbea60/mzaf_1746340377615125878.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425517",
-    "title": "Money On Me",
-    "fullTitle": "Money On Me",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/ae/d5/5caed59f-4f17-97ce-0a8d-e4b35e47c47e/mzaf_15470778250093220017.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598526",
-    "title": "Gone Girl",
-    "fullTitle": "Gone Girl",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/b5/0d/2bb50d3d-487f-b164-cdd5-80344ebe9176/mzaf_17981291282759057763.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104583",
-    "title": "Whiskey In Reverse",
-    "fullTitle": "Whiskey In Reverse",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/49/a8/9749a8fa-6507-6b99-d2ca-726b293d465d/mzaf_17367087237924464929.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818426101",
-    "title": "Had It",
-    "fullTitle": "Had It",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/14/b3/8214b33b-13df-1550-c073-37dbadb4af00/mzaf_12059899160080032782.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104214",
-    "title": "Number 3 and Number 7",
-    "fullTitle": "Number 3 and Number 7",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/92/18/a992180c-31fa-31ec-8cb0-372ba5baf5fe/mzaf_12061460294723996553.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598130",
-    "title": "Had Me By Halftime",
-    "fullTitle": "Had Me By Halftime",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/40/33/7b40338b-a71e-b9b1-1ac0-92541ee036d6/mzaf_15973171289442622869.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104585",
-    "title": "LA Night",
-    "fullTitle": "LA Night",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/61/87/9861876b-1d28-d31d-dc76-80a8742d4455/mzaf_6797632572322903892.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425868",
-    "title": "Don't Think Jesus",
-    "fullTitle": "Don't Think Jesus",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/28/ef/c428ef80-bd84-ba7a-3292-054f429cdbfc/mzaf_10067787088451164609.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2022",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104213",
-    "title": "Revelation",
-    "fullTitle": "Revelation",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/b0/ca/03b0ca92-fb2d-dd20-0698-92de2ba49fac/mzaf_4596164392296435826.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469754",
-    "title": "Your Bartender",
-    "fullTitle": "Your Bartender",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/f1/12/caf11234-3a7a-5fb8-6234-d2300894a1b0/mzaf_14784251059938855669.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424387",
-    "title": "Devil Don’t Know",
-    "fullTitle": "Devil Don’t Know",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/18/28/6e182850-76b1-a33f-3961-99f54a089e72/mzaf_18123150047219350355.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469744",
-    "title": "More Surprised Than Me",
-    "fullTitle": "More Surprised Than Me",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/ef/a2/b6efa271-99b5-6d2a-6879-1a33d50b23a0/mzaf_3478151786772964313.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104422",
-    "title": "Nothin' Left",
-    "fullTitle": "Nothin' Left",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/c7/5d/9fc75d97-3f2c-045f-a620-4b622624c254/mzaf_8415156536469110709.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424882",
-    "title": "Keith Whitley",
-    "fullTitle": "Keith Whitley",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/b8/66/cab86658-e999-07fb-f34f-a08eed1f047e/mzaf_10801450748493114064.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752597797",
-    "title": "Happy Hour",
-    "fullTitle": "Happy Hour",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/fa/2d/d2fa2db4-4a36-3059-3cde-0165f494891a/mzaf_3266989078590691093.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470053",
-    "title": "Me On Whiskey",
-    "fullTitle": "Me On Whiskey",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/f8/63/dcf8639e-f39a-5cec-e926-c5e9e09eaa51/mzaf_11686301205434418286.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470039",
-    "title": "Somethin’ Country",
-    "fullTitle": "Somethin’ Country",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/49/0f/46490fce-fd13-f3e8-6116-b3596dfec032/mzaf_5946934616478297944.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469751",
-    "title": "Whiskey’d My Way",
-    "fullTitle": "Whiskey’d My Way",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/43/65/71436597-fee2-e15b-2066-dd295bd49107/mzaf_13884547912054439761.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818425847",
-    "title": "Days That End In Why",
-    "fullTitle": "Days That End In Why",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/e3/a8/51e3a8ba-c347-cd31-7088-0f1d0293b5c2/mzaf_17583364951460083871.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470260",
-    "title": "Quittin’ Time",
-    "fullTitle": "Quittin’ Time",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/11/4a/2f114a6a-f9e7-8079-6427-c2a7cdf9052b/mzaf_5718648489715064739.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470054",
-    "title": "Need A Boat",
-    "fullTitle": "Need A Boat",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/e9/86/2ee9862a-6fd0-dca9-4462-28038eecc86b/mzaf_6323689213105123068.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104581",
-    "title": "Working Man's Song",
-    "fullTitle": "Working Man's Song",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/66/a7/1166a788-a7ba-22b2-a51c-1322d4f36bb6/mzaf_9681526286878260592.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818469750",
-    "title": "Outlaw",
-    "fullTitle": "Outlaw (feat. Ben Burgess)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/1b/a2/831ba21e-6f1f-9048-6b63-eecad91e733e/mzaf_15788865750283398953.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598153",
-    "title": "Redneck Love Song",
-    "fullTitle": "Redneck Love Song",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/71/74/0e7174c4-2962-c05f-db54-4fe679da37f1/mzaf_11806591124398980987.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470030",
-    "title": "Rednecks, Red Letters, Red Dirt",
-    "fullTitle": "Rednecks, Red Letters, Red Dirt",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/f3/7f/1af37fc0-0a31-a3be-7b66-3fd871c36480/mzaf_16787026465512528558.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470037",
-    "title": "Blame It On Me",
-    "fullTitle": "Blame It On Me",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/22/4b/10224b12-8152-4b78-d9a9-004e6e0a52ff/mzaf_3358018795796143410.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1843725883",
-    "title": "Graveyard Whistling",
-    "fullTitle": "Graveyard Whistling",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/b9/be/c7b9beb7-9aca-482a-9b01-6a0d96bbff31/mzaf_2902714592958554332.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/26/f5/b1/26f5b198-9f2b-2c8c-749f-13f4f95e9d89/25UM1IM35684.rgb.jpg/300x300bb.jpg",
-    "album": "Graveyard Whistling - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598143",
-    "title": "Whatcha Know 'Bout That",
-    "fullTitle": "Whatcha Know 'Bout That",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/be/3c/c8be3c16-4693-b874-03af-bb5c0e74b8fe/mzaf_9245443994521534226.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1725824604",
-    "title": "Going Down",
-    "fullTitle": "Going Down",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/66/1d/91661dc0-94d3-94e9-491e-aff5addd86eb/mzaf_3555550271386308673.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/36/f6/0536f638-fed2-d017-5e13-8982930b1087/8721056525218.png/300x300bb.jpg",
-    "album": "Stand Alone (10th Anniversary Deluxe Edition)",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104584",
-    "title": "Crazy Eyes",
-    "fullTitle": "Crazy Eyes",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/99/52/bb995228-7a02-a22c-fce2-f9eb1115683b/mzaf_10535186028468506123.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818470049",
-    "title": "Whatcha Think Of Country Now",
-    "fullTitle": "Whatcha Think Of Country Now",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/25/6f/5b256f26-78ce-89ba-bc70-824377687538/mzaf_13620451803244847034.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/05/ab/6805abb2-10d1-35cb-aa84-71386b285b7d/00602435514642_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752598522",
-    "title": "If I Ever Get You Back",
-    "fullTitle": "If I Ever Get You Back",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/96/e0/cc96e0e1-4a61-ff63-bacf-9d4f2b9c1571/mzaf_17807952881664602827.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bb/18/80bb1895-326f-e618-9aa8-d2338bb35f0c/842812106569_Cover.jpg/300x300bb.jpg",
-    "album": "If I Know Me",
-    "releaseYear": "2018",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752600903",
-    "title": "Chain Smokin'",
-    "fullTitle": "Chain Smokin'",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/da/91/efda9195-6470-a1d8-6d35-d5d97a1c163a/mzaf_12149662894495818330.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/bc/e4/62bce452-b2c2-ec69-3e51-6150dc75a548/842812105746_Cover.jpg/300x300bb.jpg",
-    "album": "Chain Smokin' - Single",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1151912225",
-    "title": "Sleep When We're Dead",
-    "fullTitle": "Sleep When We're Dead",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/be/78/ecbe786f-64af-3e25-5b1f-9fc3ced7c24d/mzaf_5815971847124937817.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/2a/97/632a9725-b920-ee99-07e9-4eecd2b9c418/859718134640_cover.jpg/300x300bb.jpg",
-    "album": "Stand Alone - EP",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752601487",
-    "title": "Stand Out",
-    "fullTitle": "Stand Out",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/ce/5e/b9ce5ea8-c2a9-d5c8-41f7-c16e178d7e1e/mzaf_16880340352619059181.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/74/9b/c9749bbe-4477-863d-0588-2144e1a2a171/842812105753_Cover.jpg/300x300bb.jpg",
-    "album": "Stand Out - Single",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1151912235",
-    "title": "Stand Alone",
-    "fullTitle": "Stand Alone",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/35/2a/56352a0c-8dd9-4757-47e4-2f85977b8191/mzaf_16708052812738236347.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/2a/97/632a9725-b920-ee99-07e9-4eecd2b9c418/859718134640_cover.jpg/300x300bb.jpg",
-    "album": "Stand Alone - EP",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104219",
-    "title": "If You Were Mine",
-    "fullTitle": "If You Were Mine",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/32/75/d532759d-f51c-6a04-207f-45d2e775d044/mzaf_8437236967103153267.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818411335",
-    "title": "Livin’ The Dream",
-    "fullTitle": "Livin’ The Dream",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/3d/29/2e3d2909-52c4-2c74-da13-84c17a14dacf/mzaf_11244474445986737406.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/54/3a/37/543a372b-ae7b-cca9-2a2b-16c5a6650d15/00602435458939_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2020",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104587",
-    "title": "Miami",
-    "fullTitle": "Miami",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/8c/26/518c26a1-0c1f-644e-7862-34f778bce4fb/mzaf_17417518001711229251.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1151912251",
-    "title": "Man of the South",
-    "fullTitle": "Man of the South",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/51/58/ed51584e-26fd-5b1c-cb58-3755636abe4e/mzaf_11001046649582543217.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/2a/97/632a9725-b920-ee99-07e9-4eecd2b9c418/859718134640_cover.jpg/300x300bb.jpg",
-    "album": "Stand Alone - EP",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1151912267",
-    "title": "Yin Yang Girl",
-    "fullTitle": "Yin Yang Girl",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/0d/1c/3a0d1cfa-ac8e-9b3e-9ebd-5037f75d0c34/mzaf_8656533927600398119.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/2a/97/632a9725-b920-ee99-07e9-4eecd2b9c418/859718134640_cover.jpg/300x300bb.jpg",
-    "album": "Stand Alone - EP",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1752593758",
-    "title": "American Nights",
-    "fullTitle": "American Nights",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/27/83/df278374-2316-fcbd-0fa7-b4c51b657e8b/mzaf_17806038520113788933.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a5/00/95/a50095a7-2aef-27d8-1780-f2b4d594271b/842812105739_Cover.jpg/300x300bb.jpg",
-    "album": "American Nights - Single",
-    "releaseYear": "2016",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1725824610",
-    "title": "Afterglow",
-    "fullTitle": "Afterglow",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/be/7a/e9be7a68-a0f7-b1bf-991b-2c8159bd480e/mzaf_8260759149631884412.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/36/f6/0536f638-fed2-d017-5e13-8982930b1087/8721056525218.png/300x300bb.jpg",
-    "album": "Stand Alone (10th Anniversary Deluxe Edition)",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104196",
-    "title": "Eyes Are Closed",
-    "fullTitle": "Eyes Are Closed",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/93/07/0b930799-4c24-198e-aef3-a7dc86912187/mzaf_6847448580298539414.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104197",
-    "title": "Kick Myself",
-    "fullTitle": "Kick Myself",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/92/6f/74926fbd-2899-b137-d108-5fc3875ee508/mzaf_10201376021251563724.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1725824607",
-    "title": "Got It Made",
-    "fullTitle": "Got It Made",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/c0/3f/2bc03f39-1aa6-59b5-6683-cb1ca1c5d036/mzaf_16703102630410543447.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/36/f6/0536f638-fed2-d017-5e13-8982930b1087/8721056525218.png/300x300bb.jpg",
-    "album": "Stand Alone (10th Anniversary Deluxe Edition)",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818424645",
-    "title": "Ain’t That Some",
-    "fullTitle": "Ain’t That Some",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/18/a5/f018a514-ecca-7b31-2714-54ac42375664/mzaf_8733948499331454055.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/eb/b3/82ebb3c6-2bd4-31fd-0eb9-57667f3590e1/00602455239419_Cover.jpg/300x300bb.jpg",
-    "album": "One Thing At A Time",
-    "releaseYear": "2023",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1725824606",
-    "title": "2 Of Us Alone",
-    "fullTitle": "2 Of Us Alone",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/12/fb/3d12fb3e-22bf-ffd7-b43d-a3b73e2260c8/mzaf_5730678333271969329.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/36/f6/0536f638-fed2-d017-5e13-8982930b1087/8721056525218.png/300x300bb.jpg",
-    "album": "Stand Alone (10th Anniversary Deluxe Edition)",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1802104195",
-    "title": "Skoal, Chevy, and Browning",
-    "fullTitle": "Skoal, Chevy, and Browning",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/51/57/085157a9-b72a-6d38-5ec6-a8c483332f01/mzaf_14972276689743699937.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/ef/26/1eef2600-29f4-5423-3052-26874afd2947/25UMGIM46050.rgb.jpg/300x300bb.jpg",
-    "album": "I’m The Problem",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445288218",
-    "title": "Collide",
-    "fullTitle": "Collide (The Voice Performance)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/f6/d0/01f6d08a-928d-f054-7fe8-b6f84e2f8268/mzaf_18247920706979307422.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ac/17/0a/ac170a87-ed42-44fd-a060-0098587a61f1/00602537783748.rgb.jpg/300x300bb.jpg",
-    "album": "Collide (The Voice Performance) - Single",
-    "releaseYear": "2014",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445005625",
-    "title": "Stay",
-    "fullTitle": "Stay (The Voice Performance)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/2e/74/082e743a-1027-f860-4a74-9f560cb4361b/mzaf_17753040112464526069.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c3/1d/d7/c31dd716-e7ba-f307-aa61-806cdd1d9b84/00602537840021.rgb.jpg/300x300bb.jpg",
-    "album": "Stay (The Voice Performance) - Single",
-    "releaseYear": "2014",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445291987",
-    "title": "Story of My Life",
-    "fullTitle": "Story of My Life (The Voice Performance)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/38/ee/f838ee79-df07-a59c-09b8-bbbfccea6502/mzaf_12447199005842631298.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f1/de/3f/f1de3f79-87eb-e692-55bf-2cc801eabca1/00602537822904.rgb.jpg/300x300bb.jpg",
-    "album": "Story of My Life (The Voice Performance) - Single",
-    "releaseYear": "2014",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445044988",
-    "title": "Hey Brother",
-    "fullTitle": "Hey Brother (The Voice Performance)",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/a9/85/f4a985bc-e0d5-86fa-2d20-b14574562cad/mzaf_5221822986876898937.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e3/15/a5/e315a594-776a-1c3f-a45a-a23adc315c88/00602537803798.rgb.jpg/300x300bb.jpg",
-    "album": "Hey Brother (The Voice Performance) - Single",
-    "releaseYear": "2014",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1818411056",
-    "title": "Country A$$ Shit",
-    "fullTitle": "Country A$$ Shit",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/26/63/43266302-083c-41a6-239e-cef3aa51f20d/mzaf_15210264755835615034.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/54/3a/37/543a372b-ae7b-cca9-2a2b-16c5a6650d15/00602435458939_Cover.jpg/300x300bb.jpg",
-    "album": "Dangerous: The Double Album",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1725824611",
-    "title": "Heaven Can Take a Backseat",
-    "fullTitle": "Heaven Can Take a Backseat",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/03/0d/c6/030dc634-195f-24a0-28fa-a1d26ecf08c0/mzaf_10470531768671501461.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/36/f6/0536f638-fed2-d017-5e13-8982930b1087/8721056525218.png/300x300bb.jpg",
-    "album": "Stand Alone (10th Anniversary Deluxe Edition)",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1725824608",
-    "title": "What's Your Story",
-    "fullTitle": "What's Your Story",
-    "artist": "Morgan Wallen",
-    "genre": "Country",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/e4/41/78e441f3-ec0f-296d-0be3-88f61cd355c3/mzaf_18301466832627627722.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/36/f6/0536f638-fed2-d017-5e13-8982930b1087/8721056525218.png/300x300bb.jpg",
-    "album": "Stand Alone (10th Anniversary Deluxe Edition)",
-    "releaseYear": "2015",
     "difficulty": "hard",
     "lang": "en"
   },
@@ -6444,7 +1530,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/92/da/e092da2d-9f6d-11dc-7843-2021e95a2b61/21UMGIM17518.rgb.jpg/300x300bb.jpg",
     "album": "Justice",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6457,7 +1543,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
     "album": "SWAG",
     "releaseYear": "2025",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6470,7 +1556,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
     "album": "Justice",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6483,7 +1569,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/48/1d/ec481d95-0547-d0d2-aaf7-4d1f80d66ae2/09UMGIM38755.rgb.jpg/300x300bb.jpg",
     "album": "My World (iTunes Exclusive Edition)",
     "releaseYear": "2009",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6496,7 +1582,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
     "album": "Under The Mistletoe (Deluxe Edition)",
     "releaseYear": "2011",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6509,7 +1595,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
     "album": "Journals",
     "releaseYear": "2013",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6522,7 +1608,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
     "album": "Believe (Deluxe Edition)",
     "releaseYear": "2012",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6535,7 +1621,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/fc/40/c8fc4073-75e0-7b42-6eed-117d1ed86ca5/20UMGIM74696.rgb.jpg/300x300bb.jpg",
     "album": "Holy (feat. Chance the Rapper) - Single",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "lang": "en"
   },
   {
@@ -6548,7 +1634,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/92/8b/d6/928bd6c8-95a0-5a0e-52cb-bbfc2fa7f906/19UM1IM02770.rgb.jpg/300x300bb.jpg",
     "album": "Yummy - Single",
     "releaseYear": "2020",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -6561,7 +1647,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
     "album": "Purpose (Deluxe)",
     "releaseYear": "2015",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -6574,7 +1660,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/93/87/70/93877029-1647-a13b-add3-4fade3a7e94c/20UM1IM14507.rgb.jpg/300x300bb.jpg",
     "album": "Anyone - Single",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -6587,7 +1673,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
     "album": "Justice",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -6600,7 +1686,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
     "album": "Journals",
     "releaseYear": "2013",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -6613,7 +1699,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
     "album": "Justice",
     "releaseYear": "2021",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "lang": "en"
   },
   {
@@ -6626,1319 +1712,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
     "album": "Journals",
     "releaseYear": "2013",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639192",
-    "title": "Habitual",
-    "fullTitle": "Habitual",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/e6/be/77e6beb3-949c-37be-5cec-8ddd74761bef/mzaf_17427285791101175112.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639603",
-    "title": "Forever",
-    "fullTitle": "Forever (feat. Post Malone & Clever)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/c1/83/1ac1834c-0d89-e404-3555-1dd8053a20d5/mzaf_10130010160457305910.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639185",
-    "title": "All Around Me",
-    "fullTitle": "All Around Me",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/87/a9/3087a9f8-9c18-12ae-5160-b10dca015520/mzaf_12003581649843558934.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556175655",
-    "title": "Off My Face",
-    "fullTitle": "Off My Face",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/e5/be/81e5bee5-7496-9898-40f5-8074237a681d/mzaf_13416389483171575605.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650855",
-    "title": "All Around the World",
-    "fullTitle": "All Around the World (feat. Ludacris)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/7f/6e/de7f6ec1-36cb-e3ff-601c-5477365dada6/mzaf_10457306652268333503.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440829763",
-    "title": "Purpose",
-    "fullTitle": "Purpose",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/6a/22/606a22d9-5868-07f7-0fb1-1508088cac3b/mzaf_16245526171153742428.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
-    "album": "Purpose (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440829480",
-    "title": "I'll Show You",
-    "fullTitle": "I'll Show You",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/c9/bd/4ec9bd76-bef7-a179-d326-d0a80fe6c5d3/mzaf_6798765893950440265.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
-    "album": "Purpose (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440829467",
-    "title": "Mark My Words",
-    "fullTitle": "Mark My Words",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/2c/3a/a82c3a30-a7cd-dcc8-1d53-06ce3bcf77e1/mzaf_13052224256190233401.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
-    "album": "Purpose (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1535542529",
-    "title": "Lonely",
-    "fullTitle": "Lonely",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/7b/14/3c7b140b-7484-15ca-6de7-c335ff0ec543/mzaf_5810614386726571269.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e6/3f/bd/e63fbd47-d3bd-8eb6-6d42-9b623dbda2d6/20UMGIM83529.rgb.jpg/300x300bb.jpg",
-    "album": "Lonely - Single",
-    "releaseYear": "2020",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440641413",
-    "title": "Pray",
-    "fullTitle": "Pray",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/a8/8f/22a88f84-e4fc-5df2-61c5-5cb55c80e3dc/mzaf_11093438479606754252.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2010",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994651",
-    "title": "YUKON",
-    "fullTitle": "YUKON",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/db/ad/c8dbadf9-75f3-bb0d-c3c8-d28bf09b72c4/mzaf_10680180036194273500.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994649",
-    "title": "DAISIES",
-    "fullTitle": "DAISIES",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/99/19/3a99192d-6846-4326-36e8-8587d8f4c396/mzaf_6123658807273518464.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "easy",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440616470",
-    "title": "Favorite Girl",
-    "fullTitle": "Favorite Girl",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/97/ee/9997ee8d-16ff-fd50-def4-24871671ebb7/mzaf_14529752167090712859.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/48/1d/ec481d95-0547-d0d2-aaf7-4d1f80d66ae2/09UMGIM38755.rgb.jpg/300x300bb.jpg",
-    "album": "My World (iTunes Exclusive Edition)",
-    "releaseYear": "2009",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440861859",
-    "title": "All That Matters",
-    "fullTitle": "All That Matters",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/9f/46/739f4607-f637-af4c-4174-6ea735476be9/mzaf_15849198571784218991.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1445152413",
-    "title": "Flatline",
-    "fullTitle": "Flatline",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/3a/ad/e73aadf0-24b9-a528-357a-3b43fc698645/mzaf_11774292655218346629.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2e/36/22/2e362231-343c-1769-3a70-26764aba11bc/13UAEIM70403.rgb.jpg/300x300bb.jpg",
-    "album": "Flatline - Single",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650955",
-    "title": "Right Here",
-    "fullTitle": "Right Here (feat. Drake)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/92/ad/f692ad16-0e6c-38c8-2085-9fade6f40ce2/mzaf_13443894719379872036.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440616477",
-    "title": "Love Me",
-    "fullTitle": "Love Me",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/31/17/d231176e-c8e3-0c5a-8183-5c54f0cc38db/mzaf_9927807454309072079.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/48/1d/ec481d95-0547-d0d2-aaf7-4d1f80d66ae2/09UMGIM38755.rgb.jpg/300x300bb.jpg",
-    "album": "My World (iTunes Exclusive Edition)",
-    "releaseYear": "2009",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650972",
-    "title": "Maria",
-    "fullTitle": "Maria",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/5b/b2/ac5bb247-c4f8-d810-4582-94e6d5a27420/mzaf_6634431377666202714.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867614",
-    "title": "EVERYTHING HALLELUJAH",
-    "fullTitle": "EVERYTHING HALLELUJAH",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/98/68/e0986856-d1f5-51e6-a6f0-10cd3fbd81a9/mzaf_11932053408751882081.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1444849161",
-    "title": "Friends",
-    "fullTitle": "Friends",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/fe/cc/fcfecc5d-e8a9-3ed5-967f-d3448cd0d8dd/mzaf_1110483844612867703.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/49/f1/41/49f1418f-c8de-d7c2-902f-643bb25ea295/17UM1IM21055.rgb.jpg/300x300bb.jpg",
-    "album": "Friends - Single",
-    "releaseYear": "2017",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440616471",
-    "title": "Down To Earth",
-    "fullTitle": "Down To Earth",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/02/38/d30238f4-370a-4c01-1284-da215cbc02b3/mzaf_3746150238074846744.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/48/1d/ec481d95-0547-d0d2-aaf7-4d1f80d66ae2/09UMGIM38755.rgb.jpg/300x300bb.jpg",
-    "album": "My World (iTunes Exclusive Edition)",
-    "releaseYear": "2009",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639778",
-    "title": "Changes",
-    "fullTitle": "Changes",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/d6/fb/c6d6fb08-3cb0-09ea-e960-b57f4f818026/mzaf_5506073474135955175.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639770",
-    "title": "E.T.A.",
-    "fullTitle": "E.T.A.",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/8e/a1/158ea1af-3de2-10a4-d7ae-57827ee85bc1/mzaf_4495633915997360747.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994656",
-    "title": "WAY IT IS",
-    "fullTitle": "WAY IT IS",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/ff/8a/2dff8ac3-c9f3-1b7b-82a2-963fab2572a2/mzaf_4760574271413615407.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440862015",
-    "title": "Swap It Out",
-    "fullTitle": "Swap It Out",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/31/b8/d1/31b8d169-0d4f-477b-4788-f0e783420940/mzaf_3932715250206407541.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440829619",
-    "title": "No Pressure",
-    "fullTitle": "No Pressure (feat. Big Sean)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/d6/9e/e3d69e76-97bf-b45f-5ce2-707c979eca2b/mzaf_714571714431373137.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
-    "album": "Purpose (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639193",
-    "title": "Come Around Me",
-    "fullTitle": "Come Around Me",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/6d/fa/3e6dfa7b-9d09-5894-78be-0461f6c6574d/mzaf_10860707990031634248.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639768",
-    "title": "Get Me",
-    "fullTitle": "Get Me (feat. Kehlani)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/af/b6/5dafb628-aa6a-61dc-b8cf-bc3330532293/mzaf_7439069895888120474.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994648",
-    "title": "ALL I CAN TAKE",
-    "fullTitle": "ALL I CAN TAKE",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/bc/24/d9bc24f9-d2bc-4fb0-ed35-b7a29e51acfa/mzaf_8290149207231206062.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556175649",
-    "title": "As I Am",
-    "fullTitle": "As I Am (feat. Khalid)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/3a/02/c33a0201-6683-ae0e-7517-24b33f3a38b9/mzaf_13288089581074293504.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440829623",
-    "title": "No Sense",
-    "fullTitle": "No Sense (feat. Travis Scott)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/0d/0f/420d0f59-b94d-896e-97a2-6406144ab48a/mzaf_7394700434344466877.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
-    "album": "Purpose (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650959",
-    "title": "Die in Your Arms",
-    "fullTitle": "Die in Your Arms",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/44/e6/c844e633-7773-0bbf-ea6c-c7adc7d652c8/mzaf_2376135635160875955.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440861875",
-    "title": "Roller Coaster",
-    "fullTitle": "Roller Coaster",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/27/a6/2527a6ff-c28e-8382-beab-b3c9ffba255f/mzaf_12810282675414430126.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867203",
-    "title": "BETTER MAN",
-    "fullTitle": "BETTER MAN",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/ca/fd/f9cafd25-4b98-32fb-7510-ff113d9f93af/mzaf_11164461109696769053.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994654",
-    "title": "THINGS YOU DO",
-    "fullTitle": "THINGS YOU DO",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/fa/a6/21faa67b-3d6f-5a11-cd55-e5140f48cda6/mzaf_4065184204194423801.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639601",
-    "title": "Available",
-    "fullTitle": "Available",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/47/6a/94476a03-cb23-1545-d2e2-eed579c120ba/mzaf_17010398142186060695.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994906",
-    "title": "DEVOTION",
-    "fullTitle": "DEVOTION",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/92/fe/9092fe00-8f35-b376-113e-404686fc89d4/mzaf_1041450572791591210.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650957",
-    "title": "Fall",
-    "fullTitle": "Fall",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/b6/fa/f3b6fab6-5331-4e97-72de-4bf25eaab00d/mzaf_9129158951633799594.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639606",
-    "title": "Running Over",
-    "fullTitle": "Running Over (feat. Lil Dicky)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/d6/52/8bd652c3-c020-74c5-1220-f4f657abc2a1/mzaf_10534284246323293901.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639780",
-    "title": "Confirmation",
-    "fullTitle": "Confirmation",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/8d/f6/228df6cc-da32-6b25-9c35-0a96d7c334fc/mzaf_15820463586633298861.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994655",
-    "title": "BUTTERFLIES",
-    "fullTitle": "BUTTERFLIES",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/f7/f5/38f7f57a-bf76-4af0-d20f-4ab7bb8d60d9/mzaf_1477414235094306401.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639615",
-    "title": "Second Emotion",
-    "fullTitle": "Second Emotion (feat. Travis Scott)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/f0/12/ecf01283-f05c-a031-e1c2-8b50e43c4804/mzaf_506981345446486890.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1560255179",
-    "title": "Lifetime",
-    "fullTitle": "Lifetime",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/03/77/9003772f-38a4-4b06-3264-ccf2d21d710e/mzaf_17166829785744419056.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e1/14/39/e114391c-278e-d819-9afa-21bf4de4308d/21UMGIM20643.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (Triple Chucks Deluxe)",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556175661",
-    "title": "Unstable",
-    "fullTitle": "Unstable (feat. The Kid LAROI)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/2e/9a/e12e9a9d-6dc1-735e-2ce5-f1d45e8ca23b/mzaf_4716692252568031804.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639608",
-    "title": "Take It Out On Me",
-    "fullTitle": "Take It Out On Me",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/93/b1/4993b188-0a75-a684-304b-6f2ab20deac5/mzaf_3770095187786404151.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639784",
-    "title": "That's What Love Is",
-    "fullTitle": "That's What Love Is",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/ac/19/4dac19b5-eb12-0608-dc1d-6a3a918a5ec2/mzaf_6707868888961426346.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556175853",
-    "title": "Somebody",
-    "fullTitle": "Somebody",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/3a/d3/3f3ad3c6-c9e4-6910-6bf2-3c0c1c2f23ae/mzaf_12504643382611656598.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867205",
-    "title": "LOVE SONG",
-    "fullTitle": "LOVE SONG",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/a4/cf/39a4cf81-e797-331c-18f5-65ab3f54a149/mzaf_15801621094095409346.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867206",
-    "title": "I DO",
-    "fullTitle": "I DO",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/d5/03/d9d5035c-3a21-0cb5-9d31-b1f167530d3d/mzaf_9991751831414616609.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867207",
-    "title": "I THINK YOU'RE SPECIAL",
-    "fullTitle": "I THINK YOU'RE SPECIAL",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/19/f1/c519f17e-dba7-35f4-24f3-16342b50e37b/mzaf_13552931943430547673.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1496639787",
-    "title": "At Least For Now",
-    "fullTitle": "At Least For Now",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/b7/d0/d4b7d09c-6ab3-8775-7ae9-aae1e407e310/mzaf_17952150687368002634.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/21/4e/d2214ea9-97ff-46ef-ac45-7fca6fb73839/20UMGIM03126.rgb.jpg/300x300bb.jpg",
-    "album": "Changes",
-    "releaseYear": "2020",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556176086",
-    "title": "Loved By You",
-    "fullTitle": "Loved By You (feat. Burna Boy)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/af/67/04af674c-a058-442b-5f5e-043dba156d8c/mzaf_13365456434123839039.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440829625",
-    "title": "The Feeling",
-    "fullTitle": "The Feeling (feat. Halsey)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/f4/c2/4ef4c258-fa31-0197-76e3-de6d5b6b5c99/mzaf_10844276026201760142.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
-    "album": "Purpose (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440641089",
-    "title": "Drummer Boy",
-    "fullTitle": "Drummer Boy (feat. Busta Rhymes)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/f0/97/56f097dc-a72e-94c9-285c-564bb272ef1c/mzaf_6163614108792452853.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556175647",
-    "title": "Deserve You",
-    "fullTitle": "Deserve You",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/6b/5b/c86b5b3b-a774-bdb1-548d-eb2b79673245/mzaf_9846470667675659876.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440641107",
-    "title": "Christmas Eve",
-    "fullTitle": "Christmas Eve",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/60/f4/ba60f43e-3a53-7d0d-981f-f8e305b65385/mzaf_13468400318006257345.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "medium",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556175846",
-    "title": "Die For You",
-    "fullTitle": "Die For You (feat. Dominic Fike)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/b8/a9/01b8a9af-3050-430a-8051-169227ce1abc/mzaf_9332947533877757103.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440640860",
-    "title": "Fa La La",
-    "fullTitle": "Fa La La (feat. Boyz II Men)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/17/94/1e1794d8-f72b-8e3a-9ce0-5e4287b5ec9a/mzaf_16732866868584567286.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440861867",
-    "title": "All Bad",
-    "fullTitle": "All Bad",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/5c/20/ab5c20e4-3601-b74b-a8af-c9240d6166fb/mzaf_5015997512783051769.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1556175872",
-    "title": "Love You Different",
-    "fullTitle": "Love You Different (feat. Beam)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/22/05/4e220596-71c5-5e2e-07b4-235e2e9e1108/mzaf_292713625516901260.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/300x300bb.jpg",
-    "album": "Justice",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867212",
-    "title": "BAD HONEY",
-    "fullTitle": "BAD HONEY",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/c4/74/edc47451-2402-04cb-bf65-63cfdd913705/mzaf_2934015496892487138.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1641958399",
-    "title": "Beautiful Love",
-    "fullTitle": "Beautiful Love (Free Fire)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/cf/81/70cf8136-cc7c-dbe0-1580-1603b08e5933/mzaf_12377309913243109740.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ca/98/c1/ca98c1fd-9725-f9ba-d8e3-189831b8e62a/22UMGIM92316.rgb.jpg/300x300bb.jpg",
-    "album": "Beautiful Love (Free Fire) - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440861865",
-    "title": "Bad Day",
-    "fullTitle": "Bad Day",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/a3/27/e0a327c2-a5ce-75eb-b60b-a4c355a2384d/mzaf_1647052262639234669.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867208",
-    "title": "MOTHER IN YOU",
-    "fullTitle": "MOTHER IN YOU",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/a0/cb/99a0cbb5-d709-a8a4-527f-9839e927bc45/mzaf_1781071039762438246.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994657",
-    "title": "FIRST PLACE",
-    "fullTitle": "FIRST PLACE",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/9c/37/069c37cb-6cf3-c9c4-84f6-4e85fd37f57d/mzaf_15113880723508487223.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440862002",
-    "title": "One Life",
-    "fullTitle": "One Life",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/de/f4/4ddef4f6-f7f7-3980-b846-a0ff849839ed/mzaf_983885479623835997.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440829628",
-    "title": "Life Is Worth Living",
-    "fullTitle": "Life Is Worth Living",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/68/43/6068439d-aa1a-068d-8378-5646e8529410/mzaf_7223073177774619108.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/11/84/751184b0-77df-1eff-bb20-dac03247425d/15UMGIM59808.rgb.jpg/300x300bb.jpg",
-    "album": "Purpose (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440861878",
-    "title": "Change Me",
-    "fullTitle": "Change Me",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/00/f8/a5/00f8a5f1-4e4a-7ae7-bbec-fa8d9f2360d9/mzaf_11864926654531118226.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440641081",
-    "title": "All I Want For Christmas Is YouDuet with Mariah Carey",
-    "fullTitle": "All I Want For Christmas Is You (SuperFestive!) Duet with Mariah Carey",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/a5/3e/7ca53e01-8be9-92bd-20c6-ec5ad7cabb88/mzaf_16280505787477307628.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994911",
-    "title": "405",
-    "fullTitle": "405",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/e5/ef/c0e5ef84-3956-b721-d349-54e9b442c5c0/mzaf_6373763950594559823.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650967",
-    "title": "Be Alright",
-    "fullTitle": "Be Alright",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/e0/f5/b6e0f59a-63c0-30ff-f7f5-56c1b875a48f/mzaf_8895991495969120304.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650960",
-    "title": "Thought of You",
-    "fullTitle": "Thought of You",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/59/b6/eb59b64e-12ea-8144-c718-79baa6dc76a6/mzaf_11901879988837618515.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650954",
-    "title": "Take You",
-    "fullTitle": "Take You",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/fe/20/a7fe20be-1d79-506c-561d-9de8341a100e/mzaf_6254263449932876645.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440641147",
-    "title": "All I Want Is You",
-    "fullTitle": "All I Want Is You",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/3c/07/063c0707-2388-083a-38bb-3fec58a71cab/mzaf_9239058534535158412.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650976",
-    "title": "Love Me Like You Do",
-    "fullTitle": "Love Me Like You Do",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/a2/43/cba24372-d539-2ea7-f06f-99774883b7c0/mzaf_9031748916579113981.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650952",
-    "title": "Catching Feelings",
-    "fullTitle": "Catching Feelings",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/03/3a/17033a7f-b14d-a75e-7f83-5105c59f50ec/mzaf_14211703796817473775.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440640705",
-    "title": "Only Thing I Ever Get For Christmas",
-    "fullTitle": "Only Thing I Ever Get For Christmas",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/eb/ab/77ebab56-72af-f341-0a0f-391c01d91555/mzaf_15172243223347535170.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440861869",
-    "title": "Pyd",
-    "fullTitle": "Pyd (feat. R. Kelly)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/8b/04/cc8b0472-90f0-5c71-7810-865cd9de0b48/mzaf_9005352832933711245.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440641351",
-    "title": "Christmas Love",
-    "fullTitle": "Christmas Love",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/d1/5b/dfd15be9-948c-bd70-8829-c695883c6cbb/mzaf_5434807257807906336.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440640852",
-    "title": "Santa Claus Is Coming To Town",
-    "fullTitle": "Santa Claus Is Coming To Town",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/29/8e/36298e0b-5cca-f5e6-54c8-e84c9079d5c8/mzaf_9886839650147777247.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1588044826",
-    "title": "Red Eye",
-    "fullTitle": "Red Eye (feat. TroyBoi)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/6f/8d/ef6f8dbb-d042-ee5a-811a-a1822f2a6a5a/mzaf_11923708205926437646.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/25/64/b3/2564b343-943a-68b2-4c55-ee2e14464cf0/21UMGIM83128.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (The Complete Edition)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994904",
-    "title": "GLORY VOICE MEMO",
-    "fullTitle": "GLORY VOICE MEMO",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/fa/d4/90fad44d-267f-e8bc-15d3-5536b7702a59/mzaf_7998513681168995656.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867209",
-    "title": "WITCHYA",
-    "fullTitle": "WITCHYA",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/57/7c/fc577c14-c13f-1155-1950-0571e85ccb7b/mzaf_17586964971142656969.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867606",
-    "title": "ALL THE WAY",
-    "fullTitle": "ALL THE WAY",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/ce/6f/08ce6ff5-4a21-f066-acac-a26433347cb0/mzaf_8828447774535254969.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867210",
-    "title": "EYE CANDY",
-    "fullTitle": "EYE CANDY",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/fd/4b/19fd4bf8-9464-0039-1472-1b3e36683b25/mzaf_17880891967184717832.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1837867603",
-    "title": "NEED IT",
-    "fullTitle": "NEED IT",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/90/13/e89013df-3db8-9652-02b6-5a43fac691da/mzaf_3335541032225723980.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/cb/3e/e0cb3e1c-0dde-156d-d500-7943bc4ddebd/25UM1IM36272.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG II",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440640844",
-    "title": "The Christmas Song",
-    "fullTitle": "The Christmas Song (Chestnuts Roasting On An Open Fire) [feat. Usher]",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/16/91/0d/16910d1e-be5d-a52e-b7b4-28b45e5d7778/mzaf_7800014370387909167.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/71/b9/49/71b9493c-57d3-c2dc-0ef0-d38417d7e937/11UMGIM34123.rgb.jpg/300x300bb.jpg",
-    "album": "Under The Mistletoe (Deluxe Edition)",
-    "releaseYear": "2011",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440650968",
-    "title": "Believe",
-    "fullTitle": "Believe",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/83/b0/6c83b0f1-7a37-b1d2-ce55-fb132d75ce24/mzaf_2599666170899369724.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/300x300bb.jpg",
-    "album": "Believe (Deluxe Edition)",
-    "releaseYear": "2012",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994907",
-    "title": "DADZ LOVE",
-    "fullTitle": "DADZ LOVE",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/b6/0d/48b60d2d-5fa5-e223-b7d7-2b3d03b4d10f/mzaf_12885339594904429370.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1440862010",
-    "title": "What's Hatnin'",
-    "fullTitle": "What's Hatnin' (feat. Future)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e6/7b/2c/e67b2cf5-c9d9-ac6f-08cc-844efcf8cf14/mzaf_14890977439068535248.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/41/74/2f/41742f85-6c76-0918-3153-e725e2ab05c4/13UAEIM36000.rgb.jpg/300x300bb.jpg",
-    "album": "Journals",
-    "releaseYear": "2013",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1560264719",
-    "title": "There She Go",
-    "fullTitle": "There She Go (feat. Lil Uzi Vert)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/a9/ba/0ca9ba46-bb3c-49c5-9af8-6a246318ce9e/mzaf_14543882031911528104.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/56/c8/2256c845-3d78-7e3f-ae92-fd93fb86485e/21UMGIM20642.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (Triple Chucks Deluxe)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1561535796",
-    "title": "Where Do I Fit In",
-    "fullTitle": "Where Do I Fit In (feat. Tori Kelly, Chandler Moore & Judah Smith)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/ff/69/1fff6962-c8be-36c1-71af-a4088b785492/mzaf_10973085286297559374.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4f/ec/ba/4fecba9e-8b34-487a-424e-86e880e456d7/21UMGIM29356.rgb.jpg/300x300bb.jpg",
-    "album": "Freedom. - EP",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1560264720",
-    "title": "I Can't Be Myself",
-    "fullTitle": "I Can't Be Myself (feat. Jaden)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/85/94/5b859428-dd53-541c-6ab7-74af22435ae2/mzaf_428738849081994650.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/56/c8/2256c845-3d78-7e3f-ae92-fd93fb86485e/21UMGIM20642.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (Triple Chucks Deluxe)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1588044841",
-    "title": "Hailey",
-    "fullTitle": "Hailey",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/43/d4/c843d4c7-8aa9-dd42-e95e-55f51fbb586d/mzaf_14178380698571599569.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/25/64/b3/2564b343-943a-68b2-4c55-ee2e14464cf0/21UMGIM83128.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (The Complete Edition)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1560264936",
-    "title": "Name",
-    "fullTitle": "Name (feat. Tori Kelly)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/ff/2b/15ff2b26-959b-1c7d-9f24-0d028b83b7ec/mzaf_15328777273960695698.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/56/c8/2256c845-3d78-7e3f-ae92-fd93fb86485e/21UMGIM20642.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (Triple Chucks Deluxe)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1560264724",
-    "title": "Wish You Would",
-    "fullTitle": "Wish You Would (feat. Quavo)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/34/39/6234399c-88b9-bdff-e541-2c72d1b84f5d/mzaf_5900027814573103333.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/56/c8/2256c845-3d78-7e3f-ae92-fd93fb86485e/21UMGIM20642.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (Triple Chucks Deluxe)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1560264725",
-    "title": "Know No Better",
-    "fullTitle": "Know No Better (feat. DaBaby)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/3d/fc/4b3dfc81-b8f4-1def-983d-bc6bcce74109/mzaf_7105731712192111425.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/56/c8/2256c845-3d78-7e3f-ae92-fd93fb86485e/21UMGIM20642.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (Triple Chucks Deluxe)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1825994903",
-    "title": "WALKING AWAY",
-    "fullTitle": "WALKING AWAY",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/a8/70/e8a87047-1691-5ce9-7dd0-469c8fd3707e/mzaf_12442544714383134454.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f9/09/36/f9093663-c05f-7f95-0a60-4e95d52fbb22/25UMGIM93915.rgb.jpg/300x300bb.jpg",
-    "album": "SWAG",
-    "releaseYear": "2025",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1588044832",
-    "title": "Angels Speak",
-    "fullTitle": "Angels Speak (feat. Poo Bear)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/91/15/ea9115e1-331f-3683-988c-eb33464c83d7/mzaf_1185975920488540514.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/25/64/b3/2564b343-943a-68b2-4c55-ee2e14464cf0/21UMGIM83128.rgb.jpg/300x300bb.jpg",
-    "album": "Justice (The Complete Edition)",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1561541752",
-    "title": "Freedom",
-    "fullTitle": "Freedom",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/41/89/7941891a-0a6f-7f42-b656-7bbf00834c94/mzaf_3791730417009476191.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/ab/9b/50ab9b59-a2e2-5e90-0b06-f7971958556c/21UMGIM29356.rgb.jpg/300x300bb.jpg",
-    "album": "Freedom. - EP",
-    "releaseYear": "2021",
-    "difficulty": "hard",
-    "lang": "en"
-  },
-  {
-    "id": "it_1561535462",
-    "title": "Where You Go I Follow",
-    "fullTitle": "Where You Go I Follow (feat. Pink Sweat$, Chandler Moore & Judah Smith)",
-    "artist": "Justin Bieber",
-    "genre": "Pop",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/05/7f/4c057fb9-0053-f67f-73e1-f84be3a5f59f/mzaf_7708611223708595360.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4f/ec/ba/4fecba9e-8b34-487a-424e-86e880e456d7/21UMGIM29356.rgb.jpg/300x300bb.jpg",
-    "album": "Freedom. - EP",
-    "releaseYear": "2021",
     "difficulty": "hard",
     "lang": "en"
   },
@@ -8148,7 +1921,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/e6/06/ebe606da-e00f-82d3-47f3-b79904eed541/17UM1IM24651.rgb.jpg/300x300bb.jpg",
     "album": "reputation",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440934255",
@@ -8226,32 +1999,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d4/23/57/d423579f-24f7-5c82-ed10-fbfd21ceef25/10UMDIM00487.rgb.jpg/300x300bb.jpg",
     "album": "Speak Now",
     "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1468058706",
-    "title": "ME!",
-    "fullTitle": "ME! (feat. Brendon Urie of Panic! At The Disco)",
-    "artist": "Taylor Swift",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/6f/e3/c56fe3a6-2f25-b545-6135-aaba0a838569/mzaf_1819099962104489735.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/3d/ab/493dab54-f920-9043-6181-80993b8116c9/19UMGIM53909.rgb.jpg/300x300bb.jpg",
-    "album": "Lover",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1524801944",
-    "title": "august",
-    "fullTitle": "august",
-    "artist": "Taylor Swift",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/4c/4c/fc4c4cfb-b58d-ba29-8ce4-b7dfb5bb0053/mzaf_9441217196537110708.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ca/f3/67/caf367a5-2cf6-6b2e-a891-97dc57b19f08/20UMGIM64216.rgb.jpg/300x300bb.jpg",
-    "album": "folklore",
-    "releaseYear": "2020",
     "difficulty": "hard"
   },
   {
@@ -8356,7 +2103,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/be/b5/16/beb51692-6125-f465-e1a9-d414be6c7c33/00602557821048.rgb.jpg/300x300bb.jpg",
     "album": "Signs - Single",
     "releaseYear": "2017",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1418213381",
@@ -8460,7 +2207,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/18/9d/b8/189db80b-bfa8-89d1-1514-5fcb7e5cf8f4/00602557611526.rgb.jpg/300x300bb.jpg",
     "album": "More Life",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1418213266",
@@ -8473,7 +2220,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1f/37/43/1f374304-2e04-2be3-53ea-41dd6f0b6fb8/00602567892410.rgb.jpg/300x300bb.jpg",
     "album": "Scorpion",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1418213269",
@@ -8486,7 +2233,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1f/37/43/1f374304-2e04-2be3-53ea-41dd6f0b6fb8/00602567892410.rgb.jpg/300x300bb.jpg",
     "album": "Scorpion",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1418213383",
@@ -8535,97 +2282,6 @@ window.SONGS_CATALOG = [
     "genre": "Hip-Hop",
     "lang": "en",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/6b/da/c66bdaa8-5622-5c5c-fb00-180a14691ccc/mzaf_12198829753660712688.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/84/2c/b4/842cb419-243c-b3f4-4da9-b6b980996062/22UMGIM67371.rgb.jpg/300x300bb.jpg",
-    "album": "Honestly, Nevermind",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6814098498",
-    "title": "GREEDY",
-    "fullTitle": "GREEDY",
-    "artist": "Drake",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/57/61/6f5761ed-1b88-6a84-5627-632c2aee8106/mzaf_14877462759644571203.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/65/a1/d8/65a1d809-dede-adf4-d85e-964070e77f58/808391285897.jpg/300x300bb.jpg",
-    "album": "$ome $exy $ongs 4 U",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6814098013",
-    "title": "PIMMIE'S DILEMMA",
-    "fullTitle": "PIMMIE'S DILEMMA",
-    "artist": "Drake",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/a1/b2/65a1b25d-3f86-2dfe-2e87-162c3013cd34/mzaf_7299117078649491182.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/65/a1/d8/65a1d809-dede-adf4-d85e-964070e77f58/808391285897.jpg/300x300bb.jpg",
-    "album": "$ome $exy $ongs 4 U",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440892220",
-    "title": "Since Way Back",
-    "fullTitle": "Since Way Back (feat. PARTYNEXTDOOR)",
-    "artist": "Drake",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/b6/7b/8bb67b2a-99fd-1358-a4b2-9c67951258d1/mzaf_16891345581848598623.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/71/97/d0/7197d021-de0f-9548-3f31-40b8294d3242/17UMGIM85032.rgb.jpg/300x300bb.jpg",
-    "album": "More Life",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440891494",
-    "title": "Passionfruit",
-    "fullTitle": "Passionfruit",
-    "artist": "Drake",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/62/24/f06224ca-00bf-ef86-9082-e28730082843/mzaf_9989569029464982878.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/71/97/d0/7197d021-de0f-9548-3f31-40b8294d3242/17UMGIM85032.rgb.jpg/300x300bb.jpg",
-    "album": "More Life",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1630230784",
-    "title": "Overdrive",
-    "fullTitle": "Overdrive",
-    "artist": "Drake",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/2d/d0/6e2dd08d-657b-fff6-26c3-6a27b5fb5342/mzaf_10715231672339532572.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/84/2c/b4/842cb419-243c-b3f4-4da9-b6b980996062/22UMGIM67371.rgb.jpg/300x300bb.jpg",
-    "album": "Honestly, Nevermind",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1662237145",
-    "title": "Stars Align",
-    "fullTitle": "Stars Align (with Drake)",
-    "artist": "Drake",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/f6/54/77f65412-10dc-927b-a0e3-acddafddcd3e/mzaf_4586761343603431276.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/99/b4/d1/99b4d15d-8327-2687-9922-2c09476886d7/27317.jpg/300x300bb.jpg",
-    "album": "Wildest Dreams",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1630230433",
-    "title": "Currents",
-    "fullTitle": "Currents",
-    "artist": "Drake",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/7c/04/057c0446-e318-b3a7-0a99-2b9c7f2559d2/mzaf_14969325485598992957.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/84/2c/b4/842cb419-243c-b3f4-4da9-b6b980996062/22UMGIM67371.rgb.jpg/300x300bb.jpg",
     "album": "Honestly, Nevermind",
     "releaseYear": "2022",
@@ -8733,7 +2389,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/f7/a3/50f7a39d-3bd5-28e9-0264-532f08b5b810/886446074726.jpg/300x300bb.jpg",
     "album": "Birds In The Trap Sing McKnight",
     "releaseYear": "2016",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1481874619",
@@ -8837,7 +2493,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/f7/a3/50f7a39d-3bd5-28e9-0264-532f08b5b810/886446074726.jpg/300x300bb.jpg",
     "album": "Birds In The Trap Sing McKnight",
     "releaseYear": "2016",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1421242380",
@@ -8850,7 +2506,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/30/66/90/306690d4-2a29-402e-e406-6b319ce7731a/886447227169.jpg/300x300bb.jpg",
     "album": "ASTROWORLD",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_6789293876",
@@ -8863,7 +2519,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/85/28/de/8528de5e-6fbb-012a-0c8b-b75562b426e0/961.jpg/300x300bb.jpg",
     "album": "The Odyssey (Original Motion Picture Soundtrack)",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440903882",
@@ -8915,84 +2571,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/30/66/90/306690d4-2a29-402e-e406-6b319ce7731a/886447227169.jpg/300x300bb.jpg",
     "album": "ASTROWORLD",
     "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1456177234",
-    "title": "Antidote",
-    "fullTitle": "Antidote",
-    "artist": "Travis Scott",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/3f/1a/803f1a88-71ad-f263-03e1-0fe3a6b90438/mzaf_14430645632362065684.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/71/87/78/7187786f-70af-fd36-fc7f-a4ba61b65d98/886445454987.jpg/300x300bb.jpg",
-    "album": "Rodeo",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569719186",
-    "title": "Hats Off",
-    "fullTitle": "Hats Off",
-    "artist": "Travis Scott",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/22/22/ce222280-819a-cce0-d30d-aa75875dce81/mzaf_14782494028456768422.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/60/b5/ef/60b5ef3d-f5d0-e066-7ce6-4508229eac60/21UMGIM47175.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1737320968",
-    "title": "Type Shit",
-    "fullTitle": "Type Shit",
-    "artist": "Travis Scott",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/59/f9/9559f979-ed9a-02aa-d30c-eb953d473c17/mzaf_16087004087878821634.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fe/b6/46/feb64670-4fe7-bbc0-1101-c5f11bfb6905/196871937399.jpg/300x300bb.jpg",
-    "album": "WE DON'T TRUST YOU",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1150135832",
-    "title": "through the late night",
-    "fullTitle": "through the late night",
-    "artist": "Travis Scott",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/92/72/2692729f-2da7-d1ca-e27f-cc044ac88768/mzaf_1193406110649512241.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/f7/a3/50f7a39d-3bd5-28e9-0264-532f08b5b810/886446074726.jpg/300x300bb.jpg",
-    "album": "Birds In The Trap Sing McKnight",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1421243220",
-    "title": "CAN'T SAY",
-    "fullTitle": "CAN'T SAY",
-    "artist": "Travis Scott",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/00/f9/1b/00f91b85-136d-8edb-f933-4f9c59b85ef3/mzaf_12222878040756828717.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/30/66/90/306690d4-2a29-402e-e406-6b319ce7731a/886447227169.jpg/300x300bb.jpg",
-    "album": "ASTROWORLD",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1150135829",
-    "title": "coordinate",
-    "fullTitle": "coordinate",
-    "artist": "Travis Scott",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/4d/d3/1c4dd389-e9cb-cda2-ff7e-698a8c1762de/mzaf_4710239810830966011.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/f7/a3/50f7a39d-3bd5-28e9-0264-532f08b5b810/886446074726.jpg/300x300bb.jpg",
-    "album": "Birds In The Trap Sing McKnight",
-    "releaseYear": "2016",
     "difficulty": "hard"
   },
   {
@@ -9201,7 +2779,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/86/c9/bb/86c9bb30-fe3d-442e-33c1-c106c4d23705/17UMGIM88776.rgb.jpg/300x300bb.jpg",
     "album": "DAMN.",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440881570",
@@ -9279,32 +2857,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0f/7c/f9/0f7cf9a6-651f-53ae-e374-6be14630bfae/18UMGIM00001.rgb.jpg/300x300bb.jpg",
     "album": "Black Panther: The Album",
     "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6784796391",
-    "title": "How To Pray",
-    "fullTitle": "How To Pray",
-    "artist": "Kendrick Lamar",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/a4/3c/2ba43c68-2b89-de56-95d5-c18f31bc6c69/mzaf_12225788087880779676.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/15/f1/c915f103-2e61-235f-a9d6-9c7a7126e073/8721555614062.png/300x300bb.jpg",
-    "album": "Black Boy (Alternative)",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440881578",
-    "title": "PRIDE.",
-    "fullTitle": "PRIDE.",
-    "artist": "Kendrick Lamar",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/aa/13/eeaa1384-4f35-4d70-7831-2f7bc87afc57/mzaf_16510072986407270360.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/86/c9/bb/86c9bb30-fe3d-442e-33c1-c106c4d23705/17UMGIM88776.rgb.jpg/300x300bb.jpg",
-    "album": "DAMN.",
-    "releaseYear": "2017",
     "difficulty": "hard"
   },
   {
@@ -9409,7 +2961,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/3b/a9/bd3ba9fb-9609-144f-bcfe-ead67b5f6ab3/196589564931.jpg/300x300bb.jpg",
     "album": "SOS",
     "releaseYear": "2022",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1239976610",
@@ -9513,7 +3065,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d8/86/70/d8867099-c280-065b-8617-53096e63fd55/859712300362_cover.jpg/300x300bb.jpg",
     "album": "Z - EP",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_852343827",
@@ -9526,7 +3078,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d8/86/70/d8867099-c280-065b-8617-53096e63fd55/859712300362_cover.jpg/300x300bb.jpg",
     "album": "Z - EP",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1530112596",
@@ -9539,7 +3091,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d1/03/97/d10397d5-8de0-2d58-cd77-fc4fd6ac7d0b/886448745594.jpg/300x300bb.jpg",
     "album": "Hit Different (feat. Ty Dolla $ign) - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1239976607",
@@ -9588,84 +3140,6 @@ window.SONGS_CATALOG = [
     "genre": "R&B",
     "lang": "en",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/69/31/b369318b-a1a3-8d22-ca16-180d878246c4/mzaf_16250400752565073284.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/28/8f/20288f6f-fbf2-fb0f-6732-e7d334e1ff50/886446548432.jpg/300x300bb.jpg",
-    "album": "Ctrl",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6819802968",
-    "title": "Flower In A Hurricane",
-    "fullTitle": "Flower In A Hurricane [from GTAVI]",
-    "artist": "SZA",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/33/f5/0433f5b3-d831-1935-08e2-86e233973e02/mzaf_16615932387163717675.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/23/54/af235448-23b3-a3bf-0738-87f6c44a4bbc/5056556187486_cover.jpg/300x300bb.jpg",
-    "album": "Flower In A Hurricane [from GTAVI] - Single",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1598221453",
-    "title": "I Hate U",
-    "fullTitle": "I Hate U",
-    "artist": "SZA",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/bb/d9/ecbbd902-d835-7916-eb89-444bac3715db/mzaf_11793521184805711651.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f6/4f/19/f64f19b7-3ab4-ad2d-5a67-ca196d278b44/886449787043.jpg/300x300bb.jpg",
-    "album": "I Hate U - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1657869537",
-    "title": "Shirt",
-    "fullTitle": "Shirt",
-    "artist": "SZA",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fa/0e/58/fa0e58c1-869c-ea42-915b-364f6877c05d/mzaf_14804819265088015767.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/3b/a9/bd3ba9fb-9609-144f-bcfe-ead67b5f6ab3/196589564931.jpg/300x300bb.jpg",
-    "album": "SOS",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_852345984",
-    "title": "Shattered Ring",
-    "fullTitle": "Shattered Ring",
-    "artist": "SZA",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/92/2c/f6922c53-c06c-a513-c1d7-9da4d603ef3e/mzaf_9075990377828085862.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d8/86/70/d8867099-c280-065b-8617-53096e63fd55/859712300362_cover.jpg/300x300bb.jpg",
-    "album": "Z - EP",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_852345986",
-    "title": "Omega",
-    "fullTitle": "Omega",
-    "artist": "SZA",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/e6/d4/bde6d4ae-faac-7a0d-a834-fa5a3812c064/mzaf_13593988580603001949.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d8/86/70/d8867099-c280-065b-8617-53096e63fd55/859712300362_cover.jpg/300x300bb.jpg",
-    "album": "Z - EP",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1239976602",
-    "title": "Supermodel",
-    "fullTitle": "Supermodel",
-    "artist": "SZA",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/d8/e6/81d8e6e5-a5a9-586f-7494-e96b7bf08965/mzaf_3167232624344048076.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/28/8f/20288f6f-fbf2-fb0f-6732-e7d334e1ff50/886446548432.jpg/300x300bb.jpg",
     "album": "Ctrl",
     "releaseYear": "2017",
@@ -9773,7 +3247,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c5/6c/b1/c56cb16a-52c3-33b5-5189-6c65028001fb/19UM1IM00404.rgb.jpg/300x300bb.jpg",
     "album": "everything i wanted - Single",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1739659141",
@@ -9877,7 +3351,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/98/97/b2/9897b250-e07c-06d9-6d60-c72f74084dff/22UMGIM77990.rgb.jpg/300x300bb.jpg",
     "album": "Guitar Songs - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1739659145",
@@ -9890,7 +3364,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/300x300bb.jpg",
     "album": "HIT ME HARD AND SOFT",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1450695745",
@@ -9903,7 +3377,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/300x300bb.jpg",
     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440899117",
@@ -9916,7 +3390,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/300x300bb.jpg",
     "album": "dont smile at me",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1498647654",
@@ -9955,110 +3429,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/85/be/22/85be22e4-b915-5318-847b-cc438fa8e535/17UMGIM86543.rgb.jpg/300x300bb.jpg",
     "album": "13 Reasons Why (A Netflix Original Series Soundtrack)",
     "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440899130",
-    "title": "my boy",
-    "fullTitle": "my boy",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/18/67/13186773-0e92-5fe5-bae3-0d3c31c8f319/mzaf_4353686949028639491.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/300x300bb.jpg",
-    "album": "dont smile at me",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1450695871",
-    "title": "wish you were gay",
-    "fullTitle": "wish you were gay",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/09/de/6c09de57-7bee-f9e1-a8ae-eb1842eb4dc5/mzaf_16109277015595287182.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/300x300bb.jpg",
-    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1450695888",
-    "title": "listen before i go",
-    "fullTitle": "listen before i go",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/74/7b/93/747b9324-c93c-d3fe-9ca6-7cfdeae110a4/mzaf_7608722836693991000.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/300x300bb.jpg",
-    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1450695867",
-    "title": "all the good girls go to hell",
-    "fullTitle": "all the good girls go to hell",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/4e/b2/604eb2cd-21b4-dcd3-1ead-310e4e09824d/mzaf_18281409503915563940.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/300x300bb.jpg",
-    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1739659140",
-    "title": "LUNCH",
-    "fullTitle": "LUNCH",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/3e/43/9d3e43aa-682a-7979-8547-d339956c409b/mzaf_710286407585135494.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/300x300bb.jpg",
-    "album": "HIT ME HARD AND SOFT",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1739659278",
-    "title": "BLUE",
-    "fullTitle": "BLUE",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/55/12/29551211-8ee4-c75f-3cbe-95c1a7eaa6fe/mzaf_15864137434256663479.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/300x300bb.jpg",
-    "album": "HIT ME HARD AND SOFT",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1564531176",
-    "title": "Your Power",
-    "fullTitle": "Your Power",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/77/c1/de77c107-2766-0edd-9efe-87d28453d953/mzaf_15909945007421681650.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/300x300bb.jpg",
-    "album": "Happier Than Ever",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1450695884",
-    "title": "ilomilo",
-    "fullTitle": "ilomilo",
-    "artist": "Billie Eilish",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/73/72/2473723e-bcb3-4517-1f87-3bcd6dee3fe9/mzaf_15497687368530840745.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/300x300bb.jpg",
-    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
-    "releaseYear": "2019",
     "difficulty": "hard"
   },
   {
@@ -10267,7 +3637,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/44/d3/01/44d3016a-6747-25bf-8cd4-4c4fa5ced26f/19UMGIM04260.rgb.jpg/300x300bb.jpg",
     "album": "The Slim Shady LP (Expanded Edition)",
     "releaseYear": "1999",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1434770514",
@@ -10345,32 +3715,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ee/1c/a4/ee1ca4b6-9afd-d92b-a4ef-19ed5b3463ea/00602527157719.rgb.jpg/300x300bb.jpg",
     "album": "More Than a Game (Music Inspired By the Film)",
     "releaseYear": "2009",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1434770510",
-    "title": "Normal",
-    "fullTitle": "Normal",
-    "artist": "Eminem",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/fa/1a/24fa1a58-a801-288a-e2d4-c896a058b492/mzaf_15768483086509192183.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/58/f8/88/58f88801-2fc9-4600-a07f-425bb94315c8/00602577046223.rgb.jpg/300x300bb.jpg",
-    "album": "Kamikaze",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440903794",
-    "title": "Superman",
-    "fullTitle": "Superman (feat. Dina Rae)",
-    "artist": "Eminem",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/11/9c/d4/119cd4d5-872a-baf7-0d38-062dcfe2ebe5/mzaf_6816012088117587692.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b4/13/e9/b413e91d-40aa-a1a8-b8e3-2bacc3b3e222/00606949329020.rgb.jpg/300x300bb.jpg",
-    "album": "The Eminem Show",
-    "releaseYear": "2002",
     "difficulty": "hard"
   },
   {
@@ -10475,7 +3819,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/21/fd/d3/21fdd3d4-0c00-53ef-3903-d0569c49a812/19UMGIM89397.rgb.jpg/300x300bb.jpg",
     "album": "JESUS IS KING",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1587795284",
@@ -10579,7 +3923,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/00/68/13/006813b3-9ca1-2e6f-98df-4ef78cd6cb49/06UMGIM20452.rgb.jpg/300x300bb.jpg",
     "album": "Late Registration",
     "releaseYear": "2005",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1624803399",
@@ -10592,7 +3936,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3a/c4/be/3ac4be92-f255-b735-605f-3d531bf7a487/dj.kvenstal.jpg/300x300bb.jpg",
     "album": "True Love - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1378131527",
@@ -10605,7 +3949,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/af/dc/a2/afdca22d-911e-fabd-954d-1ff6f7331ede/18UMGIM25822.rgb.jpg/300x300bb.jpg",
     "album": "Lift Yourself - Single",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1587796089",
@@ -10618,7 +3962,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/62/13/7b/62137b3f-7722-59f5-2ee1-b5aff9426869/21UMGIM64738.rgb.jpg/300x300bb.jpg",
     "album": "Donda",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1587795181",
@@ -10657,110 +4001,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/21/fd/d3/21fdd3d4-0c00-53ef-3903-d0569c49a812/19UMGIM89397.rgb.jpg/300x300bb.jpg",
     "album": "JESUS IS KING",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1484937115",
-    "title": "Everything We Need",
-    "fullTitle": "Everything We Need (feat. Ty Dolla $ign & Ant Clemons)",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/06/4a/eb064a6f-94a7-337e-8d7f-19f741ff8c8a/mzaf_13194125910806690677.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/21/fd/d3/21fdd3d4-0c00-53ef-3903-d0569c49a812/19UMGIM89397.rgb.jpg/300x300bb.jpg",
-    "album": "JESUS IS KING",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1587795282",
-    "title": "Off The Grid",
-    "fullTitle": "Off The Grid",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/a7/6f/79a76f84-ba71-6255-184e-04f0917d4250/mzaf_18070411789131224445.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/62/13/7b/62137b3f-7722-59f5-2ee1-b5aff9426869/21UMGIM64738.rgb.jpg/300x300bb.jpg",
-    "album": "Donda",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1484937122",
-    "title": "Use This Gospel",
-    "fullTitle": "Use This Gospel (feat. Clipse & Kenny G)",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/14/32/4a143219-492f-f43d-51ad-d6193b83bf7c/mzaf_1757928159348842640.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/21/fd/d3/21fdd3d4-0c00-53ef-3903-d0569c49a812/19UMGIM89397.rgb.jpg/300x300bb.jpg",
-    "album": "JESUS IS KING",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440669048",
-    "title": "Touch the Sky",
-    "fullTitle": "Touch the Sky (feat. Lupe Fiasco)",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/b7/29/09b729fc-ce32-9fac-759b-50acdc9ae053/mzaf_11851530229792694219.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/00/68/13/006813b3-9ca1-2e6f-98df-4ef78cd6cb49/06UMGIM20452.rgb.jpg/300x300bb.jpg",
-    "album": "Late Registration",
-    "releaseYear": "2005",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1587795305",
-    "title": "Believe What I Say",
-    "fullTitle": "Believe What I Say",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/a9/d1/e6a9d1b4-5c11-ab74-2152-a90498478a50/mzaf_3566239969668273426.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/62/13/7b/62137b3f-7722-59f5-2ee1-b5aff9426869/21UMGIM64738.rgb.jpg/300x300bb.jpg",
-    "album": "Donda",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1484936941",
-    "title": "Every Hour",
-    "fullTitle": "Every Hour (feat. Sunday Service Choir)",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/73/34/977334e5-7fdd-e36b-fb6f-1654c121ef74/mzaf_13921687485063761360.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/21/fd/d3/21fdd3d4-0c00-53ef-3903-d0569c49a812/19UMGIM89397.rgb.jpg/300x300bb.jpg",
-    "album": "JESUS IS KING",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1587795932",
-    "title": "Pure Souls",
-    "fullTitle": "Pure Souls",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/20/f2/c920f293-5dc8-8544-29f0-f73d3481201a/mzaf_17872231790853516298.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/62/13/7b/62137b3f-7722-59f5-2ee1-b5aff9426869/21UMGIM64738.rgb.jpg/300x300bb.jpg",
-    "album": "Donda",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1587795289",
-    "title": "Jonah",
-    "fullTitle": "Jonah",
-    "artist": "Kanye West",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/46/34/a74634ef-524a-6ed4-efa7-3c249de1dd26/mzaf_14749216530488128365.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/62/13/7b/62137b3f-7722-59f5-2ee1-b5aff9426869/21UMGIM64738.rgb.jpg/300x300bb.jpg",
-    "album": "Donda",
-    "releaseYear": "2021",
     "difficulty": "hard"
   },
   {
@@ -10826,7 +4066,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/56/17/2c/56172c37-dc56-6651-1e70-59dc6d2e6e3f/886448218845.jpg/300x300bb.jpg",
     "album": "Life Is Good (feat. Drake) - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "it_1440907112",
@@ -10956,7 +4196,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ea/98/f2/ea98f2b8-5131-29ae-2064-997234ef13bc/093624812647.jpg/300x300bb.jpg",
     "album": "Young Manhood and Other Donatable Organs",
     "releaseYear": "2026",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1819829902",
@@ -11060,7 +4300,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fb/f9/96/fbf996b4-90ac-c513-e413-3e96c7abcdc8/093624884507.jpg/300x300bb.jpg",
     "album": "DeAnn",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1819829906",
@@ -11073,7 +4313,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/2e/c1/f62ec15a-3294-0743-e80c-c5e890171a14/093624828730.jpg/300x300bb.jpg",
     "album": "The Great American Bar Scene",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1654065915",
@@ -11086,7 +4326,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f6/e6/7f/f6e67fdc-3c18-edb4-7cd5-888010cd4f94/054391698346.jpg/300x300bb.jpg",
     "album": "The Greatest Day of My Life - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1541426420",
@@ -11138,97 +4378,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/42/d9/4242d9f7-f21d-76ab-3e21-1496aa3b3caa/093624848486.jpg/300x300bb.jpg",
     "album": "Boys Of Faith - EP",
     "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1633178991",
-    "title": "Motorcycle Drive By",
-    "fullTitle": "Motorcycle Drive By",
-    "artist": "Zach Bryan",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/36/87/373687da-05ee-f2d9-1ac3-14afabcd52f8/mzaf_3642601826194363102.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/be/ea/e9/beeae98a-33a4-6e1d-6efc-b8dd098b0a2c/093624866459.jpg/300x300bb.jpg",
-    "album": "Summertime Blues - EP",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1867328567",
-    "title": "Say Why",
-    "fullTitle": "Say Why",
-    "artist": "Zach Bryan",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/fc/16/a4fc168e-3e4d-73bf-6d8a-ec646df0653f/mzaf_17246952164655398764.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cf/15/82/cf158280-e899-3a6f-3060-b55255200a3c/093624823384.jpg/300x300bb.jpg",
-    "album": "With Heaven On Top",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1703217507",
-    "title": "El Dorado",
-    "fullTitle": "El Dorado",
-    "artist": "Zach Bryan",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/c9/3a/adc93a4f-9e29-d1ff-841b-ed5a6dc636ab/mzaf_9554719163729215576.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ce/36/7f/ce367f3d-2a4f-46ee-1434-e3fbb52f1fc8/093624849797.jpg/300x300bb.jpg",
-    "album": "Zach Bryan",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1620257604",
-    "title": "Heavy Eyes",
-    "fullTitle": "Heavy Eyes",
-    "artist": "Zach Bryan",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/b8/a8/f7b8a858-7e82-aa37-d71d-b0870c1ab92e/mzaf_8856846145178767270.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ee/cb/00/eecb00f1-05ea-b9ea-2a56-2c67957de43e/093624870487.jpg/300x300bb.jpg",
-    "album": "American Heartbreak",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1620257698",
-    "title": "From Austin",
-    "fullTitle": "From Austin",
-    "artist": "Zach Bryan",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/de/a2/cbdea258-a09e-0b84-5e1b-73d07993a08f/mzaf_9480656051468087255.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ee/cb/00/eecb00f1-05ea-b9ea-2a56-2c67957de43e/093624870487.jpg/300x300bb.jpg",
-    "album": "American Heartbreak",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1703217243",
-    "title": "Fear and Friday’s",
-    "fullTitle": "Fear and Friday’s",
-    "artist": "Zach Bryan",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/41/9e/c8419ef9-c3a1-3dc7-08b5-a499c716e26a/mzaf_16759742337382245906.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ce/36/7f/ce367f3d-2a4f-46ee-1434-e3fbb52f1fc8/093624849797.jpg/300x300bb.jpg",
-    "album": "Zach Bryan",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1543705510",
-    "title": "Snow",
-    "fullTitle": "Snow",
-    "artist": "Zach Bryan",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/09/6f/a7096fda-c2b5-af24-6619-f88a496a5a2f/mzaf_15378177115443316776.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fb/f9/96/fbf996b4-90ac-c513-e413-3e96c7abcdc8/093624884507.jpg/300x300bb.jpg",
-    "album": "DeAnn",
-    "releaseYear": "2019",
     "difficulty": "hard"
   },
   {
@@ -11333,7 +4482,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/81/55/08/8155084d-26e7-e914-35b0-8bbe6edf2668/886448691341.jpg/300x300bb.jpg",
     "album": "What You See Ain't Always What You Get (Deluxe Edition)",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1228888134",
@@ -11437,7 +4586,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/30/cd/9530cd97-d001-99d9-ac2e-32c2633f6ec3/196872117424.jpg/300x300bb.jpg",
     "album": "Fathers & Sons",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1376707065",
@@ -11450,7 +4599,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f4/4b/59/f44b59a2-62c7-e9c7-df8b-4b8e7d772b41/886447048443.jpg/300x300bb.jpg",
     "album": "This One’s for You Too (Deluxe Edition)",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1619409103",
@@ -11463,7 +4612,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bd/cf/7e/bdcf7e23-dd60-9205-4264-47ca82371145/886449722594.jpg/300x300bb.jpg",
     "album": "Growin' Up",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1376706988",
@@ -11476,7 +4625,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f4/4b/59/f44b59a2-62c7-e9c7-df8b-4b8e7d772b41/886447048443.jpg/300x300bb.jpg",
     "album": "This One’s for You Too (Deluxe Edition)",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1527782149",
@@ -11515,110 +4664,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/30/cd/9530cd97-d001-99d9-ac2e-32c2633f6ec3/196872117424.jpg/300x300bb.jpg",
     "album": "Fathers & Sons",
     "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1862634694",
-    "title": "Days Like These",
-    "fullTitle": "Days Like These",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/0e/ff/590eff6e-6097-38a4-d91a-817985732e6a/mzaf_11355750921910261506.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/b6/e5/4cb6e5b1-2db0-88c0-f025-b79cad3b8fab/196873832111.jpg/300x300bb.jpg",
-    "album": "The Way I Am",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1826140315",
-    "title": "Back in the Saddle",
-    "fullTitle": "Back in the Saddle",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/78/a8/b078a8ba-2621-5eda-695f-ce37bd6a7426/mzaf_10541251086109992931.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b2/04/4c/b2044c17-c419-4931-6248-d305aedcc56d/196873402512.jpg/300x300bb.jpg",
-    "album": "Back in the Saddle - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1527782446",
-    "title": "Cold As You",
-    "fullTitle": "Cold As You",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/0e/c7/6f0ec7a9-9e8e-d527-8208-9fc40859dcc2/mzaf_15644825258384361747.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/81/55/08/8155084d-26e7-e914-35b0-8bbe6edf2668/886448691341.jpg/300x300bb.jpg",
-    "album": "What You See Ain't Always What You Get (Deluxe Edition)",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1666738587",
-    "title": "5 Leaf Clover",
-    "fullTitle": "5 Leaf Clover",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/79/76/bb79761d-d26b-d40c-9937-80d6373899c2/mzaf_10402966965708210579.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7d/24/14/7d241439-671a-d957-9613-2f738f43a064/196589485991.jpg/300x300bb.jpg",
-    "album": "Gettin' Old",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1666738531",
-    "title": "You Found Yours",
-    "fullTitle": "You Found Yours",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/5a/b0/385ab0aa-1a6f-85b6-ad31-126dd903999d/mzaf_10951016735554660681.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7d/24/14/7d241439-671a-d957-9613-2f738f43a064/196589485991.jpg/300x300bb.jpg",
-    "album": "Gettin' Old",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1619408874",
-    "title": "Doin' This",
-    "fullTitle": "Doin' This",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/83/01/7f8301e7-d779-054a-2c4c-6aadd6b8b314/mzaf_7071676206677264870.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bd/cf/7e/bdcf7e23-dd60-9205-4264-47ca82371145/886449722594.jpg/300x300bb.jpg",
-    "album": "Growin' Up",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1527782163",
-    "title": "Does to Me",
-    "fullTitle": "Does to Me (feat. Eric Church)",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/6b/e0/ed6be0c9-df78-85fb-a251-a9386c45d21d/mzaf_7754585248898269102.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/81/55/08/8155084d-26e7-e914-35b0-8bbe6edf2668/886448691341.jpg/300x300bb.jpg",
-    "album": "What You See Ain't Always What You Get (Deluxe Edition)",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1666738525",
-    "title": "Growin' Up and Gettin' Old",
-    "fullTitle": "Growin' Up and Gettin' Old",
-    "artist": "Luke Combs",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/ae/60/ebae60fc-64fa-5cea-b69c-c800723fbb41/mzaf_11066587445065366391.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7d/24/14/7d241439-671a-d957-9613-2f738f43a064/196589485991.jpg/300x300bb.jpg",
-    "album": "Gettin' Old",
-    "releaseYear": "2023",
     "difficulty": "hard"
   },
   {
@@ -11723,7 +4768,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/07/ef/6a/07ef6a69-ee75-ae04-f6a2-971be4b53828/22UMGIM63572.rgb.jpg/300x300bb.jpg",
     "album": "emails i can't send",
     "releaseYear": "2022",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1750307379",
@@ -11827,7 +4872,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/a3/e9/c9a3e987-3952-a6ac-7975-680f2033e660/25UMGIM10586.rgb.jpg/300x300bb.jpg",
     "album": "Short n' Sweet (Deluxe)",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1676555853",
@@ -11840,7 +4885,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c4/7e/22/c47e22bf-0d2b-e211-815c-39c41428c6a4/23UMGIM16392.rgb.jpg/300x300bb.jpg",
     "album": "emails i can’t send fwd:",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1818103445",
@@ -11853,7 +4898,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/50/a3/b750a392-cfaa-bedc-7d81-cf7a1718e960/25UMGIM76990.rgb.jpg/300x300bb.jpg",
     "album": "Manchild - Single",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1795513610",
@@ -11905,97 +4950,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/3b/74/89/3b7489e1-9226-b439-faab-25db58825b61/00050087323424.rgb.jpg/300x300bb.jpg",
     "album": "Eyes Wide Open",
     "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1750307081",
-    "title": "Good Graces",
-    "fullTitle": "Good Graces",
-    "artist": "Sabrina Carpenter",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/1b/24/0b1b2455-b55c-bb46-032b-171a9097925b/mzaf_2966840860968373479.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/15/d0/f615d0ab-e0c4-575d-907e-1cc084642357/24UMGIM61704.rgb.jpg/300x300bb.jpg",
-    "album": "Short n' Sweet",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1631578530",
-    "title": "because i liked a boy",
-    "fullTitle": "because i liked a boy",
-    "artist": "Sabrina Carpenter",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/cb/cd/93cbcd11-3c4a-d924-7b54-ad8170525b10/mzaf_4618674925813901019.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/07/ef/6a/07ef6a69-ee75-ae04-f6a2-971be4b53828/22UMGIM63572.rgb.jpg/300x300bb.jpg",
-    "album": "emails i can't send",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1438671107",
-    "title": "Almost Love",
-    "fullTitle": "Almost Love",
-    "artist": "Sabrina Carpenter",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/a5/7b/d3a57b86-48e7-46c5-23f0-9e570e06ec00/mzaf_11230082061056021199.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4f/4f/21/4f4f216a-7bb1-cf55-72a6-a14dc70cf14e/00050087405274.rgb.jpg/300x300bb.jpg",
-    "album": "Singular Act I",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1438671345",
-    "title": "Paris",
-    "fullTitle": "Paris",
-    "artist": "Sabrina Carpenter",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/39/53/6439539b-f35e-54ef-6658-e353d27e76db/mzaf_1188382452079898676.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4f/4f/21/4f4f216a-7bb1-cf55-72a6-a14dc70cf14e/00050087405274.rgb.jpg/300x300bb.jpg",
-    "album": "Singular Act I",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440632596",
-    "title": "On Purpose",
-    "fullTitle": "On Purpose",
-    "artist": "Sabrina Carpenter",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/69/71/1d69715e-719d-ba5d-2d31-ce97faf8082b/mzaf_10688822438776407713.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/f1/5a/19f15a1d-90f6-94a4-bc89-0f11f646f787/00050087351335.rgb.jpg/300x300bb.jpg",
-    "album": "EVOLution",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465966301",
-    "title": "Exhale",
-    "fullTitle": "Exhale",
-    "artist": "Sabrina Carpenter",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/df/9b/13df9bfe-4f2b-9019-44b6-69b43b147f85/mzaf_6414723842307670595.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4b/ed/7a/4bed7ad0-8708-f567-dc7f-dcffddab196e/19UMGIM48299.rgb.jpg/300x300bb.jpg",
-    "album": "Singular Act II",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1631578515",
-    "title": "Read your Mind",
-    "fullTitle": "Read your Mind",
-    "artist": "Sabrina Carpenter",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/07/d8/5207d87e-13f0-3a1e-c512-6a621ca79b98/mzaf_1374352914421846841.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/07/ef/6a/07ef6a69-ee75-ae04-f6a2-971be4b53828/22UMGIM63572.rgb.jpg/300x300bb.jpg",
-    "album": "emails i can't send",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -12204,7 +5158,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/9d/e6/5a/9de65a25-4df2-389b-e630-f28c3757bea1/075679878014.jpg/300x300bb.jpg",
     "album": "Bitter - Single",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1285416238",
@@ -12282,45 +5236,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/93/1d/80/931d8040-9513-c1f5-8012-44ccd7094e4d/075679890283.jpg/300x300bb.jpg",
     "album": "School Nights - EP",
     "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1698723207",
-    "title": "Femininomenon",
-    "fullTitle": "Femininomenon",
-    "artist": "Chappell Roan",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/7c/de/3f7cde84-30eb-3eb3-4e69-efedc270cb84/mzaf_7374608606162514107.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/65/cb/fb65cb0f-4260-d740-d6f5-bb80c9c27c1b/23UMGIM84225.rgb.jpg/300x300bb.jpg",
-    "album": "The Rise and Fall of a Midwest Princess",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1828261475",
-    "title": "The Subway",
-    "fullTitle": "The Subway",
-    "artist": "Chappell Roan",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/12/c9/5012c994-6f17-2241-fba7-8d3ebbdce6ec/mzaf_16230559591700887475.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/76/2a/cf/762acf78-ed5e-c1f6-8fe1-c505812aac69/25UMGIM99609.rgb.jpg/300x300bb.jpg",
-    "album": "The Subway - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1698723328",
-    "title": "Naked In Manhattan",
-    "fullTitle": "Naked In Manhattan",
-    "artist": "Chappell Roan",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/b8/06/7ab80670-9689-1d4b-4826-ebd8639a38c5/mzaf_11816351962559225233.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/65/cb/fb65cb0f-4260-d740-d6f5-bb80c9c27c1b/23UMGIM84225.rgb.jpg/300x300bb.jpg",
-    "album": "The Rise and Fall of a Midwest Princess",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -12425,7 +5340,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/38/e6/fc38e60e-02f5-882d-689b-f8f40f842a3e/16UMGIM12432.rgb.jpg/300x300bb.jpg",
     "album": "Dangerous Woman",
     "releaseYear": "2016",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1440852549",
@@ -12529,7 +5444,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0a/19/23/0a19235d-8bcc-76d4-58ca-61a65d928587/13UAAIM68293.rgb.jpg/300x300bb.jpg",
     "album": "Yours Truly",
     "releaseYear": "2013",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1450330595",
@@ -12542,7 +5457,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e4/06/d3/e406d3d8-2507-e585-c919-60bc5446985c/19UMGIM03689.rgb.jpg/300x300bb.jpg",
     "album": "thank u, next",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1450330681",
@@ -12555,7 +5470,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e4/06/d3/e406d3d8-2507-e585-c919-60bc5446985c/19UMGIM03689.rgb.jpg/300x300bb.jpg",
     "album": "thank u, next",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1450330685",
@@ -12607,84 +5522,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0a/19/23/0a19235d-8bcc-76d4-58ca-61a65d928587/13UAAIM68293.rgb.jpg/300x300bb.jpg",
     "album": "Yours Truly",
     "releaseYear": "2013",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1800580280",
-    "title": "twilight zone",
-    "fullTitle": "twilight zone",
-    "artist": "Ariana Grande",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/b7/bc/91b7bcc5-ee19-cbd9-cdea-90652b788ff5/mzaf_11289126783043972198.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/14/2a/2d/142a2d3e-fb3a-e818-8c7b-6eeb92990084/25UMGIM42095.rgb.jpg/300x300bb.jpg",
-    "album": "eternal sunshine deluxe: brighter days ahead",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1445010661",
-    "title": "Focus",
-    "fullTitle": "Focus",
-    "artist": "Ariana Grande",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/95/06/d89506dc-d79e-adab-b233-99fc978b233c/mzaf_3474148793705868501.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/19/77/49/19774922-3f97-308c-bb6e-fc899c204187/15UMGIM61975.rgb.jpg/300x300bb.jpg",
-    "album": "Focus - Single",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440860823",
-    "title": "Baby I",
-    "fullTitle": "Baby I",
-    "artist": "Ariana Grande",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/6d/0b/666d0b95-66e5-6f5f-765d-171418215e40/mzaf_16065179270524518693.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0a/19/23/0a19235d-8bcc-76d4-58ca-61a65d928587/13UAAIM68293.rgb.jpg/300x300bb.jpg",
-    "album": "Yours Truly",
-    "releaseYear": "2013",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1537476955",
-    "title": "safety net",
-    "fullTitle": "safety net (feat. Ty Dolla $ign)",
-    "artist": "Ariana Grande",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/8a/f8/b98af8d7-744d-49ed-fc3e-0c2be73a96fe/mzaf_13786551519723740078.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e5/c0/ce/e5c0ce05-4281-dd8e-6a93-86de7cf45621/20UMGIM94964.rgb.jpg/300x300bb.jpg",
-    "album": "Positions",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1450330678",
-    "title": "bad idea",
-    "fullTitle": "bad idea",
-    "artist": "Ariana Grande",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/f1/9e/04f19ee4-d4d1-88c0-6bfd-f87a7f28288b/mzaf_11854422721759201676.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e4/06/d3/e406d3d8-2507-e585-c919-60bc5446985c/19UMGIM03689.rgb.jpg/300x300bb.jpg",
-    "album": "thank u, next",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1399202958",
-    "title": "breathin",
-    "fullTitle": "breathin",
-    "artist": "Ariana Grande",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/e0/57/91e057c6-3cd3-43b9-5361-0c4142765b33/mzaf_11907254608705989654.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7e/aa/71/7eaa717a-857e-6d7a-c03c-8d67b3719706/18UMGIM36924.rgb.jpg/300x300bb.jpg",
-    "album": "Sweetener",
-    "releaseYear": "2018",
     "difficulty": "hard"
   },
   {
@@ -12893,7 +5730,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/46/17/80/461780d4-8620-3e89-7cc4-7f1f08152924/22UM1IM24755.rgb.jpg/300x300bb.jpg",
     "album": "Lift Me Up (From Black Panther: Wakanda Forever - Music From and Inspired By) - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440934107",
@@ -12971,45 +5808,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/11/e9/60/11e9600c-7f3a-424b-1643-97c69f7e8067/16UMGIM03373.rgb.jpg/300x300bb.jpg",
     "album": "ANTI (Deluxe)",
     "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440896002",
-    "title": "Cheers",
-    "fullTitle": "Cheers (Drink to That)",
-    "artist": "Rihanna",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/aa/99/7aaa99a6-d3ee-adb0-5b58-3586c51a140d/mzaf_10471440398852494697.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c6/b1/6c/c6b16cd1-5580-a214-8745-c4f6faa490d6/16UMGIM59220.rgb.jpg/300x300bb.jpg",
-    "album": "Loud (Deluxe)",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440934215",
-    "title": "Goodnight Gotham",
-    "fullTitle": "Goodnight Gotham",
-    "artist": "Rihanna",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/8f/9c/6c8f9c3c-9b54-351a-b41d-c9d002fd2c9d/mzaf_6820228294164361257.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/11/e9/60/11e9600c-7f3a-424b-1643-97c69f7e8067/16UMGIM03373.rgb.jpg/300x300bb.jpg",
-    "album": "ANTI (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440896203",
-    "title": "Skin",
-    "fullTitle": "Skin",
-    "artist": "Rihanna",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/f3/30/04f330dd-020c-d353-77db-4cbc3df9f596/mzaf_9092830422261166631.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c6/b1/6c/c6b16cd1-5580-a214-8745-c4f6faa490d6/16UMGIM59220.rgb.jpg/300x300bb.jpg",
-    "album": "Loud (Deluxe)",
-    "releaseYear": "2010",
     "difficulty": "hard"
   },
   {
@@ -13218,7 +6016,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/03/c5/d4/mzi.ldvrmhxt.jpg/300x300bb.jpg",
     "album": "Dangerously in Love",
     "releaseYear": "2003",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_201275913",
@@ -13296,58 +6094,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/05/05/f3/0505f338-9873-feb4-af7f-27a470405e5f/196589246974.jpg/300x300bb.jpg",
     "album": "RENAISSANCE",
     "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_939779732",
-    "title": "7/11",
-    "fullTitle": "7/11",
-    "artist": "Beyoncé",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/29/61/d22961fd-a719-2d73-9322-ae463dd397e5/mzaf_17446687460501032172.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d1/fa/67/d1fa671c-08cf-01d9-4de8-96aa7c6f06cd/886444955379.jpg/300x300bb.jpg",
-    "album": "BEYONCÉ (More Only) - EP",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_780519977",
-    "title": "Xo",
-    "fullTitle": "Xo",
-    "artist": "Beyoncé",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/a1/31/1fa131a1-f293-4772-a2a6-a1026b073f2d/mzaf_12596481995410682437.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/13/27/cf/1327cfb1-ff1c-5b53-d92b-da3b78155e00/dj.ixakzkan.jpg/300x300bb.jpg",
-    "album": "Beyoncé (Deluxe)",
-    "releaseYear": "2013",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_201274830",
-    "title": "Naughty Girl",
-    "fullTitle": "Naughty Girl",
-    "artist": "Beyoncé",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/9a/8c/629a8c8b-58d3-e11d-d717-606f905f5bbb/mzaf_10438221441288786284.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/03/c5/d4/mzi.ldvrmhxt.jpg/300x300bb.jpg",
-    "album": "Dangerously in Love",
-    "releaseYear": "2003",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_626205224",
-    "title": "I Care",
-    "fullTitle": "I Care",
-    "artist": "Beyoncé",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/e7/ba/6de7ba33-8fe4-9aae-8ff1-b16020eb1150/mzaf_14782386190283668320.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c9/6b/3f/c96b3ff3-9cf6-4ce6-05aa-9f11474bd569/886443938373.jpg/300x300bb.jpg",
-    "album": "4 (Expanded Edition)",
-    "releaseYear": "2011",
     "difficulty": "hard"
   },
   {
@@ -13452,7 +6198,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b2/20/8e/b2208e82-df49-5897-139d-39f4cdbc91a9/23UMGIM48049.rgb.jpg/300x300bb.jpg",
     "album": "Say Yes To Heaven - Single",
     "releaseYear": "2023",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1440900264",
@@ -13556,7 +6302,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/5f/b9/c65fb9eb-da2f-89a9-b640-2fff1fc3a660/19UMGIM61350.rgb.jpg/300x300bb.jpg",
     "album": "Norman Fucking Rockwell!",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440818520",
@@ -13569,7 +6315,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/18/3f/ad/183fadf3-0d36-6db2-b733-d8f032654b07/14UMGIM20562.rgb.jpg/300x300bb.jpg",
     "album": "Ultraviolence (Deluxe)",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1655349418",
@@ -13582,7 +6328,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7c/c4/e5/7cc4e501-6b09-b379-bb54-a40de4615aa3/22UM1IM33313.rgb.jpg/300x300bb.jpg",
     "album": "Did you know that there's a tunnel under Ocean Blvd",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1755248638",
@@ -13634,97 +6380,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a2/e1/35/a2e1350a-c739-dc75-93f5-b3e8b33d7d7e/15UMGIM44419.rgb.jpg/300x300bb.jpg",
     "album": "Honeymoon",
     "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440818518",
-    "title": "Shades of Cool",
-    "fullTitle": "Shades of Cool",
-    "artist": "Lana Del Rey",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/29/bd/9c29bd6c-ddae-4b3b-6f3c-a9c1a0376402/mzaf_6366882212492132586.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/18/3f/ad/183fadf3-0d36-6db2-b733-d8f032654b07/14UMGIM20562.rgb.jpg/300x300bb.jpg",
-    "album": "Ultraviolence (Deluxe)",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440827833",
-    "title": "Music To Watch Boys To",
-    "fullTitle": "Music To Watch Boys To",
-    "artist": "Lana Del Rey",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/76/34/4e76348e-61a1-5d12-6dc9-3e05f3a2916c/mzaf_15786840338310699728.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a2/e1/35/a2e1350a-c739-dc75-93f5-b3e8b33d7d7e/15UMGIM44419.rgb.jpg/300x300bb.jpg",
-    "album": "Honeymoon",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440811812",
-    "title": "Off to the Races",
-    "fullTitle": "Off to the Races",
-    "artist": "Lana Del Rey",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/23/2b/36232bb6-33cc-1418-ff3f-870ed0d2adad/mzaf_584272540906295123.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/d9/63/5fd96387-45fa-6b94-afd8-7b2c4a24a93b/11UMGIM38959.rgb.jpg/300x300bb.jpg",
-    "album": "Born to Die",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1474669287",
-    "title": "California",
-    "fullTitle": "California",
-    "artist": "Lana Del Rey",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/77/7a/f0777ab6-aa8d-0882-27ab-a9920a48ccdc/mzaf_1345342833929256136.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/5f/b9/c65fb9eb-da2f-89a9-b640-2fff1fc3a660/19UMGIM61350.rgb.jpg/300x300bb.jpg",
-    "album": "Norman Fucking Rockwell!",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1604633838",
-    "title": "Watercolor Eyes",
-    "fullTitle": "Watercolor Eyes (From “Euphoria” An Original HBO Series)",
-    "artist": "Lana Del Rey",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/ec/f1/22ecf19e-58b3-eac8-63e1-68fcb6bcb2f4/mzaf_2888319295273608951.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e1/34/16/e134164f-4510-2386-9605-aed1ea1e4157/22UMGIM03617.rgb.jpg/300x300bb.jpg",
-    "album": "Watercolor Eyes (From “Euphoria” An Original HBO Series) - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440818785",
-    "title": "Florida Kilos",
-    "fullTitle": "Florida Kilos",
-    "artist": "Lana Del Rey",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/21/80/a52180c6-56cd-66ae-9ad6-e1ae5199429f/mzaf_11553378827107075439.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/18/3f/ad/183fadf3-0d36-6db2-b733-d8f032654b07/14UMGIM20562.rgb.jpg/300x300bb.jpg",
-    "album": "Ultraviolence (Deluxe)",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440818779",
-    "title": "Black Beauty",
-    "fullTitle": "Black Beauty",
-    "artist": "Lana Del Rey",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f5/95/08/f5950864-900b-82dd-7766-6329d99b4045/mzaf_10585364827478398445.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/18/3f/ad/183fadf3-0d36-6db2-b733-d8f032654b07/14UMGIM20562.rgb.jpg/300x300bb.jpg",
-    "album": "Ultraviolence (Deluxe)",
-    "releaseYear": "2014",
     "difficulty": "hard"
   },
   {
@@ -13829,7 +6484,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/17/df/2f/17df2ffe-56ff-a168-9f9b-82a045bf12c3/19UMGIM96294.rgb.jpg/300x300bb.jpg",
     "album": "High School Musical: The Musical: The Series (Music from the Disney+ Original Series)",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1714727613",
@@ -13933,7 +6588,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/d8/9c/9bd89c9e-b44d-ad25-1516-b9b30f64fd2a/23UMGIM71510.rgb.jpg/300x300bb.jpg",
     "album": "GUTS",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1889992127",
@@ -13946,7 +6601,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/300x300bb.jpg",
     "album": "you seem pretty sad for a girl so in love",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1560735566",
@@ -13959,7 +6614,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/33/fd/32/33fd32b1-0e43-9b4a-8ed6-19643f23544e/21UMGIM26092.rgb.jpg/300x300bb.jpg",
     "album": "SOUR",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1889992124",
@@ -14011,97 +6666,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/d8/9c/9bd89c9e-b44d-ad25-1516-b9b30f64fd2a/23UMGIM71510.rgb.jpg/300x300bb.jpg",
     "album": "GUTS",
     "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1889992121",
-    "title": "purple",
-    "fullTitle": "purple",
-    "artist": "Olivia Rodrigo",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/23/c0/1b23c0d2-78cf-2d63-15d0-a2aab64bc43b/mzaf_978337358949533196.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/300x300bb.jpg",
-    "album": "you seem pretty sad for a girl so in love",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1560735557",
-    "title": "happier",
-    "fullTitle": "happier",
-    "artist": "Olivia Rodrigo",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/9e/45/9d9e4521-44e9-8943-48ff-769d3e907b45/mzaf_11187816696798150428.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/33/fd/32/33fd32b1-0e43-9b4a-8ed6-19643f23544e/21UMGIM26092.rgb.jpg/300x300bb.jpg",
-    "album": "SOUR",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1736996213",
-    "title": "scared of my guitar",
-    "fullTitle": "scared of my guitar",
-    "artist": "Olivia Rodrigo",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/26/c5/0a26c5af-6acc-ca79-0e2e-aa0f87a9a621/mzaf_9766271437424046593.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5a/4c/6a/5a4c6aac-318a-b5a6-a481-15141d65fddc/24UMGIM30484.rgb.jpg/300x300bb.jpg",
-    "album": "GUTS (spilled)",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1694386833",
-    "title": "ballad of a homeschooled girl",
-    "fullTitle": "ballad of a homeschooled girl",
-    "artist": "Olivia Rodrigo",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/05/fa/bf05fa31-f7e1-9d8e-348f-6e7fedff2358/mzaf_17621267818553057506.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/d8/9c/9bd89c9e-b44d-ad25-1516-b9b30f64fd2a/23UMGIM71510.rgb.jpg/300x300bb.jpg",
-    "album": "GUTS",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1889992123",
-    "title": "the cure",
-    "fullTitle": "the cure",
-    "artist": "Olivia Rodrigo",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/bc/1e/a5bc1e73-55d7-3835-4020-cb005f8a3b3d/mzaf_15167349291907334066.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/300x300bb.jpg",
-    "album": "you seem pretty sad for a girl so in love",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1736996216",
-    "title": "stranger",
-    "fullTitle": "stranger",
-    "artist": "Olivia Rodrigo",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/ab/8e/8bab8ea1-2d11-5b9b-b51f-c0ce762cdaa4/mzaf_9909983893037197949.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5a/4c/6a/5a4c6aac-318a-b5a6-a481-15141d65fddc/24UMGIM30484.rgb.jpg/300x300bb.jpg",
-    "album": "GUTS (spilled)",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6803283192",
-    "title": "serena joy",
-    "fullTitle": "serena joy",
-    "artist": "Olivia Rodrigo",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/72/f6/5f72f6b5-9303-0e34-0061-6d482966dd4a/mzaf_3277005726351200013.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/88/51/748851f3-26da-36f5-65a3-d41fe0b292ec/26UM1IM06641.rgb.jpg/300x300bb.jpg",
-    "album": "serena joy - Single",
-    "releaseYear": "2026",
     "difficulty": "hard"
   },
   {
@@ -14206,7 +6770,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c7/00/3f/c7003f83-3a43-1201-4aec-41be71ba64c5/22UM1IM29131.rgb.jpg/300x300bb.jpg",
     "album": "Her Loss",
     "releaseYear": "2022",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1446918510",
@@ -14310,7 +6874,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/28/44/c6284485-1493-014e-7659-6fa2c0ffec38/886447489512.jpg/300x300bb.jpg",
     "album": "i am > i was",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1446918515",
@@ -14323,7 +6887,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/28/44/c6284485-1493-014e-7659-6fa2c0ffec38/886447489512.jpg/300x300bb.jpg",
     "album": "i am > i was",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1446918496",
@@ -14336,7 +6900,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/28/44/c6284485-1493-014e-7659-6fa2c0ffec38/886447489512.jpg/300x300bb.jpg",
     "album": "i am > i was",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1446918518",
@@ -14349,7 +6913,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/28/44/c6284485-1493-014e-7659-6fa2c0ffec38/886447489512.jpg/300x300bb.jpg",
     "album": "i am > i was",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1446918504",
@@ -14388,110 +6952,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/28/44/c6284485-1493-014e-7659-6fa2c0ffec38/886447489512.jpg/300x300bb.jpg",
     "album": "i am > i was",
     "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1652999424",
-    "title": "Major Distribution",
-    "fullTitle": "Major Distribution",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/60/40/1b604025-d45e-d289-126a-6ca7faa6c8f9/mzaf_7644663821389914734.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c7/00/3f/c7003f83-3a43-1201-4aec-41be71ba64c5/22UM1IM29131.rgb.jpg/300x300bb.jpg",
-    "album": "Her Loss",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1652999574",
-    "title": "More M’s",
-    "fullTitle": "More M’s",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/11/64/e41164ff-e7d4-0502-300f-9f887c9e22f8/mzaf_18342551507259214281.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c7/00/3f/c7003f83-3a43-1201-4aec-41be71ba64c5/22UM1IM29131.rgb.jpg/300x300bb.jpg",
-    "album": "Her Loss",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1652999442",
-    "title": "Circo Loco",
-    "fullTitle": "Circo Loco",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/27/fc/bb27fced-4d6c-bcff-045c-dd7e43adbfea/mzaf_1280086876886860088.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c7/00/3f/c7003f83-3a43-1201-4aec-41be71ba64c5/22UM1IM29131.rgb.jpg/300x300bb.jpg",
-    "album": "Her Loss",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1446918509",
-    "title": "asmr",
-    "fullTitle": "asmr",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/16/cd/5a16cdac-d792-a92b-b7d5-c67c2787723f/mzaf_12253598700081943444.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/28/44/c6284485-1493-014e-7659-6fa2c0ffec38/886447489512.jpg/300x300bb.jpg",
-    "album": "i am > i was",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1446918503",
-    "title": "1.5",
-    "fullTitle": "1.5",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/aa/85/f1aa85d6-c41f-3e94-8af8-1ef11f1e4db9/mzaf_2701306843501592454.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/28/44/c6284485-1493-014e-7659-6fa2c0ffec38/886447489512.jpg/300x300bb.jpg",
-    "album": "i am > i was",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1534264267",
-    "title": "Glock in My Lap",
-    "fullTitle": "Glock in My Lap",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/02/af/f202af8f-e04b-1533-ded6-79f7ca060fe6/mzaf_9040108288751511795.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/53/ed/40/53ed4078-7d2a-076e-f9b9-ffb29e776c42/886448747703.jpg/300x300bb.jpg",
-    "album": "SAVAGE MODE II",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1652999438",
-    "title": "Hours In Silence",
-    "fullTitle": "Hours In Silence",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/46/7a/01467ae0-2f9a-2d83-718c-480eca9d9959/mzaf_1241956404429977277.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c7/00/3f/c7003f83-3a43-1201-4aec-41be71ba64c5/22UM1IM29131.rgb.jpg/300x300bb.jpg",
-    "album": "Her Loss",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1310807835",
-    "title": "Ghostface Killers",
-    "fullTitle": "Ghostface Killers (feat. Travis Scott)",
-    "artist": "21 Savage",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/53/fe/4b53fee0-b345-35ba-dba7-78d2dbae0e1f/mzaf_12028244123446733263.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7d/11/01/7d110130-c1b3-b99a-8459-9f6a3666ed3c/886446838533.jpg/300x300bb.jpg",
-    "album": "Without Warning",
-    "releaseYear": "2017",
     "difficulty": "hard"
   },
   {
@@ -14596,7 +7056,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/25/f6/2425f66c-acda-ef4f-5682-ad543e088507/886446838526.jpg/300x300bb.jpg",
     "album": "Without Warning",
     "releaseYear": "2017",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1690685844",
@@ -14700,7 +7160,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/09/72/3b/09723b88-9b18-e466-7ae0-05a17688bb52/22UM1IM35114.rgb.jpg/300x300bb.jpg",
     "album": "HEROES & VILLAINS",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1534209963",
@@ -14713,7 +7173,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/03/3d/e5/033de513-4e28-5d06-e42b-4f2d5ba65dce/886448747697.jpg/300x300bb.jpg",
     "album": "SAVAGE MODE II",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1303426037",
@@ -14726,7 +7186,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/25/f6/2425f66c-acda-ef4f-5682-ad543e088507/886446838526.jpg/300x300bb.jpg",
     "album": "Without Warning",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1690685997",
@@ -14778,71 +7238,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cd/87/e5/cd87e5ea-f001-04e6-4248-22f4cfbedb23/18UMGIM75545.rgb.jpg/300x300bb.jpg",
     "album": "NOT ALL HEROES WEAR CAPES",
     "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440875415",
-    "title": "So Good",
-    "fullTitle": "So Good (feat. Kash Doll)",
-    "artist": "Metro Boomin",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/ff/8b/90ff8bb1-174a-984b-e308-3796a48100d5/mzaf_740078774097880736.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fd/ab/9d/fdab9d42-f07e-d5f9-6086-6eccaaa59ad2/17UM1IM54901.rgb.jpg/300x300bb.jpg",
-    "album": "Double Or Nothing",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1830374699",
-    "title": "Take Me Thru Dere",
-    "fullTitle": "Take Me Thru Dere",
-    "artist": "Metro Boomin",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/03/07/f303079e-53cc-aa98-b13f-d83430d5c992/mzaf_9818965615998455631.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/1f/4d/c71f4dd9-bf2f-fb66-293f-1fc6f796f351/25UM1IM06569.rgb.jpg/300x300bb.jpg",
-    "album": "Metro Boomin Presents: A Futuristic Summa (Hosted by DJ Spinz)",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440904619",
-    "title": "Call Me",
-    "fullTitle": "Call Me",
-    "artist": "Metro Boomin",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/ef/fe/b2effef1-d08e-958b-9b10-97b01990b140/mzaf_5810126542013366419.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/e9/ba/22e9ba9c-e6af-5917-6c64-3257fa236d70/17UM1IM16314.rgb.jpg/300x300bb.jpg",
-    "album": "Perfect Timing",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1724494870",
-    "title": "née",
-    "fullTitle": "née-nah",
-    "artist": "Metro Boomin",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/6f/e6/986fe67e-0f35-4f2f-a109-f581bd64f21f/mzaf_216553161131626989.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/9a/5d/9f9a5d3b-c310-7c44-9506-1f198e390e5f/196871714549.jpg/300x300bb.jpg",
-    "album": "american dream",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1657271969",
-    "title": "Trance",
-    "fullTitle": "Trance",
-    "artist": "Metro Boomin",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/e8/5f/d5e85fc5-6440-8785-f9ea-63b4a88f7e3e/mzaf_17980626356309784771.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/09/72/3b/09723b88-9b18-e466-7ae0-05a17688bb52/22UM1IM35114.rgb.jpg/300x300bb.jpg",
-    "album": "HEROES & VILLAINS",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -14947,7 +7342,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/74/80/37/748037d7-71c1-feff-4d38-3ef0a25578b6/26UMGIM85451.rgb.jpg/300x300bb.jpg",
     "album": "Dead Fresh - Single",
     "releaseYear": "2026",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1567444438",
@@ -15051,7 +7446,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fc/1e/a5/fc1ea575-13ff-4a85-c158-962042ecdcd8/22UMGIM38834.rgb.jpg/300x300bb.jpg",
     "album": "In A Minute - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1510840890",
@@ -15064,7 +7459,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/9f/8f/f9/9f8ff9e7-cbb4-efd6-1335-c0b001f2649a/20UMGIM30253.rgb.jpg/300x300bb.jpg",
     "album": "My Turn (Deluxe)",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1574737853",
@@ -15077,7 +7472,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b0/30/ec/b030ec14-b571-7136-394d-adaf6a202099/602507370862.jpg/300x300bb.jpg",
     "album": "Just Cause Y'all Waited 2 (Deluxe)",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1618153473",
@@ -15090,7 +7485,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/56/6d/ce/566dceeb-e2ea-24ff-f601-1c18497b87f8/22UMGIM37903.rgb.jpg/300x300bb.jpg",
     "album": "Right On - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1621207921",
@@ -15129,110 +7524,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a4/7d/ff/a47dffa2-9998-aab8-0dc8-bf72ba63ec98/19UMGIM99885.rgb.jpg/300x300bb.jpg",
     "album": "Woah - Single",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1443677225",
-    "title": "Ready",
-    "fullTitle": "Ready (feat. Gunna)",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/e6/6d/bae66dfd-e570-85dc-0a21-9086f9afde48/mzaf_38222048257874851.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/df/b1/44/dfb1447b-79ee-f7c3-8e22-374f82535153/18UMGIM77804.rgb.jpg/300x300bb.jpg",
-    "album": "Street Gossip",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569720164",
-    "title": "How It Feels",
-    "fullTitle": "How It Feels",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/f0/12/2df01248-c70f-76e6-fc75-f2cbd8355343/mzaf_10623664707151635494.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/60/b5/ef/60b5ef3d-f5d0-e066-7ce6-4508229eac60/21UMGIM47175.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569719186",
-    "title": "Hats Off",
-    "fullTitle": "Hats Off",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/22/22/ce222280-819a-cce0-d30d-aa75875dce81/mzaf_14782494028456768422.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/60/b5/ef/60b5ef3d-f5d0-e066-7ce6-4508229eac60/21UMGIM47175.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1498989233",
-    "title": "No Sucker",
-    "fullTitle": "No Sucker",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/50/5b/2a/505b2a91-3b8f-5550-e2bb-34ee3e3bbb89/mzaf_17692454960184824335.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/78/e9/9b/78e99b99-84a0-9673-90b4-2b5c23ab4a51/20UMGIM04591.rgb.jpg/300x300bb.jpg",
-    "album": "My Turn",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1534811493",
-    "title": "Heatin Up",
-    "fullTitle": "Heatin Up",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/69/72/e9/6972e9d5-bde1-62c3-d3f9-f0dc43d3ecc2/mzaf_3138535874614821311.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/03/73/c3/0373c310-69ad-747f-ae78-14cf03b0464b/20UMGIM30254.rgb.jpg/300x300bb.jpg",
-    "album": "My Turn (Deluxe)",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1499567675",
-    "title": "Commercial",
-    "fullTitle": "Commercial (feat. Lil Uzi Vert)",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/6e/b1/1a6eb1ef-c48d-12f4-1ee2-54d0e6b534b7/mzaf_8403361730287054884.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/e4/29/b8e429b5-54b7-6ba3-a2db-29b426dc2b45/20UMGIM04592.rgb.jpg/300x300bb.jpg",
-    "album": "My Turn",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1567422346",
-    "title": "p r i d e . i s . t h e . d e v i l",
-    "fullTitle": "p r i d e . i s . t h e . d e v i l",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/00/bc/2900bc8c-e05d-9041-93e7-c1f0a2b53eda/mzaf_17503886144259789932.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1d/b9/2e/1db92e33-8544-01d6-ab14-94997cacb1ef/21UMGIM41232.rgb.jpg/300x300bb.jpg",
-    "album": "The Off-Season",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1648587323",
-    "title": "Forever",
-    "fullTitle": "Forever (feat. Lil Wayne)",
-    "artist": "Lil Baby",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/2d/06/f12d06c3-9c7d-da7c-0693-9d4c773a6e72/mzaf_5290136325499409320.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9f/c0/99/9fc09958-180d-e66a-bbf7-9462289435f6/22UM1IM13098.rgb.jpg/300x300bb.jpg",
-    "album": "It's Only Me",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -15337,7 +7628,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e0/6e/7c/e06e7c84-345e-3617-7108-cda9ca9ccc68/18UMGIM62579.rgb.jpg/300x300bb.jpg",
     "album": "Drip Harder",
     "releaseYear": "2018",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1693517755",
@@ -15441,7 +7732,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/96/45/31/9645314d-34fc-3fc4-0339-85e30f455cd9/814908027522.jpg/300x300bb.jpg",
     "album": "Drip or Drown 2",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1499933484",
@@ -15454,7 +7745,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/da/12/61/da12618f-b57c-2e5a-3642-06e1d0e598dc/20UMGIM13748.rgb.jpg/300x300bb.jpg",
     "album": "Turks (feat. Travis Scott) - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1441989359",
@@ -15467,7 +7758,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/e0/8e/0de08e55-7a7c-e7df-bf1e-ce0718c8bed8/18UMGIM77775.rgb.jpg/300x300bb.jpg",
     "album": "Creed II: The Album",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1452313873",
@@ -15519,84 +7810,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/96/45/31/9645314d-34fc-3fc4-0339-85e30f455cd9/814908027522.jpg/300x300bb.jpg",
     "album": "Drip or Drown 2",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1692838511",
-    "title": "bread & butter",
-    "fullTitle": "bread & butter",
-    "artist": "Gunna",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/15/76/3d15762c-965d-2697-0a0a-c2451e73ebca/mzaf_11942872085668627770.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/82/29/76/822976d1-f1db-6626-e2f7-55343995ecd9/075679678485.jpg/300x300bb.jpg",
-    "album": "a Gift & a Curse",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1452313869",
-    "title": "Richard Millie Plain",
-    "fullTitle": "Richard Millie Plain",
-    "artist": "Gunna",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/ac/57/9cac57d3-b714-ee99-e2c2-1ad8b7d19a59/mzaf_4622900353764706630.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/96/45/31/9645314d-34fc-3fc4-0339-85e30f455cd9/814908027522.jpg/300x300bb.jpg",
-    "album": "Drip or Drown 2",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1437955640",
-    "title": "I Am",
-    "fullTitle": "I Am",
-    "artist": "Gunna",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/5e/cb/355ecb5c-e383-3b4a-b4e0-9813d8fcfb86/mzaf_17509052009874360502.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e0/6e/7c/e06e7c84-345e-3617-7108-cda9ca9ccc68/18UMGIM62579.rgb.jpg/300x300bb.jpg",
-    "album": "Drip Harder",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1437958615",
-    "title": "Off White VLONE",
-    "fullTitle": "Off White VLONE (feat. Lil Durk & NAV)",
-    "artist": "Gunna",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/15/45/78154590-4b76-725d-eeaa-ecc3c0119bb9/mzaf_4432340548447227615.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/73/2f/51/732f51a6-2f11-bdf6-dffc-f8b68e22b7ad/18UMGIM62580.rgb.jpg/300x300bb.jpg",
-    "album": "Drip Harder",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1526780728",
-    "title": "Slide",
-    "fullTitle": "Slide",
-    "artist": "Gunna",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/17/4e/ec174e73-4bd8-c057-2f56-e58541ecd7bc/mzaf_1255681131029178949.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c3/1b/d9/c31bd971-2ba0-71b1-0c4a-8844eeda0903/20UMGIM68166.rgb.jpg/300x300bb.jpg",
-    "album": "Now or Never - EP",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1437955288",
-    "title": "Business Is Business",
-    "fullTitle": "Business Is Business",
-    "artist": "Gunna",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/c1/f9/c0c1f98c-52e0-7036-ff2d-4d42dff7ce2a/mzaf_13111619342723821346.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e0/6e/7c/e06e7c84-345e-3617-7108-cda9ca9ccc68/18UMGIM62579.rgb.jpg/300x300bb.jpg",
-    "album": "Drip Harder",
-    "releaseYear": "2018",
     "difficulty": "hard"
   },
   {
@@ -15662,7 +7875,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c1/06/11/c10611c1-fd64-9c7f-9834-9322e715e763/24UM1IM01151.rgb.jpg/300x300bb.jpg",
     "album": "ALL RED - Single",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "it_1737886288",
@@ -15831,7 +8044,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a3/34/29a3341f-2cd6-9661-f8f7-e154478b8491/075679677983.jpg/300x300bb.jpg",
     "album": "Pink Tape",
     "releaseYear": "2022",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1313366296",
@@ -15935,7 +8148,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b2/85/7e/b2857e21-47fd-66e2-4c6c-f183177953b4/075679797070.jpg/300x300bb.jpg",
     "album": "Pluto x Baby Pluto",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1572559035",
@@ -15948,7 +8161,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/11/ca/7a/11ca7a3f-4d30-5f99-7264-48688680199b/192641763601_Cover.jpg/300x300bb.jpg",
     "album": "Teenage Dream 2 - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1723221649",
@@ -15961,7 +8174,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e5/e8/44/e5e844fb-11e3-2362-8db1-41fd971a41a5/075678610035.jpg/300x300bb.jpg",
     "album": "Red Moon - Single",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1690685852",
@@ -16013,71 +8226,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b2/21/04/b22104c5-b230-4e99-2b98-e99c664b88c7/18UMGIM28345.rgb.jpg/300x300bb.jpg",
     "album": "Harder Than Ever",
     "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1541442536",
-    "title": "Patek",
-    "fullTitle": "Patek",
-    "artist": "Lil Uzi Vert",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/ef/4f/d7ef4fee-4a2f-90d0-63fb-c4b27be5a8b0/mzaf_8226192358849670218.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/14/d5/ee14d52b-1c76-4d93-e775-8d5e80b5c527/075679795632.jpg/300x300bb.jpg",
-    "album": "Pluto x Baby Pluto (Deluxe)",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1694344707",
-    "title": "The End",
-    "fullTitle": "The End (feat. BABYMETAL)",
-    "artist": "Lil Uzi Vert",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/99/e1/8e99e1a9-2a4c-d519-e1ea-e46b24eb11c3/mzaf_12707783908423693850.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a3/34/29a3341f-2cd6-9661-f8f7-e154478b8491/075679677983.jpg/300x300bb.jpg",
-    "album": "Pink Tape",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1694344209",
-    "title": "CS",
-    "fullTitle": "CS",
-    "artist": "Lil Uzi Vert",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/ef/df/13efdf6e-1589-b555-ce14-89d21a2052c3/mzaf_17252604275560180020.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a3/34/29a3341f-2cd6-9661-f8f7-e154478b8491/075679677983.jpg/300x300bb.jpg",
-    "album": "Pink Tape",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1498989230",
-    "title": "Commercial",
-    "fullTitle": "Commercial (feat. Lil Uzi Vert)",
-    "artist": "Lil Uzi Vert",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/61/f9/9861f993-c627-a574-0bc1-76caccf1fc24/mzaf_2355945949647802080.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/78/e9/9b/78e99b99-84a0-9673-90b4-2b5c23ab4a51/20UMGIM04591.rgb.jpg/300x300bb.jpg",
-    "album": "My Turn",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1694343473",
-    "title": "Aye",
-    "fullTitle": "Aye (feat. Travis Scott)",
-    "artist": "Lil Uzi Vert",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/12/8f/35128fcd-e2da-0ad6-6aea-49f3827d6e0d/mzaf_2658533066355439057.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a3/34/29a3341f-2cd6-9661-f8f7-e154478b8491/075679677983.jpg/300x300bb.jpg",
-    "album": "Pink Tape",
-    "releaseYear": "2023",
     "difficulty": "hard"
   },
   {
@@ -16182,7 +8330,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4f/be/d2/4fbed251-5117-c028-bec6-86a29e2fc269/18UMGIM74053.rgb.jpg/300x300bb.jpg",
     "album": "Cole World: The Sideline Story",
     "releaseYear": "2011",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1567422340",
@@ -16286,7 +8434,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/92/b9/62/92b9624d-e9fb-0e4f-f14b-6f1f96c0a3e0/21UM1IM54414.rgb.jpg/300x300bb.jpg",
     "album": "2014 Forest Hills Drive",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1373858938",
@@ -16299,7 +8447,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/f4/a2/04f4a2ca-81d1-a258-0c70-ee555840bc15/18UMGIM22943.rgb.jpg/300x300bb.jpg",
     "album": "KOD",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1373858924",
@@ -16312,7 +8460,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/f4/a2/04f4a2ca-81d1-a258-0c70-ee555840bc15/18UMGIM22943.rgb.jpg/300x300bb.jpg",
     "album": "KOD",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1600766450",
@@ -16325,7 +8473,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/92/b9/62/92b9624d-e9fb-0e4f-f14b-6f1f96c0a3e0/21UM1IM54414.rgb.jpg/300x300bb.jpg",
     "album": "2014 Forest Hills Drive",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440545955",
@@ -16364,110 +8512,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/f4/a2/04f4a2ca-81d1-a258-0c70-ee555840bc15/18UMGIM22943.rgb.jpg/300x300bb.jpg",
     "album": "KOD",
     "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1373858940",
-    "title": "BRACKETS",
-    "fullTitle": "BRACKETS",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/1e/b6/c91eb6fa-3b31-3632-5b67-d92a1b8b874c/mzaf_6157729358915561401.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/f4/a2/04f4a2ca-81d1-a258-0c70-ee555840bc15/18UMGIM22943.rgb.jpg/300x300bb.jpg",
-    "album": "KOD",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440934971",
-    "title": "Change",
-    "fullTitle": "Change",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/49/c8/8f49c83c-5bdc-6f9b-764d-c888ffac732e/mzaf_13990366717251858840.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/35/69/81/356981f1-a442-554e-0d6d-d42255bc2a82/00850498007513.rgb.jpg/300x300bb.jpg",
-    "album": "4 Your Eyez Only",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1373858942",
-    "title": "FRIENDS",
-    "fullTitle": "FRIENDS (feat. kiLL edward)",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/c2/eb/b6c2eb4e-4098-b652-f430-2f67cd5684e6/mzaf_6005279908627782233.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/f4/a2/04f4a2ca-81d1-a258-0c70-ee555840bc15/18UMGIM22943.rgb.jpg/300x300bb.jpg",
-    "album": "KOD",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440934628",
-    "title": "Ville Mentality",
-    "fullTitle": "Ville Mentality",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/7d/f6/767df60d-06b5-a1fa-fab5-2c0caf54047e/mzaf_9887487075169735554.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/35/69/81/356981f1-a442-554e-0d6d-d42255bc2a82/00850498007513.rgb.jpg/300x300bb.jpg",
-    "album": "4 Your Eyez Only",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440934965",
-    "title": "She's Mine, Pt. 1",
-    "fullTitle": "She's Mine, Pt. 1",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/26/18/27261836-2277-4b5e-b8c4-f4c7a31a8384/mzaf_1266146714686878744.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/35/69/81/356981f1-a442-554e-0d6d-d42255bc2a82/00850498007513.rgb.jpg/300x300bb.jpg",
-    "album": "4 Your Eyez Only",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1438893097",
-    "title": "Daddy's Little Girl",
-    "fullTitle": "Daddy's Little Girl",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/81/f6/5581f606-8b0c-a675-7d1c-b257bea81398/mzaf_8126487981789724998.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3c/4e/6c/3c4e6c35-c1cf-49f9-8cbb-524b1db743f5/18UMGIM69899.rgb.jpg/300x300bb.jpg",
-    "album": "Cole World: The Sideline Story",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1438892853",
-    "title": "Lights Please",
-    "fullTitle": "Lights Please",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/c7/25/04c7251a-4189-fbac-84c8-38b5a634b90f/mzaf_18340844818344711290.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3c/4e/6c/3c4e6c35-c1cf-49f9-8cbb-524b1db743f5/18UMGIM69899.rgb.jpg/300x300bb.jpg",
-    "album": "Cole World: The Sideline Story",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440934604",
-    "title": "For Whom The Bell Tolls",
-    "fullTitle": "For Whom The Bell Tolls",
-    "artist": "J. Cole",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/dd/13/13dd137e-71b6-b05f-799c-06c64369cee7/mzaf_11346154989606870236.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/35/69/81/356981f1-a442-554e-0d6d-d42255bc2a82/00850498007513.rgb.jpg/300x300bb.jpg",
-    "album": "4 Your Eyez Only",
-    "releaseYear": "2016",
     "difficulty": "hard"
   },
   {
@@ -16572,7 +8616,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/08/7b/a9/087ba948-a90b-75f4-c379-e1534e175e86/886447326008.jpg/300x300bb.jpg",
     "album": "Dr. Seuss' The Grinch (Original Motion Picture Soundtrack)",
     "releaseYear": "2018",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1254572586",
@@ -16676,7 +8720,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a8/df/7d/a8df7d1e-0a11-6228-61af-3230783a9485/886447419601.jpg/300x300bb.jpg",
     "album": "Music Inspired by Illumination & Dr. Seuss' The Grinch - EP",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1776500455",
@@ -16689,7 +8733,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/bd/e9/7dbde97e-b97d-8cc3-0203-218b687408a9/196872555059.jpg/300x300bb.jpg",
     "album": "CHROMAKOPIA",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1555122532",
@@ -16702,7 +8746,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/22/9e/c7/229ec75b-09d7-4f61-7b08-38bee2d03b5a/886449115563.jpg/300x300bb.jpg",
     "album": "Tell Me How (Coca-Cola Commercial) - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1776500456",
@@ -16754,97 +8798,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/bd/e9/7dbde97e-b97d-8cc3-0203-218b687408a9/196872555059.jpg/300x300bb.jpg",
     "album": "CHROMAKOPIA",
     "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1776500464",
-    "title": "Thought I Was Dead",
-    "fullTitle": "Thought I Was Dead (feat. ScHoolboy Q & Santigold)",
-    "artist": "Tyler, The Creator",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/76/cd/0c76cdf0-9c52-6201-20d4-8dd765e9f83b/mzaf_15636874095378732968.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/bd/e9/7dbde97e-b97d-8cc3-0203-218b687408a9/196872555059.jpg/300x300bb.jpg",
-    "album": "CHROMAKOPIA",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1827715800",
-    "title": "I'll Take Care of You",
-    "fullTitle": "I'll Take Care of You (feat. Yebba)",
-    "artist": "Tyler, The Creator",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/2b/3f/5f2b3f57-5fc2-8404-3f82-023cf3510f41/mzaf_949902961099708463.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/ae/e6/a0aee657-b365-fed2-249c-0f22efa507d0/196873435435.jpg/300x300bb.jpg",
-    "album": "DON'T TAP THE GLASS",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1776500466",
-    "title": "Balloon",
-    "fullTitle": "Balloon (feat. Doechii)",
-    "artist": "Tyler, The Creator",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/22/db/e522db99-f886-08a0-bde4-b02c33e94fda/mzaf_13796519102689976349.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/bd/e9/7dbde97e-b97d-8cc3-0203-218b687408a9/196872555059.jpg/300x300bb.jpg",
-    "album": "CHROMAKOPIA",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1816313642",
-    "title": "P.O.V.",
-    "fullTitle": "P.O.V.",
-    "artist": "Tyler, The Creator",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/33/cd/de33cd57-272c-095f-fc63-129b09b4c04d/mzaf_2282254689884746202.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/70/a6/9a/70a69aeb-3bcf-968b-de75-f3cb44a89e1b/1605.jpg/300x300bb.jpg",
-    "album": "Let God Sort Em Out",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1776500459",
-    "title": "Judge Judy",
-    "fullTitle": "Judge Judy",
-    "artist": "Tyler, The Creator",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/25/bc/3625bca3-7526-4995-2316-c36516896764/mzaf_10294270627593011702.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/bd/e9/7dbde97e-b97d-8cc3-0203-218b687408a9/196872555059.jpg/300x300bb.jpg",
-    "album": "CHROMAKOPIA",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1827715790",
-    "title": "Big Poe",
-    "fullTitle": "Big Poe (feat. Sk8brd)",
-    "artist": "Tyler, The Creator",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/e9/f9/abe9f986-612e-92bf-b6d2-c9f02f598774/mzaf_12082285222892651223.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/ae/e6/a0aee657-b365-fed2-249c-0f22efa507d0/196873435435.jpg/300x300bb.jpg",
-    "album": "DON'T TAP THE GLASS",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1827715793",
-    "title": "Sucka Free",
-    "fullTitle": "Sucka Free",
-    "artist": "Tyler, The Creator",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/3c/77/953c77e4-dae5-7888-a868-e655924ef589/mzaf_740859295404212243.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/ae/e6/a0aee657-b365-fed2-249c-0f22efa507d0/196873435435.jpg/300x300bb.jpg",
-    "album": "DON'T TAP THE GLASS",
-    "releaseYear": "2025",
     "difficulty": "hard"
   },
   {
@@ -17053,7 +9006,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/300x300bb.jpg",
     "album": "Blonde",
     "releaseYear": "2016",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440767122",
@@ -17131,32 +9084,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/66/a6/5b/66a65b9f-ed99-901c-b2f2-a65464a1c089/00602527744186.rgb.jpg/300x300bb.jpg",
     "album": "Novacane - Single",
     "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1485957054",
-    "title": "In My Room",
-    "fullTitle": "In My Room",
-    "artist": "Frank Ocean",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/bf/d6/72bfd67d-10aa-a7ff-7191-aa135778c24a/mzaf_10439643097295965927.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/f7/2a/02f72a71-c93c-4e72-460e-673986649952/FRANK_OCEAN_IN_MY_ROOM.jpg/300x300bb.jpg",
-    "album": "In My Room - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1484224395",
-    "title": "DHL",
-    "fullTitle": "DHL",
-    "artist": "Frank Ocean",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/03/f7/1e03f7f9-ea6f-3be1-1428-c621bace92b9/mzaf_11172437820509122594.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a8/a3/e5/a8a3e589-2f53-c67f-08a5-1879d9b28aca/FRANK_OCEAN_DHL.jpg/300x300bb.jpg",
-    "album": "DHL - Single",
-    "releaseYear": "2019",
     "difficulty": "hard"
   },
   {
@@ -17365,7 +9292,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d4/39/fc/d439fc24-1392-ec40-1ef7-02c9b59d9cd3/884977932539.jpg/300x300bb.jpg",
     "album": "F.A.M.E. (Expanded Edition)",
     "releaseYear": "2011",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_422045129",
@@ -17443,58 +9370,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/7b/f5/4c7bf575-5b86-222d-56b2-9637a68bb651/196871463010.jpg/300x300bb.jpg",
     "album": "11:11",
     "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_323098610",
-    "title": "Ya Man Ain't Me",
-    "fullTitle": "Ya Man Ain't Me",
-    "artist": "Chris Brown",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/4e/60/224e607b-3647-23db-638e-4599c67cb1d4/mzaf_3889067960851434993.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a6/2f/a7/a62fa746-9e76-0789-76b6-919019807d8a/828768451052.jpg/300x300bb.jpg",
-    "album": "Chris Brown (Expanded Edition)",
-    "releaseYear": "2005",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1631172848",
-    "title": "WE",
-    "fullTitle": "WE (Warm Embrace)",
-    "artist": "Chris Brown",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/1f/91/201f91ac-35dc-5794-c9b1-383cdcf64a05/mzaf_9966479901372068106.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b3/54/3c/b3543caa-b127-f202-b8ff-58e8562a5520/196589267825.jpg/300x300bb.jpg",
-    "album": "Breezy",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6764419282",
-    "title": "Perfect Timing",
-    "fullTitle": "Perfect Timing (feat. Fridayy)",
-    "artist": "Chris Brown",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/64/26/406426f0-d6a1-19ca-1a56-848002e31812/mzaf_8943708323602316082.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/2c/95/492c9561-9df1-bdfc-ad24-00e9f2403db2/196874328361.jpg/300x300bb.jpg",
-    "album": "BROWN",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1631172716",
-    "title": "Call Me Every Day",
-    "fullTitle": "Call Me Every Day (feat. Wizkid)",
-    "artist": "Chris Brown",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/68/45/246845df-df0d-4cd5-08fe-7e6ee0f04777/mzaf_10448904629706730490.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b3/54/3c/b3543caa-b127-f202-b8ff-58e8562a5520/196589267825.jpg/300x300bb.jpg",
-    "album": "Breezy",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -17703,7 +9578,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/11/2a/4e/112a4ebd-2cae-d2b9-9146-66eb8ed095d1/mzi.rlfesxkp.jpg/300x300bb.jpg",
     "album": "Here I Stand",
     "releaseYear": "2008",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1448420592",
@@ -17781,32 +9656,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/31/7e/2b/317e2b91-632b-f230-e327-88c816d748ad/886448158356.jpg/300x300bb.jpg",
     "album": "Don't Waste My Time (feat. Ella Mai) - Single",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_923691596",
-    "title": "Papers",
-    "fullTitle": "Papers",
-    "artist": "Usher",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/60/5a/17605a14-57bd-8c9b-2370-04aba5a7aa63/mzaf_3380617186666204559.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/20/74/2d/20742d10-aae0-7a0c-0509-e8f611be5787/884977705362.jpg/300x300bb.jpg",
-    "album": "Raymond v Raymond (Expanded Edition)",
-    "releaseYear": "2009",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_386153810",
-    "title": "Seduction",
-    "fullTitle": "Seduction",
-    "artist": "Usher",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/87/04/698704c3-6673-e292-5b3c-c66d5ad1c114/mzaf_4383188073577548381.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/02/c6/e1/02c6e1cd-8d57-97b4-6ef1-77d2be004509/mzi.sjrqsmrq.jpg/300x300bb.jpg",
-    "album": "Confessions (Expanded Edition)",
-    "releaseYear": "2004",
     "difficulty": "hard"
   },
   {
@@ -18015,7 +9864,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/24/35/6f2435c0-bd47-5882-8211-c4bab6661841/190295694975.jpg/300x300bb.jpg",
     "album": "Perfect Duet (with Beyoncé) - Single",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1687005657",
@@ -18093,58 +9942,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/a1/fb/7ea1fb0b-97c8-6e1d-b44c-8a71a5d00ac4/5021732786821.jpg/300x300bb.jpg",
     "album": "Play",
     "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1193701520",
-    "title": "Nancy Mulligan",
-    "fullTitle": "Nancy Mulligan",
-    "artist": "Ed Sheeran",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/9a/a0/5c9aa0db-2f17-9f23-9585-a5da0059fded/mzaf_15287848746337148134.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/e6/e8/15e6e8a4-4190-6a8b-86c3-ab4a51b88288/190295851286.jpg/300x300bb.jpg",
-    "album": "÷ (Deluxe)",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1193701449",
-    "title": "How Would You Feel",
-    "fullTitle": "How Would You Feel (Paean)",
-    "artist": "Ed Sheeran",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/fa/51/55fa51d1-7e71-6805-434f-08213de9e58d/mzaf_18129038824542630747.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/e6/e8/15e6e8a4-4190-6a8b-86c3-ab4a51b88288/190295851286.jpg/300x300bb.jpg",
-    "album": "÷ (Deluxe)",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1193701442",
-    "title": "What Do I Know?",
-    "fullTitle": "What Do I Know?",
-    "artist": "Ed Sheeran",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/b6/aa/c8b6aad2-086e-3957-beb6-1c352bec85f3/mzaf_6925313312696286336.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/e6/e8/15e6e8a4-4190-6a8b-86c3-ab4a51b88288/190295851286.jpg/300x300bb.jpg",
-    "album": "÷ (Deluxe)",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1193701517",
-    "title": "Barcelona",
-    "fullTitle": "Barcelona",
-    "artist": "Ed Sheeran",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/70/d7/2a70d7b3-0ac0-78ed-f400-3be17f46e930/mzaf_649909377819472443.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/e6/e8/15e6e8a4-4190-6a8b-86c3-ab4a51b88288/190295851286.jpg/300x300bb.jpg",
-    "album": "÷ (Deluxe)",
-    "releaseYear": "2017",
     "difficulty": "hard"
   },
   {
@@ -18249,7 +10046,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/300x300bb.jpg",
     "album": "Fine Line",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1485802975",
@@ -18353,7 +10150,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/300x300bb.jpg",
     "album": "Fine Line",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1485802971",
@@ -18366,7 +10163,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/300x300bb.jpg",
     "album": "Fine Line",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1870984050",
@@ -18379,7 +10176,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/41/6a/07416a78-38b9-2d47-7ce8-8a52a44c510f/196874010112.jpg/300x300bb.jpg",
     "album": "Kiss All The Time. Disco, Occasionally.",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1615585009",
@@ -18392,7 +10189,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/300x300bb.jpg",
     "album": "Harry's House",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1485802974",
@@ -18431,110 +10228,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/5e/aa/3d5eaaa3-9a86-c264-5cd5-7fac83f99a59/886446451978.jpg/300x300bb.jpg",
     "album": "Harry Styles",
     "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1615585102",
-    "title": "Love Of My Life",
-    "fullTitle": "Love Of My Life",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/37/ed/3e37edc2-b02e-c3fd-bd1e-6f9548b910c2/mzaf_10631950686010316714.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/300x300bb.jpg",
-    "album": "Harry's House",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1615585011",
-    "title": "Little Freak",
-    "fullTitle": "Little Freak",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/cf/21/4bcf213b-4fad-9304-8752-34ef30e1716a/mzaf_11010657058817410926.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/300x300bb.jpg",
-    "album": "Harry's House",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1615585091",
-    "title": "Cinema",
-    "fullTitle": "Cinema",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/18/ee/bf18eeb8-c712-4a31-4b52-1cded82e35f2/mzaf_4883013230396399083.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/300x300bb.jpg",
-    "album": "Harry's House",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1226034395",
-    "title": "Carolina",
-    "fullTitle": "Carolina",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/6c/75/b66c75c1-9559-d188-241d-fbecbe1b3f4b/mzaf_9753067714686421764.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/5e/aa/3d5eaaa3-9a86-c264-5cd5-7fac83f99a59/886446451978.jpg/300x300bb.jpg",
-    "album": "Harry Styles",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1615585098",
-    "title": "Daydreaming",
-    "fullTitle": "Daydreaming",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/ef/d6/2befd692-42ec-4df3-ea6b-9240c891d4c7/mzaf_7374496274959221835.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/300x300bb.jpg",
-    "album": "Harry's House",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1485802976",
-    "title": "To Be So Lonely",
-    "fullTitle": "To Be So Lonely",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/1f/19/8c1f198b-697a-dacf-0587-cf1d9538f790/mzaf_15171865030380908178.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/300x300bb.jpg",
-    "album": "Fine Line",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1226035038",
-    "title": "From the Dining Table",
-    "fullTitle": "From the Dining Table",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/fc/19/c2fc19bd-c105-f2eb-6de8-d2dbda81b184/mzaf_3048822265976901940.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/5e/aa/3d5eaaa3-9a86-c264-5cd5-7fac83f99a59/886446451978.jpg/300x300bb.jpg",
-    "album": "Harry Styles",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1615585099",
-    "title": "Keep Driving",
-    "fullTitle": "Keep Driving",
-    "artist": "Harry Styles",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/86/a3/8686a35e-5715-c687-1b58-4bcbc63d8460/mzaf_8394697523670552560.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/300x300bb.jpg",
-    "album": "Harry's House",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -18639,7 +10332,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/300x300bb.jpg",
     "album": "Future Nostalgia",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1538004007",
@@ -18743,7 +10436,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/44/46/1f/44461f0c-a949-ce72-0164-704056469fc8/886446328331.jpg/300x300bb.jpg",
     "album": "Scared To Be Lonely - Single",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1538003853",
@@ -18756,7 +10449,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/300x300bb.jpg",
     "album": "Future Nostalgia",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1434849693",
@@ -18769,7 +10462,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/fc/6d/94fc6d23-7257-8fe3-fa19-fdcc22e90856/190295559472.jpg/300x300bb.jpg",
     "album": "Dua Lipa (Complete Edition)",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1228739602",
@@ -18821,84 +10514,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/25/cd/d4/25cdd423-4a23-1913-04ed-921a58cccb7d/190295000639.jpg/300x300bb.jpg",
     "album": "Future Nostalgia (The Moonlight Edition)",
     "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1534327306",
-    "title": "Fever",
-    "fullTitle": "Fever",
-    "artist": "Dua Lipa",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/ab/fc/25abfc7b-4602-9b69-0a35-b8ad30019cbd/mzaf_462783631464312231.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/96/a2/a4/96a2a4e8-53b8-05d3-d0e2-fb1e41817f1d/190295127718.jpg/300x300bb.jpg",
-    "album": "Fever - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1538003641",
-    "title": "Cool",
-    "fullTitle": "Cool",
-    "artist": "Dua Lipa",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/66/e0/0166e018-8e9a-b7ff-f852-254eb5ff39bb/mzaf_12904833308174422942.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/300x300bb.jpg",
-    "album": "Future Nostalgia",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1449762638",
-    "title": "Swan Song",
-    "fullTitle": "Swan Song (From the Motion Picture \"Alita: Battle Angel\")",
-    "artist": "Dua Lipa",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/e8/44/91e844ca-febd-1bb9-41a2-267dbae7e3a0/mzaf_6140307217666387545.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/50/1d/cd/501dcdb6-ae78-3c29-ca15-f3af31b3670b/190295483180.jpg/300x300bb.jpg",
-    "album": "Swan Song (From the Motion Picture \"Alita: Battle Angel\") - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1228739616",
-    "title": "Last Dance",
-    "fullTitle": "Last Dance",
-    "artist": "Dua Lipa",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/37/5c/07375c5f-c5f3-e744-8400-e5ac45af39f3/mzaf_11344352366740510243.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c1/54/2d/c1542d45-c6c2-12ca-7308-6eacd762c562/190295807870.jpg/300x300bb.jpg",
-    "album": "Dua Lipa (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1228739611",
-    "title": "Homesick",
-    "fullTitle": "Homesick",
-    "artist": "Dua Lipa",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/7a/9c/d87a9c9a-b557-00f1-12f5-60543762725d/mzaf_6247676868782604130.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c1/54/2d/c1542d45-c6c2-12ca-7308-6eacd762c562/190295807870.jpg/300x300bb.jpg",
-    "album": "Dua Lipa (Deluxe)",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1734980418",
-    "title": "End Of An Era",
-    "fullTitle": "End Of An Era",
-    "artist": "Dua Lipa",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/66/bc/d966bc23-c69e-024c-5660-f1c698553faa/mzaf_15504292121299820703.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/e8/1c/ede81c4b-593d-913a-cfe4-3b12496f67e5/5021732254870.jpg/300x300bb.jpg",
-    "album": "Radical Optimism",
-    "releaseYear": "2024",
     "difficulty": "hard"
   },
   {
@@ -19003,7 +10618,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/8c/24/088c2405-2e33-801b-5c38-e967f2c01e69/191404113974.png/300x300bb.jpg",
     "album": "25",
     "releaseYear": "2015",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1545382976",
@@ -19107,7 +10722,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/300x300bb.jpg",
     "album": "21",
     "releaseYear": "2011",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1544491987",
@@ -19120,7 +10735,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/300x300bb.jpg",
     "album": "21",
     "releaseYear": "2011",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1590036250",
@@ -19133,7 +10748,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/300x300bb.jpg",
     "album": "30",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1590036026",
@@ -19146,7 +10761,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/300x300bb.jpg",
     "album": "30",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1590036031",
@@ -19182,110 +10797,6 @@ window.SONGS_CATALOG = [
     "genre": "R&B",
     "lang": "en",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/45/8f/8c458f15-14be-3264-a352-5a2c72ff1f85/mzaf_1129462131250421857.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/300x300bb.jpg",
-    "album": "21",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1544494905",
-    "title": "Million Years Ago",
-    "fullTitle": "Million Years Ago",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/cf/c1/bfcfc158-e592-48df-e917-d8490d61ef13/mzaf_16903946569116823432.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/8c/24/088c2405-2e33-801b-5c38-e967f2c01e69/191404113974.png/300x300bb.jpg",
-    "album": "25",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1544494717",
-    "title": "Remedy",
-    "fullTitle": "Remedy",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/f0/95/25f095b1-6d2e-dcb8-9128-3c0bce9507c5/mzaf_361725944982890311.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/8c/24/088c2405-2e33-801b-5c38-e967f2c01e69/191404113974.png/300x300bb.jpg",
-    "album": "25",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1544494401",
-    "title": "I Miss You",
-    "fullTitle": "I Miss You",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/9a/25/a99a2546-5c91-4fe5-c2c1-4b38b908a298/mzaf_4234649315063038392.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/8c/24/088c2405-2e33-801b-5c38-e967f2c01e69/191404113974.png/300x300bb.jpg",
-    "album": "25",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1544491992",
-    "title": "Take It All",
-    "fullTitle": "Take It All",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/36/80/c636806f-cc36-d949-df23-7eb719ae2d7b/mzaf_14219623675705024528.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/300x300bb.jpg",
-    "album": "21",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1590036260",
-    "title": "Woman Like Me",
-    "fullTitle": "Woman Like Me",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/4c/4a/544c4a21-8114-e63d-97fb-9a59d23c83df/mzaf_6843973604460826350.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/300x300bb.jpg",
-    "album": "30",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1544494916",
-    "title": "Sweetest Devotion",
-    "fullTitle": "Sweetest Devotion",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/1e/66/271e66f8-47b8-0c11-bf40-0ab270788932/mzaf_1798452203101298989.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/8c/24/088c2405-2e33-801b-5c38-e967f2c01e69/191404113974.png/300x300bb.jpg",
-    "album": "25",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1590036028",
-    "title": "Cry Your Heart Out",
-    "fullTitle": "Cry Your Heart Out",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/4e/3e/0a4e3efc-c25e-8642-27dc-e62a53344b98/mzaf_6567573489165437025.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/300x300bb.jpg",
-    "album": "30",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1544491989",
-    "title": "He Won't Go",
-    "fullTitle": "He Won't Go",
-    "artist": "Adele",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/33/a0/ae33a09e-e5ae-b00f-5f1f-babf80eb20b7/mzaf_229625451044906821.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/300x300bb.jpg",
     "album": "21",
     "releaseYear": "2011",
@@ -19497,7 +11008,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5b/a4/0a/5ba40a95-9bf6-3b0c-ee7b-82f0bf71f589/10UMGIM00578.rgb.jpg/300x300bb.jpg",
     "album": "The Fame Monster",
     "releaseYear": "2009",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1445051404",
@@ -19572,32 +11083,6 @@ window.SONGS_CATALOG = [
     "genre": "Pop",
     "lang": "en",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/bb/fe/65bbfe1f-bf9b-4d5b-266c-f16d465b9365/mzaf_74696310549231888.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b1/9f/ef/b19fef51-79de-a940-e8ab-9e4e07b04d96/18UMGIM53752.rgb.jpg/300x300bb.jpg",
-    "album": "A Star Is Born Soundtrack",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1500952435",
-    "title": "911",
-    "fullTitle": "911",
-    "artist": "Lady Gaga",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/57/71/96577152-fd95-77b1-191e-9cdf75a88c28/mzaf_18055839029710848026.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5d/4d/f9/5d4df96a-e95e-2fe9-404a-5d570513762d/20UMGIM15390.rgb.jpg/300x300bb.jpg",
-    "album": "Chromatica",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1434372048",
-    "title": "Look What I Found",
-    "fullTitle": "Look What I Found",
-    "artist": "Lady Gaga",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/c8/f8/39c8f8cf-0fdb-3d20-e5f4-c417397d4df3/mzaf_1394365259200725190.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b1/9f/ef/b19fef51-79de-a940-e8ab-9e4e07b04d96/18UMGIM53752.rgb.jpg/300x300bb.jpg",
     "album": "A Star Is Born Soundtrack",
     "releaseYear": "2018",
@@ -19692,7 +11177,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/31/57/b3/3157b3d9-6551-e44e-46c0-488686998a05/13UABIM58339.rgb.jpg/300x300bb.jpg",
     "album": "Teenage Dream: The Complete Confection",
     "releaseYear": "2012",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "it_716085557",
@@ -19796,7 +11281,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e1/d7/ec/e1d7ec59-20d4-7bc6-b402-2fde39caf7e5/17UMGIM99425.rgb.jpg/300x300bb.jpg",
     "album": "Witness (Deluxe)",
     "releaseYear": "2017",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "id": "it_1599783795",
@@ -19978,7 +11463,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ab/ab/f7/ababf7b5-c65b-905a-ae71-c7195f66e25c/21UMGIM04584.rgb.jpg/300x300bb.jpg",
     "album": "Meet Miley Cyrus",
     "releaseYear": "2007",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "it_1440633163",
@@ -20082,7 +11567,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ac/20/f5/ac20f597-4237-86e2-cd0a-4b4d4fe3b5b2/886448810216.jpg/300x300bb.jpg",
     "album": "Plastic Hearts",
     "releaseYear": "2020",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "id": "it_1536966406",
@@ -20277,7 +11762,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/da/c4/07/dac40712-b88c-27cd-ccb3-8bc540fc7790/10DMGIM01659.rgb.jpg/300x300bb.jpg",
     "album": "A Year Without Rain (Deluxe Edition)",
     "releaseYear": "2010",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1381915969",
@@ -20381,7 +11866,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/54/2b/67/542b6728-c2e9-77af-8aee-6cfdd0b4ac24/21UMGIM06300.rgb.jpg/300x300bb.jpg",
     "album": "Revelación - EP",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440638661",
@@ -20394,7 +11879,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8f/16/29/8f1629c8-df81-9cac-deb5-93183520f035/09BVMIM00964.rgb.jpg/300x300bb.jpg",
     "album": "Kiss & Tell",
     "releaseYear": "2009",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1703517719",
@@ -20407,7 +11892,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/37/21/45/37214531-57d0-b6d2-5dcd-0a4b6318d86f/23UMGIM91977.rgb.jpg/300x300bb.jpg",
     "album": "Single Soon - Single",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1795151522",
@@ -20458,71 +11943,6 @@ window.SONGS_CATALOG = [
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/75/2f/ad752f4e-1503-7337-7c3d-4735abae6c31/mzaf_15686413183016703629.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/17/27/3f/17273fc6-d37c-610d-bc1e-a704eb7656ee/602507255022.jpg/300x300bb.jpg",
     "album": "Past Life - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1445844005",
-    "title": "Round & Round",
-    "fullTitle": "Round & Round",
-    "artist": "Selena Gomez",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/8d/b8/7d8db81b-cfbf-b9a1-a3fd-26cadedd0f24/mzaf_15926092641640649575.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/da/c4/07/dac40712-b88c-27cd-ccb3-8bc540fc7790/10DMGIM01659.rgb.jpg/300x300bb.jpg",
-    "album": "A Year Without Rain (Deluxe Edition)",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1652136887",
-    "title": "My Mind & Me",
-    "fullTitle": "My Mind & Me",
-    "artist": "Selena Gomez",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/ba/a9/43baa95f-3c78-3dc4-d59d-4709b8116d43/mzaf_7017622300033399735.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/a7/bd/3b/a7bd3bce-9495-cac3-29e8-43902a4ea14b/22UM1IM15261.rgb.jpg/300x300bb.jpg",
-    "album": "My Mind & Me - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440827591",
-    "title": "Perfect",
-    "fullTitle": "Perfect",
-    "artist": "Selena Gomez",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/9e/d9/c19ed94b-e4ad-102e-1af3-520faca1c430/mzaf_14092212455537189735.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0f/17/eb/0f17eba1-bae8-9a6d-f21e-b727926f5af1/15UMGIM48241.rgb.jpg/300x300bb.jpg",
-    "album": "Revival (Deluxe)",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1488413376",
-    "title": "Lose You to Love Me",
-    "fullTitle": "Lose You to Love Me",
-    "artist": "Selena Gomez",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/b4/f6/99b4f6a7-2cf0-bce3-a576-1825e603349f/mzaf_15677095240718368265.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1d/5e/35/1d5e35f4-dbd3-f588-1f0b-1244fc2aad55/19UM1IM04673.rgb.jpg/300x300bb.jpg",
-    "album": "Rare",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1506661711",
-    "title": "Boyfriend",
-    "fullTitle": "Boyfriend",
-    "artist": "Selena Gomez",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/ee/a2/7eeea23b-d972-53de-e92a-2753aba68f06/mzaf_2647798344288466348.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/05/c5/f5/05c5f579-085a-7ac7-2c93-b23ec638c451/20UMGIM14807.rgb.jpg/300x300bb.jpg",
-    "album": "Rare (Deluxe)",
     "releaseYear": "2020",
     "difficulty": "hard"
   },
@@ -20628,7 +12048,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/41/21/8b/41218bcb-7f2f-031f-482a-1ce03757a4ab/19UMGIM38577.rgb.jpg/300x300bb.jpg",
     "album": "If I Can't Have You - Single",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1376115727",
@@ -20732,7 +12152,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/34/34/ab/3434abcc-3b47-ca75-71df-c6a8392005d0/18UMGIM23926.rgb.jpg/300x300bb.jpg",
     "album": "Shawn Mendes",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1376116269",
@@ -20745,7 +12165,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/34/34/ab/3434abcc-3b47-ca75-71df-c6a8392005d0/18UMGIM23926.rgb.jpg/300x300bb.jpg",
     "album": "Shawn Mendes",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1581461327",
@@ -20758,7 +12178,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/98/fe/63/98fe6369-619e-66e3-2aea-8f9346cb9fa8/21UMGIM80594.rgb.jpg/300x300bb.jpg",
     "album": "Summer Of Love - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440849575",
@@ -20810,84 +12230,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5c/57/e4/5c57e46a-0950-7ebd-8010-28453c1c0055/16UMGIM51723.rgb.jpg/300x300bb.jpg",
     "album": "Illuminate (Deluxe)",
     "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1376115730",
-    "title": "Where Were You in the Morning?",
-    "fullTitle": "Where Were You in the Morning?",
-    "artist": "Shawn Mendes",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/34/0b/69340b47-271c-7ba3-242f-b0c8ab85bfe3/mzaf_5651886556850303337.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/34/34/ab/3434abcc-3b47-ca75-71df-c6a8392005d0/18UMGIM23926.rgb.jpg/300x300bb.jpg",
-    "album": "Shawn Mendes",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440849848",
-    "title": "The Weight",
-    "fullTitle": "The Weight",
-    "artist": "Shawn Mendes",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/f4/c5/22f4c5cd-70c1-a36c-c3d1-4aa148a9bb3f/mzaf_2724893948098486222.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ef/06/de/ef06deeb-3890-e06f-905c-5686e23c2b88/15UMGIM06404.rgb.jpg/300x300bb.jpg",
-    "album": "Handwritten (Deluxe Edition)",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440849822",
-    "title": "Something Big",
-    "fullTitle": "Something Big",
-    "artist": "Shawn Mendes",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/df/5f/a9df5f88-6b91-199b-edf2-fbd625fe7635/mzaf_4365888878831530910.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ef/06/de/ef06deeb-3890-e06f-905c-5686e23c2b88/15UMGIM06404.rgb.jpg/300x300bb.jpg",
-    "album": "Handwritten (Deluxe Edition)",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440892904",
-    "title": "Don't Be a Fool",
-    "fullTitle": "Don't Be a Fool",
-    "artist": "Shawn Mendes",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/28/d5/ad28d586-6b7e-9458-e711-d55ea7dadd99/mzaf_6698745970175560246.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5c/57/e4/5c57e46a-0950-7ebd-8010-28453c1c0055/16UMGIM51723.rgb.jpg/300x300bb.jpg",
-    "album": "Illuminate (Deluxe)",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440849844",
-    "title": "A Little Too Much",
-    "fullTitle": "A Little Too Much",
-    "artist": "Shawn Mendes",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/0f/15/f80f1531-af6d-9973-084b-a7673df79e47/mzaf_5451946063540504873.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ef/06/de/ef06deeb-3890-e06f-905c-5686e23c2b88/15UMGIM06404.rgb.jpg/300x300bb.jpg",
-    "album": "Handwritten (Deluxe Edition)",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440849827",
-    "title": "Aftertaste",
-    "fullTitle": "Aftertaste",
-    "artist": "Shawn Mendes",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/34/8f/41348f42-37c7-2a80-5ba9-55d1feb9abfe/mzaf_16821081593708762144.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ef/06/de/ef06deeb-3890-e06f-905c-5686e23c2b88/15UMGIM06404.rgb.jpg/300x300bb.jpg",
-    "album": "Handwritten (Deluxe Edition)",
-    "releaseYear": "2015",
     "difficulty": "hard"
   },
   {
@@ -20992,7 +12334,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a8/e2/1b/a8e21b3b-9c8d-2974-2318-6bcd4c9d2370/075679884336.jpg/300x300bb.jpg",
     "album": "Voicenotes",
     "releaseYear": "2018",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1633318562",
@@ -21096,7 +12438,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a8/e2/1b/a8e21b3b-9c8d-2974-2318-6bcd4c9d2370/075679884336.jpg/300x300bb.jpg",
     "album": "Voicenotes",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1031416187",
@@ -21109,7 +12451,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7e/05/fd/7e05fd3e-597b-db52-5d87-3ed146d2e2bb/mzm.omtrmqdi.jpg/300x300bb.jpg",
     "album": "Nine Track Mind",
     "releaseYear": "2016",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1476587493",
@@ -21122,7 +12464,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/01/46/aa/0146aaed-8f6c-bac9-b41b-5f55aa91b031/075679839305.jpg/300x300bb.jpg",
     "album": "Mother - Single",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1293230840",
@@ -21174,97 +12516,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/7e/5f/22/7e5f2239-6143-7cf4-dfe1-d9b53d47c4c0/075679736307.jpg/300x300bb.jpg",
     "album": "CHARLIE",
     "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1677669196",
-    "title": "That’s Not How This Works",
-    "fullTitle": "That’s Not How This Works (feat. Dan + Shay)",
-    "artist": "Charlie Puth",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/25/68/c42568f3-7600-358e-1b81-bd1765ab2891/mzaf_16592915680692966934.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a2/d3/b4/a2d3b416-ebf1-b038-9678-32eea16e758b/075679698292.jpg/300x300bb.jpg",
-    "album": "That’s Not How This Works (feat. Dan + Shay) - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1633318555",
-    "title": "Charlie Be Quiet!",
-    "fullTitle": "Charlie Be Quiet!",
-    "artist": "Charlie Puth",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/e3/0e/0ce30e09-e9cf-abd8-5ef2-2b528354fe55/mzaf_15534691104148975931.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/7e/5f/22/7e5f2239-6143-7cf4-dfe1-d9b53d47c4c0/075679736307.jpg/300x300bb.jpg",
-    "album": "CHARLIE",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1293230532",
-    "title": "LA Girls",
-    "fullTitle": "LA Girls",
-    "artist": "Charlie Puth",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/c5/60/ccc560a2-999a-fc78-1f63-5bd57933b0ba/mzaf_3872454488636143316.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a8/e2/1b/a8e21b3b-9c8d-2974-2318-6bcd4c9d2370/075679884336.jpg/300x300bb.jpg",
-    "album": "Voicenotes",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1633318763",
-    "title": "Loser",
-    "fullTitle": "Loser",
-    "artist": "Charlie Puth",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/5f/18/965f1818-d539-588c-b1f7-d09afeedc534/mzaf_13922110800064255059.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/7e/5f/22/7e5f2239-6143-7cf4-dfe1-d9b53d47c4c0/075679736307.jpg/300x300bb.jpg",
-    "album": "CHARLIE",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1480462916",
-    "title": "Cheating on You",
-    "fullTitle": "Cheating on You",
-    "artist": "Charlie Puth",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/76/94/877694bc-997c-7cf9-d576-2145635f205d/mzaf_15172095334719323246.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/14/2b/05/142b057a-4f5c-fced-be22-29ff6010e629/075679837257.jpg/300x300bb.jpg",
-    "album": "Cheating on You - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1527401324",
-    "title": "Hard On Yourself",
-    "fullTitle": "Hard On Yourself",
-    "artist": "Charlie Puth",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/e7/2b/0de72b74-9982-9454-92ac-f3d71c7e5494/mzaf_9488327394353454358.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/29/03/82/2903825a-e9f4-43c3-f80c-e7b1aaadeed8/075679804822.jpg/300x300bb.jpg",
-    "album": "Hard On Yourself - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1031416190",
-    "title": "Suffer",
-    "fullTitle": "Suffer",
-    "artist": "Charlie Puth",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/85/c9/4085c9f2-0e2d-22ca-40a9-0979e9b8fe00/mzaf_13626639654256192015.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7e/05/fd/7e05fd3e-597b-db52-5d87-3ed146d2e2bb/mzm.omtrmqdi.jpg/300x300bb.jpg",
-    "album": "Nine Track Mind",
-    "releaseYear": "2015",
     "difficulty": "hard"
   },
   {
@@ -21369,7 +12620,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/73/03/fc73032d-d67d-ade3-8b9a-6f403fd9491b/886447495391.jpg/300x300bb.jpg",
     "album": "Wasteland, Baby!",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1448967239",
@@ -21473,7 +12724,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/73/03/fc73032d-d67d-ade3-8b9a-6f403fd9491b/886447495391.jpg/300x300bb.jpg",
     "album": "Wasteland, Baby!",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_900672638",
@@ -21486,7 +12737,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/1b/f1/5e1bf1de-e5f1-e73e-0752-e7882b4f2d57/886444718820.jpg/300x300bb.jpg",
     "album": "Hozier (Expanded Edition)",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_900672693",
@@ -21499,7 +12750,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/1b/f1/5e1bf1de-e5f1-e73e-0752-e7882b4f2d57/886444718820.jpg/300x300bb.jpg",
     "album": "Hozier (Expanded Edition)",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_900672657",
@@ -21512,7 +12763,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/1b/f1/5e1bf1de-e5f1-e73e-0752-e7882b4f2d57/886444718820.jpg/300x300bb.jpg",
     "album": "Hozier (Expanded Edition)",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1687585362",
@@ -21550,110 +12801,6 @@ window.SONGS_CATALOG = [
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/4e/bc/664ebc4c-e776-332f-5f9f-1c87d2178693/mzaf_9731185690791057588.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/8a/59/fa8a5999-c497-5903-20d0-fd7f08563dd9/196872387544.jpg/300x300bb.jpg",
     "album": "Unreal Unearth: Unending",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1448967402",
-    "title": "Sunlight",
-    "fullTitle": "Sunlight",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/ff/e2/90ffe2de-cb7d-7c77-55e0-09612a9a4516/mzaf_7605234025737317845.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/73/03/fc73032d-d67d-ade3-8b9a-6f403fd9491b/886447495391.jpg/300x300bb.jpg",
-    "album": "Wasteland, Baby!",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1448967248",
-    "title": "Talk",
-    "fullTitle": "Talk",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/33/05/29330517-cc8b-c680-e5e7-a220e95af007/mzaf_13851682084315194489.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/73/03/fc73032d-d67d-ade3-8b9a-6f403fd9491b/886447495391.jpg/300x300bb.jpg",
-    "album": "Wasteland, Baby!",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_900672721",
-    "title": "In the Woods Somewhere",
-    "fullTitle": "In the Woods Somewhere",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/a7/26/15a7267a-767b-fe7d-4dd6-764ae536b901/mzaf_14155480066538723798.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/1b/f1/5e1bf1de-e5f1-e73e-0752-e7882b4f2d57/886444718820.jpg/300x300bb.jpg",
-    "album": "Hozier (Expanded Edition)",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1448967250",
-    "title": "Dinner & Diatribes",
-    "fullTitle": "Dinner & Diatribes",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/1f/3a/101f3ae1-bae0-f336-5a41-de60aaf3d317/mzaf_16184009183897222988.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/73/03/fc73032d-d67d-ade3-8b9a-6f403fd9491b/886447495391.jpg/300x300bb.jpg",
-    "album": "Wasteland, Baby!",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_900672694",
-    "title": "Foreigner's God",
-    "fullTitle": "Foreigner's God",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/5b/b7/f05bb79e-cf0d-70b6-7557-ac816d1401ad/mzaf_12323634686850335380.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/1b/f1/5e1bf1de-e5f1-e73e-0752-e7882b4f2d57/886444718820.jpg/300x300bb.jpg",
-    "album": "Hozier (Expanded Edition)",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1448967403",
-    "title": "Wasteland, Baby!",
-    "fullTitle": "Wasteland, Baby!",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/36/a1/a936a106-6e78-8958-7143-4efadf108be2/mzaf_11468096276273914301.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/73/03/fc73032d-d67d-ade3-8b9a-6f403fd9491b/886447495391.jpg/300x300bb.jpg",
-    "album": "Wasteland, Baby!",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1448967245",
-    "title": "As It Was",
-    "fullTitle": "As It Was",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/cf/34/3ccf3416-c06e-589d-d439-2aaeb9792fdb/mzaf_199727677040658683.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fc/73/03/fc73032d-d67d-ade3-8b9a-6f403fd9491b/886447495391.jpg/300x300bb.jpg",
-    "album": "Wasteland, Baby!",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1761381477",
-    "title": "Nobody's Soldier",
-    "fullTitle": "Nobody's Soldier",
-    "artist": "Hozier",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/a4/04/71a404b5-d464-f7d3-a46b-204c204abad5/mzaf_12225753158005244074.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/08/89/fd0889bd-8fd6-8c7e-3cb9-71b0cb5c80a5/196872307009.jpg/300x300bb.jpg",
-    "album": "Unaired - EP",
     "releaseYear": "2024",
     "difficulty": "hard"
   },
@@ -21759,7 +12906,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/a9/6a/e8a96a77-0c14-6294-92a0-7487d6d83071/21UMGIM50681.rgb.jpg/300x300bb.jpg",
     "album": "I Was / I Am",
     "releaseYear": "2021",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1644777298",
@@ -21863,7 +13010,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7b/cc/cf/7bcccf54-8bf4-5e03-951e-c7582f35b09d/23UMGIM59938.rgb.jpg/300x300bb.jpg",
     "album": "Stick Season (We'll All Be Here Forever)",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1572312924",
@@ -21876,7 +13023,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/a9/6a/e8a96a77-0c14-6294-92a0-7487d6d83071/21UMGIM50681.rgb.jpg/300x300bb.jpg",
     "album": "I Was / I Am",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1644777309",
@@ -21889,7 +13036,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5a/3f/8e/5a3f8ec5-be0d-580c-6f2e-8634121d5e68/22UM1IM01116.rgb.jpg/300x300bb.jpg",
     "album": "Stick Season",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_6762757742",
@@ -21941,97 +13088,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/a9/6a/e8a96a77-0c14-6294-92a0-7487d6d83071/21UMGIM50681.rgb.jpg/300x300bb.jpg",
     "album": "I Was / I Am",
     "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1728501040",
-    "title": "Come Over",
-    "fullTitle": "Come Over",
-    "artist": "Noah Kahan",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/78/ee/3678ee33-de03-a302-a798-5d6da9ba02b2/mzaf_5577955195172598090.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/45/d1/c9/45d1c98b-8753-4e02-ba23-80e0d9bd43cc/24UMGIM07395.rgb.jpg/300x300bb.jpg",
-    "album": "Stick Season (Forever)",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1689703748",
-    "title": "Your Needs, My Needs",
-    "fullTitle": "Your Needs, My Needs",
-    "artist": "Noah Kahan",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/76/db/cc76db91-04c4-143e-30cf-754a760e4313/mzaf_1366812257152659294.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7b/cc/cf/7bcccf54-8bf4-5e03-951e-c7582f35b09d/23UMGIM59938.rgb.jpg/300x300bb.jpg",
-    "album": "Stick Season (We'll All Be Here Forever)",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1459127648",
-    "title": "Carlo's Song",
-    "fullTitle": "Carlo's Song",
-    "artist": "Noah Kahan",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/31/e8/dc31e8fb-a583-1632-bf95-2a763b768197/mzaf_14210394503708149037.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/82/bc/56/82bc5682-96ec-869f-6547-1a5ebab219aa/19UMGIM30725.rgb.jpg/300x300bb.jpg",
-    "album": "Busyhead",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1509826676",
-    "title": "Anyway",
-    "fullTitle": "Anyway",
-    "artist": "Noah Kahan",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/d0/52/34d05223-c8cd-c3a0-9c3b-cd0cc23c8978/mzaf_14078535636866537324.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/fa/c4/3d/fac43d76-fc5b-c9d5-7aaf-347f067e37a5/20UMGIM31849.rgb.jpg/300x300bb.jpg",
-    "album": "Cape Elizabeth - EP",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1509826668",
-    "title": "A Troubled Mind",
-    "fullTitle": "A Troubled Mind",
-    "artist": "Noah Kahan",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/be/2f/99/be2f9905-7b17-0405-ffb3-b03fd3c6ba53/mzaf_4862400268576567433.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/fa/c4/3d/fac43d76-fc5b-c9d5-7aaf-347f067e37a5/20UMGIM31849.rgb.jpg/300x300bb.jpg",
-    "album": "Cape Elizabeth - EP",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440898888",
-    "title": "Passenger",
-    "fullTitle": "Passenger",
-    "artist": "Noah Kahan",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/12/af/5212af7f-0937-73b5-455f-714a769665de/mzaf_12795070917192246021.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f8/a8/66/f8a86695-1779-fee4-e02b-9997abd586ef/18UMGIM00209.rgb.jpg/300x300bb.jpg",
-    "album": "Hurt Somebody - EP",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1728501310",
-    "title": "Still",
-    "fullTitle": "Still",
-    "artist": "Noah Kahan",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/82/97/3c8297d5-c209-fb0d-d99f-0578e57c4a4f/mzaf_5804014164249082822.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/45/d1/c9/45d1c98b-8753-4e02-ba23-80e0d9bd43cc/24UMGIM07395.rgb.jpg/300x300bb.jpg",
-    "album": "Stick Season (Forever)",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -22123,7 +13179,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/4b/c9/0b/4bc90b5e-98c9-366a-5ae8-6402dd50f774/093624867142.jpg/300x300bb.jpg",
     "album": "Walk Me Home...",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "it_1587414059",
@@ -22227,7 +13283,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fc/c7/02/fcc7028a-719d-0417-4db1-90451032ae38/093624856566.jpg/300x300bb.jpg",
     "album": "PULSE - EP",
     "releaseYear": "2023",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "id": "it_1807490837",
@@ -22422,7 +13478,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/c4/6e/5cc46e64-1746-114a-fd8f-1e5490946c52/093624840947.jpg/300x300bb.jpg",
     "album": "I've Tried Everything But Therapy (Part 2)",
     "releaseYear": "2025",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1565824480",
@@ -22526,7 +13582,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/1b/01/ac1b0190-eef2-043f-dc65-89217875dc4d/5026854057859.jpg/300x300bb.jpg",
     "album": "Gone Gone Gone - Single",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1519403796",
@@ -22539,7 +13595,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c0/6d/3a/c06d3ad2-94ad-dce2-f988-e534ec3baea1/054391933881.jpg/300x300bb.jpg",
     "album": "You're Still the One - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1715945285",
@@ -22552,7 +13608,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/ff/96/9bff9640-920c-40d2-183f-8521c208362c/054391354563.jpg/300x300bb.jpg",
     "album": "Some Things I'll Never Know (feat. Maren Morris) - Single",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1593911547",
@@ -22565,7 +13621,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/98/ab/87/98ab87ec-c584-94cd-2ede-680a75230e2c/093624875284.jpg/300x300bb.jpg",
     "album": "Tough Love - EP",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1593911549",
@@ -22601,110 +13657,6 @@ window.SONGS_CATALOG = [
     "genre": "R&B",
     "lang": "en",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/ab/95/e6ab95cf-99c2-ec84-507c-989e57d1bd04/mzaf_15843468329730712781.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/c4/6e/5cc46e64-1746-114a-fd8f-1e5490946c52/093624840947.jpg/300x300bb.jpg",
-    "album": "I've Tried Everything But Therapy (Part 2)",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1474424982",
-    "title": "Someone You Loved",
-    "fullTitle": "Someone You Loved",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/aa/38/ceaa3815-3c7f-2df1-bb29-b7f5bab8c546/mzaf_11209070976939107317.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d6/de/7e/d6de7e5f-87b4-5593-8951-60efd59f4586/artwork.jpg/300x300bb.jpg",
-    "album": "Someone You Loved - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1691700054",
-    "title": "You Still Get to Me",
-    "fullTitle": "You Still Get to Me",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/83/c2/e183c222-9f0e-6f07-4234-1027acae958c/mzaf_18276344912454934123.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/300x300bb.jpg",
-    "album": "I've Tried Everything But Therapy (Part 1)",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1647363497",
-    "title": "dose",
-    "fullTitle": "dose",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/51/c5/5b51c52e-edd6-2dff-4c60-d3abff9d9332/mzaf_9775541353940174734.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8c/80/11/8c801107-2145-899c-fd91-1a0914915b14/093624862116.jpg/300x300bb.jpg",
-    "album": "Sleep is Exhausting - EP",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1742278306",
-    "title": "Apple Juice",
-    "fullTitle": "Apple Juice",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/03/1b/18031b7f-6dfa-fdcb-1426-0592074a5364/mzaf_4020677347076092622.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/b5/6f/cdb56fb5-c983-5b52-a818-7e34d81f7f55/093624841838.jpg/300x300bb.jpg",
-    "album": "I've Tried Everything But Therapy (Part 1.5)",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1549045071",
-    "title": "My Bad",
-    "fullTitle": "My Bad",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/82/e0/9e82e043-1c6a-eded-a26f-de396e91f1b5/mzaf_3913586469399902531.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a2/d0/81/a2d081e7-f5d7-0a50-0ef0-dababd0e094f/054391925329.jpg/300x300bb.jpg",
-    "album": "My Bad - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1691699839",
-    "title": "What More Can I Say",
-    "fullTitle": "What More Can I Say",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/10/6a/65106ae5-e6c2-cea9-06d3-c55eb9b9a7c5/mzaf_14243754458268598646.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/300x300bb.jpg",
-    "album": "I've Tried Everything But Therapy (Part 1)",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1771020852",
-    "title": "Not Your Man",
-    "fullTitle": "Not Your Man",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/df/6b/09df6b13-adac-5d95-8fc5-77b2364cf7e4/mzaf_15683177817097804288.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/c4/6e/5cc46e64-1746-114a-fd8f-1e5490946c52/093624840947.jpg/300x300bb.jpg",
-    "album": "I've Tried Everything But Therapy (Part 2)",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1771020857",
-    "title": "Your Kind of Crazy",
-    "fullTitle": "Your Kind of Crazy",
-    "artist": "Teddy Swims",
-    "genre": "R&B",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/f7/c0/64f7c09c-c0ff-b53a-90af-2a9c4518cd43/mzaf_17590110881662672788.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/c4/6e/5cc46e64-1746-114a-fd8f-1e5490946c52/093624840947.jpg/300x300bb.jpg",
     "album": "I've Tried Everything But Therapy (Part 2)",
     "releaseYear": "2025",
@@ -22916,7 +13868,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/97/b5/bc/97b5bca2-6238-2421-4f0d-1f7a39d5d9d4/197342550925_cover.jpg/300x300bb.jpg",
     "album": "Where I've Been, Isn't Where I'm Going",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1737087731",
@@ -22993,58 +13945,6 @@ window.SONGS_CATALOG = [
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/4e/e4/594ee44c-b071-c454-23ab-7432b6e02ca0/mzaf_17594603678020263721.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/97/b5/bc/97b5bca2-6238-2421-4f0d-1f7a39d5d9d4/197342550925_cover.jpg/300x300bb.jpg",
     "album": "Where I've Been, Isn't Where I'm Going",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1738364007",
-    "title": "SWEET ★ HONEY ★ BUCKIIN'",
-    "fullTitle": "SWEET ★ HONEY ★ BUCKIIN'",
-    "artist": "Shaboozey",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/46/e6/1046e6f4-554e-cd84-689f-b1b982c9e639/mzaf_9385144990371400532.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bd/f6/83/bdf683a5-28de-08cb-cb91-2940c1e6270b/196871853729.jpg/300x300bb.jpg",
-    "album": "COWBOY CARTER",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1894906684",
-    "title": "Til Sunday",
-    "fullTitle": "Til Sunday",
-    "artist": "Shaboozey",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/5f/b4/6b5fb4ae-367e-8bc0-1847-c2c92031d801/mzaf_18181826231677250818.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/7c/51/2a7c5105-1de5-b847-52c3-ac85450fcacd/199316583137_cover.jpg/300x300bb.jpg",
-    "album": "The Outlaw Cherie Lee & Other Western Tales",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1821043219",
-    "title": "Home",
-    "fullTitle": "Home",
-    "artist": "Shaboozey",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/40/79/354079c3-bb2d-c613-5c82-fb285c7b8321/mzaf_13512479312843433236.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/34/c1/e7/34c1e7ed-12ee-e36d-acd3-c1a0865e123f/exp_720.png/300x300bb.jpg",
-    "album": "Home - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1738363897",
-    "title": "SPAGHETTII",
-    "fullTitle": "SPAGHETTII",
-    "artist": "Shaboozey",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/20/d3/1520d332-bbd9-12f0-4902-3e10519800d5/mzaf_9383682528425566407.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bd/f6/83/bdf683a5-28de-08cb-cb91-2940c1e6270b/196871853729.jpg/300x300bb.jpg",
-    "album": "COWBOY CARTER",
     "releaseYear": "2024",
     "difficulty": "hard"
   },
@@ -23150,7 +14050,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/40/c6/2840c6f2-064c-78c9-cd8e-531c1dad62b8/24UMGIM93983.rgb.jpg/300x300bb.jpg",
     "album": "Beautifully Broken",
     "releaseYear": "2024",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1500663450",
@@ -23254,7 +14154,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ae/36/1a/ae361a2e-cea6-d47f-166b-1c015726846b/196872381474.jpg/300x300bb.jpg",
     "album": "The High Road",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1688698794",
@@ -23267,7 +14167,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/16/31/cb/1631cb12-f949-ff10-a699-278bd3043712/4050538910087.jpg/300x300bb.jpg",
     "album": "Whitsitt Chapel",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1770872734",
@@ -23280,7 +14180,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/80/65/a8/8065a8d7-9273-313d-43ea-6f9e3409e0a3/24UMGIM93984.rgb.jpg/300x300bb.jpg",
     "album": "Beautifully Broken",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1696265298",
@@ -23332,97 +14232,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/02/ba/90/02ba9034-ea76-1e05-912c-7175832ee8e0/25UMGIM99610.rgb.jpg/300x300bb.jpg",
     "album": "Holy Water - Single",
     "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1772965820",
-    "title": "Unpretty",
-    "fullTitle": "Unpretty",
-    "artist": "Jelly Roll",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/d0/ec/d3d0ec17-ef70-0e2c-e9d9-d149b4ba7c2f/mzaf_8694300442764015538.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/e3/e0/a0e3e0d3-f6c8-8a1c-bcf1-17c49154b986/24UM1IM08555.rgb.jpg/300x300bb.jpg",
-    "album": "Beautifully Broken (Pickin’ Up The Pieces)",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1870623298",
-    "title": "I’m Good",
-    "fullTitle": "I’m Good (From The Movie “GOAT”)",
-    "artist": "Jelly Roll",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/ab/2e/7eab2e2a-a1a8-9917-18b8-98499479426c/mzaf_11506506561670821431.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/7c/34/7c7c348d-5ee9-367a-5dfd-0c6f580f9a40/ticket.pgpnygba.jpg/300x300bb.jpg",
-    "album": "GOAT (Original Motion Picture Soundtrack)",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1688698797",
-    "title": "Dancing With the Devil",
-    "fullTitle": "Dancing With the Devil",
-    "artist": "Jelly Roll",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/3a/10/f63a1017-fe21-31c4-a645-079ff291d886/mzaf_13853496181119748500.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/16/31/cb/1631cb12-f949-ff10-a699-278bd3043712/4050538910087.jpg/300x300bb.jpg",
-    "album": "Whitsitt Chapel",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1584623549",
-    "title": "Dead Man Walking",
-    "fullTitle": "Dead Man Walking",
-    "artist": "Jelly Roll",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/ba/e9/2fbae988-c2b9-5194-09b3-22d6c8432433/mzaf_17036955028861626628.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b3/7c/34/b37c3481-78f6-8597-04d3-b0ce42340825/4050538721386.jpg/300x300bb.jpg",
-    "album": "Ballads of the Broken",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1772965970",
-    "title": "My Cross",
-    "fullTitle": "My Cross",
-    "artist": "Jelly Roll",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/60/96/c7/6096c7f6-4d38-3a80-4369-6c9216761556/mzaf_1306154395936862005.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/e3/e0/a0e3e0d3-f6c8-8a1c-bcf1-17c49154b986/24UM1IM08555.rgb.jpg/300x300bb.jpg",
-    "album": "Beautifully Broken (Pickin’ Up The Pieces)",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1708865150",
-    "title": "Almost Home",
-    "fullTitle": "Almost Home",
-    "artist": "Jelly Roll",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/76/fc/1e76fcec-a811-8f30-067a-a040cba7c660/mzaf_7244307341712310871.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/eb/3c/28eb3c00-6644-322b-1f49-ea7f0bd955db/4050538988314.jpg/300x300bb.jpg",
-    "album": "Enlisted - EP",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1772965832",
-    "title": "Hear Me Out",
-    "fullTitle": "Hear Me Out",
-    "artist": "Jelly Roll",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/c0/45/07c045f3-1341-ea44-bdba-fd7bc4b7400e/mzaf_1588313502732245286.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/e3/e0/a0e3e0d3-f6c8-8a1c-bcf1-17c49154b986/24UM1IM08555.rgb.jpg/300x300bb.jpg",
-    "album": "Beautifully Broken (Pickin’ Up The Pieces)",
-    "releaseYear": "2024",
     "difficulty": "hard"
   },
   {
@@ -23527,7 +14336,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/34/12/78/34127801-ad2b-4469-4916-d661bba34a94/20UMGIM71875.rgb.jpg/300x300bb.jpg",
     "album": "Starting Over",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1810796708",
@@ -23631,7 +14440,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/da/ce/7b/dace7b1f-cff4-8a8d-1eb7-c07abcd7974f/00602557970661.rgb.jpg/300x300bb.jpg",
     "album": "From A Room: Volume 2",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440827625",
@@ -23644,7 +14453,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/300x300bb.jpg",
     "album": "Traveller",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440901191",
@@ -23657,7 +14466,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/da/ce/7b/dace7b1f-cff4-8a8d-1eb7-c07abcd7974f/00602557970661.rgb.jpg/300x300bb.jpg",
     "album": "From A Room: Volume 2",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440901955",
@@ -23670,7 +14479,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/8b/f6/00/8bf60032-a7ef-4fbe-89c5-07be8edd0848/00602557542783.rgb.jpg/300x300bb.jpg",
     "album": "From A Room: Vol. 1",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1697401125",
@@ -23709,110 +14518,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/8b/f6/00/8bf60032-a7ef-4fbe-89c5-07be8edd0848/00602557542783.rgb.jpg/300x300bb.jpg",
     "album": "From A Room: Vol. 1",
     "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440827622",
-    "title": "Whiskey and You",
-    "fullTitle": "Whiskey and You",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/13/af/2b13af6b-d865-bd07-10fe-45452bc2b151/mzaf_13950453456979597265.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/300x300bb.jpg",
-    "album": "Traveller",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440901205",
-    "title": "Midnight Train to Memphis",
-    "fullTitle": "Midnight Train to Memphis",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/18/36/a518368d-4e85-9a30-9cd6-920e01ca1829/mzaf_8360219151337328115.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/da/ce/7b/dace7b1f-cff4-8a8d-1eb7-c07abcd7974f/00602557970661.rgb.jpg/300x300bb.jpg",
-    "album": "From A Room: Volume 2",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440827636",
-    "title": "When the Stars Come Out",
-    "fullTitle": "When the Stars Come Out",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/43/93/62439314-8aaf-2044-e0e4-e7761e22444e/mzaf_11667102853567620921.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/300x300bb.jpg",
-    "album": "Traveller",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440827660",
-    "title": "Sometimes I Cry",
-    "fullTitle": "Sometimes I Cry",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/8b/d0/e88bd0c3-4b9d-c5a0-4c17-fb963e5c2d37/mzaf_9734257074329941845.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/300x300bb.jpg",
-    "album": "Traveller",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1528423161",
-    "title": "Maggie's Song",
-    "fullTitle": "Maggie's Song",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/a4/1e/f1a41eb5-1442-1bbd-0c5e-122847675750/mzaf_6307324408224650202.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/34/12/78/34127801-ad2b-4469-4916-d661bba34a94/20UMGIM71875.rgb.jpg/300x300bb.jpg",
-    "album": "Starting Over",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1697401398",
-    "title": "Weight Of Your World",
-    "fullTitle": "Weight Of Your World",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/c0/a6/8ec0a69e-2b56-0ba7-bab0-01fa52d3858b/mzaf_13570019366970418713.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f1/2a/d7/f12ad765-1d90-3959-c872-35cc34c8359a/23UMGIM80471.rgb.jpg/300x300bb.jpg",
-    "album": "Higher",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440827643",
-    "title": "Might As Well Get Stoned",
-    "fullTitle": "Might As Well Get Stoned",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/4c/76/4c4c7660-c22f-1f99-2ab9-38311b4e1e81/mzaf_5174446980523598661.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/300x300bb.jpg",
-    "album": "Traveller",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440827629",
-    "title": "More of You",
-    "fullTitle": "More of You",
-    "artist": "Chris Stapleton",
-    "genre": "Country",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/41/05/344105d4-af29-1bc8-7c7f-c4fff82e24f9/mzaf_1134837353610245743.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/300x300bb.jpg",
-    "album": "Traveller",
-    "releaseYear": "2015",
     "difficulty": "hard"
   },
   {
@@ -23917,7 +14622,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/76/77/08/767708a7-ec93-3b3d-3bac-40086e5a265c/21UM1IM29634.rgb.jpg/300x300bb.jpg",
     "album": "Enemy (From Arcane: League of Legends) - Single",
     "releaseYear": "2021",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1617910506",
@@ -24021,7 +14726,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/1f/fa/09/1ffa092f-f52f-4a66-7d10-4cc5982dc747/12UMGIM46901.rgb.jpg/300x300bb.jpg",
     "album": "Night Visions",
     "releaseYear": "2012",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1444872139",
@@ -24034,7 +14739,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/32/b9/b6/32b9b6ee-5222-9064-eb00-299cf44957dd/00602547562012.rgb.jpg/300x300bb.jpg",
     "album": "Roots - Single",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1411628678",
@@ -24047,7 +14752,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/11/7a/b8/117ab805-6811-8929-18b9-0fad7baf0c25/17UMGIM98210.rgb.jpg/300x300bb.jpg",
     "album": "Evolve",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1441520223",
@@ -24099,84 +14804,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c1/16/59/c116596f-f3fd-3499-6cc2-bcb5b4931e6e/14UMGIM61459.rgb.jpg/300x300bb.jpg",
     "album": "Smoke + Mirrors",
     "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1411629292",
-    "title": "Dancing In the Dark",
-    "fullTitle": "Dancing In the Dark",
-    "artist": "Imagine Dragons",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/00/ae/0d00aee3-7278-83cc-3dad-2eb01e6da7a8/mzaf_10655968376547696212.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/11/7a/b8/117ab805-6811-8929-18b9-0fad7baf0c25/17UMGIM98210.rgb.jpg/300x300bb.jpg",
-    "album": "Evolve",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1445867313",
-    "title": "I'm So Sorry",
-    "fullTitle": "I'm So Sorry",
-    "artist": "Imagine Dragons",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/62/c4/d262c441-546d-2daf-2f85-fdc26b69eb42/mzaf_17514460429495422696.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c1/16/59/c116596f-f3fd-3499-6cc2-bcb5b4931e6e/14UMGIM61459.rgb.jpg/300x300bb.jpg",
-    "album": "Smoke + Mirrors",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1741841778",
-    "title": "Wake Up",
-    "fullTitle": "Wake Up",
-    "artist": "Imagine Dragons",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/ca/49/b3ca4931-7701-cd8a-d909-a2a39f52a22c/mzaf_4374673876809604310.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/11/ad/84/11ad84d7-2baa-cfe8-6616-02e7045d7ab0/24UMGIM43945.rgb.jpg/300x300bb.jpg",
-    "album": "LOOM",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1437948983",
-    "title": "Machine",
-    "fullTitle": "Machine",
-    "artist": "Imagine Dragons",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/54/f7/ca54f79c-7cf1-9798-311f-961b4a55b1ac/mzaf_671872589226851864.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3f/80/a8/3f80a8ef-5409-42ac-c126-c7354698c7fc/18UMGIM65849.rgb.jpg/300x300bb.jpg",
-    "album": "Origins (Deluxe Edition)",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1617909141",
-    "title": "Wrecked",
-    "fullTitle": "Wrecked",
-    "artist": "Imagine Dragons",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/8b/6c/598b6c1b-bffb-ac51-b874-a1423e9dc783/mzaf_9721509482651445912.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/2d/54/70/2d5470e7-ab60-f062-7ac8-e950e9726cba/22UMGIM37171.rgb.jpg/300x300bb.jpg",
-    "album": "Mercury - Acts 1 & 2",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1437948990",
-    "title": "West Coast",
-    "fullTitle": "West Coast",
-    "artist": "Imagine Dragons",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/b2/a9/4bb2a9e8-ea01-7bf0-cfdd-c8f6de9bc4aa/mzaf_16798627485486393922.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3f/80/a8/3f80a8ef-5409-42ac-c126-c7354698c7fc/18UMGIM65849.rgb.jpg/300x300bb.jpg",
-    "album": "Origins (Deluxe Edition)",
-    "releaseYear": "2018",
     "difficulty": "hard"
   },
   {
@@ -24281,7 +14908,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fa/41/1c/fa411c37-7a65-8a3e-71c9-4b566c49617c/5099967983858_1562x1562_300dpi.jpg/300x300bb.jpg",
     "album": "Mylo Xyloto",
     "releaseYear": "2011",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1053934844",
@@ -24385,7 +15012,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4c/da/68/4cda687a-bce3-4dcf-3df0-6e1fedae0e3b/190296697883.jpg/300x300bb.jpg",
     "album": "Higher Power - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1123076827",
@@ -24398,7 +15025,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/300x300bb.jpg",
     "album": "X&Y",
     "releaseYear": "2005",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1122776153",
@@ -24411,7 +15038,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b9/b4/2a/b9b42ad1-1e25-5096-da43-497a247e69a3/190295978051.jpg/300x300bb.jpg",
     "album": "A Rush of Blood to the Head",
     "releaseYear": "2002",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_726373184",
@@ -24460,84 +15087,6 @@ window.SONGS_CATALOG = [
     "genre": "Rock & Alt",
     "lang": "en",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/6d/88/536d88ef-ad91-67ce-453b-cc09e6fd84b6/mzaf_10060348369613621284.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/3c/0f/af3c0fe2-1c4f-8499-67a8-14a8e41fdbf8/5021732410535.jpg/300x300bb.jpg",
-    "album": "Moon Music",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1122782218",
-    "title": "Don't Panic",
-    "fullTitle": "Don't Panic",
-    "artist": "Coldplay",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/1b/e2/0b1be29c-df3f-38e5-3dfd-9609d71319fd/mzaf_5477629674077666453.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/300x300bb.jpg",
-    "album": "Parachutes",
-    "releaseYear": "2000",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_726373150",
-    "title": "Charlie Brown",
-    "fullTitle": "Charlie Brown",
-    "artist": "Coldplay",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/d0/84/12d08418-0718-56f4-cd03-3ad36463947a/mzaf_1779112745123229801.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fa/41/1c/fa411c37-7a65-8a3e-71c9-4b566c49617c/5099967983858_1562x1562_300dpi.jpg/300x300bb.jpg",
-    "album": "Mylo Xyloto",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_726373202",
-    "title": "Princess of China",
-    "fullTitle": "Princess of China",
-    "artist": "Coldplay",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2c/39/fd/2c39fd53-d7a0-f0ef-7c6f-05f6c19c10fe/mzaf_16668210962625249255.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fa/41/1c/fa411c37-7a65-8a3e-71c9-4b566c49617c/5099967983858_1562x1562_300dpi.jpg/300x300bb.jpg",
-    "album": "Mylo Xyloto",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1122776158",
-    "title": "Green Eyes",
-    "fullTitle": "Green Eyes",
-    "artist": "Coldplay",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/ec/6d/8aec6d06-b619-8ce4-2696-03f59254a139/mzaf_15939756984836122254.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b9/b4/2a/b9b42ad1-1e25-5096-da43-497a247e69a3/190295978051.jpg/300x300bb.jpg",
-    "album": "A Rush of Blood to the Head",
-    "releaseYear": "2002",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1123076933",
-    "title": "Til Kingdom Come",
-    "fullTitle": "Til Kingdom Come",
-    "artist": "Coldplay",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/e1/7f/43e17f9d-5869-05bb-907c-b2c4aa2494bc/mzaf_9567383245486613510.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/300x300bb.jpg",
-    "album": "X&Y",
-    "releaseYear": "2005",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1751728802",
-    "title": "feelslikeimfallinginlove",
-    "fullTitle": "feelslikeimfallinginlove",
-    "artist": "Coldplay",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/b6/b4/24b6b452-f1d3-1641-96d7-a6cf75de81c1/mzaf_4877748280762124077.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/3c/0f/af3c0fe2-1c4f-8499-67a8-14a8e41fdbf8/5021732410535.jpg/300x300bb.jpg",
     "album": "Moon Music",
     "releaseYear": "2024",
@@ -24632,7 +15181,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0d/f0/8b/0df08b64-3743-4ae0-f3cc-1314716d841d/14UMGIM31675.rgb.jpg/300x300bb.jpg",
     "album": "V",
     "releaseYear": "2014",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "it_1396141905",
@@ -24736,7 +15285,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ac/20/32/ac203235-b03b-0e60-e03d-1ea1ee53aceb/14UMGIM31675.rgb.jpg/300x300bb.jpg",
     "album": "V (Deluxe)",
     "releaseYear": "2014",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "id": "it_1440851736",
@@ -25035,7 +15584,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4c/61/9e/4c619ed5-1f87-0fb8-0cc3-ecdb2d3189d3/23UMGIM52349.rgb.jpg/300x300bb.jpg",
     "album": "RUNAWAY - Single",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1445299328",
@@ -25113,58 +15662,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9f/5b/8b/9f5b8bcb-8edf-c065-b25d-3872b0d50d92/19UMGIM85967.rgb.jpg/300x300bb.jpg",
     "album": "Human (Deluxe)",
     "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1381916994",
-    "title": "Start Again",
-    "fullTitle": "Start Again (feat. Logic)",
-    "artist": "OneRepublic",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/0b/13/5b0b1323-19a8-f6f0-634b-be496a4b354b/mzaf_8904504779022822428.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/8a/fb/9b8afb81-03ad-975a-a2d8-93533fb7dd67/18UMGIM26534.rgb.jpg/300x300bb.jpg",
-    "album": "13 Reasons Why (Season 2)",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440734643",
-    "title": "Good Life",
-    "fullTitle": "Good Life",
-    "artist": "OneRepublic",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/70/1a/63/701a63cb-551d-16ad-d446-96ac914914f4/mzaf_17162637033119610175.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/b0/4a/6eb04ae7-8ca9-7b27-b251-b428b16d6815/09UMGIM41498.rgb.jpg/300x300bb.jpg",
-    "album": "Waking Up (Deluxe Version)",
-    "releaseYear": "2009",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1444271422",
-    "title": "Rich Love",
-    "fullTitle": "Rich Love",
-    "artist": "OneRepublic",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/fd/8e/cafd8ebd-4b55-95a2-e31e-a25d04c4c9ee/mzaf_18170600431788024779.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2e/c1/c0/2ec1c059-b25e-9e10-b8af-89a71a097733/00602557750669.rgb.jpg/300x300bb.jpg",
-    "album": "Rich Love - Single",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440889781",
-    "title": "Stop and Stare",
-    "fullTitle": "Stop and Stare",
-    "artist": "OneRepublic",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/29/90/ac299078-5a99-5cd8-9d33-2bd4881db715/mzaf_14069815007235843861.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bc/5b/2c/bc5b2c34-a392-3cd2-4077-12d6b8451ba3/07UMGIM16721.rgb.jpg/300x300bb.jpg",
-    "album": "Dreaming Out Loud",
-    "releaseYear": "2007",
     "difficulty": "hard"
   },
   {
@@ -25269,7 +15766,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/13/44/05/134405bd-9e27-a678-8953-b5f724201f95/093624948988.jpg/300x300bb.jpg",
     "album": "Meteora (Deluxe Edition)",
     "releaseYear": "2003",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_518869937",
@@ -25373,7 +15870,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/13/44/05/134405bd-9e27-a678-8953-b5f724201f95/093624948988.jpg/300x300bb.jpg",
     "album": "Meteora (Deluxe Edition)",
     "releaseYear": "2003",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1766137053",
@@ -25386,7 +15883,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/21/cf/6921cff3-7074-118a-ece2-4012450e6c75/093624839811.jpg/300x300bb.jpg",
     "album": "From Zero",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_590431786",
@@ -25399,7 +15896,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/53/a7/7f/53a77fab-c54c-a57b-8130-248fc12d0c80/093624948995.jpg/300x300bb.jpg",
     "album": "Hybrid Theory (Deluxe Edition)",
     "releaseYear": "2000",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_590427307",
@@ -25412,7 +15909,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/73/03/56/730356d5-a510-3d3f-d3c6-171f64700d35/093624948971.jpg/300x300bb.jpg",
     "album": "Minutes to Midnight (Deluxe Edition)",
     "releaseYear": "2007",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_590423281",
@@ -25451,110 +15948,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/13/44/05/134405bd-9e27-a678-8953-b5f724201f95/093624948988.jpg/300x300bb.jpg",
     "album": "Meteora (Deluxe Edition)",
     "releaseYear": "2003",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_590434074",
-    "title": "Waiting for the End",
-    "fullTitle": "Waiting for the End",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/d6/2f/ecd62f7f-a923-3b77-a096-4f5218cf6e1a/mzaf_18129945862297187297.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c8/48/6b/c8486bda-1628-6fd9-68f4-27a256a4bf3b/093624948940.jpg/300x300bb.jpg",
-    "album": "A Thousand Suns (Deluxe Edition)",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_518869940",
-    "title": "CASTLE OF GLASS",
-    "fullTitle": "CASTLE OF GLASS",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/7c/eb/e37ceb3a-12b3-2a15-0041-439ecd79776e/mzaf_11631586962860892090.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/ae/96/55/ae965544-a29d-5355-910a-1cc14dab7542/contsched.ltemslzy.jpg/300x300bb.jpg",
-    "album": "LIVING THINGS",
-    "releaseYear": "2012",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_590431779",
-    "title": "With You",
-    "fullTitle": "With You",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/e6/00/6ae60010-371d-d0af-e4a9-974ccc7a8a6a/mzaf_1461308461144324815.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/53/a7/7f/53a77fab-c54c-a57b-8130-248fc12d0c80/093624948995.jpg/300x300bb.jpg",
-    "album": "Hybrid Theory (Deluxe Edition)",
-    "releaseYear": "2000",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_590434080",
-    "title": "The Catalyst",
-    "fullTitle": "The Catalyst",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/5b/66/ce5b665e-41ef-f60e-d837-eca0b76f13a9/mzaf_6229671648714296626.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c8/48/6b/c8486bda-1628-6fd9-68f4-27a256a4bf3b/093624948940.jpg/300x300bb.jpg",
-    "album": "A Thousand Suns (Deluxe Edition)",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1204427653",
-    "title": "Good Goodbye",
-    "fullTitle": "Good Goodbye (feat. Pusha T & Stormzy)",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/f6/7d/86f67db1-c9bb-d483-0a46-359810057616/mzaf_644361934235133089.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/de/b4/76/deb4760b-1733-d09f-8ab5-3da9381d5080/093624913214.jpg/300x300bb.jpg",
-    "album": "One More Light",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_590431787",
-    "title": "Forgotten",
-    "fullTitle": "Forgotten",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/20/7a/c4207aa9-1f6a-34ed-a9f2-daacb3e082b3/mzaf_11726437958916424066.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/53/a7/7f/53a77fab-c54c-a57b-8130-248fc12d0c80/093624948995.jpg/300x300bb.jpg",
-    "album": "Hybrid Theory (Deluxe Edition)",
-    "releaseYear": "2000",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1204427655",
-    "title": "Battle Symphony",
-    "fullTitle": "Battle Symphony",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/ab/b2/c7abb244-cc00-493f-0655-2729ebf73858/mzaf_18382245699629546097.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/de/b4/76/deb4760b-1733-d09f-8ab5-3da9381d5080/093624913214.jpg/300x300bb.jpg",
-    "album": "One More Light",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_590431790",
-    "title": "Pushing Me Away",
-    "fullTitle": "Pushing Me Away",
-    "artist": "Linkin Park",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/8f/ba/bb8fba11-9bd4-f890-53cf-0699aed402e6/mzaf_17593910878871147048.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/53/a7/7f/53a77fab-c54c-a57b-8130-248fc12d0c80/093624948995.jpg/300x300bb.jpg",
-    "album": "Hybrid Theory (Deluxe Edition)",
-    "releaseYear": "2000",
     "difficulty": "hard"
   },
   {
@@ -25659,7 +16052,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/300x300bb.jpg",
     "album": "AM",
     "releaseYear": "2013",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_663098064",
@@ -25763,7 +16156,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/82/90/14/829014ad-a301-62ab-bee6-f4cca4457411/mzi.hozudery.jpg/300x300bb.jpg",
     "album": "Favourite Worst Nightmare",
     "releaseYear": "2007",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_111153858",
@@ -25776,7 +16169,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/cf/9b/96/cf9b9637-f619-eceb-5382-e9b4d44e74fb/dj.npwkgmai.jpg/300x300bb.jpg",
     "album": "Whatever People Say I Am, That's What I'm Not",
     "releaseYear": "2006",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_663098052",
@@ -25789,7 +16182,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/300x300bb.jpg",
     "album": "AM",
     "releaseYear": "2013",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_178360061",
@@ -25841,97 +16234,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/8e/cf/448ecfff-7f7d-286c-8a4a-b631eeeefedb/887828045563.png/300x300bb.jpg",
     "album": "The Car",
     "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1367926554",
-    "title": "Star Treatment",
-    "fullTitle": "Star Treatment",
-    "artist": "Arctic Monkeys",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/5d/9f/295d9fa7-0dbb-d64c-59f2-de1bc919784e/mzaf_15937253112946179306.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f3/ac/06/f3ac06b3-9217-adc8-cc33-8e930293e495/887835044184.png/300x300bb.jpg",
-    "album": "Tranquility Base Hotel & Casino",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1639369021",
-    "title": "There’d Better Be A Mirrorball",
-    "fullTitle": "There’d Better Be A Mirrorball",
-    "artist": "Arctic Monkeys",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/39/a7/a839a724-e8d8-3cac-1347-d524a7d46c7f/mzaf_17115094785134563408.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/8e/cf/448ecfff-7f7d-286c-8a4a-b631eeeefedb/887828045563.png/300x300bb.jpg",
-    "album": "The Car",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1367926559",
-    "title": "Four out of Five",
-    "fullTitle": "Four out of Five",
-    "artist": "Arctic Monkeys",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/b5/fe/3ab5fe75-00df-a8a8-c112-b46cf4183f5e/mzaf_7517531751233778035.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f3/ac/06/f3ac06b3-9217-adc8-cc33-8e930293e495/887835044184.png/300x300bb.jpg",
-    "album": "Tranquility Base Hotel & Casino",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_111153609",
-    "title": "Red Light Indicates Doors Are Secured",
-    "fullTitle": "Red Light Indicates Doors Are Secured",
-    "artist": "Arctic Monkeys",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/6b/4a/ae6b4a65-c805-c1df-7723-96723c2c7f67/mzaf_7085299864297262852.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/cf/9b/96/cf9b9637-f619-eceb-5382-e9b4d44e74fb/dj.npwkgmai.jpg/300x300bb.jpg",
-    "album": "Whatever People Say I Am, That's What I'm Not",
-    "releaseYear": "2006",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_251499387",
-    "title": "Balaclava",
-    "fullTitle": "Balaclava",
-    "artist": "Arctic Monkeys",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/68/25/1f6825be-59fa-68ea-d8e1-f98404616593/mzaf_4091428048107138419.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/82/90/14/829014ad-a301-62ab-bee6-f4cca4457411/mzi.hozudery.jpg/300x300bb.jpg",
-    "album": "Favourite Worst Nightmare",
-    "releaseYear": "2007",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_111153440",
-    "title": "Dancing Shoes",
-    "fullTitle": "Dancing Shoes",
-    "artist": "Arctic Monkeys",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/03/20/83/032083b5-759f-5130-99f5-e59943e1b409/mzaf_953473463008085982.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/cf/9b/96/cf9b9637-f619-eceb-5382-e9b4d44e74fb/dj.npwkgmai.jpg/300x300bb.jpg",
-    "album": "Whatever People Say I Am, That's What I'm Not",
-    "releaseYear": "2006",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_690852324",
-    "title": "Stop the World I Wanna Get Off With You",
-    "fullTitle": "Stop the World I Wanna Get Off With You",
-    "artist": "Arctic Monkeys",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b2/8a/52/b28a52fd-2225-e6d4-8a2b-cf5ee9ac6657/mzaf_6263888565053506937.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3a/b9/2e/3ab92ee4-6ae7-b233-2dac-5d27e8d4ac57/ams_whydyouonlycall.jpg/300x300bb.jpg",
-    "album": "Why'd You Only Call Me When You're High? - Single",
-    "releaseYear": "2013",
     "difficulty": "hard"
   },
   {
@@ -26036,7 +16338,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/db/68/77db6860-5e0f-08ef-47e3-eb5915771dab/886445447897.jpg/300x300bb.jpg",
     "album": "Wiped Out!",
     "releaseYear": "2015",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1440532834",
@@ -26140,7 +16442,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/36/40/a5/3640a5e1-9796-6ada-b273-75817d113f29/886448909538.jpg/300x300bb.jpg",
     "album": "Chip Chrome & The Mono-Tones (Deluxe)",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_766049424",
@@ -26153,7 +16455,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/cc/3b/4e/cc3b4e36-b7cd-59fb-5e69-8a1bfa0291b2/dj.hrcbrzio.jpg/300x300bb.jpg",
     "album": "The Love Collection - Single",
     "releaseYear": "2013",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1440532754",
@@ -26166,7 +16468,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/fc/d0/89/fcd0899c-2236-a726-9ce2-ebb110e2204d/886447414545.jpg/300x300bb.jpg",
     "album": "Hard To Imagine The Neighbourhood Ever Changing",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1525010457",
@@ -26218,97 +16520,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/6c/9b/046c9b90-ff04-7950-6e76-c5a63b646c30/093624826361.jpg/300x300bb.jpg",
     "album": "(((((ultraSOUND)))))",
     "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1030116023",
-    "title": "Single",
-    "fullTitle": "Single",
-    "artist": "The Neighbourhood",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/1b/6e/451b6e3a-826d-d7a4-2c69-2f56737b9288/mzaf_14461687449031094699.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/db/68/77db6860-5e0f-08ef-47e3-eb5915771dab/886445447897.jpg/300x300bb.jpg",
-    "album": "Wiped Out!",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_635016645",
-    "title": "Female Robbery",
-    "fullTitle": "Female Robbery",
-    "artist": "The Neighbourhood",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/03/c0/4203c0af-5cad-3056-f846-d602e4796980/mzaf_751872228890457.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/71/00/287100fb-5c31-0195-5343-e6b3625886d0/886443969834.jpg/300x300bb.jpg",
-    "album": "Female Robbery - Single of the Week",
-    "releaseYear": "2012",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1682584242",
-    "title": "Leaving Tonight",
-    "fullTitle": "Leaving Tonight",
-    "artist": "The Neighbourhood",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/e8/cc/3ee8cccd-1d46-2431-756d-3ae7d1e91877/mzaf_9413444168183320197.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/8c/90/2f8c903f-6e84-b820-3ab6-d9ec0044267a/196871038430.jpg/300x300bb.jpg",
-    "album": "I Love You. (10th Anniversary Edition)",
-    "releaseYear": "2012",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1030116017",
-    "title": "Wiped Out!",
-    "fullTitle": "Wiped Out!",
-    "artist": "The Neighbourhood",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/e9/a9/dfe9a99d-0494-30f0-3207-9a3b94408a0f/mzaf_8795694315687524306.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/db/68/77db6860-5e0f-08ef-47e3-eb5915771dab/886445447897.jpg/300x300bb.jpg",
-    "album": "Wiped Out!",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_646040936",
-    "title": "Wires",
-    "fullTitle": "Wires",
-    "artist": "The Neighbourhood",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/f8/b5/c3f8b5d9-88d9-ace0-90df-4427082352ac/mzaf_4252888706415733003.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1a/a2/96/1aa2966f-325c-68f1-8f83-40fdfa37e5cf/886444003575.jpg/300x300bb.jpg",
-    "album": "I'm Sorry... - Single",
-    "releaseYear": "2012",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1440532817",
-    "title": "Stuck with Me",
-    "fullTitle": "Stuck with Me",
-    "artist": "The Neighbourhood",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/23/d8/6123d8d6-2db0-af3b-f098-f2db22115b32/mzaf_15385576751769204680.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/fc/d0/89/fcd0899c-2236-a726-9ce2-ebb110e2204d/886447414545.jpg/300x300bb.jpg",
-    "album": "Hard To Imagine The Neighbourhood Ever Changing",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_635016641",
-    "title": "Let It Go",
-    "fullTitle": "Let It Go",
-    "artist": "The Neighbourhood",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/0f/fb/ed0ffbf7-fda7-739a-e207-f133595e02a1/mzaf_10920005693368557832.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/71/00/287100fb-5c31-0195-5343-e6b3625886d0/886443969834.jpg/300x300bb.jpg",
-    "album": "I Love You.",
-    "releaseYear": "2013",
     "difficulty": "hard"
   },
   {
@@ -26413,7 +16624,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8b/39/c6/8b39c655-00fd-1b52-52ea-a98de686f3ae/075679659729.jpg/300x300bb.jpg",
     "album": "Clancy",
     "releaseYear": "2024",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_585128670",
@@ -26517,7 +16728,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/300x300bb.jpg",
     "album": "Blurryface",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_974485814",
@@ -26530,7 +16741,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/300x300bb.jpg",
     "album": "Blurryface",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1507187886",
@@ -26543,7 +16754,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/cd/b2/ac/cdb2ac23-6806-3840-aa2f-c637ee0cba44/075679817556.jpg/300x300bb.jpg",
     "album": "Level of Concern - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_585128677",
@@ -26556,7 +16767,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/73/a7/23/73a7230c-19df-02a4-ff4e-53944024f63d/075679957924.jpg/300x300bb.jpg",
     "album": "Vessel",
     "releaseYear": "2011",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1422828209",
@@ -26595,110 +16806,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/300x300bb.jpg",
     "album": "Blurryface",
     "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_585128669",
-    "title": "Migraine",
-    "fullTitle": "Migraine",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/65/43/1f654382-b491-ca74-ae44-ea90757eba5d/mzaf_6826984951588157949.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/73/a7/23/73a7230c-19df-02a4-ff4e-53944024f63d/075679957924.jpg/300x300bb.jpg",
-    "album": "Vessel",
-    "releaseYear": "2012",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_585128667",
-    "title": "Ode To Sleep",
-    "fullTitle": "Ode To Sleep",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/da/f0/39daf0bc-72e8-542e-1945-7d4efa6c68ed/mzaf_15607026572563298887.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/73/a7/23/73a7230c-19df-02a4-ff4e-53944024f63d/075679957924.jpg/300x300bb.jpg",
-    "album": "Vessel",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1422828219",
-    "title": "Nico And The Niners",
-    "fullTitle": "Nico And The Niners",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/ad/1f/96ad1fc4-0600-ad72-a0c0-964c11a15a46/mzaf_14603824564368073055.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a3/c0/2b/a3c02b76-baa1-e575-dcba-247509200424/075679864789.jpg/300x300bb.jpg",
-    "album": "Trench",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_974485816",
-    "title": "Goner",
-    "fullTitle": "Goner",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/0e/76/ba0e76f0-763c-27dd-42f6-41fd3d6e2ab2/mzaf_6673640928594657456.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/300x300bb.jpg",
-    "album": "Blurryface",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1561837008",
-    "title": "Shy Away",
-    "fullTitle": "Shy Away",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/69/e6/cf/69e6cf46-73fd-62f1-2625-057be5c07768/mzaf_15057556754004683449.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/f2/15/24f215e3-52cc-078b-d799-d58d606feddd/075679786210.jpg/300x300bb.jpg",
-    "album": "Scaled And Icy",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_974485813",
-    "title": "Message Man",
-    "fullTitle": "Message Man",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/d9/1c/eed91ca8-d2ec-b965-0350-8ca3c1d23c28/mzaf_3704970300734789611.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/300x300bb.jpg",
-    "album": "Blurryface",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_974485811",
-    "title": "Polarize",
-    "fullTitle": "Polarize",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/ed/8b/f9ed8bbe-27be-070f-4549-05e81e20a2a3/mzaf_17208250614014642765.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/300x300bb.jpg",
-    "album": "Blurryface",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1422828464",
-    "title": "Cut My Lip",
-    "fullTitle": "Cut My Lip",
-    "artist": "Twenty One Pilots",
-    "genre": "Rock & Alt",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/8d/0f/e88d0fae-542d-f38a-7fa9-a579de6f4088/mzaf_8518130522858439486.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a3/c0/2b/a3c02b76-baa1-e575-dcba-247509200424/075679864789.jpg/300x300bb.jpg",
-    "album": "Trench",
-    "releaseYear": "2018",
     "difficulty": "hard"
   },
   {
@@ -26803,7 +16910,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
     "album": "Un Verano Sin Ti",
     "releaseYear": "2022",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1622045948",
@@ -26907,7 +17014,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/3a/db/cf3adbe6-8ea1-f60f-60fd-713eefda3962/193483317984.jpg/300x300bb.jpg",
     "album": "X 100PRE",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1622045961",
@@ -26920,7 +17027,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
     "album": "Un Verano Sin Ti",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1214658772",
@@ -26933,7 +17040,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/20/c4/88/20c488b6-819a-31ba-a87c-00af3a4e9328/050742332501_art.jpg/300x300bb.jpg",
     "album": "No Te Hagas - Single",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1225663087",
@@ -26985,84 +17092,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
     "album": "Un Verano Sin Ti",
     "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1787022993",
-    "title": "WELTiTA",
-    "fullTitle": "WELTiTA",
-    "artist": "Bad Bunny",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fa/38/20/fa382077-6038-507d-d043-054d8b716a2a/mzaf_9850027962155209593.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
-    "album": "DeBÍ TiRAR MáS FOToS",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1787023670",
-    "title": "TURiSTA",
-    "fullTitle": "TURiSTA",
-    "artist": "Bad Bunny",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/d3/06/25d306b1-5945-28fd-4929-01989d2167e8/mzaf_5509319358451232894.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
-    "album": "DeBÍ TiRAR MáS FOToS",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1523100120",
-    "title": "UN DIA",
-    "fullTitle": "UN DIA (ONE DAY)",
-    "artist": "Bad Bunny",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/d5/2b/40d52beb-0340-3cdd-87e2-381dc7d395ce/mzaf_15479019833935841785.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c7/93/50/c793507d-c4df-4c05-80bb-3a02d9f95113/20UMGIM38540.rgb.jpg/300x300bb.jpg",
-    "album": "UN DIA (ONE DAY) - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1460403329",
-    "title": "La Cartera",
-    "fullTitle": "La Cartera",
-    "artist": "Bad Bunny",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/9f/a6/a89fa616-fbfe-944b-6763-dec32561bb80/mzaf_7763749035595826784.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c7/72/d1/c772d175-a331-e0bd-8cf4-62b7cea7e6c3/886447686447.jpg/300x300bb.jpg",
-    "album": "Gangalee",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1299972308",
-    "title": "Sensualidad",
-    "fullTitle": "Sensualidad (feat. Mambo Kingz & DJ Luian)",
-    "artist": "Bad Bunny",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/c4/e5/b6c4e5f9-b6db-331a-725c-2cfb6d88f60f/mzaf_5234489305622674042.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a3/1a/e9/a31ae99b-9378-d004-a613-e8f7397f7a88/191773843489.jpg/300x300bb.jpg",
-    "album": "Sensualidad (feat. Mambo Kingz & DJ Luian) - Single",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1542103221",
-    "title": "YO VISTO ASÍ",
-    "fullTitle": "YO VISTO ASÍ",
-    "artist": "Bad Bunny",
-    "genre": "Pop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/0e/60/230e6078-0550-7f1d-5b3a-83f9ba9c893c/mzaf_13043718732366245803.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
-    "album": "EL ÚLTIMO TOUR DEL MUNDO",
-    "releaseYear": "2020",
     "difficulty": "hard"
   },
   {
@@ -27271,7 +17300,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/fe/a3/f0/fea3f08c-a4e4-5cbb-6795-ca8655cfb29e/196589226808.jpg/300x300bb.jpg",
     "album": "LOOK AT ME: THE ALBUM",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1627354436",
@@ -27349,45 +17378,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/eb/8b/46eb8b85-9080-bcbf-91ed-bca837583f49/196589849335.jpg/300x300bb.jpg",
     "album": "I'm Not Human (feat. Lil Uzi Vert) - Single",
     "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1441480829",
-    "title": "Train food",
-    "fullTitle": "Train food",
-    "artist": "XXXTENTACION",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/52/f2/8052f2de-fc33-f87d-7a01-f9f0c556dcdb/mzaf_12287223158181230253.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/9f/ed/83/9fed8304-a865-af85-8d99-6d063cd60c93/dj.ipmigxtf.jpg/300x300bb.jpg",
-    "album": "SKINS",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1472816466",
-    "title": "Royalty",
-    "fullTitle": "Royalty (feat. Ky-Mani Marley, Stefflon Don & Vybz Kartel)",
-    "artist": "XXXTENTACION",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/8f/8c/dc8f8cfb-6ffb-1a53-6809-3fd9496a1742/mzaf_5624762576701614150.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/71/6b/75/716b759a-3743-cc82-8dc9-98d879d7bcef/888915944639_cover.jpg/300x300bb.jpg",
-    "album": "Royalty (feat. Ky-Mani Marley, Stefflon Don & Vybz Kartel) - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1488557347",
-    "title": "ATTENTION!",
-    "fullTitle": "ATTENTION!",
-    "artist": "XXXTENTACION",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/b4/df/c2b4df3f-409d-4ee1-9e03-277cdce6ef90/mzaf_6790077916136305385.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6d/7b/91/6d7b91ed-4820-fc05-0cf1-272f4b25285e/194690007002_cover.jpg/300x300bb.jpg",
-    "album": "Bad Vibes Forever",
-    "releaseYear": "2019",
     "difficulty": "hard"
   },
   {
@@ -27726,7 +17716,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/53/b4/9d/53b49db9-871b-0b26-df8e-60a5b221a772/23UM1IM00336.rgb.jpg/300x300bb.jpg",
     "album": "Last Time I Saw You - Single",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "it_1443191581",
@@ -27817,7 +17807,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ef/3a/a7/ef3aa7ad-cd69-2bb4-ce18-6c4de937a5e3/17UM1IM64709.rgb.jpg/300x300bb.jpg",
     "album": "Culture II",
     "releaseYear": "2017",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "id": "it_1440776809",
@@ -27999,7 +17989,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6a/f7/6c/6af76c1c-4d8e-c761-8856-34d273b4703b/075679873682.jpg/300x300bb.jpg",
     "album": "Invasion of Privacy",
     "releaseYear": "2018",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1368156580",
@@ -28103,7 +18093,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6a/f7/6c/6af76c1c-4d8e-c761-8856-34d273b4703b/075679873682.jpg/300x300bb.jpg",
     "album": "Invasion of Privacy",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1368157238",
@@ -28116,7 +18106,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6a/f7/6c/6af76c1c-4d8e-c761-8856-34d273b4703b/075679873682.jpg/300x300bb.jpg",
     "album": "Invasion of Privacy",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1368157234",
@@ -28129,7 +18119,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6a/f7/6c/6af76c1c-4d8e-c761-8856-34d273b4703b/075679873682.jpg/300x300bb.jpg",
     "album": "Invasion of Privacy",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1439777400",
@@ -28181,84 +18171,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ce/89/27/ce8927ca-6120-0f00-8932-57d453fc187e/075679772718.jpg/300x300bb.jpg",
     "album": "Rumors - Single",
     "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6796123559",
-    "title": "AH HA",
-    "fullTitle": "AH HA",
-    "artist": "Cardi B",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/25/e4/ea25e454-3382-a41e-3055-ae84769d112f/mzaf_5237060398291245100.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fe/c0/87/fec08752-1d79-5809-100c-8a4de8517fde/075679562944.jpg/300x300bb.jpg",
-    "album": "AH HA - Single",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1821314305",
-    "title": "Outside",
-    "fullTitle": "Outside",
-    "artist": "Cardi B",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/24/2d/17242def-4438-a376-2806-f983b13825dd/mzaf_10225556598658417673.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0e/d2/f5/0ed2f5ee-bdce-8362-4729-5e02f1baa86a/075679605689.jpg/300x300bb.jpg",
-    "album": "Outside - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1082899098",
-    "title": "Stripper Hoe",
-    "fullTitle": "Stripper Hoe",
-    "artist": "Cardi B",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4c/77/74/4c7774c8-822e-91dc-3388-9482ac33be29/mzaf_7215983474603297984.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/06/61/49/06614963-4415-73cd-f139-4e23513a8a13/888915193907_cover.jpg/300x300bb.jpg",
-    "album": "Stripper Hoe - Single",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1706355538",
-    "title": "Bongos",
-    "fullTitle": "Bongos",
-    "artist": "Cardi B",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/2c/81/eb2c8158-8189-0e0d-a6a8-fed653c3b99f/mzaf_7426681982385731667.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/93/f1/51/93f15169-07a7-5175-837f-dc1f6208c64d/075679669216.jpg/300x300bb.jpg",
-    "album": "Bongos - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1478850042",
-    "title": "YES",
-    "fullTitle": "YES (feat. Dre)",
-    "artist": "Cardi B",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/64/33/3a/64333aa8-f687-4579-b1c6-38a29908a7ff/mzaf_16653680493864309068.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5a/7b/27/5a7b27cf-c0a0-3460-f73f-7b135eb3ed15/888915998915_cover.jpg/300x300bb.jpg",
-    "album": "YES (feat. Dre) - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1735401402",
-    "title": "Enough",
-    "fullTitle": "Enough (Miami)",
-    "artist": "Cardi B",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/75/43/ea75437d-4252-7d66-0c28-e02321d503b6/mzaf_3233253458715825246.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/be/47/83/be47834f-6298-9efa-8969-752efb2f1746/075679651747.jpg/300x300bb.jpg",
-    "album": "Enough (Miami) - Single",
-    "releaseYear": "2024",
     "difficulty": "hard"
   },
   {
@@ -28363,7 +18275,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/93/1d/8e/931d8ec8-5191-f0df-201b-100731c58cac/075679642554.jpg/300x300bb.jpg",
     "album": "MEGAN",
     "releaseYear": "2023",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1463027714",
@@ -28467,7 +18379,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/18/6f/f9/186ff955-7ef2-4037-931c-1963da0ebb86/810043680462.jpg/300x300bb.jpg",
     "album": "Suga",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1463027720",
@@ -28480,7 +18392,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/03/b9/97/03b99709-f2cb-4e58-d5fe-d8e86675f0fa/814908028147.jpg/300x300bb.jpg",
     "album": "Fever",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1540031623",
@@ -28493,7 +18405,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ef/fb/93/effb9391-725f-97fe-7030-adc542cfba17/810043683203.jpg/300x300bb.jpg",
     "album": "Good News",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1463027717",
@@ -28545,71 +18457,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/cd/49/b2/cd49b217-f897-5de3-b225-3bb6af705968/810043681742.jpg/300x300bb.jpg",
     "album": "Girls in the Hood - Single",
     "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1613376653",
-    "title": "Sweetest Pie",
-    "fullTitle": "Sweetest Pie",
-    "artist": "Megan Thee Stallion",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/8c/5f/1c8c5f38-97ef-b7b8-af86-ad57960c992e/mzaf_6297381232181462245.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a4/9a/11/a49a118a-546b-3e7f-4112-92058392e282/850039440298.jpg/300x300bb.jpg",
-    "album": "Sweetest Pie - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1495386633",
-    "title": "B.I.T.C.H.",
-    "fullTitle": "B.I.T.C.H.",
-    "artist": "Megan Thee Stallion",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/2a/41/2d2a4170-88e6-61ce-9e16-c19d7e00a395/mzaf_3698402696994959112.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/66/30/42/6630429b-f415-d3c8-d862-1931b098e161/810043680097.jpg/300x300bb.jpg",
-    "album": "B.I.T.C.H. - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1752024385",
-    "title": "B.A.S.",
-    "fullTitle": "B.A.S. (feat. Kyle Richh)",
-    "artist": "Megan Thee Stallion",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/0c/ef/650cef90-fe4e-7917-b740-d2bd6c841686/mzaf_12926989803041428890.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/93/1d/8e/931d8ec8-5191-f0df-201b-100731c58cac/075679642554.jpg/300x300bb.jpg",
-    "album": "MEGAN",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1463027724",
-    "title": "Sex Talk",
-    "fullTitle": "Sex Talk",
-    "artist": "Megan Thee Stallion",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/3f/b4/523fb434-4de6-f890-8df3-1d43811218c5/mzaf_17283970125109049388.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/03/b9/97/03b99709-f2cb-4e58-d5fe-d8e86675f0fa/814908028147.jpg/300x300bb.jpg",
-    "album": "Fever",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1706359183",
-    "title": "Bongos",
-    "fullTitle": "Bongos",
-    "artist": "Megan Thee Stallion",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/15/ee/bf15eeb2-fd02-402d-256a-91174f78b8b2/mzaf_581677938238212046.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/93/04/b0/9304b045-4182-0857-a7df-f9e2d151b093/075679669209.jpg/300x300bb.jpg",
-    "album": "Bongos - Single",
-    "releaseYear": "2023",
     "difficulty": "hard"
   },
   {
@@ -28714,7 +18561,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b5/a4/a8/b5a4a8a0-2a94-52bb-6e43-c47429a07ddf/886449138852.jpg/300x300bb.jpg",
     "album": "Planet Her",
     "releaseYear": "2021",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1525911351",
@@ -28818,7 +18665,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/7c/b7/7a/7cb77ad6-fab3-c4a0-16d9-4a25d2020aa8/886447027905.jpg/300x300bb.jpg",
     "album": "Candy - Single",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1453882525",
@@ -28831,7 +18678,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/38/65/d1/3865d141-a2dc-9ded-7503-415a27e32195/886447511657.jpg/300x300bb.jpg",
     "album": "Amala (Deluxe Version)",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1834042905",
@@ -28844,7 +18691,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/c7/ea/a8c7eaf1-d92b-2ce6-74e4-1282b369cd38/196873471068.jpg/300x300bb.jpg",
     "album": "Vie",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1486263167",
@@ -28896,71 +18743,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b5/a4/a8/b5a4a8a0-2a94-52bb-6e43-c47429a07ddf/886449138852.jpg/300x300bb.jpg",
     "album": "Planet Her",
     "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_904682068",
-    "title": "So High",
-    "fullTitle": "So High",
-    "artist": "Doja Cat",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/94/57/2194579c-1163-4bf7-5f5e-a9e33f7c0469/mzaf_1368084987762860229.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f0/f2/b1/f0f2b1f3-b5b5-8e74-b8cd-8235e304fc12/886444672474.jpg/300x300bb.jpg",
-    "album": "Purrr! - EP",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1453882736",
-    "title": "Tia Tamera",
-    "fullTitle": "Tia Tamera (feat. Rico Nasty)",
-    "artist": "Doja Cat",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/15/0b/48150b15-f8f5-84ab-8036-07682ade1ccc/mzaf_3748816935249865538.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/38/65/d1/3865d141-a2dc-9ded-7503-415a27e32195/886447511657.jpg/300x300bb.jpg",
-    "album": "Amala (Deluxe Version)",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1486263177",
-    "title": "Rules",
-    "fullTitle": "Rules",
-    "artist": "Doja Cat",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/53/93/c35393ca-e42a-8339-a750-2e24850c3f9c/mzaf_11842848659558780608.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5b/14/ea/5b14eabe-3fbd-4f00-273d-4760dfbb5aef/886447991824.jpg/300x300bb.jpg",
-    "album": "Hot Pink",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571169195",
-    "title": "I Don't Do Drugs",
-    "fullTitle": "I Don't Do Drugs (feat. Ariana Grande)",
-    "artist": "Doja Cat",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/89/45/e7894544-01b2-c349-f505-58ad708473d6/mzaf_4219131644128542594.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b5/a4/a8/b5a4a8a0-2a94-52bb-6e43-c47429a07ddf/886449138852.jpg/300x300bb.jpg",
-    "album": "Planet Her",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1453882737",
-    "title": "Mooo!",
-    "fullTitle": "Mooo!",
-    "artist": "Doja Cat",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/66/a6/0566a630-f9ca-af10-3894-071d5ccaa89c/mzaf_3675119408485131324.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/38/65/d1/3865d141-a2dc-9ded-7503-415a27e32195/886447511657.jpg/300x300bb.jpg",
-    "album": "Amala (Deluxe Version)",
-    "releaseYear": "2020",
     "difficulty": "hard"
   },
   {
@@ -29065,7 +18847,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d9/c6/19/d9c619a1-af1e-462c-e42e-35cb5a3f2160/075679798091.jpg/300x300bb.jpg",
     "album": "Thats What They All Say",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1618136917",
@@ -29169,7 +18951,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0c/3e/f2/0c3ef243-44b8-7636-d4be-884d6e5fe01b/075679685834.jpg/300x300bb.jpg",
     "album": "Jackman.",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1684690254",
@@ -29182,7 +18964,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0c/3e/f2/0c3ef243-44b8-7636-d4be-884d6e5fe01b/075679685834.jpg/300x300bb.jpg",
     "album": "Jackman.",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1878823477",
@@ -29195,7 +18977,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/b3/a8/66b3a8d4-10ba-ea70-37ff-b1e73ab22431/075679586377.jpg/300x300bb.jpg",
     "album": "Monica",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1878823480",
@@ -29247,97 +19029,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a2/f5/0e/a2f50e26-fb99-4fc4-1292-f6677a17efbe/075679804006.jpg/300x300bb.jpg",
     "album": "Automatic - Single",
     "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1618136921",
-    "title": "Dua Lipa",
-    "fullTitle": "Dua Lipa",
-    "artist": "Jack Harlow",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/70/c7/0970c782-e4f3-cae3-b60b-16b00fb78285/mzaf_13871015992569255322.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/b8/83/e6b88344-8d5d-d353-06bc-3204d87071e6/075679759252.jpg/300x300bb.jpg",
-    "album": "Come Home The Kids Miss You",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1618137276",
-    "title": "Churchill Downs",
-    "fullTitle": "Churchill Downs (feat. Drake)",
-    "artist": "Jack Harlow",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/73/3f/0c733f64-f52f-dd02-f527-be8d1af6ac40/mzaf_3390005758513766009.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/b8/83/e6b88344-8d5d-d353-06bc-3204d87071e6/075679759252.jpg/300x300bb.jpg",
-    "album": "Come Home The Kids Miss You",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1878823471",
-    "title": "My Winter",
-    "fullTitle": "My Winter",
-    "artist": "Jack Harlow",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/77/69/307769c9-325b-eaa5-ac78-ae76487557e0/mzaf_15479340612844600708.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/b3/a8/66b3a8d4-10ba-ea70-37ff-b1e73ab22431/075679586377.jpg/300x300bb.jpg",
-    "album": "Monica",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1501840578",
-    "title": "I WANNA SEE SOME ASS",
-    "fullTitle": "I WANNA SEE SOME ASS (feat. JetsonMade)",
-    "artist": "Jack Harlow",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/ae/73/44ae73b8-92de-8a62-506c-28b4b6f3c47c/mzaf_10576692607075216998.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ed/cd/de/edcddeff-77a2-a857-e606-90e5c545a8d9/075679821171.jpg/300x300bb.jpg",
-    "album": "Sweet Action",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1542886679",
-    "title": "Way Out",
-    "fullTitle": "Way Out (feat. Big Sean)",
-    "artist": "Jack Harlow",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bc/0d/6f/bc0d6f70-1cec-1c5f-8d09-a5c1597c524d/mzaf_1481968464299189759.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d9/c6/19/d9c619a1-af1e-462c-e42e-35cb5a3f2160/075679798091.jpg/300x300bb.jpg",
-    "album": "Thats What They All Say",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1542886676",
-    "title": "Face of My City",
-    "fullTitle": "Face of My City (feat. Lil Baby)",
-    "artist": "Jack Harlow",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/52/2d/0a522d44-9d78-35e5-f40b-e581eddeea64/mzaf_15666573054766751425.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d9/c6/19/d9c619a1-af1e-462c-e42e-35cb5a3f2160/075679798091.jpg/300x300bb.jpg",
-    "album": "Thats What They All Say",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1480038465",
-    "title": "THRU THE NIGHT",
-    "fullTitle": "THRU THE NIGHT (feat. Bryson Tiller)",
-    "artist": "Jack Harlow",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/c9/c8/2ec9c8b9-ca8f-f225-6c92-2d7f0d184363/mzaf_9156147971656071770.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/dc/5d/c1dc5d0a-022a-30df-c8a4-0ab0d21f613e/075679838148.jpg/300x300bb.jpg",
-    "album": "Confetti",
-    "releaseYear": "2019",
     "difficulty": "hard"
   },
   {
@@ -29546,7 +19237,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/58/98/62589807-decc-d418-eb07-5060de9a2d3e/26UMGIM63617.rgb.jpg/300x300bb.jpg",
     "album": "HABIBTI (FOMO)",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1711424375",
@@ -29621,58 +19312,6 @@ window.SONGS_CATALOG = [
     "genre": "Hip-Hop",
     "lang": "en",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/ee/85/42ee85cd-2eeb-f131-c4ab-33624324bb1b/mzaf_10325104599856468520.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/fc/ca/a0/fccaa0f7-0c60-0f80-ab06-5b3c7e23e240/075679767868.jpg/300x300bb.jpg",
-    "album": "Life of a DON",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1672446573",
-    "title": "Bus Stop",
-    "fullTitle": "Bus Stop (feat. Brent Faiyaz)",
-    "artist": "Don Toliver",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/c0/c3/89c0c39c-45a2-bddb-2808-a37369d7f151/mzaf_2134455710884314382.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/15/3a/d1/153ad1fe-7884-a2e5-18be-750a21bd1af1/075679699893.jpg/300x300bb.jpg",
-    "album": "Love Sick",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1672446222",
-    "title": "Private Landing",
-    "fullTitle": "Private Landing (feat. Justin Bieber & Future)",
-    "artist": "Don Toliver",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/50/f2/e9/50f2e925-e36c-2b1b-f33f-e2a9f5bcde26/mzaf_14076988485635509790.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/15/3a/d1/153ad1fe-7884-a2e5-18be-750a21bd1af1/075679699893.jpg/300x300bb.jpg",
-    "album": "Love Sick",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6818059593",
-    "title": "Solar Eclipse",
-    "fullTitle": "Solar Eclipse",
-    "artist": "Don Toliver",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/d3/6f/9fd36f93-027f-aef8-67cc-e9701f8cf4f5/mzaf_4702287322687146814.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/58/98/62589807-decc-d418-eb07-5060de9a2d3e/26UMGIM63617.rgb.jpg/300x300bb.jpg",
-    "album": "HABIBTI (FOMO)",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1587804195",
-    "title": "What You Need",
-    "fullTitle": "What You Need",
-    "artist": "Don Toliver",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/af/bd/86afbdf4-be57-3db2-24a4-65db1ab2454e/mzaf_4359729881738102830.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/fc/ca/a0/fccaa0f7-0c60-0f80-ab06-5b3c7e23e240/075679767868.jpg/300x300bb.jpg",
     "album": "Life of a DON",
     "releaseYear": "2021",
@@ -29780,7 +19419,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/37/da/5a37da14-dea1-6123-6553-4a24010657e8/196872534610.jpg/300x300bb.jpg",
     "album": "Last Lap",
     "releaseYear": "2024",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1772368558",
@@ -29884,7 +19523,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/bd/0a/c2/bd0ac233-26e9-27f1-a7fb-c5946c408c4b/808391092006.jpg/300x300bb.jpg",
     "album": "Pray 4 Love (Deluxe)",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1705142116",
@@ -29897,7 +19536,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5b/a7/ea/5ba7eac4-dbbd-8ebf-7ec4-92ee97a442c3/196871436434.jpg/300x300bb.jpg",
     "album": "Nostalgia",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1772368701",
@@ -29910,7 +19549,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/37/da/5a37da14-dea1-6123-6553-4a24010657e8/196872534610.jpg/300x300bb.jpg",
     "album": "Last Lap",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1574726587",
@@ -29923,7 +19562,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/8a/e0/698ae041-54dc-ec77-b01a-ab7d44dd82ae/808391111462.jpg/300x300bb.jpg",
     "album": "SoulFly",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1705141977",
@@ -29962,110 +19601,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/fd/d8/27fdd820-297a-9312-67e2-23621343929b/808391079595.jpg/300x300bb.jpg",
     "album": "Pray 4 Love",
     "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1574559193",
-    "title": "Girl of My Dreams",
-    "fullTitle": "Girl of My Dreams",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/57/9e/2b579e4e-48a6-b90b-dbf8-efa4a5d8a48d/mzaf_6143510497052012643.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/fd/d8/27fdd820-297a-9312-67e2-23621343929b/808391079595.jpg/300x300bb.jpg",
-    "album": "Pray 4 Love",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1574726599",
-    "title": "OMDB",
-    "fullTitle": "OMDB",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/55/74/a85574d3-2414-285c-4231-fe4ee483f78e/mzaf_207249863160575333.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/8a/e0/698ae041-54dc-ec77-b01a-ab7d44dd82ae/808391111462.jpg/300x300bb.jpg",
-    "album": "SoulFly",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1772368561",
-    "title": "Federal Nightmares",
-    "fullTitle": "Federal Nightmares",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/29/ab/9f29ab3e-42d4-ac45-7dd7-f4638a9edc5a/mzaf_5028740297977058810.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/37/da/5a37da14-dea1-6123-6553-4a24010657e8/196872534610.jpg/300x300bb.jpg",
-    "album": "Last Lap",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1574726517",
-    "title": "Soul Fly",
-    "fullTitle": "Soul Fly",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/b3/cb/02b3cb63-4886-6fea-f846-0ea7d15d5159/mzaf_3461398974707292526.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/8a/e0/698ae041-54dc-ec77-b01a-ab7d44dd82ae/808391111462.jpg/300x300bb.jpg",
-    "album": "SoulFly",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569720554",
-    "title": "Rich Off Pain",
-    "fullTitle": "Rich Off Pain",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/d4/dd/76d4ddf8-3480-e1dc-b4c0-2a8a018949d0/mzaf_12466311214922967548.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/60/b5/ef/60b5ef3d-f5d0-e066-7ce6-4508229eac60/21UMGIM47175.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1772368556",
-    "title": "Last Lap",
-    "fullTitle": "Last Lap",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/be/58/fbbe581e-b6ae-834a-0d8e-ddb3dafc12cf/mzaf_15732496000130912876.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/37/da/5a37da14-dea1-6123-6553-4a24010657e8/196872534610.jpg/300x300bb.jpg",
-    "album": "Last Lap",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1705141563",
-    "title": "Long Journey",
-    "fullTitle": "Long Journey",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/7a/49/1c7a4929-7bf2-0d88-4f8d-77a18f4f301a/mzaf_9488399003672590966.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5b/a7/ea/5ba7eac4-dbbd-8ebf-7ec4-92ee97a442c3/196871436434.jpg/300x300bb.jpg",
-    "album": "Nostalgia",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1705142119",
-    "title": "Keep It G",
-    "fullTitle": "Keep It G",
-    "artist": "Rod Wave",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/d8/40/add8408e-5ac3-27d0-96a0-276bd43a191c/mzaf_4552319445016016833.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5b/a7/ea/5ba7eac4-dbbd-8ebf-7ec4-92ee97a442c3/196871436434.jpg/300x300bb.jpg",
-    "album": "Nostalgia",
-    "releaseYear": "2023",
     "difficulty": "hard"
   },
   {
@@ -30170,7 +19705,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/89/c8/a689c864-9a82-0c8f-e37a-21ead3a29ac6/886448463481.jpg/300x300bb.jpg",
     "album": "THE GOAT",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1593949631",
@@ -30274,7 +19809,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/55/c9/f0/55c9f0eb-2ef8-8738-743f-effa1d6d6ff4/886449384075.jpg/300x300bb.jpg",
     "album": "Hall of Fame 2.0",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1511793625",
@@ -30287,7 +19822,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/89/c8/a689c864-9a82-0c8f-e37a-21ead3a29ac6/886448463481.jpg/300x300bb.jpg",
     "album": "THE GOAT",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1569245979",
@@ -30300,7 +19835,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/cc/ee/80ccee60-e117-6404-d6f8-83f1e19fda24/886449331611.jpg/300x300bb.jpg",
     "album": "Hall of Fame",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1511793634",
@@ -30313,7 +19848,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/89/c8/a689c864-9a82-0c8f-e37a-21ead3a29ac6/886448463481.jpg/300x300bb.jpg",
     "album": "THE GOAT",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1511793606",
@@ -30352,110 +19887,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/cc/ee/80ccee60-e117-6404-d6f8-83f1e19fda24/886449331611.jpg/300x300bb.jpg",
     "album": "Hall of Fame",
     "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569245995",
-    "title": "Bloody Canvas",
-    "fullTitle": "Bloody Canvas",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/49/60/4c496044-52cf-7c3b-8e44-c83cfdcd55a5/mzaf_2690880838025526981.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/cc/ee/80ccee60-e117-6404-d6f8-83f1e19fda24/886449331611.jpg/300x300bb.jpg",
-    "album": "Hall of Fame",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1593949998",
-    "title": "Suicide",
-    "fullTitle": "Suicide (feat. Lil Tjay)",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/b6/e4/6bb6e410-e56b-5fbf-58eb-7cf99c9b384f/mzaf_15471998252817244913.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/55/c9/f0/55c9f0eb-2ef8-8738-743f-effa1d6d6ff4/886449384075.jpg/300x300bb.jpg",
-    "album": "Hall of Fame 2.0",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1593949642",
-    "title": "Heating Up",
-    "fullTitle": "Heating Up (feat. YungLiV)",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/6c/86/9e6c8660-43e7-f03f-00c7-cad384f10a15/mzaf_16702774423570514240.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/55/c9/f0/55c9f0eb-2ef8-8738-743f-effa1d6d6ff4/886449384075.jpg/300x300bb.jpg",
-    "album": "Hall of Fame 2.0",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1511793630",
-    "title": "Beautiful Pain",
-    "fullTitle": "Beautiful Pain (Losin My Mind)",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/29/b9/b329b9ae-69fc-c789-fc33-8be8adce32df/mzaf_605638038905340618.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/89/c8/a689c864-9a82-0c8f-e37a-21ead3a29ac6/886448463481.jpg/300x300bb.jpg",
-    "album": "THE GOAT",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569245993",
-    "title": "Clueless",
-    "fullTitle": "Clueless (feat. Pop Smoke & Fivio Foreign)",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/43/f4/6243f41b-fba8-0c42-6cb6-f52e6390bfb6/mzaf_10947444549891278731.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/cc/ee/80ccee60-e117-6404-d6f8-83f1e19fda24/886449331611.jpg/300x300bb.jpg",
-    "album": "Hall of Fame",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569245983",
-    "title": "Fame & Riches",
-    "fullTitle": "Fame & Riches (feat. Roddy Ricch)",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/27/cd/9127cd50-7e4a-7cc3-f879-d6da572fcbe5/mzaf_10214795199133910690.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/cc/ee/80ccee60-e117-6404-d6f8-83f1e19fda24/886449331611.jpg/300x300bb.jpg",
-    "album": "Hall of Fame",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1511794006",
-    "title": "Wishing For A Hero",
-    "fullTitle": "Wishing For A Hero (feat. BJ the Chicago Kid)",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/46/d3/3f46d383-69ef-a086-16d3-115dd2df99b5/mzaf_4447084155285225691.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/89/c8/a689c864-9a82-0c8f-e37a-21ead3a29ac6/886448463481.jpg/300x300bb.jpg",
-    "album": "THE GOAT",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1511793624",
-    "title": "33",
-    "fullTitle": "33",
-    "artist": "Polo G",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/28/2b/f3/282bf3f7-1739-1d9d-e091-1d2dd6e1e9b6/mzaf_8504142761770726586.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/89/c8/a689c864-9a82-0c8f-e37a-21ead3a29ac6/886448463481.jpg/300x300bb.jpg",
-    "album": "THE GOAT",
-    "releaseYear": "2020",
     "difficulty": "hard"
   },
   {
@@ -30560,7 +19991,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c7/45/b0/c745b05a-04ee-104e-1c32-a3861d1ec0e6/602507370848.jpg/300x300bb.jpg",
     "album": "Just Cause Y'all Waited 2 (Deluxe)",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1614870427",
@@ -30664,7 +20095,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/10/e7/1d/10e71dfd-498f-4083-ff54-56ddbd7f098e/602577023620.jpg/300x300bb.jpg",
     "album": "Signed to the Streets 3",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1574567037",
@@ -30677,7 +20108,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/10/e7/1d/10e71dfd-498f-4083-ff54-56ddbd7f098e/602577023620.jpg/300x300bb.jpg",
     "album": "Signed to the Streets 3",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1365152874",
@@ -30690,7 +20121,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e6/51/0d/e6510d4e-97ec-5f3e-878c-5f05546ec545/888915591383_cover.jpg/300x300bb.jpg",
     "album": "Just Cause Y'all Waited",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1574560411",
@@ -30742,84 +20173,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8f/8c/14/8f8c148f-6433-db54-3bf1-e6db24031437/602508067440.jpg/300x300bb.jpg",
     "album": "Love Songs 4 the Streets 2",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1574560403",
-    "title": "Prada You",
-    "fullTitle": "Prada You",
-    "artist": "Lil Durk",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/51/43/66514365-25a4-ef1d-ea13-8948ad7c74f0/mzaf_9475444785507618337.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8f/8c/14/8f8c148f-6433-db54-3bf1-e6db24031437/602508067440.jpg/300x300bb.jpg",
-    "album": "Love Songs 4 the Streets 2",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569712091",
-    "title": "Voice of the Heroes",
-    "fullTitle": "Voice of the Heroes",
-    "artist": "Lil Durk",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b4/d3/26/b4d326b6-9f9f-421f-385e-07cdfabc2fcf/mzaf_14647975019177499626.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9a/51/3f/9a513f0d-452a-a4de-aa54-3d629a94d2c3/21UMGIM47174.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569712386",
-    "title": "Rich Off Pain",
-    "fullTitle": "Rich Off Pain",
-    "artist": "Lil Durk",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/49/44/134944a9-cc3b-ae03-1763-001e7506d9ed/mzaf_13709323322920323561.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9a/51/3f/9a513f0d-452a-a4de-aa54-3d629a94d2c3/21UMGIM47174.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569712095",
-    "title": "Who I Want",
-    "fullTitle": "Who I Want",
-    "artist": "Lil Durk",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/f7/7d/54f77d92-ab71-c0bd-8a30-412be9225a21/mzaf_15744970170097947042.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9a/51/3f/9a513f0d-452a-a4de-aa54-3d629a94d2c3/21UMGIM47174.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1574566917",
-    "title": "Neighorhood Hero",
-    "fullTitle": "Neighorhood Hero",
-    "artist": "Lil Durk",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/33/c4/6333c487-9ca2-1b2e-b6a1-38bff69c4d8c/mzaf_16001454966192080156.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/10/e7/1d/10e71dfd-498f-4083-ff54-56ddbd7f098e/602577023620.jpg/300x300bb.jpg",
-    "album": "Signed to the Streets 3",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1569712110",
-    "title": "Okay",
-    "fullTitle": "Okay",
-    "artist": "Lil Durk",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/94/0e/ca940e9e-5000-bf4e-826f-d56e30d5cb3d/mzaf_5626343176481770622.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9a/51/3f/9a513f0d-452a-a4de-aa54-3d629a94d2c3/21UMGIM47174.rgb.jpg/300x300bb.jpg",
-    "album": "The Voice of the Heroes",
-    "releaseYear": "2021",
     "difficulty": "hard"
   },
   {
@@ -30924,7 +20277,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/ea/af/7eeaaf89-01d2-5e93-a633-cf6d2c882ed9/075679834003.jpg/300x300bb.jpg",
     "album": "AI YoungBoy 2",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1840689542",
@@ -31028,7 +20381,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/88/41/24/88412499-70a0-24eb-64a9-f645321fc1ca/075679725158.jpg/300x300bb.jpg",
     "album": "Realer 2",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1713820100",
@@ -31041,7 +20394,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2c/4e/61/2c4e61b1-2b49-1d67-b326-e38865801316/23UM1IM33448.rgb.jpg/300x300bb.jpg",
     "album": "Decided 2",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1482953524",
@@ -31054,7 +20407,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/ea/af/7eeaaf89-01d2-5e93-a633-cf6d2c882ed9/075679834003.jpg/300x300bb.jpg",
     "album": "AI YoungBoy 2",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1482953518",
@@ -31067,7 +20420,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/ea/af/7eeaaf89-01d2-5e93-a633-cf6d2c882ed9/075679834003.jpg/300x300bb.jpg",
     "album": "AI YoungBoy 2",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1482953244",
@@ -31106,110 +20459,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/ea/af/7eeaaf89-01d2-5e93-a633-cf6d2c882ed9/075679834003.jpg/300x300bb.jpg",
     "album": "AI YoungBoy 2",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1617171223",
-    "title": "Home Ain't Home",
-    "fullTitle": "Home Ain't Home (feat. Rod Wave)",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/60/72/9460725b-f347-f5a4-56e8-ad7d36c7382b/mzaf_2452516422923154064.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4d/54/ec/4d54eccd-8e71-4217-cb81-445adc77136b/075679750006.jpg/300x300bb.jpg",
-    "album": "The Last Slimeto",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1482953521",
-    "title": "Rich As Hell",
-    "fullTitle": "Rich As Hell",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/67/43/ef674341-2c28-7dd0-ef24-c59d1dfef5dd/mzaf_16340245809030492804.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/ea/af/7eeaaf89-01d2-5e93-a633-cf6d2c882ed9/075679834003.jpg/300x300bb.jpg",
-    "album": "AI YoungBoy 2",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1782044033",
-    "title": "Missing Everything",
-    "fullTitle": "Missing Everything",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/bc/8d/25bc8dc9-1bcd-6baf-daf8-225ff36a6686/mzaf_10733998317358942671.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/49/a7/f0/49a7f0e8-5091-8fbb-b9af-b6eb5578ba6f/198704214783_Cover.jpg/300x300bb.jpg",
-    "album": "I Just Got A Lot On My Shoulders",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1617170962",
-    "title": "I Know",
-    "fullTitle": "I Know",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/84/12/2a8412cd-2dbb-1c72-fe53-1a2ec14d1878/mzaf_8236970762497027615.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4d/54/ec/4d54eccd-8e71-4217-cb81-445adc77136b/075679750006.jpg/300x300bb.jpg",
-    "album": "The Last Slimeto",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1782043817",
-    "title": "Sneaking",
-    "fullTitle": "Sneaking",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/b1/d1/2db1d1c6-fdb7-de93-8e75-b755188861a0/mzaf_7667342377305708162.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/49/a7/f0/49a7f0e8-5091-8fbb-b9af-b6eb5578ba6f/198704214783_Cover.jpg/300x300bb.jpg",
-    "album": "I Just Got A Lot On My Shoulders",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1713820200",
-    "title": "Deep Down",
-    "fullTitle": "Deep Down",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/6a/ba/bd6abaf8-2b76-770b-a1da-45474e29d1c9/mzaf_9930195365765530521.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2c/4e/61/2c4e61b1-2b49-1d67-b326-e38865801316/23UM1IM33448.rgb.jpg/300x300bb.jpg",
-    "album": "Decided 2",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1530123160",
-    "title": "All In",
-    "fullTitle": "All In",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/54/13/f1541338-9c11-8c9e-b0cb-7958ccaceadf/mzaf_16459086800678848340.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/13/d6/e3/13d6e3ac-7a38-c6c3-6566-e027f3735426/075679802378.jpg/300x300bb.jpg",
-    "album": "Top",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1680836429",
-    "title": "Rear View",
-    "fullTitle": "Rear View",
-    "artist": "YoungBoy Never Broke Again",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/cf/5e/15cf5e4d-7b51-f12b-6c6a-57e8bf35dd55/mzaf_16404037062630439933.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/23/1a/8d/231a8dce-9868-fd5c-ac98-4e6836c14a46/23UMGIM36442.rgb.jpg/300x300bb.jpg",
-    "album": "Don't Try This At Home",
-    "releaseYear": "2023",
     "difficulty": "hard"
   },
   {
@@ -31314,7 +20563,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c9/ca/6b/c9ca6b51-87a9-4a13-d37f-24535687023d/23UMGIM63882.rgb.jpg/300x300bb.jpg",
     "album": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE)",
     "releaseYear": "2023",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1169569871",
@@ -31418,7 +20667,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/3c/7e/d9/3c7ed9dc-1329-a0db-641c-713ec940cf7a/886447013847.jpg/300x300bb.jpg",
     "album": "A$AP Forever (feat. Moby) - Single",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_994727310",
@@ -31431,7 +20680,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/94/18/89/941889ea-7ccc-d052-72ad-bc050ad8cd25/886444594820.jpg/300x300bb.jpg",
     "album": "AT.LONG.LAST.A$AP",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_994727379",
@@ -31444,7 +20693,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/94/18/89/941889ea-7ccc-d052-72ad-bc050ad8cd25/886444594820.jpg/300x300bb.jpg",
     "album": "AT.LONG.LAST.A$AP",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_994727303",
@@ -31496,71 +20745,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/94/18/89/941889ea-7ccc-d052-72ad-bc050ad8cd25/886444594820.jpg/300x300bb.jpg",
     "album": "AT.LONG.LAST.A$AP",
     "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1169569860",
-    "title": "Crazy Brazy",
-    "fullTitle": "Crazy Brazy (feat. A$AP Rocky, A$AP Twelvyy & Key)",
-    "artist": "A$AP Rocky",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/e4/33/4de43344-e1ec-dbb3-51ca-8c3949bd5621/mzaf_10376942638772334801.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a2/c6/b3/a2c6b37a-b2eb-a56e-c585-28772cd74f0a/886446189048.jpg/300x300bb.jpg",
-    "album": "Cozy Tapes, Vol. 1: Friends",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1271968014",
-    "title": "RAF",
-    "fullTitle": "RAF (feat. A$AP Rocky, Playboi Carti, Quavo, Lil Uzi Vert & Frank Ocean)",
-    "artist": "A$AP Rocky",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/85/52/4a8552f8-9349-7d49-c867-92df5449a786/mzaf_3568255547817949132.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/bc/8f/f5bc8f15-b802-1ea5-53b3-6cb99f022d5e/886446425856.jpg/300x300bb.jpg",
-    "album": "Cozy Tapes, Vol. 2: Too Cozy",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_886816956",
-    "title": "Hella Hoes",
-    "fullTitle": "Hella Hoes (feat. A$AP Rocky, A$AP Ferg, A$AP Nast & A$AP Twelvyy)",
-    "artist": "A$AP Rocky",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/74/01/91740189-634a-96fe-1b4f-d7936aa51130/mzaf_5422238795463878528.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6a/43/8a/6a438a2a-ae5a-14b7-ac79-0d0c5abb6d2d/886444666633.jpg/300x300bb.jpg",
-    "album": "Hella Hoes (feat. A$AP Rocky, A$AP Ferg, A$AP Nast & A$AP Twelvyy) - Single",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1362807566",
-    "title": "Bad Company",
-    "fullTitle": "Bad Company (feat. BlocBoy JB)",
-    "artist": "A$AP Rocky",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7d/15/f5/7d15f520-9588-d7e2-8bfc-ebb514fb10ac/mzaf_7060526473686293268.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c9/ae/2f/c9ae2f5e-750f-a917-2f61-99cab367f9d2/886447018835.jpg/300x300bb.jpg",
-    "album": "Bad Company (feat. BlocBoy JB) - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1387635034",
-    "title": "F**k Sleep",
-    "fullTitle": "F**k Sleep (feat. FKA twigs)",
-    "artist": "A$AP Rocky",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/9e/46/d49e4640-c2de-0518-eebb-6ff8aaa69458/mzaf_8108384847894276915.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/fb/df/5ffbdfb9-34ba-7ff7-0a62-bf87ab47df5d/886447076446.jpg/300x300bb.jpg",
-    "album": "TESTING",
-    "releaseYear": "2018",
     "difficulty": "hard"
   },
   {
@@ -31665,7 +20849,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/23/39/38/23393826-762f-ec76-dc1e-9344f647c958/093624905981.jpg/300x300bb.jpg",
     "album": "Circles",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1494022963",
@@ -31769,7 +20953,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a5/f7/d9/a5f7d909-56a4-813b-15ce-fc50e32afb7d/093624817154.jpg/300x300bb.jpg",
     "album": "The Divine Feminine (10th Anniversary)",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1780891640",
@@ -31782,7 +20966,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f0/ba/18/f0ba1896-543e-8949-95e3-575c298fcae3/093624834984.jpg/300x300bb.jpg",
     "album": "Balloonerism",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1501337769",
@@ -31795,7 +20979,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/31/fd/22/31fd22c4-2d0d-1821-ea7d-00ed2520ceee/093624905967.jpg/300x300bb.jpg",
     "album": "Circles (Deluxe)",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1845373680",
@@ -31808,7 +20992,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/b4/62/91b4629a-0f72-6e25-19ab-b9717758df92/192641089770.jpg/300x300bb.jpg",
     "album": "Macadelic",
     "releaseYear": "2012",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1780891690",
@@ -31847,110 +21031,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/06/97/6e/06976eea-47ab-d369-88f2-4d7cae5b331e/093624924395.jpg/300x300bb.jpg",
     "album": "GO:OD AM",
     "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1137966332",
-    "title": "Cinderella",
-    "fullTitle": "Cinderella (feat. Ty Dolla $ign)",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/22/09/66220922-80bd-7758-f9ab-601dcfae9077/mzaf_17552938916380030049.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/33/cc/4d/33cc4d85-e92a-b171-1b72-4dc882ce2359/093624918844.jpg/300x300bb.jpg",
-    "album": "The Divine Feminine",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1847746548",
-    "title": "Poppy",
-    "fullTitle": "Poppy",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/78/b7/0b78b7a8-f2db-2b9c-4094-3bc8860ff1c9/mzaf_9961723725153640088.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b2/5d/1b/b25d1b7a-6357-a53e-1aeb-5d25173e8802/192641536007.jpg/300x300bb.jpg",
-    "album": "K.I.D.S. (Deluxe)",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1844942176",
-    "title": "Objects in the Mirror",
-    "fullTitle": "Objects in the Mirror",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/fb/bd/affbbdde-5b1e-ed43-bd39-3bbc4c7b09d4/mzaf_4423159190955982087.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/1d/de/d81dde01-e482-0eca-8a96-ba6a178472df/197338651971.jpg/300x300bb.jpg",
-    "album": "Watching Movies with the Sound Off",
-    "releaseYear": "2013",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1845378548",
-    "title": "On And On",
-    "fullTitle": "On And On",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/8c/7d/968c7df8-5cda-8c21-91fc-7771fd5358d1/mzaf_16331580615511495063.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/e5/01/04e501dd-9ef2-729b-f5d2-d9bb923dd685/881034742674.jpg/300x300bb.jpg",
-    "album": "On And On And Beyond - EP",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1585686837",
-    "title": "55",
-    "fullTitle": "55",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/0f/cc/cb0fccd6-cf52-3aca-d750-ac57e16d7b1f/mzaf_10157357102297939703.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/83/77/5b/83775bbf-8f36-f373-6af9-cb7c0bfa2d49/093624879787.jpg/300x300bb.jpg",
-    "album": "Faces",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1137966091",
-    "title": "Congratulations",
-    "fullTitle": "Congratulations (feat. Bilal)",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/02/06/dd0206de-feb4-ae56-f36a-dee0528933ff/mzaf_4549889954354263630.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/33/cc/4d/33cc4d85-e92a-b171-1b72-4dc882ce2359/093624918844.jpg/300x300bb.jpg",
-    "album": "The Divine Feminine",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1137966096",
-    "title": "Dang!",
-    "fullTitle": "Dang! (feat. Anderson .Paak)",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/e3/a4/01e3a403-a7d1-9dd9-f70f-eb2d305e0c4a/mzaf_4907104528483302096.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/33/cc/4d/33cc4d85-e92a-b171-1b72-4dc882ce2359/093624918844.jpg/300x300bb.jpg",
-    "album": "The Divine Feminine",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1780891676",
-    "title": "Excelsior",
-    "fullTitle": "Excelsior",
-    "artist": "Mac Miller",
-    "genre": "Hip-Hop",
-    "lang": "en",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/69/6b/44/696b44e8-fed6-9b60-daf4-6fee77b767d4/mzaf_6145162446676747733.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f0/ba/18/f0ba1896-543e-8949-95e3-575c298fcae3/093624834984.jpg/300x300bb.jpg",
-    "album": "Balloonerism",
-    "releaseYear": "2025",
     "difficulty": "hard"
   },
   {
@@ -32055,7 +21135,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/14/d6/ef14d6e9-6017-1ee3-10b6-eca0d63da510/7290122503579.png/300x300bb.jpg",
     "album": "תסמינים של פרידה",
     "releaseYear": "2025",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1819309867",
@@ -32159,7 +21239,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/97/a9/fe/97a9fe73-54d9-e720-302d-0a7e18b0780f/7290123056050.png/300x300bb.jpg",
     "album": "חלק מהנצח",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1591789413",
@@ -32172,7 +21252,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/18/86/02/188602a5-7649-a650-2e4c-4a918a07eab1/7290116169903.png/300x300bb.jpg",
     "album": "חורף באוטו - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1608851934",
@@ -32185,7 +21265,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ab/c4/9a/abc49ad0-29df-5617-b281-2fde0153db4e/7290117733721.png/300x300bb.jpg",
     "album": "לבד על המיטה - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1819309869",
@@ -32198,7 +21278,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/14/d6/ef14d6e9-6017-1ee3-10b6-eca0d63da510/7290122503579.png/300x300bb.jpg",
     "album": "תסמינים של פרידה",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1579179232",
@@ -32237,110 +21317,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/09/ce/f6/09cef6c6-cc96-f05c-8834-fc5b81a79769/7290115398250.png/300x300bb.jpg",
     "album": "אחרי כל השנים",
     "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1877927564",
-    "title": "משפחה וכבוד",
-    "fullTitle": "משפחה וכבוד",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/4a/89/3a4a893e-75f1-644e-84c4-6a6e35be3af9/mzaf_3032039314296212848.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/97/a9/fe/97a9fe73-54d9-e720-302d-0a7e18b0780f/7290123056050.png/300x300bb.jpg",
-    "album": "חלק מהנצח",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1819309868",
-    "title": "שושו",
-    "fullTitle": "שושו",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/01/96/8801960e-16ed-c934-93a2-4f479e43ef71/mzaf_3918702739823251017.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/14/d6/ef14d6e9-6017-1ee3-10b6-eca0d63da510/7290122503579.png/300x300bb.jpg",
-    "album": "תסמינים של פרידה",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1551644281",
-    "title": "פסקול חיי",
-    "fullTitle": "פסקול חיי",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/e1/db/73e1db51-c469-0833-ceee-555126ebed12/mzaf_4951472276823415000.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/e4/ae/b8e4ae5e-e217-8dbc-2bb4-778074996f49/7290115396911.png/300x300bb.jpg",
-    "album": "פסקול חיי - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1819309865",
-    "title": "איפה שתגידי",
-    "fullTitle": "איפה שתגידי",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/43/b2/e943b2f5-afdf-4028-d627-27f3dfd42b08/mzaf_3127688597821270350.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/14/d6/ef14d6e9-6017-1ee3-10b6-eca0d63da510/7290122503579.png/300x300bb.jpg",
-    "album": "תסמינים של פרידה",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1560168584",
-    "title": "סיפור ישן",
-    "fullTitle": "סיפור ישן",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/7a/4b/d47a4b71-6047-df77-44ea-da23c910daa2/mzaf_7155783140801733221.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/09/ce/f6/09cef6c6-cc96-f05c-8834-fc5b81a79769/7290115398250.png/300x300bb.jpg",
-    "album": "אחרי כל השנים",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1447223851",
-    "title": "שני משוגעים",
-    "fullTitle": "שני משוגעים",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/f5/da/92f5dac9-5399-8d0a-05a2-2d1feeb5a32d/mzaf_15600727783098231696.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/9a/ea/90/9aea902b-6b9f-fbab-547b-fe3526931f0a/7290111898150.png/300x300bb.jpg",
-    "album": "שני משוגעים - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1775158820",
-    "title": "טקילה",
-    "fullTitle": "טקילה",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/cd/55/55cd55dd-b4d5-3f3a-1574-0d05200ec3f5/mzaf_8179924294249693951.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d8/fb/fc/d8fbfca8-51fe-fd8c-c2fa-399fdd7645e7/7290121543132.png/300x300bb.jpg",
-    "album": "לחנים שבורים",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1738406065",
-    "title": "צמוד צמוד",
-    "fullTitle": "צמוד צמוד",
-    "artist": "עומר אדם",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/14/c9/0714c9c3-c778-1a8e-df13-ba9f66c566dd/mzaf_7788457069108917875.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/51/1d/81/511d81f1-47b2-1211-0ba0-a3cdbdf3f731/7290120734135.png/300x300bb.jpg",
-    "album": "צמוד צמוד - Single",
-    "releaseYear": "2024",
     "difficulty": "hard"
   },
   {
@@ -32445,7 +21421,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/d3/4e/9ed34ef6-9f06-8f8b-6c85-029ff69df726/3617057928248.png/300x300bb.jpg",
     "album": "2023",
     "releaseYear": "2023",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1190078401",
@@ -32549,7 +21525,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/63/36/76/6336767d-d57d-4782-5c22-68a83957e897/7290011726409.png/300x300bb.jpg",
     "album": "בשבילך נוצרתי",
     "releaseYear": "2007",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1459517609",
@@ -32562,7 +21538,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2b/81/44/2b81442b-050f-c328-2e30-7bf57fd8aa51/7294276225622.png/300x300bb.jpg",
     "album": "(הפוך מהיקום (חלק ראשון",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1190094867",
@@ -32575,7 +21551,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ab/95/db/ab95dbb1-f65f-159e-91c4-1909be9d9198/7290014697324.png/300x300bb.jpg",
     "album": "הלב על השולחן",
     "releaseYear": "2013",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1222638682",
@@ -32588,7 +21564,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/6b/4c/196b4ced-e912-fa21-0afe-d7c5bc27f265/7293372821424.png/300x300bb.jpg",
     "album": "צליל מיתר",
     "releaseYear": "2001",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1887210759",
@@ -32627,110 +21603,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/4e/5e/6e4e5e94-af86-8a82-13b3-5f692dd2d3af/3615938177419.png/300x300bb.jpg",
     "album": "הפוך מהיקום - חלק שני",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1190264797",
-    "title": "ואולי ביום יפה",
-    "fullTitle": "ואולי ביום יפה",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/b9/26/c5b92671-ccbc-73f3-6179-2cba9d440118/mzaf_1366565400042939396.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/59/9f/a6/599fa61b-74f1-b4ab-aa56-b6a8b433b9ea/7290015069748.png/300x300bb.jpg",
-    "album": "ימים יגידו",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1736775040",
-    "title": "בזמן האחרון",
-    "fullTitle": "בזמן האחרון",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/78/06/8f780637-a991-f925-c975-4e4031483691/mzaf_10872819465234178279.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c7/c2/35/c7c2354e-24d8-f0df-1e34-0af4e82a0ef9/3616845927760.png/300x300bb.jpg",
-    "album": "קצת שמח קצת עצוב",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1444853024",
-    "title": "לא מבינה עברית",
-    "fullTitle": "לא מבינה עברית",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/04/50/ed/0450edb3-3813-7974-1954-82d343a2bdcc/mzaf_18211439624411456140.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/82/3c/32/823c32a5-6d56-ab53-3fc0-2214f6712cbc/7290111897863.png/300x300bb.jpg",
-    "album": "לא מבינה עברית - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1736387020",
-    "title": "ימים טובים",
-    "fullTitle": "ימים טובים",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/28/68/a528685e-f7da-f74f-1986-9e02450cbe90/mzaf_17226464407880633383.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/9f/29/b19f29b1-9b3f-991c-854c-f5c8bc034a47/3616553973264.png/300x300bb.jpg",
-    "album": "להיות מאושר",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1737739911",
-    "title": "שלום אהובתי",
-    "fullTitle": "שלום אהובתי",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/8e/d7/a18ed7db-dcd9-97e6-1e45-6dc23b38e706/mzaf_12614549602437715468.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/26/c7/6726c740-3fc9-0d70-c4dc-c5c0a7125972/3617226300950.png/300x300bb.jpg",
-    "album": "שלום אהובתי - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1190264789",
-    "title": "אני מקווה",
-    "fullTitle": "אני מקווה",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/6c/f8/d96cf8ab-47fb-ea16-ea30-99aabcaaaa30/mzaf_12451077549945650669.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/59/9f/a6/599fa61b-74f1-b4ab-aa56-b6a8b433b9ea/7290015069748.png/300x300bb.jpg",
-    "album": "ימים יגידו",
-    "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1737760323",
-    "title": "באור גדול",
-    "fullTitle": "באור גדול",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/6a/d7/4d6ad75b-6917-b0c4-3f00-7975342be076/mzaf_1876752802843351967.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/61/ec/af61ec9b-1d6f-7c8f-79f4-eb843cd7008b/3616553048535.png/300x300bb.jpg",
-    "album": "באור גדול - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1737740217",
-    "title": "עטלף עיוור",
-    "fullTitle": "עטלף עיוור",
-    "artist": "אייל גולן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/5c/5b/245c5bcf-9cf4-af03-5c6b-2a6241ae1681/mzaf_4526778320698161109.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/71/ec/e2/71ece2cd-3303-e92d-3fee-282afaf04557/3617224089277.png/300x300bb.jpg",
-    "album": "עטלף עיוור - Single",
-    "releaseYear": "2023",
     "difficulty": "hard"
   },
   {
@@ -32835,7 +21707,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/15/44/78/15447883-3f87-dbd1-8770-537c920f765d/cover.jpg/300x300bb.jpg",
     "album": "צוחקת ובוכה - Single",
     "releaseYear": "2024",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1688447578",
@@ -32939,7 +21811,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9a/c5/c8/9ac5c869-f639-e629-d178-9928e75f67f2/cover.jpg/300x300bb.jpg",
     "album": "כפיות - Single",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1516598670",
@@ -32952,7 +21824,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/08/72/22/0872228a-1737-f69d-27ce-0e74a9cf1031/cover.jpg/300x300bb.jpg",
     "album": "אל תשברי לי את הלב - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1564102039",
@@ -32965,7 +21837,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9d/47/06/9d470603-3ed1-8276-2631-e23dc857000d/cover.jpg/300x300bb.jpg",
     "album": "נוריד ת'חולצה - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1562146947",
@@ -32978,7 +21850,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/a6/f9/6ea6f9d1-662d-86c3-dd89-5e87cda5249c/7290115398526.png/300x300bb.jpg",
     "album": "שושנים עצובות (ישראל בידור) - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1457361872",
@@ -33017,110 +21889,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4c/65/ea/4c65ea1c-43aa-2ef1-4be0-57ad9d86c31c/cover.jpg/300x300bb.jpg",
     "album": "מבטיח - Single",
     "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1327532361",
-    "title": "Shemishehu Yaatzor Oti",
-    "fullTitle": "Shemishehu Yaatzor Oti",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/07/1a/c1071abc-6dec-73d7-4c3d-0dc3582d24a0/mzaf_6953029294345857802.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/cf/37/d3/cf37d3b3-a3ed-2563-4220-385a5986c6d5/cover.jpg/300x300bb.jpg",
-    "album": "Shemishehu Yaatzor Oti - Single",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1379108146",
-    "title": "ילדים כאלה",
-    "fullTitle": "ילדים כאלה",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/ab/24/2fab24ba-4c98-ca6e-8f85-3633d9fee12f/mzaf_14074488003927587624.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/9a/f9/6f/9af96fc7-277f-d800-9b8e-eb27e1e30bed/cover.jpg/300x300bb.jpg",
-    "album": "ילדים כאלה - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1491050091",
-    "title": "מה עבר עליי",
-    "fullTitle": "מה עבר עליי",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/16/1e/11161e36-9a2a-60c6-4fc2-42d5b10820b3/mzaf_1606608381600878099.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/8e/42/c6/8e42c650-beef-7716-ad55-9f752a8aa3b6/cover.jpg/300x300bb.jpg",
-    "album": "מה עבר עליי - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1446251655",
-    "title": "אני מבולבל",
-    "fullTitle": "אני מבולבל",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/b7/68/30b7687f-0a03-05ad-bbc6-f196641df18a/mzaf_13535240666313964151.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/6d/31/33/6d313338-5379-3327-e3d8-3386ce009ea6/cover.jpg/300x300bb.jpg",
-    "album": "אני מבולבל - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1694025735",
-    "title": "לא תראה אותי בוכה",
-    "fullTitle": "לא תראה אותי בוכה",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/63/8a/f0638a87-2fb2-b62c-eff4-185feb44c32e/mzaf_7336233286211337284.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a7/de/5f/a7de5f9b-a36c-a18d-4399-6b7ec13f602d/cover.jpg/300x300bb.jpg",
-    "album": "לא תראה אותי בוכה - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1535446081",
-    "title": "ציפור מדבר",
-    "fullTitle": "ציפור מדבר",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/5c/20/dd5c2099-73a4-a0f7-03d3-0fdee7074ebd/mzaf_1909212873385308964.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/59/2f/da/592fdad3-e6e2-9c48-e634-f1c6a612a07e/cover.jpg/300x300bb.jpg",
-    "album": "צו השעה - צו שני",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1617169701",
-    "title": "בואי נישן על זה",
-    "fullTitle": "בואי נישן על זה",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/c3/16/f4c31695-32bb-4e7f-4ecb-d68ff2af7582/mzaf_9885067517671367160.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ee/a3/d7/eea3d761-aa4e-6942-7b38-a694dc1b549a/cover.jpg/300x300bb.jpg",
-    "album": "בואי נישן על זה - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1518546810",
-    "title": "שבועיים",
-    "fullTitle": "שבועיים",
-    "artist": "עדן חסון",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/e1/51/bae151cb-3a7e-222e-a398-3a2a69f75601/mzaf_9927627430202948715.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9e/4f/7b/9e4f7b65-81b0-132f-18b3-24dca0c96ff1/cover.jpg/300x300bb.jpg",
-    "album": "שבועיים - Single",
-    "releaseYear": "2020",
     "difficulty": "hard"
   },
   {
@@ -33225,7 +21993,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/d1/85/10/d18510d0-4090-a06a-5b76-bb03cdf7b197/7290117737019.png/300x300bb.jpg",
     "album": "ערק - Single",
     "releaseYear": "2022",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1747313723",
@@ -33329,7 +22097,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/34/be/fc/34befc2d-52b1-144c-36a6-4f5c42d96201/cover.jpg/300x300bb.jpg",
     "album": "Shachor O Lavan",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1550605056",
@@ -33342,7 +22110,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/07/48/e6/0748e6d8-78a9-c654-0c37-4709ff39e281/7290115396652.png/300x300bb.jpg",
     "album": "חורף בחלון - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_993777792",
@@ -33355,7 +22123,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/51/49/3b/51493b42-8e9b-0832-2e38-25cc974aac43/cover.jpg/300x300bb.jpg",
     "album": "Album Habchora",
     "releaseYear": "2013",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1822978227",
@@ -33368,7 +22136,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/95/2d/9e952d0f-73b1-4334-e656-eace512aad15/7290122504323.png/300x300bb.jpg",
     "album": "רדיו שטח 3",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1747313727",
@@ -33407,110 +22175,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/95/2d/9e952d0f-73b1-4334-e656-eace512aad15/7290122504323.png/300x300bb.jpg",
     "album": "רדיו שטח 3",
     "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1822978217",
-    "title": "פרופיל 97",
-    "fullTitle": "פרופיל 97",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/60/e3/ae/60e3ae46-f566-9fce-0041-c424a76a86a4/mzaf_6100181345408588097.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/95/2d/9e952d0f-73b1-4334-e656-eace512aad15/7290122504323.png/300x300bb.jpg",
-    "album": "רדיו שטח 3",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1822978218",
-    "title": "שבע שנים",
-    "fullTitle": "שבע שנים",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/65/1c/30651c90-5512-fdb1-2ecd-393ef4fea5c8/mzaf_7827601908459024743.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/95/2d/9e952d0f-73b1-4334-e656-eace512aad15/7290122504323.png/300x300bb.jpg",
-    "album": "רדיו שטח 3",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1650934085",
-    "title": "התיקון הכללי",
-    "fullTitle": "התיקון הכללי",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/55/64/b1556434-bef1-f49b-e505-1684cb18bca6/mzaf_580431129655003215.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/a6/7c/1c/a67c1c35-02de-e3fd-5c08-1af5371c53eb/7290118543275.png/300x300bb.jpg",
-    "album": "רדיו שטח",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1650934082",
-    "title": "הדרך הביתה",
-    "fullTitle": "הדרך הביתה",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/4d/d2/e34dd236-2ff8-54de-3fd8-44ecd0fd81aa/mzaf_14537161852121268583.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/a6/7c/1c/a67c1c35-02de-e3fd-5c08-1af5371c53eb/7290118543275.png/300x300bb.jpg",
-    "album": "רדיו שטח",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_993777926",
-    "title": "Roked Im Hakeev",
-    "fullTitle": "Roked Im Hakeev",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/ac/e6/5dace649-7902-dcc8-1825-9d576cd64b2f/mzaf_1713149360054595834.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/26/d6/41/26d641a6-021a-dd28-60d0-64191b539cf8/cover.jpg/300x300bb.jpg",
-    "album": "Kocha Shel Ahava",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1747313732",
-    "title": "סלינה",
-    "fullTitle": "סלינה",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/8a/fc/5c8afcbc-fb45-aaa0-8bee-d92ede6bfbf2/mzaf_6224100646228520459.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1a/52/e0/1a52e03d-2d98-eba9-b0b9-72a8dc6fba52/7290120736399.png/300x300bb.jpg",
-    "album": "רדיו שטח 2",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1747313728",
-    "title": "מפת העולם",
-    "fullTitle": "מפת העולם",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/fd/2c/2efd2c29-4a6a-a3b0-13e3-3e76becbec82/mzaf_8491026386958832413.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1a/52/e0/1a52e03d-2d98-eba9-b0b9-72a8dc6fba52/7290120736399.png/300x300bb.jpg",
-    "album": "רדיו שטח 2",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1566775250",
-    "title": "מוזיקה טובה",
-    "fullTitle": "מוזיקה טובה",
-    "artist": "פאר טסי",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/dc/41/43dc41b7-9a97-3ea9-16d9-5ba9b357f257/mzaf_12298201488537548812.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/57/07/8a/57078a06-1a92-43e6-2109-9278c7107c62/7290115399523.png/300x300bb.jpg",
-    "album": "פרק א' נגמר",
-    "releaseYear": "2019",
     "difficulty": "hard"
   },
   {
@@ -33615,7 +22279,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/00/00/33/0000338c-3543-4547-46c1-e3a762e2d93b/7290116160382.png/300x300bb.jpg",
     "album": "זוגות כאלה - Single",
     "releaseYear": "2021",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1758275778",
@@ -33719,7 +22383,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/a1/4f/7ca14f32-f90d-8fb5-993a-efa97bbacbde/7290122506396.png/300x300bb.jpg",
     "album": "אוגוסט דאמפ - EP",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1807077781",
@@ -33732,7 +22396,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/30/f3/4930f338-ad53-25cd-1dc7-0d8aabbdc87f/7290122501346.png/300x300bb.jpg",
     "album": "אושר כהן - Single",
     "releaseYear": "2025",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1876888194",
@@ -33745,7 +22409,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/b9/b1/2ab9b105-f4c6-8e51-5623-60dd69c04474/7290123055770.png/300x300bb.jpg",
     "album": "Life Lately - EP",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1554389575",
@@ -33758,7 +22422,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/cf/af/a2/cfafa2a8-b6a0-a240-b8d4-4acf7e571eb9/3615934130579.png/300x300bb.jpg",
     "album": "ברגעים שאת הולכת - Single",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1599490319",
@@ -33797,110 +22461,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c8/70/02/c870028a-d046-9c26-4704-07a3ad5aec09/7290118548331.png/300x300bb.jpg",
     "album": "אושר - EP",
     "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1557231597",
-    "title": "אני אוהב אותך",
-    "fullTitle": "אני אוהב אותך (prod by Navi)",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/e0/a5/e1/e0a5e16e-a76b-9de4-75ac-feba008d9665/mzaf_3186329819515980262.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/0d/16/4e0d169a-55a5-c780-38e2-2133744e181b/7290115397871.png/300x300bb.jpg",
-    "album": "אני אוהב אותך (prod by Navi) - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1828762305",
-    "title": "לא מבין",
-    "fullTitle": "לא מבין",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/f7/6b/ebf76b39-7b9b-ace0-1e54-bff693104675/mzaf_3925150779546854401.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/a1/4f/7ca14f32-f90d-8fb5-993a-efa97bbacbde/7290122506396.png/300x300bb.jpg",
-    "album": "אוגוסט דאמפ - EP",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1714238254",
-    "title": "תרקדי",
-    "fullTitle": "תרקדי (7.10.23)",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/0b/c6/4f0bc686-ee47-f7f5-4e71-abf58712c5f4/mzaf_1894371364557167767.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6f/09/af/6f09af75-085e-f092-c187-4e3edeafd258/7290119807949.png/300x300bb.jpg",
-    "album": "תרקדי (7.10.23) - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1794100420",
-    "title": "ה' יברך אותך",
-    "fullTitle": "ה' יברך אותך",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/93/da/c493da4e-3136-3d96-e02a-bf8e522b6a26/mzaf_11557622974091057498.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/b5/ae/6cb5ae5a-0eca-5505-844e-9130b3e7892d/7290121547901.png/300x300bb.jpg",
-    "album": "גיטרה ולנשום - EP",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1815461679",
-    "title": "אל תעשי לו צרות",
-    "fullTitle": "אל תעשי לו צרות",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/6a/82/5d6a82f9-2076-6eb5-413d-303b2b70fb7b/mzaf_10010167646465130033.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/32/ee/2b/32ee2bf5-32ce-07f4-004d-ebb5d9c1f4a9/7290122502855.png/300x300bb.jpg",
-    "album": "אל תעשי לו צרות - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1669997230",
-    "title": "אקורדים בלילות",
-    "fullTitle": "אקורדים בלילות",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/95/9b/3f959b08-8209-d81f-8e36-cd4a96e12535/mzaf_1345242245566314472.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c8/70/02/c870028a-d046-9c26-4704-07a3ad5aec09/7290118548331.png/300x300bb.jpg",
-    "album": "אושר - EP",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1609868535",
-    "title": "מקבל על עצמי",
-    "fullTitle": "מקבל על עצמי",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/18/a0/4218a036-bf98-6fda-beeb-e39a01bbe170/mzaf_9659406241224865464.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fe/35/88/fe3588eb-7a0a-be6f-4670-61acdff3e4e4/7290117733998.png/300x300bb.jpg",
-    "album": "מקבל על עצמי - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1729192850",
-    "title": "איפה אתה",
-    "fullTitle": "איפה אתה",
-    "artist": "אושר כהן",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/46/cc/5a46cc5b-0e2f-971c-512c-5c223bd67c60/mzaf_17305558453133010866.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/26/45/6b/26456b7c-a385-d91e-6aa6-8b82def6981f/7290120731783.png/300x300bb.jpg",
-    "album": "The Last Episode - Single",
-    "releaseYear": "2024",
     "difficulty": "hard"
   },
   {
@@ -34005,7 +22565,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/c2/e0/56c2e0d1-b163-701c-6969-a2aeaa8e3425/7290118540205.png/300x300bb.jpg",
     "album": "אינטלקטוערס - Single",
     "releaseYear": "2022",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1691842002",
@@ -34109,7 +22669,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/0c/51/100c51a4-2d7a-76ab-10f4-7fd04aed0ef1/7290121540346.png/300x300bb.jpg",
     "album": "בן אדם - Single",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1763493558",
@@ -34122,7 +22682,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b0/81/04/b081042b-15c5-f099-6070-144fb7210a11/7290121540353.png/300x300bb.jpg",
     "album": "עובד בכפר - Single",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1669997231",
@@ -34135,7 +22695,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c8/70/02/c870028a-d046-9c26-4704-07a3ad5aec09/7290118548331.png/300x300bb.jpg",
     "album": "אושר - EP",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1843189744",
@@ -34187,97 +22747,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a9/ea/3f/a9ea3f13-0e77-2287-c723-e930abc36a77/7290121548953.png/300x300bb.jpg",
     "album": "חולמת - Single",
     "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1823203119",
-    "title": "אליס",
-    "fullTitle": "אליס",
-    "artist": "אודיה",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/3e/db/ac3edbe8-240b-b0ae-059f-375ad95f66d1/mzaf_14408577514636337368.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/46/e9/7246e941-b97d-2aeb-3354-a20cb823f631/7290122504439.png/300x300bb.jpg",
-    "album": "אליס - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1570625020",
-    "title": "נצנצים",
-    "fullTitle": "נצנצים",
-    "artist": "אודיה",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/55/52/1f555246-9e23-747c-be10-060090a4fa9b/mzaf_14717517567754461500.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/59/4a/71/594a71c3-7b8f-27fe-4ea1-eab82681bc67/7290116160139.png/300x300bb.jpg",
-    "album": "אור",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1585832312",
-    "title": "מה איתך אבא",
-    "fullTitle": "מה איתך אבא",
-    "artist": "אודיה",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/99/42/d99942ce-3124-8529-f10e-9a23cae96a58/mzaf_12462921580567932882.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/15/3c/0c/153c0ce7-942b-69b2-1518-4ff86403a39e/7290116169019.png/300x300bb.jpg",
-    "album": "מה איתך אבא - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1799568486",
-    "title": "פרפרים",
-    "fullTitle": "פרפרים",
-    "artist": "אודיה",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/4f/6e/d94f6ec4-0bb5-66b2-1f66-d6ada70a5019/mzaf_8606613237216264023.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/3a/65/ea3a650b-a8eb-ff91-1b38-d126575cdae6/7290121548960.png/300x300bb.jpg",
-    "album": "פרפרים - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_6769336023",
-    "title": "השם יעזור",
-    "fullTitle": "השם יעזור",
-    "artist": "אודיה",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/64/d6/6464d663-2302-8fd6-da7b-0b4a95f1e086/mzaf_2242947766300083560.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/7b/be/4f7bbe3a-ce30-ccab-3aa5-8af0913f4165/7290123059211.png/300x300bb.jpg",
-    "album": "השם יעזור",
-    "releaseYear": "2026",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1659897929",
-    "title": "מאמי",
-    "fullTitle": "מאמי",
-    "artist": "אודיה",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/a2/c5/dba2c5b1-90ca-4adf-e273-bf1872f348b0/mzaf_13834781125484004038.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/be/22/0b/be220b23-3a8c-bfc2-7ae9-c66ef0b7464a/7290118546191.png/300x300bb.jpg",
-    "album": "מאמי - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1634196188",
-    "title": "בימים ההם",
-    "fullTitle": "בימים ההם",
-    "artist": "אודיה",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/8c/22/9c8c22a6-df92-7cd5-cf41-92d3d8705dc9/mzaf_10123737821648183287.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/57/5f/43/575f4344-4f11-c60e-f010-d62d32448064/7290118540014.png/300x300bb.jpg",
-    "album": "בימים ההם - Single",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -34382,7 +22851,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/63/30/02/63300250-13f1-283e-e1e0-785323e47ebb/mzm.olktgyzk.jpg/300x300bb.jpg",
     "album": "גם זה יעבור",
     "releaseYear": "2015",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1588494162",
@@ -34486,7 +22955,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/63/30/02/63300250-13f1-283e-e1e0-785323e47ebb/mzm.olktgyzk.jpg/300x300bb.jpg",
     "album": "גם זה יעבור",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1598585687",
@@ -34499,7 +22968,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cf/2a/d9/cf2ad924-1b72-ea8c-4b21-8d5fb8efdf69/cover.jpg/300x300bb.jpg",
     "album": "מזרח פרוע",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1281327691",
@@ -34512,7 +22981,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/0f/2f/22/0f2f2298-f61a-6038-c623-6dcdeabcf99c/191773696894.jpg/300x300bb.jpg",
     "album": "TunaPark",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1281327393",
@@ -34564,97 +23033,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/0f/2f/22/0f2f2298-f61a-6038-c623-6dcdeabcf99c/191773696894.jpg/300x300bb.jpg",
     "album": "TunaPark",
     "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1598586598",
-    "title": "עומס לב",
-    "fullTitle": "עומס לב (feat. דודו טסה)",
-    "artist": "טונה",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/00/cb/e900cb87-1973-a9bd-ff18-7d606b4b5b83/mzaf_2507504291946111812.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cf/2a/d9/cf2ad924-1b72-ea8c-4b21-8d5fb8efdf69/cover.jpg/300x300bb.jpg",
-    "album": "מזרח פרוע",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1029197436",
-    "title": "סרט ערבי",
-    "fullTitle": "סרט ערבי",
-    "artist": "טונה",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/c1/43/0bc143c4-6252-f8c2-7210-086d80f94ce9/mzaf_1466897999943546395.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/63/30/02/63300250-13f1-283e-e1e0-785323e47ebb/mzm.olktgyzk.jpg/300x300bb.jpg",
-    "album": "גם זה יעבור",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1281327682",
-    "title": "Dvarim Holchim Le Hishtanot",
-    "fullTitle": "Dvarim Holchim Le Hishtanot (feat. ORTEGA)",
-    "artist": "טונה",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/41/2f/01/412f0117-a171-fc32-d271-f92e095ef551/mzaf_4915151715187877386.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/0f/2f/22/0f2f2298-f61a-6038-c623-6dcdeabcf99c/191773696894.jpg/300x300bb.jpg",
-    "album": "TunaPark",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1602381130",
-    "title": "אין בינינו חלל",
-    "fullTitle": "אין בינינו חלל",
-    "artist": "טונה",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/73/a0/a073a0ff-f6a1-b1b9-0fa6-7fd417049d96/mzaf_12882868661945674950.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/59/21/e5/5921e51b-eb48-1f3a-7b6a-9798913ef1e8/cover.jpg/300x300bb.jpg",
-    "album": "ועכשיו לחלק האינטרגלקטי",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1815702746",
-    "title": "רובים ותלתלים",
-    "fullTitle": "רובים ותלתלים",
-    "artist": "טונה",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/3d/b4/3f3db4c7-1e2f-bb8b-eaaf-310c87a9b772/mzaf_1359858919288030576.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/f3/7f/7ff37f79-5b8b-083c-64df-b7cb9e878cef/cover.jpg/300x300bb.jpg",
-    "album": "רובים ותלתלים",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1815702738",
-    "title": "אהבת אותי",
-    "fullTitle": "אהבת אותי",
-    "artist": "טונה",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/39/81/5b39810c-21ff-4cbd-df50-dcc599a279d6/mzaf_5979780497533707070.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/f3/7f/7ff37f79-5b8b-083c-64df-b7cb9e878cef/cover.jpg/300x300bb.jpg",
-    "album": "רובים ותלתלים",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1598586591",
-    "title": "טרנטונה",
-    "fullTitle": "טרנטונה",
-    "artist": "טונה",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/28/d5/eb28d504-2d4c-2d09-4d39-9a3b9250d16b/mzaf_5663439643943641642.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cf/2a/d9/cf2ad924-1b72-ea8c-4b21-8d5fb8efdf69/cover.jpg/300x300bb.jpg",
-    "album": "מזרח פרוע",
-    "releaseYear": "2021",
     "difficulty": "hard"
   },
   {
@@ -34759,7 +23137,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/f3/7f/7ff37f79-5b8b-083c-64df-b7cb9e878cef/cover.jpg/300x300bb.jpg",
     "album": "רובים ותלתלים",
     "releaseYear": "2025",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1588488617",
@@ -34863,7 +23241,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2c/6c/81/2c6c8111-6525-8c55-a9fa-6d6c959375ae/cover.jpg/300x300bb.jpg",
     "album": "תוך כדי תנועה",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1588488614",
@@ -34876,7 +23254,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/04/7f/c8/047fc8f2-8bb7-c929-66b6-038953be2302/cover.jpg/300x300bb.jpg",
     "album": "ועכשיו לחלק האומנותי",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1588487035",
@@ -34889,7 +23267,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/d1/7e/75d17edc-d608-4025-962d-1dd37d54b798/cover.jpg/300x300bb.jpg",
     "album": "ברוכים הבאים לפתח תקוה",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1588488584",
@@ -34902,7 +23280,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e3/d2/ed/e3d2ed94-01dc-b397-a7c6-071996794cfc/cover.jpg/300x300bb.jpg",
     "album": "שפל וגאות",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1524103868",
@@ -34941,110 +23319,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a3/f5/5b/a3f55ba9-a8b1-473c-096a-5be3170e3bdb/cover.jpg/300x300bb.jpg",
     "album": "בור ועם הארץ",
     "releaseYear": "2013",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1588488601",
-    "title": "הריני",
-    "fullTitle": "הריני",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/16/99/731699c6-f0f1-04c7-c5f9-8b35f956c767/mzaf_1829254210596548639.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e3/d2/ed/e3d2ed94-01dc-b397-a7c6-071996794cfc/cover.jpg/300x300bb.jpg",
-    "album": "שפל וגאות",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1588487044",
-    "title": "חסידה צחורה",
-    "fullTitle": "חסידה צחורה",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/01/c7/9901c701-af03-f67a-fc6b-293c1b62f188/mzaf_7918619271810183110.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/d1/7e/75d17edc-d608-4025-962d-1dd37d54b798/cover.jpg/300x300bb.jpg",
-    "album": "ברוכים הבאים לפתח תקוה",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1049982172",
-    "title": "Ihiye Beseder",
-    "fullTitle": "Ihiye Beseder (feat. Nechi Nech)",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/b3/e2/a0b3e220-9d74-5d72-2330-b79f324292bd/mzaf_5695902501766176995.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music42/v4/37/45/f0/3745f036-ffaa-0dd0-31bf-3f3937b7de4e/mzm.cluwxvyt.jpg/300x300bb.jpg",
-    "album": "Rak Laalot",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1588486885",
-    "title": "תהילה",
-    "fullTitle": "תהילה (feat. שלומי אלון)",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/ab/5e/c4ab5ea5-39f0-cef6-5297-326f4dba2642/mzaf_7599570826918924115.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/d1/7e/75d17edc-d608-4025-962d-1dd37d54b798/cover.jpg/300x300bb.jpg",
-    "album": "ברוכים הבאים לפתח תקוה",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1588488607",
-    "title": "אמונה עיוורת",
-    "fullTitle": "אמונה עיוורת (feat. סימה נון)",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/a1/a4/86a1a49a-8ea0-43e7-e727-bafcd29c2e3d/mzaf_7409824046859299355.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/04/7f/c8/047fc8f2-8bb7-c929-66b6-038953be2302/cover.jpg/300x300bb.jpg",
-    "album": "ועכשיו לחלק האומנותי",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1588487031",
-    "title": "מלך הראפ של המזרח התיכון",
-    "fullTitle": "מלך הראפ של המזרח התיכון",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/3e/11/903e117d-730f-ce88-d921-22499f65f65e/mzaf_12777382795547985887.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/d1/7e/75d17edc-d608-4025-962d-1dd37d54b798/cover.jpg/300x300bb.jpg",
-    "album": "ברוכים הבאים לפתח תקוה",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1588488728",
-    "title": "יום כיפור בכפר סירקין",
-    "fullTitle": "יום כיפור בכפר סירקין",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/67/59/81675977-cab7-9e8a-0b01-1cc7afcc873a/mzaf_4803807283640995096.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/04/7f/c8/047fc8f2-8bb7-c929-66b6-038953be2302/cover.jpg/300x300bb.jpg",
-    "album": "ועכשיו לחלק האומנותי",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1583883298",
-    "title": "גולם",
-    "fullTitle": "גולם",
-    "artist": "רביד פלוטניק",
-    "genre": "Hip-Hop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/19/a2/3b19a24d-8b3e-371d-6073-06b8584ddff9/mzaf_8448885665226465227.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2c/6c/81/2c6c8111-6525-8c55-a9fa-6d6c959375ae/cover.jpg/300x300bb.jpg",
-    "album": "תוך כדי תנועה",
-    "releaseYear": "2021",
     "difficulty": "hard"
   },
   {
@@ -35149,7 +23423,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9f/d9/96/9fd9963a-29df-b81b-5790-9a2a7f73c4d9/7290119802661.png/300x300bb.jpg",
     "album": "פרובוקטיבית - Single",
     "releaseYear": "2023",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1516833077",
@@ -35253,7 +23527,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9f/f2/67/9ff26709-ecd8-7bcc-4f30-320ce5510bd6/7290117734681.png/300x300bb.jpg",
     "album": "פעמון - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1499326072",
@@ -35266,7 +23540,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/34/6d/7a/346d7af7-6375-1bbf-566b-3fc22bea9b54/7290114188876.png/300x300bb.jpg",
     "album": "אם אתה גבר - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1499318915",
@@ -35279,7 +23553,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a7/d6/29/a7d629f3-bd4f-c17a-ed3a-e2986b2ca39f/7290114188326.png/300x300bb.jpg",
     "album": "יש בי אהבה - Single",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1659897929",
@@ -35292,7 +23566,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/be/22/0b/be220b23-3a8c-bfc2-7ae9-c66ef0b7464a/7290118546191.png/300x300bb.jpg",
     "album": "מאמי - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1626073564",
@@ -35331,110 +23605,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d6/0a/56/d60a562c-ff7d-0867-7444-6fce851dcfe4/7290114188234.png/300x300bb.jpg",
     "album": "Drum - Single",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1499265138",
-    "title": "חצוף",
-    "fullTitle": "חצוף",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/e2/ac/2fe2ac96-0a5b-3993-55bc-f297bb45e39f/mzaf_10087910346409944681.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e1/36/3b/e1363bca-4212-a0ae-f1f6-44699efcee67/7290114188241.jpg/300x300bb.jpg",
-    "album": "חצוף - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1697672145",
-    "title": "Deja Vu",
-    "fullTitle": "Deja Vu",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/df/bd/81dfbd82-4987-278e-eb32-56578679ed3b/mzaf_529798143964413736.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ad/3a/b0/ad3ab037-f6de-7a17-cc57-3ef6754efbab/7290119804177.png/300x300bb.jpg",
-    "album": "Deja Vu - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1657210585",
-    "title": "גושפנקא",
-    "fullTitle": "גושפנקא (feat. Noa Kirel)",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/51/b3/a5/51b3a59c-6c2c-9cca-9154-aa9213010077/mzaf_10895229413426669019.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/53/a0/ea/53a0ea0b-1ec7-ba09-282d-20911f42da60/cover.jpg/300x300bb.jpg",
-    "album": "אייקון",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1600988567",
-    "title": "Thought About That",
-    "fullTitle": "Thought About That",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/32/db/7e32db70-f053-f96d-0304-9224401810db/mzaf_13932968271083735258.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d0/5f/3c/d05f3cc1-84a4-fc68-5f85-56f6bdd5a432/075679760104.jpg/300x300bb.jpg",
-    "album": "Thought About That - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1664092983",
-    "title": "Gone",
-    "fullTitle": "Gone",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/6c/b0/8a6cb025-fff9-ba87-774a-178e0fc4eee8/mzaf_15410927192665429377.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9e/85/6d/9e856db4-e697-5287-ee02-c7a309a97616/075679760098.jpg/300x300bb.jpg",
-    "album": "Gone - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1852839334",
-    "title": "כל מה שאני רוצה",
-    "fullTitle": "כל מה שאני רוצה",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/d5/25/5cd52545-0e93-b12f-566d-46ccd37dc482/mzaf_2654518101830651339.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/4c/b8/a14cb83d-18c1-f79f-a1e3-3ecfe090c507/7290123051369.png/300x300bb.jpg",
-    "album": "כל מה שאני רוצה - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1499314337",
-    "title": "Killer",
-    "fullTitle": "Killer",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/02/a6/a302a645-f99a-289f-dad5-d3c707dff360/mzaf_1407476486996198721.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1c/c5/8f/1cc58f9b-cf1e-dce4-ce5f-1293cc6453c5/7290114188319.png/300x300bb.jpg",
-    "album": "Killer - Single",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1780976001",
-    "title": "אתה אני אולי",
-    "fullTitle": "אתה אני אולי",
-    "artist": "נועה קירל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/8e/4d/838e4d02-adb2-073c-3e5e-03c1d367ed4c/mzaf_10651063143504389749.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/d7/56/0bd75614-3649-9c71-68a7-d3da20976472/7290121544344.png/300x300bb.jpg",
-    "album": "אתה אני אולי - Single",
-    "releaseYear": "2024",
     "difficulty": "hard"
   },
   {
@@ -35539,7 +23709,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c6/e5/1e/c6e51e24-2ec6-543e-180a-077248520a8a/7290116160566.png/300x300bb.jpg",
     "album": "שבורי לב - Single",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1690618227",
@@ -35643,7 +23813,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/27/43/3c/27433cac-f1dd-31ad-876b-049cd5ecb2d7/7290116160238.png/300x300bb.jpg",
     "album": "איזון",
     "releaseYear": "2016",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1574460490",
@@ -35656,7 +23826,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/15/d0/2915d0e1-2518-6fbf-d155-60166c9395f0/7290116167138.png/300x300bb.jpg",
     "album": "לא לבד",
     "releaseYear": "2018",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1574460335",
@@ -35669,7 +23839,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/15/d0/2915d0e1-2518-6fbf-d155-60166c9395f0/7290116167138.png/300x300bb.jpg",
     "album": "לא לבד",
     "releaseYear": "2016",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1628308611",
@@ -35720,97 +23890,6 @@ window.SONGS_CATALOG = [
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/84/cd/bb84cd40-7d87-8053-0526-26ef28d25bb6/mzaf_3430842195213068421.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/15/d0/2915d0e1-2518-6fbf-d155-60166c9395f0/7290116167138.png/300x300bb.jpg",
     "album": "לא לבד",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1218789096",
-    "title": "על משכבי",
-    "fullTitle": "על משכבי",
-    "artist": "חנן בן ארי",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b6/d0/61/b6d06103-e4b4-41bc-54b2-be9c8d48119e/mzaf_15501406068595617171.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/11/eb/5e11ebfc-0f8d-d937-99e3-5655011551cb/191018976347.jpg/300x300bb.jpg",
-    "album": "Al Mishkavi - Single",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1616450318",
-    "title": "בסוף זה הלחן",
-    "fullTitle": "בסוף זה הלחן",
-    "artist": "חנן בן ארי",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/5a/ab/855aab3e-5958-60c1-e3c8-067280c39d1a/mzaf_7844146080086461222.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4f/09/95/4f099576-c210-4650-33e7-e260175ea66e/7290117735404.png/300x300bb.jpg",
-    "album": "בסוף זה הלחן - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1690618221",
-    "title": "אמסטרדם",
-    "fullTitle": "אמסטרדם",
-    "artist": "חנן בן ארי",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/be/c0/2abec064-5e27-24a8-5e2e-bf7e4c404436/mzaf_16575877315908725684.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/96/0c/59/960c59f0-996f-c245-9651-181c0c23a00b/7290119802678.png/300x300bb.jpg",
-    "album": "יש כאן יותר מזה",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1597260791",
-    "title": "מקום",
-    "fullTitle": "מקום",
-    "artist": "חנן בן ארי",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/ba/85/e2ba855f-ecbb-5d46-786e-8fa7d9ca9af7/mzaf_14388324323420239206.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/2e/91/2a2e9185-0d64-0bee-c726-c4151be5014e/7290117731048.png/300x300bb.jpg",
-    "album": "מקום - Single",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1690618229",
-    "title": "למעלה",
-    "fullTitle": "למעלה",
-    "artist": "חנן בן ארי",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/7e/fe/6d7efe73-df37-9197-8e34-4afc38454c3f/mzaf_2358486320050435761.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/96/0c/59/960c59f0-996f-c245-9651-181c0c23a00b/7290119802678.png/300x300bb.jpg",
-    "album": "יש כאן יותר מזה",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1572558229",
-    "title": "דור",
-    "fullTitle": "דור",
-    "artist": "חנן בן ארי",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/8d/3a/7a8d3a6e-febb-9a4b-d408-b4f5d0655be6/mzaf_3984694068773312087.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/73/38/ec/7338ec0d-ad66-8e5a-1a9c-4d5e4f8be2a5/7290116160559.png/300x300bb.jpg",
-    "album": "דור - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1574073319",
-    "title": "לילה טוב שון",
-    "fullTitle": "לילה טוב שון",
-    "artist": "חנן בן ארי",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/85/33/bf85331c-7344-120f-d3b0-a8d451ca0ad5/mzaf_5401246850546843891.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/11/8c/9d118c71-37ae-b66c-4b11-b1a00f67a52b/7290116160931.png/300x300bb.jpg",
-    "album": "לילה טוב שון - Single",
     "releaseYear": "2018",
     "difficulty": "hard"
   },
@@ -36020,7 +24099,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/68/15/7a/68157a81-3a39-5237-15fc-ae675fcd4a68/194491734862.jpg/300x300bb.jpg",
     "album": "אל תעזבי ידיים - קיסריה 2019 (feat. עקיבא) - Single",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_862841322",
@@ -36098,58 +24177,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/42/bc/bd/42bcbd97-aff9-9dcd-90a0-8b66be4ee042/190374448741.jpg/300x300bb.jpg",
     "album": "פחד גבהים",
     "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1823179109",
-    "title": "עוד ישמע",
-    "fullTitle": "עוד ישמע (גרסת חופה)",
-    "artist": "ישי ריבו",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/de/f2/e0def297-7dc0-e532-56af-44304638eeea/mzaf_18326263264835728061.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/c2/2d/36c22d9f-7f12-66b8-b475-b7eefb3cd830/199538151541.jpg/300x300bb.jpg",
-    "album": "עוד ישמע (גרסת חופה) - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1347774215",
-    "title": "שטח אפור",
-    "fullTitle": "שטח אפור",
-    "artist": "ישי ריבו",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/24/9f/ed249fc0-48f2-6b92-0249-e19147b2a31e/mzaf_16327880353544405590.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/09/0e/d1/090ed196-7af5-c729-f46a-a0d1c42047f9/192562201107.jpg/300x300bb.jpg",
-    "album": "שטח אפור",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1347774211",
-    "title": "משגיח מן החלונות",
-    "fullTitle": "משגיח מן החלונות",
-    "artist": "ישי ריבו",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/16/90/d21690e1-28aa-826a-2f9e-c9209f58fd69/mzaf_14337920045773532046.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/09/0e/d1/090ed196-7af5-c729-f46a-a0d1c42047f9/192562201107.jpg/300x300bb.jpg",
-    "album": "שטח אפור",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1347774312",
-    "title": "כל הזמן",
-    "fullTitle": "כל הזמן",
-    "artist": "ישי ריבו",
-    "genre": "R&B",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/f2/6b/adf26b14-eec8-6e27-058d-9c29e2879eec/mzaf_4380610338693708684.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/09/0e/d1/090ed196-7af5-c729-f46a-a0d1c42047f9/192562201107.jpg/300x300bb.jpg",
-    "album": "שטח אפור",
-    "releaseYear": "2018",
     "difficulty": "hard"
   },
   {
@@ -36254,7 +24281,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/70/fc/80/70fc806b-6f33-85e8-f6ef-f3ae4480fd03/asset.jpg/300x300bb.jpg",
     "album": "The Idan Raichel Project",
     "releaseYear": "2002",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_780337973",
@@ -36358,7 +24385,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ee/02/ad/ee02ad2c-8b98-b591-44a2-7e3c103a122e/asset.jpg/300x300bb.jpg",
     "album": "Mi'Ma'amakim",
     "releaseYear": "2004",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1046809485",
@@ -36371,7 +24398,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0f/21/66/0f2166ba-c408-3838-b2bf-a63968b7efa9/IDAN_FRONT.jpg/300x300bb.jpg",
     "album": "Ha'Yad Ha'Chama",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1463319027",
@@ -36384,7 +24411,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/a5/0b/aa/a50baa59-3270-ba61-05b9-4b6d75c64798/3000X3000_Heb_Eng.jpg/300x300bb.jpg",
     "album": "עכשיו נשארנו שנינו - Single",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1231829659",
@@ -36397,7 +24424,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/69/27/68/69276834-6142-54af-d941-1942bee7db61/3000.jpg/300x300bb.jpg",
     "album": "אהבה כזו (feat. זהבה בן) - Single",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1574186883",
@@ -36436,110 +24463,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/50/a4/13/50a4137f-5162-264a-af8e-e2bd51ee31cd/asset.jpg/300x300bb.jpg",
     "album": "Bein Kirot Beiti",
     "releaseYear": "2008",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1419482119",
-    "title": "למה זה מגיע לנו",
-    "fullTitle": "למה זה מגיע לנו",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/c0/39/d9c03960-e2b0-eaa5-bf2a-684cbb3f13b4/mzaf_937429273237874838.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/57/c9/b4/57c9b428-69da-0744-b98d-2ad1ee3b1f60/itunesArtboard_1.jpg/300x300bb.jpg",
-    "album": "למה זה מגיע לנו - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1447098176",
-    "title": "Galgal Mistovev",
-    "fullTitle": "Galgal Mistovev",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/e8/3d/75e83d6c-006c-288d-577a-da2a0a87046a/mzaf_3467895841627439575.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/50/cc/26/50cc264a-cb2d-0183-3d92-93fd7b1a6ad6/itunes_idan_raichel.jpg/300x300bb.jpg",
-    "album": "Ve'Eem Tavo'ee Elay",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_780474251",
-    "title": "Be'Karov",
-    "fullTitle": "Be'Karov",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/fa/16/d0fa16ba-08a8-d462-6e59-ff3e5f424d45/mzaf_5579098330481152979.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4f/d0/b0/4fd0b07a-9038-43c7-938d-8153718ebdb6/asset.jpg/300x300bb.jpg",
-    "album": "Reva Le'Shesh",
-    "releaseYear": "2013",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_778491585",
-    "title": "Hakol Over",
-    "fullTitle": "Hakol Over",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/f4/c7/e9f4c716-6da0-1f40-d5ed-ba76339c1a77/mzaf_2410141865392747548.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/50/a4/13/50a4137f-5162-264a-af8e-e2bd51ee31cd/asset.jpg/300x300bb.jpg",
-    "album": "Bein Kirot Beiti",
-    "releaseYear": "2008",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1566092458",
-    "title": "Kacha Mi'Yom Le'Yom",
-    "fullTitle": "Kacha Mi'Yom Le'Yom",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/36/9d/bb/369dbb59-4e68-86a6-4832-25f02a06922f/mzaf_855002568427925433.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/36/81/49/368149d9-64af-aa3e-c15f-61f027458789/COVER_1500.jpg/300x300bb.jpg",
-    "album": "Kacha Mi'Yom Le'Yom",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_780337984",
-    "title": "Ulai Ha'Pa'am",
-    "fullTitle": "Ulai Ha'Pa'am",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/ed/4a/58ed4ae4-d33d-d4ca-b4eb-bd56cc1d8b97/mzaf_2163575451208591511.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ee/02/ad/ee02ad2c-8b98-b591-44a2-7e3c103a122e/asset.jpg/300x300bb.jpg",
-    "album": "Mi'Ma'amakim",
-    "releaseYear": "2005",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_778474127",
-    "title": "Medabrim Be'sheket",
-    "fullTitle": "Medabrim Be'sheket",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/e2/12/0be2125f-5ccb-8a7c-51b3-85566fb6a5af/mzaf_15856082154930391585.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/70/fc/80/70fc806b-6f33-85e8-f6ef-f3ae4480fd03/asset.jpg/300x300bb.jpg",
-    "album": "The Idan Raichel Project",
-    "releaseYear": "2002",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1536888749",
-    "title": "מכל הכוכבים בלילה",
-    "fullTitle": "מכל הכוכבים בלילה",
-    "artist": "עידן רייכל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/d8/e5/13d8e5bb-4e1b-eeea-e1de-a2203145ade2/mzaf_3361618566344597578.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/21/be/5c/21be5c14-49a7-b000-5034-bf3f5e5ea1b1/dj.bztfqxdw.jpg/300x300bb.jpg",
-    "album": "מכל הכוכבים בלילה - Single",
-    "releaseYear": "2020",
     "difficulty": "hard"
   },
   {
@@ -36644,7 +24567,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f6/7e/71/f67e718e-e718-029a-64bb-17069566c6db/7294276650288.png/300x300bb.jpg",
     "album": "(תתארו לכם (אוסף משולש",
     "releaseYear": "2007",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_499531153",
@@ -36748,7 +24671,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7a/d7/ea/7ad7ea42-9dfa-afdb-7a59-cf0ad02d13fd/7293372422324.png/300x300bb.jpg",
     "album": "אהבתיהם",
     "releaseYear": "2000",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_486194305",
@@ -36761,7 +24684,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7a/d7/ea/7ad7ea42-9dfa-afdb-7a59-cf0ad02d13fd/7293372422324.png/300x300bb.jpg",
     "album": "אהבתיהם",
     "releaseYear": "2000",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_486889283",
@@ -36774,7 +24697,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/22/b9/1022b992-ce13-8639-743f-249837e56d0d/dj.zfqpistm.jpg/300x300bb.jpg",
     "album": "דרכים (Remastered)",
     "releaseYear": "1979",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_484992799",
@@ -36787,7 +24710,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1f/94/07/1f9407c0-6c43-84dc-0b83-e7f16f07c1d0/7293372549427.png/300x300bb.jpg",
     "album": "ירח",
     "releaseYear": "1992",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1096044659",
@@ -36826,110 +24749,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b6/0b/5c/b60b5c83-b886-2775-656b-8a64c6806f37/7293372482199.png/300x300bb.jpg",
     "album": "אושר אקספרס",
     "releaseYear": "2012",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_499225711",
-    "title": "תחת שמי ים התיכון",
-    "fullTitle": "תחת שמי ים התיכון",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/2c/49/522c491f-80d6-13ed-6fa4-8a1bcac8ab68/mzaf_3764400129892975497.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e8/38/35/e8383518-5787-4e68-8d5b-fa98955023c9/7293372529528.png/300x300bb.jpg",
-    "album": "חום יולי אוגוסט",
-    "releaseYear": "1985",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_618092138",
-    "title": "תגידי",
-    "fullTitle": "תגידי",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/59/ae/2259ae5f-a393-4596-acc7-820ae6618a3b/mzaf_15112859865608132192.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f6/7e/71/f67e718e-e718-029a-64bb-17069566c6db/7294276650288.png/300x300bb.jpg",
-    "album": "(תתארו לכם (אוסף משולש",
-    "releaseYear": "1992",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_486889282",
-    "title": "שינויי מזג האוויר",
-    "fullTitle": "שינויי מזג האוויר (Remastered)",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/75/fa/7b75fa73-4de9-46ee-8976-c02c96979ca7/mzaf_15568947877620914183.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/22/b9/1022b992-ce13-8639-743f-249837e56d0d/dj.zfqpistm.jpg/300x300bb.jpg",
-    "album": "דרכים (Remastered)",
-    "releaseYear": "1979",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_486889274",
-    "title": "אף פעם לא תדעי",
-    "fullTitle": "אף פעם לא תדעי (Remastered)",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/e2/5c/5ae25c11-52c4-3716-30f5-901be4478dec/mzaf_13501479696849756334.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/22/b9/1022b992-ce13-8639-743f-249837e56d0d/dj.zfqpistm.jpg/300x300bb.jpg",
-    "album": "דרכים (Remastered)",
-    "releaseYear": "1979",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1615743411",
-    "title": "על פי תנועת הרכבות",
-    "fullTitle": "על פי תנועת הרכבות",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/5f/85/c75f8590-9a21-4679-b271-6bae5998507b/mzaf_15991512854580106548.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/9b/6f/4d/9b6f4d94-b1c1-8586-b2a5-b5c5267834f8/7290117735275.png/300x300bb.jpg",
-    "album": "צימאון",
-    "releaseYear": "2002",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_450208160",
-    "title": "לא עוזב את העיר",
-    "fullTitle": "לא עוזב את העיר",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/2e/4f/b92e4f85-0b1f-4ecd-2f1d-4cab8c256173/mzaf_5805405333179353297.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/81/c2/4881c2f7-9ecf-b8f8-f3f3-f2ed5c6cdafb/7293372485596.png/300x300bb.jpg",
-    "album": "עונת ההופעות",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_486194290",
-    "title": "נוף ילדות",
-    "fullTitle": "נוף ילדות",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/46/15/6b461591-8b47-2409-d5c1-d222ac11a65b/mzaf_1127380856080973470.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7a/d7/ea/7ad7ea42-9dfa-afdb-7a59-cf0ad02d13fd/7293372422324.png/300x300bb.jpg",
-    "album": "אהבתיהם",
-    "releaseYear": "2000",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_498835432",
-    "title": "שיר בבוקר בבוקר",
-    "fullTitle": "שיר בבוקר בבוקר",
-    "artist": "שלמה ארצי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/ad/65/4cad654f-4e3d-3d7d-ee2e-d0f4de2b1b5d/mzaf_3613744927901913051.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/ec/db/95/ecdb95f4-2e4c-9774-d7d9-0c9197c26a07/7293372496097.png/300x300bb.jpg",
-    "album": "אומרים ישנה ארץ",
-    "releaseYear": "1973",
     "difficulty": "hard"
   },
   {
@@ -37034,7 +24853,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/91/4b/ce/914bcede-20d1-ac03-e556-63690143a542/img033.jpg/300x300bb.jpg",
     "album": "יומן מסע",
     "releaseYear": "2000",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_616092764",
@@ -37138,7 +24957,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a6/9e/31/a69e31d7-89ac-4217-b467-fde0a77a8cc9/cover.jpg/300x300bb.jpg",
     "album": "Badeshe Etzel Avigdor",
     "releaseYear": "1971",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1133158778",
@@ -37151,7 +24970,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/46/12/36/46123686-5986-0b08-f77c-00004e39f10f/cover.jpg/300x300bb.jpg",
     "album": "Yeladim",
     "releaseYear": "1976",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1572526543",
@@ -37164,7 +24983,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/81/7f/3d/817f3dcb-4c19-e179-a877-61652d7287fe/7290116166919.png/300x300bb.jpg",
     "album": "המיטב",
     "releaseYear": "2011",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1133159905",
@@ -37177,7 +24996,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/a3/dd/50/a3dd50d8-a4b8-ea8a-7344-dd78fce23ade/cover.jpg/300x300bb.jpg",
     "album": "Poozy",
     "releaseYear": "1969",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_768063890",
@@ -37216,110 +25035,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/87/75/ba/8775ba5c-d219-cbac-af01-4298089bba41/cover.jpg/300x300bb.jpg",
     "album": "Shablul",
     "releaseYear": "1970",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1133171989",
-    "title": "Yeladim Shel Hachaim",
-    "fullTitle": "Yeladim Shel Hachaim",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/20/8e/68208e68-b1d8-21ad-c953-a7abd597362e/mzaf_14763027771826472595.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8a/f3/6b/8af36b31-03b3-6f1b-b0a8-377304a27dcd/cover.jpg/300x300bb.jpg",
-    "album": "Sa Leat",
-    "releaseYear": "1974",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571747083",
-    "title": "אוהב להיות בבית",
-    "fullTitle": "אוהב להיות בבית",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/97/e0/0397e03c-5906-57bf-87c7-ea7c8b1d8ce6/mzaf_9585784508434095356.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9b/c4/22/9bc4223b-5f3d-eb7a-377d-a3e686a44f84/7290116162065.png/300x300bb.jpg",
-    "album": "אוהב להיות בבית",
-    "releaseYear": "1986",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571277105",
-    "title": "גברת עם סלים",
-    "fullTitle": "גברת עם סלים",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/79/92/5f799277-fedd-1a2d-3f7a-1732ffb74bd9/mzaf_1191428451511328391.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/00/d7/8600d759-37b2-0db8-1ffa-5dc9494b9bfe/7290116161631.png/300x300bb.jpg",
-    "album": "הייתי פעם ילד",
-    "releaseYear": "1989",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1596645110",
-    "title": "הכניסיני תחת כנפך",
-    "fullTitle": "הכניסיני תחת כנפך",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/10/e3/79/10e37938-498d-0c9b-0cf0-9f9b7aba46ea/mzaf_1829237455018286428.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/81/7f/a9/817fa915-d43e-21b3-3f26-46dbc692abed/7290008389839.png/300x300bb.jpg",
-    "album": "חמוש במשקפיים",
-    "releaseYear": "1980",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571277112",
-    "title": "קלפתי תפוז",
-    "fullTitle": "קלפתי תפוז",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/e0/19/88e01928-9b7b-d261-b11f-9a46ed78377c/mzaf_13752187450280962936.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/00/d7/8600d759-37b2-0db8-1ffa-5dc9494b9bfe/7290116161631.png/300x300bb.jpg",
-    "album": "הייתי פעם ילד",
-    "releaseYear": "1989",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571739320",
-    "title": "בגללך",
-    "fullTitle": "בגללך",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/e0/63/8ae063ef-7cf5-4b1c-fd1d-f5a3cf6db164/mzaf_10718421178985821474.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7a/33/a8/7a33a890-d351-b0d3-da6b-75f91a27a9cf/7290116162850.png/300x300bb.jpg",
-    "album": "יש בי אהבה",
-    "releaseYear": "1995",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571740805",
-    "title": "שביר",
-    "fullTitle": "שביר",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/00/48/36/004836bc-894c-291b-5262-1fb16687e998/mzaf_8241674184281316758.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e7/91/6e/e7916eac-fd21-14c9-f256-3d87bc086753/7290116162645.png/300x300bb.jpg",
-    "album": "שביר",
-    "releaseYear": "1983",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571747915",
-    "title": "עוד נפגש",
-    "fullTitle": "עוד נפגש",
-    "artist": "אריק איינשטיין",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f3/f5/6a/f3f56a4b-8f00-bc65-5945-4a42661d6608/mzaf_17865692984287434261.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cb/7a/79/cb7a79d2-126f-43f6-ebd5-f9d947811d9f/7290116162034.png/300x300bb.jpg",
-    "album": "ארץ ישראל הישנה והטובה חלק ה': נוסטלגיה",
-    "releaseYear": "1984",
     "difficulty": "hard"
   },
   {
@@ -37424,7 +25139,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6e/93/7b/6e937b78-6cc4-d12d-c79e-e084ed4e165c/7290116161280.png/300x300bb.jpg",
     "album": "משינה 2",
     "releaseYear": "1987",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_423993942",
@@ -37528,7 +25243,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/dc/58/eddc5893-e624-6234-b155-956ea688ce2b/asset.jpg/300x300bb.jpg",
     "album": "Yiskey HaRock'nroll (עסקי הרוקנרול)",
     "releaseYear": "1995",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_583990945",
@@ -37541,7 +25256,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/dc/58/eddc5893-e624-6234-b155-956ea688ce2b/asset.jpg/300x300bb.jpg",
     "album": "Yiskey HaRock'nroll (עסקי הרוקנרול)",
     "releaseYear": "1990",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1571744878",
@@ -37554,7 +25269,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/34/19/c93419aa-0e2f-6b6d-633f-8a6ff7f5bb34/7290116162195.png/300x300bb.jpg",
     "album": "משינה",
     "releaseYear": "1985",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_857701333",
@@ -37606,97 +25321,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f3/5d/a6/f35da6e5-26ff-287b-6561-fbca8e5dafec/7290116162287.png/300x300bb.jpg",
     "album": "משינה 3",
     "releaseYear": "1988",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571750650",
-    "title": "רני בפריז",
-    "fullTitle": "רני בפריז",
-    "artist": "משינה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/aa/0a/c7aa0a24-70cb-3b0d-2c4d-bf4006fe722e/mzaf_7064017656799342382.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c5/d9/32/c5d9328f-729e-3f9b-0121-515e1bbccc66/7290116162294.png/300x300bb.jpg",
-    "album": "גבירותי ורבותי",
-    "releaseYear": "1989",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1572556816",
-    "title": "תחזור תחזור",
-    "fullTitle": "תחזור תחזור",
-    "artist": "משינה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/8d/02/ec8d021b-6e6c-69a5-a738-f3ccb29ce2b5/mzaf_16137869876242993113.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/65/6f/89/656f8933-092e-db73-c30e-bd7df839b21e/7290116166476.png/300x300bb.jpg",
-    "album": "להתראות נעורים שלום אהבה",
-    "releaseYear": "1995",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1536324454",
-    "title": "אנה 2020",
-    "fullTitle": "אנה 2020",
-    "artist": "משינה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d1/0d/d6/d10dd687-2ac6-b49b-ab40-818d31d2fea0/mzaf_5832224122788325509.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1a/25/90/1a2590eb-d6eb-15e2-e8ac-12a4942f1232/7290115393590.png/300x300bb.jpg",
-    "album": "אנה 2020 - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1571290033",
-    "title": "אנחנו שניים",
-    "fullTitle": "אנחנו שניים",
-    "artist": "משינה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/00/55/d6005507-a7a2-617c-9b9a-b3fc4bbd19fb/mzaf_1254353449489512286.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6e/93/7b/6e937b78-6cc4-d12d-c79e-e084ed4e165c/7290116161280.png/300x300bb.jpg",
-    "album": "משינה 2",
-    "releaseYear": "1987",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_583990955",
-    "title": "Ein Makom Acher",
-    "fullTitle": "Ein Makom Acher (אין מקום אחר)",
-    "artist": "משינה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/ce/5a/bace5a9c-2853-8c9f-39e3-8fa0969042d2/mzaf_14853310166506238769.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/dc/58/eddc5893-e624-6234-b155-956ea688ce2b/asset.jpg/300x300bb.jpg",
-    "album": "Yiskey HaRock'nroll (עסקי הרוקנרול)",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_423993881",
-    "title": "Danny",
-    "fullTitle": "Danny (דני)",
-    "artist": "משינה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/dd/a0/f9dda04c-f53a-4beb-c123-d4d75a73da2b/mzaf_14570904173584968677.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/62/52/2262520e-9998-b272-40fd-d5b09b57040f/7290003372195.png/300x300bb.jpg",
-    "album": "Si Haregesh (שיא הרגש)",
-    "releaseYear": "1993",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_583990947",
-    "title": "Az Lama Li Politika Achshav",
-    "fullTitle": "Az Lama Li Politika Achshav (אז למה לי פוליטיקה עכשיו)",
-    "artist": "משינה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/31/35/4a31354e-1582-dd7c-ca2d-5fe91a719bac/mzaf_8000089712266147443.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ed/dc/58/eddc5893-e624-6234-b155-956ea688ce2b/asset.jpg/300x300bb.jpg",
-    "album": "Yiskey HaRock'nroll (עסקי הרוקנרול)",
-    "releaseYear": "1990",
     "difficulty": "hard"
   },
   {
@@ -37801,7 +25425,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/8d/e9/7f/8de97f5a-72eb-3cf4-73ea-cf372e9d9a84/dj.esnltznw.jpg/300x300bb.jpg",
     "album": "מסיבה (feat. Shekel) - Single",
     "releaseYear": "2020",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1705179720",
@@ -37905,7 +25529,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0a/67/e6/0a67e6df-81c0-ac77-9870-f363013db666/cover.jpg/300x300bb.jpg",
     "album": "זה בדם שלי - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1687927159",
@@ -37918,7 +25542,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/dc/a6/4ddca671-df07-7181-7f0d-62ced487c9c7/dj.ehqplvut.jpg/300x300bb.jpg",
     "album": "אין עולם",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1543602740",
@@ -37931,7 +25555,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/47/0d/b6/470db692-5b7c-233c-76a9-ccbbee7e677e/dj.lyfrnkxk.jpg/300x300bb.jpg",
     "album": "ל  י  ל  ה  ט  ו  ב",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1687927167",
@@ -37944,7 +25568,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/dc/a6/4ddca671-df07-7181-7f0d-62ced487c9c7/dj.ehqplvut.jpg/300x300bb.jpg",
     "album": "אין עולם",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1687927166",
@@ -37983,110 +25607,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b4/be/2c/b4be2cee-607e-b624-4ff4-58fddd627fe4/JM_Yom-Kippur_Cover_020424_2.jpg/300x300bb.jpg",
     "album": "יום כיפור - Single",
     "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1687927165",
-    "title": "נהדר",
-    "fullTitle": "נהדר",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/13/3e/55133e7c-22a2-75a3-42a3-5b8f6cd03c30/mzaf_1618868151173954082.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/dc/a6/4ddca671-df07-7181-7f0d-62ced487c9c7/dj.ehqplvut.jpg/300x300bb.jpg",
-    "album": "אין עולם",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1687927170",
-    "title": "בשם השם",
-    "fullTitle": "בשם השם",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/14/53/a11453d0-10b4-47ad-1dac-6ce87bb8dbb2/mzaf_13741224802469947737.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/dc/a6/4ddca671-df07-7181-7f0d-62ced487c9c7/dj.ehqplvut.jpg/300x300bb.jpg",
-    "album": "אין עולם",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1687927160",
-    "title": "בלנסיאגה לבן",
-    "fullTitle": "בלנסיאגה לבן",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/e5/ab/61e5ab47-04d7-a7f3-a734-577af7b94962/mzaf_18368822572557463936.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/dc/a6/4ddca671-df07-7181-7f0d-62ced487c9c7/dj.ehqplvut.jpg/300x300bb.jpg",
-    "album": "אין עולם",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1687927163",
-    "title": "יותר מהר",
-    "fullTitle": "יותר מהר",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/d2/45/e7d245ae-94de-9ea7-783d-12b5167b3ce4/mzaf_230053815305585044.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/dc/a6/4ddca671-df07-7181-7f0d-62ced487c9c7/dj.ehqplvut.jpg/300x300bb.jpg",
-    "album": "אין עולם",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1770287529",
-    "title": "רק הזמן",
-    "fullTitle": "רק הזמן",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/25/f4/6b25f43b-00a4-edcd-3e98-b32a10fb3c73/mzaf_4630030666385517182.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/73/b8/05/73b80553-8448-af36-e1f6-d6b4f0a6f75f/IMG_9745_5.jpg/300x300bb.jpg",
-    "album": "רק הזמן - Single",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1704980800",
-    "title": "עד שתבואי עד אליי",
-    "fullTitle": "עד שתבואי עד אליי (מיוחד למצעד הישראלי השנתי תשפ''ג)",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/05/b3/5605b3b4-8d34-c787-cc83-171eea196186/mzaf_7309749608780644384.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7a/4a/9e/7a4a9e5b-0410-a59e-e7ce-9efbc56d707f/jasmin.jpg/300x300bb.jpg",
-    "album": "עד שתבואי עד אליי (מיוחד למצעד הישראלי השנתי תשפ''ג) - Single",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1687927168",
-    "title": "נעלמת",
-    "fullTitle": "נעלמת",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/fd/6d/a5fd6d46-6582-905e-d895-2fed44516f4d/mzaf_1456832419890840921.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/dc/a6/4ddca671-df07-7181-7f0d-62ced487c9c7/dj.ehqplvut.jpg/300x300bb.jpg",
-    "album": "אין עולם",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1625671282",
-    "title": "לא היה מעולם",
-    "fullTitle": "לא היה מעולם",
-    "artist": "יסמין מועלם",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/e8/f3/4ae8f34c-958a-f3de-d639-08325ca9f168/mzaf_367758822478112411.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/52/41/7a/52417aad-0610-6639-7ea1-22f6d57ebf06/dj.lgtemjof.png/300x300bb.jpg",
-    "album": "לא היה מעולם - Single",
-    "releaseYear": "2022",
     "difficulty": "hard"
   },
   {
@@ -38191,7 +25711,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ad/5d/92/ad5d928a-17ff-5feb-f0bd-238a8193d1d4/7290115392777.png/300x300bb.jpg",
     "album": "נתן גושן",
     "releaseYear": "2011",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1538941076",
@@ -38295,7 +25815,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ad/5d/92/ad5d928a-17ff-5feb-f0bd-238a8193d1d4/7290115392777.png/300x300bb.jpg",
     "album": "נתן גושן",
     "releaseYear": "2011",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1656704368",
@@ -38308,7 +25828,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6a/3b/23/6a3b2316-2e1b-84c7-a5df-a203cb40378a/7290118545545.png/300x300bb.jpg",
     "album": "בעולם הזה - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1533293664",
@@ -38321,7 +25841,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/0d/14/1b0d148d-0c0a-091c-9354-38753aa1f1a5/7290115392814.png/300x300bb.jpg",
     "album": "באתי לחלום",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1533293530",
@@ -38373,97 +25893,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4e/e0/d4/4ee0d40f-d514-7bb1-79be-89f22c566cb9/7290115392807.png/300x300bb.jpg",
     "album": "שלושים",
     "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1533293662",
-    "title": "אין הרבה מה לעשות",
-    "fullTitle": "אין הרבה מה לעשות",
-    "artist": "נתן גושן",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/a3/f7/a0a3f78d-0ab5-61b5-6486-3f4fd1be2e5c/mzaf_8117410507684169297.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/0d/14/1b0d148d-0c0a-091c-9354-38753aa1f1a5/7290115392814.png/300x300bb.jpg",
-    "album": "באתי לחלום",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_926185866",
-    "title": "הייתי כאן",
-    "fullTitle": "הייתי כאן (שיר בונוס)",
-    "artist": "נתן גושן",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/59/8f/31598f96-81d2-6a3d-0f5b-77cb2f2a2f93/mzaf_14588695529960141410.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/25/3f/ba/253fbaf0-a901-a030-8315-75fabb2ca4b2/dj.yrvrhhbv.jpg/300x300bb.jpg",
-    "album": "האהבה הזאת שלנו",
-    "releaseYear": "2013",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1438641442",
-    "title": "סיפור אחר",
-    "fullTitle": "סיפור אחר",
-    "artist": "נתן גושן",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/46/8e/4c468e2e-23ec-12ed-f819-333d58ada11c/mzaf_17591098783325720641.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/8d/9f/eb8d9f8d-cba7-e645-435a-224e42d62571/7290111897498.jpg/300x300bb.jpg",
-    "album": "סיפור אחר - פסקול הסרט",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1533293194",
-    "title": "נושבת באוויר",
-    "fullTitle": "נושבת באוויר",
-    "artist": "נתן גושן",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/f4/7d/18f47da6-1ce2-5cac-3111-9bc32c08107f/mzaf_17138081447677071121.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ad/5d/92/ad5d928a-17ff-5feb-f0bd-238a8193d1d4/7290115392777.png/300x300bb.jpg",
-    "album": "נתן גושן",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1533293535",
-    "title": "אחכה ללילה",
-    "fullTitle": "אחכה ללילה",
-    "artist": "נתן גושן",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/ef/9d/30ef9d55-b4ea-75ea-f4e3-cddbba153fb1/mzaf_45399113824226282.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4e/e0/d4/4ee0d40f-d514-7bb1-79be-89f22c566cb9/7290115392807.png/300x300bb.jpg",
-    "album": "שלושים",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1533293537",
-    "title": "אני כאן",
-    "fullTitle": "אני כאן",
-    "artist": "נתן גושן",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/cc/c4/39ccc4bc-33ed-a01e-7c25-e8ede78f82de/mzaf_7940022441054512677.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4e/e0/d4/4ee0d40f-d514-7bb1-79be-89f22c566cb9/7290115392807.png/300x300bb.jpg",
-    "album": "שלושים",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1533293666",
-    "title": "סופר נשימות",
-    "fullTitle": "סופר נשימות",
-    "artist": "נתן גושן",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/be/de/8dbede06-4d36-cb64-be8d-adfeea6d8768/mzaf_14832353725507627002.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/0d/14/1b0d148d-0c0a-091c-9354-38753aa1f1a5/7290115392814.png/300x300bb.jpg",
-    "album": "באתי לחלום",
-    "releaseYear": "2020",
     "difficulty": "hard"
   },
   {
@@ -38568,7 +25997,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/88/1a/f9/881af973-fa79-d5d4-7575-26049182e087/7294276308455.png/300x300bb.jpg",
     "album": "חלק מהזמן",
     "releaseYear": "2016",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1488467693",
@@ -38672,7 +26101,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/c4/99/4e/c4994ea4-0db8-4ea0-88d3-3d7666386d13/7294276306772.png/300x300bb.jpg",
     "album": "בזמן האחרון",
     "releaseYear": "2012",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1578169384",
@@ -38685,7 +26114,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5f/c5/5a/5fc55ae3-94db-430a-b5fe-69f56b75ba36/7290116167787.png/300x300bb.jpg",
     "album": "מקום לשנינו – A place for both of us - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1526116223",
@@ -38698,7 +26127,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d0/6d/a0/d06da095-2ae6-9778-22a5-6013910a1892/7290115391817.png/300x300bb.jpg",
     "album": "בקרוב יפתחו השמיים - Single",
     "releaseYear": "2020",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1550094818",
@@ -38711,7 +26140,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/06/7a/21/067a2192-c183-759a-9521-79fa20e785c2/7290115396546.png/300x300bb.jpg",
     "album": "תסתכלי לי בעיניים - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1498363475",
@@ -38750,110 +26179,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/d3/8a/42/d38a4231-7b17-fd3d-14fa-f6965879658b/7294276307748.png/300x300bb.jpg",
     "album": "רצינו להיות",
     "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1433652074",
-    "title": "בסוף",
-    "fullTitle": "בסוף",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/f4/67/f4f467e5-ff98-e1b1-e606-9d52db98d249/mzaf_10380320116363956360.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/88/1a/f9/881af973-fa79-d5d4-7575-26049182e087/7294276308455.png/300x300bb.jpg",
-    "album": "חלק מהזמן",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1434304727",
-    "title": "הפרח בגני",
-    "fullTitle": "הפרח בגני",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/6c/e9/d66ce92c-294c-92e1-829f-9b5828a3871a/mzaf_1649123483037120435.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/36/c5/68/36c56844-5e6a-41c4-be4f-5c26ad85e7f2/7290111896835.png/300x300bb.jpg",
-    "album": "הפרח בגני - Single",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1784323857",
-    "title": "לתת לחיים לרקוד",
-    "fullTitle": "לתת לחיים לרקוד",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/a5/fb/08a5fb17-80fb-eb90-e2c6-abf516af934d/mzaf_13543433857620687362.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2c/c4/c8/2cc4c8ae-d5b3-6414-0783-1aba75e7aad3/7290121545006.png/300x300bb.jpg",
-    "album": "סופרמן",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1643705616",
-    "title": "אהבה ממבט ראשון",
-    "fullTitle": "אהבה ממבט ראשון",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/af/13/1eaf130f-e7cf-cd0c-b47a-3d445b560818/mzaf_3457073829589461786.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/2e/34/50/2e3450c2-2666-8be7-5bf7-387528bcc46f/7290118542223.png/300x300bb.jpg",
-    "album": "אהבה ממבט ראשון - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1512743397",
-    "title": "זוכר כמעט הכל",
-    "fullTitle": "זוכר כמעט הכל",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8a/bd/a8/8abda8f3-4a1a-4f7c-ba90-47419c66e861/mzaf_14136188770471454733.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b6/5c/06/b65c06da-d1a6-d4ce-b972-7ffc36f2aeb1/7290115390094.png/300x300bb.jpg",
-    "album": "זוכר כמעט הכל - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1433661358",
-    "title": "המכתב האחרון",
-    "fullTitle": "המכתב האחרון",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/3d/41/243d41f8-08d6-29b8-5ca4-8f2ef555def5/mzaf_12231417830693106448.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c7/4a/fb/c74afb10-8834-e9bf-c47b-bf8a97b74b7b/7294276306055.jpg/300x300bb.jpg",
-    "album": "עידן עמדי",
-    "releaseYear": "2011",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1643704417",
-    "title": "אהבת חיי",
-    "fullTitle": "אהבת חיי",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/8d/97/268d973f-d3c6-6581-8b6c-d210c18c1a42/mzaf_12688923097099854419.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/67/3b/2b/673b2b13-3492-a551-9e0e-783f4389c835/7290118542216.png/300x300bb.jpg",
-    "album": "אהבת חיי - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1784323861",
-    "title": "לדפוק ת'ראש",
-    "fullTitle": "לדפוק ת'ראש (feat. רותם סלע, דני קושמרו, אורי גבריאל & Asi Israelof)",
-    "artist": "עידן עמדי",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/a9/83/d0a98370-ce82-87cc-ba93-f522b4ff51bc/mzaf_4929819979031785711.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2c/c4/c8/2cc4c8ae-d5b3-6414-0783-1aba75e7aad3/7290121545006.png/300x300bb.jpg",
-    "album": "סופרמן",
-    "releaseYear": "2025",
     "difficulty": "hard"
   },
   {
@@ -39062,7 +26387,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ca/0b/4c/ca0b4c23-89b2-619d-d812-704d597b45c5/7290117731277.png/300x300bb.jpg",
     "album": "אלבי - Single",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_618098619",
@@ -39140,58 +26465,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ef/06/af/ef06af87-6b80-5d48-469c-50f8069eea88/cover.jpg/300x300bb.jpg",
     "album": "את במרחבים - Single",
     "releaseYear": "2014",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1315537952",
-    "title": "לאורך הים",
-    "fullTitle": "לאורך הים",
-    "artist": "אברהם טל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/dd/7c/3e/dd7c3e16-f088-238e-7dad-34c31fff6b0a/mzaf_6232033213913636096.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/bc/78/90/bc7890c3-481e-06be-d429-29fc2aaf9f4c/itunes_le_oreh_a_yam.jpg/300x300bb.jpg",
-    "album": "לאורך הים - Single",
-    "releaseYear": "2017",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1572555730",
-    "title": "אבא",
-    "fullTitle": "אבא",
-    "artist": "אברהם טל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/56/73/d95673f4-a2d9-0aac-5895-ebbf9e74c029/mzaf_17474346391615097670.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/df/dd/fd/dfddfd40-8e95-f981-2236-67309aba6eec/7290116166599.png/300x300bb.jpg",
-    "album": "אורות",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_577457229",
-    "title": "פסטיבל",
-    "fullTitle": "פסטיבל",
-    "artist": "אברהם טל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/03/f6/5d/03f65d34-1a42-c0e8-31ac-fd4f36593922/mzaf_10269945984848396562.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8b/7e/e1/8b7ee15d-38b8-04a7-c370-0b8451ed107d/cover_avrham.jpg/300x300bb.jpg",
-    "album": "אברהם טל",
-    "releaseYear": "2008",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_577457233",
-    "title": "שדות האש",
-    "fullTitle": "שדות האש",
-    "artist": "אברהם טל",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bd/44/9e/bd449eb9-4d20-52aa-f3c7-2ae25e2d2879/mzaf_17136104951635073292.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8b/7e/e1/8b7ee15d-38b8-04a7-c370-0b8451ed107d/cover_avrham.jpg/300x300bb.jpg",
-    "album": "אברהם טל",
-    "releaseYear": "2008",
     "difficulty": "hard"
   },
   {
@@ -39400,7 +26673,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d2/6f/12/d26f12d5-cd5d-b5f5-9588-ccc4952ddb7d/7290004901615.png/300x300bb.jpg",
     "album": "אשליות מתוקות",
     "releaseYear": "2001",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1515623743",
@@ -39478,45 +26751,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fe/12/85/fe12858e-3b5a-f21c-b6b5-25cf72bf52ef/7290008787284.png/300x300bb.jpg",
     "album": "ילדה של אהבה",
     "releaseYear": "2002",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1755189268",
-    "title": "לב ליבי",
-    "fullTitle": "לב ליבי",
-    "artist": "שרית חדד",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/67/dd/8c67dd20-427e-e6c4-771c-fec73263099f/mzaf_6959728723411219263.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fb/05/77/fb0577d0-51ad-dc3a-c936-0fb2a7a2375b/7290120738508.png/300x300bb.jpg",
-    "album": "8 - EP",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1755189271",
-    "title": "משתכרת",
-    "fullTitle": "משתכרת",
-    "artist": "שרית חדד",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/bc/3d/edbc3de9-0c57-4093-b06d-0b93d480e1f4/mzaf_9253568161463239505.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fb/05/77/fb0577d0-51ad-dc3a-c936-0fb2a7a2375b/7290120738508.png/300x300bb.jpg",
-    "album": "8 - EP",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1457490692",
-    "title": "Shufuni",
-    "fullTitle": "Shufuni",
-    "artist": "שרית חדד",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/40/ad/5540ad68-d381-df81-a829-416c9cdde410/mzaf_576835477758583938.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/8a/cc/738acc7a-15db-d1c1-ac5e-944fd266f294/7290107176330.png/300x300bb.jpg",
-    "album": "Shufuni - Single",
-    "releaseYear": "2019",
     "difficulty": "hard"
   },
   {
@@ -39621,7 +26855,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/47/16/f4/4716f4ec-21cb-e962-c3a6-918589e385f0/7290111898242.png/300x300bb.jpg",
     "album": "היא רק רוצה לרקוד - Single",
     "releaseYear": "2015",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_910817494",
@@ -39725,7 +26959,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/32/f2/38/32f23858-fe2a-b96b-e1c1-fb28c498eb2b/888831717249.jpg/300x300bb.jpg",
     "album": "מהשמים",
     "releaseYear": "2010",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1644162260",
@@ -39738,7 +26972,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/54/ae/c0/54aec041-d0a0-8fff-8843-5d1a50a1cfa7/197186948346.jpg/300x300bb.jpg",
     "album": "בן איש חי רב פעלים (feat. מיכאל פרץ, ארז יחיאל, החזן ציון יחזקאל, אליה והב, דוד חפצדי, משה דוויק, אלירן אלבז, החזן דוד שירו, אבישי אשל & מנדי ג'רופי) - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1758747744",
@@ -39751,7 +26985,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/7f/fd/757ffd52-5ae5-1448-b00c-8a90022f98b7/198588829233.jpg/300x300bb.jpg",
     "album": "מתוק מדבש - EP",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1819522183",
@@ -39800,97 +27034,6 @@ window.SONGS_CATALOG = [
     "genre": "Mizrahi",
     "lang": "he",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/69/43/fa/6943fa92-ca82-c858-58e4-921f5cb73117/mzaf_16749237949556554411.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
-    "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465384107",
-    "title": "Der Foygl",
-    "fullTitle": "Der Foygl (The Bird)",
-    "artist": "משה פרץ",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/2e/72/b9/2e72b92f-af49-066e-49c0-4affc241f8b2/mzaf_121000296054904482.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
-    "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465384108",
-    "title": "Der Shifer",
-    "fullTitle": "Der Shifer (The Skipper)",
-    "artist": "משה פרץ",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/19/c5/5d/19c55d64-83e1-b5b9-d863-75beee8bffd8/mzaf_1629128002358878187.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
-    "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465384109",
-    "title": "Breytele",
-    "fullTitle": "Breytele (Bread Roll)",
-    "artist": "משה פרץ",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/0e/76/c4/0e76c4ba-fec1-5113-f63e-d78c9d504dd2/mzaf_12482782726038216773.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
-    "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465384110",
-    "title": "Tants, Meydele, Tants",
-    "fullTitle": "Tants, Meydele, Tants (Dance, Girl, Dance)",
-    "artist": "משה פרץ",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/03/a8/a9/03a8a9d5-394e-cb4d-946e-a815811b4fe3/mzaf_13017003694941661118.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
-    "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465384111",
-    "title": "Der Yeger",
-    "fullTitle": "Der Yeger (The Hunter)",
-    "artist": "משה פרץ",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/26/e5/71/26e571c0-bb6d-3c60-3a5a-c8f7f12e776b/mzaf_15241762211671210605.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
-    "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465384112",
-    "title": "Bal",
-    "fullTitle": "Bal-Shpil (Ball Game)",
-    "artist": "משה פרץ",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/e5/3e/be/e53ebe79-2532-6108-7199-641e46f0fbdd/mzaf_6989950189021046072.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
-    "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1465384113",
-    "title": "Oyfn Grinem Bergele",
-    "fullTitle": "Oyfn Grinem Bergele (On the Green Mountain)",
-    "artist": "משה פרץ",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/ec/d0/59/ecd0593e-79b4-7749-353f-ee94ad571e40/mzaf_13793431989921413652.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fd/cb/66/fdcb66dd-9dd2-3a73-d340-3e2dfad844e4/191924590279.jpg/300x300bb.jpg",
     "album": "Moshe Milner: Vocal Suite to Y.L. Peretz’s Ten Children’s Songs",
     "releaseYear": "2019",
@@ -39998,7 +27141,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/24/41/23/244123d3-5174-9cc5-c5b8-5fc23eb9838c/cover.jpg/300x300bb.jpg",
     "album": "רק שלך - Single",
     "releaseYear": "2018",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1613454027",
@@ -40102,7 +27245,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d7/05/9b/d7059bf4-a08f-6484-b253-e6aa8a690a98/7290117738733.png/300x300bb.jpg",
     "album": "עזוב אותי מטכנו - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1318315247",
@@ -40115,7 +27258,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9d/b7/95/9db795e7-415b-5e67-eda9-87810ba693ef/cover.jpg/300x300bb.jpg",
     "album": "כמה אהבנו - Single",
     "releaseYear": "2017",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1893925494",
@@ -40128,7 +27271,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/94/24/46/94244699-ae65-e512-f37d-55434542bf62/cover.jpg/300x300bb.jpg",
     "album": "את משגעת אותי - Single",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1137678774",
@@ -40141,7 +27284,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/27/92/00/279200ab-d62d-775f-7691-9181b8c82d3f/cover.jpg/300x300bb.jpg",
     "album": "Asinu Historia",
     "releaseYear": "2016",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1547264016",
@@ -40180,110 +27323,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/29/0e/42/290e420f-ec22-8fa7-d355-d6614a29b051/195081915715.jpg/300x300bb.jpg",
     "album": "לכה דודי - Single",
     "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1489646268",
-    "title": "היינו עושים אהבה",
-    "fullTitle": "היינו עושים אהבה",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/e8/b6/a3e8b6b0-e018-7a2f-b16e-c33f219cc019/mzaf_7387809317896977702.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/f0/b1/c3/f0b1c395-49cd-db98-6b1a-9ae445ff0c25/cover.jpg/300x300bb.jpg",
-    "album": "היינו עושים אהבה - Single",
-    "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1132234390",
-    "title": "Ani Mavtiach",
-    "fullTitle": "Ani Mavtiach (feat. Eyal Golan)",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/4d/27/094d273b-5013-f13c-a742-87d96503d379/mzaf_16187358597030223006.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c3/c3/79/c3c37977-6c20-a0a8-13fc-8ef472a53cd3/cover.jpg/300x300bb.jpg",
-    "album": "Erev Tov",
-    "releaseYear": "2010",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1758275989",
-    "title": "בחורה טובה",
-    "fullTitle": "בחורה טובה",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/59/a0/a259a09f-2fc4-ef8e-8eae-7884d1256dd5/mzaf_11307745852942314889.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3d/75/a9/3d75a96f-67c1-72bd-caa2-e2a5644ded3a/7290120739246.png/300x300bb.jpg",
-    "album": "Next Episode - Single",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1503459082",
-    "title": "שירו של שפשף",
-    "fullTitle": "שירו של שפשף",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a9/9f/39/a99f39f4-9b33-a66c-7579-d0bdbcbc6722/mzaf_8026002946625814887.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f2/a8/9a/f2a89aa7-3ce4-763a-7fe5-c39c8e53f5da/7290114189415.png/300x300bb.jpg",
-    "album": "שירו של שפשף - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1737742774",
-    "title": "מסיבה עם פפיון",
-    "fullTitle": "מסיבה עם פפיון",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/ed/39/f8ed3921-ba2a-558b-200c-f97c8eaefe82/mzaf_526915034119740202.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/d2/eb/60d2eb41-e708-d2ec-3e6c-9f6f6c9fd1fc/3616845071548.png/300x300bb.jpg",
-    "album": "מסיבה עם פפיון - Single",
-    "releaseYear": "2022",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1530801726",
-    "title": "אהבה זה דמעות",
-    "fullTitle": "אהבה זה דמעות",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/97/2f/ee/972fee9b-22cb-8653-8c74-d18507f3db7a/mzaf_2070509443905155204.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5c/e4/46/5ce44680-1354-eacb-3800-269409736031/cover.jpg/300x300bb.jpg",
-    "album": "אהבה זה דמעות - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1178679090",
-    "title": "Achat Kamoch",
-    "fullTitle": "Achat Kamoch",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/09/02/c80902c2-056d-390b-0c07-e44d7d11bc55/mzaf_10199554248806032984.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music22/v4/c8/9a/16/c89a16ea-5bb7-2210-5edb-50d66e5b6ba3/cover.jpg/300x300bb.jpg",
-    "album": "Achat Kamoch - Single",
-    "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1458001483",
-    "title": "חגיגה בישראל",
-    "fullTitle": "חגיגה בישראל",
-    "artist": "ליאור נרקיס",
-    "genre": "Mizrahi",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/b3/05/fbb305b2-7e38-7e59-f77d-af2453f3db41/mzaf_15677800846468624579.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7f/ba/dc/7fbadc9e-dd35-7812-e812-4fd9462f6b19/7290114180177.png/300x300bb.jpg",
-    "album": "חגיגה בישראל - Single",
-    "releaseYear": "2017",
     "difficulty": "hard"
   },
   {
@@ -40388,7 +27427,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b6/0b/5c/b60b5c83-b886-2775-656b-8a64c6806f37/7293372482199.png/300x300bb.jpg",
     "album": "אושר אקספרס",
     "releaseYear": "2012",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_466388868",
@@ -40492,7 +27531,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e3/eb/7a/e3eb7acd-d0a6-2457-b6f6-1a709ac49d36/7293627675512.jpg/300x300bb.jpg",
     "album": "אי",
     "releaseYear": "2026",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1239380782",
@@ -40505,7 +27544,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/de/fb/43/defb4324-e990-70be-4cb5-057e8c71358b/3000.jpg/300x300bb.jpg",
     "album": "בדיוק בזמן",
     "releaseYear": "2004",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1239380775",
@@ -40518,7 +27557,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/de/fb/43/defb4324-e990-70be-4cb5-057e8c71358b/3000.jpg/300x300bb.jpg",
     "album": "בדיוק בזמן",
     "releaseYear": "2004",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1239380772",
@@ -40570,97 +27609,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2d/4b/10/2d4b104a-3c68-ec38-dc73-baeab6d39905/3000.jpg/300x300bb.jpg",
     "album": "הגולה",
     "releaseYear": "2016",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1541011776",
-    "title": "ראי איזה פלא",
-    "fullTitle": "ראי איזה פלא",
-    "artist": "דודו טסה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/92/fa/a492faa0-a046-aee2-4581-82052a39c0ea/mzaf_779179226960676403.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3f/39/b1/3f39b1ff-5bb9-991c-abd4-9e0f38c75069/cover.jpg/300x300bb.jpg",
-    "album": "בדל של אור",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1525198848",
-    "title": "מתי לחזור",
-    "fullTitle": "מתי לחזור",
-    "artist": "דודו טסה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8d/54/9b/8d549b3d-06c5-88cf-25cf-ab74f845b0b3/mzaf_16042349811344662098.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/39/2d/4d/392d4d10-28bb-acdf-d889-e1d88614a39f/3000x3000.jpg/300x300bb.jpg",
-    "album": "מתי לחזור - Single",
-    "releaseYear": "2020",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1670612549",
-    "title": "סבתא חנה",
-    "fullTitle": "סבתא חנה",
-    "artist": "דודו טסה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/20/a7/ff20a7f7-a29a-b3c5-a88b-1100c00a7eec/mzaf_8326711614120452070.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/59/ee/03/59ee03ce-d089-8cea-1d33-f1a8b5980cc6/3000x3000.png/300x300bb.jpg",
-    "album": "שמש וענן",
-    "releaseYear": "2023",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1438634146",
-    "title": "נעמוד בזה",
-    "fullTitle": "נעמוד בזה",
-    "artist": "דודו טסה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/03/21/ea/0321eaa4-023c-47eb-2237-d1d683543f16/mzaf_7449629591973751788.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/d6/5f/30d65f36-6ef0-c321-a184-e56a75663c2d/naamod_3000.jpg/300x300bb.jpg",
-    "album": "נעמוד בזה - Single",
-    "releaseYear": "2018",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_531090509",
-    "title": "Lo Margish Tov",
-    "fullTitle": "Lo Margish Tov (לא מרגיש טוב)",
-    "artist": "דודו טסה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ec/4d/fc/ec4dfc68-4e2c-306e-44b9-6954ebe03e49/mzaf_18210154600796232420.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/b7/59/64b75906-5b85-4c67-8205-9c85d819f44b/asset.jpg/300x300bb.jpg",
-    "album": "Scharhoret (סחרחורת)",
-    "releaseYear": "2012",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1816522155",
-    "title": "מה זה משנה בכלל",
-    "fullTitle": "מה זה משנה בכלל",
-    "artist": "דודו טסה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/c7/e2/b9c7e223-105d-0949-ae23-552d530ffdd7/mzaf_4271907733331519327.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/56/0e/63/560e6364-cf6f-9819-2fd2-7a63cafe4b5b/9999900392814.jpg/300x300bb.jpg",
-    "album": "מה זה משנה בכלל",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1670612542",
-    "title": "לומד לדבר אהבה",
-    "fullTitle": "לומד לדבר אהבה",
-    "artist": "דודו טסה",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/de/0f/64de0f63-d608-203a-4ab8-f8194bc9ccc1/mzaf_11899046560378563592.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/59/ee/03/59ee03ce-d089-8cea-1d33-f1a8b5980cc6/3000x3000.png/300x300bb.jpg",
-    "album": "שמש וענן",
-    "releaseYear": "2023",
     "difficulty": "hard"
   },
   {
@@ -40765,7 +27713,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/a6/2b/73a62b2a-0a45-3ee8-c14d-124d3fa37202/cover.jpg/300x300bb.jpg",
     "album": "Show Us What You Got",
     "releaseYear": "2017",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1604408205",
@@ -40869,7 +27817,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/cd/dc/78cddcd7-5777-3ed1-3a3d-d15ab3cbec5e/cover.jpg/300x300bb.jpg",
     "album": "שובר במות",
     "releaseYear": "2024",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1264975947",
@@ -40882,7 +27830,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b5/14/56/b5145645-cd4a-d096-47b2-9320f42d372a/889326258452.png/300x300bb.jpg",
     "album": "Time for Us to Move",
     "releaseYear": "2015",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1604407395",
@@ -40895,7 +27843,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/ff/8f/3eff8f49-862d-1503-3b56-2713ae966e58/cover.jpg/300x300bb.jpg",
     "album": "ממותה",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_6802028238",
@@ -40944,71 +27892,6 @@ window.SONGS_CATALOG = [
     "genre": "Rock & Alt",
     "lang": "he",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/34/ff/4234ff25-3591-c404-32b0-80756461251a/mzaf_13825975431151777463.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/cd/dc/78cddcd7-5777-3ed1-3a3d-d15ab3cbec5e/cover.jpg/300x300bb.jpg",
-    "album": "שובר במות",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1264975949",
-    "title": "Mufleta Blues",
-    "fullTitle": "Mufleta Blues",
-    "artist": "פול טראנק",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/d4/6e/19d46e35-1b0c-4842-2d4e-f40bc5e11cee/mzaf_1211003481561905436.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b5/14/56/b5145645-cd4a-d096-47b2-9320f42d372a/889326258452.png/300x300bb.jpg",
-    "album": "Time for Us to Move",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1264975956",
-    "title": "Going Home",
-    "fullTitle": "Going Home",
-    "artist": "פול טראנק",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/21/a7/b221a755-1816-a170-6781-430de07f65ee/mzaf_8209041809378565376.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b5/14/56/b5145645-cd4a-d096-47b2-9320f42d372a/889326258452.png/300x300bb.jpg",
-    "album": "Time for Us to Move",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1742005824",
-    "title": "סיכוי שבאוויר",
-    "fullTitle": "סיכוי שבאוויר",
-    "artist": "פול טראנק",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/be/d6/93bed63c-5bf0-6aa6-95be-69b8ab80aaca/mzaf_14465385315892720598.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/cd/dc/78cddcd7-5777-3ed1-3a3d-d15ab3cbec5e/cover.jpg/300x300bb.jpg",
-    "album": "שובר במות",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1264975948",
-    "title": "Think You're a Man Think Twice Again",
-    "fullTitle": "Think You're a Man Think Twice Again",
-    "artist": "פול טראנק",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/81/88/7c81883f-1e9b-87b5-85ac-d26cca16dd08/mzaf_4004040325136337755.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b5/14/56/b5145645-cd4a-d096-47b2-9320f42d372a/889326258452.png/300x300bb.jpg",
-    "album": "Time for Us to Move",
-    "releaseYear": "2015",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1742005165",
-    "title": "אינטרו",
-    "fullTitle": "אינטרו",
-    "artist": "פול טראנק",
-    "genre": "Rock & Alt",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/06/d6/5506d699-92e5-582e-5fb0-2ad86714d019/mzaf_13579250643051807701.plus.aac.p.m4a",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/cd/dc/78cddcd7-5777-3ed1-3a3d-d15ab3cbec5e/cover.jpg/300x300bb.jpg",
     "album": "שובר במות",
     "releaseYear": "2024",
@@ -41116,7 +27999,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/0f/02/940f0282-5eb4-d697-903e-f2cb1658b4f9/cover.jpg/300x300bb.jpg",
     "album": "מה יהיה - EP",
     "releaseYear": "2019",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "id": "it_1589079569",
@@ -41220,7 +28103,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d1/1b/fc/d11bfc77-0c4c-d0b5-54b3-9132ae073d58/7290118549628.png/300x300bb.jpg",
     "album": "Hoodie (feat. Mergui) - Single",
     "releaseYear": "2023",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1615579732",
@@ -41233,7 +28116,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5b/31/9e/5b319e54-7acd-a1a1-60fd-5834ff9e29d3/7290117734964.png/300x300bb.jpg",
     "album": "בשבילך - Single",
     "releaseYear": "2022",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1478349602",
@@ -41246,7 +28129,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/0f/02/940f0282-5eb4-d697-903e-f2cb1658b4f9/cover.jpg/300x300bb.jpg",
     "album": "מה יהיה - EP",
     "releaseYear": "2019",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1589079967",
@@ -41259,7 +28142,7 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d5/d4/83/d5d48312-84b9-d23f-425b-5ef863d67dbd/cover.jpg/300x300bb.jpg",
     "album": "לא להיות לבד",
     "releaseYear": "2021",
-    "difficulty": "medium"
+    "difficulty": "hard"
   },
   {
     "id": "it_1873388426",
@@ -41298,110 +28181,6 @@ window.SONGS_CATALOG = [
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/0f/02/940f0282-5eb4-d697-903e-f2cb1658b4f9/cover.jpg/300x300bb.jpg",
     "album": "מה יהיה - EP",
     "releaseYear": "2019",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1829800078",
-    "title": "LIVING ROOM",
-    "fullTitle": "LIVING ROOM",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/d4/97/26d49769-d5bf-652b-8be3-d30251c4c68d/mzaf_17430370486714303012.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9c/79/1a/9c791a54-0c23-4a67-203a-5065121a4a38/199538359985.jpg/300x300bb.jpg",
-    "album": "LIVING ROOM - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1589079971",
-    "title": "לונה פארק",
-    "fullTitle": "לונה פארק",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/6a/b6/4a6ab6bb-bc20-a381-8783-8b449398f7d6/mzaf_6831456152552124543.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d5/d4/83/d5d48312-84b9-d23f-425b-5ef863d67dbd/cover.jpg/300x300bb.jpg",
-    "album": "לא להיות לבד",
-    "releaseYear": "2021",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1838025107",
-    "title": "מלאך",
-    "fullTitle": "מלאך",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/1a/fd/231afd91-6b1f-fd0a-a8e0-a3a9f4ad7a43/mzaf_13034827989077689894.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ef/71/f5/ef71f5a7-f4b9-bb86-4da3-aee75394419f/cover.jpg/300x300bb.jpg",
-    "album": "מלאך - Single",
-    "releaseYear": "2025",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1748736643",
-    "title": "מי ירפא",
-    "fullTitle": "מי ירפא",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/0e/67/7e0e672e-ef34-b2ee-b780-1a7c27718208/mzaf_17575586411053084173.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/64/b7/e0/64b7e07e-b8b7-f898-bc1d-b8aeaddf76d8/cover.jpg/300x300bb.jpg",
-    "album": "מרגיש כמו אהבה",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1728032617",
-    "title": "Cry",
-    "fullTitle": "Cry",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c8/9c/96/c89c9627-f360-b8d5-b3bb-8a890ffb5277/mzaf_3331501122323833168.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/52/6e/95/526e9559-7bb5-e274-4c29-88216880a5cd/cover.jpg/300x300bb.jpg",
-    "album": "Cry - Single",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1710220460",
-    "title": "סיבובים",
-    "fullTitle": "סיבובים (רחוק מכאן) [feat. Mergui]",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/66/21/d0/6621d052-f865-bb43-af21-17657d89d50b/mzaf_6110200637178828605.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7d/75/0a/7d750a1c-ae91-00c0-990f-5be53255da24/cover.jpg/300x300bb.jpg",
-    "album": "צולל",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1748736648",
-    "title": "רעידת אדמה",
-    "fullTitle": "רעידת אדמה",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/d7/16/36d716af-e793-bab8-99e9-0b0645685af9/mzaf_5037692290432249257.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/64/b7/e0/64b7e07e-b8b7-f898-bc1d-b8aeaddf76d8/cover.jpg/300x300bb.jpg",
-    "album": "מרגיש כמו אהבה",
-    "releaseYear": "2024",
-    "difficulty": "hard"
-  },
-  {
-    "id": "it_1644973619",
-    "title": "Falling",
-    "fullTitle": "Falling",
-    "artist": "מרגי",
-    "genre": "Pop",
-    "lang": "he",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/03/5a/bf035ada-8284-1623-0452-e1ce6005aa69/mzaf_15510630062695188152.plus.aac.p.m4a",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ae/fb/dc/aefbdcb9-2ddb-5c4f-444f-96369483590f/cover.jpg/300x300bb.jpg",
-    "album": "Dark Side of the Rainbow - EP",
-    "releaseYear": "2022",
     "difficulty": "hard"
   }
 ];
