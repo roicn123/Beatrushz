@@ -8,7 +8,39 @@
   const CUSTOM_SONGS_KEY = 'beatrush_custom_songs_v1';
   const USER_PROFILE_KEY = 'beatrush_user_profile_v1';
 
-  const MAX_TOP_TRACKS_PER_ARTIST = 75;
+  const MAX_TOP_TRACKS_PER_ARTIST = 120;
+
+  const MAINSTREAM_TIER_A_ARTISTS = new Set([
+    'The Weeknd', 'Bruno Mars', 'Taylor Swift', 'Drake', 'Rihanna', 'Justin Bieber',
+    'Ed Sheeran', 'Ariana Grande', 'Post Malone', 'Eminem', 'Kanye West', 'Beyoncé',
+    'Lady Gaga', 'Katy Perry', 'Miley Cyrus', 'Dua Lipa', 'Adele', 'Coldplay',
+    'Imagine Dragons', 'Maroon 5', 'Linkin Park', 'Billie Eilish', 'Travis Scott',
+    'Kendrick Lamar', 'SZA', 'Bad Bunny', 'Sabrina Carpenter', 'Olivia Rodrigo',
+    'Harry Styles', 'Usher', 'Chris Brown', 'Shawn Mendes', 'Selena Gomez',
+    'OneRepublic', 'Arctic Monkeys', 'Nicki Minaj', 'Cardi B', 'Doja Cat',
+    'Morgan Wallen', 'Luke Combs',
+    'עומר אדם', 'אייל גולן', 'עדן חסון', 'פאר טסי', 'אושר כהן', 'חנן בן ארי',
+    'נועה קירל', 'עידן רייכל', 'שלמה ארצי', 'אריק איינשטיין', 'משינה',
+    'שרית חדד', 'משה פרץ', 'ליאור נרקיס', 'ישי ריבו', 'עידן עמדי',
+    'טונה', 'רביד פלוטניק', 'אודיה'
+  ]);
+
+  function assignPyramidDifficulties(tracks, artistName) {
+    const n = tracks.length;
+    const isMainstream = MAINSTREAM_TIER_A_ARTISTS.has(artistName);
+    const easyCut = isMainstream
+      ? Math.min(10, Math.max(5, Math.round(n * 0.085)))
+      : Math.min(6, Math.max(4, Math.round(n * 0.06)));
+    const medCount = Math.min(44, Math.max(10, Math.round(n * 0.36)));
+    const medCut = easyCut + medCount;
+
+    tracks.forEach((song, idx) => {
+      song.artistRank = idx + 1;
+      if (idx < easyCut) song.difficulty = 'easy';
+      else if (idx < medCut) song.difficulty = 'medium';
+      else song.difficulty = 'hard';
+    });
+  }
 
   const BAD_REMIX_WORDS = [
     'remix', 'rmx', 'mix)', 'mix]', 'rework', 'vip', 'edit)', 'edit]', 'radio edit',
@@ -1630,25 +1662,78 @@
     };
   }
 
+  function selectWeightedRoundSongs(pool, count, opts = {}) {
+    const rng = typeof opts.rng === 'function' ? opts.rng : Math.random;
+    const isSingleArtist = Boolean(opts.singleArtist);
+    const diff = opts.difficulty || 'all';
+    const targetCount = Math.min(count, pool.length);
+    if (targetCount <= 0) return [];
+
+    // Slight bias toward mainstream hitmakers + top-ranked tracks of each artist
+    const artistBoost = diff === 'easy' ? 1.85 : diff === 'medium' ? 1.55 : 1.35;
+    const maxPerArtist = isSingleArtist ? targetCount : (targetCount <= 5 ? 1 : 2);
+
+    const candidates = pool.map((song) => {
+      const isMainstream = MAINSTREAM_TIER_A_ARTISTS.has(song.artist);
+      const rank = Number(song.artistRank) || 25;
+      const rankFactor = 1 + 0.55 * Math.max(0, 1 - (rank - 1) / 35);
+      const weight = (isMainstream ? artistBoost : 1.0) * rankFactor;
+      return { song, weight };
+    });
+
+    const chosen = [];
+    const usedIds = new Set();
+    const artistCounts = new Map();
+
+    while (chosen.length < targetCount) {
+      let eligible = candidates.filter(
+        (c) => !usedIds.has(c.song.id) && (artistCounts.get(c.song.artist) || 0) < maxPerArtist
+      );
+      if (eligible.length === 0) {
+        eligible = candidates.filter((c) => !usedIds.has(c.song.id));
+      }
+      if (eligible.length === 0) break;
+
+      let totalWeight = 0;
+      for (let i = 0; i < eligible.length; i++) {
+        totalWeight += eligible[i].weight;
+      }
+
+      let pick = rng() * totalWeight;
+      let pickedItem = eligible[eligible.length - 1];
+      for (let i = 0; i < eligible.length; i++) {
+        pick -= eligible[i].weight;
+        if (pick <= 0) {
+          pickedItem = eligible[i];
+          break;
+        }
+      }
+
+      usedIds.add(pickedItem.song.id);
+      artistCounts.set(pickedItem.song.artist, (artistCounts.get(pickedItem.song.artist) || 0) + 1);
+      chosen.push(pickedItem.song);
+    }
+
+    return chosen;
+  }
+
   function buildDailyChallengeQueue() {
     const seedStr = getTodaySeedString();
     const rng = createSeededRng(`beatrushz_daily_${seedStr}`);
-    const basePool = [...(window.SONGS_CATALOG || CATALOG)];
-    const chosen = [];
-    const usedIds = new Set();
+    const basePool = [...(window.SONGS_CATALOG || CATALOG)].filter((s) => s.difficulty !== 'hard');
+    const poolToUse = basePool.length >= 5 ? basePool : [...(window.SONGS_CATALOG || CATALOG)];
+    const picked = selectWeightedRoundSongs(poolToUse, 5, {
+      rng,
+      singleArtist: false,
+      difficulty: 'medium'
+    });
     const cutOffsets = [0, 2, 4, 6, 8, 10];
-
-    while (chosen.length < 5 && chosen.length < basePool.length) {
-      const idx = Math.floor(rng() * basePool.length);
-      const song = basePool[idx];
-      if (!song || usedIds.has(song.id)) continue;
-      usedIds.add(song.id);
+    return picked.map((song) => {
       const cutIdx = Math.floor(rng() * cutOffsets.length);
-      chosen.push(Object.assign({}, song, {
+      return Object.assign({}, song, {
         startOffsetSec: cutOffsets[cutIdx]
-      }));
-    }
-    return chosen;
+      });
+    });
   }
 
   function updateDailyBannerUI() {
@@ -1741,9 +1826,13 @@
 
     const isCampaignRun = config.artist !== 'all' && config.campaignStage !== 'free';
     const stageObj = isCampaignRun ? CAMPAIGN_STAGES[config.campaignStage] : null;
+    const effectiveDiff = isCampaignRun ? (stageObj?.diff || 'easy') : config.difficulty;
     const desiredCount = isCampaignRun ? 5 : config.roundLength;
     const count = Math.min(desiredCount, pool.length);
-    const selectedQueue = shuffleArray(pool).slice(0, count).map((s) => Object.assign({}, s, { startOffsetSec: 0 }));
+    const selectedQueue = selectWeightedRoundSongs(pool, count, {
+      singleArtist: config.artist !== 'all',
+      difficulty: effectiveDiff
+    }).map((s) => Object.assign({}, s, { startOffsetSec: 0 }));
 
     prefetchRoundAudioQueue(selectedQueue);
 
@@ -3507,14 +3596,7 @@
         return;
       }
 
-      const easyCut = Math.max(5, Math.round(tracks.length * 0.25));
-      const medCut = Math.max(8, Math.round(tracks.length * 0.35));
-
-      tracks.forEach((song, idx) => {
-        if (idx < easyCut) song.difficulty = 'easy';
-        else if (idx < easyCut + medCut) song.difficulty = 'medium';
-        else song.difficulty = 'hard';
-      });
+      assignPyramidDifficulties(tracks, artistName);
 
       const existingIds = new Set(CATALOG.map((s) => s.id));
       const newlyAdded = [];
@@ -4209,8 +4291,10 @@
 
   function generateBtrMatchPayload(roomCode, cfg, hostIdentity, guestIdentity) {
     const pool = buildBtrPoolForConfig(cfg);
-    const shuffled = [...pool].sort(() => Math.random() - 0.5);
-    const chosen = shuffled.slice(0, 5);
+    const chosen = selectWeightedRoundSongs(pool, 5, {
+      singleArtist: cfg.scopeType === 'artist',
+      difficulty: cfg.difficulty || 'all'
+    });
 
     const rounds = chosen.map((song, idx) => {
       const songLang = song.lang || song.language || 'en';
