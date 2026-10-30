@@ -536,6 +536,7 @@
       }
     } catch (e) {}
 
+    bindEvents();
     updateHeaderUsernameUI();
     renderGenreChips();
     renderDecadeChips();
@@ -546,8 +547,11 @@
     renderSidebarArtistFastest();
     renderStatsDashboard();
     renderCollectionDashboard();
-    initBtrModeUI();
-    bindEvents();
+    try {
+      initBtrModeUI();
+    } catch (e) {
+      console.error('BTR init error:', e);
+    }
     syncSharedSongsFromSupabase();
 
     try {
@@ -3539,6 +3543,19 @@
   const BTR_AVATAR_PRESETS = ['🎧', '🔥', '⚡', '👑', '🎸', '🎤', '🛸', '🐺'];
   const BTR_VETO_STORAGE_KEY = 'beatrushz_btr_veto_v1';
 
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function getArtistDecade(artistName) {
+    return ARTIST_META[artistName]?.decade || '2010s';
+  }
+
   const btrState = {
     sbClient: null,
     lobbyChannel: null,
@@ -3635,7 +3652,7 @@
     const rp = stats.btrStats.rp || 1000;
     const tier = getBtrTierInfo(rp);
     return {
-      id: userProfile.id,
+      id: userProfile.clientId || userProfile.username || 'player',
       username: userProfile.username || 'Player',
       avatar: userProfile.avatar || '🎧',
       rp,
@@ -3667,12 +3684,12 @@
     if (!grid) return;
 
     const masteredArtists = [];
-    if (stats.artistMastery) {
-      Object.entries(stats.artistMastery).forEach(([artistName, m]) => {
-        if ((m.unlockedTier || 1) >= 4) {
-          const songWithArt = CATALOG.find((s) => s.artist === artistName && s.artworkUrl);
-          if (songWithArt) {
-            masteredArtists.push({ artistName, artworkUrl: songWithArt.artworkUrl });
+    if (stats.artistCampaigns) {
+      Object.entries(stats.artistCampaigns).forEach(([artistName, m]) => {
+        if (m && (m.mastered || (m.unlockedStage || 1) >= 4)) {
+          const artUrl = ARTIST_META[artistName]?.avatar || CATALOG.find((s) => s.artist === artistName && s.artwork)?.artwork;
+          if (artUrl) {
+            masteredArtists.push({ artistName, artworkUrl: artUrl });
           }
         }
       });
@@ -3756,7 +3773,8 @@
   function getAvailableGenresForLanguage(lang) {
     const set = new Set();
     CATALOG.forEach((s) => {
-      if (lang !== 'all' && s.language !== lang) return;
+      const sLang = s.lang || s.language || 'en';
+      if (lang !== 'all' && sLang !== lang) return;
       if (s.genre) set.add(s.genre);
     });
     return [...set].sort();
@@ -3765,7 +3783,8 @@
   function getArtistsListForLobby(lang, genre, decade) {
     const counts = new Map();
     CATALOG.forEach((s) => {
-      if (lang !== 'all' && s.language !== lang) return;
+      const sLang = s.lang || s.language || 'en';
+      if (lang !== 'all' && sLang !== lang) return;
       if (genre && genre !== 'all' && s.genre !== genre) return;
       if (decade && decade !== 'all' && getArtistDecade(s.artist) !== decade) return;
       counts.set(s.artist, (counts.get(s.artist) || 0) + 1);
@@ -3906,8 +3925,11 @@
 
   function getSupabaseClientInstance() {
     if (btrState.sbClient) return btrState.sbClient;
-    if (window.supabase && typeof window.supabase.createClient === 'function' && window.SUPABASE_URL && window.SUPABASE_ANON_KEY) {
-      btrState.sbClient = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY, {
+    const cfg = window.BEATRUSH_SUPABASE;
+    const sbUrl = (cfg && cfg.url) || window.SUPABASE_URL;
+    const sbKey = (cfg && cfg.anonKey) || window.SUPABASE_ANON_KEY;
+    if (window.supabase && typeof window.supabase.createClient === 'function' && sbUrl && sbKey) {
+      btrState.sbClient = window.supabase.createClient(sbUrl, sbKey, {
         realtime: { params: { eventsPerSecond: 20 } },
       });
     }
@@ -3918,8 +3940,9 @@
     const sb = getSupabaseClientInstance();
     if (!sb || btrState.lobbyChannel) return;
 
+    const myId = getMyBtrIdentity().id;
     const ch = sb.channel('beatrushz_lobby_v1', {
-      config: { presence: { key: userProfile.id } },
+      config: { presence: { key: myId } },
     });
 
     ch.on('presence', { event: 'sync' }, () => {
@@ -3945,7 +3968,8 @@
     const countEl = document.getElementById('btrLiveRoomCount');
     if (!listEl) return;
 
-    const othersRooms = btrState.openRooms.filter((r) => r.hostId !== userProfile.id);
+    const myId = getMyBtrIdentity().id;
+    const othersRooms = btrState.openRooms.filter((r) => r.hostId !== myId);
     if (countEl) countEl.textContent = `${othersRooms.length} Live`;
 
     if (othersRooms.length === 0) {
@@ -3993,7 +4017,7 @@
   function buildBtrPoolForConfig(cfg) {
     let pool = CATALOG.filter((s) => s.previewUrl);
     if (cfg.language !== 'all') {
-      pool = pool.filter((s) => s.language === cfg.language);
+      pool = pool.filter((s) => (s.lang || s.language || 'en') === cfg.language);
     }
     if (cfg.decade !== 'all') {
       pool = pool.filter((s) => getArtistDecade(s.artist) === cfg.decade);
@@ -4088,7 +4112,8 @@
     const chosen = shuffled.slice(0, 5);
 
     const rounds = chosen.map((song, idx) => {
-      const sameLangPool = CATALOG.filter((s) => s.language === song.language && s.id !== song.id);
+      const songLang = song.lang || song.language || 'en';
+      const sameLangPool = CATALOG.filter((s) => (s.lang || s.language || 'en') === songLang && s.id !== song.id);
       const sameArtistPool = sameLangPool.filter((s) => s.artist === song.artist);
       const distractorSource = cfg.scopeType === 'artist' && sameArtistPool.length >= 3 ? sameArtistPool : sameLangPool;
       const distractors = [];
@@ -4125,7 +4150,7 @@
         songId: song.id,
         title: song.title,
         artist: song.artist,
-        artworkUrl: song.artworkUrl || '',
+        artworkUrl: song.artwork || song.artworkUrl || '',
         previewUrl: song.previewUrl,
         correctOption,
         options,
@@ -4779,41 +4804,32 @@
   }
 
   async function pushBtrRankToSupabase() {
-    if (!window.SUPABASE_URL || !window.SUPABASE_ANON_KEY || !stats.btrStats) return;
+    if (!isSupabaseConfigured() || !stats.btrStats || !userProfile.username) return;
     const me = getMyBtrIdentity();
     const tier = getBtrTierInfo(me.rp);
     const payload = {
-      user_id: me.id,
       username: me.username,
       record_type: 'btr_rank',
-      scope_key: 'global_btr',
+      song_id: `btr_${me.username.toLowerCase()}`,
+      song_title: me.avatar,
+      artist: tier.short,
+      genre: 'BEAT the RUSH',
+      difficulty: '1v1',
       score: me.rp,
-      accuracy: me.wins,
-      avg_time_ms: stats.btrStats.fastestHitMs || 9999,
-      song_title: `${me.wins}W - ${me.losses}L`,
-      artist_name: `${me.avatar}|${tier.short}`,
-      updated_at: new Date().toISOString(),
+      accuracy: `${me.wins}W - ${me.losses}L`,
+      time_ms: stats.btrStats.fastestHitMs || 0,
     };
 
     try {
-      const checkUrl = `${window.SUPABASE_URL}/rest/v1/global_records?user_id=eq.${encodeURIComponent(
-        me.id
-      )}&record_type=eq.btr_rank&scope_key=eq.global_btr&select=id`;
-      const checkRes = await fetch(checkUrl, { headers: getSupabaseHeaders() });
-      const existing = checkRes.ok ? await checkRes.json() : [];
-
-      if (existing.length > 0) {
-        await fetch(`${window.SUPABASE_URL}/rest/v1/global_records?id=eq.${existing[0].id}`, {
-          method: 'PATCH',
-          headers: getSupabaseHeaders(),
-          body: JSON.stringify(payload),
-        });
+      const existing = await sbRest(
+        'global_records',
+        'GET',
+        `username=ilike.${encodeURIComponent(me.username)}&record_type=eq.btr_rank&select=id&limit=1`
+      );
+      if (Array.isArray(existing) && existing.length > 0) {
+        await sbRest('global_records', 'PATCH', `id=eq.${existing[0].id}`, payload);
       } else {
-        await fetch(`${window.SUPABASE_URL}/rest/v1/global_records`, {
-          method: 'POST',
-          headers: getSupabaseHeaders(),
-          body: JSON.stringify(payload),
-        });
+        await sbRest('global_records', 'POST', '', payload);
       }
     } catch (e) {}
   }
@@ -4822,25 +4838,37 @@
     const bodyEl = document.getElementById('btrRankedLeaderboardBody');
     if (!bodyEl) return;
 
-    if (!window.SUPABASE_URL || !window.SUPABASE_ANON_KEY) {
+    if (!isSupabaseConfigured()) {
       bodyEl.innerHTML = `<div class="empty-note">Cloud Ranked Leaderboard offline.</div>`;
       return;
     }
 
     try {
-      const url = `${window.SUPABASE_URL}/rest/v1/global_records?record_type=eq.btr_rank&order=score.desc&limit=25`;
-      const res = await fetch(url, { headers: getSupabaseHeaders() });
-      if (!res.ok) throw new Error('Failed to load ranked board');
-      const rows = await res.json();
+      const rows = await sbRest('global_records', 'GET', 'record_type=eq.btr_rank&order=score.desc&limit=50');
 
-      if (!rows || rows.length === 0) {
+      // Deduplicate by username keeping highest score
+      const byUser = new Map();
+      if (Array.isArray(rows)) {
+        rows.forEach((r) => {
+          const key = (r.username || 'player').toLowerCase();
+          if (!byUser.has(key) || (r.score || 0) > (byUser.get(key).score || 0)) {
+            byUser.set(key, r);
+          }
+        });
+      }
+      const uniqueRows = [...byUser.values()].sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 25);
+
+      if (uniqueRows.length === 0) {
         // Always show at least the local user so the board feels alive
         const me = getMyBtrIdentity();
         const tier = getBtrTierInfo(me.rp);
+        const myAvHtml = me.avatar.startsWith('http')
+          ? `<img src="${escapeHtml(me.avatar)}" style="width:22px;height:22px;border-radius:50%;vertical-align:middle;margin-right:4px;" />`
+          : `${escapeHtml(me.avatar)} `;
         bodyEl.innerHTML = `
           <div class="table-row highlight-you">
             <span class="rank-cell">#1</span>
-            <span class="player-cell">${escapeHtml(me.avatar)} @${escapeHtml(me.username)}</span>
+            <span class="player-cell">${myAvHtml}@${escapeHtml(me.username)}</span>
             <span>${escapeHtml(tier.short)}</span>
             <span class="score-cell">${me.rp} RP</span>
             <span>${me.wins}W - ${me.losses}L</span>
@@ -4850,16 +4878,15 @@
         return;
       }
 
-      bodyEl.innerHTML = rows
+      bodyEl.innerHTML = uniqueRows
         .map((r, idx) => {
-          const isMe = r.user_id === userProfile.id;
-          const parts = String(r.artist_name || '🎧|🥉 Bronze').split('|');
-          const av = parts[0] || '🎧';
-          const tierTxt = parts[1] || getBtrTierInfo(r.score).short;
+          const isMe = userProfile.username && r.username && r.username.toLowerCase() === userProfile.username.toLowerCase();
+          const av = r.song_title || '🎧';
+          const tierTxt = r.artist || getBtrTierInfo(r.score).short;
           const avHtml = av.startsWith('http')
             ? `<img src="${escapeHtml(av)}" style="width:22px;height:22px;border-radius:50%;vertical-align:middle;margin-right:4px;" />`
             : `${escapeHtml(av)} `;
-          const fastStr = r.avg_time_ms && r.avg_time_ms < 9000 ? `${(r.avg_time_ms / 1000).toFixed(2)}s` : '—';
+          const fastStr = r.time_ms && r.time_ms > 0 && r.time_ms < 9000 ? `${(r.time_ms / 1000).toFixed(2)}s` : '—';
 
           return `
             <div class="table-row ${isMe ? 'highlight-you' : ''}">
@@ -4867,7 +4894,7 @@
               <span class="player-cell">${avHtml}@${escapeHtml(r.username || 'Player')}</span>
               <span>${escapeHtml(tierTxt)}</span>
               <span class="score-cell">${Number(r.score || 1000).toLocaleString()} RP</span>
-              <span>${escapeHtml(r.song_title || '0W - 0L')}</span>
+              <span>${escapeHtml(r.accuracy || '0W - 0L')}</span>
               <span>${fastStr}</span>
             </div>
           `;
@@ -4993,7 +5020,8 @@
     const quickMatchBtn = document.getElementById('btrQuickMatchBtn');
     if (quickMatchBtn) {
       quickMatchBtn.addEventListener('click', () => {
-        const compatible = btrState.openRooms.filter((r) => r.hostId !== userProfile.id && isRoomCompatibleWithVetoes(r));
+        const myId = getMyBtrIdentity().id;
+        const compatible = btrState.openRooms.filter((r) => r.hostId !== myId && isRoomCompatibleWithVetoes(r));
         if (compatible.length > 0) {
           joinBtrRoomByCode(compatible[0].roomCode);
         } else {
