@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <meta name="theme-color" content="#0a0b0d" />
+  <meta name="theme-color" content="#090a0c" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Beatrushz" />
   <title>Beatrushz — Millisecond Song Quiz</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700;800&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
@@ -31,6 +36,10 @@
       </div>
 
       <div class="header-quick-stats">
+        <button type="button" class="install-app-pill" id="installAppBtn" title="Add Beatrushz to Home Screen">
+          <span>📲</span>
+          <span>Get App</span>
+        </button>
         <button type="button" class="user-profile-pill" id="openProfileModalBtn" title="Set Username">
           <span class="user-dot" id="userCloudStatusDot"></span>
           <span class="mono" id="headerUsernameDisplay">@guest</span>
@@ -645,6 +654,47 @@
         </div>
       </div>
       <div id="usernameStatusMsg" class="import-status-msg"></div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: INSTALL WEB APP TO HOME SCREEN ==================== -->
+  <div class="modal-backdrop hidden" id="installAppModal">
+    <div class="studio-panel modal-dialog">
+      <div class="modal-header">
+        <div style="display:flex;align-items:center;gap:0.75rem">
+          <img src="icons/icon-192.png" alt="Beatrushz Icon" style="width:46px;height:46px;border-radius:12px;border:1px solid var(--accent)" />
+          <div>
+            <span class="section-eyebrow">INSTALL BEATRUSHZ</span>
+            <h3>Add App to Home Screen</h3>
+          </div>
+        </div>
+        <button type="button" class="quit-btn" id="closeInstallModalBtn">✕</button>
+      </div>
+      <p style="font-size:0.84rem;color:var(--text-secondary);margin-bottom:0.9rem">
+        Launch Beatrushz in full-screen straight from your Home Screen with its own app icon — no app store needed!
+      </p>
+
+      <div class="install-steps-box" id="installStepsIos">
+        <div class="install-os-title">🍎 iPhone / iPad (Safari)</div>
+        <ol class="install-steps-list">
+          <li>Tap the <strong>Share</strong> button <span class="install-key-badge">⬆️</span> at the bottom of Safari.</li>
+          <li>Scroll down and tap <strong>"Add to Home Screen"</strong> <span class="install-key-badge">➕</span>.</li>
+          <li>Tap <strong>"Add"</strong> in the top-right corner.</li>
+        </ol>
+      </div>
+
+      <div class="install-steps-box" id="installStepsAndroid" style="margin-top:0.7rem">
+        <div class="install-os-title">🤖 Android (Chrome)</div>
+        <ol class="install-steps-list">
+          <li>Tap the browser menu <span class="install-key-badge">⋮</span> in the top-right corner.</li>
+          <li>Tap <strong>"Install app"</strong> or <strong>"Add to Home screen"</strong>.</li>
+        </ol>
+      </div>
+
+      <button type="button" class="start-game-btn" id="triggerNativeInstallBtn" style="margin-top:0.95rem;padding:0.75rem 1.1rem">
+        <span>GOT IT</span>
+        <kbd class="start-kbd">✓</kbd>
+      </button>
     </div>
   </div>
 

@@ -8,7 +8,7 @@
   const CUSTOM_SONGS_KEY = 'beatrush_custom_songs_v1';
   const USER_PROFILE_KEY = 'beatrush_user_profile_v1';
 
-  const MAX_TOP_TRACKS_PER_ARTIST = 22;
+  const MAX_TOP_TRACKS_PER_ARTIST = 75;
 
   const BAD_REMIX_WORDS = [
     'remix', 'rmx', 'mix)', 'mix]', 'rework', 'vip', 'edit)', 'edit]', 'radio edit',
@@ -3314,7 +3314,8 @@
     cands.innerHTML = '';
 
     try {
-      const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(q)}&entity=musicArtist&limit=6`);
+      const countryParam = detectLanguage(q) === 'he' ? '&country=IL' : '';
+      const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(q)}&entity=musicArtist&limit=6${countryParam}`);
       const data = await res.json();
       const artists = data.results || [];
       if (artists.length === 0) {
@@ -3357,10 +3358,11 @@
     cands.innerHTML = '';
 
     try {
+      const countryParam = lang === 'he' ? '&country=IL' : '';
       const [searchRes, lookupRes, albumsRes] = await Promise.all([
-        fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(artistName)}&entity=song&limit=200`).then((r) => r.json()).catch(() => ({ results: [] })),
-        fetch(`https://itunes.apple.com/lookup?id=${artistObj.artistId}&entity=song&limit=200`).then((r) => r.json()).catch(() => ({ results: [] })),
-        fetch(`https://itunes.apple.com/lookup?id=${artistObj.artistId}&entity=album&limit=40`).then((r) => r.json()).catch(() => ({ results: [] }))
+        fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(artistName)}&entity=song&limit=200${countryParam}`).then((r) => r.json()).catch(() => ({ results: [] })),
+        fetch(`https://itunes.apple.com/lookup?id=${artistObj.artistId}&entity=song&limit=200${countryParam}`).then((r) => r.json()).catch(() => ({ results: [] })),
+        fetch(`https://itunes.apple.com/lookup?id=${artistObj.artistId}&entity=album&limit=40${countryParam}`).then((r) => r.json()).catch(() => ({ results: [] }))
       ]);
 
       let albumTracks = [];
@@ -3369,17 +3371,11 @@
         .map((a) => a.collectionId)
         .slice(0, 20);
       if (expAlbumIds.length > 0) {
-        const albLookup = await fetch(`https://itunes.apple.com/lookup?id=${expAlbumIds.join(',')}&entity=song&limit=200`).then((r) => r.json()).catch(() => ({ results: [] }));
+        const albLookup = await fetch(`https://itunes.apple.com/lookup?id=${expAlbumIds.join(',')}&entity=song&limit=200${countryParam}`).then((r) => r.json()).catch(() => ({ results: [] }));
         albumTracks = (albLookup.results || []).filter((r) => r.wrapperType === 'track');
       }
 
-      const popularityResults = [
-        ...(searchRes.results || []),
-        ...((lookupRes.results || []).slice(1)).map((t) => Object.assign({}, t, { _isPopularityRanked: true }))
-      ];
-      // Mark popularity-ranked tracks vs explicit album-lookup tracks
-      popularityResults.forEach((t) => { t._isPopularityRanked = true; });
-      const rawResults = [...popularityResults, ...albumTracks];
+      const rawResults = [...(searchRes.results || []), ...((lookupRes.results || []).slice(1)), ...albumTracks];
       const normIndexMap = new Map();
       const tracks = [];
 
@@ -3389,7 +3385,8 @@
 
         const aLower = it.artistName.toLowerCase();
         const targetLower = artistName.toLowerCase();
-        if (!aLower.startsWith(targetLower) && aLower !== targetLower) continue;
+        const sameArtistId = artistObj.artistId && it.artistId === artistObj.artistId;
+        if (!sameArtistId && !aLower.startsWith(targetLower) && aLower !== targetLower) continue;
         if (isRemixOrJunk(it.trackName, it.trackName, it.collectionName)) continue;
 
         const clean = cleanTrackTitle(it.trackName);
@@ -3422,8 +3419,8 @@
           continue;
         }
 
-        // Strict Popularity Threshold: Only add new tracks if they are within the artist's Top 22 Most Streamed hits
-        if (!it._isPopularityRanked || tracks.length >= MAX_TOP_TRACKS_PER_ARTIST) {
+        // Keep up to Top 75 tracks (or all tracks if artist has fewer than 75)
+        if (tracks.length >= MAX_TOP_TRACKS_PER_ARTIST) {
           continue;
         }
 
@@ -3436,8 +3433,8 @@
         return;
       }
 
-      const easyCut = Math.min(7, Math.max(5, Math.round(tracks.length * 0.32)));
-      const medCut = Math.min(8, Math.max(5, Math.round(tracks.length * 0.36)));
+      const easyCut = Math.max(5, Math.round(tracks.length * 0.25));
+      const medCut = Math.max(8, Math.round(tracks.length * 0.35));
 
       tracks.forEach((song, idx) => {
         if (idx < easyCut) song.difficulty = 'easy';
@@ -3549,6 +3546,64 @@
         } catch (e) {
           if (statusEl) statusEl.textContent = 'Copy from the box above.';
         }
+      });
+    }
+
+    // ==================== PWA SERVICE WORKER & ADD TO HOME SCREEN ====================
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    }
+
+    let deferredInstallPrompt = null;
+    const installBtn = document.getElementById('installAppBtn');
+    const installModal = document.getElementById('installAppModal');
+    const closeInstallBtn = document.getElementById('closeInstallModalBtn');
+    const triggerNativeBtn = document.getElementById('triggerNativeInstallBtn');
+
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    if (isStandalone && installBtn) {
+      installBtn.classList.add('hidden');
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      if (installBtn && !isStandalone) {
+        installBtn.classList.remove('hidden');
+      }
+    });
+
+    window.addEventListener('appinstalled', () => {
+      deferredInstallPrompt = null;
+      if (installBtn) installBtn.classList.add('hidden');
+      if (installModal) installModal.classList.add('hidden');
+    });
+
+    if (installBtn) {
+      installBtn.addEventListener('click', async () => {
+        if (deferredInstallPrompt) {
+          deferredInstallPrompt.prompt();
+          try {
+            await deferredInstallPrompt.userChoice;
+          } catch (e) {}
+          deferredInstallPrompt = null;
+          return;
+        }
+        if (installModal) installModal.classList.remove('hidden');
+      });
+    }
+
+    if (closeInstallBtn && installModal) {
+      closeInstallBtn.addEventListener('click', () => installModal.classList.add('hidden'));
+    }
+
+    if (triggerNativeBtn && installModal) {
+      triggerNativeBtn.addEventListener('click', async () => {
+        if (deferredInstallPrompt) {
+          deferredInstallPrompt.prompt();
+          deferredInstallPrompt = null;
+        }
+        installModal.classList.add('hidden');
       });
     }
   });
