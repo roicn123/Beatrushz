@@ -214,10 +214,14 @@
   function loadUserProfile() {
     try {
       const saved = JSON.parse(localStorage.getItem(USER_PROFILE_KEY) || 'null');
-      if (saved && saved.username) return saved;
+      if (saved && saved.username) {
+        if (!saved.avatar) saved.avatar = '🎧';
+        return saved;
+      }
     } catch (e) {}
     return {
       username: '',
+      avatar: '🎧',
       clientId: 'cid_' + Math.random().toString(36).slice(2, 11) + Date.now().toString(36)
     };
   }
@@ -361,7 +365,14 @@
       fastestHistory: [],
       artistCampaigns: {},
       unlockedCards: {},
-      dailyHistory: {}
+      dailyHistory: {},
+      btrStats: {
+        rp: 1000,
+        wins: 0,
+        losses: 0,
+        draws: 0,
+        fastestHitMs: null
+      }
     };
   }
 
@@ -535,8 +546,22 @@
     renderSidebarArtistFastest();
     renderStatsDashboard();
     renderCollectionDashboard();
+    initBtrModeUI();
     bindEvents();
     syncSharedSongsFromSupabase();
+
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const btrRoomCode = params.get('btr');
+      if (btrRoomCode) {
+        setTimeout(() => {
+          switchView('btr');
+          const codeInput = document.getElementById('btrJoinCodeInput');
+          if (codeInput) codeInput.value = btrRoomCode.replace(/[^0-9]/g, '');
+          joinBtrRoomByCode(btrRoomCode.replace(/[^0-9]/g, ''));
+        }, 400);
+      }
+    } catch (e) {}
 
     if (!userProfile.username) {
       setTimeout(() => openProfileModal(), 350);
@@ -553,6 +578,9 @@
     const bnavLabel = document.getElementById('bottomNavUserLabel');
     if (bnavLabel) {
       bnavLabel.textContent = userProfile.username ? `@${userProfile.username}` : 'Profile';
+    }
+    if (typeof renderBtrPlayerBanner === 'function') {
+      renderBtrPlayerBanner();
     }
   }
 
@@ -674,6 +702,24 @@
               timeMs: r.time_ms || 499,
               isVaultTarget: true
             };
+            updated = true;
+          }
+        } else if (r.record_type === 'btr_rank') {
+          if (!stats.btrStats) {
+            stats.btrStats = { rp: 1000, wins: 0, losses: 0, draws: 0, fastestHitMs: null };
+          }
+          if (typeof r.score === 'number' && r.score > 0 && stats.btrStats.wins === 0 && stats.btrStats.losses === 0) {
+            stats.btrStats.rp = r.score;
+            const wlMatch = (r.accuracy || '').match(/(\d+)W\s*-\s*(\d+)L/);
+            if (wlMatch) {
+              stats.btrStats.wins = parseInt(wlMatch[1], 10) || 0;
+              stats.btrStats.losses = parseInt(wlMatch[2], 10) || 0;
+            }
+            if (r.time_ms > 0) stats.btrStats.fastestHitMs = r.time_ms;
+            if (r.song_title && (!userProfile.avatar || userProfile.avatar === '🎧')) {
+              userProfile.avatar = r.song_title;
+              saveUserProfile();
+            }
             updated = true;
           }
         }
@@ -1015,6 +1061,13 @@
 
     if (viewName === 'stats') renderStatsDashboard();
     if (viewName === 'collection') renderCollectionDashboard();
+    if (viewName === 'btr') {
+      renderBtrPlayerBanner();
+      renderBtrHostControls();
+      renderBtrVetoChips();
+      ensureBtrLobbyChannel();
+      loadBtrRankedLeaderboard();
+    }
     if (viewName === 'lobby') {
       updateDailyBannerUI();
       updateLobbyState();
@@ -3479,6 +3532,1517 @@
       closeImportArtistModal();
     } catch (e) {
       status.textContent = 'Import failed.';
+    }
+  }
+
+  // ==================== BEAT THE RUSH (1v1 LIVE ONLINE MODE) ====================
+  const BTR_AVATAR_PRESETS = ['🎧', '🔥', '⚡', '👑', '🎸', '🎤', '🛸', '🐺'];
+  const BTR_VETO_STORAGE_KEY = 'beatrushz_btr_veto_v1';
+
+  const btrState = {
+    sbClient: null,
+    lobbyChannel: null,
+    roomChannel: null,
+    openRooms: [],
+    hostConfig: {
+      language: 'all',
+      difficulty: 'all',
+      decade: 'all',
+      scopeType: 'genre', // 'genre' | 'artist'
+      genre: 'all',
+      artist: null,
+    },
+    vetoes: {
+      languages: new Set(),
+      difficulties: new Set(),
+      decades: new Set(),
+      genres: new Set(),
+      vetoSingleArtist: false,
+    },
+    activeRoomCode: null,
+    role: null, // 'host' | 'guest'
+    phase: 'hub', // 'hub' | 'waiting' | 'vs_intro' | 'arena' | 'summary'
+    opponent: null, // { id, username, avatar, rp, tierLabel }
+    matchPayload: null, // { roomCode, rulesLabel, rounds: [...] }
+    preloadedBlobs: {}, // trackIndex -> objectURL / preload ready
+    myAudioReady: false,
+    oppAudioReady: false,
+    currentTrackIdx: 0,
+    myScore: 0,
+    oppScore: 0,
+    myTrackAnswer: null, // { correct, ms, pts, choice }
+    oppTrackAnswer: null, // { correct, ms, pts, choice }
+    trackStartTimePerf: 0,
+    trackTimerRAF: null,
+    trackSafetyTimeout: null,
+    clashAdvanceTimeout: null,
+    trackHistory: [],
+    audioEl: new Audio(),
+    audioStopTimeout: null,
+  };
+  btrState.audioEl.preload = 'auto';
+  btrState.audioEl.crossOrigin = 'anonymous';
+
+  function loadBtrVetoes() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(BTR_VETO_STORAGE_KEY) || '{}');
+      btrState.vetoes.languages = new Set(Array.isArray(raw.languages) ? raw.languages : []);
+      btrState.vetoes.difficulties = new Set(Array.isArray(raw.difficulties) ? raw.difficulties : []);
+      btrState.vetoes.decades = new Set(Array.isArray(raw.decades) ? raw.decades : []);
+      btrState.vetoes.genres = new Set(Array.isArray(raw.genres) ? raw.genres : []);
+      btrState.vetoes.vetoSingleArtist = Boolean(raw.vetoSingleArtist);
+    } catch (e) {}
+  }
+
+  function saveBtrVetoes() {
+    try {
+      localStorage.setItem(
+        BTR_VETO_STORAGE_KEY,
+        JSON.stringify({
+          languages: [...btrState.vetoes.languages],
+          difficulties: [...btrState.vetoes.difficulties],
+          decades: [...btrState.vetoes.decades],
+          genres: [...btrState.vetoes.genres],
+          vetoSingleArtist: btrState.vetoes.vetoSingleArtist,
+        })
+      );
+    } catch (e) {}
+  }
+
+  function getBtrTierInfo(rp) {
+    const val = Number(rp) || 1000;
+    if (val >= 2000) return { label: '👑 RUSH LEGEND', short: '👑 Legend', color: '#fbbf24' };
+    if (val >= 1650) return { label: '💎 NEON DIAMOND', short: '💎 Diamond', color: '#38bdf8' };
+    if (val >= 1350) return { label: '🥇 GOLD RUSH', short: '🥇 Gold', color: '#facc15' };
+    if (val >= 1100) return { label: '🥈 SILVER PULSE', short: '🥈 Silver', color: '#e2e8f0' };
+    return { label: '🥉 BRONZE BEAT', short: '🥉 Bronze', color: '#f97316' };
+  }
+
+  function renderAvatarContent(el, avatarVal) {
+    if (!el) return;
+    const val = avatarVal || '🎧';
+    if (val.startsWith('http://') || val.startsWith('https://')) {
+      el.innerHTML = `<img src="${escapeHtml(val)}" alt="Avatar" />`;
+    } else {
+      el.textContent = val;
+    }
+  }
+
+  function getMyBtrIdentity() {
+    if (!stats.btrStats) {
+      stats.btrStats = { rp: 1000, wins: 0, losses: 0, draws: 0, fastestHitMs: null };
+    }
+    const rp = stats.btrStats.rp || 1000;
+    const tier = getBtrTierInfo(rp);
+    return {
+      id: userProfile.id,
+      username: userProfile.username || 'Player',
+      avatar: userProfile.avatar || '🎧',
+      rp,
+      wins: stats.btrStats.wins || 0,
+      losses: stats.btrStats.losses || 0,
+      tierLabel: tier.short,
+    };
+  }
+
+  function renderBtrPlayerBanner() {
+    const me = getMyBtrIdentity();
+    const tier = getBtrTierInfo(me.rp);
+    renderAvatarContent(document.getElementById('btrMyAvatarDisplay'), me.avatar);
+    const nameEl = document.getElementById('btrMyNameDisplay');
+    if (nameEl) nameEl.textContent = `@${me.username}`;
+    const tierEl = document.getElementById('btrMyTierBadge');
+    if (tierEl) {
+      tierEl.textContent = tier.label;
+      tierEl.style.color = tier.color;
+    }
+    const rpEl = document.getElementById('btrMyRpValue');
+    if (rpEl) rpEl.textContent = me.rp.toLocaleString();
+    const wlEl = document.getElementById('btrMyRecordValue');
+    if (wlEl) wlEl.textContent = `${me.wins}W - ${me.losses}L`;
+  }
+
+  function renderBtrAvatarDrawer() {
+    const grid = document.getElementById('btrAvatarGrid');
+    if (!grid) return;
+
+    const masteredArtists = [];
+    if (stats.artistMastery) {
+      Object.entries(stats.artistMastery).forEach(([artistName, m]) => {
+        if ((m.unlockedTier || 1) >= 4) {
+          const songWithArt = CATALOG.find((s) => s.artist === artistName && s.artworkUrl);
+          if (songWithArt) {
+            masteredArtists.push({ artistName, artworkUrl: songWithArt.artworkUrl });
+          }
+        }
+      });
+    }
+
+    const currentAvatar = userProfile.avatar || '🎧';
+    let html = BTR_AVATAR_PRESETS.map((emo) => {
+      const selected = currentAvatar === emo ? 'selected' : '';
+      return `<button type="button" class="btr-avatar-option ${selected}" data-avatar="${escapeHtml(emo)}" title="Neon Avatar">${emo}</button>`;
+    }).join('');
+
+    masteredArtists.forEach((ma) => {
+      const selected = currentAvatar === ma.artworkUrl ? 'selected' : '';
+      html += `<button type="button" class="btr-avatar-option ${selected}" data-avatar="${escapeHtml(ma.artworkUrl)}" title="Mastered: ${escapeHtml(ma.artistName)}"><img src="${escapeHtml(ma.artworkUrl)}" alt="${escapeHtml(ma.artistName)}" /></button>`;
+    });
+
+    grid.innerHTML = html;
+    grid.querySelectorAll('.btr-avatar-option').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const chosen = btn.dataset.avatar || '🎧';
+        userProfile.avatar = chosen;
+        saveUserProfile();
+        renderBtrPlayerBanner();
+        renderBtrAvatarDrawer();
+        const drawer = document.getElementById('btrAvatarPickerDrawer');
+        if (drawer) drawer.classList.add('hidden');
+      });
+    });
+  }
+
+  function setBtrScreen(screenName) {
+    btrState.phase = screenName;
+    const screens = {
+      hub: document.getElementById('btrScreenHub'),
+      vs_intro: document.getElementById('btrScreenVsIntro'),
+      arena: document.getElementById('btrScreenArena'),
+      summary: document.getElementById('btrScreenSummary'),
+    };
+    Object.entries(screens).forEach(([key, el]) => {
+      if (!el) return;
+      el.classList.toggle('hidden', key !== screenName);
+    });
+  }
+
+  function renderBtrHostControls() {
+    // Genres
+    const genreWrap = document.getElementById('btrHostGenreSelector');
+    if (genreWrap) {
+      const genres = ['all', ...getAvailableGenresForLanguage(btrState.hostConfig.language)];
+      if (!genres.includes(btrState.hostConfig.genre)) {
+        btrState.hostConfig.genre = 'all';
+      }
+      genreWrap.innerHTML = genres
+        .map((g) => {
+          const active = btrState.hostConfig.genre === g ? 'active' : '';
+          const label = g === 'all' ? 'All Genres' : g;
+          return `<button type="button" class="chip btr-host-genre-chip ${active}" data-val="${escapeHtml(g)}">${escapeHtml(label)}</button>`;
+        })
+        .join('');
+      genreWrap.querySelectorAll('.btr-host-genre-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          btrState.hostConfig.genre = btn.dataset.val;
+          renderBtrHostControls();
+        });
+      });
+    }
+
+    // Artist Select
+    const artistSelect = document.getElementById('btrHostArtistSelect');
+    if (artistSelect) {
+      const artists = getArtistsListForLobby(btrState.hostConfig.language, 'all', btrState.hostConfig.decade);
+      if (!btrState.hostConfig.artist && artists.length > 0) {
+        btrState.hostConfig.artist = artists[0].name;
+      }
+      artistSelect.innerHTML = artists
+        .map((a) => `<option value="${escapeHtml(a.name)}" ${a.name === btrState.hostConfig.artist ? 'selected' : ''}>${escapeHtml(a.name)} (${a.count} tracks)</option>`)
+        .join('');
+    }
+  }
+
+  function getAvailableGenresForLanguage(lang) {
+    const set = new Set();
+    CATALOG.forEach((s) => {
+      if (lang !== 'all' && s.language !== lang) return;
+      if (s.genre) set.add(s.genre);
+    });
+    return [...set].sort();
+  }
+
+  function getArtistsListForLobby(lang, genre, decade) {
+    const counts = new Map();
+    CATALOG.forEach((s) => {
+      if (lang !== 'all' && s.language !== lang) return;
+      if (genre && genre !== 'all' && s.genre !== genre) return;
+      if (decade && decade !== 'all' && getArtistDecade(s.artist) !== decade) return;
+      counts.set(s.artist, (counts.get(s.artist) || 0) + 1);
+    });
+    return [...counts.entries()]
+      .filter(([, c]) => c >= 4)
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([name, count]) => ({ name, count }));
+  }
+
+  function renderBtrVetoChips() {
+    // Languages
+    const langWrap = document.getElementById('btrVetoLangChips');
+    if (langWrap) {
+      const items = [
+        { val: 'en', label: '🇬🇧 English' },
+        { val: 'he', label: '🇮🇱 Hebrew' },
+      ];
+      langWrap.innerHTML = items
+        .map((it) => {
+          const vetoed = btrState.vetoes.languages.has(it.val) ? 'vetoed' : '';
+          return `<button type="button" class="btr-veto-chip ${vetoed}" data-val="${it.val}">${it.label}</button>`;
+        })
+        .join('');
+      langWrap.querySelectorAll('.btr-veto-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const v = btn.dataset.val;
+          if (btrState.vetoes.languages.has(v)) btrState.vetoes.languages.delete(v);
+          else btrState.vetoes.languages.add(v);
+          saveBtrVetoes();
+          renderBtrVetoChips();
+          renderBtrOpenRoomsList();
+        });
+      });
+    }
+
+    // Difficulties
+    const diffWrap = document.getElementById('btrVetoDiffChips');
+    if (diffWrap) {
+      const items = [
+        { val: 'easy', label: 'Easy (2.5s)' },
+        { val: 'medium', label: 'Medium (1.5s)' },
+        { val: 'hard', label: 'Hard (0.5s)' },
+      ];
+      diffWrap.innerHTML = items
+        .map((it) => {
+          const vetoed = btrState.vetoes.difficulties.has(it.val) ? 'vetoed' : '';
+          return `<button type="button" class="btr-veto-chip ${vetoed}" data-val="${it.val}">${it.label}</button>`;
+        })
+        .join('');
+      diffWrap.querySelectorAll('.btr-veto-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const v = btn.dataset.val;
+          if (btrState.vetoes.difficulties.has(v)) btrState.vetoes.difficulties.delete(v);
+          else btrState.vetoes.difficulties.add(v);
+          saveBtrVetoes();
+          renderBtrVetoChips();
+          renderBtrOpenRoomsList();
+        });
+      });
+    }
+
+    // Decades
+    const decWrap = document.getElementById('btrVetoDecadeChips');
+    if (decWrap) {
+      const items = ['80s & 90s', '2000s', '2010s', '2020s'];
+      decWrap.innerHTML = items
+        .map((d) => {
+          const vetoed = btrState.vetoes.decades.has(d) ? 'vetoed' : '';
+          return `<button type="button" class="btr-veto-chip ${vetoed}" data-val="${escapeHtml(d)}">${escapeHtml(d)}</button>`;
+        })
+        .join('');
+      decWrap.querySelectorAll('.btr-veto-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const v = btn.dataset.val;
+          if (btrState.vetoes.decades.has(v)) btrState.vetoes.decades.delete(v);
+          else btrState.vetoes.decades.add(v);
+          saveBtrVetoes();
+          renderBtrVetoChips();
+          renderBtrOpenRoomsList();
+        });
+      });
+    }
+
+    // Genres + Single Artist toggle
+    const genWrap = document.getElementById('btrVetoGenreChips');
+    if (genWrap) {
+      const allGenres = getAvailableGenresForLanguage('all');
+      let html = `<button type="button" class="btr-veto-chip ${btrState.vetoes.vetoSingleArtist ? 'vetoed' : ''}" data-single-artist="1">🎤 Single-Artist Duels</button>`;
+      html += allGenres
+        .map((g) => {
+          const vetoed = btrState.vetoes.genres.has(g) ? 'vetoed' : '';
+          return `<button type="button" class="btr-veto-chip ${vetoed}" data-genre="${escapeHtml(g)}">${escapeHtml(g)}</button>`;
+        })
+        .join('');
+      genWrap.innerHTML = html;
+      genWrap.querySelectorAll('.btr-veto-chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          if (btn.dataset.singleArtist) {
+            btrState.vetoes.vetoSingleArtist = !btrState.vetoes.vetoSingleArtist;
+          } else if (btn.dataset.genre) {
+            const g = btn.dataset.genre;
+            if (btrState.vetoes.genres.has(g)) btrState.vetoes.genres.delete(g);
+            else btrState.vetoes.genres.add(g);
+          }
+          saveBtrVetoes();
+          renderBtrVetoChips();
+          renderBtrOpenRoomsList();
+        });
+      });
+    }
+  }
+
+  function isRoomCompatibleWithVetoes(room) {
+    if (!room || !room.rules) return true;
+    const r = room.rules;
+    if (r.language && r.language !== 'all' && btrState.vetoes.languages.has(r.language)) return false;
+    if (r.difficulty && r.difficulty !== 'all' && btrState.vetoes.difficulties.has(r.difficulty)) return false;
+    if (r.decade && r.decade !== 'all' && btrState.vetoes.decades.has(r.decade)) return false;
+    if (r.scopeType === 'artist' && btrState.vetoes.vetoSingleArtist) return false;
+    if (r.scopeType === 'genre' && r.genre && r.genre !== 'all' && btrState.vetoes.genres.has(r.genre)) return false;
+    return true;
+  }
+
+  function formatBtrRulesSummary(rules) {
+    if (!rules) return 'All Songs · All Levels';
+    const langStr = rules.language === 'en' ? '🇬🇧 EN' : rules.language === 'he' ? '🇮🇱 HE' : '🌍 All Lang';
+    const diffStr = rules.difficulty === 'all' ? 'Mix Diff' : rules.difficulty.toUpperCase();
+    const decStr = rules.decade === 'all' ? 'All Eras' : rules.decade;
+    const scopeStr =
+      rules.scopeType === 'artist' && rules.artist
+        ? `🎤 ${rules.artist}`
+        : rules.genre && rules.genre !== 'all'
+        ? `🎵 ${rules.genre}`
+        : '🎵 All Genres';
+    return `${langStr} · ${diffStr} · ${decStr} · ${scopeStr}`;
+  }
+
+  function getSupabaseClientInstance() {
+    if (btrState.sbClient) return btrState.sbClient;
+    if (window.supabase && typeof window.supabase.createClient === 'function' && window.SUPABASE_URL && window.SUPABASE_ANON_KEY) {
+      btrState.sbClient = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY, {
+        realtime: { params: { eventsPerSecond: 20 } },
+      });
+    }
+    return btrState.sbClient;
+  }
+
+  function ensureBtrLobbyChannel() {
+    const sb = getSupabaseClientInstance();
+    if (!sb || btrState.lobbyChannel) return;
+
+    const ch = sb.channel('beatrushz_lobby_v1', {
+      config: { presence: { key: userProfile.id } },
+    });
+
+    ch.on('presence', { event: 'sync' }, () => {
+      const state = ch.presenceState();
+      const rooms = [];
+      Object.values(state).forEach((presences) => {
+        presences.forEach((p) => {
+          if (p && p.roomCode && p.status === 'waiting') {
+            rooms.push(p);
+          }
+        });
+      });
+      btrState.openRooms = rooms;
+      renderBtrOpenRoomsList();
+    });
+
+    ch.subscribe();
+    btrState.lobbyChannel = ch;
+  }
+
+  function renderBtrOpenRoomsList() {
+    const listEl = document.getElementById('btrOpenRoomsList');
+    const countEl = document.getElementById('btrLiveRoomCount');
+    if (!listEl) return;
+
+    const othersRooms = btrState.openRooms.filter((r) => r.hostId !== userProfile.id);
+    if (countEl) countEl.textContent = `${othersRooms.length} Live`;
+
+    if (othersRooms.length === 0) {
+      listEl.innerHTML = `<div class="btr-empty-rooms">No open rooms broadcasting right now. Create a room on the left or share a 4-digit code with a friend!</div>`;
+      return;
+    }
+
+    listEl.innerHTML = othersRooms
+      .map((room) => {
+        const compatible = isRoomCompatibleWithVetoes(room);
+        const rulesText = formatBtrRulesSummary(room.rules);
+        const avatarHtml =
+          room.hostAvatar && room.hostAvatar.startsWith('http')
+            ? `<img src="${escapeHtml(room.hostAvatar)}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;" />`
+            : escapeHtml(room.hostAvatar || '🎧');
+
+        return `
+          <div class="btr-room-item ${compatible ? '' : 'veto-filtered'}">
+            <div class="btr-room-host-info">
+              <div class="btr-room-host-avatar">${avatarHtml}</div>
+              <div>
+                <div class="btr-room-host-name">@${escapeHtml(room.hostName || 'Player')} <span style="color:var(--accent);font-size:0.74rem;">(${room.hostRp || 1000} RP)</span></div>
+                <div class="btr-room-rules-tags">${escapeHtml(rulesText)}</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.5rem;">
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);">#${escapeHtml(room.roomCode)}</span>
+              <button type="button" class="btn btn-primary btn-sm btr-join-listed-room-btn" data-code="${escapeHtml(room.roomCode)}">
+                ${compatible ? '⚔️ DUEL' : '🚫 VETOED'}
+              </button>
+            </div>
+          </div>
+        `;
+      })
+      .join('');
+
+    listEl.querySelectorAll('.btr-join-listed-room-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const code = btn.dataset.code;
+        if (code) joinBtrRoomByCode(code);
+      });
+    });
+  }
+
+  function buildBtrPoolForConfig(cfg) {
+    let pool = CATALOG.filter((s) => s.previewUrl);
+    if (cfg.language !== 'all') {
+      pool = pool.filter((s) => s.language === cfg.language);
+    }
+    if (cfg.decade !== 'all') {
+      pool = pool.filter((s) => getArtistDecade(s.artist) === cfg.decade);
+    }
+    if (cfg.scopeType === 'artist' && cfg.artist) {
+      pool = pool.filter((s) => s.artist === cfg.artist);
+    } else if (cfg.genre !== 'all') {
+      pool = pool.filter((s) => s.genre === cfg.genre);
+    }
+    if (cfg.difficulty !== 'all') {
+      const diffFiltered = pool.filter((s) => s.difficulty === cfg.difficulty);
+      if (diffFiltered.length >= 5) pool = diffFiltered;
+    }
+    return pool;
+  }
+
+  async function openBtrHostRoom() {
+    const pool = buildBtrPoolForConfig(btrState.hostConfig);
+    if (pool.length < 5) {
+      alert('Not enough songs match these exact filters (minimum 5 required). Try broadening Era or Difficulty.');
+      return;
+    }
+
+    ensureBtrLobbyChannel();
+    const sb = getSupabaseClientInstance();
+    if (!sb) {
+      alert('Realtime service is initializing. Please try again in a moment.');
+      return;
+    }
+
+    const roomCode = String(Math.floor(1000 + Math.random() * 9000));
+    btrState.activeRoomCode = roomCode;
+    btrState.role = 'host';
+    btrState.phase = 'waiting';
+
+    const formBody = document.getElementById('btrHostSetupBody');
+    const waitBox = document.getElementById('btrHostWaitingBox');
+    const codeDisp = document.getElementById('btrRoomCodeDisplay');
+    const sumDisp = document.getElementById('btrHostRoomSummary');
+
+    if (formBody) formBody.classList.add('hidden');
+    if (waitBox) waitBox.classList.remove('hidden');
+    if (codeDisp) codeDisp.textContent = `#${roomCode}`;
+    if (sumDisp) sumDisp.textContent = formatBtrRulesSummary(btrState.hostConfig);
+
+    // Subscribe to private room channel
+    subscribeToBtrRoomChannel(roomCode);
+
+    // Track in global lobby presence so challengers see this open room immediately
+    if (btrState.lobbyChannel) {
+      const me = getMyBtrIdentity();
+      try {
+        await btrState.lobbyChannel.track({
+          roomCode,
+          status: 'waiting',
+          hostId: me.id,
+          hostName: me.username,
+          hostAvatar: me.avatar,
+          hostRp: me.rp,
+          rules: { ...btrState.hostConfig },
+          createdAt: Date.now(),
+        });
+      } catch (e) {}
+    }
+  }
+
+  async function cancelBtrHostRoom() {
+    if (btrState.lobbyChannel) {
+      try {
+        await btrState.lobbyChannel.untrack();
+      } catch (e) {}
+    }
+    if (btrState.roomChannel) {
+      try {
+        btrState.roomChannel.unsubscribe();
+      } catch (e) {}
+      btrState.roomChannel = null;
+    }
+    btrState.activeRoomCode = null;
+    btrState.role = null;
+    btrState.phase = 'hub';
+
+    const formBody = document.getElementById('btrHostSetupBody');
+    const waitBox = document.getElementById('btrHostWaitingBox');
+    if (formBody) formBody.classList.remove('hidden');
+    if (waitBox) waitBox.classList.add('hidden');
+  }
+
+  function generateBtrMatchPayload(roomCode, cfg, hostIdentity, guestIdentity) {
+    const pool = buildBtrPoolForConfig(cfg);
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    const chosen = shuffled.slice(0, 5);
+
+    const rounds = chosen.map((song, idx) => {
+      const sameLangPool = CATALOG.filter((s) => s.language === song.language && s.id !== song.id);
+      const sameArtistPool = sameLangPool.filter((s) => s.artist === song.artist);
+      const distractorSource = cfg.scopeType === 'artist' && sameArtistPool.length >= 3 ? sameArtistPool : sameLangPool;
+      const distractors = [];
+      const usedTitles = new Set([song.title.toLowerCase()]);
+
+      const shuffledDist = [...distractorSource].sort(() => Math.random() - 0.5);
+      for (const cand of shuffledDist) {
+        const key = cand.title.toLowerCase();
+        if (!usedTitles.has(key)) {
+          usedTitles.add(key);
+          distractors.push(`${cand.title} — ${cand.artist}`);
+          if (distractors.length === 3) break;
+        }
+      }
+
+      const correctOption = `${song.title} — ${song.artist}`;
+      const options = [correctOption, ...distractors].sort(() => Math.random() - 0.5);
+      const clipDuration =
+        cfg.difficulty === 'easy'
+          ? 2.5
+          : cfg.difficulty === 'medium'
+          ? 1.5
+          : cfg.difficulty === 'hard'
+          ? 0.5
+          : idx < 2
+          ? 2.0
+          : idx < 4
+          ? 1.5
+          : 1.0;
+
+      const offsetSec = Number((2 + Math.random() * 14).toFixed(2));
+      return {
+        index: idx,
+        songId: song.id,
+        title: song.title,
+        artist: song.artist,
+        artworkUrl: song.artworkUrl || '',
+        previewUrl: song.previewUrl,
+        correctOption,
+        options,
+        clipDuration,
+        offsetSec,
+        isDoublePoints: idx === 4,
+      };
+    });
+
+    return {
+      roomCode,
+      rulesSummary: formatBtrRulesSummary(cfg),
+      host: hostIdentity,
+      guest: guestIdentity,
+      rounds,
+    };
+  }
+
+  function subscribeToBtrRoomChannel(roomCode) {
+    const sb = getSupabaseClientInstance();
+    if (!sb) return null;
+
+    if (btrState.roomChannel) {
+      try {
+        btrState.roomChannel.unsubscribe();
+      } catch (e) {}
+    }
+
+    const ch = sb.channel(`beatrushz_room_${roomCode}`, {
+      config: { broadcast: { self: false } },
+    });
+
+    ch.on('broadcast', { event: 'CHALLENGER_JOIN' }, async ({ payload }) => {
+      if (btrState.role !== 'host' || btrState.phase !== 'waiting') return;
+      if (!payload || !payload.challenger) return;
+
+      btrState.opponent = payload.challenger;
+      // Untrack from open lobby since room is now full
+      if (btrState.lobbyChannel) {
+        try {
+          await btrState.lobbyChannel.untrack();
+        } catch (e) {}
+      }
+
+      const myId = getMyBtrIdentity();
+      const matchPayload = generateBtrMatchPayload(roomCode, btrState.hostConfig, myId, btrState.opponent);
+      btrState.matchPayload = matchPayload;
+
+      ch.send({
+        type: 'broadcast',
+        event: 'MATCH_INIT',
+        payload: matchPayload,
+      });
+
+      enterBtrVsIntro(matchPayload);
+    });
+
+    ch.on('broadcast', { event: 'MATCH_INIT' }, ({ payload }) => {
+      if (btrState.role !== 'guest') return;
+      if (!payload || !payload.rounds) return;
+      btrState.matchPayload = payload;
+      btrState.opponent = payload.host;
+      enterBtrVsIntro(payload);
+    });
+
+    ch.on('broadcast', { event: 'PLAYER_AUDIO_READY' }, () => {
+      btrState.oppAudioReady = true;
+      const oppLoadEl = document.getElementById('btrVsOppLoadStatus');
+      if (oppLoadEl) {
+        oppLoadEl.textContent = '✓ Audio Pre-loaded!';
+        oppLoadEl.classList.add('ready');
+      }
+      checkBothPlayersReadyToStart();
+    });
+
+    ch.on('broadcast', { event: 'START_TRACK' }, ({ payload }) => {
+      if (!payload || typeof payload.trackIndex !== 'number') return;
+      startBtrTrack(payload.trackIndex);
+    });
+
+    ch.on('broadcast', { event: 'PLAYER_LOCKED_IN' }, ({ payload }) => {
+      if (!payload || payload.trackIndex !== btrState.currentTrackIdx) return;
+      btrState.oppTrackAnswer = payload;
+      const oppLiveStatus = document.getElementById('btrArenaOppLiveStatus');
+      if (oppLiveStatus) {
+        oppLiveStatus.textContent = '⚡ LOCKED IN!';
+        oppLiveStatus.classList.add('locked-in');
+      }
+      checkBothPlayersAnsweredTrack();
+    });
+
+    ch.on('broadcast', { event: 'PLAYER_EMOTE' }, ({ payload }) => {
+      if (!payload || !payload.emote) return;
+      showBtrFloatingEmote(payload.emote, payload.senderName || 'Opponent');
+    });
+
+    ch.subscribe((status) => {
+      if (status === 'SUBSCRIBED' && btrState.role === 'guest') {
+        ch.send({
+          type: 'broadcast',
+          event: 'CHALLENGER_JOIN',
+          payload: { challenger: getMyBtrIdentity() },
+        });
+      }
+    });
+
+    btrState.roomChannel = ch;
+    return ch;
+  }
+
+  function joinBtrRoomByCode(rawCode) {
+    const code = String(rawCode || '').replace(/[^0-9]/g, '').trim();
+    if (code.length !== 4) {
+      alert('Please enter a valid 4-digit Room Code.');
+      return;
+    }
+    if (btrState.role === 'host' && btrState.activeRoomCode === code) {
+      alert('You are already hosting this room! Share the code with a friend.');
+      return;
+    }
+
+    btrState.activeRoomCode = code;
+    btrState.role = 'guest';
+    btrState.opponent = null;
+    subscribeToBtrRoomChannel(code);
+  }
+
+  async function enterBtrVsIntro(matchPayload) {
+    setBtrScreen('vs_intro');
+    btrState.myAudioReady = false;
+    btrState.oppAudioReady = false;
+    btrState.currentTrackIdx = 0;
+    btrState.myScore = 0;
+    btrState.oppScore = 0;
+    btrState.trackHistory = [];
+
+    const me = getMyBtrIdentity();
+    const opp = btrState.opponent || { username: 'Opponent', avatar: '🔥', rp: 1000, tierLabel: '🥉 Bronze' };
+
+    const rulesBadge = document.getElementById('btrVsRulesBadge');
+    if (rulesBadge) rulesBadge.textContent = matchPayload.rulesSummary || '5-Song Live Sprint';
+
+    renderAvatarContent(document.getElementById('btrVsMyAvatar'), me.avatar);
+    const myNameEl = document.getElementById('btrVsMyName');
+    if (myNameEl) myNameEl.textContent = `@${me.username}`;
+    const myTierEl = document.getElementById('btrVsMyTier');
+    if (myTierEl) myTierEl.textContent = `${me.tierLabel} · ${me.rp} RP`;
+
+    renderAvatarContent(document.getElementById('btrVsOppAvatar'), opp.avatar);
+    const oppNameEl = document.getElementById('btrVsOppName');
+    if (oppNameEl) oppNameEl.textContent = `@${opp.username}`;
+    const oppTierEl = document.getElementById('btrVsOppTier');
+    if (oppTierEl) oppTierEl.textContent = `${opp.tierLabel || '🥉 Bronze'} · ${opp.rp || 1000} RP`;
+
+    const myLoadEl = document.getElementById('btrVsMyLoadStatus');
+    const oppLoadEl = document.getElementById('btrVsOppLoadStatus');
+    const barFill = document.getElementById('btrPreloadBarFill');
+    const preloadTxt = document.getElementById('btrPreloadStatusText');
+
+    if (myLoadEl) {
+      myLoadEl.textContent = 'Pre-loading audio...';
+      myLoadEl.classList.remove('ready');
+    }
+    if (oppLoadEl) {
+      oppLoadEl.textContent = 'Pre-loading audio...';
+      oppLoadEl.classList.remove('ready');
+    }
+    if (barFill) barFill.style.width = '10%';
+    if (preloadTxt) preloadTxt.textContent = 'Lockstep Audio Sync: Pre-fetching all 5 songs...';
+
+    await preloadBtrMatchAudio(matchPayload.rounds, (doneCount, totalCount) => {
+      const pct = Math.round((doneCount / totalCount) * 100);
+      if (barFill) barFill.style.width = `${pct}%`;
+    });
+
+    btrState.myAudioReady = true;
+    if (myLoadEl) {
+      myLoadEl.textContent = '✓ Audio Pre-loaded!';
+      myLoadEl.classList.add('ready');
+    }
+    if (preloadTxt) preloadTxt.textContent = 'Ready! Waiting for opponent audio lock...';
+
+    if (btrState.roomChannel) {
+      btrState.roomChannel.send({
+        type: 'broadcast',
+        event: 'PLAYER_AUDIO_READY',
+        payload: { playerId: me.id },
+      });
+    }
+
+    checkBothPlayersReadyToStart();
+  }
+
+  async function preloadBtrMatchAudio(rounds, onProgress) {
+    // Revoke previous blobs
+    Object.values(btrState.preloadedBlobs).forEach((url) => {
+      if (url && url.startsWith('blob:')) {
+        try {
+          URL.revokeObjectURL(url);
+        } catch (e) {}
+      }
+    });
+    btrState.preloadedBlobs = {};
+
+    let completed = 0;
+    const total = rounds.length;
+
+    await Promise.all(
+      rounds.map(async (r, idx) => {
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 4500);
+          const resp = await fetch(r.previewUrl, { signal: controller.signal });
+          clearTimeout(timeoutId);
+          if (resp.ok) {
+            const blob = await resp.blob();
+            btrState.preloadedBlobs[idx] = URL.createObjectURL(blob);
+          } else {
+            btrState.preloadedBlobs[idx] = r.previewUrl;
+          }
+        } catch (e) {
+          btrState.preloadedBlobs[idx] = r.previewUrl;
+        }
+        completed += 1;
+        if (onProgress) onProgress(completed, total);
+      })
+    );
+  }
+
+  function checkBothPlayersReadyToStart() {
+    if (!btrState.myAudioReady || !btrState.oppAudioReady) return;
+    if (btrState.phase !== 'vs_intro') return;
+
+    const preloadTxt = document.getElementById('btrPreloadStatusText');
+    if (preloadTxt) preloadTxt.textContent = '⚡ LOCKSTEP SYNC COMPLETE — ENTERING ARENA!';
+
+    if (btrState.role === 'host') {
+      setTimeout(() => {
+        if (btrState.roomChannel) {
+          btrState.roomChannel.send({
+            type: 'broadcast',
+            event: 'START_TRACK',
+            payload: { trackIndex: 0 },
+          });
+        }
+        startBtrTrack(0);
+      }, 900);
+    }
+  }
+
+  function updateBtrTugOfWarBar() {
+    const myPts = btrState.myScore;
+    const oppPts = btrState.oppScore;
+    const total = myPts + oppPts;
+    const pct = total === 0 ? 50 : Math.max(12, Math.min(88, Math.round((myPts / total) * 100)));
+    const fillEl = document.getElementById('btrTugFillYou');
+    if (fillEl) fillEl.style.width = `${pct}%`;
+
+    const myScoreEl = document.getElementById('btrArenaMyScore');
+    const oppScoreEl = document.getElementById('btrArenaOppScore');
+    if (myScoreEl) myScoreEl.textContent = myPts.toLocaleString();
+    if (oppScoreEl) oppScoreEl.textContent = oppPts.toLocaleString();
+  }
+
+  function startBtrTrack(trackIdx) {
+    if (!btrState.matchPayload || !btrState.matchPayload.rounds[trackIdx]) return;
+    const round = btrState.matchPayload.rounds[trackIdx];
+
+    btrState.currentTrackIdx = trackIdx;
+    btrState.myTrackAnswer = null;
+    btrState.oppTrackAnswer = null;
+
+    if (btrState.clashAdvanceTimeout) {
+      clearTimeout(btrState.clashAdvanceTimeout);
+      btrState.clashAdvanceTimeout = null;
+    }
+
+    const clashOverlay = document.getElementById('btrClashOverlay');
+    if (clashOverlay) clashOverlay.classList.add('hidden');
+
+    setBtrScreen('arena');
+
+    const me = getMyBtrIdentity();
+    const opp = btrState.opponent || { username: 'Opponent', avatar: '🔥' };
+
+    renderAvatarContent(document.getElementById('btrArenaMyAvatar'), me.avatar);
+    renderAvatarContent(document.getElementById('btrArenaOppAvatar'), opp.avatar);
+
+    const myNameEl = document.getElementById('btrArenaMyName');
+    if (myNameEl) myNameEl.textContent = 'YOU';
+    const oppNameEl = document.getElementById('btrArenaOppName');
+    if (oppNameEl) oppNameEl.textContent = `@${opp.username}`;
+
+    const myStatusEl = document.getElementById('btrArenaMyLiveStatus');
+    if (myStatusEl) {
+      myStatusEl.textContent = 'Listening...';
+      myStatusEl.classList.remove('locked-in');
+    }
+    const oppStatusEl = document.getElementById('btrArenaOppLiveStatus');
+    if (oppStatusEl) {
+      oppStatusEl.textContent = 'Listening...';
+      oppStatusEl.classList.remove('locked-in');
+    }
+
+    const pillEl = document.getElementById('btrArenaTrackPill');
+    if (pillEl) pillEl.textContent = `TRACK ${trackIdx + 1} / 5`;
+
+    const multEl = document.getElementById('btrArenaMultiplierPill');
+    if (multEl) multEl.classList.toggle('hidden', !round.isDoublePoints);
+
+    updateBtrTugOfWarBar();
+
+    // Render 4 choices
+    const gridEl = document.getElementById('btrArenaChoicesGrid');
+    if (gridEl) {
+      gridEl.innerHTML = round.options
+        .map(
+          (opt) =>
+            `<button type="button" class="choice-btn btr-choice-btn" data-choice="${escapeHtml(opt)}">${escapeHtml(opt)}</button>`
+        )
+        .join('');
+      gridEl.querySelectorAll('.btr-choice-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          handleBtrAnswer(btn.dataset.choice, btn);
+        });
+      });
+    }
+
+    const timerEl = document.getElementById('btrArenaTimerValue');
+    if (timerEl) timerEl.textContent = '0.00s';
+
+    // Start preloaded audio and trigger monotonic stopwatch strictly on 'playing' event
+    playBtrRoundAudio(round, trackIdx);
+  }
+
+  function playBtrRoundAudio(round, trackIdx) {
+    stopBtrAudio();
+    const src = btrState.preloadedBlobs[trackIdx] || round.previewUrl;
+    const audio = btrState.audioEl;
+    audio.src = src;
+    audio.currentTime = round.offsetSec || 3;
+
+    let startedPerf = false;
+    const onPlaying = () => {
+      if (startedPerf) return;
+      startedPerf = true;
+      audio.removeEventListener('playing', onPlaying);
+      btrState.trackStartTimePerf = performance.now();
+      startBtrStopwatchLoop();
+
+      btrState.audioStopTimeout = setTimeout(() => {
+        try {
+          audio.pause();
+        } catch (e) {}
+      }, round.clipDuration * 1000);
+    };
+
+    audio.addEventListener('playing', onPlaying);
+    audio.play().catch(() => {
+      // Fallback if autoplay blocked
+      if (!startedPerf) {
+        startedPerf = true;
+        btrState.trackStartTimePerf = performance.now();
+        startBtrStopwatchLoop();
+      }
+    });
+
+    // 9-second round safety timeout so nobody gets stuck
+    if (btrState.trackSafetyTimeout) clearTimeout(btrState.trackSafetyTimeout);
+    btrState.trackSafetyTimeout = setTimeout(() => {
+      if (!btrState.myTrackAnswer) {
+        handleBtrAnswer('__TIMEOUT__', null);
+      }
+    }, 9000);
+  }
+
+  function stopBtrAudio() {
+    if (btrState.audioStopTimeout) {
+      clearTimeout(btrState.audioStopTimeout);
+      btrState.audioStopTimeout = null;
+    }
+    if (btrState.trackTimerRAF) {
+      cancelAnimationFrame(btrState.trackTimerRAF);
+      btrState.trackTimerRAF = null;
+    }
+    try {
+      btrState.audioEl.pause();
+    } catch (e) {}
+  }
+
+  function startBtrStopwatchLoop() {
+    const timerEl = document.getElementById('btrArenaTimerValue');
+    const step = () => {
+      if (btrState.myTrackAnswer) return;
+      const elapsedSec = Math.max(0, (performance.now() - btrState.trackStartTimePerf) / 1000);
+      if (timerEl) timerEl.textContent = `${elapsedSec.toFixed(2)}s`;
+      btrState.trackTimerRAF = requestAnimationFrame(step);
+    };
+    btrState.trackTimerRAF = requestAnimationFrame(step);
+  }
+
+  function calculateBtrPoints(correct, reactionMs, isDoublePoints) {
+    if (!correct) return 0;
+    const clampedMs = Math.max(120, Math.min(9000, reactionMs));
+    const speedBonus = Math.max(150, Math.round(1000 * Math.pow(1 - clampedMs / 9500, 1.35)));
+    const base = 250 + speedBonus;
+    return isDoublePoints ? base * 2 : base;
+  }
+
+  function handleBtrAnswer(choiceText, btnEl) {
+    if (btrState.myTrackAnswer) return;
+    const round = btrState.matchPayload.rounds[btrState.currentTrackIdx];
+    if (!round) return;
+
+    const reactionMs = Math.max(120, Math.round(performance.now() - (btrState.trackStartTimePerf || performance.now())));
+    const isCorrect = choiceText === round.correctOption;
+    const pts = calculateBtrPoints(isCorrect, reactionMs, round.isDoublePoints);
+
+    stopBtrAudio();
+
+    const timerEl = document.getElementById('btrArenaTimerValue');
+    if (timerEl) timerEl.textContent = `${(reactionMs / 1000).toFixed(2)}s`;
+
+    // Immediate local button feedback
+    const gridEl = document.getElementById('btrArenaChoicesGrid');
+    if (gridEl) {
+      gridEl.querySelectorAll('.btr-choice-btn').forEach((b) => {
+        b.disabled = true;
+        if (b.dataset.choice === round.correctOption) {
+          b.classList.add('correct');
+        } else if (b === btnEl && !isCorrect) {
+          b.classList.add('wrong');
+        }
+      });
+    }
+
+    const myStatusEl = document.getElementById('btrArenaMyLiveStatus');
+    if (myStatusEl) {
+      myStatusEl.textContent = isCorrect ? `✓ ${(reactionMs / 1000).toFixed(2)}s` : '✕ Missed';
+      myStatusEl.classList.add('locked-in');
+    }
+
+    btrState.myTrackAnswer = {
+      trackIndex: btrState.currentTrackIdx,
+      correct: isCorrect,
+      ms: reactionMs,
+      pts,
+      choice: choiceText,
+    };
+
+    if (isCorrect) {
+      if (!stats.btrStats.fastestHitMs || reactionMs < stats.btrStats.fastestHitMs) {
+        stats.btrStats.fastestHitMs = reactionMs;
+      }
+    }
+
+    if (btrState.roomChannel) {
+      btrState.roomChannel.send({
+        type: 'broadcast',
+        event: 'PLAYER_LOCKED_IN',
+        payload: btrState.myTrackAnswer,
+      });
+    }
+
+    checkBothPlayersAnsweredTrack();
+  }
+
+  function checkBothPlayersAnsweredTrack() {
+    if (!btrState.myTrackAnswer || !btrState.oppTrackAnswer) return;
+
+    if (btrState.trackSafetyTimeout) {
+      clearTimeout(btrState.trackSafetyTimeout);
+      btrState.trackSafetyTimeout = null;
+    }
+
+    showBtrTrackClashOverlay();
+  }
+
+  function showBtrTrackClashOverlay() {
+    const idx = btrState.currentTrackIdx;
+    const round = btrState.matchPayload.rounds[idx];
+    const myAns = btrState.myTrackAnswer;
+    const oppAns = btrState.oppTrackAnswer;
+
+    btrState.myScore += myAns.pts;
+    btrState.oppScore += oppAns.pts;
+    updateBtrTugOfWarBar();
+
+    btrState.trackHistory.push({
+      round,
+      myAns,
+      oppAns,
+    });
+
+    const overlay = document.getElementById('btrClashOverlay');
+    if (!overlay) return;
+
+    const artEl = document.getElementById('btrClashSongArt');
+    if (artEl) artEl.src = round.artworkUrl || '';
+    const titleEl = document.getElementById('btrClashSongTitle');
+    if (titleEl) titleEl.textContent = round.title;
+    const artistEl = document.getElementById('btrClashSongArtist');
+    if (artistEl) artistEl.textContent = round.artist;
+
+    const myResCard = document.getElementById('btrClashMyResult');
+    const oppResCard = document.getElementById('btrClashOppResult');
+    if (myResCard) {
+      myResCard.classList.remove('correct', 'wrong');
+      myResCard.classList.add(myAns.correct ? 'correct' : 'wrong');
+    }
+    if (oppResCard) {
+      oppResCard.classList.remove('correct', 'wrong');
+      oppResCard.classList.add(oppAns.correct ? 'correct' : 'wrong');
+    }
+
+    const oppNameEl = document.getElementById('btrClashOppName');
+    if (oppNameEl) oppNameEl.textContent = `@${(btrState.opponent && btrState.opponent.username) || 'OPPONENT'}`;
+
+    const myTimeEl = document.getElementById('btrClashMyTime');
+    if (myTimeEl) myTimeEl.textContent = myAns.correct ? `✓ ${(myAns.ms / 1000).toFixed(2)}s` : '✕ Wrong / Timeout';
+    const myPtsEl = document.getElementById('btrClashMyPoints');
+    if (myPtsEl) myPtsEl.textContent = `+${myAns.pts} pts`;
+
+    const oppTimeEl = document.getElementById('btrClashOppTime');
+    if (oppTimeEl) oppTimeEl.textContent = oppAns.correct ? `✓ ${(oppAns.ms / 1000).toFixed(2)}s` : '✕ Wrong / Timeout';
+    const oppPtsEl = document.getElementById('btrClashOppPoints');
+    if (oppPtsEl) oppPtsEl.textContent = `+${oppAns.pts} pts`;
+
+    const nextText = document.getElementById('btrClashNextCountdown');
+    if (nextText) {
+      nextText.textContent =
+        idx === 3 ? '🔥 Track 5 (2X FINAL RUSH) starting in 3s...' : idx < 4 ? `Next track in 3s...` : 'Calculating Final Verdict...';
+    }
+
+    overlay.classList.remove('hidden');
+
+    btrState.clashAdvanceTimeout = setTimeout(() => {
+      overlay.classList.add('hidden');
+      if (idx + 1 < 5) {
+        if (btrState.role === 'host') {
+          if (btrState.roomChannel) {
+            btrState.roomChannel.send({
+              type: 'broadcast',
+              event: 'START_TRACK',
+              payload: { trackIndex: idx + 1 },
+            });
+          }
+          startBtrTrack(idx + 1);
+        }
+      } else {
+        finishBtrMatch();
+      }
+    }, 3500);
+  }
+
+  function finishBtrMatch() {
+    stopBtrAudio();
+    setBtrScreen('summary');
+
+    const myTotal = btrState.myScore;
+    const oppTotal = btrState.oppScore;
+    const won = myTotal > oppTotal;
+    const draw = myTotal === oppTotal;
+
+    if (!stats.btrStats) {
+      stats.btrStats = { rp: 1000, wins: 0, losses: 0, draws: 0, fastestHitMs: null };
+    }
+
+    let rpDelta = 0;
+    if (won) {
+      rpDelta = 28;
+      stats.btrStats.wins = (stats.btrStats.wins || 0) + 1;
+    } else if (draw) {
+      rpDelta = 5;
+      stats.btrStats.draws = (stats.btrStats.draws || 0) + 1;
+    } else {
+      rpDelta = -18;
+      stats.btrStats.losses = (stats.btrStats.losses || 0) + 1;
+    }
+
+    stats.btrStats.rp = Math.max(100, (stats.btrStats.rp || 1000) + rpDelta);
+    saveStats();
+    renderBtrPlayerBanner();
+    pushBtrRankToSupabase();
+
+    const heroEl = document.getElementById('btrResultHeroBanner');
+    if (heroEl) {
+      heroEl.classList.remove('victory', 'defeat');
+      heroEl.classList.add(won ? 'victory' : 'defeat');
+    }
+
+    const crownEl = document.getElementById('btrResultCrown');
+    if (crownEl) crownEl.textContent = won ? '👑' : draw ? '⚡' : '💔';
+
+    const titleEl = document.getElementById('btrResultTitle');
+    if (titleEl) titleEl.textContent = won ? 'VICTORY!' : draw ? 'DRAW DUEL!' : 'DEFEAT';
+
+    const deltaPill = document.getElementById('btrResultRpDeltaPill');
+    if (deltaPill) {
+      deltaPill.textContent = `${rpDelta >= 0 ? '+' : ''}${rpDelta} RP (Now ${stats.btrStats.rp} RP)`;
+    }
+
+    const me = getMyBtrIdentity();
+    const opp = btrState.opponent || { username: 'Opponent', avatar: '🔥' };
+
+    renderAvatarContent(document.getElementById('btrSumMyAvatar'), me.avatar);
+    renderAvatarContent(document.getElementById('btrSumOppAvatar'), opp.avatar);
+
+    const sumMyName = document.getElementById('btrSumMyName');
+    if (sumMyName) sumMyName.textContent = `@${me.username}`;
+    const sumOppName = document.getElementById('btrSumOppName');
+    if (sumOppName) sumOppName.textContent = `@${opp.username}`;
+
+    const sumMyScore = document.getElementById('btrSumMyScore');
+    if (sumMyScore) sumMyScore.textContent = myTotal.toLocaleString();
+    const sumOppScore = document.getElementById('btrSumOppScore');
+    if (sumOppScore) sumOppScore.textContent = oppTotal.toLocaleString();
+
+    const logList = document.getElementById('btrSummaryTrackList');
+    if (logList) {
+      logList.innerHTML = btrState.trackHistory
+        .map((item, i) => {
+          const myTxt = item.myAns.correct ? `You: ${(item.myAns.ms / 1000).toFixed(2)}s (+${item.myAns.pts})` : `You: ✕ (0)`;
+          const oppTxt = item.oppAns.correct ? `Opp: ${(item.oppAns.ms / 1000).toFixed(2)}s (+${item.oppAns.pts})` : `Opp: ✕ (0)`;
+          return `
+            <div class="btr-room-item">
+              <div class="btr-room-host-info">
+                <span style="font-family:var(--font-mono);font-weight:700;color:var(--accent);">#${i + 1}</span>
+                <div>
+                  <div class="btr-room-host-name">${escapeHtml(item.round.title)} — ${escapeHtml(item.round.artist)}</div>
+                  <div class="btr-room-rules-tags">${escapeHtml(myTxt)}  ·  ${escapeHtml(oppTxt)}</div>
+                </div>
+              </div>
+            </div>
+          `;
+        })
+        .join('');
+    }
+  }
+
+  function showBtrFloatingEmote(emoteText, senderName) {
+    const stream = document.getElementById('btrLiveEmoteStream');
+    if (!stream) return;
+    const bubble = document.createElement('div');
+    bubble.className = 'btr-floating-emote';
+    bubble.textContent = `${senderName}: ${emoteText}`;
+    stream.appendChild(bubble);
+    setTimeout(() => {
+      bubble.remove();
+    }, 2200);
+  }
+
+  async function pushBtrRankToSupabase() {
+    if (!window.SUPABASE_URL || !window.SUPABASE_ANON_KEY || !stats.btrStats) return;
+    const me = getMyBtrIdentity();
+    const tier = getBtrTierInfo(me.rp);
+    const payload = {
+      user_id: me.id,
+      username: me.username,
+      record_type: 'btr_rank',
+      scope_key: 'global_btr',
+      score: me.rp,
+      accuracy: me.wins,
+      avg_time_ms: stats.btrStats.fastestHitMs || 9999,
+      song_title: `${me.wins}W - ${me.losses}L`,
+      artist_name: `${me.avatar}|${tier.short}`,
+      updated_at: new Date().toISOString(),
+    };
+
+    try {
+      const checkUrl = `${window.SUPABASE_URL}/rest/v1/global_records?user_id=eq.${encodeURIComponent(
+        me.id
+      )}&record_type=eq.btr_rank&scope_key=eq.global_btr&select=id`;
+      const checkRes = await fetch(checkUrl, { headers: getSupabaseHeaders() });
+      const existing = checkRes.ok ? await checkRes.json() : [];
+
+      if (existing.length > 0) {
+        await fetch(`${window.SUPABASE_URL}/rest/v1/global_records?id=eq.${existing[0].id}`, {
+          method: 'PATCH',
+          headers: getSupabaseHeaders(),
+          body: JSON.stringify(payload),
+        });
+      } else {
+        await fetch(`${window.SUPABASE_URL}/rest/v1/global_records`, {
+          method: 'POST',
+          headers: getSupabaseHeaders(),
+          body: JSON.stringify(payload),
+        });
+      }
+    } catch (e) {}
+  }
+
+  async function loadBtrRankedLeaderboard() {
+    const bodyEl = document.getElementById('btrRankedLeaderboardBody');
+    if (!bodyEl) return;
+
+    if (!window.SUPABASE_URL || !window.SUPABASE_ANON_KEY) {
+      bodyEl.innerHTML = `<div class="empty-note">Cloud Ranked Leaderboard offline.</div>`;
+      return;
+    }
+
+    try {
+      const url = `${window.SUPABASE_URL}/rest/v1/global_records?record_type=eq.btr_rank&order=score.desc&limit=25`;
+      const res = await fetch(url, { headers: getSupabaseHeaders() });
+      if (!res.ok) throw new Error('Failed to load ranked board');
+      const rows = await res.json();
+
+      if (!rows || rows.length === 0) {
+        // Always show at least the local user so the board feels alive
+        const me = getMyBtrIdentity();
+        const tier = getBtrTierInfo(me.rp);
+        bodyEl.innerHTML = `
+          <div class="table-row highlight-you">
+            <span class="rank-cell">#1</span>
+            <span class="player-cell">${escapeHtml(me.avatar)} @${escapeHtml(me.username)}</span>
+            <span>${escapeHtml(tier.short)}</span>
+            <span class="score-cell">${me.rp} RP</span>
+            <span>${me.wins}W - ${me.losses}L</span>
+            <span>${stats.btrStats?.fastestHitMs ? (stats.btrStats.fastestHitMs / 1000).toFixed(2) + 's' : '—'}</span>
+          </div>
+        `;
+        return;
+      }
+
+      bodyEl.innerHTML = rows
+        .map((r, idx) => {
+          const isMe = r.user_id === userProfile.id;
+          const parts = String(r.artist_name || '🎧|🥉 Bronze').split('|');
+          const av = parts[0] || '🎧';
+          const tierTxt = parts[1] || getBtrTierInfo(r.score).short;
+          const avHtml = av.startsWith('http')
+            ? `<img src="${escapeHtml(av)}" style="width:22px;height:22px;border-radius:50%;vertical-align:middle;margin-right:4px;" />`
+            : `${escapeHtml(av)} `;
+          const fastStr = r.avg_time_ms && r.avg_time_ms < 9000 ? `${(r.avg_time_ms / 1000).toFixed(2)}s` : '—';
+
+          return `
+            <div class="table-row ${isMe ? 'highlight-you' : ''}">
+              <span class="rank-cell">#${idx + 1}</span>
+              <span class="player-cell">${avHtml}@${escapeHtml(r.username || 'Player')}</span>
+              <span>${escapeHtml(tierTxt)}</span>
+              <span class="score-cell">${Number(r.score || 1000).toLocaleString()} RP</span>
+              <span>${escapeHtml(r.song_title || '0W - 0L')}</span>
+              <span>${fastStr}</span>
+            </div>
+          `;
+        })
+        .join('');
+    } catch (e) {
+      bodyEl.innerHTML = `<div class="empty-note">Could not load BEAT the RUSH Ranked Standings.</div>`;
+    }
+  }
+
+  function initBtrModeUI() {
+    loadBtrVetoes();
+    renderBtrPlayerBanner();
+    renderBtrAvatarDrawer();
+    renderBtrHostControls();
+    renderBtrVetoChips();
+
+    const changeAvBtn = document.getElementById('btrChangeAvatarBtn');
+    const avDrawer = document.getElementById('btrAvatarPickerDrawer');
+    if (changeAvBtn && avDrawer) {
+      changeAvBtn.addEventListener('click', () => {
+        renderBtrAvatarDrawer();
+        avDrawer.classList.toggle('hidden');
+      });
+    }
+
+    // Host language chips
+    document.querySelectorAll('#btrHostLangChips .chip').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#btrHostLangChips .chip').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        btrState.hostConfig.language = btn.dataset.val || 'all';
+        renderBtrHostControls();
+      });
+    });
+
+    // Host difficulty chips
+    document.querySelectorAll('#btrHostDiffChips .chip').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#btrHostDiffChips .chip').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        btrState.hostConfig.difficulty = btn.dataset.val || 'all';
+      });
+    });
+
+    // Host decade chips
+    document.querySelectorAll('#btrHostDecadeChips .chip').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#btrHostDecadeChips .chip').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        btrState.hostConfig.decade = btn.dataset.val || 'all';
+        renderBtrHostControls();
+      });
+    });
+
+    // Host scope toggle (Genre vs Single Artist)
+    document.querySelectorAll('#btrHostScopeToggle .chip').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#btrHostScopeToggle .chip').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const scope = btn.dataset.scope || 'genre';
+        btrState.hostConfig.scopeType = scope;
+        const gWrap = document.getElementById('btrHostGenreWrap');
+        const aWrap = document.getElementById('btrHostArtistWrap');
+        if (gWrap) gWrap.classList.toggle('hidden', scope !== 'genre');
+        if (aWrap) aWrap.classList.toggle('hidden', scope !== 'artist');
+        renderBtrHostControls();
+      });
+    });
+
+    const artistSelect = document.getElementById('btrHostArtistSelect');
+    if (artistSelect) {
+      artistSelect.addEventListener('change', () => {
+        btrState.hostConfig.artist = artistSelect.value;
+      });
+    }
+
+    const createBtn = document.getElementById('btrCreateRoomBtn');
+    if (createBtn) createBtn.addEventListener('click', openBtrHostRoom);
+
+    const cancelBtn = document.getElementById('btrCancelRoomBtn');
+    if (cancelBtn) cancelBtn.addEventListener('click', cancelBtrHostRoom);
+
+    const copyLinkBtn = document.getElementById('btrCopyRoomLinkBtn');
+    if (copyLinkBtn) {
+      copyLinkBtn.addEventListener('click', async () => {
+        if (!btrState.activeRoomCode) return;
+        const shareUrl = `${window.location.origin}/?btr=${btrState.activeRoomCode}`;
+        try {
+          await navigator.clipboard.writeText(shareUrl);
+          copyLinkBtn.textContent = '✓ Link Copied!';
+          setTimeout(() => {
+            copyLinkBtn.textContent = '📋 Copy Invite Link';
+          }, 2000);
+        } catch (e) {}
+      });
+    }
+
+    const waInviteBtn = document.getElementById('btrShareWhatsappRoomBtn');
+    if (waInviteBtn) {
+      waInviteBtn.addEventListener('click', () => {
+        if (!btrState.activeRoomCode) return;
+        const shareUrl = `${window.location.origin}/?btr=${btrState.activeRoomCode}`;
+        const text = `⚔️ Come duel me 1v1 live in BEAT the RUSH!\nRoom Code: #${btrState.activeRoomCode}\nRules: ${formatBtrRulesSummary(
+          btrState.hostConfig
+        )}\nJoin instantly: ${shareUrl}`;
+        window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+      });
+    }
+
+    const joinCodeBtn = document.getElementById('btrJoinByCodeBtn');
+    const codeInput = document.getElementById('btrJoinCodeInput');
+    if (joinCodeBtn && codeInput) {
+      joinCodeBtn.addEventListener('click', () => joinBtrRoomByCode(codeInput.value));
+      codeInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          joinBtrRoomByCode(codeInput.value);
+        }
+      });
+    }
+
+    const quickMatchBtn = document.getElementById('btrQuickMatchBtn');
+    if (quickMatchBtn) {
+      quickMatchBtn.addEventListener('click', () => {
+        const compatible = btrState.openRooms.filter((r) => r.hostId !== userProfile.id && isRoomCompatibleWithVetoes(r));
+        if (compatible.length > 0) {
+          joinBtrRoomByCode(compatible[0].roomCode);
+        } else {
+          alert(
+            'No open room currently matches your Veto Filters! Opening a new room with your non-vetoed preferences so an opponent can join you.'
+          );
+          openBtrHostRoom();
+        }
+      });
+    }
+
+    // Live Emote Bar
+    document.querySelectorAll('.btr-emote-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const emote = btn.dataset.emote;
+        if (!emote) return;
+        const me = getMyBtrIdentity();
+        showBtrFloatingEmote(emote, 'YOU');
+        if (btrState.roomChannel) {
+          btrState.roomChannel.send({
+            type: 'broadcast',
+            event: 'PLAYER_EMOTE',
+            payload: { emote, senderName: `@${me.username}` },
+          });
+        }
+      });
+    });
+
+    const rematchBtn = document.getElementById('btrRematchBtn');
+    if (rematchBtn) {
+      rematchBtn.addEventListener('click', () => {
+        cancelBtrHostRoom();
+        setBtrScreen('hub');
+        openBtrHostRoom();
+      });
+    }
+
+    const backHubBtn = document.getElementById('btrBackToHubBtn');
+    if (backHubBtn) {
+      backHubBtn.addEventListener('click', () => {
+        cancelBtrHostRoom();
+        setBtrScreen('hub');
+        loadBtrRankedLeaderboard();
+      });
+    }
+
+    const refreshRankBtn = document.getElementById('btrRefreshLeaderboardBtn');
+    if (refreshRankBtn) {
+      refreshRankBtn.addEventListener('click', loadBtrRankedLeaderboard);
     }
   }
 

@@ -571,6 +571,379 @@
         </div>
       </div>
     </section>
+
+    <!-- ==================== VIEW 6: BEAT THE RUSH (1V1 LIVE ONLINE MODE) ==================== -->
+    <section id="view-btr" class="view-section">
+      <!-- SUB-SCREEN 1: HUB (MATCHMAKING + VETO + RANKED LEADERBOARD) -->
+      <div id="btrScreenHub" class="btr-hub-container">
+        <!-- Player Competitive Identity Banner -->
+        <div class="studio-panel btr-player-banner">
+          <div class="btr-pb-left">
+            <button type="button" class="btr-avatar-circle" id="btrOpenAvatarPickerBtn" title="Tap to change Avatar">
+              <span id="btrPlayerAvatarDisplay">🎧</span>
+            </button>
+            <div class="btr-pb-info">
+              <div class="btr-pb-name-row">
+                <span class="btr-pb-username mono" id="btrHubUsername">@guest</span>
+                <span class="btr-tier-badge" id="btrHubTierBadge">🥉 BRONZE</span>
+              </div>
+              <div class="btr-pb-stats mono">
+                <strong style="color:var(--accent)" id="btrHubRpValue">1,000 RP</strong> •
+                <span id="btrHubWinLoss">0W - 0L</span> •
+                <span style="color:var(--text-dim)">Tap avatar to customize</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Avatar Picker Drawer -->
+          <div class="btr-avatar-drawer hidden" id="btrAvatarDrawer">
+            <div class="btr-avatar-drawer-label">CHOOSE YOUR 1V1 AVATAR (NEON OR MASTERED ARTIST):</div>
+            <div class="btr-avatar-options-row" id="btrAvatarOptionsRow"></div>
+          </div>
+        </div>
+
+        <!-- Mode Switcher: Create Room (Host) vs Find Match (Challenger Veto) -->
+        <div class="btr-mode-tabs">
+          <button type="button" class="btr-mode-tab active" data-btr-tab="join" id="btrSwitchJoinTabBtn">
+            <span>🔍 FIND MATCH (VETO & LIVE ROOMS)</span>
+          </button>
+          <button type="button" class="btr-mode-tab" data-btr-tab="host" id="btrSwitchHostTabBtn">
+            <span>⚡ CREATE 1V1 ROOM (HOST)</span>
+          </button>
+        </div>
+
+        <div class="btr-main-grid">
+          <!-- LEFT COLUMN: ACTIVE TAB (FIND MATCH OR CREATE ROOM) -->
+          <div class="studio-panel btr-action-panel">
+            <!-- TAB A: FIND MATCH (CHALLENGER VETO + OPEN LOBBIES + ROOM CODE) -->
+            <div id="btrTabJoinContent">
+              <div class="panel-top-row" style="margin-bottom:0.85rem">
+                <div>
+                  <span class="section-eyebrow">CHALLENGER MATCHMAKING</span>
+                  <h2>Find a 1v1 Duel</h2>
+                </div>
+                <span class="pool-counter mono" id="btrLiveRoomsCountBadge">0 Open Rooms</span>
+              </div>
+
+              <!-- Direct Room Code Join -->
+              <div class="btr-code-join-bar">
+                <input type="text" id="btrJoinCodeInput" class="mono" placeholder="Enter 4-digit Room Code (e.g. 4821)..." maxlength="6" autocomplete="off" />
+                <button type="button" class="next-song-btn" id="btrJoinByCodeBtn">⚔️ Join Code</button>
+              </div>
+
+              <!-- Veto / Exclusion Filters -->
+              <div class="btr-veto-section">
+                <div class="btr-veto-header">
+                  <span class="step-label">🚫 VETO FILTER — TAP ANYTHING YOU DO NOT WANT TO PLAY</span>
+                  <button type="button" class="btr-clear-veto-btn" id="btrResetVetoBtn">Allow All</button>
+                </div>
+                <p style="font-size:0.75rem;color:var(--text-secondary);margin-bottom:0.65rem">
+                  Crossed-out categories (<span style="color:var(--accent-red);font-weight:700">🚫 VETOED</span>) will be blocked so you only match into music you know!
+                </p>
+
+                <div class="btr-veto-group">
+                  <span class="btr-veto-sub">LANGUAGES:</span>
+                  <div class="btr-veto-chips" id="btrVetoLangChips">
+                    <button type="button" class="btr-veto-chip" data-veto-type="lang" data-val="en">English</button>
+                    <button type="button" class="btr-veto-chip" data-veto-type="lang" data-val="he">Hebrew</button>
+                  </div>
+                </div>
+
+                <div class="btr-veto-group">
+                  <span class="btr-veto-sub">DIFFICULTIES:</span>
+                  <div class="btr-veto-chips" id="btrVetoDiffChips">
+                    <button type="button" class="btr-veto-chip" data-veto-type="diff" data-val="easy">Easy</button>
+                    <button type="button" class="btr-veto-chip" data-veto-type="diff" data-val="medium">Medium</button>
+                    <button type="button" class="btr-veto-chip" data-veto-type="diff" data-val="hard">Hard</button>
+                  </div>
+                </div>
+
+                <div class="btr-veto-group">
+                  <span class="btr-veto-sub">GENRES:</span>
+                  <div class="btr-veto-chips" id="btrVetoGenreChips"></div>
+                </div>
+
+                <div class="btr-veto-group">
+                  <span class="btr-veto-sub">DECADES / ERAS:</span>
+                  <div class="btr-veto-chips" id="btrVetoDecadeChips"></div>
+                </div>
+
+                <div class="btr-veto-group" style="margin-bottom:0">
+                  <span class="btr-veto-sub">SINGLE-ARTIST DUELS:</span>
+                  <div class="btr-veto-chips">
+                    <button type="button" class="btr-veto-chip" id="btrVetoSingleArtistBtn">Allow Single-Artist Rooms</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Auto-Match Button -->
+              <button type="button" class="start-game-btn btr-automatch-btn" id="btrAutoMatchBtn">
+                <span id="btrAutoMatchBtnText">⚡ AUTO-MATCH COMPATIBLE DUEL</span>
+                <kbd class="start-kbd">1V1 ▶</kbd>
+              </button>
+
+              <!-- Live Open Lobbies List -->
+              <div class="btr-open-lobbies-wrap">
+                <div class="btr-ol-header">
+                  <span class="step-label">🌐 LIVE OPEN ROOMS</span>
+                  <span style="font-size:0.72rem;color:var(--text-dim)" id="btrQueueStatusMsg">Real-time sync active</span>
+                </div>
+                <div class="btr-open-rooms-list" id="btrOpenRoomsList"></div>
+              </div>
+            </div>
+
+            <!-- TAB B: CREATE 1V1 ROOM (HOST) -->
+            <div id="btrTabHostContent" class="hidden">
+              <div class="panel-top-row" style="margin-bottom:0.85rem">
+                <div>
+                  <span class="section-eyebrow">HOST 5-TRACK DUEL</span>
+                  <h2>Configure 1v1 Room</h2>
+                </div>
+                <span class="pool-counter mono" id="btrHostPoolCount">0 tracks</span>
+              </div>
+
+              <div class="filter-group">
+                <div class="filter-title"><span class="step-label">LANGUAGE</span></div>
+                <div class="toggle-group" id="btrHostLangSelector">
+                  <button type="button" class="toggle-btn active" data-lang="all">All Mix</button>
+                  <button type="button" class="toggle-btn" data-lang="en">English</button>
+                  <button type="button" class="toggle-btn" data-lang="he">Hebrew</button>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <div class="filter-title"><span class="step-label">DIFFICULTY</span></div>
+                <div class="toggle-group" id="btrHostDiffSelector">
+                  <button type="button" class="toggle-btn active" data-diff="all">All Mix</button>
+                  <button type="button" class="toggle-btn" data-diff="easy">Easy</button>
+                  <button type="button" class="toggle-btn" data-diff="medium">Medium</button>
+                  <button type="button" class="toggle-btn" data-diff="hard">Hard</button>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <div class="filter-title"><span class="step-label">DECADE / ERA</span></div>
+                <div class="toggle-group" id="btrHostDecadeSelector" style="flex-wrap:wrap">
+                  <button type="button" class="toggle-btn active" data-decade="all">All Eras</button>
+                  <button type="button" class="toggle-btn" data-decade="80s & 90s">80s & 90s</button>
+                  <button type="button" class="toggle-btn" data-decade="2000s">2000s</button>
+                  <button type="button" class="toggle-btn" data-decade="2010s">2010s</button>
+                  <button type="button" class="toggle-btn" data-decade="2020s">2020s</button>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <div class="filter-title"><span class="step-label">GENRE</span></div>
+                <div class="toggle-group" id="btrHostGenreSelector" style="flex-wrap:wrap"></div>
+              </div>
+
+              <div class="filter-group">
+                <div class="filter-title"><span class="step-label">OR SPECIFIC ARTIST DUEL</span></div>
+                <select id="btrHostArtistSelect" class="btr-artist-select"></select>
+              </div>
+
+              <button type="button" class="start-game-btn" id="btrCreateRoomBtn">
+                <span>🔥 OPEN LIVE 1V1 ROOM</span>
+                <kbd class="start-kbd">HOST ▶</kbd>
+              </button>
+
+              <!-- Active Waiting Room Box (Appears once Host opens a room) -->
+              <div class="btr-waiting-room-box hidden" id="btrWaitingRoomBox">
+                <div class="btr-radar-pulse"></div>
+                <div class="section-eyebrow">ROOM LIVE — WAITING FOR CHALLENGER</div>
+                <div class="btr-room-code-big mono" id="btrHostedRoomCodeDisplay">#0000</div>
+                <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.75rem" id="btrHostedRoomSummary">
+                  All Artists • All Genres • 5 Tracks
+                </p>
+                <div class="btr-waiting-actions">
+                  <button type="button" class="share-btn copy" id="btrCopyRoomLinkBtn">📋 Copy Duel Link</button>
+                  <button type="button" class="share-btn wa" id="btrWhatsappRoomBtn">📲 WhatsApp Invite</button>
+                  <button type="button" class="quit-btn" id="btrCancelRoomBtn">✕ Cancel Room</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: BEAT THE RUSH RANKED LEADERBOARD (ONLINE 1V1 ONLY) -->
+          <aside class="studio-panel btr-ranked-card">
+            <div class="panel-header-compact" style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem">
+              <div>
+                <span class="section-eyebrow">1V1 ONLINE ONLY</span>
+                <h3>⚔️ BEAT the RUSH Ranked</h3>
+              </div>
+              <button type="button" class="quit-btn" id="btrRefreshRankedBtn" style="padding:0.3rem 0.65rem;font-size:0.74rem">↻</button>
+            </div>
+            <p style="font-size:0.75rem;color:var(--text-dim);margin-bottom:0.75rem">
+              Official 1v1 Live Leaderboard ranked by <strong>RP (Rush Points)</strong>. Offline games do not count here.
+            </p>
+            <div class="btr-ranked-list" id="btrRankedLeaderboardList"></div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- SUB-SCREEN 2: PRE-MATCH VS INTRO & PRE-FLIGHT AUDIO LOCKSTEP -->
+      <div id="btrScreenVsIntro" class="studio-panel btr-vs-screen hidden">
+        <span class="section-eyebrow" style="font-size:0.78rem">⚡ LIVE 1V1 CLASH • 5 TRACKS</span>
+        <div class="btr-vs-category-pill mono" id="btrVsCategoryPill">All Artists • Mix</div>
+
+        <div class="btr-vs-fighters-row">
+          <div class="btr-fighter-card you">
+            <div class="btr-fighter-avatar" id="btrVsYouAvatar">🎧</div>
+            <div class="btr-fighter-name mono" id="btrVsYouName">@you</div>
+            <div class="btr-fighter-rank" id="btrVsYouRank">🥉 Bronze • 1,000 RP</div>
+          </div>
+
+          <div class="btr-vs-badge-center">VS</div>
+
+          <div class="btr-fighter-card opp">
+            <div class="btr-fighter-avatar" id="btrVsOppAvatar">🔥</div>
+            <div class="btr-fighter-name mono" id="btrVsOppName">@opponent</div>
+            <div class="btr-fighter-rank" id="btrVsOppRank">🥉 Bronze • 1,000 RP</div>
+          </div>
+        </div>
+
+        <div class="btr-lockstep-box">
+          <div class="btr-lockstep-bar-track">
+            <div class="btr-lockstep-bar-fill" id="btrPreloadBarFill"></div>
+          </div>
+          <div class="mono" style="font-size:0.82rem;color:var(--accent);margin-top:0.45rem" id="btrPreloadStatusText">
+            SYNCING & PRE-LOADING 5 AUDIO TRACKS...
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SCREEN 3: ACTIVE 1V1 LIVE GAMEPLAY ARENA -->
+      <div id="btrScreenArena" class="studio-panel btr-arena-screen hidden">
+        <!-- Top 1v1 Players Header -->
+        <div class="btr-arena-top">
+          <div class="btr-live-player you">
+            <div class="btr-lp-avatar" id="btrArenaYouAvatar">🎧</div>
+            <div class="btr-lp-meta">
+              <div class="btr-lp-name mono" id="btrArenaYouName">@you</div>
+              <div class="btr-lp-score mono" id="btrArenaYouScore">0</div>
+              <span class="btr-lp-status" id="btrArenaYouStatus">🎧 Listening...</span>
+            </div>
+          </div>
+
+          <div class="btr-arena-center-info">
+            <div class="btr-track-counter mono" id="btrArenaTrackCounter">TRACK 1 / 5</div>
+            <div class="btr-double-rush-badge hidden" id="btrDoubleRushBadge">🔥 2X FINAL RUSH!</div>
+            <button type="button" class="quit-btn" id="btrForfeitBtn" style="font-size:0.68rem;padding:0.2rem 0.5rem;margin-top:0.2rem">Forfeit</button>
+          </div>
+
+          <div class="btr-live-player opp">
+            <div class="btr-lp-meta" style="text-align:right">
+              <div class="btr-lp-name mono" id="btrArenaOppName">@opponent</div>
+              <div class="btr-lp-score mono" id="btrArenaOppScore">0</div>
+              <span class="btr-lp-status" id="btrArenaOppStatus">🎧 Listening...</span>
+            </div>
+            <div class="btr-lp-avatar" id="btrArenaOppAvatar">🔥</div>
+          </div>
+        </div>
+
+        <!-- Live Tug-of-War Advantage Bar -->
+        <div class="btr-tug-wrap">
+          <div class="btr-tug-bar">
+            <div class="btr-tug-fill-you" id="btrTugFillYou" style="width:50%"></div>
+          </div>
+        </div>
+
+        <!-- Floating Live Emote Toast -->
+        <div class="btr-emote-toast hidden" id="btrLiveEmoteToast"></div>
+
+        <!-- Chrono Stage -->
+        <div class="chrono-stage" id="btrChronoStage">
+          <div class="vinyl-visualizer" id="btrVinylVisualizer">
+            <img id="btrMysteryArtwork" src="" alt="Track Cover" class="blurred" />
+            <div class="vinyl-center-badge" id="btrVinylBadge">?</div>
+          </div>
+
+          <div class="stopwatch-wrap">
+            <span class="stopwatch-eyebrow">LIVE 1V1 REACTION CLOCK</span>
+            <div class="stopwatch-display mono" id="btrStopwatchDisplay">00.000<small>s</small></div>
+            <div class="audio-progress-track">
+              <div class="audio-progress-fill" id="btrAudioProgressBar"></div>
+            </div>
+            <span class="stopwatch-hint" id="btrStopwatchStatusText">BUFFERING AUDIO...</span>
+          </div>
+        </div>
+
+        <!-- 4 Choices Container -->
+        <div class="choices-stack" id="btrChoicesContainer"></div>
+
+        <!-- Quick Live Emotes Bar -->
+        <div class="btr-emotes-bar">
+          <span class="mono" style="font-size:0.68rem;color:var(--text-dim)">TAUNT:</span>
+          <button type="button" class="btr-emote-btn" data-emote="⚡ Too Slow!">⚡ Too Slow!</button>
+          <button type="button" class="btr-emote-btn" data-emote="🔥 On Fire!">🔥 On Fire!</button>
+          <button type="button" class="btr-emote-btn" data-emote="🤯 Godlike!">🤯 Godlike!</button>
+          <button type="button" class="btr-emote-btn" data-emote="👏 GG!">👏 GG!</button>
+        </div>
+
+        <!-- INTER-TRACK CLASH OVERLAY (Between Each Song) -->
+        <div class="btr-clash-overlay hidden" id="btrClashOverlay">
+          <div class="btr-clash-card">
+            <div class="section-eyebrow" id="btrClashRoundLabel">TRACK 1 CLASH RESULT</div>
+            <div class="btr-clash-song-row">
+              <img id="btrClashArtwork" src="" alt="" />
+              <div>
+                <h4 id="btrClashSongTitle">Song Title</h4>
+                <p id="btrClashSongArtist">Artist</p>
+              </div>
+            </div>
+
+            <div class="btr-clash-compare-grid">
+              <div class="btr-clash-side you" id="btrClashYouBox">
+                <span class="btr-cs-name mono" id="btrClashYouName">@you</span>
+                <span class="btr-cs-time mono" id="btrClashYouTime">00.540s</span>
+                <span class="btr-cs-pts mono" id="btrClashYouPts">+1,420 pts</span>
+              </div>
+              <div class="btr-clash-side opp" id="btrClashOppBox">
+                <span class="btr-cs-name mono" id="btrClashOppName">@opponent</span>
+                <span class="btr-cs-time mono" id="btrClashOppTime">00.890s</span>
+                <span class="btr-cs-pts mono" id="btrClashOppPts">+1,120 pts</span>
+              </div>
+            </div>
+
+            <div class="btr-clash-verdict mono" id="btrClashVerdictBanner">⚡ YOU WON THIS TRACK!</div>
+            <div class="btr-clash-countdown mono" id="btrClashCountdownText">Next track in 3...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SCREEN 4: POST-MATCH 1V1 SUMMARY & RP UPDATE -->
+      <div id="btrScreenSummary" class="studio-panel summary-card hidden">
+        <div class="btr-result-hero" id="btrSummaryHeroBanner">
+          <div class="btr-rh-badge" id="btrSummaryOutcomeBadge">🏆 VICTORY!</div>
+          <h2 id="btrSummaryHeadline">You Beat the Rush!</h2>
+          <div class="btr-rp-delta-pill mono" id="btrSummaryRpDelta">+25 RP 📈 (1,025 RP)</div>
+        </div>
+
+        <div class="btr-final-score-duel">
+          <div class="btr-fsd-side you">
+            <div class="btr-fighter-avatar" id="btrSumYouAvatar">🎧</div>
+            <div class="mono" style="font-weight:700" id="btrSumYouName">@you</div>
+            <div class="btr-fsd-score mono" id="btrSumYouScore">0</div>
+          </div>
+          <div class="btr-vs-badge-center">VS</div>
+          <div class="btr-fsd-side opp">
+            <div class="btr-fighter-avatar" id="btrSumOppAvatar">🔥</div>
+            <div class="mono" style="font-weight:700" id="btrSumOppName">@opponent</div>
+            <div class="btr-fsd-score mono" id="btrSumOppScore">0</div>
+          </div>
+        </div>
+
+        <div class="summary-breakdown">
+          <h3>Track-by-Track 1v1 Breakdown</h3>
+          <div class="summary-tracks-list" id="btrSummaryTracksList"></div>
+        </div>
+
+        <div class="summary-actions">
+          <button type="button" class="start-game-btn" id="btrRematchBtn">🔄 Play Another 1v1</button>
+          <button type="button" class="secondary-btn" id="btrBackToHubBtn">← BEAT the RUSH Hub</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ==================== HOLOGRAPHIC CARD DROP CELEBRATION OVERLAY ==================== -->
@@ -594,6 +967,10 @@
       <span class="bnav-icon">⚡</span>
       <span class="bnav-label">Play</span>
     </button>
+    <button type="button" class="nav-tab bottom-nav-item btr-nav-tab" data-view="btr" id="bottomBtrNavBtn">
+      <span class="bnav-icon">⚔️</span>
+      <span class="bnav-label">BEAT the RUSH</span>
+    </button>
     <button type="button" class="nav-tab bottom-nav-item" data-view="collection">
       <span class="bnav-icon">🃏</span>
       <span class="bnav-label">Collection</span>
@@ -601,10 +978,6 @@
     <button type="button" class="nav-tab bottom-nav-item" data-view="stats">
       <span class="bnav-icon">🏆</span>
       <span class="bnav-label">Ranks</span>
-    </button>
-    <button type="button" class="bottom-nav-item" id="bottomAddArtistBtn">
-      <span class="bnav-icon">＋</span>
-      <span class="bnav-label">Add Artist</span>
     </button>
     <button type="button" class="bottom-nav-item" id="bottomProfileBtn">
       <span class="bnav-icon">👤</span>
@@ -698,6 +1071,7 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
   <script src="songs-data.js"></script>
   <script src="app.js"></script>
