@@ -19,10 +19,26 @@
     'Harry Styles', 'Usher', 'Chris Brown', 'Shawn Mendes', 'Selena Gomez',
     'OneRepublic', 'Arctic Monkeys', 'Nicki Minaj', 'Cardi B', 'Doja Cat',
     'Morgan Wallen', 'Luke Combs',
+    'Michael Jackson', 'Queen', 'Madonna', 'Britney Spears', 'Justin Timberlake',
+    'Whitney Houston', 'Mariah Carey', 'Prince', 'George Michael', 'Backstreet Boys',
+    'Red Hot Chili Peppers', 'Guns N\' Roses', 'Nirvana', 'Green Day', 'Metallica',
+    'Foo Fighters', 'Blink-182', 'Evanescence', 'Gorillaz',
+    'Sia', 'Calvin Harris', 'Ellie Goulding', 'Marshmello', 'Khalid', 'Halsey',
+    'The Kid LAROI', 'Childish Gambino', '2Pac', 'Jay-Z', '50 Cent', 'Snoop Dogg',
+    'Dr. Dre', 'The Notorious B.I.G.', 'Outkast', 'Wiz Khalifa', 'Migos',
+    'Black Eyed Peas', 'Pitbull', 'Flo Rida', 'Jennifer Lopez', 'Christina Aguilera',
+    'Alicia Keys', 'John Legend', 'Akon', 'Ne-Yo', 'Amy Winehouse',
     'עומר אדם', 'אייל גולן', 'עדן חסון', 'פאר טסי', 'אושר כהן', 'חנן בן ארי',
     'נועה קירל', 'עידן רייכל', 'שלמה ארצי', 'אריק איינשטיין', 'משינה',
     'שרית חדד', 'משה פרץ', 'ליאור נרקיס', 'ישי ריבו', 'עידן עמדי',
-    'טונה', 'רביד פלוטניק', 'אודיה'
+    'טונה', 'רביד פלוטניק', 'אודיה',
+    'ריטה', 'נרקיס', 'איתי לוי', 'סטטיק ובן אל תבורי', 'עדן בן זקן', 'שלומי שבת',
+    'עברי לידר', 'אביב גפן', 'ברי סחרוף', 'אהוד בנאי', 'אביתר בנאי', 'שלום חנוך',
+    'כוורת', 'אתניקס', 'טיפקס', 'התקווה 6', 'הדג נחש', 'היהודים', 'מוניקה סקס',
+    'זוהר ארגוב', 'חיים משה', 'דודו אהרון', 'קובי פרץ', 'נסרין קדרי', 'זהבה בן',
+    'אמיר דדון', 'בניה ברבי', 'אליעד', 'אגם בוחבוט', 'אנה זק', 'ששון שאולוב',
+    'נס וסטילה', 'מירי מסיקה', 'קרן פלס', 'שירי מימון', 'נינט טייב', 'רמי קלינשטיין',
+    'יהודה פוליקר', 'גידי גוב'
   ]);
 
   function assignPyramidDifficulties(tracks, artistName) {
@@ -110,12 +126,92 @@
     'אריק איינשטיין': '80s & 90s',
     'שלמה ארצי': '80s & 90s',
     'משינה': '80s & 90s',
+    'זוהר ארגוב': '80s & 90s',
+    'כוורת': '80s & 90s',
+    'תיסלם': '80s & 90s',
+    'שלום חנוך': '80s & 90s',
+    'גידי גוב': '80s & 90s',
+    'יהודה פוליקר': '80s & 90s',
+    'ריטה': '80s & 90s',
+    'רמי קלינשטיין': '80s & 90s',
+    'חיים משה': '80s & 90s',
+    'אתניקס': '80s & 90s',
+    'טיפקס': '80s & 90s',
+    'אביב גפן': '80s & 90s',
+    'ברי סחרוף': '80s & 90s',
+    'אהוד בנאי': '80s & 90s',
+    'מאיר בנאי': '80s & 90s',
+    'היהודים': '80s & 90s',
+    'מוניקה סקס': '80s & 90s',
+    'שב"ק ס\'': '80s & 90s',
+    'זהבה בן': '80s & 90s',
     'שרית חדד': '2000s',
     'אייל גולן': '2000s',
     'עידן רייכל': '2000s',
     'דודו טסה': '2000s',
+    'עברי לידר': '2000s',
+    'אביתר בנאי': '2000s',
+    'הדג נחש': '2000s',
+    'סאבלימינל': '2000s',
+    'סינרגיה': '2000s',
+    'בית הבובות': '2000s',
+    'מרסדס בנד': '2000s',
+    'מירי מסיקה': '2000s',
+    'קרן פלס': '2000s',
+    'שירי מימון': '2000s',
+    'נינט טייב': '2000s',
+    'שלומי שבת': '2000s',
+    'קובי פרץ': '2000s',
+    'רגב הוד': '2000s',
     'משה פרץ': '2010s',
     'ליאור נרקיס': '2010s',
+    'דודו אהרון': '2010s',
+    'מאור אדרי': '2010s',
+    'עומר אדם': '2010s',
+    'טונה': '2010s',
+    'רביד פלוטניק': '2010s',
+    'התקווה 6': '2010s',
+    'אליעד': '2010s',
+    'אמיר דדון': '2010s',
+    'בניה ברבי': '2010s',
+    'סטטיק ובן אל תבורי': '2010s',
+    'עדן בן זקן': '2010s',
+    'איתי לוי': '2010s',
+    'נסרין קדרי': '2010s',
+    'חנן בן ארי': '2020s',
+    'נרקיס': '2020s',
+    'פלד': '2020s',
+    'תמיר בר': '2020s',
+    'מועדון הקצב של אביהו פנחסוב': '2020s',
+    'ג\'ימבו ג\'יי': '2020s',
+    'נס וסטילה': '2020s',
+    'ששון שאולוב': '2020s',
+    'אגם בוחבוט': '2020s',
+    'אנה זק': '2020s',
+    'שחר טבוך': '2020s',
+    'נגה ארז': '2020s',
+    'מארינה מקסימיליאן': '2010s',
+    'Michael Jackson': '80s & 90s',
+    'Queen': '80s & 90s',
+    'Prince': '80s & 90s',
+    'Whitney Houston': '80s & 90s',
+    'Mariah Carey': '80s & 90s',
+    'George Michael': '80s & 90s',
+    'Madonna': '80s & 90s',
+    'Guns N\' Roses': '80s & 90s',
+    'Nirvana': '80s & 90s',
+    'Metallica': '80s & 90s',
+    'Depeche Mode': '80s & 90s',
+    'Pet Shop Boys': '80s & 90s',
+    'Tears for Fears': '80s & 90s',
+    'a-ha': '80s & 90s',
+    'Cyndi Lauper': '80s & 90s',
+    'Rick Astley': '80s & 90s',
+    '2Pac': '80s & 90s',
+    'The Notorious B.I.G.': '80s & 90s',
+    'Dr. Dre': '80s & 90s',
+    'Backstreet Boys': '80s & 90s',
+    'The Goo Goo Dolls': '80s & 90s',
     'Eminem': '2000s',
     'Kanye West': '2000s',
     'Rihanna': '2000s',
@@ -126,15 +222,56 @@
     'Linkin Park': '2000s',
     'Lil Wayne': '2000s',
     'Lady Gaga': '2000s',
+    'Jay-Z': '2000s',
+    '50 Cent': '2000s',
+    'Snoop Dogg': '2000s',
+    'Outkast': '2000s',
+    'Justin Timberlake': '2000s',
+    'Britney Spears': '2000s',
+    'Christina Aguilera': '2000s',
+    'Jennifer Lopez': '2000s',
+    'Black Eyed Peas': '2000s',
+    'Alicia Keys': '2000s',
+    'Akon': '2000s',
+    'Ne-Yo': '2000s',
+    'Amy Winehouse': '2000s',
+    'Red Hot Chili Peppers': '2000s',
+    'Green Day': '2000s',
+    'Blink-182': '2000s',
+    'Foo Fighters': '2000s',
+    'Gorillaz': '2000s',
+    'Evanescence': '2000s',
+    'Three Days Grace': '2000s',
+    'Skillet': '2000s',
+    'Sick Puppies': '2000s',
     'Katy Perry': '2010s',
     'Miley Cyrus': '2010s',
     'Maroon 5': '2010s',
     'OneRepublic': '2010s',
     'Mac Miller': '2010s',
-    'עומר אדם': '2010s',
-    'טונה': '2010s',
-    'רביד פלוטניק': '2010s',
-    'חנן בן ארי': '2020s'
+    'Wiz Khalifa': '2010s',
+    'Migos': '2010s',
+    'Pitbull': '2010s',
+    'Flo Rida': '2010s',
+    'John Legend': '2010s',
+    'Sia': '2010s',
+    'Calvin Harris': '2010s',
+    'Ellie Goulding': '2010s',
+    'Marshmello': '2010s',
+    'Halsey': '2010s',
+    'Khalid': '2010s',
+    'Childish Gambino': '2010s',
+    'Young Thug': '2010s',
+    'Offset': '2010s',
+    'A Boogie wit da Hoodie': '2010s',
+    'Logic': '2010s',
+    'Anderson .Paak': '2010s',
+    'Bring Me The Horizon': '2010s',
+    'Clean Bandit': '2010s',
+    'Rudimental': '2010s',
+    'The Kid LAROI': '2020s',
+    'Leon Thomas': '2020s',
+    'Ella Langley': '2020s'
   };
 
   function computeArtistPeakDecade(artistName, songsList) {
@@ -166,10 +303,40 @@
     ARTIST_META = {};
     const genresSet = new Set();
     const byArtistTemp = {};
+    const canonicalArtistNames = new Map();
 
-    // Enforce MAX_TOP_TRACKS_PER_ARTIST cap across catalog so obscure deep-cuts never enter gameplay
+    (window.SONGS_CATALOG || []).forEach((s) => {
+      if (s && s.artist) {
+        const lower = s.artist.toLowerCase().trim();
+        if (!canonicalArtistNames.has(lower)) {
+          canonicalArtistNames.set(lower, s.artist);
+        }
+      }
+    });
+
+    // Enforce MAX_TOP_TRACKS_PER_ARTIST cap and case-insensitive artist deduplication
     const cappedCatalog = [];
+    const seenIds = new Set();
+    const seenArtistTitleKeys = new Set();
+
     CATALOG.forEach((song) => {
+      if (!song || !song.artist || !song.title) return;
+      if (seenIds.has(song.id)) return;
+
+      const lowerArtist = song.artist.toLowerCase().trim();
+      if (canonicalArtistNames.has(lowerArtist)) {
+        song.artist = canonicalArtistNames.get(lowerArtist);
+      } else {
+        canonicalArtistNames.set(lowerArtist, song.artist);
+      }
+
+      song.title = cleanTrackTitle(song.title);
+      if (!song.title || song.title.length < 2) return;
+
+      const normTitle = song.title.toLowerCase().replace(/[^a-z0-9\u0590-\u05fe]/g, '');
+      const artistTitleKey = `${song.artist.toLowerCase()}__${normTitle}`;
+      if (!normTitle || seenArtistTitleKeys.has(artistTitleKey)) return;
+
       song.genre = mapToBroadGenre(song.genre);
       if (!song.lang) {
         song.lang = detectLanguage(song.artist) === 'he' || detectLanguage(song.title) === 'he' ? 'he' : 'en';
@@ -178,9 +345,16 @@
         byArtistTemp[song.artist] = [];
       }
       if (byArtistTemp[song.artist].length < MAX_TOP_TRACKS_PER_ARTIST) {
+        seenIds.add(song.id);
+        seenArtistTitleKeys.add(artistTitleKey);
         byArtistTemp[song.artist].push(song);
         cappedCatalog.push(song);
       }
+    });
+
+    // Align every artist (including custom/shared imports) to the Asymmetric Pyramid Difficulty model
+    Object.keys(byArtistTemp).forEach((artistName) => {
+      assignPyramidDifficulties(byArtistTemp[artistName], artistName);
     });
 
     CATALOG.length = 0;
@@ -302,11 +476,17 @@
   async function syncSharedSongsFromSupabase() {
     if (!isSupabaseConfigured()) return;
     try {
-      const rows = await sbRest('shared_songs', 'GET', 'select=*&limit=2000');
+      const builtInArtistsLower = new Set(
+        (window.SONGS_CATALOG || []).map((s) => (s.artist || '').toLowerCase().trim())
+      );
+      const rows = await sbRest('shared_songs', 'GET', 'select=*&order=id.desc&limit=1000');
       if (Array.isArray(rows) && rows.length > 0) {
         const existingIds = new Set(CATALOG.map((s) => s.id));
         let addedCount = 0;
         rows.forEach((r) => {
+          if (!r || !r.artist || !r.title || !r.preview_url) return;
+          // Skip artists already baked and verified in SONGS_CATALOG
+          if (builtInArtistsLower.has(r.artist.toLowerCase().trim())) return;
           if (!existingIds.has(r.id) && !isRemixOrJunk(r.title, r.full_title, r.album)) {
             CATALOG.push({
               id: r.id,
