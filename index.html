@@ -597,18 +597,21 @@
 
           <!-- Quick Avatar Picker Drawer -->
           <div class="btr-avatar-drawer hidden" id="btrAvatarDrawer">
-            <div class="btr-avatar-drawer-label">CHOOSE YOUR 1V1 AVATAR (NEON OR MASTERED ARTIST):</div>
+            <div class="btr-avatar-drawer-label">NEON ICONS:</div>
             <div class="btr-avatar-options-row" id="btrAvatarOptionsRow"></div>
+            <div class="btr-avatar-drawer-label" style="margin-top:0.65rem">OR CHOOSE ARTIST PHOTO:</div>
+            <input type="text" id="btrArtistAvatarSearch" class="compact-search-input" placeholder="Search artist photo..." autocomplete="off" style="margin-bottom:0.5rem;max-width:260px" />
+            <div class="btr-avatar-options-row btr-artist-avatars-scroll" id="btrArtistAvatarOptionsRow" style="max-height:112px;overflow-y:auto;padding-right:0.25rem"></div>
           </div>
         </div>
 
         <!-- Mode Switcher: Create Room (Host) vs Find Match (Challenger Veto) -->
         <div class="btr-mode-tabs">
           <button type="button" class="btr-mode-tab active" data-btr-tab="join" id="btrSwitchJoinTabBtn">
-            <span>🔍 FIND MATCH (VETO & LIVE ROOMS)</span>
+            <span>🔍 FIND MATCH</span>
           </button>
           <button type="button" class="btr-mode-tab" data-btr-tab="host" id="btrSwitchHostTabBtn">
-            <span>⚡ CREATE 1V1 ROOM (HOST)</span>
+            <span>⚡ CREATE ROOM</span>
           </button>
         </div>
 
@@ -617,40 +620,34 @@
           <div class="studio-panel btr-action-panel">
             <!-- TAB A: FIND MATCH (CHALLENGER VETO + OPEN LOBBIES + ROOM CODE) -->
             <div id="btrTabJoinContent">
-              <div class="panel-top-row" style="margin-bottom:0.85rem">
-                <div>
-                  <span class="section-eyebrow">CHALLENGER MATCHMAKING</span>
-                  <h2>Find a 1v1 Duel</h2>
-                </div>
-                <span class="pool-counter mono" id="btrLiveRoomsCountBadge">0 Open Rooms</span>
+              <div class="panel-top-row" style="margin-bottom:0.75rem">
+                <h2>Find 1v1 Duel</h2>
+                <span class="pool-counter mono" id="btrLiveRoomsCountBadge">0 Live</span>
               </div>
 
               <!-- Direct Room Code Join -->
               <div class="btr-code-join-bar">
-                <input type="text" id="btrJoinCodeInput" class="mono" placeholder="Enter 4-digit Room Code (e.g. 4821)..." maxlength="6" autocomplete="off" />
-                <button type="button" class="next-song-btn" id="btrJoinByCodeBtn">⚔️ Join Code</button>
+                <input type="text" id="btrJoinCodeInput" class="mono" placeholder="4-digit Room Code..." maxlength="6" autocomplete="off" />
+                <button type="button" class="next-song-btn" id="btrJoinByCodeBtn">⚔️ Join</button>
               </div>
 
               <!-- Veto / Exclusion Filters -->
               <div class="btr-veto-section">
-                <div class="btr-veto-header">
-                  <span class="step-label">🚫 VETO FILTER — TAP ANYTHING YOU DO NOT WANT TO PLAY</span>
+                <div class="btr-veto-header" style="margin-bottom:0.55rem">
+                  <span class="step-label">🚫 VETO FILTER (TAP TO BLOCK)</span>
                   <button type="button" class="btr-clear-veto-btn" id="btrResetVetoBtn">Allow All</button>
                 </div>
-                <p style="font-size:0.75rem;color:var(--text-secondary);margin-bottom:0.65rem">
-                  Crossed-out categories (<span style="color:var(--accent-red);font-weight:700">🚫 VETOED</span>) will be blocked so you only match into music you know!
-                </p>
 
                 <div class="btr-veto-group">
-                  <span class="btr-veto-sub">LANGUAGES:</span>
+                  <span class="btr-veto-sub">LANGUAGE</span>
                   <div class="btr-veto-chips" id="btrVetoLangChips">
-                    <button type="button" class="btr-veto-chip" data-veto-type="lang" data-val="en">English</button>
-                    <button type="button" class="btr-veto-chip" data-veto-type="lang" data-val="he">Hebrew</button>
+                    <button type="button" class="btr-veto-chip" data-veto-type="lang" data-val="en">🇬🇧 English</button>
+                    <button type="button" class="btr-veto-chip" data-veto-type="lang" data-val="he">🇮🇱 Hebrew</button>
                   </div>
                 </div>
 
                 <div class="btr-veto-group">
-                  <span class="btr-veto-sub">DIFFICULTIES:</span>
+                  <span class="btr-veto-sub">LEVEL</span>
                   <div class="btr-veto-chips" id="btrVetoDiffChips">
                     <button type="button" class="btr-veto-chip" data-veto-type="diff" data-val="easy">Easy</button>
                     <button type="button" class="btr-veto-chip" data-veto-type="diff" data-val="medium">Medium</button>
@@ -659,34 +656,34 @@
                 </div>
 
                 <div class="btr-veto-group">
-                  <span class="btr-veto-sub">GENRES:</span>
+                  <span class="btr-veto-sub">GENRE</span>
                   <div class="btr-veto-chips" id="btrVetoGenreChips"></div>
                 </div>
 
                 <div class="btr-veto-group">
-                  <span class="btr-veto-sub">DECADES / ERAS:</span>
+                  <span class="btr-veto-sub">ERA</span>
                   <div class="btr-veto-chips" id="btrVetoDecadeChips"></div>
                 </div>
 
                 <div class="btr-veto-group" style="margin-bottom:0">
-                  <span class="btr-veto-sub">SINGLE-ARTIST DUELS:</span>
+                  <span class="btr-veto-sub">MODE</span>
                   <div class="btr-veto-chips">
-                    <button type="button" class="btr-veto-chip" id="btrVetoSingleArtistBtn">Allow Single-Artist Rooms</button>
+                    <button type="button" class="btr-veto-chip" id="btrVetoSingleArtistBtn">🎤 Single-Artist</button>
                   </div>
                 </div>
               </div>
 
               <!-- Auto-Match Button -->
               <button type="button" class="start-game-btn btr-automatch-btn" id="btrAutoMatchBtn">
-                <span id="btrAutoMatchBtnText">⚡ AUTO-MATCH COMPATIBLE DUEL</span>
+                <span id="btrAutoMatchBtnText">⚡ FIND MATCH</span>
                 <kbd class="start-kbd">1V1 ▶</kbd>
               </button>
 
               <!-- Live Open Lobbies List -->
               <div class="btr-open-lobbies-wrap">
                 <div class="btr-ol-header">
-                  <span class="step-label">🌐 LIVE OPEN ROOMS</span>
-                  <span style="font-size:0.72rem;color:var(--text-dim)" id="btrQueueStatusMsg">Real-time sync active</span>
+                  <span class="step-label">🌐 OPEN ROOMS</span>
+                  <span style="font-size:0.72rem;color:var(--text-dim)" id="btrQueueStatusMsg">Live</span>
                 </div>
                 <div class="btr-open-rooms-list" id="btrOpenRoomsList"></div>
               </div>

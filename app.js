@@ -3665,59 +3665,87 @@
   function renderBtrPlayerBanner() {
     const me = getMyBtrIdentity();
     const tier = getBtrTierInfo(me.rp);
-    renderAvatarContent(document.getElementById('btrMyAvatarDisplay'), me.avatar);
-    const nameEl = document.getElementById('btrMyNameDisplay');
-    if (nameEl) nameEl.textContent = `@${me.username}`;
-    const tierEl = document.getElementById('btrMyTierBadge');
+    renderAvatarContent(document.getElementById('btrPlayerAvatarDisplay'), me.avatar);
+    const nameEl = document.getElementById('btrHubUsername');
+    if (nameEl) {
+      nameEl.textContent = userProfile.username ? `@${userProfile.username}` : '@set_tag';
+    }
+    const tierEl = document.getElementById('btrHubTierBadge');
     if (tierEl) {
       tierEl.textContent = tier.label;
       tierEl.style.color = tier.color;
+      tierEl.style.borderColor = tier.color;
     }
-    const rpEl = document.getElementById('btrMyRpValue');
-    if (rpEl) rpEl.textContent = me.rp.toLocaleString();
-    const wlEl = document.getElementById('btrMyRecordValue');
+    const rpEl = document.getElementById('btrHubRpValue');
+    if (rpEl) rpEl.textContent = `${me.rp.toLocaleString()} RP`;
+    const wlEl = document.getElementById('btrHubWinLoss');
     if (wlEl) wlEl.textContent = `${me.wins}W - ${me.losses}L`;
   }
 
-  function renderBtrAvatarDrawer() {
-    const grid = document.getElementById('btrAvatarGrid');
-    if (!grid) return;
+  function renderBtrAvatarDrawer(searchQuery = '') {
+    const neonGrid = document.getElementById('btrAvatarOptionsRow');
+    const artistGrid = document.getElementById('btrArtistAvatarOptionsRow');
+    const currentAvatar = userProfile.avatar || '🎧';
 
-    const masteredArtists = [];
-    if (stats.artistCampaigns) {
-      Object.entries(stats.artistCampaigns).forEach(([artistName, m]) => {
-        if (m && (m.mastered || (m.unlockedStage || 1) >= 4)) {
-          const artUrl = ARTIST_META[artistName]?.avatar || CATALOG.find((s) => s.artist === artistName && s.artwork)?.artwork;
-          if (artUrl) {
-            masteredArtists.push({ artistName, artworkUrl: artUrl });
-          }
-        }
+    if (neonGrid) {
+      neonGrid.innerHTML = BTR_AVATAR_PRESETS.map((emo) => {
+        const active = currentAvatar === emo ? 'active' : '';
+        return `<button type="button" class="btr-avatar-opt ${active}" data-avatar="${escapeHtml(emo)}" title="Neon Icon">${emo}</button>`;
+      }).join('');
+
+      neonGrid.querySelectorAll('.btr-avatar-opt').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          userProfile.avatar = btn.dataset.avatar || '🎧';
+          saveUserProfile();
+          renderBtrPlayerBanner();
+          renderBtrAvatarDrawer(document.getElementById('btrArtistAvatarSearch')?.value || '');
+          const drawer = document.getElementById('btrAvatarDrawer');
+          if (drawer) drawer.classList.add('hidden');
+        });
       });
     }
 
-    const currentAvatar = userProfile.avatar || '🎧';
-    let html = BTR_AVATAR_PRESETS.map((emo) => {
-      const selected = currentAvatar === emo ? 'selected' : '';
-      return `<button type="button" class="btr-avatar-option ${selected}" data-avatar="${escapeHtml(emo)}" title="Neon Avatar">${emo}</button>`;
-    }).join('');
-
-    masteredArtists.forEach((ma) => {
-      const selected = currentAvatar === ma.artworkUrl ? 'selected' : '';
-      html += `<button type="button" class="btr-avatar-option ${selected}" data-avatar="${escapeHtml(ma.artworkUrl)}" title="Mastered: ${escapeHtml(ma.artistName)}"><img src="${escapeHtml(ma.artworkUrl)}" alt="${escapeHtml(ma.artistName)}" /></button>`;
-    });
-
-    grid.innerHTML = html;
-    grid.querySelectorAll('.btr-avatar-option').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const chosen = btn.dataset.avatar || '🎧';
-        userProfile.avatar = chosen;
-        saveUserProfile();
-        renderBtrPlayerBanner();
-        renderBtrAvatarDrawer();
-        const drawer = document.getElementById('btrAvatarPickerDrawer');
-        if (drawer) drawer.classList.add('hidden');
+    if (artistGrid) {
+      const q = (searchQuery || '').trim().toLowerCase();
+      // Gather all artists with artwork, putting Mastered artists first
+      const artistEntries = [];
+      ARTISTS.forEach((artistName) => {
+        if (q && !artistName.toLowerCase().includes(q)) return;
+        const artUrl = ARTIST_META[artistName]?.avatar || CATALOG.find((s) => s.artist === artistName && s.artwork)?.artwork;
+        if (!artUrl) return;
+        const camp = stats.artistCampaigns && stats.artistCampaigns[artistName];
+        const isMastered = Boolean(camp && (camp.mastered || (camp.unlockedStage || 1) >= 4));
+        artistEntries.push({ artistName, artworkUrl: artUrl, isMastered });
       });
-    });
+
+      artistEntries.sort((a, b) => {
+        if (a.isMastered !== b.isMastered) return a.isMastered ? -1 : 1;
+        return a.artistName.localeCompare(b.artistName);
+      });
+
+      artistGrid.innerHTML = artistEntries
+        .map((ma) => {
+          const active = currentAvatar === ma.artworkUrl ? 'active' : '';
+          const crown = ma.isMastered ? '👑 ' : '';
+          return `
+            <button type="button" class="btr-avatar-opt ${active}" data-avatar="${escapeHtml(ma.artworkUrl)}" title="${crown}${escapeHtml(ma.artistName)}" style="position:relative">
+              <img src="${escapeHtml(ma.artworkUrl)}" alt="${escapeHtml(ma.artistName)}" loading="lazy" />
+            </button>
+          `;
+        })
+        .join('');
+
+      artistGrid.querySelectorAll('.btr-avatar-opt').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          userProfile.avatar = btn.dataset.avatar || '🎧';
+          saveUserProfile();
+          renderBtrPlayerBanner();
+          renderBtrAvatarDrawer(document.getElementById('btrArtistAvatarSearch')?.value || '');
+          const drawer = document.getElementById('btrAvatarDrawer');
+          if (drawer) drawer.classList.add('hidden');
+        });
+      });
+    }
   }
 
   function setBtrScreen(screenName) {
@@ -3744,29 +3772,44 @@
       }
       genreWrap.innerHTML = genres
         .map((g) => {
-          const active = btrState.hostConfig.genre === g ? 'active' : '';
+          const active = btrState.hostConfig.scopeType === 'genre' && btrState.hostConfig.genre === g ? 'active' : '';
           const label = g === 'all' ? 'All Genres' : g;
-          return `<button type="button" class="chip btr-host-genre-chip ${active}" data-val="${escapeHtml(g)}">${escapeHtml(label)}</button>`;
+          return `<button type="button" class="toggle-btn btr-host-genre-chip ${active}" data-val="${escapeHtml(g)}">${escapeHtml(label)}</button>`;
         })
         .join('');
       genreWrap.querySelectorAll('.btr-host-genre-chip').forEach((btn) => {
         btn.addEventListener('click', () => {
+          btrState.hostConfig.scopeType = 'genre';
           btrState.hostConfig.genre = btn.dataset.val;
+          btrState.hostConfig.artist = 'all';
           renderBtrHostControls();
         });
       });
     }
 
-    // Artist Select
+    // Artist Select (includes "All Artists (By Genre)" option + specific artists)
     const artistSelect = document.getElementById('btrHostArtistSelect');
     if (artistSelect) {
-      const artists = getArtistsListForLobby(btrState.hostConfig.language, 'all', btrState.hostConfig.decade);
-      if (!btrState.hostConfig.artist && artists.length > 0) {
-        btrState.hostConfig.artist = artists[0].name;
-      }
-      artistSelect.innerHTML = artists
-        .map((a) => `<option value="${escapeHtml(a.name)}" ${a.name === btrState.hostConfig.artist ? 'selected' : ''}>${escapeHtml(a.name)} (${a.count} tracks)</option>`)
+      const artists = getArtistsListForLobby(
+        btrState.hostConfig.language,
+        btrState.hostConfig.scopeType === 'genre' ? btrState.hostConfig.genre : 'all',
+        btrState.hostConfig.decade
+      );
+      const currentArtist = btrState.hostConfig.scopeType === 'artist' ? btrState.hostConfig.artist : 'all';
+      let optionsHtml = `<option value="all" ${currentArtist === 'all' ? 'selected' : ''}>All Artists (Use Genre Filter)</option>`;
+      optionsHtml += artists
+        .map(
+          (a) =>
+            `<option value="${escapeHtml(a.name)}" ${a.name === currentArtist ? 'selected' : ''}>🎤 ${escapeHtml(a.name)} (${a.count} tracks)</option>`
+        )
         .join('');
+      artistSelect.innerHTML = optionsHtml;
+    }
+
+    const poolCountEl = document.getElementById('btrHostPoolCount');
+    if (poolCountEl) {
+      const pool = buildBtrPoolForConfig(btrState.hostConfig);
+      poolCountEl.textContent = `${pool.length} tracks`;
     }
   }
 
@@ -3793,6 +3836,16 @@
       .filter(([, c]) => c >= 4)
       .sort((a, b) => a[0].localeCompare(b[0]))
       .map(([name, count]) => ({ name, count }));
+  }
+
+  function getTotalActiveVetoCount() {
+    return (
+      btrState.vetoes.languages.size +
+      btrState.vetoes.difficulties.size +
+      btrState.vetoes.decades.size +
+      btrState.vetoes.genres.size +
+      (btrState.vetoes.vetoSingleArtist ? 1 : 0)
+    );
   }
 
   function renderBtrVetoChips() {
@@ -3825,9 +3878,9 @@
     const diffWrap = document.getElementById('btrVetoDiffChips');
     if (diffWrap) {
       const items = [
-        { val: 'easy', label: 'Easy (2.5s)' },
-        { val: 'medium', label: 'Medium (1.5s)' },
-        { val: 'hard', label: 'Hard (0.5s)' },
+        { val: 'easy', label: 'Easy' },
+        { val: 'medium', label: 'Medium' },
+        { val: 'hard', label: 'Hard' },
       ];
       diffWrap.innerHTML = items
         .map((it) => {
@@ -3869,32 +3922,51 @@
       });
     }
 
-    // Genres + Single Artist toggle
+    // Genres
     const genWrap = document.getElementById('btrVetoGenreChips');
     if (genWrap) {
       const allGenres = getAvailableGenresForLanguage('all');
-      let html = `<button type="button" class="btr-veto-chip ${btrState.vetoes.vetoSingleArtist ? 'vetoed' : ''}" data-single-artist="1">🎤 Single-Artist Duels</button>`;
-      html += allGenres
+      genWrap.innerHTML = allGenres
         .map((g) => {
           const vetoed = btrState.vetoes.genres.has(g) ? 'vetoed' : '';
           return `<button type="button" class="btr-veto-chip ${vetoed}" data-genre="${escapeHtml(g)}">${escapeHtml(g)}</button>`;
         })
         .join('');
-      genWrap.innerHTML = html;
       genWrap.querySelectorAll('.btr-veto-chip').forEach((btn) => {
         btn.addEventListener('click', () => {
-          if (btn.dataset.singleArtist) {
-            btrState.vetoes.vetoSingleArtist = !btrState.vetoes.vetoSingleArtist;
-          } else if (btn.dataset.genre) {
-            const g = btn.dataset.genre;
-            if (btrState.vetoes.genres.has(g)) btrState.vetoes.genres.delete(g);
-            else btrState.vetoes.genres.add(g);
-          }
+          const g = btn.dataset.genre;
+          if (!g) return;
+          if (btrState.vetoes.genres.has(g)) btrState.vetoes.genres.delete(g);
+          else btrState.vetoes.genres.add(g);
           saveBtrVetoes();
           renderBtrVetoChips();
           renderBtrOpenRoomsList();
         });
       });
+    }
+
+    // Single-Artist Duel Veto Button
+    const singleArtistBtn = document.getElementById('btrVetoSingleArtistBtn');
+    if (singleArtistBtn) {
+      singleArtistBtn.classList.toggle('vetoed', Boolean(btrState.vetoes.vetoSingleArtist));
+      singleArtistBtn.textContent = '🎤 Single-Artist';
+    }
+
+    // Reset ("Allow All") Button visual state
+    const resetBtn = document.getElementById('btrResetVetoBtn');
+    if (resetBtn) {
+      const totalVetoes = getTotalActiveVetoCount();
+      if (totalVetoes > 0) {
+        resetBtn.textContent = `Allow All (${totalVetoes} blocked)`;
+        resetBtn.style.borderColor = 'var(--accent)';
+        resetBtn.style.color = 'var(--accent)';
+        resetBtn.style.opacity = '1';
+      } else {
+        resetBtn.textContent = '✓ All Allowed';
+        resetBtn.style.borderColor = 'var(--border-strong)';
+        resetBtn.style.color = 'var(--text-dim)';
+        resetBtn.style.opacity = '0.7';
+      }
     }
   }
 
@@ -3911,11 +3983,11 @@
 
   function formatBtrRulesSummary(rules) {
     if (!rules) return 'All Songs · All Levels';
-    const langStr = rules.language === 'en' ? '🇬🇧 EN' : rules.language === 'he' ? '🇮🇱 HE' : '🌍 All Lang';
-    const diffStr = rules.difficulty === 'all' ? 'Mix Diff' : rules.difficulty.toUpperCase();
+    const langStr = rules.language === 'en' ? '🇬🇧 EN' : rules.language === 'he' ? '🇮🇱 HE' : '🌍 All';
+    const diffStr = rules.difficulty === 'all' ? 'Mix' : rules.difficulty.toUpperCase();
     const decStr = rules.decade === 'all' ? 'All Eras' : rules.decade;
     const scopeStr =
-      rules.scopeType === 'artist' && rules.artist
+      rules.scopeType === 'artist' && rules.artist && rules.artist !== 'all'
         ? `🎤 ${rules.artist}`
         : rules.genre && rules.genre !== 'all'
         ? `🎵 ${rules.genre}`
@@ -3965,7 +4037,7 @@
 
   function renderBtrOpenRoomsList() {
     const listEl = document.getElementById('btrOpenRoomsList');
-    const countEl = document.getElementById('btrLiveRoomCount');
+    const countEl = document.getElementById('btrLiveRoomsCountBadge');
     if (!listEl) return;
 
     const myId = getMyBtrIdentity().id;
@@ -3973,7 +4045,7 @@
     if (countEl) countEl.textContent = `${othersRooms.length} Live`;
 
     if (othersRooms.length === 0) {
-      listEl.innerHTML = `<div class="btr-empty-rooms">No open rooms broadcasting right now. Create a room on the left or share a 4-digit code with a friend!</div>`;
+      listEl.innerHTML = `<div class="empty-note" style="padding:0.85rem;text-align:center">No open rooms right now. Tap <strong>⚡ CREATE ROOM</strong> or <strong>⚡ FIND MATCH</strong> to host!</div>`;
       return;
     }
 
@@ -3983,21 +4055,21 @@
         const rulesText = formatBtrRulesSummary(room.rules);
         const avatarHtml =
           room.hostAvatar && room.hostAvatar.startsWith('http')
-            ? `<img src="${escapeHtml(room.hostAvatar)}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;" />`
-            : escapeHtml(room.hostAvatar || '🎧');
+            ? `<img src="${escapeHtml(room.hostAvatar)}" style="width:34px;height:34px;border-radius:8px;object-fit:cover;" />`
+            : `<span style="font-size:1.3rem">${escapeHtml(room.hostAvatar || '🎧')}</span>`;
 
         return `
-          <div class="btr-room-item ${compatible ? '' : 'veto-filtered'}">
-            <div class="btr-room-host-info">
-              <div class="btr-room-host-avatar">${avatarHtml}</div>
+          <div class="btr-room-row ${compatible ? '' : 'vetoed-room'}">
+            <div class="btr-room-left">
+              ${avatarHtml}
               <div>
-                <div class="btr-room-host-name">@${escapeHtml(room.hostName || 'Player')} <span style="color:var(--accent);font-size:0.74rem;">(${room.hostRp || 1000} RP)</span></div>
-                <div class="btr-room-rules-tags">${escapeHtml(rulesText)}</div>
+                <div style="font-weight:700;font-size:0.85rem">@${escapeHtml(room.hostName || 'Player')} <span style="color:var(--accent);font-size:0.74rem;">(${room.hostRp || 1000} RP)</span></div>
+                <div style="font-size:0.72rem;color:var(--text-secondary)">${escapeHtml(rulesText)}</div>
               </div>
             </div>
             <div style="display:flex;align-items:center;gap:0.5rem;">
-              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);">#${escapeHtml(room.roomCode)}</span>
-              <button type="button" class="btn btn-primary btn-sm btr-join-listed-room-btn" data-code="${escapeHtml(room.roomCode)}">
+              <span class="mono" style="font-size:0.78rem;color:var(--text-dim);">#${escapeHtml(room.roomCode)}</span>
+              <button type="button" class="next-song-btn btr-join-listed-room-btn" data-code="${escapeHtml(room.roomCode)}" style="padding:0.35rem 0.7rem;font-size:0.76rem">
                 ${compatible ? '⚔️ DUEL' : '🚫 VETOED'}
               </button>
             </div>
@@ -4022,7 +4094,7 @@
     if (cfg.decade !== 'all') {
       pool = pool.filter((s) => getArtistDecade(s.artist) === cfg.decade);
     }
-    if (cfg.scopeType === 'artist' && cfg.artist) {
+    if (cfg.scopeType === 'artist' && cfg.artist && cfg.artist !== 'all') {
       pool = pool.filter((s) => s.artist === cfg.artist);
     } else if (cfg.genre !== 'all') {
       pool = pool.filter((s) => s.genre === cfg.genre);
@@ -4053,12 +4125,24 @@
     btrState.role = 'host';
     btrState.phase = 'waiting';
 
-    const formBody = document.getElementById('btrHostSetupBody');
-    const waitBox = document.getElementById('btrHostWaitingBox');
-    const codeDisp = document.getElementById('btrRoomCodeDisplay');
-    const sumDisp = document.getElementById('btrHostRoomSummary');
+    // Switch to Host tab if called from Auto-Match fallback
+    const joinTabBtn = document.getElementById('btrSwitchJoinTabBtn');
+    const hostTabBtn = document.getElementById('btrSwitchHostTabBtn');
+    const joinContent = document.getElementById('btrTabJoinContent');
+    const hostContent = document.getElementById('btrTabHostContent');
+    if (joinTabBtn && hostTabBtn && joinContent && hostContent) {
+      joinTabBtn.classList.remove('active');
+      hostTabBtn.classList.add('active');
+      joinContent.classList.add('hidden');
+      hostContent.classList.remove('hidden');
+    }
 
-    if (formBody) formBody.classList.add('hidden');
+    const createBtn = document.getElementById('btrCreateRoomBtn');
+    const waitBox = document.getElementById('btrWaitingRoomBox');
+    const codeDisp = document.getElementById('btrHostedRoomCodeDisplay');
+    const sumDisp = document.getElementById('btrHostedRoomSummary');
+
+    if (createBtn) createBtn.classList.add('hidden');
     if (waitBox) waitBox.classList.remove('hidden');
     if (codeDisp) codeDisp.textContent = `#${roomCode}`;
     if (sumDisp) sumDisp.textContent = formatBtrRulesSummary(btrState.hostConfig);
@@ -4100,9 +4184,9 @@
     btrState.role = null;
     btrState.phase = 'hub';
 
-    const formBody = document.getElementById('btrHostSetupBody');
-    const waitBox = document.getElementById('btrHostWaitingBox');
-    if (formBody) formBody.classList.remove('hidden');
+    const createBtn = document.getElementById('btrCreateRoomBtn');
+    const waitBox = document.getElementById('btrWaitingRoomBox');
+    if (createBtn) createBtn.classList.remove('hidden');
     if (waitBox) waitBox.classList.add('hidden');
   }
 
@@ -4218,11 +4302,6 @@
 
     ch.on('broadcast', { event: 'PLAYER_AUDIO_READY' }, () => {
       btrState.oppAudioReady = true;
-      const oppLoadEl = document.getElementById('btrVsOppLoadStatus');
-      if (oppLoadEl) {
-        oppLoadEl.textContent = '✓ Audio Pre-loaded!';
-        oppLoadEl.classList.add('ready');
-      }
       checkBothPlayersReadyToStart();
     });
 
@@ -4234,7 +4313,7 @@
     ch.on('broadcast', { event: 'PLAYER_LOCKED_IN' }, ({ payload }) => {
       if (!payload || payload.trackIndex !== btrState.currentTrackIdx) return;
       btrState.oppTrackAnswer = payload;
-      const oppLiveStatus = document.getElementById('btrArenaOppLiveStatus');
+      const oppLiveStatus = document.getElementById('btrArenaOppStatus');
       if (oppLiveStatus) {
         oppLiveStatus.textContent = '⚡ LOCKED IN!';
         oppLiveStatus.classList.add('locked-in');
@@ -4290,36 +4369,26 @@
     const me = getMyBtrIdentity();
     const opp = btrState.opponent || { username: 'Opponent', avatar: '🔥', rp: 1000, tierLabel: '🥉 Bronze' };
 
-    const rulesBadge = document.getElementById('btrVsRulesBadge');
+    const rulesBadge = document.getElementById('btrVsCategoryPill');
     if (rulesBadge) rulesBadge.textContent = matchPayload.rulesSummary || '5-Song Live Sprint';
 
-    renderAvatarContent(document.getElementById('btrVsMyAvatar'), me.avatar);
-    const myNameEl = document.getElementById('btrVsMyName');
+    renderAvatarContent(document.getElementById('btrVsYouAvatar'), me.avatar);
+    const myNameEl = document.getElementById('btrVsYouName');
     if (myNameEl) myNameEl.textContent = `@${me.username}`;
-    const myTierEl = document.getElementById('btrVsMyTier');
+    const myTierEl = document.getElementById('btrVsYouRank');
     if (myTierEl) myTierEl.textContent = `${me.tierLabel} · ${me.rp} RP`;
 
     renderAvatarContent(document.getElementById('btrVsOppAvatar'), opp.avatar);
     const oppNameEl = document.getElementById('btrVsOppName');
     if (oppNameEl) oppNameEl.textContent = `@${opp.username}`;
-    const oppTierEl = document.getElementById('btrVsOppTier');
+    const oppTierEl = document.getElementById('btrVsOppRank');
     if (oppTierEl) oppTierEl.textContent = `${opp.tierLabel || '🥉 Bronze'} · ${opp.rp || 1000} RP`;
 
-    const myLoadEl = document.getElementById('btrVsMyLoadStatus');
-    const oppLoadEl = document.getElementById('btrVsOppLoadStatus');
     const barFill = document.getElementById('btrPreloadBarFill');
     const preloadTxt = document.getElementById('btrPreloadStatusText');
 
-    if (myLoadEl) {
-      myLoadEl.textContent = 'Pre-loading audio...';
-      myLoadEl.classList.remove('ready');
-    }
-    if (oppLoadEl) {
-      oppLoadEl.textContent = 'Pre-loading audio...';
-      oppLoadEl.classList.remove('ready');
-    }
     if (barFill) barFill.style.width = '10%';
-    if (preloadTxt) preloadTxt.textContent = 'Lockstep Audio Sync: Pre-fetching all 5 songs...';
+    if (preloadTxt) preloadTxt.textContent = 'LOCKSTEP SYNC: PRE-FETCHING 5 AUDIO TRACKS...';
 
     await preloadBtrMatchAudio(matchPayload.rounds, (doneCount, totalCount) => {
       const pct = Math.round((doneCount / totalCount) * 100);
@@ -4327,11 +4396,7 @@
     });
 
     btrState.myAudioReady = true;
-    if (myLoadEl) {
-      myLoadEl.textContent = '✓ Audio Pre-loaded!';
-      myLoadEl.classList.add('ready');
-    }
-    if (preloadTxt) preloadTxt.textContent = 'Ready! Waiting for opponent audio lock...';
+    if (preloadTxt) preloadTxt.textContent = '✓ AUDIO READY! WAITING FOR OPPONENT...';
 
     if (btrState.roomChannel) {
       btrState.roomChannel.send({
@@ -4345,7 +4410,6 @@
   }
 
   async function preloadBtrMatchAudio(rounds, onProgress) {
-    // Revoke previous blobs
     Object.values(btrState.preloadedBlobs).forEach((url) => {
       if (url && url.startsWith('blob:')) {
         try {
@@ -4409,7 +4473,7 @@
     const fillEl = document.getElementById('btrTugFillYou');
     if (fillEl) fillEl.style.width = `${pct}%`;
 
-    const myScoreEl = document.getElementById('btrArenaMyScore');
+    const myScoreEl = document.getElementById('btrArenaYouScore');
     const oppScoreEl = document.getElementById('btrArenaOppScore');
     if (myScoreEl) myScoreEl.textContent = myPts.toLocaleString();
     if (oppScoreEl) oppScoreEl.textContent = oppPts.toLocaleString();
@@ -4436,40 +4500,46 @@
     const me = getMyBtrIdentity();
     const opp = btrState.opponent || { username: 'Opponent', avatar: '🔥' };
 
-    renderAvatarContent(document.getElementById('btrArenaMyAvatar'), me.avatar);
+    renderAvatarContent(document.getElementById('btrArenaYouAvatar'), me.avatar);
     renderAvatarContent(document.getElementById('btrArenaOppAvatar'), opp.avatar);
 
-    const myNameEl = document.getElementById('btrArenaMyName');
-    if (myNameEl) myNameEl.textContent = 'YOU';
+    const myNameEl = document.getElementById('btrArenaYouName');
+    if (myNameEl) myNameEl.textContent = `@${me.username}`;
     const oppNameEl = document.getElementById('btrArenaOppName');
     if (oppNameEl) oppNameEl.textContent = `@${opp.username}`;
 
-    const myStatusEl = document.getElementById('btrArenaMyLiveStatus');
+    const myStatusEl = document.getElementById('btrArenaYouStatus');
     if (myStatusEl) {
-      myStatusEl.textContent = 'Listening...';
+      myStatusEl.textContent = '🎧 Listening...';
       myStatusEl.classList.remove('locked-in');
     }
-    const oppStatusEl = document.getElementById('btrArenaOppLiveStatus');
+    const oppStatusEl = document.getElementById('btrArenaOppStatus');
     if (oppStatusEl) {
-      oppStatusEl.textContent = 'Listening...';
+      oppStatusEl.textContent = '🎧 Listening...';
       oppStatusEl.classList.remove('locked-in');
     }
 
-    const pillEl = document.getElementById('btrArenaTrackPill');
+    const pillEl = document.getElementById('btrArenaTrackCounter');
     if (pillEl) pillEl.textContent = `TRACK ${trackIdx + 1} / 5`;
 
-    const multEl = document.getElementById('btrArenaMultiplierPill');
+    const multEl = document.getElementById('btrDoubleRushBadge');
     if (multEl) multEl.classList.toggle('hidden', !round.isDoublePoints);
+
+    const artImg = document.getElementById('btrMysteryArtwork');
+    if (artImg) {
+      artImg.src = round.artworkUrl || '';
+      artImg.classList.add('blurred');
+    }
 
     updateBtrTugOfWarBar();
 
     // Render 4 choices
-    const gridEl = document.getElementById('btrArenaChoicesGrid');
+    const gridEl = document.getElementById('btrChoicesContainer');
     if (gridEl) {
       gridEl.innerHTML = round.options
         .map(
-          (opt) =>
-            `<button type="button" class="choice-btn btr-choice-btn" data-choice="${escapeHtml(opt)}">${escapeHtml(opt)}</button>`
+          (opt, i) =>
+            `<button type="button" class="choice-btn btr-choice-btn" data-choice="${escapeHtml(opt)}"><span class="choice-key">${i + 1}</span><span class="choice-text">${escapeHtml(opt)}</span></button>`
         )
         .join('');
       gridEl.querySelectorAll('.btr-choice-btn').forEach((btn) => {
@@ -4479,8 +4549,12 @@
       });
     }
 
-    const timerEl = document.getElementById('btrArenaTimerValue');
-    if (timerEl) timerEl.textContent = '0.00s';
+    const timerEl = document.getElementById('btrStopwatchDisplay');
+    if (timerEl) timerEl.innerHTML = `00.000<small>s</small>`;
+    const progBar = document.getElementById('btrAudioProgressBar');
+    if (progBar) progBar.style.width = '0%';
+    const statusTxt = document.getElementById('btrStopwatchStatusText');
+    if (statusTxt) statusTxt.textContent = 'STARTING AUDIO...';
 
     // Start preloaded audio and trigger monotonic stopwatch strictly on 'playing' event
     playBtrRoundAudio(round, trackIdx);
@@ -4499,7 +4573,9 @@
       startedPerf = true;
       audio.removeEventListener('playing', onPlaying);
       btrState.trackStartTimePerf = performance.now();
-      startBtrStopwatchLoop();
+      const statusTxt = document.getElementById('btrStopwatchStatusText');
+      if (statusTxt) statusTxt.textContent = '⚡ IDENTIFY THE TRACK!';
+      startBtrStopwatchLoop(round.clipDuration);
 
       btrState.audioStopTimeout = setTimeout(() => {
         try {
@@ -4510,11 +4586,10 @@
 
     audio.addEventListener('playing', onPlaying);
     audio.play().catch(() => {
-      // Fallback if autoplay blocked
       if (!startedPerf) {
         startedPerf = true;
         btrState.trackStartTimePerf = performance.now();
-        startBtrStopwatchLoop();
+        startBtrStopwatchLoop(round.clipDuration);
       }
     });
 
@@ -4541,12 +4616,21 @@
     } catch (e) {}
   }
 
-  function startBtrStopwatchLoop() {
-    const timerEl = document.getElementById('btrArenaTimerValue');
+  function startBtrStopwatchLoop(clipDuration = 2.5) {
+    const timerEl = document.getElementById('btrStopwatchDisplay');
+    const progBar = document.getElementById('btrAudioProgressBar');
     const step = () => {
       if (btrState.myTrackAnswer) return;
-      const elapsedSec = Math.max(0, (performance.now() - btrState.trackStartTimePerf) / 1000);
-      if (timerEl) timerEl.textContent = `${elapsedSec.toFixed(2)}s`;
+      const elapsedMs = Math.max(0, performance.now() - btrState.trackStartTimePerf);
+      const sec = Math.floor(elapsedMs / 1000);
+      const rem = Math.floor(elapsedMs % 1000);
+      if (timerEl) {
+        timerEl.innerHTML = `${String(sec).padStart(2, '0')}.${String(rem).padStart(3, '0')}<small>s</small>`;
+      }
+      if (progBar) {
+        const pct = Math.min(100, (elapsedMs / (clipDuration * 1000)) * 100);
+        progBar.style.width = `${pct}%`;
+      }
       btrState.trackTimerRAF = requestAnimationFrame(step);
     };
     btrState.trackTimerRAF = requestAnimationFrame(step);
@@ -4571,11 +4655,15 @@
 
     stopBtrAudio();
 
-    const timerEl = document.getElementById('btrArenaTimerValue');
-    if (timerEl) timerEl.textContent = `${(reactionMs / 1000).toFixed(2)}s`;
+    const timerEl = document.getElementById('btrStopwatchDisplay');
+    if (timerEl) {
+      const sec = Math.floor(reactionMs / 1000);
+      const rem = Math.floor(reactionMs % 1000);
+      timerEl.innerHTML = `${String(sec).padStart(2, '0')}.${String(rem).padStart(3, '0')}<small>s</small>`;
+    }
 
     // Immediate local button feedback
-    const gridEl = document.getElementById('btrArenaChoicesGrid');
+    const gridEl = document.getElementById('btrChoicesContainer');
     if (gridEl) {
       gridEl.querySelectorAll('.btr-choice-btn').forEach((b) => {
         b.disabled = true;
@@ -4587,10 +4675,15 @@
       });
     }
 
-    const myStatusEl = document.getElementById('btrArenaMyLiveStatus');
+    const myStatusEl = document.getElementById('btrArenaYouStatus');
     if (myStatusEl) {
       myStatusEl.textContent = isCorrect ? `✓ ${(reactionMs / 1000).toFixed(2)}s` : '✕ Missed';
       myStatusEl.classList.add('locked-in');
+    }
+
+    const statusTxt = document.getElementById('btrStopwatchStatusText');
+    if (statusTxt) {
+      statusTxt.textContent = btrState.oppTrackAnswer ? 'CLASH COMPLETE!' : 'WAITING FOR OPPONENT...';
     }
 
     btrState.myTrackAnswer = {
@@ -4648,38 +4741,56 @@
     const overlay = document.getElementById('btrClashOverlay');
     if (!overlay) return;
 
-    const artEl = document.getElementById('btrClashSongArt');
+    const roundLbl = document.getElementById('btrClashRoundLabel');
+    if (roundLbl) roundLbl.textContent = `TRACK ${idx + 1} CLASH RESULT`;
+
+    const artEl = document.getElementById('btrClashArtwork');
     if (artEl) artEl.src = round.artworkUrl || '';
     const titleEl = document.getElementById('btrClashSongTitle');
     if (titleEl) titleEl.textContent = round.title;
     const artistEl = document.getElementById('btrClashSongArtist');
     if (artistEl) artistEl.textContent = round.artist;
 
-    const myResCard = document.getElementById('btrClashMyResult');
-    const oppResCard = document.getElementById('btrClashOppResult');
+    const myResCard = document.getElementById('btrClashYouBox');
+    const oppResCard = document.getElementById('btrClashOppBox');
     if (myResCard) {
-      myResCard.classList.remove('correct', 'wrong');
-      myResCard.classList.add(myAns.correct ? 'correct' : 'wrong');
+      myResCard.classList.toggle('winner', myAns.pts > oppAns.pts);
     }
     if (oppResCard) {
-      oppResCard.classList.remove('correct', 'wrong');
-      oppResCard.classList.add(oppAns.correct ? 'correct' : 'wrong');
+      oppResCard.classList.toggle('winner', oppAns.pts > myAns.pts);
     }
 
+    const me = getMyBtrIdentity();
+    const youNameEl = document.getElementById('btrClashYouName');
+    if (youNameEl) youNameEl.textContent = `@${me.username}`;
     const oppNameEl = document.getElementById('btrClashOppName');
     if (oppNameEl) oppNameEl.textContent = `@${(btrState.opponent && btrState.opponent.username) || 'OPPONENT'}`;
 
-    const myTimeEl = document.getElementById('btrClashMyTime');
-    if (myTimeEl) myTimeEl.textContent = myAns.correct ? `✓ ${(myAns.ms / 1000).toFixed(2)}s` : '✕ Wrong / Timeout';
-    const myPtsEl = document.getElementById('btrClashMyPoints');
+    const myTimeEl = document.getElementById('btrClashYouTime');
+    if (myTimeEl) myTimeEl.textContent = myAns.correct ? `✓ ${(myAns.ms / 1000).toFixed(2)}s` : '✕ Missed';
+    const myPtsEl = document.getElementById('btrClashYouPts');
     if (myPtsEl) myPtsEl.textContent = `+${myAns.pts} pts`;
 
     const oppTimeEl = document.getElementById('btrClashOppTime');
-    if (oppTimeEl) oppTimeEl.textContent = oppAns.correct ? `✓ ${(oppAns.ms / 1000).toFixed(2)}s` : '✕ Wrong / Timeout';
-    const oppPtsEl = document.getElementById('btrClashOppPoints');
+    if (oppTimeEl) oppTimeEl.textContent = oppAns.correct ? `✓ ${(oppAns.ms / 1000).toFixed(2)}s` : '✕ Missed';
+    const oppPtsEl = document.getElementById('btrClashOppPts');
     if (oppPtsEl) oppPtsEl.textContent = `+${oppAns.pts} pts`;
 
-    const nextText = document.getElementById('btrClashNextCountdown');
+    const verdictEl = document.getElementById('btrClashVerdictBanner');
+    if (verdictEl) {
+      if (myAns.pts > oppAns.pts) {
+        verdictEl.textContent = '⚡ YOU WON THIS TRACK!';
+        verdictEl.style.color = 'var(--accent)';
+      } else if (oppAns.pts > myAns.pts) {
+        verdictEl.textContent = '🔥 OPPONENT TOOK THIS TRACK!';
+        verdictEl.style.color = 'var(--accent-red)';
+      } else {
+        verdictEl.textContent = '⚔️ EVEN CLASH!';
+        verdictEl.style.color = 'var(--text-primary)';
+      }
+    }
+
+    const nextText = document.getElementById('btrClashCountdownText');
     if (nextText) {
       nextText.textContent =
         idx === 3 ? '🔥 Track 5 (2X FINAL RUSH) starting in 3s...' : idx < 4 ? `Next track in 3s...` : 'Calculating Final Verdict...';
@@ -4736,52 +4847,53 @@
     renderBtrPlayerBanner();
     pushBtrRankToSupabase();
 
-    const heroEl = document.getElementById('btrResultHeroBanner');
-    if (heroEl) {
-      heroEl.classList.remove('victory', 'defeat');
-      heroEl.classList.add(won ? 'victory' : 'defeat');
+    const badgeEl = document.getElementById('btrSummaryOutcomeBadge');
+    if (badgeEl) {
+      badgeEl.textContent = won ? '🏆 VICTORY!' : draw ? '⚡ DRAW DUEL!' : '💔 DEFEAT';
+      badgeEl.style.color = won ? 'var(--accent)' : draw ? '#facc15' : 'var(--accent-red)';
+      badgeEl.style.borderColor = won ? 'var(--accent)' : draw ? '#facc15' : 'var(--accent-red)';
     }
 
-    const crownEl = document.getElementById('btrResultCrown');
-    if (crownEl) crownEl.textContent = won ? '👑' : draw ? '⚡' : '💔';
+    const titleEl = document.getElementById('btrSummaryHeadline');
+    if (titleEl) {
+      titleEl.textContent = won ? 'You Beat the Rush!' : draw ? 'Dead Heat!' : 'Opponent Was Faster!';
+    }
 
-    const titleEl = document.getElementById('btrResultTitle');
-    if (titleEl) titleEl.textContent = won ? 'VICTORY!' : draw ? 'DRAW DUEL!' : 'DEFEAT';
-
-    const deltaPill = document.getElementById('btrResultRpDeltaPill');
+    const deltaPill = document.getElementById('btrSummaryRpDelta');
     if (deltaPill) {
-      deltaPill.textContent = `${rpDelta >= 0 ? '+' : ''}${rpDelta} RP (Now ${stats.btrStats.rp} RP)`;
+      deltaPill.textContent = `${rpDelta >= 0 ? '+' : ''}${rpDelta} RP (${stats.btrStats.rp} RP)`;
+      deltaPill.style.color = rpDelta >= 0 ? 'var(--accent)' : 'var(--accent-red)';
     }
 
     const me = getMyBtrIdentity();
     const opp = btrState.opponent || { username: 'Opponent', avatar: '🔥' };
 
-    renderAvatarContent(document.getElementById('btrSumMyAvatar'), me.avatar);
+    renderAvatarContent(document.getElementById('btrSumYouAvatar'), me.avatar);
     renderAvatarContent(document.getElementById('btrSumOppAvatar'), opp.avatar);
 
-    const sumMyName = document.getElementById('btrSumMyName');
+    const sumMyName = document.getElementById('btrSumYouName');
     if (sumMyName) sumMyName.textContent = `@${me.username}`;
     const sumOppName = document.getElementById('btrSumOppName');
     if (sumOppName) sumOppName.textContent = `@${opp.username}`;
 
-    const sumMyScore = document.getElementById('btrSumMyScore');
+    const sumMyScore = document.getElementById('btrSumYouScore');
     if (sumMyScore) sumMyScore.textContent = myTotal.toLocaleString();
     const sumOppScore = document.getElementById('btrSumOppScore');
     if (sumOppScore) sumOppScore.textContent = oppTotal.toLocaleString();
 
-    const logList = document.getElementById('btrSummaryTrackList');
+    const logList = document.getElementById('btrSummaryTracksList');
     if (logList) {
       logList.innerHTML = btrState.trackHistory
         .map((item, i) => {
           const myTxt = item.myAns.correct ? `You: ${(item.myAns.ms / 1000).toFixed(2)}s (+${item.myAns.pts})` : `You: ✕ (0)`;
           const oppTxt = item.oppAns.correct ? `Opp: ${(item.oppAns.ms / 1000).toFixed(2)}s (+${item.oppAns.pts})` : `Opp: ✕ (0)`;
           return `
-            <div class="btr-room-item">
-              <div class="btr-room-host-info">
-                <span style="font-family:var(--font-mono);font-weight:700;color:var(--accent);">#${i + 1}</span>
+            <div class="btr-room-row">
+              <div class="btr-room-left">
+                <span class="mono" style="font-weight:800;color:var(--accent);">#${i + 1}</span>
                 <div>
-                  <div class="btr-room-host-name">${escapeHtml(item.round.title)} — ${escapeHtml(item.round.artist)}</div>
-                  <div class="btr-room-rules-tags">${escapeHtml(myTxt)}  ·  ${escapeHtml(oppTxt)}</div>
+                  <div style="font-weight:700;font-size:0.86rem">${escapeHtml(item.round.title)} — ${escapeHtml(item.round.artist)}</div>
+                  <div class="mono" style="font-size:0.74rem;color:var(--text-secondary)">${escapeHtml(myTxt)}  ·  ${escapeHtml(oppTxt)}</div>
                 </div>
               </div>
             </div>
@@ -4791,15 +4903,15 @@
     }
   }
 
+  let emoteToastTimeout = null;
   function showBtrFloatingEmote(emoteText, senderName) {
-    const stream = document.getElementById('btrLiveEmoteStream');
-    if (!stream) return;
-    const bubble = document.createElement('div');
-    bubble.className = 'btr-floating-emote';
-    bubble.textContent = `${senderName}: ${emoteText}`;
-    stream.appendChild(bubble);
-    setTimeout(() => {
-      bubble.remove();
+    const toast = document.getElementById('btrLiveEmoteToast');
+    if (!toast) return;
+    toast.textContent = `${senderName}: ${emoteText}`;
+    toast.classList.remove('hidden');
+    clearTimeout(emoteToastTimeout);
+    emoteToastTimeout = setTimeout(() => {
+      toast.classList.add('hidden');
     }, 2200);
   }
 
@@ -4835,7 +4947,7 @@
   }
 
   async function loadBtrRankedLeaderboard() {
-    const bodyEl = document.getElementById('btrRankedLeaderboardBody');
+    const bodyEl = document.getElementById('btrRankedLeaderboardList');
     if (!bodyEl) return;
 
     if (!isSupabaseConfigured()) {
@@ -4846,7 +4958,6 @@
     try {
       const rows = await sbRest('global_records', 'GET', 'record_type=eq.btr_rank&order=score.desc&limit=50');
 
-      // Deduplicate by username keeping highest score
       const byUser = new Map();
       if (Array.isArray(rows)) {
         rows.forEach((r) => {
@@ -4859,20 +4970,22 @@
       const uniqueRows = [...byUser.values()].sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 25);
 
       if (uniqueRows.length === 0) {
-        // Always show at least the local user so the board feels alive
         const me = getMyBtrIdentity();
         const tier = getBtrTierInfo(me.rp);
         const myAvHtml = me.avatar.startsWith('http')
-          ? `<img src="${escapeHtml(me.avatar)}" style="width:22px;height:22px;border-radius:50%;vertical-align:middle;margin-right:4px;" />`
-          : `${escapeHtml(me.avatar)} `;
+          ? `<img src="${escapeHtml(me.avatar)}" style="width:28px;height:28px;border-radius:50%;object-fit:cover;" />`
+          : `<span style="font-size:1.2rem">${escapeHtml(me.avatar)}</span>`;
         bodyEl.innerHTML = `
-          <div class="table-row highlight-you">
-            <span class="rank-cell">#1</span>
-            <span class="player-cell">${myAvHtml}@${escapeHtml(me.username)}</span>
-            <span>${escapeHtml(tier.short)}</span>
-            <span class="score-cell">${me.rp} RP</span>
-            <span>${me.wins}W - ${me.losses}L</span>
-            <span>${stats.btrStats?.fastestHitMs ? (stats.btrStats.fastestHitMs / 1000).toFixed(2) + 's' : '—'}</span>
+          <div class="btr-room-row" style="border-color:var(--accent)">
+            <div class="btr-room-left">
+              <span class="mono" style="font-weight:800;color:var(--accent)">#1</span>
+              ${myAvHtml}
+              <div>
+                <div style="font-weight:700;font-size:0.84rem">@${escapeHtml(me.username)} <span style="font-size:0.72rem;color:var(--text-secondary)">(${escapeHtml(tier.short)})</span></div>
+                <div class="mono" style="font-size:0.7rem;color:var(--text-dim)">${me.wins}W - ${me.losses}L</div>
+              </div>
+            </div>
+            <div class="mono" style="font-weight:800;color:var(--accent)">${me.rp} RP</div>
           </div>
         `;
         return;
@@ -4884,18 +4997,21 @@
           const av = r.song_title || '🎧';
           const tierTxt = r.artist || getBtrTierInfo(r.score).short;
           const avHtml = av.startsWith('http')
-            ? `<img src="${escapeHtml(av)}" style="width:22px;height:22px;border-radius:50%;vertical-align:middle;margin-right:4px;" />`
-            : `${escapeHtml(av)} `;
-          const fastStr = r.time_ms && r.time_ms > 0 && r.time_ms < 9000 ? `${(r.time_ms / 1000).toFixed(2)}s` : '—';
+            ? `<img src="${escapeHtml(av)}" style="width:28px;height:28px;border-radius:50%;object-fit:cover;" />`
+            : `<span style="font-size:1.2rem">${escapeHtml(av)}</span>`;
+          const fastStr = r.time_ms && r.time_ms > 0 && r.time_ms < 9000 ? ` · ⚡${(r.time_ms / 1000).toFixed(2)}s` : '';
 
           return `
-            <div class="table-row ${isMe ? 'highlight-you' : ''}">
-              <span class="rank-cell">#${idx + 1}</span>
-              <span class="player-cell">${avHtml}@${escapeHtml(r.username || 'Player')}</span>
-              <span>${escapeHtml(tierTxt)}</span>
-              <span class="score-cell">${Number(r.score || 1000).toLocaleString()} RP</span>
-              <span>${escapeHtml(r.accuracy || '0W - 0L')}</span>
-              <span>${fastStr}</span>
+            <div class="btr-room-row" style="${isMe ? 'border-color:var(--accent)' : ''}">
+              <div class="btr-room-left">
+                <span class="mono" style="font-weight:800;color:${idx < 3 ? 'var(--accent)' : 'var(--text-dim)'}">#${idx + 1}</span>
+                ${avHtml}
+                <div>
+                  <div style="font-weight:700;font-size:0.84rem">@${escapeHtml(r.username || 'Player')} <span style="font-size:0.72rem;color:var(--text-secondary)">(${escapeHtml(tierTxt)})</span></div>
+                  <div class="mono" style="font-size:0.7rem;color:var(--text-dim)">${escapeHtml(r.accuracy || '0W - 0L')}${fastStr}</div>
+                </div>
+              </div>
+              <div class="mono" style="font-weight:800;color:var(--accent)">${Number(r.score || 1000).toLocaleString()} RP</div>
             </div>
           `;
         })
@@ -4911,64 +5027,127 @@
     renderBtrAvatarDrawer();
     renderBtrHostControls();
     renderBtrVetoChips();
+    loadBtrRankedLeaderboard();
 
-    const changeAvBtn = document.getElementById('btrChangeAvatarBtn');
-    const avDrawer = document.getElementById('btrAvatarPickerDrawer');
+    // Open / Close Avatar Picker Drawer when clicking the Avatar circle
+    const changeAvBtn = document.getElementById('btrOpenAvatarPickerBtn');
+    const avDrawer = document.getElementById('btrAvatarDrawer');
     if (changeAvBtn && avDrawer) {
       changeAvBtn.addEventListener('click', () => {
-        renderBtrAvatarDrawer();
+        const isOpening = avDrawer.classList.contains('hidden');
+        if (isOpening) {
+          renderBtrAvatarDrawer(document.getElementById('btrArtistAvatarSearch')?.value || '');
+        }
         avDrawer.classList.toggle('hidden');
       });
     }
 
-    // Host language chips
-    document.querySelectorAll('#btrHostLangChips .chip').forEach((btn) => {
+    // Artist Avatar Search Input inside Avatar Drawer
+    const artistAvSearch = document.getElementById('btrArtistAvatarSearch');
+    if (artistAvSearch) {
+      artistAvSearch.addEventListener('input', () => {
+        renderBtrAvatarDrawer(artistAvSearch.value);
+      });
+    }
+
+    // Clicking @username on BTR banner opens Profile Modal to change username if needed
+    const hubUsernameEl = document.getElementById('btrHubUsername');
+    if (hubUsernameEl) {
+      hubUsernameEl.style.cursor = 'pointer';
+      hubUsernameEl.addEventListener('click', openProfileModal);
+    }
+
+    // Mode Tabs: Find Match vs Create Room
+    const joinTabBtn = document.getElementById('btrSwitchJoinTabBtn');
+    const hostTabBtn = document.getElementById('btrSwitchHostTabBtn');
+    const joinContent = document.getElementById('btrTabJoinContent');
+    const hostContent = document.getElementById('btrTabHostContent');
+    if (joinTabBtn && hostTabBtn && joinContent && hostContent) {
+      joinTabBtn.addEventListener('click', () => {
+        joinTabBtn.classList.add('active');
+        hostTabBtn.classList.remove('active');
+        joinContent.classList.remove('hidden');
+        hostContent.classList.add('hidden');
+      });
+      hostTabBtn.addEventListener('click', () => {
+        hostTabBtn.classList.add('active');
+        joinTabBtn.classList.remove('active');
+        hostContent.classList.remove('hidden');
+        joinContent.classList.add('hidden');
+        renderBtrHostControls();
+      });
+    }
+
+    // Single-Artist Duel Veto Toggle
+    const singleArtistVetoBtn = document.getElementById('btrVetoSingleArtistBtn');
+    if (singleArtistVetoBtn) {
+      singleArtistVetoBtn.addEventListener('click', () => {
+        btrState.vetoes.vetoSingleArtist = !btrState.vetoes.vetoSingleArtist;
+        saveBtrVetoes();
+        renderBtrVetoChips();
+        renderBtrOpenRoomsList();
+      });
+    }
+
+    // Reset Veto ("Allow All") Button
+    const resetVetoBtn = document.getElementById('btrResetVetoBtn');
+    if (resetVetoBtn) {
+      resetVetoBtn.addEventListener('click', () => {
+        btrState.vetoes.languages.clear();
+        btrState.vetoes.difficulties.clear();
+        btrState.vetoes.decades.clear();
+        btrState.vetoes.genres.clear();
+        btrState.vetoes.vetoSingleArtist = false;
+        saveBtrVetoes();
+        renderBtrVetoChips();
+        renderBtrOpenRoomsList();
+        resetVetoBtn.textContent = '✓ All Allowed!';
+      });
+    }
+
+    // Host language buttons
+    document.querySelectorAll('#btrHostLangSelector .toggle-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('#btrHostLangChips .chip').forEach((b) => b.classList.remove('active'));
+        document.querySelectorAll('#btrHostLangSelector .toggle-btn').forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
-        btrState.hostConfig.language = btn.dataset.val || 'all';
+        btrState.hostConfig.language = btn.dataset.lang || 'all';
         renderBtrHostControls();
       });
     });
 
-    // Host difficulty chips
-    document.querySelectorAll('#btrHostDiffChips .chip').forEach((btn) => {
+    // Host difficulty buttons
+    document.querySelectorAll('#btrHostDiffSelector .toggle-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('#btrHostDiffChips .chip').forEach((b) => b.classList.remove('active'));
+        document.querySelectorAll('#btrHostDiffSelector .toggle-btn').forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
-        btrState.hostConfig.difficulty = btn.dataset.val || 'all';
-      });
-    });
-
-    // Host decade chips
-    document.querySelectorAll('#btrHostDecadeChips .chip').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('#btrHostDecadeChips .chip').forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-        btrState.hostConfig.decade = btn.dataset.val || 'all';
+        btrState.hostConfig.difficulty = btn.dataset.diff || 'all';
         renderBtrHostControls();
       });
     });
 
-    // Host scope toggle (Genre vs Single Artist)
-    document.querySelectorAll('#btrHostScopeToggle .chip').forEach((btn) => {
+    // Host decade buttons
+    document.querySelectorAll('#btrHostDecadeSelector .toggle-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('#btrHostScopeToggle .chip').forEach((b) => b.classList.remove('active'));
+        document.querySelectorAll('#btrHostDecadeSelector .toggle-btn').forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
-        const scope = btn.dataset.scope || 'genre';
-        btrState.hostConfig.scopeType = scope;
-        const gWrap = document.getElementById('btrHostGenreWrap');
-        const aWrap = document.getElementById('btrHostArtistWrap');
-        if (gWrap) gWrap.classList.toggle('hidden', scope !== 'genre');
-        if (aWrap) aWrap.classList.toggle('hidden', scope !== 'artist');
+        btrState.hostConfig.decade = btn.dataset.decade || 'all';
         renderBtrHostControls();
       });
     });
 
+    // Host Artist Select
     const artistSelect = document.getElementById('btrHostArtistSelect');
     if (artistSelect) {
       artistSelect.addEventListener('change', () => {
-        btrState.hostConfig.artist = artistSelect.value;
+        const val = artistSelect.value;
+        if (!val || val === 'all') {
+          btrState.hostConfig.scopeType = 'genre';
+          btrState.hostConfig.artist = 'all';
+        } else {
+          btrState.hostConfig.scopeType = 'artist';
+          btrState.hostConfig.artist = val;
+        }
+        renderBtrHostControls();
       });
     }
 
@@ -4977,6 +5156,16 @@
 
     const cancelBtn = document.getElementById('btrCancelRoomBtn');
     if (cancelBtn) cancelBtn.addEventListener('click', cancelBtrHostRoom);
+
+    const forfeitBtn = document.getElementById('btrForfeitBtn');
+    if (forfeitBtn) {
+      forfeitBtn.addEventListener('click', () => {
+        if (!confirm('Forfeit current 1v1 duel?')) return;
+        stopBtrAudio();
+        cancelBtrHostRoom();
+        setBtrScreen('hub');
+      });
+    }
 
     const copyLinkBtn = document.getElementById('btrCopyRoomLinkBtn');
     if (copyLinkBtn) {
@@ -4987,13 +5176,13 @@
           await navigator.clipboard.writeText(shareUrl);
           copyLinkBtn.textContent = '✓ Link Copied!';
           setTimeout(() => {
-            copyLinkBtn.textContent = '📋 Copy Invite Link';
+            copyLinkBtn.textContent = '📋 Copy Duel Link';
           }, 2000);
         } catch (e) {}
       });
     }
 
-    const waInviteBtn = document.getElementById('btrShareWhatsappRoomBtn');
+    const waInviteBtn = document.getElementById('btrWhatsappRoomBtn');
     if (waInviteBtn) {
       waInviteBtn.addEventListener('click', () => {
         if (!btrState.activeRoomCode) return;
@@ -5017,7 +5206,7 @@
       });
     }
 
-    const quickMatchBtn = document.getElementById('btrQuickMatchBtn');
+    const quickMatchBtn = document.getElementById('btrAutoMatchBtn');
     if (quickMatchBtn) {
       quickMatchBtn.addEventListener('click', () => {
         const myId = getMyBtrIdentity().id;
@@ -5025,9 +5214,6 @@
         if (compatible.length > 0) {
           joinBtrRoomByCode(compatible[0].roomCode);
         } else {
-          alert(
-            'No open room currently matches your Veto Filters! Opening a new room with your non-vetoed preferences so an opponent can join you.'
-          );
           openBtrHostRoom();
         }
       });
@@ -5068,7 +5254,7 @@
       });
     }
 
-    const refreshRankBtn = document.getElementById('btrRefreshLeaderboardBtn');
+    const refreshRankBtn = document.getElementById('btrRefreshRankedBtn');
     if (refreshRankBtn) {
       refreshRankBtn.addEventListener('click', loadBtrRankedLeaderboard);
     }
