@@ -27,7 +27,13 @@
   }
 
   function cleanTrackTitle(rawTitle) {
-    return (rawTitle || '')
+    const str = String(rawTitle || '').trim();
+    // If title is formatted as "Latin Transliteration (שם השיר בעברית)", extract the Hebrew title inside parentheses
+    const parenMatch = str.match(/^[^\u0590-\u05FF]+\(([\u0590-\u05FF][^)]*)\)/);
+    if (parenMatch && parenMatch[1]) {
+      return parenMatch[1].trim();
+    }
+    return str
       .replace(/\s*[\(\[\{].*?[\)\]\}]\s*/g, '')
       .replace(/\s*-\s*.*$/g, '')
       .trim();
@@ -3432,18 +3438,29 @@
         albumTracks = (albLookup.results || []).filter((r) => r.wrapperType === 'track');
       }
 
-      const rawResults = [...(searchRes.results || []), ...((lookupRes.results || []).slice(1)), ...albumTracks];
+      // Prioritize official artistId lookup results first, then album tracks, then search results
+      const rawResults = [...((lookupRes.results || []).slice(1)), ...albumTracks, ...(searchRes.results || [])];
+      const existingCatalogIds = new Set(CATALOG.map((s) => s.id));
       const normIndexMap = new Map();
       const tracks = [];
 
       for (const it of rawResults) {
         if (it.wrapperType !== 'track' && it.kind !== 'song') continue;
         if (!it.previewUrl || !it.artistName || !it.trackName) continue;
+        if (existingCatalogIds.has(`it_${it.trackId}`)) continue;
 
-        const aLower = it.artistName.toLowerCase();
-        const targetLower = artistName.toLowerCase();
-        const sameArtistId = artistObj.artistId && it.artistId === artistObj.artistId;
-        if (!sameArtistId && !aLower.startsWith(targetLower) && aLower !== targetLower) continue;
+        const aLower = it.artistName.toLowerCase().trim();
+        const targetLower = artistName.toLowerCase().trim();
+        const sameArtistId = Boolean(artistObj.artistId && it.artistId === artistObj.artistId);
+        const primaryArtistMatch =
+          aLower === targetLower ||
+          aLower.startsWith(`${targetLower} &`) ||
+          aLower.startsWith(`${targetLower} feat`) ||
+          aLower.startsWith(`${targetLower},`) ||
+          aLower.startsWith(`${targetLower} עם `) ||
+          aLower.startsWith(`${targetLower} ו`);
+        // Iron rule: must match official artistId OR be the primary credited artist
+        if (!sameArtistId && !primaryArtistMatch) continue;
         if (isRemixOrJunk(it.trackName, it.trackName, it.collectionName)) continue;
 
         const clean = cleanTrackTitle(it.trackName);
