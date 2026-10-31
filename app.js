@@ -9,6 +9,7 @@
   const USER_PROFILE_KEY = 'beatrush_user_profile_v1';
 
   const MAX_TOP_TRACKS_PER_ARTIST = 120;
+  const BLOCKED_ARTISTS = new Set(['phil cook']);
 
   const MAINSTREAM_TIER_A_ARTISTS = new Set([
     'The Weeknd', 'Bruno Mars', 'Taylor Swift', 'Drake', 'Rihanna', 'Justin Bieber',
@@ -23,6 +24,8 @@
     'Whitney Houston', 'Mariah Carey', 'Prince', 'George Michael', 'Backstreet Boys',
     'Red Hot Chili Peppers', 'Guns N\' Roses', 'Nirvana', 'Green Day', 'Metallica',
     'Foo Fighters', 'Blink-182', 'Evanescence', 'Gorillaz',
+    'Phil Collins', 'Bon Jovi', 'U2', 'Oasis', 'Radiohead', 'R.E.M.',
+    'The Police', 'AC/DC', 'Aerosmith', 'Céline Dion',
     'Sia', 'Calvin Harris', 'Ellie Goulding', 'Marshmello', 'Khalid', 'Halsey',
     'The Kid LAROI', 'Childish Gambino', '2Pac', 'Jay-Z', '50 Cent', 'Snoop Dogg',
     'Dr. Dre', 'The Notorious B.I.G.', 'Outkast', 'Wiz Khalifa', 'Migos',
@@ -101,12 +104,16 @@
     return /[\u0590-\u05FF]/.test(str || '') ? 'he' : 'en';
   }
 
-  // Load any user-imported artists/songs from localStorage
+  // Load any user-imported artists/songs from localStorage (purging any blocked artists)
   try {
     const savedCustom = JSON.parse(localStorage.getItem(CUSTOM_SONGS_KEY) || '[]');
     if (Array.isArray(savedCustom) && savedCustom.length > 0) {
+      const cleanedCustom = savedCustom.filter((s) => s && s.artist && !BLOCKED_ARTISTS.has(s.artist.toLowerCase().trim()));
+      if (cleanedCustom.length !== savedCustom.length) {
+        localStorage.setItem(CUSTOM_SONGS_KEY, JSON.stringify(cleanedCustom));
+      }
       const existingIds = new Set(CATALOG.map((s) => s.id));
-      savedCustom.forEach((s) => {
+      cleanedCustom.forEach((s) => {
         if (!existingIds.has(s.id) && !isRemixOrJunk(s.title, s.fullTitle, s.album)) {
           s.genre = mapToBroadGenre(s.genre);
           CATALOG.push(s);
@@ -198,6 +205,16 @@
     'Mariah Carey': '80s & 90s',
     'George Michael': '80s & 90s',
     'Madonna': '80s & 90s',
+    'Phil Collins': '80s & 90s',
+    'Bon Jovi': '80s & 90s',
+    'U2': '80s & 90s',
+    'Oasis': '80s & 90s',
+    'Radiohead': '80s & 90s',
+    'R.E.M.': '80s & 90s',
+    'The Police': '80s & 90s',
+    'AC/DC': '80s & 90s',
+    'Aerosmith': '80s & 90s',
+    'Céline Dion': '80s & 90s',
     'Guns N\' Roses': '80s & 90s',
     'Nirvana': '80s & 90s',
     'Metallica': '80s & 90s',
@@ -321,9 +338,9 @@
 
     CATALOG.forEach((song) => {
       if (!song || !song.artist || !song.title) return;
-      if (seenIds.has(song.id)) return;
-
       const lowerArtist = song.artist.toLowerCase().trim();
+      if (BLOCKED_ARTISTS.has(lowerArtist)) return;
+      if (seenIds.has(song.id)) return;
       if (canonicalArtistNames.has(lowerArtist)) {
         song.artist = canonicalArtistNames.get(lowerArtist);
       } else {
@@ -485,8 +502,10 @@
         let addedCount = 0;
         rows.forEach((r) => {
           if (!r || !r.artist || !r.title || !r.preview_url) return;
+          const lowerArt = r.artist.toLowerCase().trim();
+          if (BLOCKED_ARTISTS.has(lowerArt)) return;
           // Skip artists already baked and verified in SONGS_CATALOG
-          if (builtInArtistsLower.has(r.artist.toLowerCase().trim())) return;
+          if (builtInArtistsLower.has(lowerArt)) return;
           if (!existingIds.has(r.id) && !isRemixOrJunk(r.title, r.full_title, r.album)) {
             CATALOG.push({
               id: r.id,
