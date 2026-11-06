@@ -1005,32 +1005,21 @@
 
     if (isSupabaseConfigured()) {
       try {
-        const existing = await sbRest('players', 'GET', `username=ilike.${encodeURIComponent(raw)}&select=*`);
-        if (Array.isArray(existing) && existing.length > 0) {
-          const record = existing[0];
-          finalUsername = record.username;
-          const storedToken = record.client_id || '';
-
-          if (storedToken.startsWith('pin_v1_')) {
-            if (storedToken !== pinHash) {
-              status.textContent = `Wrong PIN for @${finalUsername} (or username is already taken).`;
-              return;
-            }
+        const res = await sbRest('rpc/verify_or_register_player', 'POST', '', {
+          p_username: raw,
+          p_pin_hash: pinHash
+        });
+        if (!res || !res.success) {
+          if (res && res.error === 'wrong_pin') {
+            status.textContent = `Wrong PIN for @${raw} (or username is already taken).`;
+          } else if (res && res.error === 'invalid_username') {
+            status.textContent = 'Invalid username format.';
           } else {
-            // Legacy account created before PIN was added — upgrade it with this new PIN
-            await sbRest(
-              'players',
-              'PATCH',
-              `username=eq.${encodeURIComponent(finalUsername)}`,
-              { client_id: pinHash }
-            );
+            status.textContent = 'Could not verify account. Try again.';
           }
-        } else {
-          await sbRest('players', 'POST', 'on_conflict=username', [{
-            username: finalUsername,
-            client_id: pinHash
-          }], { Prefer: 'resolution=merge-duplicates' });
+          return;
         }
+        finalUsername = res.username || raw;
       } catch (e) {
         status.textContent = 'Could not verify account. Try again.';
         return;
